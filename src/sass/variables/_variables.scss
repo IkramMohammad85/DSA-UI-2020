@@ -24,6 +24,17 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+$bright-gray:#58595B !default;
+$light-gray:#939598 !default;
+$bluish-gray:#94a2ad !default;
+$soft-bluish-gray:#e6e7e8 !default;
+
+$black:    #000 !default;
+$deep-blue:#1a2940 !default;
+$cyan-blue:#344E70 !default;
+$deep-cyan-blue:#314d77 !default;
+$bluedark:#0D2338 !default;
+$light-blue:#316aa3 !default;
 
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
@@ -48,7 +59,14 @@ $link-hover-decoration:                   underline !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   2rem !default;
+$spacer: 1rem !default;
+
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$border-radius-none: 0px;
+$border-none: 0px;
+$border:1px solid #dee2e6 !default;
 
 // Typography
 //
@@ -72,6 +90,7 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
+$headings-line-height:        1.2 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;

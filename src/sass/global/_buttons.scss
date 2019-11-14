@@ -1,0 +1,116 @@
+.btn{ border-radius: 0px; font-family: $font-family-base; font-weight: $font-weight-bold; font-size: 14px;border: 1px solid transparent; padding: 7px 20px; line-height: 1.5333333333;
+text-decoration: none;height: auto; border-radius: 0.2em;transition: all 0.25s ease-in-out;user-select: none;vertical-align: middle;text-align: center;
+white-space: nowrap;}
+.btn-primary {
+    color: $white;
+    background-color: $deep-blue;
+    border-color: $deep-blue;
+    &:hover {
+        color: $white;
+        background-color: $deep-cyan-blue;
+        border-color: $deep-cyan-blue;
+    
+    }
+    &:active {
+		&:hover {
+			color: $white;
+			background-color: $deep-cyan-blue;
+			border-color: $deep-cyan-blue;
+		}
+		&:focus {
+			color: $white;
+			background-color: $deep-cyan-blue;
+			border-color: $deep-cyan-blue;
+		}
+	}
+}
+.btn-outline-primary {
+    color: $deep-blue;
+    background-color: transparent;
+    background-image: none;
+    border-color: $deep-blue;
+    &:hover {
+        color: $white;
+        background-color: $deep-blue;
+        border-color: $deep-blue;
+    
+    }
+}
+.btn-dark {
+    color: $white;
+    background-color: $gray-800;
+    border-color: $gray-800;
+    &:hover {
+        color: $white;
+        background-color: $gray-900;
+        border-color: $gray-900;
+    }
+}
+.btn-outline-dark {
+    color: $gray-800;
+    background-color: transparent;
+    background-image: none;
+    border-color: $gray-800;
+    &:hover {
+        color: $white;
+        background-color: $gray-800;
+        border-color: $gray-800;
+    
+    }
+}
+.btn-secondary {
+    color: $white;
+    background-color: $blue;
+    border-color: $blue;
+    &:hover,&:focus {
+        color: $white;
+        background-color: $deep-cyan-blue;
+        border-color: $deep-cyan-blue;
+    }
+}
+
+.btn-outline-secondary {
+    color: $blue;
+    background-color: transparent;
+    border-color: $blue;
+    &:hover {
+        color: $white;
+        background-color: $blue;
+        border-color: $blue;
+    }
+}
+
+.btn-gray {
+    color: $white;
+    background-color: $gray-600;
+    border-color: $gray-600;
+    &:hover {
+        color: $white;
+        background-color: $gray-600;
+        border-color: $gray-600;
+    }
+}
+
+.btn-white {
+    color: $black;
+    background-color: $white;
+    border-color: $black;
+    &:hover {
+        color: $white;
+        background-color: $gray-600;
+        border-color: $gray-600;
+    }
+}
+
+.btn-outline-white {
+    color: $white;
+    background-color: transparent;
+    background-image: none;
+    border-color: $white;
+    &:hover {
+        color: $white;
+        background-color: $blue;
+        border-color: $blue;
+    
+    }
+}

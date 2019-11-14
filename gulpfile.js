@@ -3,7 +3,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var browserSync = require('browser-sync');
-var cleanCSS = require('gulp-clean-css');
+
 
 
 
@@ -53,13 +53,6 @@ gulp.task('pug', function(){
 		.pipe(gulp.dest(paths.html.dest));
 });
 
-// Minifies the css
-gulp.task('minify-css', function() {
-	return gulp
-		.src(paths.css.src)
-		.pipe(cleanCSS())
-		.pipe(gulp.dest(paths.css.dest));
-});
 
 // Watches files for change and reloads the browser
 gulp.task('browser-sync', function () {
@@ -79,7 +72,6 @@ gulp.task('reloadBrowser', function(done){
 gulp.task('watch', function () {
     gulp.watch(paths.sass.src, gulp.series('sass'));
     gulp.watch(paths.watch.pug, gulp.series('pug', 'reloadBrowser'));
-    gulp.watch(paths.css.src, gulp.series('minify-css', 'reloadBrowser'));
     
 });
 
