@@ -9,9 +9,9 @@ body {
   }
 #wrapper{
     display: flex;
-    flex: 1;
+    flex-direction:column;
 }
- .container-fluid {
+ .containerFluid {
     width: 100%;
     padding-right: 75px;
     padding-left: 75px;
@@ -19,23 +19,34 @@ body {
     margin-left: auto;
 }
 
- header{ padding: 20px 0px;  }
+header.siteHeader{ padding: 0px 0px; display: flex; min-height: 102px; background-color:#1a2940;}
+.bigBanner {
+  position:relative;
+   width:100%;
+   height:auto;
+   padding:0 0;
+   background-position:center;
+   background-repeat:no-repeat;
+   background-attachment:scroll;
+   background-size:cover
+  }
+  .relatedNews{
+  position: relative;
+  text-align: left;
+  color: white;
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .title{ font-size: 24px; font-weight: bold; line-height: 28px;}
+    a{ color: $white;}
+  }
+  img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  }
+.transparentBox{background:  rgba(0, 0, 0, 0.5);  width: 100%;  padding: 30px;}
 
-
-.masthead {
-position:relative;
- width:100%;
- height:auto;
- height:100vh;
- min-height:35rem;
- padding:15rem 0;
- background:linear-gradient(to bottom,rgba(26,41,64,.7) 0,rgba(26,41,64,.7) 75%,#1a2940 100%),url(../img/train.jpg);
- background-position:center;
- background-repeat:no-repeat;
- background-attachment:scroll;
- background-size:cover
-}
-
-
-
-footer{ background-color:$cyan-blue; display: flex; padding: 20px 0px;}
+footer.siteFooter{ background-color:$cyan-blue; display: flex; padding: 20px 0px; min-height: 500px; }
