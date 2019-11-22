@@ -2,29 +2,32 @@
     .big-banner {
        background:linear-gradient(to bottom,rgba(26,41,64,.7) 0,rgba(26,41,64,.7) 75%,#1a2940 100%),url(../img/train.jpg);
        height:100%;
-       min-height:500px;
+       min-height:400px;
       }
-    .news{background-color: #fff; min-height: 610px; }
+    .news{background-color: #fff; }
     .about-us{ background:linear-gradient(to bottom,rgba(0, 0, 0, 0.5) 9%,rgba(0,0,0,.5) 9%,rgba(0,0,0,.5) 9%),url(../img/who-we-are.jpg);
         background-position:center;
         background-repeat:no-repeat;
         background-attachment:scroll;
         background-size:cover ; min-height: 610px; 
-        .container-fluid{ justify-content: space-between; display: flex;}
     
-    .transparent-box{ width: 450px;
-     min-height: 450px; color: $white;
-
+    .transparent-box{ 
+     min-height: 450px; color: $white; position: relative;
+     .content{ position: absolute;position: absolute; width: 360px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);}
+      h2{color: $white;}
      a{ color: $white;}
     }
     }
     .news{ background-color: #1a2940; text-align: center; 
       .container-fluid{ justify-content: space-between; display: flex;}
-        .news-item{ width: 425px;
-          .content { width: 330px;left: 53%;
+        .news-item{ 
+          .content { width: 360px;left: 50%;
         }
       }
-      .btn-outline-white{ display: inline-flex;}
+
     }
   }
   

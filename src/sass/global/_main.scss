@@ -11,13 +11,6 @@ body {
     display: flex;
     flex-direction:column;
 }
- .container-fluid {
-    width: 100%;
-    padding-right: 75px;
-    padding-left: 75px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 header.site-header{ padding: 0px 0px; display: flex; min-height: 102px; background-color:#1a2940;}
 .big-banner {
@@ -39,7 +32,6 @@ header.site-header{ padding: 0px 0px; display: flex; min-height: 102px; backgrou
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    .title{ font-size: 24px; font-weight: bold; line-height: 28px;}
     a{ color: $white;}
   }
   img {
