@@ -1,33 +1,45 @@
 .home {
     .big-banner {
-       background:linear-gradient(to bottom,rgba(26,41,64,.7) 0,rgba(26,41,64,.7) 75%,#1a2940 100%),url(../img/train.jpg);
-       height:100%;
-       min-height:400px;
+       position:relative;
       }
-    .news{background-color: #fff; }
     .about-us{ background:linear-gradient(to bottom,rgba(0, 0, 0, 0.5) 9%,rgba(0,0,0,.5) 9%,rgba(0,0,0,.5) 9%),url(../img/who-we-are.jpg);
         background-position:center;
         background-repeat:no-repeat;
         background-attachment:scroll;
         background-size:cover ; min-height: 610px; 
     
-    .transparent-box{ 
+    .transparent-bg{ 
      min-height: 450px; color: $white; position: relative;
-     .content{ position: absolute;position: absolute; width: 360px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);}
       h2{color: $white;}
      a{ color: $white;}
     }
     }
-    .news{ background-color: #1a2940; text-align: center; 
-      .container-fluid{ justify-content: space-between; display: flex;}
-        .news-item{ 
-          .content { width: 360px;left: 50%;
-        }
-      }
-
-    }
   }
   
+.home{
+  .big-banner{
+    .item{
+      img{ position: absolute; z-index: 1; background:linear-gradient(to bottom,rgba(0, 0, 0, 0.5) 9%,rgba(0,0,0,.5) 9%,rgba(0,0,0,.5) 9%);
+          background-position:center;
+          background-repeat:no-repeat;
+          background-attachment:scroll;
+          background-size:cover;
+          width:100%;
+          height:auto;
+          padding:0 0;
+        }
+      .news { background-color: #1a2940;
+        img.flex-img { position: absolute; z-index: 2;
+          opacity: 0.9;
+          filter: alpha(opacity=50); /* For IE8 and earlier */
+        }
+        h3,.btn{ z-index: 2; text-align: left; margin-left: 30px; margin-right: 30px;}
+        h3 { margin-left: 30px; margin-right: 30px;
+          a{ color: $white;}
+        }
+        .btn{ padding-left: 0px;color: $white;}
+      }
+    }
+  }
+
+}

@@ -1755,6 +1755,9 @@ a {
   background: rgba(0, 0, 0, 0.5);
   width: 100%; }
 
+.position-relative {
+  position: relative; }
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -1859,33 +1862,6 @@ header.site-header {
   min-height: 102px;
   background-color: #1a2940; }
 
-.big-banner {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 0 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover; }
-
-.news-item {
-  position: relative;
-  text-align: left;
-  color: white; }
-  .news-item .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-    .news-item .content a {
-      color: #fff; }
-  .news-item img {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    /* For IE8 and earlier */ }
-
 footer.site-footer {
   background-color: #344E70;
   display: -webkit-box;
@@ -1894,13 +1870,7 @@ footer.site-footer {
   min-height: 500px; }
 
 .home .big-banner {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(26, 41, 64, 0.7)), color-stop(75%, rgba(26, 41, 64, 0.7)), to(#1a2940)), url(../img/train.jpg);
-  background: linear-gradient(to bottom, rgba(26, 41, 64, 0.7) 0, rgba(26, 41, 64, 0.7) 75%, #1a2940 100%), url(../img/train.jpg);
-  height: 100%;
-  min-height: 400px; }
-
-.home .news {
-  background-color: #fff; }
+  position: relative; }
 
 .home .about-us {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5))), url(../img/who-we-are.jpg);
@@ -1910,31 +1880,46 @@ footer.site-footer {
   background-attachment: scroll;
   background-size: cover;
   min-height: 610px; }
-  .home .about-us .transparent-box {
+  .home .about-us .transparent-bg {
     min-height: 450px;
     color: #fff;
     position: relative; }
-    .home .about-us .transparent-box .content {
-      position: absolute;
-      position: absolute;
-      width: 360px;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-    .home .about-us .transparent-box h2 {
+    .home .about-us .transparent-bg h2 {
       color: #fff; }
-    .home .about-us .transparent-box a {
+    .home .about-us .transparent-bg a {
       color: #fff; }
 
-.home .news {
-  background-color: #1a2940;
-  text-align: center; }
-  .home .news .container-fluid {
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    display: -webkit-box;
-    display: flex; }
-  .home .news .news-item .content {
-    width: 360px;
-    left: 50%; }
+.home .big-banner .item img {
+  position: absolute;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.5) 9%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding: 0 0; }
+
+.home .big-banner .item .news {
+  background-color: #1a2940; }
+  .home .big-banner .item .news img.flex-img {
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */ }
+  .home .big-banner .item .news h3, .home .big-banner .item .news .btn {
+    z-index: 2;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px; }
+  .home .big-banner .item .news h3 {
+    margin-left: 30px;
+    margin-right: 30px; }
+    .home .big-banner .item .news h3 a {
+      color: #fff; }
+  .home .big-banner .item .news .btn {
+    padding-left: 0px;
+    color: #fff; }
