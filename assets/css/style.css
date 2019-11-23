@@ -1996,7 +1996,8 @@ footer.site-footer {
       background-position: inherit;
       background-attachment: inherit;
       background-repeat: inherit;
-      width: 360px; }
+      width: 100%;
+      padding: inherit; }
     .home .big-banner .item .news h3, .home .big-banner .item .news .btn {
       z-index: 2;
       text-align: left;
