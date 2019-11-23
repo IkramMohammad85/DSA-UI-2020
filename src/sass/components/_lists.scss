@@ -1,0 +1,31 @@
+.list {
+    padding: 0;
+	margin: 0;
+	list-style: none;
+	li {
+		padding: 12px 0px;
+		border-bottom: solid 1px #e7e7e7; user-select: none;
+		a {
+			color: $cyan-blue;
+			font-weight: 400;
+		}
+	}
+}
+.list-hover {
+	li {
+		background-color: #ebebeb;
+		border-bottom: solid 1px $white;
+		&:hover {
+			background-color: #f1f1f1;
+			
+		}
+	}
+}
+
+.list-inline, .list-unstyled {   padding-left: 0;    list-style: none;}
+.list-inline-item:not(:last-child) {
+    margin-right: .5rem;
+}
+.list-inline-item {
+    display: inline-block;
+}

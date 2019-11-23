@@ -3,10 +3,18 @@
 @import './node_modules/normalize.css/normalize';
 @import './node_modules/reflex-grid/scss/reflex';
 
+// Components ----------------------------------------------------------------
+@import "components/cards";
+@import "components/lists";
+// typography ----------------------------------------------------------------
 @import "typography/type";
+
+// global ----------------------------------------------------------------
 @import "global/buttons";
 @import "global/utilities";
 @import "global/tables";
 @import "global/main";
+
+// pages ----------------------------------------------------------------
 @import "page/home";
 
