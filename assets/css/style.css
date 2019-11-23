@@ -1375,6 +1375,25 @@ template {
   .hidden-xlg {
     display: none; } }
 
+.card {
+  border: solid 1px #e8e8e8;
+  background-color: #fff; }
+  .card .card-header {
+    background-color: #314d77;
+    min-height: 88px; }
+  .card .card-body {
+    min-height: 200px;
+    background: #fff; }
+  .card .card-footer {
+    background: #939598;
+    min-height: 44px; }
+  .card .card-body, .card .card-footer, .card .card-header {
+    padding: 30px; }
+
+.card-header-img {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .list {
   padding: 0;
   margin: 0;
@@ -1952,3 +1971,16 @@ footer.site-footer {
       color: #fff; }
     .home section.about-us .transparent-bg a {
       color: #fff; }
+
+.home section.gray-light-bg .card {
+  min-height: 568px; }
+  .home section.gray-light-bg .card .card-body {
+    text-align: center; }
+    .home section.gray-light-bg .card .card-body p, .home section.gray-light-bg .card .card-body h4 {
+      color: #3d3d3d; }
+
+.home section.gray-light-bg .asiapedia .card-header-img {
+  background: url(../img/banner-asiapedia.jpg); }
+
+.home section.gray-light-bg .events .card-header-img {
+  background: url(../img/das-events-banner.jpg); }

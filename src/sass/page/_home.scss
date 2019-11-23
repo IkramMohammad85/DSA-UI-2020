@@ -65,6 +65,24 @@
      a{ color: $white;}
     }
     }
+    section.gray-light-bg{
+      .card{ min-height: 568px;
+      .card-body{ text-align: center;
+        p, h4{ color: #3d3d3d;}
+       
+      }
+      
+    }
+    .asiapedia{
+      .card-header-img{
+        background: url(../img/banner-asiapedia.jpg);
+       
+       }
+    }
+    .events{
+      .card-header-img{  background: url(../img/das-events-banner.jpg);}
+    }
+  }
   }
 
 

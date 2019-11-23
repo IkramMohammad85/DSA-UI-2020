@@ -1,5 +1,10 @@
-.card{
-    .card-header{}
-    .card-body{}
-    .card-footer{}
+.card{ border: solid 1px #e8e8e8; background-color: $white;
+
+    .card-header{ background-color: $deep-cyan-blue; min-height: 88px; }
+    .card-body{ min-height: 200px;background: $white;}
+    .card-footer{ background: $light-gray;min-height: 44px;}
+    .card-body, .card-footer, .card-header{padding: 30px;}
 }
+.card-header-img{ 
+    background-repeat: no-repeat;
+    background-size: cover;}
