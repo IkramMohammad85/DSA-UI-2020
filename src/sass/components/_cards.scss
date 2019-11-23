@@ -1,10 +1,29 @@
 .card{ border: solid 1px #e8e8e8; background-color: $white;
 
-    .card-header{ background-color: $deep-cyan-blue; min-height: 88px; }
+    .card-header{ background-color: $deep-cyan-blue; min-height: 88px; 
+    
+        .hedaer-title{ float: left; color: $white;}
+        .btn{ float: right; color: $white;}
+    }
     .card-body{ min-height: 200px;background: $white;}
     .card-footer{ background: $light-gray;min-height: 44px;}
     .card-body, .card-footer, .card-header{padding: 30px;}
 }
 .card-header-img{ 
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;}   
+.card.asiapedia{
+        .card-header-img{
+            background: url(../img/banner-asiapedia.jpg);
+           }
+           .card-body{ text-align: center;
+            p, h4{ color: #3d3d3d;}
+            h4{ font-size: 15px;}
+           
+          }
+    }
+.card.events{
+    .card-header-img{  background: url(../img/das-events-banner.jpg);}
+      } 
+      .card.asiapedia,.card.events{ min-height: 568px;;   
+    } 

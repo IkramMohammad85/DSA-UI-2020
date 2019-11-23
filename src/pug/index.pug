@@ -8,14 +8,13 @@ head
   title Dezan Shira & Associates!
 #wrapper.home
   header.site-header
+    .conatiner
   section.big-banner
     .item
       .item-image
         img(src='assets/img/train.jpg', alt='')
-        .container-full
-          h1.heading-brand
-            .text-white Keeping Up To Speed With Eurasian Connectivity
-             img(src='assets/img/dsa-brand-line.jpg', alt='')
+        .container
+          h1.heading-brand.text-white Keeping Up To Speed With Eurasian Connectivity
           .grid.news.align-end
             .col-xs-6.col-md-4.col-grid.justify-center
                 img.flex-img(src='assets/img/Alibaba.jpg', alt='')
@@ -34,7 +33,7 @@ head
                 a.btn.btn-link(target='_top', href='#') Read more
         a.btn.btn-outline-white(href='#') View more news
   section.about-us.pt-7.pb-7
-      .container-full
+      .container
         .grid
           .col-xs-6.col-md-4.col-grid
             .transparent-bg.p-arround-4
@@ -52,18 +51,81 @@ head
               p Over 25years of experience working with small, medium and large enterprises across every major industry.
               a.btn.btn-outline-white(href='#') Read more      
   section.gray-light-bg.pt-7.pb-7
-      .container-full
+      .container
         .grid
-          .col-xs-6.col-md-6.col-grid.asiapedia
-            .card
+          .col-xs-6.col-md-6.col-grid
+            .card.asiapedia
               .card-header.card-header-img
+                h3.hedaer-title Asiapedia
+                a.btn.btn-link(href='#') Read more
               .card-body
                 h4 When we say we want to help businesses grow in Asia, we mean it. 
                 p Asiapedia is our collection of resources based on what we have learned about doing business Asia. It’s  the products of more then 300 team members collaborating across 25 offices in Asia, Europe, and North America.
-          .col-xs-6.col-md-6.col-grid.events
-            .card
+                <form action="">
+                  <select name="country">
+                    <option value="Pick a country to explore">Pick a country to explore</option>
+                    <option value="India">India</option>
+                    <option value="China">Chian</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Thailand">Thailand</option>
+                  </select>
+                </form>
+          .col-xs-6.col-md-6.col-grid
+            .card.events
               .card-header.card-header-img
+                h3.hedaer-title Events
+                a.btn.btn-link(href='#') Read more
               .card-body
+                ul.list.lists-events
+                  li
+                    .date-block
+                      | Nov
+                      span Oct, 2019
+                    .dec-block
+                      .title
+                        a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
+                          | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                      .date-time
+                        small
+                          | Webinar | 27 November 2019 | 3PM-4PM China Time
+                        
+                  li
+                    .date-block
+                      | Nov
+                      span Oct, 2019
+                    .dec-block
+                      .title
+                        a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
+                          | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                      .date-time
+                        small
+                          | Webinar | 27 November 2019 | 3PM-4PM China Time
+                       
+                  li
+                    .date-block
+                      | Nov
+                      span Oct, 2019
+                    .dec-block
+                      .title
+                        a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
+                          | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                      .date-time
+                        small
+                          | Webinar | 27 November 2019 | 3PM-4PM China Time
+                        
+                  li
+                    .date-block
+                      | Nov
+                      span Oct, 2019
+                    .dec-block
+                      .title
+                        a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
+                          | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                      .date-time
+                        small
+                          | Webinar | 27 November 2019 | 3PM-4PM China Time
+                          br
+
   footer.site-footer
 
 // Optional JavaScript
