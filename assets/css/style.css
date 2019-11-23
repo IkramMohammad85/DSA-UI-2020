@@ -1529,12 +1529,6 @@ ol, ul {
     background-color: #007bff;
     border-color: #007bff; }
 
-a {
-  color: #344E70;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: none; }
-
 .dark-blue-bg {
   background: #1a2940; }
 
@@ -1839,6 +1833,12 @@ a {
 * {
   box-sizing: border-box; }
 
+a {
+  color: #344E70;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
 body {
   display: -webkit-box;
   display: flex;
@@ -1874,16 +1874,16 @@ footer.site-footer {
   .home .big-banner .item .item-image {
     position: relative;
     min-height: 1014px; }
-  .home .big-banner .item .item-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #1a2940), to(rgba(26, 41, 64, 0.0677405)));
-    background: linear-gradient(0deg, #1a2940 30%, rgba(26, 41, 64, 0.0677405) 100%); }
+    .home .big-banner .item .item-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #1a2940), to(rgba(26, 41, 64, 0.0677405)));
+      background: linear-gradient(0deg, #1a2940 30%, rgba(26, 41, 64, 0.0677405) 100%); }
   .home .big-banner .item img {
     position: absolute;
     z-index: 1;
@@ -1919,7 +1919,7 @@ footer.site-footer {
       padding-left: 0px;
       color: #fff; }
 
-.home .about-us {
+.home section.about-us {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5))), url(../img/who-we-are.jpg);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.5) 9%), url(../img/who-we-are.jpg);
   background-position: center;
@@ -1927,11 +1927,11 @@ footer.site-footer {
   background-attachment: scroll;
   background-size: cover;
   min-height: 610px; }
-  .home .about-us .transparent-bg {
+  .home section.about-us .transparent-bg {
     min-height: 450px;
     color: #fff;
     position: relative; }
-    .home .about-us .transparent-bg h2 {
+    .home section.about-us .transparent-bg h2 {
       color: #fff; }
-    .home .about-us .transparent-bg a {
+    .home section.about-us .transparent-bg a {
       color: #fff; }
