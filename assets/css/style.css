@@ -1498,6 +1498,12 @@ ul.navbar {
     ul.navbar li a {
       color: #fff; }
 
+ul.top-quick-link {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: right; }
+
 body {
   color: #000;
   font-size: 1rem;
@@ -1681,6 +1687,12 @@ ol, ul {
 .gray-light-bg {
   background: #eee; }
 
+.pt-0 {
+  padding-top: 0; }
+
+.pb-0 {
+  padding-bottom: 0; }
+
 .pt-9 {
   padding-top: 90px; }
 
@@ -1706,7 +1718,7 @@ ol, ul {
   padding-bottom: 50px; }
 
 .p-arround-4 {
-  padding: 40px; }
+  padding: 42px; }
 
 .pt-4 {
   padding-top: 40px; }
