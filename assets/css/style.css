@@ -1484,6 +1484,18 @@ template {
   .list.lists-events .dec-block {
     margin-left: 0px; } }
 
+ul.navbar {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+  ul.navbar li {
+    display: inline;
+    font-size: 12px; }
+    ul.navbar li:not(:last-child) {
+      margin-right: 1rem; }
+    ul.navbar li a {
+      color: #fff; }
+
 body {
   color: #000;
   font-size: 1rem;
@@ -1974,11 +1986,21 @@ body {
   flex-direction: column; }
 
 header.site-header {
-  padding: 0px 0px;
-  display: -webkit-box;
-  display: flex;
-  min-height: 102px;
-  background-color: #1a2940; }
+  padding: 0px 0px; }
+  header.site-header #main-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background: rgba(26, 41, 64, 0.5);
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+    min-height: 102px; }
+  header.site-header .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; }
 
 footer.site-footer {
   background-color: #1a2940;

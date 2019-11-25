@@ -19,7 +19,25 @@ body {
     flex-direction:column;
 }
 
-header.site-header{ padding: 0px 0px; display: flex; min-height: 102px; background-color:#1a2940;}
+header.site-header{ padding: 0px 0px;
+
+  #main-nav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background: rgba(26, 41, 64, 0.5);
+    transition: background-color .3s ease-in-out; min-height: 102px;
+}
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+}
 footer.site-footer{ background-color:$deep-blue; color: $bluish-gray;
   .list-inline{ color:$white;
     a{color: $white;}
