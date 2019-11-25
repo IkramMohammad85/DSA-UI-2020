@@ -52,7 +52,7 @@ footer.site-footer{ background-color:$deep-blue; color: $bluish-gray;
     color:$bluish-gray;
     text-transform: uppercase;
     font-size: $font-size-base;
-    li{
+    li{ vertical-align: middle;
       &:not(:last-child) {
         margin-right: .5rem;
         padding-right: 0px;

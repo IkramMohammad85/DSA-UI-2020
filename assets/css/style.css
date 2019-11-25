@@ -1850,6 +1850,10 @@ ol, ul {
   background: rgba(0, 0, 0, 0.5);
   width: 100%; }
 
+.center-block {
+  margin: 0 auto;
+  display: block; }
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -2016,9 +2020,11 @@ footer.site-footer {
     color: #94a2ad;
     text-transform: uppercase;
     font-size: 1rem; }
-    footer.site-footer .list-inline.social-media li:not(:last-child) {
-      margin-right: .5rem;
-      padding-right: 0px; }
+    footer.site-footer .list-inline.social-media li {
+      vertical-align: middle; }
+      footer.site-footer .list-inline.social-media li:not(:last-child) {
+        margin-right: .5rem;
+        padding-right: 0px; }
   footer.site-footer h2 {
     color: #fff;
     font-weight: normal; }
@@ -2139,6 +2145,9 @@ footer.site-footer {
       background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.8)), color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.8)));
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 9%, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.8) 9%);
       cursor: pointer; }
+    .home section.about-us .transparent-bg .center-block {
+      margin-top: 40px;
+      margin-bottom: 40px; }
 
 .home .card.events .card-body {
   height: 450px;
