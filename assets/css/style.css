@@ -1477,6 +1477,13 @@ template {
   .list.lists-events .dec-block .date-time {
     color: #676767; }
 
+@media (max-width: 575px) {
+  .list.lists-events .date-block {
+    float: inherit;
+    border-bottom: solid 1px  #dadada; }
+  .list.lists-events .dec-block {
+    margin-left: 0px; } }
+
 body {
   color: #000;
   font-size: 1rem;
@@ -1934,6 +1941,10 @@ ol, ul {
   border: 1px solid #316aa3;
   padding: 0.5em 1em; }
 
+@media (max-width: 575px) {
+  .input-add-on-field {
+    font-size: 15px; } }
+
 * {
   box-sizing: border-box; }
 
@@ -2109,3 +2120,22 @@ footer.site-footer {
 .home .card.events .card-body {
   height: 450px;
   overflow: auto; }
+
+.home .card.asiapedia .card-body form {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex; }
+
+.home .card.asiapedia .card-body select {
+  border: none;
+  background-color: #e5e5e5;
+  color: #495057;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 0.875rem; }
+
+@media (max-width: 575px) {
+  .home .big-banner .item .heading-brand {
+    top: 30px; }
+  .home .big-banner .item img {
+    width: auto; } }

@@ -61,15 +61,13 @@ head
               .card-body
                 h4 When we say we want to help businesses grow in Asia, we mean it. 
                 p Asiapedia is our collection of resources based on what we have learned about doing business Asia. It’s  the products of more then 300 team members collaborating across 25 offices in Asia, Europe, and North America.
-                <form action="">
-                  <select name="country">
-                    <option value="Pick a country to explore">Pick a country to explore</option>
-                    <option value="India">India</option>
-                    <option value="China">Chian</option>
-                    <option value="Russia">Russia</option>
-                    <option value="Thailand">Thailand</option>
-                  </select>
-                </form>
+                form.col-md-10.col-grid(action='')
+                  select(name='country')
+                    option(value='Pick a country to explore') Pick a country to explore
+                    option(value='India') India
+                    option(value='China') Chian
+                    option(value='Russia') Russia
+                    option(value='Thailand') Thailand
           .col-xs-6.col-md-6.col-grid
             .card.events
               .card-header.card-header-img

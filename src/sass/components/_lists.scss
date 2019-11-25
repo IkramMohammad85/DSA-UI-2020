@@ -45,3 +45,14 @@
     }
 
 }
+
+
+@media (max-width: 575px) {
+	.list.lists-events{
+		.date-block{
+			float: inherit;
+			border-bottom: solid 1px  #dadada;
+		}
+		.dec-block { margin-left: 0px;}
+	}
+  }

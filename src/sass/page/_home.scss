@@ -50,7 +50,9 @@
             background-repeat: inherit;
             width: 100%;
             padding: inherit;
+            
           }
+
           h3,.btn{ z-index: 2; text-align: left; margin-left: 30px; margin-right: 30px;}
           h3 { margin-left: 30px; margin-right: 30px;
             a{ color: $white;}
@@ -75,10 +77,29 @@
     .card.events{
       .card-body{ height: 450px; overflow: auto;}
     }
+
+    .card.asiapedia{
+      .card-body{
+        form{ margin: 0 auto; display: flex;}
+        select{ border: none; background-color: #e5e5e5; color: $gray-700; padding: 10px 20px; width: 100%; font-size: $font-size-sm;
+        }
+
+      }
+    }
   }
 
-
-  
+  @media (max-width: 575px) {
+    .home {
+      .big-banner {
+        .item {
+          .heading-brand{ top: 30px;}
+         img{ width: auto;
+          }
+      }
+          
+      }
+    }
+    }
 
 
 

@@ -26,3 +26,10 @@
 	border: 1px solid $light-blue;
 	padding: 0.5em 1em;
 }
+
+
+@media (max-width: 575px) {
+	.input-add-on-field{
+        font-size: 15px;
+	}
+  }
