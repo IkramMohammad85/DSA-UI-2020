@@ -114,3 +114,13 @@ white-space: nowrap;}
     
     }
 }
+.btn-light-blue {
+    color: $white;
+    background-color: $light-blue;
+    border-color: $light-blue;
+    &:hover {
+        color: $white;
+        background-color: $deep-cyan-blue;
+        border-color: $deep-cyan-blue;
+    }
+}
