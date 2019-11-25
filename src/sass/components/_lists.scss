@@ -23,12 +23,15 @@
 }
 
 .list-inline, .list-unstyled {   padding-left: 0;    list-style: none;}
-.list-inline-item:not(:last-child) {
-    margin-right: .5rem;
+.list-inline{
+	li{ display: inline-block;
+		&:not(:last-child) {
+			margin-right: .5rem;
+		}
+	}
+	
 }
-.list-inline-item {
-    display: inline-block;
-}
+
 
 .list.lists-events{
     li{ display: block; background-color:#f1f1f1; border: solid 1px #dadada; overflow: hidden; padding: 0px; margin-bottom: 20px;}

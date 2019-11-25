@@ -1441,11 +1441,10 @@ template {
   padding-left: 0;
   list-style: none; }
 
-.list-inline-item:not(:last-child) {
-  margin-right: .5rem; }
-
-.list-inline-item {
+.list-inline li {
   display: inline-block; }
+  .list-inline li:not(:last-child) {
+    margin-right: .5rem; }
 
 .list.lists-events li {
   display: block;
@@ -1797,10 +1796,10 @@ ol, ul {
   border: 1px solid #dee2e6; }
 
 .borderTopDarkblue {
-  border-top: solid 3px #1a2940 !important; }
+  border-top: solid 3px #1a2940; }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important; }
+  border-bottom: 1px solid #dee2e6; }
 
 .section-title {
   border-top: 3px solid #1a2940;
@@ -1908,6 +1907,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+hr {
+  width: 100%; }
+
 body {
   display: -webkit-box;
   display: flex;
@@ -1932,11 +1934,40 @@ header.site-header {
   background-color: #1a2940; }
 
 footer.site-footer {
-  background-color: #344E70;
-  display: -webkit-box;
-  display: flex;
-  padding: 20px 0px;
-  min-height: 500px; }
+  background-color: #1a2940;
+  color: #94a2ad; }
+  footer.site-footer .list-inline {
+    color: #fff; }
+    footer.site-footer .list-inline a {
+      color: #fff; }
+    footer.site-footer .list-inline li:not(:last-child) {
+      padding-right: 1rem; }
+  footer.site-footer .list-inline.social-media {
+    color: #94a2ad;
+    text-transform: uppercase;
+    font-size: 1rem; }
+    footer.site-footer .list-inline.social-media li:not(:last-child) {
+      margin-right: .5rem;
+      padding-right: 0px; }
+  footer.site-footer h2 {
+    color: #fff;
+    font-weight: normal; }
+  footer.site-footer p {
+    font-size: 13px; }
+  footer.site-footer .border-bottom {
+    border-color: #94a2ad; }
+  footer.site-footer .copyright {
+    color: #94a2ad; }
+    footer.site-footer .copyright .list-inline {
+      line-height: 18px;
+      text-align: right; }
+      footer.site-footer .copyright .list-inline li {
+        font-size: 13px; }
+        footer.site-footer .copyright .list-inline li a {
+          color: #94a2ad; }
+        footer.site-footer .copyright .list-inline li:not(:last-child) {
+          border-right: solid 1px #94a2ad;
+          padding-right: .5rem; }
 
 .home .big-banner {
   position: relative; }
