@@ -1,5 +1,5 @@
-ul.navbar{margin: 0; padding: 0; text-transform: uppercase;
-    li{ display: inline; font-size: 12px;
+ul.navbar{margin: 0; padding: 0; text-transform: uppercase; text-align:right;
+    li{ display: inline; font-size: 12px; font-weight: bold;
         &:not(:last-child) {
 			margin-right: 1rem;}
     a{color: $white;}

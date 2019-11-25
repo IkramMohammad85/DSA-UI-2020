@@ -1487,10 +1487,12 @@ template {
 ul.navbar {
   margin: 0;
   padding: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: right; }
   ul.navbar li {
     display: inline;
-    font-size: 12px; }
+    font-size: 12px;
+    font-weight: bold; }
     ul.navbar li:not(:last-child) {
       margin-right: 1rem; }
     ul.navbar li a {
@@ -1993,8 +1995,7 @@ header.site-header {
     border-bottom: none;
     background: rgba(26, 41, 64, 0.5);
     -webkit-transition: background-color .3s ease-in-out;
-    transition: background-color .3s ease-in-out;
-    min-height: 102px; }
+    transition: background-color .3s ease-in-out; }
   header.site-header .fixed-top {
     position: fixed;
     top: 0;
