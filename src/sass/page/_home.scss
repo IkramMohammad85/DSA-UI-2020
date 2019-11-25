@@ -2,7 +2,7 @@
     .big-banner {
        position:relative;
        .item{
-        .heading-brand{ position: relative; z-index: 3; top: 250px;
+        .heading-brand{ position: relative; z-index: 3; top: 400px;
         &::after {
             content: url(../img/dsa-brand-line.jpg);
             display: block;
@@ -41,7 +41,7 @@
             height:auto;
             padding:0 0;
           }
-        .news { background-color: #1a2940;  min-height: 600px;
+        .news { background-color: #1a2940;  min-height: 650px;
           img{ position: absolute; z-index: 2;
             opacity: 0.9;
             background-size: inherit;

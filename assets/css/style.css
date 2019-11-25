@@ -2056,7 +2056,7 @@ footer.site-footer {
   .home .big-banner .item .heading-brand {
     position: relative;
     z-index: 3;
-    top: 250px; }
+    top: 400px; }
     .home .big-banner .item .heading-brand::after {
       content: url(../img/dsa-brand-line.jpg);
       display: block; }
@@ -2100,7 +2100,7 @@ footer.site-footer {
     padding: 0 0; }
   .home .big-banner .item .news {
     background-color: #1a2940;
-    min-height: 600px; }
+    min-height: 650px; }
     .home .big-banner .item .news img {
       position: absolute;
       z-index: 2;
