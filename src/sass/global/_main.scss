@@ -20,6 +20,13 @@ body {
 }
 
 header.site-header{ padding: 0px 0px;
+  .logo{position: absolute;
+    top: 40px;
+    display: flex;
+    align-items: center;}
+    .top-quick-link{display: flex; position: relative;
+      justify-content: end;
+      align-items: center;}
 
   #main-nav {
     padding-top: 0;
@@ -47,8 +54,34 @@ header.site-header{ padding: 0px 0px;
     left: 0;
     z-index: 1030;
 }
+.navbar{
+.dropdown-hover{ position: inherit;
+.dropdown-content{ text-align: left; padding: 45px;
+p{ font-size: 14px; text-transform: inherit;
+  text-transform: initial;
+font-weight: normal;
 
-
+}
+h2{text-transform: initial; font-size: 28px;}
+.btn-outline-dark{ color: initial; display: inline-table;}
+.promotion{ background: $white; height: auto;
+  img{
+    background-position: center;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-size: cover;
+width: 100%;
+height: auto;
+  }
+}
+ul{
+  li{ display:block; padding: 5px 0;
+  a {color: #2a2a2a; font-weight: normal;}
+  }
+}
+}
+}
+}
 }
 footer.site-footer{ background-color:$deep-blue; color: $bluish-gray;
   .list-inline{ color:$white;

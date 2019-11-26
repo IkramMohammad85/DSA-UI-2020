@@ -1545,7 +1545,7 @@ Usage:
   .dropdown-hover .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
@@ -1570,8 +1570,7 @@ ul.navbar {
 ul.top-quick-link {
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
-  text-align: right; }
+  text-transform: uppercase; }
 
 body {
   color: #000;
@@ -2080,6 +2079,21 @@ body {
 
 header.site-header {
   padding: 0px 0px; }
+  header.site-header .logo {
+    position: absolute;
+    top: 40px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center; }
+  header.site-header .top-quick-link {
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: end;
+    justify-content: end;
+    -webkit-box-align: center;
+    align-items: center; }
   header.site-header #main-nav {
     padding-top: 0;
     padding-bottom: 0;
@@ -2104,6 +2118,38 @@ header.site-header {
     right: 0;
     left: 0;
     z-index: 1030; }
+  header.site-header .navbar .dropdown-hover {
+    position: inherit; }
+    header.site-header .navbar .dropdown-hover .dropdown-content {
+      text-align: left;
+      padding: 45px; }
+      header.site-header .navbar .dropdown-hover .dropdown-content p {
+        font-size: 14px;
+        text-transform: inherit;
+        text-transform: initial;
+        font-weight: normal; }
+      header.site-header .navbar .dropdown-hover .dropdown-content h2 {
+        text-transform: initial;
+        font-size: 28px; }
+      header.site-header .navbar .dropdown-hover .dropdown-content .btn-outline-dark {
+        color: initial;
+        display: inline-table; }
+      header.site-header .navbar .dropdown-hover .dropdown-content .promotion {
+        background: #fff;
+        height: auto; }
+        header.site-header .navbar .dropdown-hover .dropdown-content .promotion img {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-size: cover;
+          width: 100%;
+          height: auto; }
+      header.site-header .navbar .dropdown-hover .dropdown-content ul li {
+        display: block;
+        padding: 5px 0; }
+        header.site-header .navbar .dropdown-hover .dropdown-content ul li a {
+          color: #2a2a2a;
+          font-weight: normal; }
 
 footer.site-footer {
   background-color: #1a2940;

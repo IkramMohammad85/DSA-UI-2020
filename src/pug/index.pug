@@ -11,12 +11,10 @@ head
     nav.fixed-top#main-nav
       .container
           .grid.align-center
-            .col-xs-3.col-md-3.col-grid.justify-center
-              img.flex-img(src='assets/img/logo.png', alt='')
-            .col-xs-9.col-md-9.col-grid.justify-center 
-              .grid
-                .col-grid.pb-0
-                  ul.list-inline.top-quick-link
+            .col-xs-12.col-md-12.col-grid.justify-center
+              img.logo(src='assets/img/logo.png', alt='')
+
+              ul.list-inline.top-quick-link
                     li
                       img(src='assets/img/glob-icon.png', alt='', width='18px')
                     li
@@ -25,8 +23,8 @@ head
                       img(src='assets/img/download-icon.png', alt='', width='18px')
                     li
                       img(src='assets/img/search-icon.png', alt='', width='18px')
-                .col-grid.pt-0
-                  ul.navbar
+
+              ul.navbar
                     li.dropdown
                       a.dropdown-toggle(href='#', data-toggle='dropdown', aria-expanded='false') About Us
                       ul.dropdown-menu(style='display:none')
@@ -48,100 +46,68 @@ head
                           a(href='https://www.dezshira.com/partnerships/global') Partnerships
                         li
                           a(href='https://www.dezshira.com/international-desk') International Desks
-                    li.dropdown
-                      a.dropdown-toggle(href='https://www.dezshira.com/services', data-toggle='dropdown') Services
-                      ul.dropdown-menu.mega-dropdown-menu(style='display:none')
-                        li.col-sm-6
-                          ul
-                            li
-                              a(href='https://www.dezshira.com/office/china')
-                                | China
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/silk-belt-road.html') Belt &amp; Road Initiative
-                            li
-                              a(href='https://www.dezshira.com/office/hong-kong.html') Hong Kong
-                            li
-                              a(href='https://www.dezshira.com/office/india')
-                                | India
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/indonesia.html') Indonesia
-                            li
-                              a(href='https://www.dezshira.com/office/malaysia.html') Malaysia
-                            li
-                              a(href='https://www.dezshira.com/office/philippines.html') Philippines
-                        li.col-sm-6
-                          ul
-                            li
-                              a(href='https://www.dezshira.com/office/russia') Russia
-                            li
-                              a(href='https://www.dezshira.com/office/singapore.html') Singapore
-                            li
-                              a(href='https://www.dezshira.com/office/thailand.html') Thailand
-                            li
-                              a(href='https://www.dezshira.com/office/vietnam')
-                                | Vietnam
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/italy')
-                                | Italian Liaison Office
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/germany')
-                                | German Liaison Office
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/united-states.html') United States Liaison Office
-                    li
-                      a(href='https://www.dezshira.com/office') Personnel
-                    li.dropdown
-                      a.dropdown-toggle(href='https://www.dezshira.com/office', data-toggle='dropdown') locations
-                      ul.dropdown-menu.mega-dropdown-menu(style='display:none')
-                        li.col-sm-6
-                          ul
-                            li
-                              a(href='https://www.dezshira.com/office/china')
-                                | China
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/silk-belt-road.html') Belt &amp; Road Initiative
-                            li
-                              a(href='https://www.dezshira.com/office/hong-kong.html') Hong Kong
-                            li
-                              a(href='https://www.dezshira.com/office/india')
-                                | India
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/indonesia.html') Indonesia
-                            li
-                              a(href='https://www.dezshira.com/office/malaysia.html') Malaysia
-                            li
-                              a(href='https://www.dezshira.com/office/philippines.html') Philippines
-                        li.col-sm-6
-                          ul
-                            li
-                              a(href='https://www.dezshira.com/office/russia') Russia
-                            li
-                              a(href='https://www.dezshira.com/office/singapore.html') Singapore
-                            li
-                              a(href='https://www.dezshira.com/office/thailand.html') Thailand
-                            li
-                              a(href='https://www.dezshira.com/office/vietnam')
-                                | Vietnam
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/italy')
-                                | Italian Liaison Office
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/germany')
-                                | German Liaison Office
-                                span.sprit.dropdown
-                            li
-                              a(href='https://www.dezshira.com/office/united-states.html') United States Liaison Office
-                    li
-                      a(href='https://www.dezshira.com/office') Events
+                    li.dropdown-hover
+                      a(href='https://www.dezshira.com/services') Services
+                      .dropdown-content
+                        .grid
+                          .col-xs-3.col-md-3.col-grid
+                            h2 Services we offer
+                            p
+                              | The services provided by Dezan Shira &amp; Associates incorporate more than two decades of on-the-ground experience in Asia&rsquo;s dynamic business environment. The firm&rsquo;s services help decision makers manage the legal, tax, and operational challenges facing multinational businesses in China, ASEAN, and India.
+                            a.btn.btn-outline-dark
+                              | Conatc Us 
+                          .col-xs-3.col-md-3.col-grid
+                            h3.mt-2.ml-2 Services
+                            ul.list-unstyled.ml-2
+                              li
+                                a(href='https://www.dezshira.com/office/china')
+                                  | China
+                                  span.sprit.dropdown
+                              li
+                                a(href='https://www.dezshira.com/office/silk-belt-road.html') Belt &amp; Road Initiative
+                              li
+                                a(href='https://www.dezshira.com/office/hong-kong.html') Hong Kong
+                              li
+                                a(href='https://www.dezshira.com/office/india')
+                                  | India
+                                  span.sprit.dropdown
+                              li
+                                a(href='https://www.dezshira.com/office/indonesia.html') Indonesia
+                              li
+                                a(href='https://www.dezshira.com/office/malaysia.html') Malaysia
+                              li
+                                a(href='https://www.dezshira.com/office/philippines.html') Philippines
+                          .col-xs-3.col-md-3.col-grid
+                            h3.mt-2  Industries
+                            ul.list-unstyled
+                                    li
+                                      a(href='https://www.dezshira.com/office/russia') Russia
+                                    li
+                                      a(href='https://www.dezshira.com/office/singapore.html') Singapore
+                                    li
+                                      a(href='https://www.dezshira.com/office/thailand.html') Thailand
+                                    li
+                                      a(href='https://www.dezshira.com/office/vietnam')
+                                        | Vietnam
+                                        span.sprit.dropdown
+                                    li
+                                      a(href='https://www.dezshira.com/office/italy')
+                                        | Italian Liaison Office
+                                        span.sprit.dropdown
+                                    li
+                                      a(href='https://www.dezshira.com/office/germany')
+                                        | German Liaison Office
+                                        span.sprit.dropdown
+                                    li
+                                      a(href='https://www.dezshira.com/office/united-states.html') United States Liaison Office
+                          .col-xs-3.col-md-3.col-grid
+                            .promotion
+                              <img class="flex-img" src="assets/img/RightContact-us_Background.jpg.png" alt="">
+
+
+
+
+
                     li.dropdown
                       a.dropdown-toggle(href='https://www.dezshira.com/library', data-toggle='dropdown') Resources
                       ul.dropdown-menu(style='display:none')
@@ -150,14 +116,7 @@ head
                         li
                           a(href='https://www.dezshira.com/investor-resource.html') Asia Briefing
                     li
-                      a(href='https://www.dezshira.com/office') Publications
-                    li.dropdown
-                      a.dropdown-toggle(href='https://www.dezshira.com/library', data-toggle='dropdown') Investor Resources
-                      ul.dropdown-menu(style='display:none')
-                        li
-                          a(href='https://www.dezshira.com/library') Asiapedia
-                        li
-                          a(href='https://www.dezshira.com/investor-resource.html') Asia Briefing
+                      a(href='https://www.dezshira.com/office') Events
                     li
                       a(href='https://www.dezshira.com/office') Contact Us
         
