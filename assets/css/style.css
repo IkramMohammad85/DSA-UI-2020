@@ -1375,6 +1375,48 @@ template {
   .hidden-xlg {
     display: none; } }
 
+/*
+Usage:
+    p {
+    @include font-size(14px)
+    }
+*/
+/*
+Usage:
+    @include keyframes(slide-down) {
+    0% { opacity: 1; }
+    90% { opacity: 0; }
+    }
+
+    .element {
+    width: 100px;
+    height: 100px;
+    background: black;
+    @include animation('slide-down 5s 3');
+    }
+*/
+/*
+Usage:
+    a {
+    color: gray;
+    @include transition(color .3s ease);
+    &:hover {
+        color: black;
+    }
+    }
+*/
+/*
+Usage:
+    .faded-text {
+    @include opacity(0.8);
+    }
+*/
+/*
+Usage:
+    .container-with-floated-children {
+    @extend %clearfix;
+    }
+*/
 .card {
   border: solid 1px #e8e8e8;
   background-color: #fff; }
@@ -1483,6 +1525,16 @@ template {
     border-bottom: solid 1px  #dadada; }
   .list.lists-events .dec-block {
     margin-left: 0px; } }
+
+.dropdown {
+  display: inline-block; }
+  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    padding: 20px;
+    z-index: 1; }
 
 ul.navbar {
   margin: 0;
@@ -1843,6 +1895,12 @@ ol, ul {
 .border-bottom {
   border-bottom: 1px solid #dee2e6; }
 
+.d-block {
+  display: block !important; }
+
+.d-none {
+  display: none !important; }
+
 .section-title {
   border-top: 3px solid #1a2940;
   border-bottom: 1px solid #e6e7e8;
@@ -2009,9 +2067,20 @@ header.site-header {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background: rgba(26, 41, 64, 0.5);
-    -webkit-transition: background-color .3s ease-in-out;
-    transition: background-color .3s ease-in-out; }
+    background: rgba(26, 41, 64, 0.8);
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    -webkit-transition: height 0.15s ease-out;
+    transition: height 0.15s ease-out;
+    height: 110px; }
+    header.site-header #main-nav.white {
+      background: #fff;
+      height: 90px;
+      -webkit-transition: height 0.25s ease-in;
+      transition: height 0.25s ease-in;
+      box-shadow: 0px 21px 51px -26px rgba(0, 0, 0, 0.45); }
+      header.site-header #main-nav.white a {
+        color: #1a2940; }
   header.site-header .fixed-top {
     position: fixed;
     top: 0;
@@ -2183,3 +2252,5 @@ footer.site-footer {
     top: 30px; }
   .home .big-banner .item img {
     width: auto; } }
+
+/*# sourceMappingURL=style.css.map */

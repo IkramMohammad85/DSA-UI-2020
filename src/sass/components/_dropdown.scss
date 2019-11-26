@@ -1,3 +1,20 @@
+.dropdown {
+    // position: relative;
+    display: inline-block;
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        // @include box-shadow(0px 8px 16px 0px rgba(0,0,0,0.2));
+        padding:20px;
+        z-index: 1;
+    }
+}
+
+
+//this is component file, ONLY CSS related to that component should be here... place below code to appropriate file please.
 ul.navbar{margin: 0; padding: 0; text-transform: uppercase; text-align:right;
     li{ display: inline; font-size: 12px; font-weight: bold;
         &:not(:last-child) {

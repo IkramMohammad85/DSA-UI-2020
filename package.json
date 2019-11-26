@@ -26,6 +26,7 @@
     "browser-sync": "^2.26.7",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "normalize.css": "^8.0.1",
     "reflex-grid": "^2.0.4"
   }

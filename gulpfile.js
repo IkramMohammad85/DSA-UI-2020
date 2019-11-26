@@ -4,8 +4,7 @@ var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
-
-
+var sourcemaps = require('gulp-sourcemaps');
 
 
 
@@ -20,6 +19,11 @@ var paths = {
 	css: {
 		src: './src/css/*.css',
 		dest: './assets/css'
+	},
+
+	js: {
+		src: './src/js/*.js',
+		dest: './assets/js'
 	},
 
 	html: {
@@ -42,11 +46,21 @@ var paths = {
 gulp.task('sass', function () {
 	return gulp
 		.src(paths.sass.src)
+		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
 			cascade: false
 		}))
+		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(paths.sass.dest))
+});
+
+
+// Compiles Sass into CSS
+gulp.task('js', function () {
+	return gulp
+		.src(paths.js.src)
+		.pipe(gulp.dest(paths.js.dest))
 });
 
 
@@ -86,6 +100,7 @@ gulp.task('reloadBrowser', function(done){
 // Watches file for changes and runs the task
 gulp.task('watch', function () {
 	gulp.watch(paths.sass.src, gulp.series('sass'));
+	gulp.watch(paths.js.src, gulp.series('js'));
 	gulp.watch(paths.img.src, gulp.series('minifyImg', 'reloadBrowser'));
     gulp.watch(paths.watch.pug, gulp.series('pug', 'reloadBrowser'));
     
