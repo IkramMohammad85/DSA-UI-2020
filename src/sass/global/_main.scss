@@ -35,7 +35,7 @@ header.site-header{ padding: 0px 0px;
     background: rgba(26, 41, 64, 0.8);
     @include transition(background-color 1s);
     @include transition(height 0.15s ease-out);
-    height:110px;
+    height:110px; display: flex; flex-direction: column;
 
     &.white{
       background:$white;
@@ -56,10 +56,12 @@ header.site-header{ padding: 0px 0px;
 }
 .navbar{
 .dropdown-hover{ position: inherit;
-.dropdown-content{ text-align: left; padding: 45px;
+.dropdown-content{ text-align: left; padding: 45px;left: 0;
+  width: 100%;
 p{ font-size: 14px; text-transform: inherit;
   text-transform: initial;
 font-weight: normal;
+
 
 }
 h2{text-transform: initial; font-size: 28px;}

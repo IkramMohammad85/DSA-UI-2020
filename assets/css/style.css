@@ -1570,7 +1570,8 @@ ul.navbar {
 ul.top-quick-link {
   margin: 0;
   padding: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 20px; }
 
 body {
   color: #000;
@@ -2103,7 +2104,12 @@ header.site-header {
     transition: background-color 1s;
     -webkit-transition: height 0.15s ease-out;
     transition: height 0.15s ease-out;
-    height: 110px; }
+    height: 110px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column; }
     header.site-header #main-nav.white {
       background: #fff;
       height: 90px;
@@ -2122,7 +2128,9 @@ header.site-header {
     position: inherit; }
     header.site-header .navbar .dropdown-hover .dropdown-content {
       text-align: left;
-      padding: 45px; }
+      padding: 45px;
+      left: 0;
+      width: 100%; }
       header.site-header .navbar .dropdown-hover .dropdown-content p {
         font-size: 14px;
         text-transform: inherit;
