@@ -2420,6 +2420,8 @@ ul.navbar {
           font-weight: normal; }
       ul.navbar li .dropdown-contents .text-white a {
         color: #fff; }
+      ul.navbar li .dropdown-contents .card.contact-us p {
+        color: white; }
     ul.navbar li:hover .dropdown-contents {
       visibility: visible;
       -webkit-transition-delay: 0s;

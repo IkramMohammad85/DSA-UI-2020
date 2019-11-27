@@ -125,7 +125,10 @@
               .text-white{
                 a{ color: $white;}
                 
-              }            
+              } 
+              .card.contact-us{
+                p{color: white;}
+              }           
       }
       &:hover {
         .dropdown-contents {
