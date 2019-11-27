@@ -1550,7 +1550,8 @@ Usage:
   .list.lists-with-logo li .list-logo {
     margin-right: 1em;
     -webkit-box-ordinal-group: 2;
-    order: 1; }
+    order: 1;
+    width: 150px; }
   .list.lists-with-logo li .list-content {
     -webkit-box-flex: 1;
     flex: 1; }
