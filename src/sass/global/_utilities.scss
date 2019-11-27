@@ -84,3 +84,9 @@
 .text-white { color: $white !important; }
 .transparent-bg{background:  rgba(0, 0, 0, 0.5);  width: 100%;}
 .center-block{ margin: 0 auto; display: block;}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }

@@ -1934,6 +1934,13 @@ ol, ul {
   margin: 0 auto;
   display: block; }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -2369,6 +2376,8 @@ ul.navbar {
         ul.navbar li .dropdown-contents ul li a {
           color: #2a2a2a;
           font-weight: normal; }
+      ul.navbar li .dropdown-contents .text-white a {
+        color: #fff; }
     ul.navbar li:hover .dropdown-contents {
       visibility: visible;
       -webkit-transition-delay: 0s;
