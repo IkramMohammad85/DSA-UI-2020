@@ -21,27 +21,25 @@ head
           li
             img(src='assets/img/search-icon.png' alt='' width='18px')
         ul.navbar
-          li.dropdown
+          li
             a(href='#') About Us
-            ul.dropdown-menu(style='display:none')
-              li
-                a(href='#') Overview
-              li
-                a(href='#') Personnel
-              li
-                a(href='#') News
-              li
-                a(href='#') Events
-              li
-                a(href='#') Careers
-              li
-                a(href='#') History
-              li
-                a(href='#') Media
-              li
-                a(href='#') Partnerships
-              li
-                a(href='#') International Desks
+            .dropdown-contents
+              .container
+                .grid
+                  .col-xs-3.col-md-3.col-grid
+                    h3 Who we are
+                    img.flex-img(src='assets/img/banner-asiapedia.jpg' alt='')
+                  .col-xs-3.col-md-3.col-grid
+                    h3 Company News
+                    img.flex-img(src='assets/img/banner-asiapedia.jpg' alt='')
+                                             
+                  .col-xs-3.col-md-3.col-grid
+                    h3 Personnel
+                    img.flex-img(src='assets/img/banner-asiapedia.jpg' alt='')
+                                      
+                  .col-xs-3.col-md-3.col-grid
+                    h3 Partnerships
+                    img.flex-img(src='assets/img/banner-asiapedia.jpg' alt='')
           li
             a(href='#') Services
             .dropdown-contents
@@ -101,16 +99,63 @@ head
                       img.flex-img(src='assets/img/RightContact-us_Background.jpg.png' alt='')
           li
             a(href='#') Resources
-            ul(style='display:none')
-              li
-                a(href='#') Asiapedia
-              li
-                a(href='#') Asia Briefing
+            .dropdown-contents
+              .container
+                .grid
+                  .col-xs-3.col-md-3.col-grid
+                    h2 Our Resources
+                    p
+                      | Dezan Shira & Associates is committed to developing business intelligence and understanding of investing across Asia. The firm publishes significant and well-received business titles about each of the markets and disciplines in which it operates through its publishing subsidiary, Asia Briefing Ltd.
+                    a.btn.btn-outline-dark Conatc Us 
+                  .col-xs-3.col-md-3.col-grid
+                    h3.ml-2 Asiapedia
+                    ul.list-unstyled.bullet-list.ml-2
+                      li
+                        a(href='#') Videos
+                      li
+                        a(href='#') Presentations
+                      li
+                        a(href='#')  Podcasts
+                      li
+                        a(href='#') Legal Documents
+                      li
+                        a(href='#') Industry Profiles
+                                             
+                  .col-xs-3.col-md-3.col-grid
+                    h3  Asia Briefing
+                    ul.list-unstyled.list-unstyled.bullet-list
+                      li
+                        a(href='#') About Asia Briefing
+                      li
+                        a(href='#') Magazines
+                      li
+                        a(href='#') Guides                                                                
+                  .col-xs-3.col-md-3.col-grid
+                    .promotion
+                      img.flex-img(src='assets/img/RightContact-us_Background.jpg.png' alt='')
           li
             a(href='#') Events
           li
             a(href='#') Contact Us
-
+            .dropdown-contents
+              .container
+                .grid
+                  .col-xs-3.col-md-3.col-grid
+                    h2 Contact Us
+                    p
+                      | We want to help you and your team succeed in our neighborhood – Asia. Please introduce yourself so that our team can connect with you.
+                    a.btn.btn-outline-dark Conatc Us 
+                  .col-xs-3.col-md-3.col-grid
+                    h3 Send enquiry
+                    img.flex-img(src='assets/img/banner-asiapedia.jpg' alt='')
+                                             
+                  .col-xs-3.col-md-3.col-grid
+                    h3 Locations
+                    img.flex-img(src='assets/img/banner-asiapedia.jpg' alt='')
+                                      
+                  .col-xs-3.col-md-3.col-grid
+                    h3 Careers
+                    img.flex-img(src='assets/img/banner-asiapedia.jpg' alt='')
         
 
       

@@ -2360,6 +2360,8 @@ ul.navbar {
       ul.navbar li .dropdown-contents .btn-outline-dark {
         color: initial;
         display: inline-table; }
+        ul.navbar li .dropdown-contents .btn-outline-dark:hover {
+          color: #fff; }
       ul.navbar li .dropdown-contents ul li {
         display: block;
         text-transform: none;
