@@ -25,29 +25,24 @@
     display: inline-block;
 
     .dropdown-content {
-        display: none;
         position: absolute;
         background-color: #f4f4f4;
         min-width: 160px;
         @include box-shadow(0px 8px 16px 0px rgba(0,0,0,0.2));
         padding: 12px 16px;
         z-index: 1;
+        visibility: hidden;
+        @include transition(color .3s ease);
+        top:109%;
 
       }
 
     &:hover .dropdown-content {
-        display: block;
+        visibility: visible;
+        transition-delay: 0s; /* react immediately on hover */
     }
   }
 
 
 //this is component file, ONLY CSS related to that component should be here... place below code to appropriate file please.
-ul.navbar{margin: 0; padding: 0; text-transform: uppercase; text-align:right;
-    li{ display: inline; font-size: 12px; font-weight: bold;
-        &:not(:last-child) {
-			margin-right: 1rem; }
-    a{color: $white;
-    }
-    }
-}
-ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 20px;}
+

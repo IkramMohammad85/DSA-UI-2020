@@ -35,15 +35,18 @@
 
 .list.lists-events{
     li{ display: block; background-color:#f1f1f1; border: solid 1px #dadada; overflow: hidden; padding: 0px; margin-bottom: 20px;}
-.date-block{ background-color: #eaeaea; color: #676767; font-size: 24px; float: left; width: 110px; border-right: solid 1px #dadada; text-align: center;
+.date-block{ background-color: #eaeaea; color: #676767; @include font-size(24px); float: left; width: 110px; border-right: solid 1px #dadada; text-align: center;
     padding: 24px; line-height: 24px;
-    span{ font-size: 14px; display: block;}
+    span{ @include font-size(14px); display: block;}
     }
     .dec-block{margin-left: 110px; padding: 10px 20px;
-    .title{ color: #676767; font-size: 14px;}
+    .title{ color: #676767; @include font-size(14px);}
     .date-time{ color: #676767;}
     }
 
+}
+.list-unstyled.bullet-list{
+	li{ background:url(../img/list-arrow.png) no-repeat left center; padding: 5px 20px;}
 }
 
 
