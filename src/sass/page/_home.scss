@@ -89,8 +89,8 @@
     }
   }
 
-  ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 20px;}
-  ul.navbar {float: right;
+  ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 20px; float: right;@extend %clearfix;}
+  ul.navbar {float: right;@extend %clearfix; clear: both;
     li {
       display: inline-block;@include font-size(13px); font-weight: bold; color: $white;
           text-transform: uppercase;

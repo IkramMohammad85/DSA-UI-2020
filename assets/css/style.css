@@ -1411,6 +1411,14 @@ Usage:
     @include opacity(0.8);
     }
 */
+ul.top-quick-link, ul.navbar {
+  *zoom: 1; }
+  ul.top-quick-link:before, ul.navbar:before, ul.top-quick-link:after, ul.navbar:after {
+    content: " ";
+    display: table; }
+  ul.top-quick-link:after, ul.navbar:after {
+    clear: both; }
+
 /*
 Usage:
     .container-with-floated-children {
@@ -2089,13 +2097,7 @@ header.site-header {
     -webkit-box-align: center;
     align-items: center; }
   header.site-header .top-quick-link {
-    display: -webkit-box;
-    display: flex;
-    position: relative;
-    -webkit-box-pack: end;
-    justify-content: end;
-    -webkit-box-align: center;
-    align-items: center; }
+    position: relative; }
   header.site-header #main-nav {
     padding-top: 0;
     padding-bottom: 0;
@@ -2323,10 +2325,12 @@ ul.top-quick-link {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  margin-top: 20px; }
+  margin-top: 20px;
+  float: right; }
 
 ul.navbar {
-  float: right; }
+  float: right;
+  clear: both; }
   ul.navbar li {
     display: inline-block;
     font-size: 13px;
