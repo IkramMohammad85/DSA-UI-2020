@@ -1466,6 +1466,14 @@ Usage:
 .card.asiapedia, .card.events {
   min-height: 568px; }
 
+.card.contact-us {
+  background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
+  width: auto;
+  height: 420px;
+  background-size: cover; }
+  .card.contact-us h3, .card.contact-us p, .card.contact-us a {
+    color: #fff; }
+
 .list {
   padding: 0;
   margin: 0;
@@ -1530,20 +1538,20 @@ Usage:
   .list.lists-events .dec-block .date-time {
     color: #676767; }
 
-.list.lists-partners li {
+.list.lists-with-logo li {
   padding-top: 20px;
   padding-bottom: 20px;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: start;
   align-items: flex-start; }
-  .list.lists-partners li:last-child {
+  .list.lists-with-logo li:last-child {
     border: none; }
-  .list.lists-partners li .media-object {
+  .list.lists-with-logo li .list-logo {
     margin-right: 1em;
     -webkit-box-ordinal-group: 2;
     order: 1; }
-  .list.lists-partners li .media-body {
+  .list.lists-with-logo li .list-content {
     -webkit-box-flex: 1;
     flex: 1; }
 
@@ -2229,26 +2237,6 @@ footer.site-footer {
         footer.site-footer .copyright .list-inline li:not(:last-child) {
           border-right: solid 1px #94a2ad;
           padding-right: .5rem; }
-
-.contact-us {
-  background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
-  width: auto;
-  height: 420px;
-  background-size: cover; }
-  .contact-us .banner-caption {
-    padding: 30px; }
-    .contact-us .banner-caption h3 {
-      padding: 30px 20px 0 0;
-      color: #fff;
-      font-size: 22px;
-      font-size: 1.375rem;
-      font-style: normal; }
-      .contact-us .banner-caption h3 a {
-        color: #fff; }
-    .contact-us .banner-caption p {
-      color: #fff; }
-      .contact-us .banner-caption p a {
-        color: #fff; }
 
 @media (max-width: 575px) {
   footer.site-footer {

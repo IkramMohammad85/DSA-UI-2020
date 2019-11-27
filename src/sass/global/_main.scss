@@ -124,30 +124,7 @@ footer.site-footer{ background-color:$deep-blue; color: $bluish-gray;
 }
 }
 
-.contact-us {
-	background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
-	width: auto;
-    height: 420px;
-    background-size: cover;
-	.banner-caption {
-		padding: 30px;
-		h3 {
-			padding: 30px 20px 0 0;
-			color: $white;
-			@include font-size(22px);
-            font-style: normal;
-      a {
-                color: $white;
-            }
-		}
-		p {
-            color: $white;
-            a {
-                color: $white;
-            }
-		}     
-	}
-}
+
 
 
 

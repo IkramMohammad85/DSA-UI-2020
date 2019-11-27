@@ -19,7 +19,6 @@
            .card-body{ text-align: center;
             p, h4{ color: #3d3d3d;}
             h4{ font-size: 15px;}
-           
           }
     }
 .card.events{
@@ -27,3 +26,12 @@
       } 
       .card.asiapedia,.card.events{ min-height: 568px;;   
     } 
+ .card.contact-us {
+        background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
+        width: auto;
+        height: 420px;
+        background-size: cover;
+    h3,p,a {
+       color: $white;
+        }
+    }
