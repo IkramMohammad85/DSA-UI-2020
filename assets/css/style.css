@@ -2104,6 +2104,15 @@ ol, ul {
   -moz-border-radius: 50%;
   border: 1px solid #ccc; }
 
+.zoom-on-hover:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */ }
+
 .table {
   width: 100%;
   border-collapse: collapse;
