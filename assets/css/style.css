@@ -2366,12 +2366,12 @@ footer.site-footer {
     z-index: 3;
     bottom: 0;
     left: 45%;
-    top: 130px; }
+    top: 90px; }
   .home .big-banner .item .item-image {
     position: relative;
     height: 100%;
     overflow: hidden;
-    padding-bottom: 50px; }
+    padding-bottom: 180px; }
     .home .big-banner .item .item-image::before {
       content: '';
       position: absolute;
