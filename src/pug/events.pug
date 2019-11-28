@@ -1,0 +1,146 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper.home
+    include components/_header
+    section.banner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/das-events-banner.jpg')    
+        .container
+            .grid.align-end
+                .col-sm-6.col-md-6.col-grid
+                    h1 Events       
+    section.pt-150.pb-7
+        .container
+            .grid
+                .col-sm-8.col-md-8.col-grid
+                    h4.section-title Events Filter
+                    form(action='https://www.dezshira.com/events/search', method='GET')
+                    .p-arround-3.border.mb-4
+                        .row
+                            .col-sm-4
+                                label Location
+                                select.form-control.radius-none(id='', name='location')
+                                    option(value='', selected='selected') Location
+                                    option(value='asia') Asia
+                                    option(value='china') China
+                                    option(value='india') India
+                                    option(value='vietnam') Vietnam
+                                    option(value='hong-kong') Hong Kong
+                                    option(value='singapore') Singapore
+                                    option(value='europe') Europe
+                                    option(value='north-america') North America
+                                    option(value='central-and-latin-america') Central &amp; Latin America
+                                    option(value='oceania') Oceania
+                                    option(value='middle-east') Middle East
+                                    option(value='africa') Africa
+                            .col-sm-3
+                                label Language
+                                select(id='', name='language')
+                                    option(value='', selected='selected') Language
+                                    option(value='english') English
+                                    option(value='german') German
+                                    option(value='italian') Italian
+                                    option(value='spanish') Spanish
+                                    option(value='french') French
+                                    option(value='chinese') chinese
+                            .col-sm-3
+
+                                label Status
+                                select(id='', name='status')
+                                    option(value='all') All
+                                    option(value='upcoming') Upcoming
+                                    option(value='past') Past
+                            .col-sm-2
+                                button.btn.btn-primary.mt-3(type='submit')
+                                    | Search
+                    ul.list.lists-events
+                        li
+                            .date-block
+                                | Nov
+                                span Oct, 2019
+                            .dec-block
+                                h4
+                                    a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
+                                        | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                                h5 Ines Liu, Assistant Manager
+                                .date-time
+                                    small
+                                        | Webinar | 27 November 2019 | 3PM-4PM China Time
+                            
+                        li
+                            .date-block
+                                | Nov
+                                span Oct, 2019
+                            .dec-block
+                                h4
+                                    a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
+                                        | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                                h5 Ines Liu, Assistant Manager
+                                .date-time
+                                    small
+                                        | Webinar | 27 November 2019 | 3PM-4PM China Time
+                            
+                        li
+                            .date-block
+                                | Nov
+                                span Oct, 2019
+                            .dec-block
+                                h4
+                                    a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
+                                        | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                                h5 Ines Liu, Assistant Manager
+                                .date-time
+                                    small
+                                        | Webinar | 27 November 2019 | 3PM-4PM China Time
+                            
+                        li
+                            .date-block
+                                | Nov
+                                span Oct, 2019
+                            .dec-block
+                                h4
+                                    a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
+                                        | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                                h5 Ines Liu, Assistant Manager
+                                .date-time
+                                    small
+                                        | Webinar | 27 November 2019 | 3PM-4PM China Time
+
+                                
+                            
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.contact-us.p-arround-3.mb-2
+ 
+                                h3.pt-3.pr-2 To learn more about how we can support you, contact one of our local experts.
+                                p
+                                    | We provide professional services tailored to Asia´s business environment across the full business cycle.
+                                a.btn.btn-outline-white.mb-2.mt-2(href='https://www.dezshira.com/personnel') Talk to experts 
+                                  
+                        
+                        // /flyersBrochures
+
+                        h4.section-title JOIN OUR COMMUNITY
+                        a.twitter-timeline(data-height='600', href='https://twitter.com/DezanShira?ref_src=twsrc%5Etfw') Tweets by DezanShira
+                        script(async='', src='https://platform.twitter.com/widgets.js', charset='utf-8')
+            // /col
+            // /row
+    section.light-blue-bg.pt-3.pb-3
+        .container
+            .grid
+                .col-sm-2.col-md-2.col-grid
+                    a(href='https://www.dezshira.com/register.html')
+                    img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Subscribe@2x.png')
+                .col-sm-8.col-md-8.col-grid
+                    h4.pt-2 NEVER MISS A CHANCE TO CONNECT
+                    h1
+                        a(href='https://www.dezshira.com/register.html')
+                        | Exchange ideas, build networks, make the right connections, with regular event updates specific to your region
+
+    include components/_footer

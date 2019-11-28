@@ -169,3 +169,9 @@ $border-default: 1px solid #ccc;
   @include border-default;
 }
 */
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}

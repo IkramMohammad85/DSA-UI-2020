@@ -1,19 +1,15 @@
-.dark-blue-bg{ background: $deep-blue;}
-.light-blue-bg{ background: $light-blue;
-	color: $white;
+.dark-blue-bg{ background: $deep-blue; @extend .cards-content-bg;}
+.light-blue-bg{ background: $light-blue;@extend .cards-content-bg;}
+.dark-light-blue-bg{ background: $cyan-blue;@extend .cards-content-bg;}
+.cards-content-bg{	color: $white;
 	a { color: $white;
 		&:hover {
 			text-decoration: none;
 		}
 	}
-}
-.dark-light-blue-bg{ background: $cyan-blue;
-	color: $white;
-	a { color: $white;
-		&:hover {
-			text-decoration: none;
-		}
-	}
+	h1,h2,h3,h4,h5{ color: $white;
+		a{ color: $white;}
+	}	
 }
 .grey-bg {background-color: #e9ecef;}
 .gray-light-bg{ background: #eee;}
@@ -95,10 +91,6 @@ a{ color: $white;}
 }
 .transparent-bg{background:  rgba(0, 0, 0, 0.5);  width: 100%;}
 .center-block{ margin: 0 auto; display: block;}
-.centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-  }
-  .shadow{  @include box-shadow(0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));}
+.centered {	position: absolute;	top: 50%;	left: 50%;	transform: translate(-50%, -50%);  }
+.shadow{  @include box-shadow(0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));}
+.img-circle{@include border-radius(50%);	border: $border-default;}

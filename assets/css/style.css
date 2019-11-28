@@ -1665,8 +1665,10 @@ $border-default: 1px solid #ccc;
     width: 100%;
     background-position: 50% 0;
     background-repeat: no-repeat; }
-  .banner h1 {
+  .banner h1, .banner h2, .banner h3, .banner h4, .banner h5 {
     color: #fff; }
+    .banner h1 a, .banner h2 a, .banner h3 a, .banner h4 a, .banner h5 a {
+      color: #fff; }
 
 @font-face {
   font-family: 'NimbusSanL';
@@ -1871,20 +1873,21 @@ ol, ul {
   background: #1a2940; }
 
 .light-blue-bg {
-  background: #316aa3;
-  color: #fff; }
-  .light-blue-bg a {
-    color: #fff; }
-    .light-blue-bg a:hover {
-      text-decoration: none; }
+  background: #316aa3; }
 
 .dark-light-blue-bg {
-  background: #344E70;
+  background: #344E70; }
+
+.cards-content-bg, .dark-blue-bg, .light-blue-bg, .dark-light-blue-bg {
   color: #fff; }
-  .dark-light-blue-bg a {
+  .cards-content-bg a, .dark-blue-bg a, .light-blue-bg a, .dark-light-blue-bg a {
     color: #fff; }
-    .dark-light-blue-bg a:hover {
+    .cards-content-bg a:hover, .dark-blue-bg a:hover, .light-blue-bg a:hover, .dark-light-blue-bg a:hover {
       text-decoration: none; }
+  .cards-content-bg h1, .dark-blue-bg h1, .light-blue-bg h1, .dark-light-blue-bg h1, .cards-content-bg h2, .dark-blue-bg h2, .light-blue-bg h2, .dark-light-blue-bg h2, .cards-content-bg h3, .dark-blue-bg h3, .light-blue-bg h3, .dark-light-blue-bg h3, .cards-content-bg h4, .dark-blue-bg h4, .light-blue-bg h4, .dark-light-blue-bg h4, .cards-content-bg h5, .dark-blue-bg h5, .light-blue-bg h5, .dark-light-blue-bg h5 {
+    color: #fff; }
+    .cards-content-bg h1 a, .dark-blue-bg h1 a, .light-blue-bg h1 a, .dark-light-blue-bg h1 a, .cards-content-bg h2 a, .dark-blue-bg h2 a, .light-blue-bg h2 a, .dark-light-blue-bg h2 a, .cards-content-bg h3 a, .dark-blue-bg h3 a, .light-blue-bg h3 a, .dark-light-blue-bg h3 a, .cards-content-bg h4 a, .dark-blue-bg h4 a, .light-blue-bg h4 a, .dark-light-blue-bg h4 a, .cards-content-bg h5 a, .dark-blue-bg h5 a, .light-blue-bg h5 a, .dark-light-blue-bg h5 a {
+      color: #fff; }
 
 .grey-bg {
   background-color: #e9ecef; }
@@ -2095,6 +2098,12 @@ ol, ul {
 .shadow {
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+.img-circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 1px solid #ccc; }
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -2199,6 +2208,23 @@ ol, ul {
   font-weight: bold;
   border: 1px solid #316aa3;
   padding: 0.5em 1em; }
+
+input[type=text], select {
+  width: 100%;
+  padding: 6px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+input[type=submit] {
+  width: 100%;
+  background-color: #dee2e6;
+  color: #fff;
+  padding: 6px 20px;
+  margin: 6px 0;
+  border: none;
+  cursor: pointer; }
 
 @media (max-width: 575px) {
   .input-add-on-field {
@@ -2471,16 +2497,20 @@ ul.top-quick-link {
 
 ul.navbar {
   float: right;
-  clear: both; }
+  clear: both;
+  margin-bottom: 0; }
   ul.navbar li {
     display: inline-block;
-    font-size: 13px;
-    font-size: 0.8125rem;
-    font-weight: bold;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 400;
     color: #fff;
-    text-transform: uppercase; }
-    ul.navbar li:not(:last-child) {
-      margin-right: 1rem; }
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 20px; }
+    ul.navbar li:last-child {
+      margin-right: 0rem;
+      padding-right: 0px; }
     ul.navbar li a {
       color: #fff; }
   ul.navbar .dropdown-content {
