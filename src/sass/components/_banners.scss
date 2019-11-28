@@ -4,7 +4,7 @@
 	height: 340px;
 	width: 100%;
 	z-index: 1;
-	top: 110px;
+	top: 110px; display: flex; align-items: center;
 	img {
 		position: absolute;
 		background-size: cover;
@@ -12,7 +12,5 @@
 		background-position: 50% 0;
 		background-repeat: no-repeat;
 	}
-	.banner-caption {
-        position: absolute; bottom: 20px; z-index: 2;
-	}
+	h1{ color: $white;}
 }
