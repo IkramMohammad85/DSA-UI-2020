@@ -2142,10 +2142,8 @@ header.site-header {
     padding-bottom: 0;
     border-bottom: none;
     background: rgba(26, 41, 64, 0.8);
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
-    -webkit-transition: height 0.15s ease-out;
-    transition: height 0.15s ease-out;
+    -webkit-transition: background-color 0.9s;
+    transition: background-color 0.9s;
     height: 110px;
     display: -webkit-box;
     display: flex;
@@ -2154,9 +2152,7 @@ header.site-header {
     flex-direction: column; }
     header.site-header #main-nav.white {
       background: #fff;
-      height: 90px;
-      -webkit-transition: height 0.25s ease-in;
-      transition: height 0.25s ease-in;
+      opacity: 0.98;
       box-shadow: 0px 21px 51px -26px rgba(0, 0, 0, 0.45); }
       header.site-header #main-nav.white a {
         color: #1a2940; }
@@ -2381,52 +2377,15 @@ ul.navbar {
       margin-right: 1rem; }
     ul.navbar li a {
       color: #fff; }
-    ul.navbar li .dropdown-contents {
-      padding-top: 45px;
-      padding-bottom: 45px;
-      text-transform: none;
-      visibility: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      -webkit-transition: 0.2s 1s;
-      transition: 0.2s 1s;
-      width: 100%;
-      background-color: #f4f4f4;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
-      ul.navbar li .dropdown-contents p {
-        font-size: 14px;
-        font-size: 0.875rem;
-        text-transform: initial;
-        font-weight: normal;
-        color: #000; }
-      ul.navbar li .dropdown-contents h2 {
-        text-transform: initial;
-        font-size: 28px;
-        font-size: 1.75rem;
-        line-height: 28px; }
-      ul.navbar li .dropdown-contents h3 {
-        font-size: 20px; }
-      ul.navbar li .dropdown-contents .btn-outline-dark {
-        color: initial;
-        display: inline-table; }
-        ul.navbar li .dropdown-contents .btn-outline-dark:hover {
-          color: #fff; }
-      ul.navbar li .dropdown-contents ul li {
-        display: block;
-        text-transform: none;
-        line-height: 20px; }
-        ul.navbar li .dropdown-contents ul li a {
-          color: #2a2a2a;
-          font-weight: normal; }
-      ul.navbar li .dropdown-contents .text-white a {
-        color: #fff; }
-      ul.navbar li .dropdown-contents .card.contact-us p {
-        color: white; }
-    ul.navbar li:hover .dropdown-contents {
-      visibility: visible;
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s; }
+  ul.navbar .dropdown-content {
+    left: 0;
+    top: 110px;
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #000;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+    ul.navbar .dropdown-content a {
+      color: #000; }
 
 @media (max-width: 575px) {
   .home .big-banner .item .heading-brand {

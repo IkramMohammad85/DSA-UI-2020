@@ -3,8 +3,8 @@ let scrollpos = window.scrollY
 const header = document.querySelector("nav#main-nav")
 if(header){
       const header_height = header.offsetHeight
-      const add_class_on_scroll = () => header.classList.add("white")
-      const remove_class_on_scroll = () => header.classList.remove("white")
+      const add_class_on_scroll = () => { header.classList.add("white");header.querySelector('img.logo').src = 'assets/img/logo-black.png'; }
+      const remove_class_on_scroll = () => { header.classList.remove("white");header.querySelector('img.logo').src = 'assets/img/logo.png'; }
       window.addEventListener('scroll', function() { 
       scrollpos = window.scrollY;
       if (scrollpos >= header_height) { add_class_on_scroll() }
