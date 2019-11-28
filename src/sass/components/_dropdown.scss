@@ -16,10 +16,35 @@
             border:1px solid $light-gray;
             padding:20px;
         }
+        h3{
+            a{ color: $white !important;}
+        }
+        .card.contact-us,.btn-outline-dark {
+        h3,p,a {
+            color: $white !important;
+             }
+            }
+        ul {
+            li {
+               display:block;
+               text-transform:none;
+               line-height: 20px;
+                a {
+               color: #2a2a2a;
+               font-weight: normal;
+            }
+        }
+        }
+        p {
+            @include font-size(14px);
+            text-transform: initial;
+            font-weight: normal;
+            }
+        .btn-outline-dark{ display: inline-table;
+            &:hover{ color: $white;}
+        }
     }
 }
-
-
 //CSS based dropdown
 .dropdown-hover {
     position: relative;

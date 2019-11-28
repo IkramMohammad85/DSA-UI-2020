@@ -59,13 +59,13 @@ header.site-header{ padding: 0px 0px; position: relative;
 .dropdown-hover{ position: inherit;
 .dropdown-content{ text-align: left; padding: 45px;left: 0;
   width: 100%;
-p{ font-size: 14px; text-transform: inherit;
-  text-transform: initial;
+p{ text-transform: inherit;
+  text-transform: inherit;
 font-weight: normal;
 
 
 }
-h2{text-transform: initial; font-size: 28px;}
+h1,h2{text-transform: inherit;}
 .btn-outline-dark{ color: initial; display: inline-table;}
 .promotion{ background: $white; height: auto;
   img{

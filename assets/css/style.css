@@ -1425,6 +1425,34 @@ Usage:
     @extend %clearfix;
     }
 */
+/*
+Usage:
+    .faded-text {
+    @include box-shadow(0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+    }
+*/
+/*
+Usage:
+.zz {
+  @include border('top', 1px, solid, #ccc);
+}
+
+// 2. Example using variable to store border styles
+$border-default: 1px solid #ccc;
+
+.xx {
+  border: $border-default;
+}
+
+// 3. Example using mixin to store border styles
+@mixin border-default {
+  border: 1px solid #ccc;
+}
+
+.yy {
+  @include border-default;
+}
+*/
 .card {
   border: solid 1px #e8e8e8;
   background-color: #fff; }
@@ -1579,6 +1607,26 @@ Usage:
     .dropdown .dropdown-content.outline {
       border: 1px solid #939598;
       padding: 20px; }
+    .dropdown .dropdown-content h3 a {
+      color: #fff !important; }
+    .dropdown .dropdown-content .card.contact-us h3, .dropdown .dropdown-content .card.contact-us p, .dropdown .dropdown-content .card.contact-us a, .dropdown .dropdown-content .btn-outline-dark h3, .dropdown .dropdown-content .btn-outline-dark p, .dropdown .dropdown-content .btn-outline-dark a {
+      color: #fff !important; }
+    .dropdown .dropdown-content ul li {
+      display: block;
+      text-transform: none;
+      line-height: 20px; }
+      .dropdown .dropdown-content ul li a {
+        color: #2a2a2a;
+        font-weight: normal; }
+    .dropdown .dropdown-content p {
+      font-size: 14px;
+      font-size: 0.875rem;
+      text-transform: initial;
+      font-weight: normal; }
+    .dropdown .dropdown-content .btn-outline-dark {
+      display: inline-table; }
+      .dropdown .dropdown-content .btn-outline-dark:hover {
+        color: #fff; }
 
 .dropdown-hover {
   position: relative;
@@ -1600,23 +1648,77 @@ Usage:
     transition-delay: 0s;
     /* react immediately on hover */ }
 
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 340px;
+  width: 100%;
+  z-index: 1;
+  top: 110px; }
+  .banner img {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat; }
+  .banner .banner-caption {
+    position: absolute;
+    bottom: 20px;
+    z-index: 2; }
+
+@font-face {
+  font-family: 'NimbusSanL';
+  src: url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Reg.otf") format("opentype"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype"), url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NimbusSanL';
+  src: url("../fonts/NimbusSanL-Bol.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Bol.otf") format("opentype"), url("../fonts/NimbusSanL-Bol.woff") format("woff"), url("../fonts/NimbusSanL-Bol.ttf") format("truetype"), url("../fonts/NimbusSanL-Bol.svg#NimbusSanL-Bol") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.otf") format("opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Semibold.otf") format("opentype"), url("../fonts/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.otf") format("opentype"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Light.otf") format("opentype"), url("../fonts/MyriadPro-Light.woff") format("woff"), url("../fonts/MyriadPro-Light.ttf") format("truetype"), url("../fonts/MyriadPro-Light.svg#MyriadPro-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
 body {
   color: #000;
   font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
   line-height: 1.6; }
 
 h1 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: "NimbusSanL", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 h2 {
-  font-weight: 700; }
+  font-weight: "NimbusSanL", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "NimbusSanL", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   line-height: 1.2;
   color: #000; }
@@ -1635,7 +1737,7 @@ p {
   font-size: 1rem;
   font-family: inherit;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 ol, ul {
   margin-top: 0;
@@ -1643,7 +1745,7 @@ ol, ul {
 
 .btn {
   border-radius: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   font-size: 14px;
   border: 1px solid transparent;
@@ -1988,6 +2090,9 @@ ol, ul {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+.shadow {
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -2170,13 +2275,11 @@ header.site-header {
       left: 0;
       width: 100%; }
       header.site-header .navbar .dropdown-hover .dropdown-content p {
-        font-size: 14px;
         text-transform: inherit;
-        text-transform: initial;
+        text-transform: inherit;
         font-weight: normal; }
-      header.site-header .navbar .dropdown-hover .dropdown-content h2 {
-        text-transform: initial;
-        font-size: 28px; }
+      header.site-header .navbar .dropdown-hover .dropdown-content h1, header.site-header .navbar .dropdown-hover .dropdown-content h2 {
+        text-transform: inherit; }
       header.site-header .navbar .dropdown-hover .dropdown-content .btn-outline-dark {
         color: initial;
         display: inline-table; }
@@ -2266,8 +2369,9 @@ footer.site-footer {
     top: 130px; }
   .home .big-banner .item .item-image {
     position: relative;
-    min-height: 950px;
-    overflow: hidden; }
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 50px; }
     .home .big-banner .item .item-image::before {
       content: '';
       position: absolute;
@@ -2276,8 +2380,8 @@ footer.site-footer {
       right: 0;
       bottom: 0;
       z-index: 2;
-      background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #1a2940), to(rgba(26, 41, 64, 0.0677405)));
-      background: linear-gradient(0deg, #1a2940 30%, rgba(26, 41, 64, 0.0677405) 100%); }
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #1a2940), to(rgba(26, 41, 64, 0.0677405)));
+      background: linear-gradient(0deg, #1a2940 50%, rgba(26, 41, 64, 0.0677405) 100%); }
   .home .big-banner .item img {
     position: absolute;
     z-index: 1;

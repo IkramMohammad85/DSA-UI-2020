@@ -131,3 +131,41 @@ Usage:
     -webkit-box-shadow: $args;
     box-shadow:         $args;
   }
+
+/*
+Usage:
+    .faded-text {
+    @include box-shadow(0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+    }
+*/
+
+//border
+@mixin border($direction, $width, $style, $color) {
+  #{$direction}: $width $style $color;
+}
+
+@mixin border-default {
+  border: 1px solid #ccc;
+}
+/*
+Usage:
+.zz {
+  @include border('top', 1px, solid, #ccc);
+}
+
+// 2. Example using variable to store border styles
+$border-default: 1px solid #ccc;
+
+.xx {
+  border: $border-default;
+}
+
+// 3. Example using mixin to store border styles
+@mixin border-default {
+  border: 1px solid #ccc;
+}
+
+.yy {
+  @include border-default;
+}
+*/
