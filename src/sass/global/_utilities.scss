@@ -94,4 +94,3 @@ a{ color: $white;}
 .centered {	position: absolute;	top: 50%;	left: 50%;	transform: translate(-50%, -50%);  }
 .shadow{  @include box-shadow(0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));}
 .img-circle{@include border-radius(50%);	border: $border-default;}
-.zoom-on-hover:hover{transform: scale(1.5); transition: transform .2s; /* Animation */}
