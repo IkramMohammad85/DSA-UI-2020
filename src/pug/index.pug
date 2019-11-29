@@ -5,33 +5,21 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
     include components/_header       
-    section.big-banner
-      .item
-        .item-image
-          img(src='assets/img/train.jpg', alt='')
-          .container
-            h1.heading-brand.text-white Keeping Up To Speed With Eurasian Connectivity
-            .grid.news.align-end
-              .col-xs-6.col-md-4.col-grid.justify-center
-                  img.flex-img(src='https://www.china-briefing.com/news/wp-content/uploads/2019/10/US-Tariff-Exclusion-for-Chinese-Imports-300x169.jpg', alt='')
-                  h3.text-center
-                    a(target='_top', href='#') The latest US tariff exclusions on Chinese Imports    
-                  a.btn.btn-link(target='_top', href='#') Read more
-              .col-xs-6.col-md-4.col-grid.justify-center
-                  img.flex-img(src='https://www.aseanbriefing.com/news/wp-content/uploads/2019/09/Indonesias-New-Capital-300x169.jpg', alt='')
-                  h3
-                    a(target='_top', href='#') Indonesia Is Relocating Its Capital City. What Does This Mean For Investors?  
-                  a.btn.btn-link(target='_top', href='#') Read more
-              .col-xs-6.col-md-4.col-grid.justify-center
-                  img.flex-img(src='https://www.vietnam-briefing.com/news/wp-content/uploads/2019/05/Vietnam-Social-Insurance-300x169.jpg', alt='')
-                  h3
-                    a(target='_top', href='#') Manufacturing Competitiveness - What Are The Social Insurance Rates In Vietnam?  
-                  a.btn.btn-link(target='_top', href='#') Read more
-          a.btn.btn-outline-white(href='#') View more news
+    section.big-banner.glide
+      .glide__track(data-glide-el='track')
+        .glide__slides
+          include components/hp-slides/connectivity
+          include components/hp-slides/hr
+          include components/hp-slides/flying-high
+          //include components/hp-slides/speed
+          //include components/hp-slides/rocket
+              
+
     section.about-us.pt-7.pb-7
         .container
           .grid
@@ -144,3 +132,7 @@ body
                             | Webinar | 27 November 2019 | 3PM-4PM China Time
                             br
     include components/_footer
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

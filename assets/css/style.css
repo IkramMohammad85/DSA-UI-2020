@@ -2379,7 +2379,7 @@ footer.site-footer {
   .home .big-banner .item .heading-brand {
     position: relative;
     z-index: 3;
-    top: 400px; }
+    top: 45vh; }
     .home .big-banner .item .heading-brand::after {
       content: url(../img/dsa-brand-line.jpg);
       display: block; }
@@ -2399,7 +2399,7 @@ footer.site-footer {
     top: 90px; }
   .home .big-banner .item .item-image {
     position: relative;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
     padding-bottom: 180px; }
     .home .big-banner .item .item-image::before {
@@ -2410,8 +2410,8 @@ footer.site-footer {
       right: 0;
       bottom: 0;
       z-index: 2;
-      background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #1a2940), to(rgba(26, 41, 64, 0.0677405)));
-      background: linear-gradient(0deg, #1a2940 50%, rgba(26, 41, 64, 0.0677405) 100%); }
+      background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #1a2940), color-stop(65%, rgba(26, 41, 64, 0.0677405)));
+      background: linear-gradient(0deg, #1a2940 50%, rgba(26, 41, 64, 0.0677405) 65%); }
   .home .big-banner .item img {
     position: absolute;
     z-index: 1;
@@ -2424,11 +2424,11 @@ footer.site-footer {
     padding: 0 0; }
   .home .big-banner .item .news {
     background-color: #1a2940;
-    min-height: 650px; }
+    min-height: 70vh; }
     .home .big-banner .item .news img {
       position: absolute;
       z-index: 2;
-      opacity: 0.9;
+      opacity: 0.4;
       background-size: inherit;
       background-position: inherit;
       background-attachment: inherit;

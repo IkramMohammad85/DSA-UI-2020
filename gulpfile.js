@@ -22,12 +22,12 @@ var paths = {
 	},
 
 	js: {
-		src: './src/js/*.js',
+		src: ['./src/js/*.js','node_modules/@glidejs/glide/dist/glide.min.js'],
 		dest: './assets/js'
 	},
 
 	html: {
-		src: ['src/pug/**/*.pug','src/pug/**/components/*','src/pug/**/templates/*'],
+		src: ['src/pug/*.pug'],
 		dest: './'
 	},
 

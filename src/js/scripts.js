@@ -9,9 +9,19 @@ if(header){
       scrollpos = window.scrollY;
       if (scrollpos >= header_height) { add_class_on_scroll() }
       else { remove_class_on_scroll() }
-      console.log(scrollpos)
       })
 }
+
+//Feature: Homepage Big Banner Slider
+new Glide('section.big-banner.glide', {
+      type:'carousel',
+      autoplay: 10000,
+      animationDuration:1000,
+      gap:0,
+      startAt: 0,
+      perView: 1,
+      animationTimingFunc: 'ease',
+    }).mount();
 
 //Component: dropdown
 document.querySelectorAll('.dropdown').forEach(function(dropdown) {
@@ -38,7 +48,6 @@ document.querySelectorAll('.dropdown').forEach(function(dropdown) {
             });
 
             function clearDropdownOpens(){
-                  console.log('cleared');
                         document.querySelectorAll('.dropdown.open').forEach(function(dropdown) {
                               if (dropdown.querySelector('.dropdown-content').classList.contains('d-block')) {
                                     dropdown.classList.remove('open');
