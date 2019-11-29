@@ -8,6 +8,7 @@
     .card-body{ min-height: 200px;background: $white;}
     .card-footer{ background: $light-gray;min-height: 44px;}
     .card-body, .card-footer, .card-header{padding: 30px;}
+    .btn-link{ padding-left: 0; padding-right: 0;}
 }
 .card-header-img{ 
     background-repeat: no-repeat;
@@ -39,4 +40,7 @@
         .card-body{ padding: 20px;
             p{ margin-bottom: 0;}
         }
+    }
+    .card.services{ height: 450px; 
+       
     }

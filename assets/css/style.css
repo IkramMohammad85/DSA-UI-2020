@@ -1481,6 +1481,9 @@ $border-default: 1px solid #ccc;
     min-height: 44px; }
   .card .card-body, .card .card-footer, .card .card-header {
     padding: 30px; }
+  .card .btn-link {
+    padding-left: 0;
+    padding-right: 0; }
 
 .card-header-img {
   background-repeat: no-repeat;
@@ -1517,6 +1520,9 @@ $border-default: 1px solid #ccc;
     padding: 20px; }
     .card.international-desks .card-body p {
       margin-bottom: 0; }
+
+.card.services {
+  height: 450px; }
 
 .list {
   padding: 0;
@@ -1692,6 +1698,8 @@ $border-default: 1px solid #ccc;
     color: #fff; }
     .banner h1 a, .banner h2 a, .banner h3 a, .banner h4 a, .banner h5 a {
       color: #fff; }
+  .banner .btn {
+    display: table; }
 
 @font-face {
   font-family: 'NimbusSanL';
@@ -1919,7 +1927,7 @@ ol, ul {
   background: #eee; }
 
 .dark-gray-bg {
-  background: #6c757d; }
+  background: #94a2ad; }
 
 .pt-0 {
   padding-top: 0; }
@@ -2091,6 +2099,19 @@ ol, ul {
 
 .d-none {
   display: none !important; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.block-center {
+  margin-left: auto;
+  margin-right: auto; }
 
 .section-title {
   border-top: 3px solid #1a2940;
