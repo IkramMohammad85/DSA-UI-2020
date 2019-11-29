@@ -2149,7 +2149,7 @@ ol, ul {
   transform: scale(1.2); }
 
 .down-arrow {
-  border: solid #fff;
+  border: solid #9599a0;
   position: relative;
   margin-left: 5px;
   top: -3px;
@@ -2568,7 +2568,8 @@ ul.navbar {
     padding: 20px; }
     ul.navbar li:last-child {
       margin-right: 0rem;
-      padding-right: 0px; }
+      padding-right: 0px;
+      vertical-align: top; }
     ul.navbar li a {
       color: #fff; }
   ul.navbar .dropdown-content {
