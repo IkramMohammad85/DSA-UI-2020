@@ -11,6 +11,8 @@
 		a{ color: $white;}
 	}	
 }
+.blue{ background-color: $cyan-blue; @extend .cards-content-bg;}
+.grey{ background-color: $gray-500; @extend .cards-content-bg;}
 .grey-bg {background-color: #e9ecef;}
 .gray-light-bg{ background: #eee;}
 .pt-0{ padding-top: 0;}

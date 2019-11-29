@@ -1557,8 +1557,6 @@ $border-default: 1px solid #ccc;
   margin-bottom: 20px; }
 
 .list.lists-events .date-block {
-  background-color: #eaeaea;
-  color: #676767;
   font-size: 24px;
   font-size: 1.5rem;
   float: left;
@@ -1903,16 +1901,22 @@ ol, ul {
 .dark-light-blue-bg {
   background: #344E70; }
 
-.cards-content-bg, .dark-blue-bg, .light-blue-bg, .dark-light-blue-bg {
+.cards-content-bg, .dark-blue-bg, .light-blue-bg, .dark-light-blue-bg, .blue, .grey {
   color: #fff; }
-  .cards-content-bg a, .dark-blue-bg a, .light-blue-bg a, .dark-light-blue-bg a {
+  .cards-content-bg a, .dark-blue-bg a, .light-blue-bg a, .dark-light-blue-bg a, .blue a, .grey a {
     color: #fff; }
-    .cards-content-bg a:hover, .dark-blue-bg a:hover, .light-blue-bg a:hover, .dark-light-blue-bg a:hover {
+    .cards-content-bg a:hover, .dark-blue-bg a:hover, .light-blue-bg a:hover, .dark-light-blue-bg a:hover, .blue a:hover, .grey a:hover {
       text-decoration: none; }
-  .cards-content-bg h1, .dark-blue-bg h1, .light-blue-bg h1, .dark-light-blue-bg h1, .cards-content-bg h2, .dark-blue-bg h2, .light-blue-bg h2, .dark-light-blue-bg h2, .cards-content-bg h3, .dark-blue-bg h3, .light-blue-bg h3, .dark-light-blue-bg h3, .cards-content-bg h4, .dark-blue-bg h4, .light-blue-bg h4, .dark-light-blue-bg h4, .cards-content-bg h5, .dark-blue-bg h5, .light-blue-bg h5, .dark-light-blue-bg h5 {
+  .cards-content-bg h1, .dark-blue-bg h1, .light-blue-bg h1, .dark-light-blue-bg h1, .blue h1, .grey h1, .cards-content-bg h2, .dark-blue-bg h2, .light-blue-bg h2, .dark-light-blue-bg h2, .blue h2, .grey h2, .cards-content-bg h3, .dark-blue-bg h3, .light-blue-bg h3, .dark-light-blue-bg h3, .blue h3, .grey h3, .cards-content-bg h4, .dark-blue-bg h4, .light-blue-bg h4, .dark-light-blue-bg h4, .blue h4, .grey h4, .cards-content-bg h5, .dark-blue-bg h5, .light-blue-bg h5, .dark-light-blue-bg h5, .blue h5, .grey h5 {
     color: #fff; }
-    .cards-content-bg h1 a, .dark-blue-bg h1 a, .light-blue-bg h1 a, .dark-light-blue-bg h1 a, .cards-content-bg h2 a, .dark-blue-bg h2 a, .light-blue-bg h2 a, .dark-light-blue-bg h2 a, .cards-content-bg h3 a, .dark-blue-bg h3 a, .light-blue-bg h3 a, .dark-light-blue-bg h3 a, .cards-content-bg h4 a, .dark-blue-bg h4 a, .light-blue-bg h4 a, .dark-light-blue-bg h4 a, .cards-content-bg h5 a, .dark-blue-bg h5 a, .light-blue-bg h5 a, .dark-light-blue-bg h5 a {
+    .cards-content-bg h1 a, .dark-blue-bg h1 a, .light-blue-bg h1 a, .dark-light-blue-bg h1 a, .blue h1 a, .grey h1 a, .cards-content-bg h2 a, .dark-blue-bg h2 a, .light-blue-bg h2 a, .dark-light-blue-bg h2 a, .blue h2 a, .grey h2 a, .cards-content-bg h3 a, .dark-blue-bg h3 a, .light-blue-bg h3 a, .dark-light-blue-bg h3 a, .blue h3 a, .grey h3 a, .cards-content-bg h4 a, .dark-blue-bg h4 a, .light-blue-bg h4 a, .dark-light-blue-bg h4 a, .blue h4 a, .grey h4 a, .cards-content-bg h5 a, .dark-blue-bg h5 a, .light-blue-bg h5 a, .dark-light-blue-bg h5 a, .blue h5 a, .grey h5 a {
       color: #fff; }
+
+.blue {
+  background-color: #344E70; }
+
+.grey {
+  background-color: #adb5bd; }
 
 .grey-bg {
   background-color: #e9ecef; }
