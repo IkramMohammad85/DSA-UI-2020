@@ -1515,14 +1515,14 @@ $border-default: 1px solid #ccc;
     color: #fff; }
 
 .card.international-desks {
-  height: 600px; }
+  min-height: 600px; }
   .card.international-desks .card-body {
     padding: 20px; }
     .card.international-desks .card-body p {
       margin-bottom: 0; }
 
 .card.services {
-  height: 500px; }
+  min-height: 470px; }
 
 .list {
   padding: 0;
