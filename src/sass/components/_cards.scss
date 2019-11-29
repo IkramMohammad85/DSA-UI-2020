@@ -11,7 +11,7 @@
 }
 .card-header-img{ 
     background-repeat: no-repeat;
-    background-size: cover;}   
+    background-size: cover; overflow: hidden;}   
 .card.asiapedia{
         .card-header-img{
             background: url(../img/banner-asiapedia.jpg);
@@ -33,5 +33,10 @@
         background-size: cover;
     h3,p,a {
        color: $white;
+        }
+    }
+    .card.international-desks{
+        .card-body{
+            p{ margin-bottom: 0;}
         }
     }
