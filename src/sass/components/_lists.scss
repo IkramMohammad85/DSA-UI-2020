@@ -66,6 +66,15 @@
 	li{ background:url(../img/list-arrow.png) no-repeat left center; padding: 5px 20px;}
 }
 
+.list-unstyled.sidebar-nav{
+	li{border-bottom: solid 1px $gray-200;
+		a{padding: 10px 19px; display: block;
+		&:hover{
+			color: $blue;
+			background-color: $gray-100;
+		}}
+	}
+}
 
 @media (max-width: 575px) {
 	.list.lists-events{
