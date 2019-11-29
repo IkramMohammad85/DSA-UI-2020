@@ -1523,6 +1523,17 @@ $border-default: 1px solid #ccc;
 
 .card.services {
   min-height: 470px; }
+  .card.services .card-header-img {
+    position: relative; }
+    .card.services .card-header-img h2 {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: #fff; }
+      .card.services .card-header-img h2 a {
+        color: #fff; }
 
 .list {
   padding: 0;
