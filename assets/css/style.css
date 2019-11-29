@@ -1407,13 +1407,11 @@ Usage:
 */
 /*
 Usage:
-    a {
-    color: gray;
-    @include transition(color .3s ease);
-    &:hover {
-        color: black;
-    }
-    }
+Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
 */
 /*
 Usage:
