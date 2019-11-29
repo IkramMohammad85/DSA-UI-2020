@@ -1511,8 +1511,12 @@ $border-default: 1px solid #ccc;
   .card.contact-us h3, .card.contact-us p, .card.contact-us a {
     color: #fff; }
 
-.card.international-desks .card-body p {
-  margin-bottom: 0; }
+.card.international-desks {
+  height: 600px; }
+  .card.international-desks .card-body {
+    padding: 20px; }
+    .card.international-desks .card-body p {
+      margin-bottom: 0; }
 
 .list {
   padding: 0;
@@ -2124,11 +2128,12 @@ ol, ul {
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  width: 100%; }
 
 .zoom-on-hover:hover img {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5); }
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
 
 .table {
   width: 100%;
