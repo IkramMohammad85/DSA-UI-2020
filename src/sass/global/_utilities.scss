@@ -99,3 +99,10 @@ a{ color: $white;}
 .img-circle{@include border-radius(50%);	border: $border-default;}
 .zoom-on-hover img {@include transition(transform .5s ease); width: 100%; }
 .zoom-on-hover:hover img { @include transform(scale(1.2)); }
+.down-arrow{border: solid $white; position: relative;margin-left: 5px;top: -3px;
+	border-width: 0 1px 1px 0;
+	display: inline-block;
+	padding: 4px;
+	transform: rotate(45deg);
+	@include transform(rotate(#{45deg}deg));
+}

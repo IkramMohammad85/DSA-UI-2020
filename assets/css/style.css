@@ -2148,6 +2148,18 @@ ol, ul {
   -webkit-transform: scale(1.2);
   transform: scale(1.2); }
 
+.down-arrow {
+  border: solid #fff;
+  position: relative;
+  margin-left: 5px;
+  top: -3px;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45degdeg);
+  transform: rotate(45degdeg); }
+
 .table {
   width: 100%;
   border-collapse: collapse;
