@@ -1495,7 +1495,6 @@ $border-default: 1px solid #ccc;
     min-height: 200px;
     background: #fff; }
   .card-footer {
-    background: #939598;
     min-height: 44px; }
   .card.asiapedia, .card.events {
     min-height: 568px; }
@@ -1521,6 +1520,15 @@ $border-default: 1px solid #ccc;
     position: relative; }
   .card.resources {
     border: none; }
+  .card.office {
+    border-top: solid 4px #0D2338; }
+    .card.office .card-body {
+      padding: 20px; }
+      .card.office .card-body .list-logo {
+        width: 100px; }
+    .card.office .card-footer {
+      padding: 0;
+      border-top: solid 1px #e8e8e8; }
 
 .list {
   padding: 0;
@@ -2119,9 +2127,7 @@ ol, ul {
   text-transform: uppercase;
   padding: 12px 18px;
   color: #58595B;
-  font-weight: 400;
-  margin-bottom: 0px;
-  margin-bottom: 0px; }
+  font-weight: 400; }
 
 .text-white {
   color: #fff !important; }

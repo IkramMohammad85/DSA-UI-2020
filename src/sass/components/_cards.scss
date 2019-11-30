@@ -56,7 +56,6 @@
     }
 
     &-footer {
-        background: $light-gray;
         min-height: 44px;
     }
 
@@ -110,6 +109,16 @@
     // Resources   
     &.resources{ 
         border: none;
+    
+    }
+     // office   
+     &.office{ 
+         border-top: solid 4px $bluedark; 
+         .card-body {
+            padding: 20px;
+            .list-logo{ width: 100px;}
+        }
+        .card-footer{padding: 0; border-top: solid 1px #e8e8e8;}
     
     }
 }
