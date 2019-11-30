@@ -1529,6 +1529,20 @@ $border-default: 1px solid #ccc;
     .card.office .card-footer {
       padding: 0;
       border-top: solid 1px #e8e8e8; }
+  .card.news {
+    height: 482px; }
+    .card.news .card-header-img {
+      height: 482px; }
+      .card.news .card-header-img .card-text-overlap {
+        bottom: 10%;
+        top: auto; }
+  .card.news-right {
+    height: 230px; }
+    .card.news-right .card-header-img {
+      height: 230px; }
+      .card.news-right .card-header-img .card-text-overlap {
+        bottom: 10%;
+        top: auto; }
 
 .list {
   padding: 0;

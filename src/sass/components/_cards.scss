@@ -116,9 +116,34 @@
          border-top: solid 4px $bluedark; 
          .card-body {
             padding: 20px;
-            .list-logo{ width: 100px;}
+            .list-logo{
+                 width: 100px;}
         }
-        .card-footer{padding: 0; border-top: solid 1px #e8e8e8;}
+        .card-footer{
+            padding: 0; border-top: solid 1px #e8e8e8;}
     
     }
+
+     // news   
+         &.news{ 
+            height: 482px;
+            .card-header-img{
+                height: 482px;
+                .card-text-overlap{ 
+                    bottom: 10%; top: auto;
+                }
+            }   
+       
+       }
+     // news   
+     &.news-right{ 
+        height: 230px;
+        .card-header-img{
+            height: 230px;
+            .card-text-overlap{ 
+                bottom: 10%; top: auto;
+            }
+        }   
+   
+   }
 }
