@@ -41,13 +41,12 @@
             p{ margin-bottom: 0;}
         }
     }
-    .card.services{ min-height: 470px; 
+    .card.services{ min-height: 430px; 
         .card-header-img{ position: relative;
             h2{position: absolute;
                 top: 50%;
                 left: 0;
                 width: 100%;
-                text-align: center;
                 color:$white;
             a {color: $white;}
         }
