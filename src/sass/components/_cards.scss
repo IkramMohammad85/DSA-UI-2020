@@ -36,12 +36,11 @@
        color: $white;
         }
     }
-    .card.international-desks{ min-height: 600px;
+    .card.international-desks{ min-height: 615px;
         .card-body{ padding: 20px;
-            p{ margin-bottom: 0;}
         }
     }
-    .card.services{ min-height: 430px; 
+    .card.services, .card.international-desks{
         .card-header-img{ position: relative;
             h2{position: absolute;
                 top: 50%;
@@ -52,3 +51,4 @@
         }
         }
     }
+    .card.services{min-height: 430px;}

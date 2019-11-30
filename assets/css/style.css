@@ -1515,24 +1515,23 @@ $border-default: 1px solid #ccc;
     color: #fff; }
 
 .card.international-desks {
-  min-height: 600px; }
+  min-height: 615px; }
   .card.international-desks .card-body {
     padding: 20px; }
-    .card.international-desks .card-body p {
-      margin-bottom: 0; }
+
+.card.services .card-header-img, .card.international-desks .card-header-img {
+  position: relative; }
+  .card.services .card-header-img h2, .card.international-desks .card-header-img h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #fff; }
+    .card.services .card-header-img h2 a, .card.international-desks .card-header-img h2 a {
+      color: #fff; }
 
 .card.services {
   min-height: 430px; }
-  .card.services .card-header-img {
-    position: relative; }
-    .card.services .card-header-img h2 {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      color: #fff; }
-      .card.services .card-header-img h2 a {
-        color: #fff; }
 
 .list {
   padding: 0;
