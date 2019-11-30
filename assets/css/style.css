@@ -1519,6 +1519,9 @@ $border-default: 1px solid #ccc;
   .card.services {
     min-height: 430px;
     position: relative; }
+  .card.resources {
+    border: none;
+    height: 202px; }
 
 .list {
   padding: 0;
