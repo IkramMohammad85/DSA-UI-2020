@@ -1,0 +1,316 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper.home
+    include components/_header
+    section.banner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/banner-asiapedia.jpg')    
+        .container
+            .grid.align-end
+                .col-sm-8.col-md-8.col-grid.offset-2.text-center
+                    h1 When we say we want to help businesses grow in Asia, we mean it.
+                    h4 Asiapedia is our collection of resources based on what we have learned on the ground.
+                    ul.list-inline
+                        li
+                            a.btn.btn-secondary.mt-2.block-center(href='#')  SUBSCRIBE 
+                        li
+                            a.btn.btn-white.mt-2.block-center(href='#')  DOWNLOAD BROCHURE        
+    section.pt-150.pb-7.dark-blue-bg
+        .container
+            .grid
+                .col-sm-12.col-md-12.col-grid
+                    form(action='https://www.dezshira.com/events/search', method='GET')
+                            .col-sm-3
+                                <input class="input-add-on-field" type="text" name="email" placeholder="Search by keyword">
+                            .col-sm-2
+
+                                select.form-control.radius-none(id='', name='location')
+                                    option(value='', selected='selected') Countries
+                                    option(value='asia') Asia
+                                    option(value='china') China
+                                    option(value='india') India
+                                    option(value='vietnam') Vietnam
+                                    option(value='hong-kong') Hong Kong
+                                    option(value='singapore') Singapore
+                                    option(value='europe') Europe
+                                    option(value='north-america') North America
+                                    option(value='central-and-latin-america') Central &amp; Latin America
+                                    option(value='oceania') Oceania
+                                    option(value='middle-east') Middle East
+                                    option(value='africa') Africa
+                            .col-sm-2
+
+                                select(id='', name='language')
+                                    option(value='', selected='selected') Topics
+                                    option(value='english') English
+                                    option(value='german') German
+                                    option(value='italian') Italian
+                                    option(value='spanish') Spanish
+                                    option(value='french') French
+                                    option(value='chinese') chinese
+                            .col-sm-2
+
+                                select(id='', name='status')
+                                    option(value='', selected='selected') Type
+                                    option(value='upcoming') Upcoming
+                                    option(value='past') Past
+                            .col-sm-2
+
+                                select(id='', name='status')
+                                    option(value='', selected='selected') Language
+                                    option(value='upcoming') Upcoming
+                                    option(value='past') Past                                    
+                            .col-sm-1
+                                button.btn.btn-secondary(type='submit')
+                                    | Search  
+                            .col-sm-12.col-md-12.col-grid
+                                ul.list-inline
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=168') Business Intelligence
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=264') Corporate Establisment and Structuring
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=423') Due Diligence
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=178') Accounting
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=201') HR and Payroll
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=8') Tax
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=178') Audit and Risk Advisory
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=210') Technology
+                                    li
+                                        a(href='#') Outbound Direct Investment
+                                    
+            .grid
+                .col-sm-12.col-md-12.col-grid.text-center
+                    h2 Pick a Region to Explore
+            .grid
+                .col-sm-4.col-md-4.col-grid
+                    .card.resources
+                        .card-header-img.zoom-on-hover
+                            a(href='https://www.dezshira.com/library/search?location=32')
+                                img(src='https://www.dezshira.com/userfiles/resources/countries/china.jpg')
+                            h2.text-center
+                                a(href='https://www.dezshira.com/library/search?location=32') China
+
+                .col-sm-4.col-md-4.col-grid
+                    .card.resources
+                        .card-header-img.zoom-on-hover
+                            a(href='https://www.dezshira.com/library/search?location=39')
+                                img(src='https://www.dezshira.com/userfiles/resources/countries/hong-kong.jpg')
+                            h2.text-center
+                                a(href='https://www.dezshira.com/library/search?location=39') Hong Kong
+
+                .col-sm-4.col-md-4.col-grid
+                    .card.resources
+                        .card-header-img.zoom-on-hover
+                            a(href='https://www.dezshira.com/library/search?location=34')
+                                img(src='https://www.dezshira.com/userfiles/resources/countries/vietnam.jpg')
+                            h2.text-center
+                                a(href='https://www.dezshira.com/library/search?location=34') Vietnam
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=35')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/singapore.jpg')
+                                h2.text-center.ml-3
+                                    a(href='https://www.dezshira.com/library/search?location=35') Singapore
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=43')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/myanmar.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=43') Myanmar
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=72')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/indonesia.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=72') Indonesia
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=73')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/malaysia.jpg')
+                                h2.text-center 
+                                    a(href='https://www.dezshira.com/library/search?location=73') Malaysia
+   
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=75')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/thailand.jpg')
+                                h2.text-center 
+                                    a(href='https://www.dezshira.com/library/search?location=75') Thailand
+                .col-sm-4.col-md-4.col-grid
+                    .card.resources
+                        .card-header-img.zoom-on-hover
+                            a(href='https://www.dezshira.com/library/search?location=76')
+                                img(src='https://www.dezshira.com/userfiles/resources/countries/brunei.jpg')
+                            h2.text-center
+                                a(href='https://www.dezshira.com/library/search?location=76') Brunei
+
+                .col-sm-4.col-md-4.col-grid
+                    .card.resources
+                        .card-header-img.zoom-on-hover
+                            a(href='https://www.dezshira.com/library/search?location=77')
+                                img(src='https://www.dezshira.com/userfiles/resources/countries/cambodia.jpg')
+                            h2.text-center
+                                a(href='https://www.dezshira.com/library/search?location=77') Cambodia
+
+                .col-sm-4.col-md-4.col-grid
+                    .card.resources
+                        .card-header-img.zoom-on-hover
+                            a(href='https://www.dezshira.com/library/search?location=78')
+                                img(src='https://www.dezshira.com/userfiles/resources/countries/laos.jpg')
+                            h2.text-center
+                                a(href='https://www.dezshira.com/library/search?location=78') Laos
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=331')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/philippines.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=331') Philippines
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=33')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/india.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=33') India
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=36')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/russia.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=36') Russia
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=426')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/silk-road.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=426') Silk Road
+   
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=111')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/united-kingdom.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=111') United Kingdom
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=80')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/spain.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=80') Spain
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=79')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/france.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=79') France
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=66')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/germany.jpg')
+                                h2.text-center
+                                    a(href='https://www.dezshira.com/library/search?location=66') Germany
+
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=65')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/italy.jpg')
+                                h2.text-center 
+                                    a(href='https://www.dezshira.com/library/search?location=65') Italy
+   
+                .col-sm-4.col-md-4.col-grid
+                        .card.resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/search?location=141')
+                                    img(src='https://www.dezshira.com/userfiles/resources/countries/canada.jpg')
+                                h2.text-center 
+                                    a(href='https://www.dezshira.com/library/search?location=141') Canada                            
+            p.text-center
+                    a.btn.btn-outline-white.mt-2(target='_top', href='#') More Countries
+    section.pt-7.pb-7.grey
+            h2.text-center  Featured Resources
+            .container
+                .grid
+                    .col-sm-3.col-md-3.col-grid
+                        .card.featured-resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/multimedia/view/china-regulatory-watch-FTZ-new-customs-declarations.html')
+                                    img(src='https://resource.dezshira.com/resize/650x400/Multimedia/8416/China_Regulatory_Watch_-_September_2_2019.jpg')
+                                h4.text-left.ml-2.mr-2
+                                    a(href='https://www.dezshira.com/multimedia/view/china-regulatory-watch-FTZ-new-customs-declarations.html') China Regulatory Watch – September 2, 2019
+                            .card-body
+                                small September 2019
+                                p
+                                    | This week's episode will cover the naming of 6 new free trade zone locations, a two-step customs declaration and a few more headlines that caught our attention.
+
+                    .col-sm-3.col-md-3.col-grid
+                        .card.featured-resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/multimedia/view/market-entry-options-foreign-companies-india.html')
+                                    img(src='https://resource.dezshira.com/resize/650x400/Multimedia/8401/India-Briefing-Special-Economic-Zones-in-Mumbai-Navi-Mumbai-and-Thane-3.jpg')
+                                h4.text-left.ml-2.mr-2
+                                    a(href='https://www.dezshira.com/multimedia/view/market-entry-options-foreign-companies-india.html') Market Entry Options for Foreign Companies in India 
+                            .card-body
+                                small August 2019
+                                p
+                                    | Watch this webinar to understand the different entity models available to structure your India business and the recent regulatory reforms that have taken place to improve the ease of doing business in India.
+
+                    .col-sm-3.col-md-3.col-grid
+                        .card.featured-resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/article/case-study-education-sector-china.html')
+                                    img(src='https://resource.dezshira.com/resize/650x400/Resources/8400/China-Briefing-Investing-in-ChinaCus-Economic-Development-Zones.jpg')
+                                h4.text-left.ml-2.mr-2
+                                    a(href='https://www.dezshira.com/library/article/case-study-education-sector-china.html') Case Study: Education Sector in China
+                            .card-body
+                                small August 2019
+                                p
+                                    | For foreign investors in the education industry, there are a number of restrictions on investments; many organizations operate in the market through joint-ventures or programs with local partners. It is not uncommon for this reliance on external shar...
+                    .col-sm-3.col-md-3.col-grid
+                            .card.featured-resources
+                                .card-header-img.zoom-on-hover
+                                    a(href='https://www.dezshira.com/library/presentation/leveraging-vietnam-free-trade-agreements.html')
+                                        img(src='https://www.dezshira.com/themes/dsa/images/asiapedia/thumb-presentation.jpg')
+                                    h4.text-left.ml-2.mr-2
+                                        a(href='https://www.dezshira.com/library/presentation/leveraging-vietnam-free-trade-agreements.html') Leveraging Vietnam's Free Trade Agreements
+                                .card-body
+                                    small August 2019
+                                    p
+                                        | On August 22, our Business Intelligence Manager, Maxfield Brown, hosted a webinar discussing Vietnam’s free trade agreement network and how to leverage the country’s rules of origin to reduce tariffs.
+                                  
+
+    include components/_footer

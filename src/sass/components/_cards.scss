@@ -40,9 +40,9 @@
         .card-body{ padding: 20px;
         }
     }
-    .card.services, .card.international-desks{
+    .card.services, .card.international-desks,.card.resources,.card.featured-resources{
         .card-header-img{ position: relative;
-            h2{position: absolute;
+            h2,h4{position: absolute;
                 top: 50%;
                 left: 0;
                 width: 100%;
@@ -52,3 +52,15 @@
         }
     }
     .card.services{min-height: 430px;}
+    .card.resources{ min-height: auto; border: none; height: 202px; background: $deep-blue;
+        .card-header-img{
+            img{opacity: 0.5;}
+        }
+    }
+    .card.featured-resources{ min-height: 470px;
+        .card-header-img{background: $deep-blue; height: 140px;;
+            img{opacity: 0.3;}
+            h4{ width: auto;}
+        }
+        .card-body{ padding: 20px;}
+    }
