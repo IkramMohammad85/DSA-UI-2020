@@ -110,3 +110,6 @@ a{ color: $white;}
 	transform: rotate(45deg);
 	@include transform(rotate(#{45deg}deg));
 }
+.float-left{ float: left;}
+.float-right{ float: right;}
+.float-none{ float:none;}

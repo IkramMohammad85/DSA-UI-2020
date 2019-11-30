@@ -56,13 +56,14 @@ body
           .grid
             .col-xs-6.col-md-6.col-grid
               .card.asiapedia
-                .card-header.card-header-img
-                  h3.hedaer-title 
-                    img(src='assets/img/asiapedia-logo.png', alt='' width='130px')
-                  a.btn.btn-link(href='#')
-                    | Read more 
-                    i
-                      img(src='assets/img/more-errow-icon.png', alt='' width='15px')    
+                .card-header-img
+                  .card-text-overlap
+                    h3.ml-3.float-left 
+                      img(src='assets/img/asiapedia-logo.png', alt='' width='130px')
+                    a.btn.btn-link.float-right(href='#')
+                      | Read more 
+                      i
+                        img(src='assets/img/more-errow-icon.png', alt='' width='15px')    
                 .card-body
                   h4 When we say we want to help businesses grow in Asia, we mean it. 
                   p Asiapedia is our collection of resources based on what we have learned about doing business Asia. It’s  the products of more then 300 team members collaborating across 25 offices in Asia, Europe, and North America.
@@ -75,12 +76,13 @@ body
                       option(value='Thailand') Thailand
             .col-xs-6.col-md-6.col-grid
               .card.events
-                .card-header.card-header-img
-                  h3.hedaer-title Events
-                  a.btn.btn-link(href='#')
-                    | Read more 
-                    i
-                      img(src='assets/img/more-errow-icon.png', alt='' width='15px')     
+                .card-header-img
+                  .card-text-overlap
+                    h3.float-left.ml-3 Events
+                    a.btn.btn-link.float-right(href='#')
+                      | Read more 
+                      i
+                        img(src='assets/img/more-errow-icon.png', alt='' width='15px')     
                 .card-body
                   ul.list.lists-events
                     li

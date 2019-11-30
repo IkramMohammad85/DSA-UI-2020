@@ -1464,94 +1464,61 @@ $border-default: 1px solid #ccc;
 .card {
   border: solid 1px #e8e8e8;
   background-color: #fff; }
-  .card .card-header {
+  .card-header, .card-body, .card-footer {
+    padding: 30px; }
+  .card .card-header-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative; }
+    .card .card-header-img .card-text-overlap {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      color: #fff; }
+      .card .card-header-img .card-text-overlap a {
+        color: #fff; }
+  .card-header {
     background-color: #314d77;
     min-height: 88px; }
-    .card .card-header .hedaer-title {
+    .card-header-title {
       float: left;
       color: #fff; }
-    .card .card-header .btn {
+    .card-header .btn {
       float: right;
       color: #fff; }
-  .card .card-body {
+    .card-header .btn-link {
+      padding-left: 0;
+      padding-right: 0; }
+  .card-body {
     min-height: 200px;
     background: #fff; }
-  .card .card-footer {
+  .card-footer {
     background: #939598;
     min-height: 44px; }
-  .card .card-body, .card .card-footer, .card .card-header {
-    padding: 30px; }
-  .card .btn-link {
-    padding-left: 0;
-    padding-right: 0; }
-
-.card-header-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden; }
-
-.card.asiapedia .card-header-img {
-  background: url(../img/banner-asiapedia.jpg); }
-
-.card.asiapedia .card-body {
-  text-align: center; }
-  .card.asiapedia .card-body p, .card.asiapedia .card-body h4 {
-    color: #3d3d3d; }
-  .card.asiapedia .card-body h4 {
-    font-size: 15px; }
-
-.card.events .card-header-img {
-  background: url(../img/das-events-banner.jpg); }
-
-.card.asiapedia, .card.events {
-  min-height: 568px; }
-
-.card.contact-us {
-  background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
-  width: auto;
-  height: 420px;
-  background-size: cover; }
-  .card.contact-us h3, .card.contact-us p, .card.contact-us a {
-    color: #fff; }
-
-.card.international-desks {
-  min-height: 615px; }
-  .card.international-desks .card-body {
-    padding: 20px; }
-
-.card.services .card-header-img, .card.international-desks .card-header-img, .card.resources .card-header-img, .card.featured-resources .card-header-img {
-  position: relative; }
-  .card.services .card-header-img h2, .card.services .card-header-img h4, .card.international-desks .card-header-img h2, .card.international-desks .card-header-img h4, .card.resources .card-header-img h2, .card.resources .card-header-img h4, .card.featured-resources .card-header-img h2, .card.featured-resources .card-header-img h4 {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    color: #fff; }
-    .card.services .card-header-img h2 a, .card.services .card-header-img h4 a, .card.international-desks .card-header-img h2 a, .card.international-desks .card-header-img h4 a, .card.resources .card-header-img h2 a, .card.resources .card-header-img h4 a, .card.featured-resources .card-header-img h2 a, .card.featured-resources .card-header-img h4 a {
-      color: #fff; }
-
-.card.services {
-  min-height: 430px; }
-
-.card.resources {
-  min-height: auto;
-  border: none;
-  height: 202px;
-  background: #1a2940; }
-  .card.resources .card-header-img img {
-    opacity: 0.5; }
-
-.card.featured-resources {
-  min-height: 470px; }
-  .card.featured-resources .card-header-img {
-    background: #1a2940;
-    height: 140px; }
-    .card.featured-resources .card-header-img img {
-      opacity: 0.3; }
-    .card.featured-resources .card-header-img h4 {
-      width: auto; }
-  .card.featured-resources .card-body {
-    padding: 20px; }
+  .card.asiapedia, .card.events {
+    min-height: 568px; }
+  .card.asiapedia .card-header-img {
+    background: url(../img/banner-asiapedia.jpg);
+    height: 100px; }
+  .card.asiapedia .card-body {
+    text-align: center; }
+  .card.events .card-header-img {
+    background: url(../img/das-events-banner.jpg);
+    height: 100px; }
+  .card.contact-us {
+    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
+    width: auto;
+    height: 420px;
+    background-size: cover; }
+  .card.international-desks {
+    min-height: 615px; }
+    .card.international-desks .card-body {
+      padding: 20px; }
+  .card.services {
+    min-height: 430px;
+    position: relative; }
 
 .list {
   padding: 0;
@@ -2206,6 +2173,15 @@ ol, ul {
   transform: rotate(45deg);
   -webkit-transform: rotate(45degdeg);
   transform: rotate(45degdeg); }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.float-none {
+  float: none; }
 
 .table {
   width: 100%;
