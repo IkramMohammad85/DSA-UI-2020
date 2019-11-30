@@ -1520,8 +1520,7 @@ $border-default: 1px solid #ccc;
     min-height: 430px;
     position: relative; }
   .card.resources {
-    border: none;
-    height: 202px; }
+    border: none; }
 
 .list {
   padding: 0;
