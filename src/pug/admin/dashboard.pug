@@ -1,0 +1,71 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='../assets/css/style.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper.home
+    include ../components/_header
+    //- section.banner-admin
+    //-     img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/DSA-Partners-banner.jpg')    
+    //-     .container
+    //-         .grid.align-end
+    //-             .col-sm-6.col-md-6.col-grid
+    //-                 h1 Dashboard
+    //-                 h4 
+    //-                     | We partner with organisations across the world to give us a truly global presence. Discover each of our regions’ key partners below.       
+    .pt-150.pb-7
+      .container
+        .grid
+          .col-sm-3.col-md-3.col-grid
+              h4.section-title Welcome Kaushal Raj Subba
+              ul.list-unstyled.sidebar-nav
+                  li
+                      a(href='https://www.dezshira.com/partnerships/global')  Dashboard
+                  li
+                      a(href='https://www.dezshira.com/partnerships/china')  Job Seeker Profile
+                  li
+                      a(href='https://www.dezshira.com/partnerships/india')  Recharge Credits
+                  li
+                      a(href='https://www.dezshira.com/partnerships/hong kong')  Claim Credit
+                  li
+                      a(href='https://www.dezshira.com/partnerships/singapore')  Gift Credits
+                  li
+                      a(href='https://www.dezshira.com/partnerships/vietnam')  Your Transaction HIstory
+                  li
+                      a(href='https://www.dezshira.com/partnerships/germany') Change Password
+                  li
+                      a(href='https://www.dezshira.com/partnerships/italy') Logout
+          .col-sm-9.col-md-9.col-grid
+            h4.section-title.mb-4.text-right Your Credit Balance: 666
+            .row.pt-3
+              .col-sm-3
+                .card-admin
+                  .card-header-img.zoom-on-hover
+                    a(href="")
+                      img(src="https://www.dezshira.com/themes/dsa/images/international-desk/thumb-north-american.jpg", alt="alt")
+                    span.card-admin-badge.badge-new 
+                      .card-admin-badge-text  New
+                    h2.text-left.pl-1.card-text-overlap
+                      a(href="#") Dashboard
+                  .card-body
+                    span.card-admin-intro
+                    .card-admin-intro-text Welcome to Dashboard 
+                  
+              .col-sm-3
+                .card-admin
+                  .card-header-img.zoom-on-hover
+                    a(href="")
+                      img(src="https://images.unsplash.com/photo-1459570401946-7f5fb8607d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60ss", alt="alt")
+
+                    span.card-admin-badge.badge-pending 
+                      .card-admin-badge-text  New
+                    h2.text-left.pl-1.card-text-overlap
+                      a(href="#") Job Seeker Profile
+                    span.card-admin-intro
+                      .card-admin-intro-text Are you looking for a job at Dezan Shira & Associates or Asia Briefing?  
+
+    include ../components/_footer

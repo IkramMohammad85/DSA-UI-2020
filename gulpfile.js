@@ -27,7 +27,7 @@ var paths = {
 	},
 
 	html: {
-		src: ['src/pug/*.pug'],
+		src: ['src/pug/**/*.pug','!src/pug/**/components/*','!src/pug/**/components/**/*','!src/pug/**/_*/'], 
 		dest: './'
 	},
 
@@ -72,6 +72,8 @@ gulp.task('pug', function(){
 			// beautify: true
 		}))
 		.pipe(gulp.dest(paths.html.dest));
+
+
 });
 
 // Optimizes images

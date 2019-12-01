@@ -1,0 +1,80 @@
+// Admin custom banner
+.banner-admin {
+  @extend .banner;
+
+  height: auto;
+  padding: 2rem 0rem;
+}
+
+// Admin custom card
+.card-admin {
+  @extend .card;
+
+  height: auto;
+  min-height: auto;
+
+  .zoom-on-hover {
+    .card-text-overlap {
+      font-size: 16px;
+    }
+  }
+
+  .card-body {
+    min-height: auto;
+  }
+
+  &-badge {
+    padding: 0px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-height: 30px;
+
+    &-text {
+      color: white;
+      font-size: 10px;
+    }
+
+    &.badge-new {
+      background-color: $blue;
+    }
+
+    &.badge-pending {
+      background-color: $orange;
+    }
+  }
+
+  &-intro {
+    // position: absolute;
+    // bottom: 0;
+    // left: 10px;
+
+    &-text {
+      color: white;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+}
+
+// Job seeker SCSS
+.address {
+  font-style: normal;
+
+  &-name {
+    font-style: 20px;
+
+    &-title {
+      font-weight: bold;
+    }
+
+    &-full {
+      font-weight: normal;
+      color: rgba(26, 41, 64, 1);
+    }
+  }
+
+  &-add {
+    font-weight: normal;
+  }
+}

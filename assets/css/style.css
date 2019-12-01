@@ -1461,77 +1461,62 @@ $border-default: 1px solid #ccc;
   @include border-default;
 }
 */
-.card {
+.card, .card-admin {
   border: solid 1px #e8e8e8;
   background-color: #fff; }
-  .card .card-header {
+  .card-header, .card-body, .card-footer {
+    padding: 30px; }
+  .card .card-header-img, .card-admin .card-header-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative; }
+    .card .card-header-img .card-text-overlap, .card-admin .card-header-img .card-text-overlap {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      color: #fff; }
+      .card .card-header-img .card-text-overlap a, .card-admin .card-header-img .card-text-overlap a {
+        color: #fff; }
+  .card-header {
     background-color: #314d77;
     min-height: 88px; }
-    .card .card-header .hedaer-title {
+    .card-header-title {
       float: left;
       color: #fff; }
-    .card .card-header .btn {
+    .card-header .btn {
       float: right;
       color: #fff; }
-  .card .card-body {
+    .card-header .btn-link {
+      padding-left: 0;
+      padding-right: 0; }
+  .card-body {
     min-height: 200px;
     background: #fff; }
-  .card .card-footer {
+  .card-footer {
     background: #939598;
     min-height: 44px; }
-  .card .card-body, .card .card-footer, .card .card-header {
-    padding: 30px; }
-  .card .btn-link {
-    padding-left: 0;
-    padding-right: 0; }
-
-.card-header-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden; }
-
-.card.asiapedia .card-header-img {
-  background: url(../img/banner-asiapedia.jpg); }
-
-.card.asiapedia .card-body {
-  text-align: center; }
-  .card.asiapedia .card-body p, .card.asiapedia .card-body h4 {
-    color: #3d3d3d; }
-  .card.asiapedia .card-body h4 {
-    font-size: 15px; }
-
-.card.events .card-header-img {
-  background: url(../img/das-events-banner.jpg); }
-
-.card.asiapedia, .card.events {
-  min-height: 568px; }
-
-.card.contact-us {
-  background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
-  width: auto;
-  height: 420px;
-  background-size: cover; }
-  .card.contact-us h3, .card.contact-us p, .card.contact-us a {
-    color: #fff; }
-
-.card.international-desks {
-  min-height: 615px; }
-  .card.international-desks .card-body {
-    padding: 20px; }
-
-.card.services .card-header-img, .card.international-desks .card-header-img {
-  position: relative; }
-  .card.services .card-header-img h2, .card.international-desks .card-header-img h2 {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    color: #fff; }
-    .card.services .card-header-img h2 a, .card.international-desks .card-header-img h2 a {
-      color: #fff; }
-
-.card.services {
-  min-height: 430px; }
+  .card.asiapedia, .asiapedia.card-admin, .card.events, .events.card-admin {
+    min-height: 568px; }
+  .card.asiapedia .card-header-img, .asiapedia.card-admin .card-header-img {
+    background: url(../img/banner-asiapedia.jpg); }
+  .card.asiapedia .card-body, .asiapedia.card-admin .card-body {
+    text-align: center; }
+  .card.events .card-header-img, .events.card-admin .card-header-img {
+    background: url(../img/das-events-banner.jpg); }
+  .card.contact-us, .contact-us.card-admin {
+    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
+    width: auto;
+    height: 420px;
+    background-size: cover; }
+  .card.international-desks, .international-desks.card-admin {
+    min-height: 615px; }
+    .card.international-desks .card-body, .international-desks.card-admin .card-body {
+      padding: 20px; }
+  .card.services, .services.card-admin {
+    min-height: 430px;
+    position: relative; }
 
 .list {
   padding: 0;
@@ -1647,7 +1632,7 @@ $border-default: 1px solid #ccc;
       padding: 20px; }
     .dropdown .dropdown-content h3 a {
       color: #fff !important; }
-    .dropdown .dropdown-content .card.contact-us h3, .dropdown .dropdown-content .card.contact-us p, .dropdown .dropdown-content .card.contact-us a, .dropdown .dropdown-content .btn-outline-dark h3, .dropdown .dropdown-content .btn-outline-dark p, .dropdown .dropdown-content .btn-outline-dark a {
+    .dropdown .dropdown-content .card.contact-us h3, .dropdown .dropdown-content .contact-us.card-admin h3, .dropdown .dropdown-content .card.contact-us p, .dropdown .dropdown-content .contact-us.card-admin p, .dropdown .dropdown-content .card.contact-us a, .dropdown .dropdown-content .contact-us.card-admin a, .dropdown .dropdown-content .btn-outline-dark h3, .dropdown .dropdown-content .btn-outline-dark p, .dropdown .dropdown-content .btn-outline-dark a {
       color: #fff !important; }
     .dropdown .dropdown-content ul li {
       display: block;
@@ -1686,7 +1671,7 @@ $border-default: 1px solid #ccc;
     transition-delay: 0s;
     /* react immediately on hover */ }
 
-.banner {
+.banner, .banner-admin {
   position: relative;
   overflow: hidden;
   height: 340px;
@@ -1697,17 +1682,17 @@ $border-default: 1px solid #ccc;
   display: flex;
   -webkit-box-align: center;
   align-items: center; }
-  .banner img {
+  .banner img, .banner-admin img {
     position: absolute;
     background-size: cover;
     width: 100%;
     background-position: 50% 0;
     background-repeat: no-repeat; }
-  .banner h1, .banner h2, .banner h3, .banner h4, .banner h5 {
+  .banner h1, .banner-admin h1, .banner h2, .banner-admin h2, .banner h3, .banner-admin h3, .banner h4, .banner-admin h4, .banner h5, .banner-admin h5 {
     color: #fff; }
-    .banner h1 a, .banner h2 a, .banner h3 a, .banner h4 a, .banner h5 a {
+    .banner h1 a, .banner-admin h1 a, .banner h2 a, .banner-admin h2 a, .banner h3 a, .banner-admin h3 a, .banner h4 a, .banner-admin h4 a, .banner h5 a, .banner-admin h5 a {
       color: #fff; }
-  .banner .btn {
+  .banner .btn, .banner-admin .btn {
     display: table; }
 
 @font-face {
@@ -2169,7 +2154,8 @@ ol, ul {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 .zoom-on-hover:hover img {
   -webkit-transform: scale(1.2);
@@ -2556,16 +2542,16 @@ footer.site-footer {
       margin-top: 40px;
       margin-bottom: 40px; }
 
-.home .card.events .card-body {
+.home .card.events .card-body, .home .events.card-admin .card-body {
   height: 450px;
   overflow: auto; }
 
-.home .card.asiapedia .card-body form {
+.home .card.asiapedia .card-body form, .home .asiapedia.card-admin .card-body form {
   margin: 0 auto;
   display: -webkit-box;
   display: flex; }
 
-.home .card.asiapedia .card-body select {
+.home .card.asiapedia .card-body select, .home .asiapedia.card-admin .card-body select {
   border: none;
   background-color: #e5e5e5;
   color: #495057;
@@ -2614,5 +2600,46 @@ ul.navbar {
     top: 30px; }
   .home .big-banner .item img {
     width: auto; } }
+
+.banner-admin {
+  height: auto;
+  padding: 2rem 0rem; }
+
+.card-admin {
+  height: auto;
+  min-height: auto; }
+  .card-admin .zoom-on-hover .card-text-overlap {
+    font-size: 16px; }
+  .card-admin .card-body {
+    min-height: auto; }
+  .card-admin-badge {
+    padding: 0px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-height: 30px; }
+    .card-admin-badge-text {
+      color: white;
+      font-size: 10px; }
+    .card-admin-badge.badge-new {
+      background-color: #007bff; }
+    .card-admin-badge.badge-pending {
+      background-color: #fd7e14; }
+  .card-admin-intro-text {
+    color: white;
+    font-size: 10px;
+    line-height: 14px; }
+
+.address {
+  font-style: normal; }
+  .address-name {
+    font-style: 20px; }
+    .address-name-title {
+      font-weight: bold; }
+    .address-name-full {
+      font-weight: normal;
+      color: #1a2940; }
+  .address-add {
+    font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */
