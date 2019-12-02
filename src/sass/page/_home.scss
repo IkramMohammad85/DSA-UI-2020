@@ -19,7 +19,7 @@
         .btn-outline-white{ position: relative; z-index: 3; bottom: 0; left: 45%; top: 90px;}
         .item-image {
           position: relative;
-          height: 100vh;
+          height: 105vh;
           overflow: hidden; padding-bottom: 180px;
           &::before {
             content: '';
@@ -48,16 +48,26 @@
             background-position: inherit;
             background-attachment: inherit;
             background-repeat: inherit;
-            width: 100%;
-            padding: inherit;
+            width: 92%;
+
             
           }
 
-          h3,.btn{ z-index: 2; text-align: left; margin-left: 30px; margin-right: 30px;}
+          h3,.btn{ z-index: 2; text-align: left; margin-left: 30px; margin-right: 30px;
+          }
           h3 { margin-left: 30px; margin-right: 30px;
             a{ color: $white;}
           }
           .btn{ padding-left: 0px;color: $white;}
+        }
+        .btn{ 
+          img{background-size: inherit;
+            background-position: inherit;
+            background-attachment: inherit;
+            background-repeat: inherit;
+          width: 15px; position: inherit;
+          opacity: 1;
+          }
         }
       }
 
@@ -91,7 +101,14 @@
 
   ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 20px; float: right;@extend %clearfix;
                 position: relative;
-      .dropdown-content{ border-radius: 3px; right: 0px; min-width: 250px;}
+                li{ padding: 5px;  line-height: 18px;;
+                  &.dropdown.open{background-color: #f1f1f1; border-radius: 3px;
+                  }
+                }
+      .dropdown-content{ border-radius: 3px; right: 0px; min-width: 250px;
+        .list li{ padding: 12px 0;}  
+      }
+      .down-arrow{ top: -6px;}
         
   }
 

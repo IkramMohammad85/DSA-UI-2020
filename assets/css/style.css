@@ -2053,6 +2053,9 @@ ol, ul {
 .mb-0 {
   margin-bottom: 0px !important; }
 
+.ml-1 {
+  margin-bottom: 0px !important; }
+
 .mb-2 {
   margin-bottom: 20px !important; }
 
@@ -2523,7 +2526,7 @@ footer.site-footer {
     top: 90px; }
   .home .big-banner .item .item-image {
     position: relative;
-    height: 100vh;
+    height: 105vh;
     overflow: hidden;
     padding-bottom: 180px; }
     .home .big-banner .item .item-image::before {
@@ -2557,8 +2560,7 @@ footer.site-footer {
       background-position: inherit;
       background-attachment: inherit;
       background-repeat: inherit;
-      width: 100%;
-      padding: inherit; }
+      width: 92%; }
     .home .big-banner .item .news h3, .home .big-banner .item .news .btn {
       z-index: 2;
       text-align: left;
@@ -2572,6 +2574,14 @@ footer.site-footer {
     .home .big-banner .item .news .btn {
       padding-left: 0px;
       color: #fff; }
+  .home .big-banner .item .btn img {
+    background-size: inherit;
+    background-position: inherit;
+    background-attachment: inherit;
+    background-repeat: inherit;
+    width: 15px;
+    position: inherit;
+    opacity: 1; }
 
 .home section.about-us {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5))), url(../img/who-we-are.jpg);
@@ -2621,10 +2631,20 @@ ul.top-quick-link {
   margin-top: 20px;
   float: right;
   position: relative; }
+  ul.top-quick-link li {
+    padding: 5px;
+    line-height: 18px; }
+    ul.top-quick-link li.dropdown.open {
+      background-color: #f1f1f1;
+      border-radius: 3px; }
   ul.top-quick-link .dropdown-content {
     border-radius: 3px;
     right: 0px;
     min-width: 250px; }
+    ul.top-quick-link .dropdown-content .list li {
+      padding: 12px 0; }
+  ul.top-quick-link .down-arrow {
+    top: -6px; }
 
 ul.navbar {
   float: right;
