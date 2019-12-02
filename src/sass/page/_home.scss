@@ -101,15 +101,11 @@
 
   ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 20px; float: right;@extend %clearfix;
                 position: relative;
-                li{ padding: 5px;  line-height: 18px;;
-                  &.dropdown.open{background-color: #f1f1f1; border-radius: 3px;
-                  }
-                }
-      .dropdown-content{ border-radius: 3px; right: 0px; min-width: 250px;
-        .list li{ padding: 12px 0;}  
-      }
-      .down-arrow{ top: -6px;}
-        
+      .dropdown-content{ border-radius: 3px; right: 0px; min-width: 250px;}
+      li{
+      &.dropdown.open{ background-color:#f1f1f1; border-radius: 3px; padding: 5px 5px;}
+    } 
+    .down-arrow{ top: -6px;}
   }
 
   ul.navbar {float: right;@extend %clearfix; clear: both; margin-bottom: 0;

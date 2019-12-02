@@ -2631,18 +2631,14 @@ ul.top-quick-link {
   margin-top: 20px;
   float: right;
   position: relative; }
-  ul.top-quick-link li {
-    padding: 5px;
-    line-height: 18px; }
-    ul.top-quick-link li.dropdown.open {
-      background-color: #f1f1f1;
-      border-radius: 3px; }
   ul.top-quick-link .dropdown-content {
     border-radius: 3px;
     right: 0px;
     min-width: 250px; }
-    ul.top-quick-link .dropdown-content .list li {
-      padding: 12px 0; }
+  ul.top-quick-link li.dropdown.open {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    padding: 5px 5px; }
   ul.top-quick-link .down-arrow {
     top: -6px; }
 
