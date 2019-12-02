@@ -2387,8 +2387,6 @@ header.site-header {
     display: flex;
     -webkit-box-align: center;
     align-items: center; }
-  header.site-header .top-quick-link {
-    position: relative; }
   header.site-header #main-nav {
     padding-top: 0;
     padding-bottom: 0;
