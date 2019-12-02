@@ -41,7 +41,14 @@
             font-weight: normal;
             }
         .btn-outline-dark{ display: inline-table;
-            &:hover{ color: $white;}
+            &:hover{ color: $white !important;}
+        }
+        .card{
+            .card-header-img { 
+                .card-text-overlap{ top: 40%;
+                a{ color: $white !important;}
+                }
+            }
         }
     }
 }

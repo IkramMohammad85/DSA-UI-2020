@@ -1675,7 +1675,11 @@ $border-default: 1px solid #ccc;
     .dropdown .dropdown-content .btn-outline-dark {
       display: inline-table; }
       .dropdown .dropdown-content .btn-outline-dark:hover {
-        color: #fff; }
+        color: #fff !important; }
+    .dropdown .dropdown-content .card .card-header-img .card-text-overlap {
+      top: 40%; }
+      .dropdown .dropdown-content .card .card-header-img .card-text-overlap a {
+        color: #fff !important; }
 
 .dropdown-hover {
   position: relative;
@@ -2204,6 +2208,15 @@ ol, ul {
 
 .float-none {
   float: none; }
+
+.text-lowercase {
+  text-transform: lowercase !important; }
+
+.text-uppercase {
+  text-transform: uppercase !important; }
+
+.text-capitalize {
+  text-transform: capitalize !important; }
 
 .table {
   width: 100%;

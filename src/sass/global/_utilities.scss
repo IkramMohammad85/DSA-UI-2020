@@ -111,3 +111,7 @@ a{ color: $white;}
 .float-left{ float: left;}
 .float-right{ float: right;}
 .float-none{ float:none;}
+
+.text-lowercase{text-transform: lowercase !important;}
+.text-uppercase{text-transform: uppercase !important;}
+.text-capitalize{text-transform: capitalize !important;}
