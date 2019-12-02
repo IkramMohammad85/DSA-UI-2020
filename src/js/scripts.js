@@ -7,8 +7,8 @@ if(header){
       const remove_class_on_scroll = () => { header.classList.remove("white");header.querySelector('img.logo').src = 'assets/img/logo.png'; }
       window.addEventListener('scroll', function() { 
       scrollpos = window.scrollY;
-      if (scrollpos >= header_height) { add_class_on_scroll() }
-      else { remove_class_on_scroll() }
+      if (scrollpos >= header_height) { if(!document.querySelector(".navbar .dropdown.open")) add_class_on_scroll() }
+      else { if(!document.querySelector(".navbar .dropdown.open")) remove_class_on_scroll() }
       })
 }
 
@@ -24,34 +24,6 @@ new Glide('section.big-banner.glide', {
     }).mount();
 
 //Component: dropdown
-document.querySelectorAll('.dropdown').forEach(function(dropdown) {
-      dropdown.querySelector('.dropdown-label').addEventListener("click", 
-            function(e){
-                  if(document.querySelector('.dropdown.open')!= null)
-                        clearDropdownOpens();
-                  else
-                        e.stopPropagation();
-
-                  dropdown.classList.toggle("open");
-                  dropdown.querySelector('.dropdown-content').classList.toggle("d-block");
-             });
-});
-
-      // Close the dropdown menu if the user clicks outside of it
-            document.body.addEventListener('click', function (event) {
-                  var dropdownClickCheck = document.querySelector('.dropdown.open .dropdown-content');
-                  // console.log(dropdownClickCheck);
-                  // console.log(event.target);
-                  if (dropdownClickCheck && !dropdownClickCheck.contains(event.target)) {
-                        clearDropdownOpens();
-                  } 
-            });
-
-            function clearDropdownOpens(){
-                        document.querySelectorAll('.dropdown.open').forEach(function(dropdown) {
-                              if (dropdown.querySelector('.dropdown-content').classList.contains('d-block')) {
-                                    dropdown.classList.remove('open');
-                                    dropdown.querySelector('.dropdown-content').classList.remove('d-block');
-                              }
-                        });
-                  }
+window.addEventListener('load', () => {
+      new dropdown();
+    }, false)

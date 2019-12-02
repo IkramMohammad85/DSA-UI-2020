@@ -3,18 +3,24 @@ header.site-header
       .container
         img.logo(src='assets/img/logo.png' alt='')
         ul.list-inline.top-quick-link
-          li
-            img(src='assets/img/icon-globe.png' alt='' width='20px')
-          li
-            img(src='assets/img/icon-user.png' alt='' width='20px')
+          li.dropdown
+            a(data-trigger)
+              img(src='assets/img/icon-globe.png' alt='' width='20px')
+              i.down-arrow
+            .dropdown-content(data-dropdown) International Desk Content
+          li.dropdown
+            a(data-trigger)
+              img(src='assets/img/icon-user.png' alt='' width='20px')
+              i.down-arrow
+            .dropdown-content(data-dropdown) Users Dropdown Content
           li
             img(src='assets/img/icon_download.png' alt='' width='20px')
         ul.navbar
           li.dropdown
-            a(href='#').dropdown-label  
+            a(href='#' data-trigger data-turn-header-white)
               | About Us 
               i.down-arrow
-            .dropdown-content
+            .dropdown-content(data-dropdown)
               .container
                 .grid.align-center
                   .col-xs-3.col-md-3.col-grid
@@ -38,10 +44,10 @@ header.site-header
                         a(href='#') Partnerships
                       img.flex-img.shadow(src='assets/img/banner-asiapedia.jpg' alt='')
           li.dropdown
-            a(href='#').dropdown-label  
+            a(href='#' data-trigger data-turn-header-white)
               | Services  
               i.down-arrow 
-            .dropdown-content
+            .dropdown-content(data-dropdown)
               .container
                 .grid
                   .col-xs-3.col-md-3.col-grid
@@ -100,10 +106,10 @@ header.site-header
                             | We provide professional services tailored to Asia´s business environment across the full business cycle.
                         a.btn.btn-outline-white.mb-2.mt-2(href='https://www.dezshira.com/personnel') Talk to experts 
           li.dropdown
-            a(href='#').dropdown-label  
+            a(href='#' data-trigger data-turn-header-white)
               | Resources 
               i.down-arrow
-            .dropdown-content
+            .dropdown-content(data-dropdown)
               .container
                 .grid
                   .col-xs-3.col-md-3.col-grid
@@ -143,10 +149,10 @@ header.site-header
           li
             a(href='#') Events
           li.dropdown
-            a(href='#').dropdown-label  
+            a(href='#' data-trigger data-turn-header-white)
               | Contact Us 
               i.down-arrow
-            .dropdown-content
+            .dropdown-content(data-dropdown)
               .container
                 .grid.align-center
                   .col-xs-3.col-md-3.col-grid

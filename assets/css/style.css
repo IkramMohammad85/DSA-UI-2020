@@ -2378,8 +2378,8 @@ header.site-header {
     padding-bottom: 0;
     border-bottom: none;
     background: rgba(26, 41, 64, 0.8);
-    -webkit-transition: background-color 0.9s;
-    transition: background-color 0.9s;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
     height: 110px;
     display: -webkit-box;
     display: flex;
@@ -2610,13 +2610,18 @@ ul.navbar {
     color: #fff;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 20px; }
+    padding: 19px;
+    -webkit-transition: border-width 0.1s ease-in-out;
+    transition: border-width 0.1s ease-in-out;
+    border-bottom-width: 0; }
     ul.navbar li:last-child {
       margin-right: 0rem;
       padding-right: 0px;
       vertical-align: top; }
     ul.navbar li a {
       color: #fff; }
+    ul.navbar li.dropdown.open {
+      border-bottom: 2px solid #007bff; }
   ul.navbar .dropdown-content {
     left: 0;
     top: 110px;

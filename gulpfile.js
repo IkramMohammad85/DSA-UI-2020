@@ -5,8 +5,7 @@ var pug = require('gulp-pug');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
-
-
+var concat = require('gulp-concat');
 
 
 // Paths and directories
@@ -22,12 +21,13 @@ var paths = {
 	},
 
 	js: {
-		src: ['./src/js/*.js','node_modules/@glidejs/glide/dist/glide.min.js'],
+		src: ['./src/js/dropdown.js','./src/js/scripts.js'],
+		vendor:['node_modules/@glidejs/glide/dist/glide.min.js'],
 		dest: './assets/js'
 	},
 
 	html: {
-		src: ['src/pug/*.pug'],
+		src: ['src/pug/**/*.pug','!src/pug/**/components/*','!src/pug/**/components/**/*','!src/pug/**/_*/'], 
 		dest: './'
 	},
 
@@ -58,8 +58,14 @@ gulp.task('sass', function () {
 
 // Compiles Sass into CSS
 gulp.task('js', function () {
-	return gulp
+	gulp
 		.src(paths.js.src)
+		.pipe(concat('scripts.js'))
+		.pipe(gulp.dest(paths.js.dest))
+
+
+	return gulp
+		.src(paths.js.vendor)
 		.pipe(gulp.dest(paths.js.dest))
 });
 

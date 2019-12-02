@@ -33,7 +33,7 @@ header.site-header{ padding: 0px 0px; position: relative;
     padding-bottom: 0;
     border-bottom: none;
     background: rgba(26, 41, 64, 0.8);
-    @include transition(background-color 0.9s);
+    @include transition(background-color 0.5s);
     // @include transition(height 0.15s ease-out);
     height:110px; display: flex; flex-direction: column;
 
@@ -59,12 +59,12 @@ header.site-header{ padding: 0px 0px; position: relative;
 .dropdown-hover{ position: inherit;
 .dropdown-content{ text-align: left; padding: 45px;left: 0;
   width: 100%;
-p{ text-transform: inherit;
+p{
   text-transform: inherit;
-font-weight: normal;
-
-
+  text-transform: inherit;
+  font-weight: normal;
 }
+
 h1,h2{text-transform: inherit;}
 .btn-outline-dark{ color: initial; display: inline-table;}
 .promotion{ background: $white; height: auto;

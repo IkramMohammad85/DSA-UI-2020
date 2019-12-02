@@ -94,11 +94,15 @@
   ul.navbar {float: right;@extend %clearfix; clear: both; margin-bottom: 0;
         li {
           display: inline-block; @include font-size(14px); font-weight: $font-weight-normal; color: $white; letter-spacing: 0.05em;
-          text-transform: uppercase; padding: 20px;
+          text-transform: uppercase; padding: 19px;
+          @include transition(border-width 0.1s ease-in-out);
+          border-bottom-width: 0;
           &:last-child{
-        margin-right: 0rem; padding-right: 0px; vertical-align: top;}
-          a{ color: $white;}
-      }
+            margin-right: 0rem; padding-right: 0px; vertical-align: top;}
+            a{ color: $white;}
+
+          &.dropdown.open{border-bottom:2px solid $blue;}
+        }
 
       //overwrite for navbar dropdowns
       .dropdown-content{
