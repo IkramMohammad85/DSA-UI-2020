@@ -40,7 +40,7 @@
             text-transform: initial;
             font-weight: normal;
             }
-        .btn-outline-dark{ display: inline-table;
+        .btn-outline-dark, .btn-secondary{ display: inline-table;width: max-content;
             &:hover{ color: $white !important;}
         }
         .card{

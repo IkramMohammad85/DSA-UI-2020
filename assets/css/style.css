@@ -1672,9 +1672,12 @@ $border-default: 1px solid #ccc;
       font-size: 0.875rem;
       text-transform: initial;
       font-weight: normal; }
-    .dropdown .dropdown-content .btn-outline-dark {
-      display: inline-table; }
-      .dropdown .dropdown-content .btn-outline-dark:hover {
+    .dropdown .dropdown-content .btn-outline-dark, .dropdown .dropdown-content .btn-secondary {
+      display: inline-table;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content; }
+      .dropdown .dropdown-content .btn-outline-dark:hover, .dropdown .dropdown-content .btn-secondary:hover {
         color: #fff !important; }
     .dropdown .dropdown-content .card .card-header-img .card-text-overlap {
       top: 40%; }
