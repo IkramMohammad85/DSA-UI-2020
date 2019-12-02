@@ -99,11 +99,11 @@
     }
   }
 
-  ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 20px; float: right;@extend %clearfix;
+  ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 10px; float: right;@extend %clearfix;
                 position: relative;
       .dropdown-content{ border-radius: 3px; right: 0px; min-width: 250px;}
-      li{
-      &.dropdown.open{ background-color:#f1f1f1; border-radius: 3px; padding: 5px 5px;}
+      li{ padding: 5px;
+      &.dropdown.open{ background-color:#f1f1f1; border-radius: 3px; }
     } 
     .down-arrow{ top: -6px;}
   }
