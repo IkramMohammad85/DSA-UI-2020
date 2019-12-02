@@ -50,6 +50,8 @@
                 }
             }
         }
+        .btn-link{ color: $blue !important; text-transform: initial;
+            font-weight: normal; padding: 0; @include font-size(13px);}
     }
     
 }

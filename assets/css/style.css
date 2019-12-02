@@ -1683,6 +1683,13 @@ $border-default: 1px solid #ccc;
       top: 40%; }
       .dropdown .dropdown-content .card .card-header-img .card-text-overlap a {
         color: #fff !important; }
+    .dropdown .dropdown-content .btn-link {
+      color: #007bff !important;
+      text-transform: initial;
+      font-weight: normal;
+      padding: 0;
+      font-size: 13px;
+      font-size: 0.8125rem; }
 
 .dropdown-hover {
   position: relative;
@@ -2611,6 +2618,8 @@ ul.top-quick-link {
   text-transform: uppercase;
   margin-top: 20px;
   float: right; }
+  ul.top-quick-link .dropdown-content {
+    border-radius: 3px; }
 
 ul.navbar {
   float: right;
