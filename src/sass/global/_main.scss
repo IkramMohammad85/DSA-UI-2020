@@ -20,7 +20,7 @@ body {
 }
 
 header.site-header{ padding: 0px 0px; position: relative;
-  .logo{position: absolute;
+  .logo{position: absolute; width: auto;
     top: 40px;
     display: flex;
     align-items: center;}
@@ -128,10 +128,29 @@ footer.site-footer{ background-color:$deep-blue; color: $bluish-gray;
 
 
 @media (max-width: 575px) {
+  .home {
+    .big-banner {
+      .item {
+        .item-image{ height: 120vh!important;padding-bottom: 180px;}
+        .news{ position: relative;
+        top: 100px;min-height: 80vh !important;
+        }
+        .heading-brand{ top: 120px !important;}
+       img{ width: auto;
+        }
+        .btn-outline-white{ left: 30% !important; top: 180px !important;}
+    }
+        
+    }
+  }
+  header.site-header{
+    .logo{ position: relative;}
+    }
   footer.site-footer {
     text-align: center;
     .copyright{
     .list-inline{ text-align: center;}
   }
 }
+
 }

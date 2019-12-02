@@ -101,7 +101,11 @@
 
   ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 10px; float: right;@extend %clearfix;
                 position: relative;
-      .dropdown-content{ border-radius: 3px; right: 0px; min-width: 250px;}
+      .dropdown-content{ border-radius: 3px; right: 0px; min-width: 250px;
+        .list{ 
+          li{padding-bottom: 12px; padding-top: 12px;}
+        }
+      }
       li{ padding: 5px;
       &.dropdown.open{ background-color:#f1f1f1; border-radius: 3px; }
     } 
@@ -144,6 +148,9 @@
           
       }
     }
+    .navbar{ display: none;}
+    .top-quick-link{ display: none;}
+
     }
 
 
