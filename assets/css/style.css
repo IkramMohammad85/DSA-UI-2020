@@ -2617,9 +2617,12 @@ ul.top-quick-link {
   padding: 0;
   text-transform: uppercase;
   margin-top: 20px;
-  float: right; }
+  float: right;
+  position: relative; }
   ul.top-quick-link .dropdown-content {
-    border-radius: 3px; }
+    border-radius: 3px;
+    right: 0px;
+    min-width: 250px; }
 
 ul.navbar {
   float: right;
