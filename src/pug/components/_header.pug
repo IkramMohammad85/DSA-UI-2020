@@ -51,6 +51,18 @@ header.site-header
               img(src='assets/img/icon-user.png' alt='' width='20px')
               i.down-arrow
             .dropdown-content(data-dropdown) 
+              form(action='')
+                h3.text-capitalize Log In
+                input(type='text', placeholder='Enter Email', name='email', required='')
+                input(type='password', placeholder='Enter Password', name='psw', required='')
+                small.text-right.text-capitalize.d-block.mt-2
+                  a(href='https://www.asiabriefing.com/customer/forgot-password')
+                    | Forgot Password?
+                button.btn.btn-secondary.text-white(type='submit') Login
+                small.text-center.text-capitalize.d-block.mt-2
+                  | Don&apos;t have an account? 
+                  a(href='https://www.dezshira.com/register') Sign Up
+ 
           li
             img(src='assets/img/icon_download.png' alt='' width='20px')
         ul.navbar

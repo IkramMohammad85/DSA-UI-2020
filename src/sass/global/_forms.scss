@@ -29,13 +29,14 @@
 }
 
 }
-input[type=text], select {
+input[type=text], input[type=password], select {
 	width: 100%;
 	padding: 6px 20px;
 	margin: 6px 0;
 	display: inline-block;
 	border: $border-default;
 	box-sizing: border-box;
+	@include font-size(12px)
   }
   
   input[type=submit] {

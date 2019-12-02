@@ -2335,13 +2335,15 @@ ol, ul {
   border: 1px solid #316aa3;
   padding: 0.5em 1em; }
 
-input[type=text], select {
+input[type=text], input[type=password], select {
   width: 100%;
   padding: 6px 20px;
   margin: 6px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 12px;
+  font-size: 0.75rem; }
 
 input[type=submit] {
   width: 100%;
