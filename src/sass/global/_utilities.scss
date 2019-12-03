@@ -126,4 +126,33 @@ a{ color: $white;}
 	height: 100%;
 	z-index: 2;
 	opacity: 0.8;}
-
+	.close-btn {
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		width: 32px;
+		height: 32px;
+		opacity: 1;
+		&:hover {
+			opacity: 1;
+		}
+		&:before {
+			position: absolute;
+			left: 15px;
+			content: ' ';
+			height: 33px;
+			width: 2px;
+			background-color: $deep-blue;
+			transform: rotate(45deg);
+		}
+		&:after {
+			position: absolute;
+			left: 15px;
+			content: ' ';
+			height: 33px;
+			width: 2px;
+			background-color: $deep-blue;
+			transform: rotate(-45deg);
+		}
+	}
+	
