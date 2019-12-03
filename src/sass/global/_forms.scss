@@ -50,7 +50,7 @@ input[type=text], input[type=password], select {
   }
 
 
-@media (max-width: 575px) {
+@media (max-width: $reflex-sm) {
 	.input-add-on-field{
         font-size: 15px;
 	}

@@ -195,6 +195,23 @@ header.site-header .hamburger-menu{
 }
 
 @media (max-width: $reflex-md) {
+  .hamburger-menu{ display:block !important;
+  }
+}
+
+@media (max-width: $reflex-sm) {
+  .header-menu {
+    ul.top-quick-link {
+      .dropdown-content {
+        right: 0px;
+        left: 0;
+        width: 50%;
+        margin: 0 auto;}
+    }
+  }
+}
+
+@media (max-width: $reflex-xs) {
   .header-menu{
     @include transition(.2s ease-in-out);
     @include transform(scale(0));
@@ -245,8 +262,6 @@ header.site-header .hamburger-menu{
       }
       
     }
-  }
-  .hamburger-menu{ display:block !important;
   }
 
   header.site-header{
