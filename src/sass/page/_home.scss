@@ -20,7 +20,7 @@
         .item-image {
           position: relative;
           height: 105vh;
-          overflow: hidden; padding-bottom: 180px;
+          overflow: hidden; padding-bottom: 180px; background-color: $deep-blue ;
           &::before {
             content: '';
             position: absolute;
@@ -139,14 +139,12 @@
 
 
   @media (max-width: $reflex-md) {
-
   }
-
   @media (max-width: $reflex-sm) {
     .home {
       .big-banner {
         .item {
-          .item-image{ height: 48vh!important;padding-bottom: 180px;}
+          .item-image{ height: 48vh!important;padding-bottom: 180px; background-color: $deep-blue ;}
           .news{ position: relative;
           top: 0px;min-height: 34vh !important; padding-bottom: 40px;
           img{height: auto; width: 87%;}
