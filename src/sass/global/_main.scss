@@ -195,8 +195,7 @@ header.site-header .hamburger-menu{
 }
 
 @media (max-width: $reflex-md) {
-  .hamburger-menu{ display:block !important;
-  }
+
 }
 
 @media (max-width: $reflex-sm) {
@@ -265,7 +264,7 @@ header.site-header .hamburger-menu{
   }
 
   header.site-header{
-    .logo{ position: relative;}
+    .logo{ position: relative; margin-top: 25px;}
     }
   footer.site-footer {
     text-align: center;
@@ -273,5 +272,6 @@ header.site-header .hamburger-menu{
     .list-inline{ text-align: center;}
   }
 }
-
+.hamburger-menu{ display:block !important;
+}
 }

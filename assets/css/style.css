@@ -2550,10 +2550,6 @@ header.site-header .hamburger-menu {
   header.site-header .logo {
     max-width: 260px; } }
 
-@media (max-width: 992px) {
-  .hamburger-menu {
-    display: block !important; } }
-
 @media (max-width: 768px) {
   .header-menu ul.top-quick-link .dropdown-content {
     right: 0px;
@@ -2610,11 +2606,14 @@ header.site-header .hamburger-menu {
         .header-menu ul.top-quick-link .dropdown-content .list li {
           text-align: left; }
   header.site-header .logo {
-    position: relative; }
+    position: relative;
+    margin-top: 25px; }
   footer.site-footer {
     text-align: center; }
     footer.site-footer .copyright .list-inline {
-      text-align: center; } }
+      text-align: center; }
+  .hamburger-menu {
+    display: block !important; } }
 
 .home .big-banner {
   position: relative; }
@@ -2797,7 +2796,7 @@ ul.navbar {
 
 @media (max-width: 768px) {
   .home .big-banner .item .item-image {
-    height: 50vh !important;
+    height: 48vh !important;
     padding-bottom: 180px; }
   .home .big-banner .item .news {
     position: relative;
@@ -2806,8 +2805,6 @@ ul.navbar {
     padding-bottom: 40px; }
     .home .big-banner .item .news img {
       height: auto; }
-    .home .big-banner .item .news h3 {
-      font-size: 12px; }
   .home .big-banner .item .heading-brand {
     top: 180px !important; }
   .home .big-banner .item img {
@@ -2823,7 +2820,7 @@ ul.navbar {
 
 @media (max-width: 576px) {
   .home .big-banner .item .item-image {
-    height: 110vh !important;
+    height: 100vh !important;
     padding-bottom: 180px; }
   .home .big-banner .item .news {
     position: relative;
@@ -2831,7 +2828,8 @@ ul.navbar {
     min-height: 70vh !important;
     padding-bottom: 40px; }
     .home .big-banner .item .news img {
-      height: 120px; }
+      height: 120px;
+      opacity: 1; }
   .home .big-banner .item .heading-brand {
     top: 120px !important;
     font-size: 20px; }
