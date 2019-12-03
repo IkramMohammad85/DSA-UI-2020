@@ -2232,7 +2232,7 @@ ol, ul {
   text-transform: capitalize !important; }
 
 .overlay-black::after {
-  background-color: #000;
+  background-color: #fff;
   content: "";
   display: block;
   position: absolute;
@@ -2245,29 +2245,31 @@ ol, ul {
 
 .close-btn {
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 0px;
+  top: 0px;
   width: 32px;
-  height: 32px;
-  opacity: 1; }
+  height: 28px;
+  opacity: 1;
+  background: #007bff;
+  padding: 5px; }
   .close-btn:hover {
     opacity: 1; }
   .close-btn:before {
     position: absolute;
     left: 15px;
     content: ' ';
-    height: 33px;
+    height: 14px;
     width: 2px;
-    background-color: #1a2940;
+    background-color: #fff;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg); }
   .close-btn:after {
     position: absolute;
     left: 15px;
     content: ' ';
-    height: 33px;
+    height: 14px;
     width: 2px;
-    background-color: #1a2940;
+    background-color: #fff;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
@@ -2849,7 +2851,8 @@ ul.navbar {
     min-height: 34vh !important;
     padding-bottom: 40px; }
     .home .big-banner .item .news img {
-      height: auto; }
+      height: auto;
+      width: 87%; }
   .home .big-banner .item .heading-brand {
     top: 180px !important; }
   .home .big-banner .item img {
