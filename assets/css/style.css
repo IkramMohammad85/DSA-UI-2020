@@ -2405,8 +2405,8 @@ header.site-header {
     padding-bottom: 0;
     border-bottom: none;
     background: rgba(26, 41, 64, 0.8);
-    -webkit-transition: background-color 0.5s;
-    transition: background-color 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     height: 110px;
     display: -webkit-box;
     display: flex;
@@ -2416,9 +2416,14 @@ header.site-header {
     header.site-header #main-nav.white {
       background: #fff;
       opacity: 0.98;
+      border-bottom: 1px solid #e9ecef;
       box-shadow: 0px 21px 51px -26px rgba(0, 0, 0, 0.45); }
       header.site-header #main-nav.white a {
         color: #1a2940; }
+      header.site-header #main-nav.white .header-menu.open > ul > li > a {
+        color: white !important; }
+      header.site-header #main-nav.white .hamburger-menu span {
+        background: #1a2940; }
   header.site-header .fixed-top {
     position: fixed;
     top: 0;
@@ -2496,21 +2501,86 @@ footer.site-footer {
           border-right: solid 1px #94a2ad;
           padding-right: .5rem; }
 
-@media (max-width: 575px) {
-  .home .big-banner .item .item-image {
-    height: 120vh !important;
-    padding-bottom: 180px; }
-  .home .big-banner .item .news {
-    position: relative;
-    top: 100px;
-    min-height: 80vh !important; }
-  .home .big-banner .item .heading-brand {
-    top: 120px !important; }
-  .home .big-banner .item img {
-    width: auto; }
-  .home .big-banner .item .btn-outline-white {
-    left: 30% !important;
-    top: 180px !important; }
+header.site-header .hamburger-menu {
+  display: none; }
+
+.hamburger-menu {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer; }
+  .hamburger-menu span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
+  .hamburger-menu span:nth-child(1) {
+    top: 0px; }
+  .hamburger-menu span:nth-child(2) {
+    top: 18px; }
+  .hamburger-menu span:nth-child(3) {
+    top: 36px; }
+  .hamburger-menu.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  .hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px; }
+  .hamburger-menu.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100% !important; }
+  header.site-header .logo {
+    max-width: 300px; } }
+
+@media (max-width: 992px) {
+  .header-menu {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    height: 0; }
+    .header-menu ul.navbar .dropdown-content {
+      top: auto; }
+    .header-menu ul {
+      display: none; }
+    .header-menu.open {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      background: #0D2338;
+      display: block;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 100px;
+      left: 0;
+      z-index: 100; }
+      .header-menu.open ul {
+        display: block; }
+      .header-menu.open ul.navbar {
+        width: 100%; }
+        .header-menu.open ul.navbar li {
+          display: block;
+          text-align: center; }
+  .hamburger-menu {
+    display: block !important; }
   header.site-header .logo {
     position: relative; }
   footer.site-footer {
@@ -2697,14 +2767,20 @@ ul.navbar {
     ul.navbar .dropdown-content a {
       color: #000; }
 
-@media (max-width: 575px) {
+@media (max-width: 992px) {
+  .home .big-banner .item .item-image {
+    height: 120vh !important;
+    padding-bottom: 180px; }
+  .home .big-banner .item .news {
+    position: relative;
+    top: 100px;
+    min-height: 80vh !important; }
   .home .big-banner .item .heading-brand {
-    top: 30px; }
+    top: 120px !important; }
   .home .big-banner .item img {
     width: auto; }
-  .navbar {
-    display: none; }
-  .top-quick-link {
-    display: none; } }
+  .home .big-banner .item .btn-outline-white {
+    left: 30% !important;
+    top: 180px !important; } }
 
 /*# sourceMappingURL=style.css.map */

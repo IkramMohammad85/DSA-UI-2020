@@ -137,21 +137,25 @@
   }
 
 
-  @media (max-width: 575px) {
+  @media (max-width: $reflex-md) {
+    
     .home {
       .big-banner {
         .item {
-          .heading-brand{ top: 30px;}
+          .item-image{ height: 120vh!important;padding-bottom: 180px;}
+          .news{ position: relative;
+          top: 100px;min-height: 80vh !important;
+          }
+          .heading-brand{ top: 120px !important;}
          img{ width: auto;
           }
+          .btn-outline-white{ left: 30% !important; top: 180px !important;}
       }
           
       }
     }
-    .navbar{ display: none;}
-    .top-quick-link{ display: none;}
-
-    }
+    
+  }
 
 
 

@@ -18,7 +18,9 @@ class dropdown {
         el.parentNode.classList.toggle('open');
         el.nextElementSibling.classList.toggle('d-block');
 
-        if(el.hasAttribute('data-turn-header-white'))
+        const changeColorExceptionsClick=document.querySelector(".header-menu.open");
+
+        if(el.hasAttribute('data-turn-header-white') && !changeColorExceptionsClick)
             header.classList.add("white");header.querySelector('img.logo').src = 'assets/img/logo-black.png';
 
         for (let i = 0; i < this.target.length; i++) {
@@ -32,7 +34,10 @@ class dropdown {
       window.addEventListener('mouseup', (event) => {
         if (event.target != el && event.target.parentNode != el) {
           if (el.classList.contains('d-block')) {
-            header.classList.remove("white");header.querySelector('img.logo').src = 'assets/img/logo.png';
+            const changeColorExceptionsClick=document.querySelector(".header-menu.open");
+            if(!changeColorExceptionsClick)
+              header.classList.remove("white");header.querySelector('img.logo').src = 'assets/img/logo.png';
+              
             el.parentNode.classList.remove('open');
             el.classList.remove('d-block');
           }
@@ -50,12 +55,15 @@ if(header){
       const remove_class_on_scroll = () => { header.classList.remove("white");header.querySelector('img.logo').src = 'assets/img/logo.png'; }
       window.addEventListener('scroll', function() { 
       scrollpos = window.scrollY;
-      if (scrollpos >= header_height) { if(!document.querySelector(".navbar .dropdown.open")) add_class_on_scroll() }
-      else { if(!document.querySelector(".navbar .dropdown.open")) remove_class_on_scroll() }
+
+      const changeColorExceptionsScroll=document.querySelector(".navbar .dropdown.open");
+      if (scrollpos >= header_height) { if(!changeColorExceptionsScroll) add_class_on_scroll() }
+      else { if(!changeColorExceptionsScroll) remove_class_on_scroll() }
       })
 }
 
 //Feature: Homepage Big Banner Slider
+if (typeof Glide != "undefined") {
 new Glide('section.big-banner.glide', {
       type:'carousel',
       autoplay: 10000,
@@ -65,6 +73,18 @@ new Glide('section.big-banner.glide', {
       perView: 1,
       animationTimingFunc: 'ease',
     }).mount();
+}
+
+//Hamburger Menu Click Event Listener
+document.querySelector(".hamburger-menu").addEventListener('click',function(){
+      this.classList.toggle('open');
+      openContainer=this.getAttribute("data-open");
+      if(openContainer){
+            openContainerNode=document.querySelector('.'+openContainer);
+            if(openContainerNode)
+                  openContainerNode.classList.toggle('open');
+      }
+})
 
 //Component: dropdown
 window.addEventListener('load', () => {
