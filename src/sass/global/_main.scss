@@ -202,12 +202,11 @@ header.site-header .hamburger-menu{
 
     ul.navbar {
       .dropdown-content{
-        top:auto;
         height: 400px; overflow-y: scroll;
         .btn-secondary{ margin: 0 auto;}
         h3{ text-align: left;}
         .bullet-list{
-        li{text-align: left;}
+        li{text-align: left; border-bottom: none;}
         }
       }
     }
@@ -233,8 +232,18 @@ header.site-header .hamburger-menu{
         li{
           display:block;
           text-align: center;
+          border-bottom: solid 1px #253341;
         }
       }
+    }
+    ul.top-quick-link{
+      float: none; margin-left: auto; margin-right: auto; text-align: center;
+      .dropdown-content{ right: 24px;
+        .list {
+          li{ text-align: left;}
+        }
+      }
+      
     }
   }
   .hamburger-menu{ display:block !important;

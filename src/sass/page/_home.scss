@@ -142,14 +142,15 @@
     .home {
       .big-banner {
         .item {
-          .item-image{ height: 120vh!important;padding-bottom: 180px;}
+          .item-image{ height: 110vh!important;padding-bottom: 180px;}
           .news{ position: relative;
-          top: 100px;min-height: 80vh !important;
+          top: 100px;min-height: 70vh !important; padding-bottom: 40px;
+          img{height: 120px;}
           }
-          .heading-brand{ top: 120px !important;}
-         img{ width: auto;
+          .heading-brand{ top: 120px !important; font-size: 20px;;}
+         img{ width: auto; 
           }
-          .btn-outline-white{ left: 30% !important; top: 180px !important;}
+          .btn-outline-white{ left: 28% !important;}
       }
           
       }
