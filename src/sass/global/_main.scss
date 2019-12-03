@@ -156,15 +156,15 @@ header.site-header .hamburger-menu{
 	}
 	
 	span:nth-child(1) {
-	  top: 13px;
+	  top: -6px;
 	}
 	
 	span:nth-child(2) {
-	  top: 20px;
+	  top: 0px;
 	}
 	
 	span:nth-child(3) {
-	  top: 26px;
+	  top: 7px;
 	}
 	
 	&.open span:nth-child(1) {
@@ -199,11 +199,14 @@ header.site-header .hamburger-menu{
 }
 
 @media (max-width: $reflex-sm) {
+  header.site-header {
+    .logo{ top:20px;}
+  }
   .header-menu {
     ul.top-quick-link {
       .dropdown-content {
         right: 0px;
-        left: 0;
+        left: inherit;
         width: 50%;
         margin: 0 auto;}
     }
@@ -254,7 +257,10 @@ header.site-header .hamburger-menu{
     }
     ul.top-quick-link{
       float: none; margin-left: auto; margin-right: auto; text-align: center;
-      .dropdown-content{ right: 24px;
+      .dropdown-content{ right: 0px;
+        left: 0px;
+        width: 50%;
+        margin: 0 auto;
         .list {
           li{ text-align: left;}
         }
