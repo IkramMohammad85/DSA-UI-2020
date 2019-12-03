@@ -2731,7 +2731,7 @@ header.site-header .hamburger-menu {
     .home .big-banner .item .news h3 {
       margin-left: 30px;
       margin-right: 30px;
-      height: 50px; }
+      min-height: 67px; }
       .home .big-banner .item .news h3 a {
         color: #fff; }
     .home .big-banner .item .news .btn {
