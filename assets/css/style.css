@@ -2861,7 +2861,9 @@ ul.navbar {
   .home .about-us .p-arround-4 {
     padding: 20px; }
   .home .about-us .transparent-bg {
-    min-height: 470px; } }
+    min-height: 470px; }
+  ul.navbar {
+    float: none; } }
 
 @media (max-width: 576px) {
   .home .big-banner .item .item-image {
