@@ -105,7 +105,7 @@
         .list{ 
           li{padding-bottom: 12px; padding-top: 12px;}
         }
-        &.dropdown-content-medium{padding: 0; border-radius: 0; padding: 15px 15px 0px 15px;}
+        &.dropdown-content-medium{border-radius: 0; padding: 15px 15px 0px 15px;}
         .list-unstyled.bullet-list {
           li{ @include font-size(12px); background:url(../img/list-arrow.png) no-repeat 0 10px ;}
         }
