@@ -105,7 +105,7 @@
         .list{ 
           li{padding-bottom: 12px; padding-top: 12px;}
         }
-        &.dropdown-content-medium{width: 600px; padding: 0; border-radius: 0; padding: 15px 15px 0px 15px;}
+        &.dropdown-content-medium{padding: 0; border-radius: 0; padding: 15px 15px 0px 15px;}
         .list-unstyled.bullet-list {
           li{ @include font-size(12px); background:url(../img/list-arrow.png) no-repeat 0 10px ;}
         }
@@ -158,8 +158,7 @@
          img{ width: auto; 
           }
           .btn-outline-white{ left: 40% !important; bottom: 0; top: 0;}
-      }
-          
+      }    
       }
       .about-us{
         .p-arround-4{ padding: 20px;}
@@ -172,7 +171,6 @@
 
 
   @media (max-width: $reflex-xs) {
-    
     .home {
       .big-banner {
         .item {
