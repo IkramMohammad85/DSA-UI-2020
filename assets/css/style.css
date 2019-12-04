@@ -1690,6 +1690,12 @@ $border-default: 1px solid #ccc;
       padding: 0;
       font-size: 13px;
       font-size: 0.8125rem; }
+    .dropdown .dropdown-content.dropdown-content-normal {
+      min-width: 300px; }
+    .dropdown .dropdown-content.dropdown-content-medium {
+      min-width: 600px; }
+    .dropdown .dropdown-content.dropdown-content-large {
+      min-width: 1200px; }
 
 .dropdown-hover {
   position: relative;
@@ -1933,6 +1939,10 @@ ol, ul {
     color: #fff;
     background-color: #314d77;
     border-color: #314d77; }
+
+.btn-block {
+  display: block !important;
+  width: 100% !important; }
 
 .dark-blue-bg {
   background: #1a2940; }
@@ -2394,10 +2404,11 @@ ol, ul {
 
 input[type=text], input[type=password], select {
   width: 100%;
-  padding: 6px 20px;
+  padding: 8px 10px;
   margin: 6px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  border-color: #e7e7e7;
   box-sizing: border-box;
   font-size: 12px;
   font-size: 0.75rem; }
@@ -2664,9 +2675,10 @@ header.site-header .hamburger-menu {
         margin: 0 auto; }
         .header-menu ul.top-quick-link .dropdown-content .list li {
           text-align: left; }
-        .header-menu ul.top-quick-link .dropdown-content.dropdown-content-width {
+        .header-menu ul.top-quick-link .dropdown-content.dropdown-content-medium {
           width: 100%;
-          height: 600px;
+          min-width: inherit;
+          height: 700px;
           overflow-y: scroll; }
         .header-menu ul.top-quick-link .dropdown-content .list-unstyled.bullet-list li {
           text-align: left; }
@@ -2819,7 +2831,7 @@ ul.top-quick-link {
     ul.top-quick-link .dropdown-content .list li {
       padding-bottom: 12px;
       padding-top: 12px; }
-    ul.top-quick-link .dropdown-content.dropdown-content-width {
+    ul.top-quick-link .dropdown-content.dropdown-content-medium {
       width: 600px;
       padding: 0;
       border-radius: 0;
@@ -2882,7 +2894,7 @@ ul.navbar {
     padding-bottom: 40px; }
     .home .big-banner .item .news img {
       height: auto;
-      width: 87%; }
+      max-width: 87%; }
     .home .big-banner .item .news h3 {
       margin-left: 15px;
       margin-right: 15px;

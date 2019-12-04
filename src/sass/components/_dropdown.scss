@@ -52,8 +52,13 @@
         }
         .btn-link{ color: $blue !important; text-transform: initial;
             font-weight: normal; padding: 0; @include font-size(13px);}
+        
+     &.dropdown-content-normal {min-width: 300px;}
+     &.dropdown-content-medium {min-width: 600px;}
+     &.dropdown-content-large {min-width: 1200px;}
     }
-    
+
+
 }
 //CSS based dropdown
 .dropdown-hover {
