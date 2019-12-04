@@ -29,7 +29,7 @@
 }
 
 }
-input[type=text], input[type=password], select {
+input[type=text], input[type=password], select,textarea {
 	width: 100%;
 	padding: 8px 10px;
 	margin: 6px 0;
@@ -50,7 +50,7 @@ input[type=text], input[type=password], select {
 	cursor: pointer;
   }
 
-
+//Tablets
 @media (max-width: $reflex-sm) {
 	.input-add-on-field{
         font-size: 15px;

@@ -186,7 +186,7 @@ header.site-header .hamburger-menu{
 
 
 
-
+//desktop
 @media (max-width: $reflex-lg) {
   .container{max-width:100% !important;}
   header.site-header {
@@ -194,10 +194,7 @@ header.site-header .hamburger-menu{
   }
 }
 
-@media (max-width: $reflex-md) {
-
-}
-
+//Tablets
 @media (max-width: $reflex-sm) {
   header.site-header {
     .logo{ top:20px;}
@@ -214,7 +211,7 @@ header.site-header .hamburger-menu{
     }
   }
 }
-
+//Mobile
 @media (max-width: $reflex-xs) {
   .header-menu{
     @include transition(.2s ease-in-out);

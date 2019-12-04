@@ -147,3 +147,32 @@
    
    }
 }
+
+//Tablets
+@media (max-width: $reflex-sm) {
+    .card{
+        &.news{ height: auto;
+        .card-header-img{ height: auto;}
+        }
+        &.news-right{ height: auto;
+        .card-header-img{ height: auto;}
+
+        }
+       .card-header-img {
+        .card-text-overlap { top: 30%;}
+       }      
+    }
+  }
+
+
+//Mobile
+@media (max-width: $reflex-xs) {
+    .card{
+        &.news{ height: auto;
+        .card-header-img{ height: auto;}
+        }
+       .card-header-img {
+        .card-text-overlap { top: 30%;}
+       }      
+    }
+  }

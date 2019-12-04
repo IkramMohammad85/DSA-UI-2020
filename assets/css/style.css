@@ -1544,6 +1544,26 @@ $border-default: 1px solid #ccc;
         bottom: 10%;
         top: auto; }
 
+@media (max-width: 768px) {
+  .card.news {
+    height: auto; }
+    .card.news .card-header-img {
+      height: auto; }
+  .card.news-right {
+    height: auto; }
+    .card.news-right .card-header-img {
+      height: auto; }
+  .card .card-header-img .card-text-overlap {
+    top: 30%; } }
+
+@media (max-width: 576px) {
+  .card.news {
+    height: auto; }
+    .card.news .card-header-img {
+      height: auto; }
+  .card .card-header-img .card-text-overlap {
+    top: 30%; } }
+
 .list {
   padding: 0;
   margin: 0;
@@ -1619,7 +1639,7 @@ $border-default: 1px solid #ccc;
     margin-right: 1em;
     -webkit-box-ordinal-group: 2;
     order: 1;
-    width: 150px; }
+    width: auto; }
   .list.lists-with-logo li .list-content {
     -webkit-box-flex: 1;
     flex: 1; }
@@ -1637,7 +1657,15 @@ $border-default: 1px solid #ccc;
       color: #007bff;
       background-color: #f8f9fa; }
 
-@media (max-width: 575px) {
+@media (min-width: 768px) {
+  .list.lists-with-logo li .list-logo {
+    width: 150px; } }
+
+@media (max-width: 576px) {
+  .list.lists-with-logo li {
+    display: block; }
+    .list.lists-with-logo li .list-logo {
+      width: 50%; }
   .list.lists-events .date-block {
     float: inherit;
     border-bottom: solid 1px  #dadada; }
@@ -1734,12 +1762,37 @@ $border-default: 1px solid #ccc;
     width: 100%;
     background-position: 50% 0;
     background-repeat: no-repeat; }
-  .banner h1, .banner h2, .banner h3, .banner h4, .banner h5 {
+  .banner h1,
+  .banner h2,
+  .banner h3,
+  .banner h4,
+  .banner h5 {
     color: #fff; }
-    .banner h1 a, .banner h2 a, .banner h3 a, .banner h4 a, .banner h5 a {
+    .banner h1 a,
+    .banner h2 a,
+    .banner h3 a,
+    .banner h4 a,
+    .banner h5 a {
       color: #fff; }
   .banner .btn {
     display: table; }
+
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+    padding: 60px 0px; }
+    .banner img {
+      width: auto; } }
+
+@media (max-width: 576px) {
+  .banner {
+    height: auto;
+    padding: 25px 0px; }
+    .banner img {
+      width: auto; }
+    .banner h1 {
+      font-size: 28px;
+      font-size: 1.75rem; } }
 
 @font-face {
   font-family: 'NimbusSanL';
@@ -2241,6 +2294,9 @@ ol, ul {
 .float-none {
   float: none; }
 
+.required-field {
+  color: red; }
+
 .text-lowercase {
   text-transform: lowercase !important; }
 
@@ -2402,7 +2458,7 @@ ol, ul {
   border: 1px solid #316aa3;
   padding: 0.5em 1em; }
 
-input[type=text], input[type=password], select {
+input[type=text], input[type=password], select, textarea {
   width: 100%;
   padding: 8px 10px;
   margin: 6px 0;
@@ -2825,8 +2881,7 @@ ul.top-quick-link {
   float: right;
   position: relative; }
   ul.top-quick-link .dropdown-content {
-    right: 0px;
-    min-width: 250px; }
+    right: 0px; }
     ul.top-quick-link .dropdown-content .list li {
       padding-bottom: 12px;
       padding-top: 12px; }

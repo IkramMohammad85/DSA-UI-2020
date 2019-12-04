@@ -54,7 +54,7 @@
 	.list-logo {
 		margin-right: 1em;
 		order: 1;
-		width: 150px;
+		width: auto;
 	  }
 	  .list-content {
 		flex: 1;
@@ -76,12 +76,32 @@
 	}
 }
 
-@media (max-width: 575px) {
-	.list.lists-events{
-		.date-block{
-			float: inherit;
-			border-bottom: solid 1px  #dadada;
+//Tablet
+@media (min-width: $reflex-sm) {
+	.list{
+		&.lists-with-logo {
+			li{ 
+				.list-logo{ width: 150px; }
+			}
 		}
-		.dec-block { margin-left: 0px;}
+	}
+
+}
+//Mobile
+@media (max-width: $reflex-xs) {
+
+	.list{
+		&.lists-with-logo {
+			li{ display: block;
+				.list-logo{ width: 50%;}
+			}
+		}
+		&.lists-events{
+			.date-block{
+				float: inherit;
+				border-bottom: solid 1px  #dadada;
+			}
+			.dec-block { margin-left: 0px;}
+		}
 	}
   }

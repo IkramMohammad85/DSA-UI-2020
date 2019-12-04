@@ -101,7 +101,7 @@
 
   ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 10px; float: right;@extend %clearfix;
                 position: relative;
-      .dropdown-content{ right: 0px; min-width: 250px;
+      .dropdown-content{ right: 0px;
         .list{ 
           li{padding-bottom: 12px; padding-top: 12px;}
         }
@@ -140,10 +140,7 @@
       }
   }
 
-
-
-  @media (max-width: $reflex-md) {
-  }
+ //Tablets
   @media (max-width: $reflex-sm) {
     .home {
       .big-banner {
@@ -169,7 +166,7 @@
     
   }
 
-
+//Mobile
   @media (max-width: $reflex-xs) {
     .home {
       .big-banner {

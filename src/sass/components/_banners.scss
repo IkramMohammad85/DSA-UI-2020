@@ -1,19 +1,47 @@
 .banner {
-	position: relative;
-	overflow: hidden;
-	height: 340px;
-	width: 100%;
-	z-index: 1;
-	top: 110px; display: flex; align-items: center;
-	img {
-		position: absolute;
-		background-size: cover;
-		width: 100%;
-		background-position: 50% 0;
-		background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 340px;
+  width: 100%;
+  z-index: 1;
+  top: 110px;
+  display: flex;
+  align-items: center;
+  img {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $white;
+    a {
+      color: $white;
+    }
+  }
+  .btn {
+    display: table;
+  }
+}
+//Tablets
+@media (max-width: $reflex-sm) {
+	.banner {
+		img{ width: auto;}
+	  height: auto;
+	  padding: 60px 0px;
 	}
-    h1,h2,h3,h4,h5{ color: $white;
-    a{ color: $white;}
-	}
-	.btn{ display: table;}
+  }
+ //Mobile 
+@media (max-width: $reflex-xs) {
+  .banner {
+	img{ width: auto;}
+    height: auto;
+	padding: 25px 0px;
+	h1{@include font-size(28px) }
+  }
 }
