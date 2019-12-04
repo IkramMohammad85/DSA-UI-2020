@@ -56,18 +56,34 @@ header.site-header
               a(data-trigger)
                 img(src='assets/img/icon-user.png' alt='' width='20px')
                 i.down-arrow
-              .dropdown-content(data-dropdown) 
-                form(action='')
-                  h3.text-capitalize Log In
-                  input(type='text', placeholder='Enter Email', name='email', required='')
-                  input(type='password', placeholder='Enter Password', name='psw', required='')
-                  small.text-right.text-capitalize.d-block.mt-2
-                    a(href='https://www.asiabriefing.com/customer/forgot-password')
-                      | Forgot Password?
-                  button.btn.btn-secondary.text-white(type='submit') Login
-                  small.text-center.text-capitalize.d-block.mt-2
-                    | Don&apos;t have an account? 
-                    a(href='https://www.dezshira.com/register') Sign Up
+              .dropdown-content.dropdown-content-width(data-dropdown) 
+                .grid
+                  .col-md.text-center
+                    a(href='https://www.dezshira.com/library')
+                      img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    h6.text-capitalize-none
+                      | A place to share knowledge and better understand Asia
+                  .col-md-6.col-sm-6.col-grid
+                    form.white-bg.p-arround-2(action='')
+                      h3.text-capitalize Log In
+                      input(type='text', placeholder='Enter Email', name='email', required='')
+                      input(type='password', placeholder='Enter Password', name='psw', required='')
+                      small.text-right.text-capitalize.d-block.mt-2
+                        a(href='https://www.asiabriefing.com/customer/forgot-password')
+                          | Forgot Password?
+                      button.btn.btn-secondary.text-white(type='submit') Login
+                        
+                  .col-md-6.col-sm-6.col-grid
+                      h5.text-capitalize Why subscribe to Asiapedia?
+                      ul.list-unstyled.bullet-list
+                        li Download our FREE magazines and guides
+                        li Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                        li Access presentations, webinars, podcasts, reports, Q&amp;As and more
+                        li Track paid orders and connect with our support team 
+                  .col-md.text-center.blue-bg 
+                      small.text-center.text-capitalize.d-block
+                        | Don&apos;t have an account? 
+                        a(href='https://www.dezshira.com/register') Sign Up                 
   
             li
               img(src='assets/img/icon_download.png' alt='' width='20px')

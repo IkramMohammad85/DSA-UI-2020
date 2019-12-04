@@ -1940,22 +1940,28 @@ ol, ul {
 .light-blue-bg {
   background: #316aa3; }
 
+.blue-bg {
+  background: #007bff; }
+
 .dark-light-blue-bg {
   background: #344E70; }
 
-.cards-content-bg, .dark-blue-bg, .light-blue-bg, .dark-light-blue-bg, .dark-gray-bg {
+.cards-content-bg, .dark-blue-bg, .light-blue-bg, .blue-bg, .dark-light-blue-bg, .dark-gray-bg {
   color: #fff; }
-  .cards-content-bg a, .dark-blue-bg a, .light-blue-bg a, .dark-light-blue-bg a, .dark-gray-bg a {
+  .cards-content-bg a, .dark-blue-bg a, .light-blue-bg a, .blue-bg a, .dark-light-blue-bg a, .dark-gray-bg a {
     color: #fff; }
-    .cards-content-bg a:hover, .dark-blue-bg a:hover, .light-blue-bg a:hover, .dark-light-blue-bg a:hover, .dark-gray-bg a:hover {
+    .cards-content-bg a:hover, .dark-blue-bg a:hover, .light-blue-bg a:hover, .blue-bg a:hover, .dark-light-blue-bg a:hover, .dark-gray-bg a:hover {
       text-decoration: none; }
-  .cards-content-bg h1, .dark-blue-bg h1, .light-blue-bg h1, .dark-light-blue-bg h1, .dark-gray-bg h1, .cards-content-bg h2, .dark-blue-bg h2, .light-blue-bg h2, .dark-light-blue-bg h2, .dark-gray-bg h2, .cards-content-bg h3, .dark-blue-bg h3, .light-blue-bg h3, .dark-light-blue-bg h3, .dark-gray-bg h3, .cards-content-bg h4, .dark-blue-bg h4, .light-blue-bg h4, .dark-light-blue-bg h4, .dark-gray-bg h4, .cards-content-bg h5, .dark-blue-bg h5, .light-blue-bg h5, .dark-light-blue-bg h5, .dark-gray-bg h5 {
+  .cards-content-bg h1, .dark-blue-bg h1, .light-blue-bg h1, .blue-bg h1, .dark-light-blue-bg h1, .dark-gray-bg h1, .cards-content-bg h2, .dark-blue-bg h2, .light-blue-bg h2, .blue-bg h2, .dark-light-blue-bg h2, .dark-gray-bg h2, .cards-content-bg h3, .dark-blue-bg h3, .light-blue-bg h3, .blue-bg h3, .dark-light-blue-bg h3, .dark-gray-bg h3, .cards-content-bg h4, .dark-blue-bg h4, .light-blue-bg h4, .blue-bg h4, .dark-light-blue-bg h4, .dark-gray-bg h4, .cards-content-bg h5, .dark-blue-bg h5, .light-blue-bg h5, .blue-bg h5, .dark-light-blue-bg h5, .dark-gray-bg h5 {
     color: #fff; }
-    .cards-content-bg h1 a, .dark-blue-bg h1 a, .light-blue-bg h1 a, .dark-light-blue-bg h1 a, .dark-gray-bg h1 a, .cards-content-bg h2 a, .dark-blue-bg h2 a, .light-blue-bg h2 a, .dark-light-blue-bg h2 a, .dark-gray-bg h2 a, .cards-content-bg h3 a, .dark-blue-bg h3 a, .light-blue-bg h3 a, .dark-light-blue-bg h3 a, .dark-gray-bg h3 a, .cards-content-bg h4 a, .dark-blue-bg h4 a, .light-blue-bg h4 a, .dark-light-blue-bg h4 a, .dark-gray-bg h4 a, .cards-content-bg h5 a, .dark-blue-bg h5 a, .light-blue-bg h5 a, .dark-light-blue-bg h5 a, .dark-gray-bg h5 a {
+    .cards-content-bg h1 a, .dark-blue-bg h1 a, .light-blue-bg h1 a, .blue-bg h1 a, .dark-light-blue-bg h1 a, .dark-gray-bg h1 a, .cards-content-bg h2 a, .dark-blue-bg h2 a, .light-blue-bg h2 a, .blue-bg h2 a, .dark-light-blue-bg h2 a, .dark-gray-bg h2 a, .cards-content-bg h3 a, .dark-blue-bg h3 a, .light-blue-bg h3 a, .blue-bg h3 a, .dark-light-blue-bg h3 a, .dark-gray-bg h3 a, .cards-content-bg h4 a, .dark-blue-bg h4 a, .light-blue-bg h4 a, .blue-bg h4 a, .dark-light-blue-bg h4 a, .dark-gray-bg h4 a, .cards-content-bg h5 a, .dark-blue-bg h5 a, .light-blue-bg h5 a, .blue-bg h5 a, .dark-light-blue-bg h5 a, .dark-gray-bg h5 a {
       color: #fff; }
 
 .grey-bg {
   background-color: #e9ecef; }
+
+.white-bg {
+  background-color: #fff; }
 
 .gray-light-bg {
   background: #eee; }
@@ -2028,6 +2034,9 @@ ol, ul {
 
 .p-arround-2 {
   padding: 20px; }
+
+.p-arround-1 {
+  padding: 10px; }
 
 .pr-2 {
   padding-right: 20px; }
@@ -2230,6 +2239,9 @@ ol, ul {
 
 .text-capitalize {
   text-transform: capitalize !important; }
+
+.text-capitalize-none {
+  text-transform: none !important; }
 
 .overlay-black::after {
   background-color: #fff;
@@ -2652,6 +2664,10 @@ header.site-header .hamburger-menu {
         margin: 0 auto; }
         .header-menu ul.top-quick-link .dropdown-content .list li {
           text-align: left; }
+        .header-menu ul.top-quick-link .dropdown-content.dropdown-content-width {
+          width: 100%; }
+        .header-menu ul.top-quick-link .dropdown-content .list-unstyled.bullet-list li {
+          text-align: left; }
   header.site-header .logo {
     position: relative;
     margin-top: 25px; }
@@ -2801,6 +2817,15 @@ ul.top-quick-link {
     ul.top-quick-link .dropdown-content .list li {
       padding-bottom: 12px;
       padding-top: 12px; }
+    ul.top-quick-link .dropdown-content.dropdown-content-width {
+      width: 600px;
+      padding: 0;
+      border-radius: 0;
+      padding: 15px 15px 0px 15px; }
+    ul.top-quick-link .dropdown-content .list-unstyled.bullet-list li {
+      font-size: 12px;
+      font-size: 0.75rem;
+      background: url(../img/list-arrow.png) no-repeat 0 10px; }
   ul.top-quick-link li {
     padding: 5px; }
     ul.top-quick-link li.dropdown.open {
@@ -2856,6 +2881,11 @@ ul.navbar {
     .home .big-banner .item .news img {
       height: auto;
       width: 87%; }
+    .home .big-banner .item .news h3 {
+      margin-left: 15px;
+      margin-right: 15px;
+      font-size: 14px;
+      font-size: 0.875rem; }
   .home .big-banner .item .heading-brand {
     top: 180px !important; }
   .home .big-banner .item img {
@@ -2882,7 +2912,11 @@ ul.navbar {
     padding-bottom: 40px; }
     .home .big-banner .item .news img {
       height: 120px;
-      opacity: 1; }
+      opacity: 0.4;
+      max-width: 100%; }
+    .home .big-banner .item .news h3 {
+      font-size: 18px;
+      font-size: 1.125rem; }
   .home .big-banner .item .heading-brand {
     top: 120px !important;
     font-size: 20px; }

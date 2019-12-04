@@ -105,6 +105,10 @@
         .list{ 
           li{padding-bottom: 12px; padding-top: 12px;}
         }
+        &.dropdown-content-width{width: 600px; padding: 0; border-radius: 0; padding: 15px 15px 0px 15px;}
+        .list-unstyled.bullet-list {
+          li{ @include font-size(12px); background:url(../img/list-arrow.png) no-repeat 0 10px ;}
+        }
       }
       li{ padding: 5px;
       &.dropdown.open{ background-color:#f1f1f1; border-radius: 3px; }
@@ -147,7 +151,8 @@
           .item-image{ height: 48vh!important;padding-bottom: 180px; background-color: $deep-blue ;}
           .news{ position: relative;
           top: 0px;min-height: 34vh !important; padding-bottom: 40px;
-          img{height: auto; width: 87%;}
+          img{height: auto;width: 87%;}
+          h3 { margin-left: 15px; margin-right: 15px;  @include font-size(14px);}
           }
           .heading-brand{ top: 180px !important; }
          img{ width: auto; 
@@ -174,7 +179,8 @@
           .item-image{ height: 100vh!important;padding-bottom: 180px;}
           .news{ position: relative;
           top: 100px;min-height: 70vh !important; padding-bottom: 40px;
-          img{height: 120px;opacity: 1;}
+          img{height: 120px;opacity: 0.4; max-width: 100%;}
+          h3 { @include font-size(18px);}
           }
           .heading-brand{ top: 120px !important; font-size: 20px;}
          img{ width: auto; 

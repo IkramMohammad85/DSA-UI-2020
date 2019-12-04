@@ -208,7 +208,9 @@ header.site-header .hamburger-menu{
         right: 0px;
         left: inherit;
         width: 50%;
-        margin: 0 auto;}
+        margin: 0 auto;
+
+      }
     }
   }
 }
@@ -262,6 +264,10 @@ header.site-header .hamburger-menu{
         width: 50%;
         margin: 0 auto;
         .list {
+          li{ text-align: left;}
+        }
+        &.dropdown-content-width{width: 100%;}
+        .list-unstyled.bullet-list{
           li{ text-align: left;}
         }
       }
