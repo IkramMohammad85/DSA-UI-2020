@@ -2825,14 +2825,12 @@ ul.top-quick-link {
   float: right;
   position: relative; }
   ul.top-quick-link .dropdown-content {
-    border-radius: 3px;
     right: 0px;
     min-width: 250px; }
     ul.top-quick-link .dropdown-content .list li {
       padding-bottom: 12px;
       padding-top: 12px; }
     ul.top-quick-link .dropdown-content.dropdown-content-medium {
-      border-radius: 0;
       padding: 15px 15px 0px 15px; }
     ul.top-quick-link .dropdown-content .list-unstyled.bullet-list li {
       font-size: 12px;
