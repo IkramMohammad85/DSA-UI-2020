@@ -6,6 +6,8 @@ var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
+const babel = require('gulp-babel');
+const plumber = require('gulp-plumber');
 
 
 // Paths and directories
@@ -49,7 +51,8 @@ gulp.task('sass', function () {
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
-			cascade: false
+			cascade: false,
+			grid: 'autoplace'
 		}))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(paths.sass.dest))
@@ -61,11 +64,27 @@ gulp.task('js', function () {
 	gulp
 		.src(paths.js.src)
 		.pipe(concat('scripts.js'))
+		// Transpile the JS code using Babel's preset-env.
+		.pipe(babel({
+			presets: [
+			  ['@babel/env', {
+				modules: false
+			  }]
+			]
+		  }))
 		.pipe(gulp.dest(paths.js.dest))
 
 
 	return gulp
 		.src(paths.js.vendor)
+		// Transpile the JS code using Babel's preset-env.
+		.pipe(babel({
+			presets: [
+			  ['@babel/env', {
+				modules: false
+			  }]
+			]
+		  }))
 		.pipe(gulp.dest(paths.js.dest))
 });
 

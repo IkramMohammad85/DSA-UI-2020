@@ -105,6 +105,12 @@ a{ color: $white;}
 .img-circle{@include border-radius(50%);	border: $border-default;}
 .zoom-on-hover img {@include transition(transform .5s ease); width: 100%; }
 .zoom-on-hover:hover img { @include transform(scale(1.2)); }
+
+.dark-overlay{
+	background:$deep-blue;
+	&[data-reduce-opacity]{opacity:0.8;}
+}
+
 .down-arrow{border: solid #9599a0; position: relative;margin-left: 5px;top: -3px;
 	border-width: 0 1px 1px 0;
 	display: inline-block;

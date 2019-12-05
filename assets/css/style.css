@@ -1226,6 +1226,7 @@ template {
 
 .align-self-stretch {
   -webkit-align-self: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch; }
 
 .align-self-start {
@@ -1239,6 +1240,7 @@ template {
 
 .align-self-center {
   -webkit-align-self: center;
+  -ms-grid-row-align: center;
   align-self: center;
   vertical-align: middle; }
 
@@ -2273,6 +2275,11 @@ ol, ul {
   -webkit-transform: scale(1.2);
   transform: scale(1.2); }
 
+.dark-overlay {
+  background: #1a2940; }
+  .dark-overlay[data-reduce-opacity] {
+    opacity: 0.8; }
+
 .down-arrow {
   border: solid #9599a0;
   position: relative;
@@ -2750,87 +2757,57 @@ header.site-header .hamburger-menu {
 
 .home .big-banner {
   position: relative; }
-  .home .big-banner .item .heading-brand {
-    position: relative;
-    z-index: 3;
-    top: 45vh; }
+  .home .big-banner .item {
+    height: 100vh;
+    width: 100%;
+    max-height: 1000px;
+    background-color: #0D2338; }
     .home .big-banner .item .heading-brand::after {
       content: url(../img/dsa-brand-line.jpg);
       display: block; }
-    .home .big-banner .item .heading-brand img {
-      position: relative;
-      background-size: inherit;
-      background-attachment: inherit;
-      background-repeat: inherit;
-      width: auto;
-      display: block;
-      margin-top: 20px; }
-  .home .big-banner .item .btn-outline-white {
-    position: relative;
-    z-index: 3;
-    bottom: 0;
-    left: 45%;
-    top: 90px; }
-  .home .big-banner .item .item-image {
-    position: relative;
-    height: 105vh;
-    overflow: hidden;
-    padding-bottom: 180px;
-    background-color: #1a2940; }
-    .home .big-banner .item .item-image::before {
-      content: '';
+    .home .big-banner .item .item-image {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 2;
-      background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #1a2940), color-stop(65%, rgba(26, 41, 64, 0.0677405)));
-      background: linear-gradient(0deg, #1a2940 50%, rgba(26, 41, 64, 0.0677405) 65%); }
-  .home .big-banner .item img {
-    position: absolute;
-    z-index: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    padding: 0 0; }
-  .home .big-banner .item .news {
-    background-color: #1a2940;
-    min-height: 70vh; }
-    .home .big-banner .item .news img {
+      height: auto;
+      width: 100%;
+      z-index: 0; }
+      .home .big-banner .item .item-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #0d2338), color-stop(65%, rgba(13, 35, 56, 0.0677405)));
+        background: linear-gradient(0deg, #0d2338 20%, rgba(13, 35, 56, 0.0677405) 65%); }
+      .home .big-banner .item .item-image img {
+        background-size: cover;
+        width: 100vw; }
+    .home .big-banner .item .news {
       position: absolute;
-      z-index: 2;
-      opacity: 0.4;
-      background-size: inherit;
-      background-position: inherit;
-      background-attachment: inherit;
-      background-repeat: inherit;
-      width: 92%; }
-    .home .big-banner .item .news h3, .home .big-banner .item .news .btn {
-      z-index: 2;
-      text-align: left;
-      margin-left: 30px;
-      margin-right: 30px; }
-    .home .big-banner .item .news h3 {
-      margin-left: 30px;
-      margin-right: 30px;
-      min-height: 67px; }
-      .home .big-banner .item .news h3 a {
-        color: #fff; }
-    .home .big-banner .item .news .btn {
-      padding-left: 0px;
-      color: #fff; }
-  .home .big-banner .item .btn img {
-    background-size: inherit;
-    background-position: inherit;
-    background-attachment: inherit;
-    background-repeat: inherit;
-    width: 15px;
-    position: inherit;
-    opacity: 1; }
+      bottom: 10%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      .home .big-banner .item .news .heading-brand {
+        margin-top: -150px;
+        font-size: 2.5em;
+        font-weight: 100;
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.46); }
+      .home .big-banner .item .news .grid .col-grid {
+        background-color: #0D2338;
+        position: relative;
+        padding: 0; }
+        .home .big-banner .item .news .grid .col-grid img {
+          opacity: 0.4; }
+        .home .big-banner .item .news .grid .col-grid .news-details {
+          position: absolute;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          width: 90%; }
+          .home .big-banner .item .news .grid .col-grid .news-details h3, .home .big-banner .item .news .grid .col-grid .news-details a {
+            color: white; }
 
 .home section.about-us {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5))), url(../img/who-we-are.jpg);

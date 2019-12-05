@@ -16,15 +16,15 @@ if(header){
 
 //Feature: Homepage Big Banner Slider
 if (typeof Glide != "undefined") {
-new Glide('section.big-banner.glide', {
-      type:'carousel',
-      autoplay: 10000,
-      animationDuration:1000,
-      gap:0,
-      startAt: 0,
-      perView: 1,
-      animationTimingFunc: 'ease',
-    }).mount();
+// new Glide('section.big-banner.glide', {
+//       type:'carousel',
+//       autoplay: 10000,
+//       animationDuration:1000,
+//       gap:0,
+//       startAt: 0,
+//       perView: 1,
+//       animationTimingFunc: 'ease',
+//     }).mount();
 }
 
 //Hamburger Menu Click Event Listener
