@@ -1421,12 +1421,12 @@ Usage:
     @include opacity(0.8);
     }
 */
-ul.top-quick-link, ul.navbar {
+.clearfix, ul.top-quick-link, ul.navbar {
   *zoom: 1; }
-  ul.top-quick-link:before, ul.navbar:before, ul.top-quick-link:after, ul.navbar:after {
+  .clearfix:before, ul.top-quick-link:before, ul.navbar:before, .clearfix:after, ul.top-quick-link:after, ul.navbar:after {
     content: " ";
     display: table; }
-  ul.top-quick-link:after, ul.navbar:after {
+  .clearfix:after, ul.top-quick-link:after, ul.navbar:after {
     clear: both; }
 
 /*
@@ -2275,6 +2275,14 @@ ol, ul {
   -webkit-transform: scale(1.2);
   transform: scale(1.2); }
 
+.blue-hover:hover {
+  background-color: #007bff;
+  color: #fff; }
+  .blue-hover:hover a,
+  .blue-hover:hover h4,
+  .blue-hover:hover span {
+    color: #fff; }
+
 .dark-overlay {
   background: #1a2940; }
   .dark-overlay[data-reduce-opacity] {
@@ -2808,6 +2816,10 @@ header.site-header .hamburger-menu {
           width: 90%; }
           .home .big-banner .item .news .grid .col-grid .news-details h3, .home .big-banner .item .news .grid .col-grid .news-details a {
             color: white; }
+          .home .big-banner .item .news .grid .col-grid .news-details .btn-link {
+            padding: 0; }
+            .home .big-banner .item .news .grid .col-grid .news-details .btn-link img {
+              opacity: 1; }
 
 .home section.about-us {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.5))), url(../img/who-we-are.jpg);
@@ -2816,9 +2828,9 @@ header.site-header .hamburger-menu {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  min-height: 610px; }
+  min-height: 550px; }
   .home section.about-us .transparent-bg {
-    min-height: 450px;
+    min-height: 370px;
     color: #fff;
     position: relative; }
     .home section.about-us .transparent-bg h2 {
@@ -2830,8 +2842,8 @@ header.site-header .hamburger-menu {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 9%, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.8) 9%);
       cursor: pointer; }
     .home section.about-us .transparent-bg .center-block {
-      margin-top: 40px;
-      margin-bottom: 40px; }
+      margin-top: 0px;
+      margin-bottom: 20px; }
 
 .home .card.events .card-body {
   height: 450px;
@@ -2966,5 +2978,33 @@ ul.navbar {
     width: auto; }
   .home .big-banner .item .btn-outline-white {
     left: 28% !important; } }
+
+.research h2,
+.research h4,
+.research span {
+  font-weight: normal;
+  color: #6c757d; }
+
+.research span {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 16px; }
+
+.icon {
+  width: auto;
+  height: 62px;
+  display: block; }
+
+.brochure-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-blue.png) no-repeat top center; }
+
+.locations-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-blue.png) no-repeat top center; }
+
+.publications-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/publications-icon-blue.png) no-repeat top center; }
+
+.asiapedia-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-blue.png) no-repeat top center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+//Need more time to research section
+.research {
+  h2,
+  h4,
+  span {
+    font-weight: normal;
+    color: $gray-600;
+  }
+  span {
+    @include font-size(13px);
+    line-height: 16px;
+  }
+}
+.icon {
+  width: auto;
+  height: 62px;
+  display: block;
+}
+.brochure-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-blue.png) no-repeat top
+    center;
+}
+.locations-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-blue.png) no-repeat top
+    center;
+}
+.publications-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/publications-icon-blue.png) no-repeat
+    top center;
+}
+.asiapedia-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-blue.png) no-repeat top
+    center;
+}

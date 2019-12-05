@@ -105,6 +105,13 @@ a{ color: $white;}
 .img-circle{@include border-radius(50%);	border: $border-default;}
 .zoom-on-hover img {@include transition(transform .5s ease); width: 100%; }
 .zoom-on-hover:hover img { @include transform(scale(1.2)); }
+.blue-hover:hover{ background-color: $blue; color: $white;
+		a,
+		h4, 
+		span{ 
+			color: $white;
+		}
+}
 
 .dark-overlay{
 	background:$deep-blue;
@@ -168,4 +175,4 @@ a{ color: $white;}
 			transform: rotate(-45deg);
 		}
 	}
-	
+	.clearfix{ @extend %clearfix;}
