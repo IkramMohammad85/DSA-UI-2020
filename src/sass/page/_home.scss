@@ -138,15 +138,14 @@
   }
 
  //Tablets
-  @media (max-width: $reflex-sm) {
+  @media (max-width: $reflex-lg) {
     .home {
       .big-banner {
         .item {
           .item-image{ height: 48vh!important;padding-bottom: 180px; background-color: $deep-blue ;}
           .news{ position: relative;
           top: 0px;min-height: 34vh !important; padding-bottom: 40px;
-          img{height: auto;max-width: 87%;}
-          h3 { margin-left: 15px; margin-right: 15px;  @include font-size(14px);}
+          img{height: auto;max-width: 100%;}
           }
           .heading-brand{ top: 180px !important; }
          img{ width: auto; 
@@ -164,13 +163,13 @@
   }
 
 //Mobile
-  @media (max-width: $reflex-xs) {
+  @media (max-width: $reflex-md) {
     .home {
       .big-banner {
-        .item {
-          .item-image{ height: 100vh!important;padding-bottom: 180px;}
+        .item { height: 70vh;
+          .item-image{ height: 70vh!important; padding-bottom: 0;}
           .news{ position: relative;
-          top: 100px;min-height: 70vh !important; padding-bottom: 40px;
+          top: 300px;min-height: 40vh !important; padding-bottom: 40px;
           img{height: 120px;opacity: 0.4; max-width: 100%;}
           h3 { @include font-size(18px);}
           }

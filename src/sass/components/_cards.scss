@@ -149,7 +149,7 @@
 }
 
 //Tablets
-@media (max-width: $reflex-sm) {
+@media (max-width: $reflex-lg) {
     .card{
         &.news{ height: auto;
         .card-header-img{ height: auto;}
@@ -166,7 +166,7 @@
 
 
 //Mobile
-@media (max-width: $reflex-xs) {
+@media (max-width: $reflex-md) {
     .card{
         &.news{ height: auto;
         .card-header-img{ height: auto;}

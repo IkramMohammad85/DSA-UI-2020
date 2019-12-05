@@ -29,7 +29,7 @@
   }
 }
 //Tablets
-@media (max-width: $reflex-sm) {
+@media (max-width: $reflex-lg) {
 	.banner {
 		img{ width: auto;}
 	  height: auto;
@@ -37,7 +37,7 @@
 	}
   }
  //Mobile 
-@media (max-width: $reflex-xs) {
+@media (max-width: $reflex-md) {
   .banner {
 	img{ width: auto;}
     height: auto;

@@ -186,33 +186,18 @@ header.site-header .hamburger-menu{
 
 
 
-//desktop
+//Tablets
 @media (max-width: $reflex-lg) {
   .container{max-width:100% !important;}
   header.site-header {
     .logo{max-width:260px;}
   }
+  
 }
 
-//Tablets
-@media (max-width: $reflex-sm) {
-  header.site-header {
-    .logo{ top:20px;}
-  }
-  .header-menu {
-    ul.top-quick-link {
-      .dropdown-content {
-        right: 0px;
-        left: inherit;
-        width: 50%;
-        margin: 0 auto;
 
-      }
-    }
-  }
-}
 //Mobile
-@media (max-width: $reflex-xs) {
+@media (max-width: $reflex-md) {
   .header-menu{
     @include transition(.2s ease-in-out);
     @include transform(scale(0));
