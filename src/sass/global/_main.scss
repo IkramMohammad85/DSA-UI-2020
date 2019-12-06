@@ -194,6 +194,12 @@ header.site-header .hamburger-menu{
   header.site-header {
     .logo{max-width:260px;}
   }
+
+  ul.navbar{
+    .dropdown-content {
+      li{text-align: left;}
+    }
+  }
   
 }
 
@@ -225,11 +231,11 @@ header.site-header .hamburger-menu{
         //main navigation
         ul.navbar{
           width:100%; padding-left: 0;
-          li{
+          > li{
             //main navigation make it full width per menu on mobile
             width:100%;
             text-align: center;
-          border-bottom: solid 1px $deep-blue;
+            border-bottom: solid 1px $deep-blue;
           }
         }
     }

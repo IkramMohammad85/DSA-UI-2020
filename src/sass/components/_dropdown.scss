@@ -85,5 +85,13 @@
   }
 
 
-//this is component file, ONLY CSS related to that component should be here... place below code to appropriate file please.
+ //Tablets
+@media (max-width: $reflex-lg) {
+    .dropdown {
+        .dropdown-content {
+            &.dropdown-content-medium {min-width: auto;}
+            &.dropdown-content-large {min-width: auto;}
+        }
+    }
+}
 

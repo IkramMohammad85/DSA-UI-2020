@@ -69,7 +69,7 @@
       }
       //end of homepage big banner css
 
-      section.about-us{ background:linear-gradient(to bottom,rgba(0, 0, 0, 0.5) 9%,rgba(0,0,0,.5) 9%,rgba(0,0,0,.5) 9%),url(../img/who-we-are.jpg);
+      section.about-us{ background:linear-gradient(to bottom,rgba(0, 0, 0, .25) 9%,rgba(0,0,0,.25) 9%,rgba(0,0,0,.25) 9%),url(../img/who-we-are.jpg);
         background-position:center;
         background-repeat:no-repeat;
         background-attachment:scroll;
@@ -123,9 +123,7 @@
             margin-right: 0rem; padding-right: 0px; vertical-align: top;}
             a{ color: $white;}
 
-          &.dropdown.open{border-bottom:2px solid $blue;
-          }
-          
+          &.dropdown.open{border-bottom:2px solid $blue;}
         }
 
       //overwrite for navbar dropdowns
@@ -149,6 +147,13 @@
         margin-top:0;
       }
       .hamburger-menu{margin-top:50px;}
+      ul.navbar{
+        .dropdown-content{
+          height:85vh;
+          top:50px;
+          overflow-y: scroll;
+        }
+      }
     }
     .big-banner {
       .item{
