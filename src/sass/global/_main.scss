@@ -134,7 +134,7 @@ header.site-header .hamburger-menu{
   display:none;
 }
 .hamburger-menu{
-  width: 30px;
+  width: 35px;
   height: 30px;
   position: relative;
   // margin: 50px auto;
@@ -156,7 +156,7 @@ header.site-header .hamburger-menu{
 	}
 	
 	span:nth-child(1) {
-	  top: -6px;
+	  top: -8px;
 	}
 	
 	span:nth-child(2) {
@@ -188,6 +188,8 @@ header.site-header .hamburger-menu{
 
 //Tablets
 @media (max-width: $reflex-lg) {
+
+  //make container fluid from tablet size onwards
   .container{max-width:100% !important;}
   header.site-header {
     .logo{max-width:260px;}
@@ -198,74 +200,39 @@ header.site-header .hamburger-menu{
 
 //Mobile
 @media (max-width: $reflex-md) {
+  //show hamburger menu
+  .hamburger-menu{ display:block !important;}
+
+  //Hide header menu on mobile by default
   .header-menu{
-    @include transition(.2s ease-in-out);
-    @include transform(scale(0));
-    height:0;
-
-    ul.navbar {
-      .dropdown-content{
-        height: 400px; overflow-y: scroll;
-        .btn-secondary{ margin: 0 auto;}
-        h3{ text-align: left;}
-        .bullet-list{
-        li{text-align: left; border-bottom: none;}
-        }
-      }
-    }
-
-    ul {display:none;}
-    &.open {
+    display:none;
+    &.open{
+      //.open means the menu is on open state and on mobile or tablet view
+      display:block;
       @include transform(scale(1));
       background:$bluedark;
-      // opacity:0.95;
-      display:block;
       position: fixed;
       width:100vw;
       height:100vh;
       top:100px;
       left:0;
-      z-index: 100;
-      
-      ul{
-        display:block;
-      }
-      ul.navbar{
-        width:100%; padding-left: 0;
-        li{
-          display:block;
-          text-align: center;
-          border-bottom: solid 1px #253341;
+        //top quick links
+        ul.top-quick-link{
+          float: none; margin-left: auto; margin-right: auto; text-align: center;
+          margin-bottom:20px;border-bottom:3px solid $deep-blue;
         }
-      }
-    }
-    ul.top-quick-link{
-      float: none; margin-left: auto; margin-right: auto; text-align: center;
-      .dropdown-content{ right: 0px;
-        left: 0px;
-        width: 50%;
-        margin: 0 auto;
-        .list {
-          li{ text-align: left;}
+
+        //main navigation
+        ul.navbar{
+          width:100%; padding-left: 0;
+          li{
+            //main navigation make it full width per menu on mobile
+            width:100%;
+            text-align: center;
+          border-bottom: solid 1px $deep-blue;
+          }
         }
-        &.dropdown-content-medium{width: 100%; min-width: inherit; height: 700px; overflow-y: scroll;}
-        .list-unstyled.bullet-list{
-          li{ text-align: left;}
-        }
-      }
-      
     }
   }
 
-  header.site-header{
-    .logo{ position: relative; margin-top: 25px;}
-    }
-  footer.site-footer {
-    text-align: center;
-    .copyright{
-    .list-inline{ text-align: center;}
-  }
-}
-.hamburger-menu{ display:block !important;
-}
 }

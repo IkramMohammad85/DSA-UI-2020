@@ -42,7 +42,7 @@
           left: 50%;
           @include transform(translateX(-50%));
 
-          .heading-brand {margin-top:-150px;font-size:2.5em;font-weight:100;text-shadow: 2px 4px 4px rgba(0,0,0,0.46);}
+          .heading-brand {margin-top:-150px;font-size:2em;font-weight:100;text-shadow: 2px 4px 4px rgba(0,0,0,0.46);}
           .grid{
             .col-grid{
               background-color:$bluedark;
@@ -139,46 +139,27 @@
 
  //Tablets
   @media (max-width: $reflex-lg) {
-    .home {
-      .big-banner {
-        .item {
-          .item-image{ height: 48vh!important;padding-bottom: 180px; background-color: $deep-blue ;}
-          .news{ position: relative;
-          top: 0px;min-height: 34vh !important; padding-bottom: 40px;
-          img{height: auto;max-width: 100%;}
-          }
-          .heading-brand{ top: 180px !important; }
-         img{ width: auto; 
-          }
-          .btn-outline-white{ left: 40% !important; bottom: 0; top: 0;}
-      }    
-      }
-      .about-us{
-        .p-arround-4{ padding: 20px;}
-        .transparent-bg{min-height: 470px;}
-      }
-    }
-    ul.navbar{ float: none;}
     
   }
 
 //Mobile
   @media (max-width: $reflex-md) {
-    .home {
-      .big-banner {
-        .item { height: 70vh;
-          .item-image{ height: 70vh!important; padding-bottom: 0;}
-          .news{ position: relative;
-          top: 300px;min-height: 40vh !important; padding-bottom: 40px;
-          img{height: 120px;opacity: 0.4; max-width: 100%;}
-          h3 { @include font-size(18px);}
-          }
-          .heading-brand{ top: 120px !important; font-size: 20px;}
-         img{ width: auto; 
-          }
-          .btn-outline-white{ left: 28% !important;}
+    header.site-header{
+      .logo{
+        margin-top:0;
       }
-          
+      .hamburger-menu{margin-top:50px;}
+    }
+    .big-banner {
+      .item{
+        //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
+        //if any better alternatives, feel free to make change here
+        height:150vh !important;
+        .news{
+          bottom:auto;top:25%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
+          .heading-brand{margin-top:0 !important;}
+          .col-grid{max-height:150px;overflow:hidden;margin-bottom:5px;}
+        }
       }
     }
     
