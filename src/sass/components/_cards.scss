@@ -1,178 +1,194 @@
 .card {
-    border: solid 1px #e8e8e8;
-    background-color: $white;
+  border: solid 1px #e8e8e8;
+  background-color: $white;
 
-    &-header,
-    &-body,
-    &-footer {
-        padding: 30px;
+  &-header,
+  &-body,
+  &-footer {
+    padding: 30px;
+  }
+
+  .card-header-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    .card-text-overlap {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      color: $white;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  &-header {
+    background-color: $deep-cyan-blue;
+    min-height: 88px;
+
+    &-title {
+      float: left;
+      color: $white;
     }
 
+    .btn {
+      float: right;
+      color: $white;
+    }
+
+    .btn-link {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &-body {
+    min-height: 200px;
+    background: $white;
+  }
+
+  &-footer {
+    min-height: 44px;
+  }
+
+  // Asiapedia
+  &.asiapedia,
+  &.events {
+    min-height: 568px;
+  }
+
+  &.asiapedia {
     .card-header-img {
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-        position: relative;
-
-
-        .card-text-overlap {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            color: $white;
-
-            a {
-                color: $white;
-            }
-        }
+      background: url(../img/banner-asiapedia.jpg);
+      height: 100px;
     }
 
-    &-header {
-        background-color: $deep-cyan-blue;
-        min-height: 88px;
-
-        &-title {
-            float: left;
-            color: $white;
-        }
-
-        
-
-        .btn {
-            float: right;
-            color: $white;
-        }
-
-        .btn-link {
-            padding-left: 0;
-            padding-right: 0;
-        }
+    .card-body {
+      text-align: center;
     }
+  }
 
-    &-body {
-        min-height: 200px;
-        background: $white;
+  // Events
+  &.events {
+    .card-header-img {
+      background: url(../img/das-events-banner.jpg);
+      height: 100px;
     }
+  }
 
-    &-footer {
-        min-height: 44px;
+  // Contact US
+  &.contact-us {
+    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat
+      top left;
+    width: auto;
+    height: 420px;
+    background-size: cover;
+  }
+
+  // International Desks
+  &.international-desks {
+    min-height: 615px;
+
+    .card-body {
+      padding: 20px;
     }
+  }
 
-    // Asiapedia
-    &.asiapedia,
-    &.events {
-        min-height: 568px;
+  // Services
+  &.services {
+    min-height: 430px;
+    position: relative;
+  }
+  // Resources
+  &.resources {
+    border: none;
+  }
+  // office
+  &.office {
+    border-top: solid 4px $bluedark;
+    .card-body {
+      padding: 20px;
+      .list-logo {
+        width: 100px;
+      }
     }
-
-    &.asiapedia {
-        .card-header-img {
-            background: url(../img/banner-asiapedia.jpg);
-            height: 100px;
-        }
-
-        .card-body {
-            text-align: center;
-        }
+    .card-footer {
+      padding: 0;
+      border-top: solid 1px #e8e8e8;
     }
+  }
 
-    // Events
-    &.events {
-        .card-header-img {
-            background: url(../img/das-events-banner.jpg);
-            height: 100px;
-        }
+  // news
+  &.news {
+    height: 482px;
+    .card-header-img {
+      height: 482px;
+      .card-text-overlap {
+        bottom: 10%;
+        top: auto;
+      }
     }
-
-    // Contact US
-    &.contact-us {
-        background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
-        width: auto;
-        height: 420px;
-        background-size: cover;
+  }
+  // news
+  &.news-right {
+    height: 230px;
+    .card-header-img {
+      height: 230px;
+      .card-text-overlap {
+        bottom: 10%;
+        top: auto;
+      }
     }
-
-    // International Desks
-    &.international-desks {
-        min-height: 615px;
-
-        .card-body {
-            padding: 20px;
-        }
-    }
-
-    // Services
-    &.services {
-        min-height: 430px;
-        position: relative;
-    }
-    // Resources   
-    &.resources{ 
-        border: none;
-    
-    }
-     // office   
-     &.office{ 
-         border-top: solid 4px $bluedark; 
-         .card-body {
-            padding: 20px;
-            .list-logo{
-                 width: 100px;}
-        }
-        .card-footer{
-            padding: 0; border-top: solid 1px #e8e8e8;}
-    
-    }
-
-     // news   
-         &.news{ 
-            height: 482px;
-            .card-header-img{
-                height: 482px;
-                .card-text-overlap{ 
-                    bottom: 10%; top: auto;
-                }
-            }   
-       
-       }
-     // news   
-     &.news-right{ 
-        height: 230px;
-        .card-header-img{
-            height: 230px;
-            .card-text-overlap{ 
-                bottom: 10%; top: auto;
-            }
-        }   
-   
-   }
+  }
 }
 
 //Tablets
 @media (max-width: $reflex-lg) {
-    .card{
-        &.news{ height: auto;
-        .card-header-img{ height: auto;}
-        }
-        &.news-right{ height: auto;
-        .card-header-img{ height: auto;}
-
-        }
-       .card-header-img {
-        .card-text-overlap { top: 30%;}
-       }      
+  .card {
+    &.news {
+      height: auto;
+      .card-header-img {
+        height: auto;
+      }
+    }
+    &.news-right {
+      height: auto;
+      .card-header-img {
+        height: auto;
+      }
+    }
+    .card-header-img {
+      .card-text-overlap {
+        top: 30%;
+      }
     }
   }
-
+}
 
 //Mobile
 @media (max-width: $reflex-md) {
-    .card{
-        &.news{ height: auto;
-        .card-header-img{ height: auto;}
-        }
-       .card-header-img {
-        .card-text-overlap { top: 30%;}
-       }      
+  .card {
+    &.news {
+      height: auto;
+      .card-header-img {
+        height: auto;
+      }
+    }
+    .card-header-img {
+      .card-text-overlap {
+        top: 30%;
+      }
+    }
+    &.asiapedia,
+    &.events,
+    &.international-desks,
+    &.services {
+      min-height: auto;
     }
   }
+}

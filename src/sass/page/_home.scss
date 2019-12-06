@@ -1,171 +1,266 @@
 .home {
-    .big-banner {
-       position:relative;
-       .item{
-         height:100vh;
-         width:100%;
-         max-height:1000px;
-         background-color:$bluedark;
-        .heading-brand{ //position: relative; z-index: 3; top: 45vh;
-          &::after {
-            content: url(../img/dsa-brand-line.jpg);
-            display: block;
-          }
+  .big-banner {
+    position: relative;
+    .item {
+      height: 100vh;
+      width: 100%;
+      max-height: 1000px;
+      background-color: $bluedark;
+      .heading-brand {
+        //position: relative; z-index: 3; top: 45vh;
+        &::after {
+          content: url(../img/dsa-brand-line.jpg);
+          display: block;
         }
+      }
 
-        //div to setup background with bottom gradient effect
-        .item-image{
+      //div to setup background with bottom gradient effect
+      .item-image {
+        position: absolute;
+        height: auto;
+        width: 100%;
+        z-index: 0;
+        &::before {
+          content: "";
           position: absolute;
-          height:auto;
-          width:100%;
-          z-index:0;
-          &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 0;
-            background: linear-gradient(0deg, rgba(13,35,56,20) 20%, rgba(13,35,56,0.06774047509628855) 65%);
-          }
-          img{
-            background-size: cover;
-            width: 100vw;
-          }
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 0;
+          background: linear-gradient(0deg, rgba(13, 35, 56, 20) 20%, rgba(13, 35, 56, 0.06774047509628855) 65%);
         }
+        img {
+          background-size: cover;
+          width: 100vw;
+        }
+      }
 
-        //news section of big banner
-        .news{
-          position: absolute;
-          bottom:10%;
-          left: 50%;
-          @include transform(translateX(-50%));
+      //news section of big banner
+      .news {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        @include transform(translateX(-50%));
 
-          .heading-brand {margin-top:-150px;font-size:2em;font-weight:100;text-shadow: 2px 4px 4px rgba(0,0,0,0.46);}
-          .grid{
-            .col-grid{
-              background-color:$bluedark;
-              position: relative;
-              padding:0;
-              img {opacity:0.4;}
-              .news-details{
-                position: absolute;
-                left: 50%;
-                @include transform(translateX(-50%));
-                width:90%;
-                h3,a{
-                  color:white;
-                }
-                .btn-link{
-                  padding: 0;
-                  img{opacity: 1;}
+        .heading-brand {
+          margin-top: -150px;
+          font-size: 2em;
+          font-weight: 100;
+          text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.46);
+        }
+        .grid {
+          .col-grid {
+            background-color: $bluedark;
+            position: relative;
+            padding: 0;
+            img {
+              opacity: 0.4;
+            }
+            .news-details {
+              position: absolute;
+              left: 50%;
+              @include transform(translateX(-50%));
+              width: 90%;
+              h3,
+              a {
+                color: white;
+              }
+              .btn-link {
+                padding: 0;
+                img {
+                  opacity: 1;
                 }
               }
             }
           }
         }
       }
+    }
+  }
+  //end of homepage big banner css
+
+  section.about-us {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 9%, rgba(0, 0, 0, 0.25) 9%, rgba(0, 0, 0, 0.25) 9%),
+      url(../img/who-we-are.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 500px;
+    .transparent-bg {
+      min-height: 370px;
+      color: $white;
+      position: relative;
+      h2 {
+        color: $white;
       }
-      //end of homepage big banner css
-
-      section.about-us{ background:linear-gradient(to bottom,rgba(0, 0, 0, .25) 9%,rgba(0,0,0,.25) 9%,rgba(0,0,0,.25) 9%),url(../img/who-we-are.jpg);
-        background-position:center;
-        background-repeat:no-repeat;
-        background-attachment:scroll;
-        background-size:cover ; min-height: 500px; 
-    .transparent-bg{ 
-     min-height: 370px; color: $white; position: relative;
-      h2{color: $white;}
-     a{ color: $white;}
-     &:hover{background:linear-gradient(to bottom,rgba(0, 0, 0, 0.8) 9%,rgba(0,0,0,.5) 9%,rgba(0,0,0,.8) 9%); cursor: pointer;}
-     .center-block{ margin-top: 0px; margin-bottom: 20px;}
-    }
-    }
-    .card.events{
-      .card-body{ height: 450px; overflow: auto;}
-    }
-
-    .card.asiapedia{
-      .card-body{
-        form{ margin: 0 auto; display: flex;}
-        select{ border: none; background-color: #e5e5e5; color: $gray-700; padding: 10px 20px; width: 100%; font-size: $font-size-sm;
-        }
-
+      a {
+        color: $white;
+      }
+      &:hover {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 9%, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.8) 9%);
+        cursor: pointer;
+      }
+      .center-block {
+        margin-top: 0px;
+        margin-bottom: 20px;
       }
     }
   }
+  .card.events {
+    .card-body {
+      height: 450px;
+      overflow: auto;
+    }
+  }
 
-  ul.top-quick-link{margin: 0; padding: 0; text-transform: uppercase; margin-top: 10px; float: right;@extend %clearfix;
-                position: relative;
-      .dropdown-content{ right: 0px;
-        .list{ 
-          li{padding-bottom: 12px; padding-top: 12px;}
-        }
-        &.dropdown-content-medium{padding: 15px 15px 0px 15px;}
-        .list-unstyled.bullet-list {
-          li{ @include font-size(12px); background:url(../img/list-arrow.png) no-repeat 0 10px ;}
-        }
+  .card.asiapedia {
+    .card-body {
+      form {
+        margin: 0 auto;
+        display: flex;
       }
-      li{ padding: 5px;
-      &.dropdown.open{ background-color:#f1f1f1; border-radius: 3px; }
-    } 
-    .down-arrow{ top: -6px;}
-  }
-
-  ul.navbar {float: right;@extend %clearfix; clear: both; margin-bottom: 0;
-        li {
-          display: inline-block; @include font-size(14px); font-weight: $font-weight-normal; color: $white; letter-spacing: 0.05em;
-          text-transform: uppercase; padding: 19px;
-          @include transition(border-width 0.1s ease-in-out);
-          border-bottom-width: 0;
-          &:last-child{
-            margin-right: 0rem; padding-right: 0px; vertical-align: top;}
-            a{ color: $white;}
-
-          &.dropdown.open{border-bottom:2px solid $blue;}
-        }
-
-      //overwrite for navbar dropdowns
-      .dropdown-content{
-        left:0;top:110px;width:100%;background-color: #f4f4f4;color:$black;
-        @include box-shadow(0px 8px 16px 0px rgba(0,0,0,0.2));
-
-        a{color:$black;}
+      select {
+        border: none;
+        background-color: #e5e5e5;
+        color: $gray-700;
+        padding: 10px 20px;
+        width: 100%;
+        font-size: $font-size-sm;
       }
+    }
+  }
+}
+
+ul.top-quick-link {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  margin-top: 10px;
+  float: right;
+  @extend %clearfix;
+  position: relative;
+  .dropdown-content {
+    right: 0px;
+    .list {
+      li {
+        padding-bottom: 12px;
+        padding-top: 12px;
+      }
+    }
+    &.dropdown-content-medium {
+      padding: 15px 15px 0px 15px;
+    }
+    .list-unstyled.bullet-list {
+      li {
+        @include font-size(12px);
+        background: url(../img/list-arrow.png) no-repeat 0 10px;
+      }
+    }
+  }
+  li {
+    padding: 5px;
+    &.dropdown.open {
+      background-color: #f1f1f1;
+      border-radius: 3px;
+    }
+  }
+  .down-arrow {
+    top: -6px;
+  }
+}
+
+ul.navbar {
+  float: right;
+  @extend %clearfix;
+  clear: both;
+  margin-bottom: 0;
+  li {
+    display: inline-block;
+    @include font-size(14px);
+    font-weight: $font-weight-normal;
+    color: $white;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 19px;
+    @include transition(border-width 0.1s ease-in-out);
+    border-bottom-width: 0;
+    &:last-child {
+      margin-right: 0rem;
+      padding-right: 0px;
+      vertical-align: top;
+    }
+    a {
+      color: $white;
+    }
+
+    &.dropdown.open {
+      border-bottom: 2px solid $blue;
+    }
   }
 
- //Tablets
-  @media (max-width: $reflex-lg) {
-    
+  //overwrite for navbar dropdowns
+  .dropdown-content {
+    left: 0;
+    top: 110px;
+    width: 100%;
+    background-color: #f4f4f4;
+    color: $black;
+    @include box-shadow(0px 8px 16px 0px rgba(0, 0, 0, 0.2));
+
+    a {
+      color: $black;
+    }
   }
+}
+
+//Tablets
+@media (max-width: $reflex-lg) {
+}
 
 //Mobile
-  @media (max-width: $reflex-md) {
-    header.site-header{
-      .logo{
-        margin-top:0;
-      }
-      .hamburger-menu{margin-top:50px;}
-      ul.navbar{
-        .dropdown-content{
-          height:85vh;
-          top:50px;
-          overflow-y: scroll;
-        }
+@media (max-width: $reflex-md) {
+  header.site-header {
+    .logo {
+      margin-top: 0;
+    }
+    .hamburger-menu {
+      margin-top: 50px;
+    }
+    ul.navbar {
+      .dropdown-content {
+        height: 85vh;
+        top: 50px;
+        overflow-y: scroll;
       }
     }
-    .big-banner {
-      .item{
-        //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
-        //if any better alternatives, feel free to make change here
-        height:150vh !important;
-        .news{
-          bottom:auto;top:25%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
-          .heading-brand{margin-top:0 !important;}
-          .col-grid{max-height:150px;overflow:hidden;margin-bottom:5px;}
-        }
-      }
-    }
-    
   }
+  .big-banner {
+    .item {
+      //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
+      //if any better alternatives, feel free to make change here
+      height: 150vh !important;
+      .news {
+        bottom: auto;
+        top: 25%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
+        .heading-brand {
+          margin-top: 0 !important;
+        }
+        .col-grid {
+          max-height: 150px;
+          overflow: hidden;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .home {
+    section.about-us {
+      .transparent-bg {
+        min-height: auto;
+        .center-block{ display: contents;}
+      }
+    }
+  }
+}

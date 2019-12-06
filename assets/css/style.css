@@ -1564,7 +1564,9 @@ $border-default: 1px solid #ccc;
     .card.news .card-header-img {
       height: auto; }
   .card .card-header-img .card-text-overlap {
-    top: 30%; } }
+    top: 30%; }
+  .card.asiapedia, .card.events, .card.international-desks, .card.services {
+    min-height: auto; } }
 
 .list {
   padding: 0;
@@ -2740,7 +2742,7 @@ header.site-header .hamburger-menu {
       width: 100%;
       z-index: 0; }
       .home .big-banner .item .item-image::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -2775,7 +2777,8 @@ header.site-header .hamburger-menu {
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
           width: 90%; }
-          .home .big-banner .item .news .grid .col-grid .news-details h3, .home .big-banner .item .news .grid .col-grid .news-details a {
+          .home .big-banner .item .news .grid .col-grid .news-details h3,
+          .home .big-banner .item .news .grid .col-grid .news-details a {
             color: white; }
           .home .big-banner .item .news .grid .col-grid .news-details .btn-link {
             padding: 0; }
@@ -2902,7 +2905,11 @@ ul.navbar {
       .big-banner .item .news .col-grid {
         max-height: 150px;
         overflow: hidden;
-        margin-bottom: 5px; } }
+        margin-bottom: 5px; }
+  .home section.about-us .transparent-bg {
+    min-height: auto; }
+    .home section.about-us .transparent-bg .center-block {
+      display: contents; } }
 
 .research h2,
 .research h4,
