@@ -2025,9 +2025,57 @@ ol, ul {
     color: #fff; }
     .cards-content-bg a:hover, .dark-blue-bg a:hover, .light-blue-bg a:hover, .blue-bg a:hover, .dark-light-blue-bg a:hover, .dark-gray-bg a:hover {
       text-decoration: none; }
-  .cards-content-bg h1, .dark-blue-bg h1, .light-blue-bg h1, .blue-bg h1, .dark-light-blue-bg h1, .dark-gray-bg h1, .cards-content-bg h2, .dark-blue-bg h2, .light-blue-bg h2, .blue-bg h2, .dark-light-blue-bg h2, .dark-gray-bg h2, .cards-content-bg h3, .dark-blue-bg h3, .light-blue-bg h3, .blue-bg h3, .dark-light-blue-bg h3, .dark-gray-bg h3, .cards-content-bg h4, .dark-blue-bg h4, .light-blue-bg h4, .blue-bg h4, .dark-light-blue-bg h4, .dark-gray-bg h4, .cards-content-bg h5, .dark-blue-bg h5, .light-blue-bg h5, .blue-bg h5, .dark-light-blue-bg h5, .dark-gray-bg h5 {
+  .cards-content-bg h1, .dark-blue-bg h1, .light-blue-bg h1, .blue-bg h1, .dark-light-blue-bg h1, .dark-gray-bg h1,
+  .cards-content-bg h2,
+  .dark-blue-bg h2,
+  .light-blue-bg h2,
+  .blue-bg h2,
+  .dark-light-blue-bg h2,
+  .dark-gray-bg h2,
+  .cards-content-bg h3,
+  .dark-blue-bg h3,
+  .light-blue-bg h3,
+  .blue-bg h3,
+  .dark-light-blue-bg h3,
+  .dark-gray-bg h3,
+  .cards-content-bg h4,
+  .dark-blue-bg h4,
+  .light-blue-bg h4,
+  .blue-bg h4,
+  .dark-light-blue-bg h4,
+  .dark-gray-bg h4,
+  .cards-content-bg h5,
+  .dark-blue-bg h5,
+  .light-blue-bg h5,
+  .blue-bg h5,
+  .dark-light-blue-bg h5,
+  .dark-gray-bg h5 {
     color: #fff; }
-    .cards-content-bg h1 a, .dark-blue-bg h1 a, .light-blue-bg h1 a, .blue-bg h1 a, .dark-light-blue-bg h1 a, .dark-gray-bg h1 a, .cards-content-bg h2 a, .dark-blue-bg h2 a, .light-blue-bg h2 a, .blue-bg h2 a, .dark-light-blue-bg h2 a, .dark-gray-bg h2 a, .cards-content-bg h3 a, .dark-blue-bg h3 a, .light-blue-bg h3 a, .blue-bg h3 a, .dark-light-blue-bg h3 a, .dark-gray-bg h3 a, .cards-content-bg h4 a, .dark-blue-bg h4 a, .light-blue-bg h4 a, .blue-bg h4 a, .dark-light-blue-bg h4 a, .dark-gray-bg h4 a, .cards-content-bg h5 a, .dark-blue-bg h5 a, .light-blue-bg h5 a, .blue-bg h5 a, .dark-light-blue-bg h5 a, .dark-gray-bg h5 a {
+    .cards-content-bg h1 a, .dark-blue-bg h1 a, .light-blue-bg h1 a, .blue-bg h1 a, .dark-light-blue-bg h1 a, .dark-gray-bg h1 a,
+    .cards-content-bg h2 a,
+    .dark-blue-bg h2 a,
+    .light-blue-bg h2 a,
+    .blue-bg h2 a,
+    .dark-light-blue-bg h2 a,
+    .dark-gray-bg h2 a,
+    .cards-content-bg h3 a,
+    .dark-blue-bg h3 a,
+    .light-blue-bg h3 a,
+    .blue-bg h3 a,
+    .dark-light-blue-bg h3 a,
+    .dark-gray-bg h3 a,
+    .cards-content-bg h4 a,
+    .dark-blue-bg h4 a,
+    .light-blue-bg h4 a,
+    .blue-bg h4 a,
+    .dark-light-blue-bg h4 a,
+    .dark-gray-bg h4 a,
+    .cards-content-bg h5 a,
+    .dark-blue-bg h5 a,
+    .light-blue-bg h5 a,
+    .blue-bg h5 a,
+    .dark-light-blue-bg h5 a,
+    .dark-gray-bg h5 a {
       color: #fff; }
 
 .grey-bg {
@@ -2358,7 +2406,7 @@ ol, ul {
   .close-btn:before {
     position: absolute;
     left: 15px;
-    content: ' ';
+    content: " ";
     height: 14px;
     width: 2px;
     background-color: #fff;
@@ -2367,7 +2415,7 @@ ol, ul {
   .close-btn:after {
     position: absolute;
     left: 15px;
-    content: ' ';
+    content: " ";
     height: 14px;
     width: 2px;
     background-color: #fff;
@@ -2938,5 +2986,17 @@ ul.navbar {
 
 .asiapedia-icon {
   background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-blue.png) no-repeat top center; }
+
+.blue-hover:hover .brochure-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-w.png) no-repeat top center; }
+
+.blue-hover:hover .locations-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-w.png) no-repeat top center; }
+
+.blue-hover:hover .publications-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/publications-icon-w.png) no-repeat top center; }
+
+.blue-hover:hover .asiapedia-icon {
+  background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-w.png) no-repeat top center; }
 
 /*# sourceMappingURL=style.css.map */
