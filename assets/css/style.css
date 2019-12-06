@@ -1766,6 +1766,8 @@ $border-default: 1px solid #ccc;
   display: flex;
   -webkit-box-align: center;
   align-items: center; }
+  .banner.top-postion-24 {
+    top: 24px; }
   .banner img {
     position: absolute;
     background-size: cover;

@@ -7,6 +7,9 @@
   top: 110px;
   display: flex;
   align-items: center;
+  &.top-postion-24 {
+    top: 24px;
+  }
   img {
     position: absolute;
     background-size: cover;
@@ -30,18 +33,24 @@
 }
 //Tablets
 @media (max-width: $reflex-lg) {
-	.banner {
-		img{ width: auto;}
-	  height: auto;
-	  padding: 60px 0px;
-	}
+  .banner {
+    img {
+      width: auto;
+    }
+    height: auto;
+    padding: 60px 0px;
   }
- //Mobile 
+}
+//Mobile
 @media (max-width: $reflex-md) {
   .banner {
-	img{ width: auto;}
+    img {
+      width: auto;
+    }
     height: auto;
-	padding: 25px 0px;
-	h1{@include font-size(28px) }
+    padding: 25px 0px;
+    h1 {
+      @include font-size(28px);
+    }
   }
 }
