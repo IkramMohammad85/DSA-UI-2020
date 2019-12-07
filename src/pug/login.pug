@@ -1,0 +1,41 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper.home
+    include components/_header
+    section.pt-150.pb-7
+        .container
+            .grid
+                .col-sm-12.col-md-8.col-grid.offset-md-2.offset-lg-2
+                    .grid.shadow
+                        .col-md.text-center
+                            a(href='https://www.dezshira.com/library')
+                            img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                            h6.text-capitalize-none
+                            | A place to share knowledge and better understand Asia
+                        .col-md-6.col-sm-6.col-grid
+                            form.grey-bg.p-arround-2(action='')
+                                h3.text-capitalize Log In
+                                input(type='text', placeholder='Enter email', name='email', required='')
+                                input(type='password', placeholder='Enter password', name='psw', required='')
+                                small.text-right.text-capitalize.d-block.mt-2
+                                    a(href='https://www.asiabriefing.com/customer/forgot-password')
+                                    | Forgot Password?
+                                button.btn.btn-secondary.text-white(type='submit') Login
+                                
+                        .col-md-6.col-sm-6.col-grid
+                            h5.text-capitalize Why subscribe to Asiapedia?
+                            ul.list-unstyled.bullet-list
+                                li Download our FREE magazines and guides
+                                li Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                                li Access presentations, webinars, podcasts, reports, Q&amp;As and more
+                                li Track paid orders and connect with our support team 
+                        .col-md.text-center.p-0
+                            a.btn.btn-secondary.text-white.text-capitalize-none.btn-block.p-arround-1(href='https://www.dezshira.com/register') Don&apos;t have an account? Sign Up               
+    include components/_footer
