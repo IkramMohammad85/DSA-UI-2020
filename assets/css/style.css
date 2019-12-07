@@ -2793,7 +2793,8 @@ header.site-header .hamburger-menu {
             text-align: left; }
       .header-menu.open ul.navbar {
         width: 100%;
-        padding-left: 0; }
+        padding-left: 0;
+        text-align: center; }
         .header-menu.open ul.navbar > li {
           width: 100%;
           border-bottom: solid 1px #1a2940; } }
