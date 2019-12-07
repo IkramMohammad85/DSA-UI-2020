@@ -1768,6 +1768,8 @@ $border-default: 1px solid #ccc;
   align-items: center; }
   .banner.top-postion-24 {
     top: 24px; }
+  .banner.top-postion-0 {
+    top: 0px; }
   .banner img {
     position: absolute;
     background-size: cover;
