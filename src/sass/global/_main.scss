@@ -65,6 +65,15 @@ header.site-header {
           background: $deep-blue;
         }
       }
+      .navbar {
+        li.dropdown {
+          &:nth-last-child(2) {
+            a {
+              color: #007bff;
+            }
+          }
+        }
+    }
     }
   }
   .fixed-top {

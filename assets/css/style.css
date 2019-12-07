@@ -1909,7 +1909,7 @@ ol, ul {
   vertical-align: middle;
   text-align: center;
   white-space: nowrap;
-  display: inline-table; }
+  display: inline-block; }
 
 .btn-primary {
   color: #fff;
@@ -2631,6 +2631,8 @@ header.site-header {
         color: white !important; }
       header.site-header #main-nav.white .hamburger-menu span {
         background: #1a2940; }
+      header.site-header #main-nav.white .navbar li.dropdown:nth-last-child(2) a {
+        color: #007bff; }
   header.site-header .fixed-top {
     position: fixed;
     top: 0;
