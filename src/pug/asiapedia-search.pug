@@ -1,0 +1,196 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper.home
+    include components/_header
+    section.banner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/banner-asiapedia.jpg')    
+        .container
+            .grid.align-end
+                .col-sm-8.col-md-8.col-grid.offset-md-2.offset-sm-2.offset-lg-2.text-center
+                    h1 Asiapedia Resources Search       
+    section.pt-150.pb-7.dark-blue-bg
+        .container
+            .grid
+                .col-sm-12.col-md-12.col-grid
+                    form(action='https://www.dezshira.com/events/search', method='GET')
+                            .col-sm-3
+                                <input class="input-add-on-field" type="text" name="email" placeholder="Search by keyword">
+                            .col-sm-2
+
+                                select.form-control.radius-none(id='', name='location')
+                                    option(value='', selected='selected') Countries
+                                    option(value='asia') Asia
+                                    option(value='china') China
+                                    option(value='india') India
+                                    option(value='vietnam') Vietnam
+                                    option(value='hong-kong') Hong Kong
+                                    option(value='singapore') Singapore
+                                    option(value='europe') Europe
+                                    option(value='north-america') North America
+                                    option(value='central-and-latin-america') Central &amp; Latin America
+                                    option(value='oceania') Oceania
+                                    option(value='middle-east') Middle East
+                                    option(value='africa') Africa
+                            .col-sm-2
+
+                                select(id='', name='language')
+                                    option(value='', selected='selected') Topics
+                                    option(value='english') English
+                                    option(value='german') German
+                                    option(value='italian') Italian
+                                    option(value='spanish') Spanish
+                                    option(value='french') French
+                                    option(value='chinese') chinese
+                            .col-sm-2
+
+                                select(id='', name='status')
+                                    option(value='', selected='selected') Type
+                                    option(value='upcoming') Upcoming
+                                    option(value='past') Past
+                            .col-sm-2
+
+                                select(id='', name='status')
+                                    option(value='', selected='selected') Language
+                                    option(value='upcoming') Upcoming
+                                    option(value='past') Past                                    
+                            .col-sm-1
+                                button.btn.btn-secondary(type='submit')
+                                    | Search  
+                            .col-sm-12.col-md-12.col-grid
+                                ul.list-inline
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=168') Business Intelligence
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=264') Corporate Establisment and Structuring
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=423') Due Diligence
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=178') Accounting
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=201') HR and Payroll
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=8') Tax
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=178') Audit and Risk Advisory
+                                    li
+                                        a(href='https://www.dezshira.com/library/search?services=210') Technology
+                                    li
+                                        a(href='#') Outbound Direct Investment
+                                    
+
+    section.pt-7.pb-7.grey
+            .container
+                .grid
+                    .col-sm-12.col-md-3.col-grid
+                        h2 Featured Resources
+                        a.btn.btn-secondary.mt-2(target='_top', href='https://www.dezshira.com/register') Subscribe Today
+                .grid
+                    .col-sm-12.col-md-3.col-grid
+                        .card.featured-resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/qa/gestion-riesgos-para-inversores-extranjeros-china.html')
+                                    img(src='https://resource.dezshira.com/resize/650x400/Resources/8524/Fraud_and_Risk_Management_for_Companies.jpg')
+                                .card-text-overlap
+                                    h4.text-left.ml-2.mr-2
+                                        a(href='https://www.dezshira.com/library/qa/gestion-riesgos-para-inversores-extranjeros-china.html') Gestión de riesgos para inversores extranjeros en China 
+                            .card-body
+                                small  December 2019
+                                p
+                                    | Esta sesión de preguntas y respuestas cubre algunos de los tipos de fraude que las empresas con inversión extranjera en China deben tener en cuenta. Además, describimos algunos de los mecanismos de control interno para la gestión de riesgos en Ch...
+
+                    .col-sm-6.col-md-3.col-grid
+                        .card.featured-resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/library/qa/gestion-riesgos-para-inversores-extranjeros-china.html')
+                                    img(src='https://resource.dezshira.com/resize/650x400/Resources/8525/India-Brefing-Analyzing-the-AuditorCus-Report-in-India.jpg')
+                                .card-text-overlap
+                                    h4.text-left.ml-2.mr-2
+                                        a(href='https://www.dezshira.com/library/qa/gestion-riesgos-para-inversores-extranjeros-china.html') Alojamiento de un sitio web en China
+                            .card-body
+                                small December 2019
+                                p
+                                    | En esta sesión de preguntas y respuestas consideramos brevemente los requisitos básicos, las ventajas y las desventajas de alojar un sitio web en China. 
+
+                    .col-sm-6.col-md-3.col-grid
+                        .card.featured-resources
+                            .card-header-img.zoom-on-hover
+                                a(href='https://www.dezshira.com/multimedia/view/china-regulatory-watch-december-2-2019-8521.html')
+                                    img(src='https://resource.dezshira.com/resize/650x400/Multimedia/8521/China_Regulatory_Watch_-_December_22019.jpg')
+                                .card-text-overlap
+                                    h4.text-left.ml-2.mr-2
+                                        a(href='https://www.dezshira.com/multimedia/view/china-regulatory-watch-december-2-2019-8521.html') China Regulatory Watch - December 2, 2019
+                            .card-body
+                                small December 2019
+                                p
+                                    | In this week's episode, we cover the first fully foreign-owned insurance firm, the first national security review of foreign investment, foreign direct investment data and more.
+                    .col-sm-6.col-md-3.col-grid
+                            .card.featured-resources
+                                .card-header-img.zoom-on-hover
+                                    a(href='https://www.dezshira.com/library/publications/introduction-doing-business-china-2020.html')
+                                        img(src='https://resource.dezshira.com/resize/650x400/Publications/8520/DSA_Doing_Business_in_China_2019-20_Cover.jpg')
+                                    .card-text-overlap
+                                        h4.text-left.ml-2.mr-2
+                                            a(href='https://www.dezshira.com/library/publications/introduction-doing-business-china-2020.html') An Introduction to Doing Business in China 2020
+                                .card-body
+                                    small November 2019
+                                    p
+                                        | Doing Business in China 2020 is designed to introduce the fundamentals of investing in China. Compiled by the professionals at Dezan Shira & Associates in November 2019, this comprehensive guide is ideal not only for businesses looking to enter the C...
+                    .col-sm-6.col-md-3.col-grid
+                            .card.featured-resources
+                                .card-header-img.zoom-on-hover
+                                    a(href='https://www.dezshira.com/multimedia/view/the-key-considerations-year-end-tax-treatment-2019-preferential-tax-policy.html')
+                                        img(src='https://www.dezshira.com/themes/dsa/images/asiapedia/thumb-webinar.jpg')
+                                    .card-text-overlap
+                                        h4.text-left.ml-2.mr-2
+                                            a(href='https://www.dezshira.com/multimedia/view/the-key-considerations-year-end-tax-treatment-2019-preferential-tax-policy.html') The Key Considerations for Year-End Tax Treatment and the 2019 Preferential Tax Policy
+                                .card-body
+                                    small November 2019
+                                    p
+                                        | 2019 has been a productive year in terms of new tax policies. The new Individual Income Tax Law which took effect from January 1st, 2019; a series of tax-cutting measures targeted at low-profit enterprises; and a recent announcement on entitlement of...
+                    .col-sm-6.col-md-3.col-grid
+                            .card.featured-resources
+                                .card-header-img.zoom-on-hover
+                                    a(href='https://www.dezshira.com/multimedia/view/introduction-supplier-network-northern-vietnam.html')
+                                        img(src='https://resource.dezshira.com/resize/650x400/Publications/8518/ASB_2019_11_issue_Cover.jpg')
+                                    .card-text-overlap
+                                        h4.text-left.ml-2.mr-2
+                                            a(href='https://www.dezshira.com/multimedia/view/introduction-supplier-network-northern-vietnam.html') An Setting up in Indonesia
+                                .card-body
+                                    small November 2019
+                                    p
+                                        | After overcoming the Asian financial crisis in 1998, Indonesia developed into a vibrant democracy with the largest and most dynamic economy in Southeast Asia. The country’s GDP has grown at a consistent pace at just above five percent in the past y...                                 
+                    .col-sm-6.col-md-3.col-grid
+                            .card.featured-resources
+                                .card-header-img.zoom-on-hover
+                                    a(href='https://www.dezshira.com/multimedia/view/introduction-supplier-network-northern-vietnam.html')
+                                        img(src='https://www.dezshira.com/themes/dsa/images/asiapedia/thumb-webinar.jpg')
+                                    .card-text-overlap
+                                        h4.text-left.ml-2.mr-2
+                                            a(href='https://www.dezshira.com/multimedia/view/introduction-supplier-network-northern-vietnam.html') An Introduction to Doing Business in China 2020
+                                .card-body
+                                    small November 2019
+                                    p
+                                        | Despite some challenges, Vietnam and particularly Northern Vietnam, has quickly established itself as a serious alternative to China. The region is well-known for its advantageous position as hub for China Plus One manufacturing for investors with ti...
+                    .col-sm-6.col-md-3.col-grid
+                            .card.featured-resources
+                                .card-header-img.zoom-on-hover
+                                    a(href='https://www.dezshira.com/library/publications/da-nang-vietnam-emerging-investment-destination.html')
+                                        img(src='https://resource.dezshira.com/resize/650x400/Publications/8516/VB_2019_11_issue_Cover.jpg')
+                                    .card-text-overlap
+                                        h4.text-left.ml-2.mr-2
+                                            a(href='https://www.dezshira.com/library/publications/da-nang-vietnam-emerging-investment-destination.html') An Da Nang: Vietnam’s Emerging Investment Destination
+                                .card-body
+                                    small November 2019
+                                    p
+                                        | Da Nang has emerged as an attractive investment destination for domestic and international investors, followed only by the capital Hanoi and commercial hub Ho Chi Minh City. In this issue of Vietnam Briefing magazine, we examine the central city of D...
+                p.text-center
+                    a.btn.btn-secondary.mt-4(target='_top', href='https://www.dezshira.com/library') Back to Asiapedia Home
+
+    include components/_footer

@@ -1902,7 +1902,8 @@ ol, ul {
   user-select: none;
   vertical-align: middle;
   text-align: center;
-  white-space: nowrap; }
+  white-space: nowrap;
+  display: inline-table; }
 
 .btn-primary {
   color: #fff;
