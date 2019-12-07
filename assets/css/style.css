@@ -1503,11 +1503,15 @@ $border-default: 1px solid #ccc;
   .card.asiapedia .card-header-img {
     background: url(../img/banner-asiapedia.jpg);
     height: 100px; }
+    .card.asiapedia .card-header-img .card-text-overlap {
+      top: 35%; }
   .card.asiapedia .card-body {
     text-align: center; }
   .card.events .card-header-img {
     background: url(../img/das-events-banner.jpg);
     height: 100px; }
+    .card.events .card-header-img .card-text-overlap {
+      top: 35%; }
   .card.contact-us {
     background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
     width: auto;
@@ -2012,6 +2016,42 @@ ol, ul {
   display: block !important;
   width: 100% !important; }
 
+.btn-close {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 32px;
+  height: 28px;
+  opacity: 1;
+  background: #007bff;
+  padding: 5px; }
+  .btn-close:hover {
+    opacity: 1; }
+  .btn-close:before {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 14px;
+    width: 2px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .btn-close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 14px;
+    width: 2px;
+    background-color: #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+
+@media (max-width: 992px) {
+  ul.top-quick-link .dropdown-content .btn-close {
+    top: 42px; }
+  .navbar .dropdown-content .btn-close {
+    top: 50px; } }
+
 .dark-blue-bg {
   background: #1a2940; }
 
@@ -2397,36 +2437,6 @@ ol, ul {
   z-index: 2;
   opacity: 0.8; }
 
-.close-btn {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 32px;
-  height: 28px;
-  opacity: 1;
-  background: #007bff;
-  padding: 5px; }
-  .close-btn:hover {
-    opacity: 1; }
-  .close-btn:before {
-    position: absolute;
-    left: 15px;
-    content: " ";
-    height: 14px;
-    width: 2px;
-    background-color: #fff;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  .close-btn:after {
-    position: absolute;
-    left: 15px;
-    content: " ";
-    height: 14px;
-    width: 2px;
-    background-color: #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -2638,7 +2648,8 @@ header.site-header {
         text-transform: inherit;
         text-transform: inherit;
         font-weight: normal; }
-      header.site-header .navbar .dropdown-hover .dropdown-content h1, header.site-header .navbar .dropdown-hover .dropdown-content h2 {
+      header.site-header .navbar .dropdown-hover .dropdown-content h1,
+      header.site-header .navbar .dropdown-hover .dropdown-content h2 {
         text-transform: inherit; }
       header.site-header .navbar .dropdown-hover .dropdown-content .btn-outline-dark {
         color: initial;
@@ -2659,6 +2670,8 @@ header.site-header {
         header.site-header .navbar .dropdown-hover .dropdown-content ul li a {
           color: #2a2a2a;
           font-weight: normal; }
+  header.site-header .navbar li.dropdown:nth-last-child(2) a {
+    color: #fdcd20; }
 
 footer.site-footer {
   background-color: #1a2940;
@@ -2676,7 +2689,7 @@ footer.site-footer {
     footer.site-footer .list-inline.social-media li {
       vertical-align: middle; }
       footer.site-footer .list-inline.social-media li:not(:last-child) {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
         padding-right: 0px; }
   footer.site-footer h2 {
     color: #fff;
@@ -2696,7 +2709,7 @@ footer.site-footer {
           color: #94a2ad; }
         footer.site-footer .copyright .list-inline li:not(:last-child) {
           border-right: solid 1px #94a2ad;
-          padding-right: .5rem; }
+          padding-right: 0.5rem; }
 
 header.site-header .hamburger-menu {
   display: none; }
@@ -2745,7 +2758,7 @@ header.site-header .hamburger-menu {
   .container {
     max-width: 100% !important; }
   header.site-header .logo {
-    max-width: 260px; }
+    max-width: 240px; }
   ul.navbar .dropdown-content li {
     text-align: left; } }
 
@@ -2771,12 +2784,16 @@ header.site-header .hamburger-menu {
         text-align: center;
         margin-bottom: 20px;
         border-bottom: 3px solid #1a2940; }
+        .header-menu.open ul.top-quick-link .dropdown-content {
+          left: 0;
+          right: 0; }
+          .header-menu.open ul.top-quick-link .dropdown-content .list li {
+            text-align: left; }
       .header-menu.open ul.navbar {
         width: 100%;
         padding-left: 0; }
         .header-menu.open ul.navbar > li {
           width: 100%;
-          text-align: center;
           border-bottom: solid 1px #1a2940; } }
 
 .home .big-banner {

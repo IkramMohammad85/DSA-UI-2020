@@ -66,6 +66,9 @@
     .card-header-img {
       background: url(../img/banner-asiapedia.jpg);
       height: 100px;
+      .card-text-overlap{
+        top: 35%;
+      }
     }
 
     .card-body {
@@ -78,6 +81,9 @@
     .card-header-img {
       background: url(../img/das-events-banner.jpg);
       height: 100px;
+      .card-text-overlap{
+        top: 35%;
+      }
     }
   }
 
