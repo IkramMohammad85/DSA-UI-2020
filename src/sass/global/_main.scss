@@ -72,6 +72,11 @@ header.site-header {
               color: #007bff;
             }
           }
+          h4 {
+            a {
+              color: inherit !important;
+            }
+          }
         }
       }
     }
@@ -133,6 +138,11 @@ header.site-header {
       &:nth-last-child(2) {
         a {
           color: #fdcd20;
+        }
+        h4 {
+          a {
+            color: inherit !important;
+          }
         }
       }
     }
