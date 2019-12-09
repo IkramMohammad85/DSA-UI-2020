@@ -2787,6 +2787,8 @@ header.site-header .hamburger-menu {
         margin-bottom: 20px;
         border-bottom: 3px solid #1a2940; }
         .header-menu.open ul.top-quick-link .dropdown-content {
+          height: 500px;
+          overflow: auto;
           left: 0;
           right: 0; }
           .header-menu.open ul.top-quick-link .dropdown-content .list li {
@@ -2797,7 +2799,9 @@ header.site-header .hamburger-menu {
         text-align: center; }
         .header-menu.open ul.navbar > li {
           width: 100%;
-          border-bottom: solid 1px #1a2940; } }
+          border-bottom: solid 1px #1a2940; }
+  footer.site-footer .copyright .list-inline {
+    text-align: left; } }
 
 .home .big-banner {
   position: relative; }

@@ -73,7 +73,7 @@ header.site-header {
             }
           }
         }
-    }
+      }
     }
   }
   .fixed-top {
@@ -298,6 +298,8 @@ header.site-header .hamburger-menu {
         margin-bottom: 20px;
         border-bottom: 3px solid $deep-blue;
         .dropdown-content {
+          height: 500px;
+          overflow: auto;
           left: 0;
           right: 0;
           .list {
@@ -317,6 +319,13 @@ header.site-header .hamburger-menu {
           width: 100%;
           border-bottom: solid 1px $deep-blue;
         }
+      }
+    }
+  }
+  footer.site-footer {
+    .copyright {
+      .list-inline {
+        text-align: left;
       }
     }
   }
