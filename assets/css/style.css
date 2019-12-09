@@ -2515,6 +2515,20 @@ ol, ul {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.075); }
 
+@media (max-width: 768px) {
+  .text-align-center-sm {
+    text-align: center !important; }
+  .content-center-sm {
+    display: table;
+    margin: 0 auto; } }
+
+@media (max-width: 576px) {
+  .text-align-center-xs {
+    text-align: center !important; }
+  .content-center-xs {
+    display: table;
+    margin: 0 auto; } }
+
 .site-footer .input-add-on {
   display: -webkit-box;
   display: flex;

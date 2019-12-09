@@ -1,0 +1,22 @@
+//Mobile
+@media (max-width: $reflex-sm) {
+  .text-align-center-sm {
+    text-align: center !important;
+  }
+//content center on mbile like button and image
+  .content-center-sm {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $reflex-xs) {
+  .text-align-center-xs {
+    text-align: center !important;
+  }
+//content center on mbile like button and image
+  .content-center-xs {
+    display: table;
+    margin: 0 auto;
+  }
+}
