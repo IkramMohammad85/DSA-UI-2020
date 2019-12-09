@@ -1573,7 +1573,9 @@ $border-default: 1px solid #ccc;
     .card .card-header-img .card-text-overlap {
       top: 40%; }
   .card.asiapedia, .card.events, .card.international-desks, .card.services {
-    height: auto; } }
+    height: auto; }
+  .card.featured-resources .card-body {
+    min-height: auto; } }
 
 .list {
   padding: 0;

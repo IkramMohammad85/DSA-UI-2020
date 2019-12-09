@@ -200,5 +200,8 @@
     &.services {
       height: auto;
     }
+    &.featured-resources{
+      .card-body{ min-height: auto;}
+    }
   }
 }
