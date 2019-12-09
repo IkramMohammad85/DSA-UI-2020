@@ -1,6 +1,5 @@
 .card {
   border: solid 1px #e8e8e8;
-  background-color: $white;
 
   &-header,
   &-body,
@@ -13,6 +12,7 @@
     background-size: cover;
     overflow: hidden;
     position: relative;
+    height: 200px;
 
     .card-text-overlap {
       position: absolute;
@@ -48,7 +48,7 @@
   }
 
   &-body {
-    min-height: 200px;
+    min-height: 252px;
     background: $white;
   }
 
@@ -60,6 +60,7 @@
   &.asiapedia,
   &.events {
     min-height: 568px;
+    background-color: $white;
   }
 
   &.asiapedia {
@@ -98,17 +99,19 @@
 
   // International Desks
   &.international-desks {
-    min-height: 615px;
-
     .card-body {
       padding: 20px;
+      min-height: 434px;
     }
   }
 
   // Services
   &.services {
-    min-height: 430px;
     position: relative;
+    .card-body {
+      padding: 20px;
+      min-height: 230px;
+    }
   }
   // Resources
   &.resources {
@@ -151,6 +154,17 @@
       }
     }
   }
+
+    // featured-resources
+    &.featured-resources {
+      .card-header-img {
+        height: 144px;
+      }
+      .card-body{
+        padding: 20px;
+        min-height: 328px;;
+      }
+    }
 }
 
 //Tablets
@@ -168,33 +182,23 @@
         height: auto;
       }
     }
-    .card-header-img {
-      .card-text-overlap {
-        top: 30%;
-      }
-    }
   }
 }
 
 //Mobile
 @media (max-width: $reflex-md) {
   .card {
-    &.news {
-      height: auto;
       .card-header-img {
         height: auto;
+        .card-text-overlap{
+          top: 40%;
+        }
       }
-    }
-    .card-header-img {
-      .card-text-overlap {
-        top: 30%;
-      }
-    }
     &.asiapedia,
     &.events,
     &.international-desks,
     &.services {
-      min-height: auto;
+      height: auto;
     }
   }
 }
