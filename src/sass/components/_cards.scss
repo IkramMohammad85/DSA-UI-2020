@@ -67,7 +67,7 @@
     .card-header-img {
       background: url(../img/banner-asiapedia.jpg);
       height: 100px;
-      .card-text-overlap{
+      .card-text-overlap {
         top: 35%;
       }
     }
@@ -82,7 +82,7 @@
     .card-header-img {
       background: url(../img/das-events-banner.jpg);
       height: 100px;
-      .card-text-overlap{
+      .card-text-overlap {
         top: 35%;
       }
     }
@@ -155,16 +155,22 @@
     }
   }
 
-    // featured-resources
-    &.featured-resources {
-      .card-header-img {
-        height: 144px;
-      }
-      .card-body{
-        padding: 20px;
-        min-height: 328px;;
+  // featured-resources
+  &.featured-resources {
+    .card-header-img {
+      height: 144px;
+    }
+    .card-body {
+      padding: 20px;
+      min-height: 342px;
+      p {
+        margin-bottom: 0px;
       }
     }
+    .card-footer {
+      padding: 20px;
+    }
+  }
 }
 
 //Tablets
@@ -188,20 +194,22 @@
 //Mobile
 @media (max-width: $reflex-md) {
   .card {
-      .card-header-img {
-        height: auto;
-        .card-text-overlap{
-          top: 40%;
-        }
+    .card-header-img {
+      height: auto;
+      .card-text-overlap {
+        top: 40%;
       }
+    }
     &.asiapedia,
     &.events,
     &.international-desks,
     &.services {
       height: auto;
     }
-    &.featured-resources{
-      .card-body{ min-height: auto;}
+    &.featured-resources {
+      .card-body {
+        min-height: auto;
+      }
     }
   }
 }

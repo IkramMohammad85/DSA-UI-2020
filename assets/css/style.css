@@ -1555,7 +1555,11 @@ $border-default: 1px solid #ccc;
     height: 144px; }
   .card.featured-resources .card-body {
     padding: 20px;
-    min-height: 328px; }
+    min-height: 342px; }
+    .card.featured-resources .card-body p {
+      margin-bottom: 0px; }
+  .card.featured-resources .card-footer {
+    padding: 20px; }
 
 @media (max-width: 1200px) {
   .card.news {
@@ -1598,14 +1602,15 @@ $border-default: 1px solid #ccc;
   .list-hover li:hover {
     background-color: #f1f1f1; }
 
-.list-inline, .list-unstyled {
+.list-inline,
+.list-unstyled {
   padding-left: 0;
   list-style: none; }
 
 .list-inline li {
   display: inline-block; }
   .list-inline li:not(:last-child) {
-    margin-right: .5rem; }
+    margin-right: 0.5rem; }
 
 .list.lists-events li {
   display: block;
@@ -1670,6 +1675,15 @@ $border-default: 1px solid #ccc;
       color: #007bff;
       background-color: #f8f9fa; }
 
+.list-inline.list-inline-style {
+  display: inline;
+  list-style: decimal;
+  font-size: 13px;
+  font-size: 0.8125rem; }
+  .list-inline.list-inline-style li::before {
+    content: "\2022";
+    margin: 0 5px; }
+
 @media (min-width: 1200px) {
   .list.lists-with-logo li .list-logo {
     width: 150px; } }
@@ -1681,7 +1695,7 @@ $border-default: 1px solid #ccc;
       width: 50%; }
   .list.lists-events .date-block {
     float: inherit;
-    border-bottom: solid 1px  #dadada; }
+    border-bottom: solid 1px #dadada; }
   .list.lists-events .dec-block {
     margin-left: 0px; } }
 

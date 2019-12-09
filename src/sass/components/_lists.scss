@@ -1,107 +1,159 @@
 .list {
-    padding: 0;
-	margin: 0;
-	list-style: none;
-	li {
-		padding: 12px 0px;
-		border-bottom: solid 1px #e7e7e7; user-select: none;
-		a {
-			color: $cyan-blue;
-			font-weight: 400;
-		}
-	}
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    padding: 12px 0px;
+    border-bottom: solid 1px #e7e7e7;
+    user-select: none;
+    a {
+      color: $cyan-blue;
+      font-weight: 400;
+    }
+  }
 }
 .list-hover {
-	li {
-		background-color: #ebebeb;
-		border-bottom: solid 1px $white;
-		&:hover {
-			background-color: #f1f1f1;
-			
-		}
-	}
-}
-
-.list-inline, .list-unstyled {   padding-left: 0;    list-style: none;}
-.list-inline{
-	li{ display: inline-block;
-		&:not(:last-child) {
-			margin-right: .5rem;
-		}
-	}
-	
-}
-
-
-.list.lists-events{
-    li{ display: block; background-color:#f1f1f1; border: solid 1px #dadada; overflow: hidden; padding: 0px; margin-bottom: 20px;}
-.date-block{  @include font-size(24px); float: left; width: 110px; border-right: solid 1px #dadada; text-align: center;
-    padding: 24px; line-height: 24px;
-    span{ @include font-size(14px); display: block;}
+  li {
+    background-color: #ebebeb;
+    border-bottom: solid 1px $white;
+    &:hover {
+      background-color: #f1f1f1;
     }
-    .dec-block{margin-left: 110px; padding: 10px 20px;
-    .title{ color: #676767; @include font-size(14px);}
-    .date-time{ color: #676767;}
+  }
+}
+
+.list-inline,
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 0.5rem;
     }
-
+  }
 }
 
-.list.lists-with-logo{
-	li{ padding-top: 20px; padding-bottom: 20px;
-		&:last-child{ border: none;}
-	display: flex;
-	align-items: flex-start;
-	.list-logo {
-		margin-right: 1em;
-		order: 1;
-		width: auto;
-	  }
-	  .list-content {
-		flex: 1;
-	  }
-	}
+.list.lists-events {
+  li {
+    display: block;
+    background-color: #f1f1f1;
+    border: solid 1px #dadada;
+    overflow: hidden;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .date-block {
+    @include font-size(24px);
+    float: left;
+    width: 110px;
+    border-right: solid 1px #dadada;
+    text-align: center;
+    padding: 24px;
+    line-height: 24px;
+    span {
+      @include font-size(14px);
+      display: block;
+    }
+  }
+  .dec-block {
+    margin-left: 110px;
+    padding: 10px 20px;
+    .title {
+      color: #676767;
+      @include font-size(14px);
+    }
+    .date-time {
+      color: #676767;
+    }
+  }
 }
 
-.list-unstyled.bullet-list{
-	li{ background:url(../img/list-arrow.png) no-repeat 0 15px; padding: 5px 20px;}
+.list.lists-with-logo {
+  li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &:last-child {
+      border: none;
+    }
+    display: flex;
+    align-items: flex-start;
+    .list-logo {
+      margin-right: 1em;
+      order: 1;
+      width: auto;
+    }
+    .list-content {
+      flex: 1;
+    }
+  }
 }
 
-.list-unstyled.sidebar-nav{
-	li{border-bottom: solid 1px $gray-200;
-		a{padding: 10px 19px; display: block;
-		&:hover{
-			color: $blue;
-			background-color: $gray-100;
-		}}
-	}
+.list-unstyled.bullet-list {
+  li {
+    background: url(../img/list-arrow.png) no-repeat 0 15px;
+    padding: 5px 20px;
+  }
+}
+
+.list-unstyled.sidebar-nav {
+  li {
+    border-bottom: solid 1px $gray-200;
+    a {
+      padding: 10px 19px;
+      display: block;
+      &:hover {
+        color: $blue;
+        background-color: $gray-100;
+      }
+    }
+  }
+}
+.list-inline.list-inline-style {
+  display: inline;
+  list-style: decimal;
+  @include font-size(13px);
+  li {
+    &::before {
+      content: "\2022"; // bullet
+      margin: 0 5px;
+    }
+  }
 }
 
 //Tablet
 @media (min-width: $reflex-lg) {
-	.list{
-		&.lists-with-logo {
-			li{ 
-				.list-logo{ width: 150px; }
-			}
-		}
-	}
-
+  .list {
+    &.lists-with-logo {
+      li {
+        .list-logo {
+          width: 150px;
+        }
+      }
+    }
+  }
 }
 //Mobile
 @media (max-width: $reflex-md) {
-
-	.list{
-		&.lists-with-logo {
-			li{ display: block;
-				.list-logo{ width: 50%;}
-			}
-		}
-		&.lists-events{
-			.date-block{
-				float: inherit;
-				border-bottom: solid 1px  #dadada;
-			}
-			.dec-block { margin-left: 0px;}
-		}
-	}
+  .list {
+    &.lists-with-logo {
+      li {
+        display: block;
+        .list-logo {
+          width: 50%;
+        }
+      }
+    }
+    &.lists-events {
+      .date-block {
+        float: inherit;
+        border-bottom: solid 1px #dadada;
+      }
+      .dec-block {
+        margin-left: 0px;
+      }
+    }
   }
+}
