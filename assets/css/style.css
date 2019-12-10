@@ -1830,7 +1830,7 @@ $border-default: 1px solid #ccc;
       font-size: 1.75rem; } }
 
 .pagination {
-  display: inline-block;
+  display: block;
   list-style: none;
   padding: 0;
   margin: 0; }

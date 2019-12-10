@@ -26,10 +26,9 @@ body
             .grid
                 .col-sm-12.col-md-12.col-grid
                     form(action='https://www.dezshira.com/events/search', method='GET')
-                            .col-sm-3
+                            .col-sm-4.col-md-3
                                 <input class="input-add-on-field" type="text" name="email" placeholder="Search by keyword">
-                            .col-sm-2
-
+                            .col-sm-4.col-md-2
                                 select.form-control.radius-none(id='', name='location')
                                     option(value='', selected='selected') Countries
                                     option(value='asia') Asia
@@ -44,7 +43,7 @@ body
                                     option(value='oceania') Oceania
                                     option(value='middle-east') Middle East
                                     option(value='africa') Africa
-                            .col-sm-2
+                            .col-sm-4.col-md-2
 
                                 select(id='', name='language')
                                     option(value='', selected='selected') Topics
@@ -54,19 +53,19 @@ body
                                     option(value='spanish') Spanish
                                     option(value='french') French
                                     option(value='chinese') chinese
-                            .col-sm-2
+                            .col-sm-4.col-md-2
 
                                 select(id='', name='status')
                                     option(value='', selected='selected') Type
                                     option(value='upcoming') Upcoming
                                     option(value='past') Past
-                            .col-sm-2
+                            .col-sm-4.col-md-2
 
                                 select(id='', name='status')
                                     option(value='', selected='selected') Language
                                     option(value='upcoming') Upcoming
                                     option(value='past') Past                                    
-                            .col-sm-1
+                            .col-sm-4.col-md-1
                                 button.btn.btn-secondary(type='submit')
                                     | Search  
                             .col-sm-12.col-md-12.col-grid
@@ -280,7 +279,7 @@ body
                                 .card-text-overlap 
                                     h2.text-center 
                                         a(href='https://www.dezshira.com/library/search?location=141') Canada                            
-            p.text-center
+            p.text-center.mb-0
                     a.btn.btn-outline-white.mt-2(target='_top', href='#') More Countries
     section.pt-7.pb-7.grey
             h2.text-center  Featured Resources
