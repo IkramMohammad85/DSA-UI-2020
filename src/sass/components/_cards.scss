@@ -112,6 +112,13 @@
       padding: 20px;
       min-height: 230px;
     }
+    .card-footer{
+      padding: 0;
+      background-color: $gray-200;
+      min-height: auto;
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
   }
   // Resources
   &.resources {
@@ -205,6 +212,12 @@
     &.international-desks,
     &.services {
       height: auto;
+    }
+    &.services {
+      height: auto;
+      .card-body {
+        min-height: 180px;
+      }
     }
     &.featured-resources {
       .card-body {

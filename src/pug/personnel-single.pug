@@ -20,7 +20,7 @@ body
     section.pt-150.pb-7
         .container
             .grid
-                .col-sm-12.col-md-9.col-lg-9.col-xlg-9.col-grid
+                .col-sm.col-md-9.col-lg-9.col-xlg-9.col-grid
                         h4.section-title BIO
                         p
                             | Adam Livermore is the newest equity partner at Dezan Shira &amp; Associates.&nbsp; Born in London, he has been living in China for the past fourteen years and is proficient in Chinese and Japanese.
@@ -36,16 +36,16 @@ body
                             | Adam achieved his degree in Business Studies and Economics from the University of Sheffield.&nbsp; As part of his degree course, he spent an exchange year at the University of Maryland in the United States of America.
                         h4.section-title.mb-2 EXPERTISE
                         .grid
-                            .col-sm-12.col-md-6.col-lg-6
-                                ul.list-unstyled
+                            .col-sm.col-md-6.col-lg-6
+                                ul.list-unstyled.bullet-list
                                     li
                                         a(href='https://www.dezshira.com/personnel/tag/corporate-formation')  Corporate Formation
                                     li
                                         a(href='https://www.dezshira.com/personnel/tag/staff-manual')  Staff Manual
                                     li
                                         a(href='https://www.dezshira.com/personnel/tag/visa-services')  Visa Services
-                            .col-sm-12.col-md-6.col-lg-6
-                                ul.list-unstyled
+                            .col-sm.col-md-6.col-lg-6
+                                ul.list-unstyled.bullet-list
                                     li
                                         a(href='https://www.dezshira.com/personnel/tag/corporate-tax-filings')  Corporate Tax Filings
                                     li
@@ -75,7 +75,15 @@ body
                                 a(href='http://www.thatsmags.com/prd/article/617/expat-social-insurance', target='_blank')
                                 | Expat Social Insurance, That&apos;s PRD 
                                 span.text-right.float-right 2011-10-31
-                     
+                        ul.pagination.mt-3
+                            li
+                                a(href='#') 1
+                            li
+                                a(href='https://www.dezshira.com/library/search?location=32&page=2') 2
+                            li
+                                a.active(href='https://www.dezshira.com/library/search?location=32&page=3') 3
+                            li
+                                a(href='https://www.dezshira.com/library/search?location=32&page=4') 4                     
                         h4.section-title.mb-2.mt-4 Events
                         ul.list.lists-events
                             li
@@ -125,15 +133,23 @@ body
                                     .date-time
                                         small
                                             | Webinar | 27 November 2019 | 3PM-4PM China Time                        
-
-                .col-sm-12.col-md-3.col-grid
+                        ul.pagination.mt-1
+                            li
+                                a(href='#') 1
+                            li
+                                a(href='https://www.dezshira.com/library/search?location=32&page=2') 2
+                            li
+                                a.active(href='https://www.dezshira.com/library/search?location=32&page=3') 3
+                            li
+                                a(href='https://www.dezshira.com/library/search?location=32&page=4') 4
+                .col-sm.col-md-3.col-lg-3.col-grid
                     h4.section-title ADDITIONAL INFO
                     ul.list
                         li
                             h4 Office
-                            h6 Dalian Office
+                            h6.text-muted Dalian Office
                         li
                             h4 Languages
-                            h6 Chinese, Mandarin, English, Japanese                                                                                       
+                            h6.text-muted Chinese, Mandarin, English, Japanese                                                                                       
 
     include components/_footer

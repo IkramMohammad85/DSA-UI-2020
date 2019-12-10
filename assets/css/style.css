@@ -1526,6 +1526,12 @@ $border-default: 1px solid #ccc;
     .card.services .card-body {
       padding: 20px;
       min-height: 230px; }
+    .card.services .card-footer {
+      padding: 0;
+      background-color: #e9ecef;
+      min-height: auto;
+      padding-bottom: 5px;
+      padding-top: 5px; }
   .card.resources {
     border: none; }
   .card.office {
@@ -1578,6 +1584,10 @@ $border-default: 1px solid #ccc;
       top: 40%; }
   .card.asiapedia, .card.events, .card.international-desks, .card.services {
     height: auto; }
+  .card.services {
+    height: auto; }
+    .card.services .card-body {
+      min-height: 180px; }
   .card.featured-resources .card-body {
     min-height: auto; } }
 
@@ -2377,6 +2387,10 @@ ol, ul {
   color: #58595B;
   font-weight: 400; }
 
+.page-title {
+  border-top: 3px solid #1a2940;
+  padding-top: 10px; }
+
 .text-white {
   color: #fff !important; }
   .text-white a {
@@ -2478,6 +2492,9 @@ ol, ul {
   height: 100%;
   z-index: 2;
   opacity: 0.8; }
+
+.text-muted {
+  color: #495057; }
 
 .table {
   width: 100%;

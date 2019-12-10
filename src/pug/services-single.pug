@@ -13,14 +13,14 @@ body
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/services/banner-business-intelligence-solutions.jpg')    
         .container
             .grid.align-end
-                .col-sm-8.col-md-8.col-grid.offset-sm-2.offset-md-2.offset-lg-2.text-center
+                .col-sm.col-md-8.col-grid.offset-md-2.offset-lg-2.offset-lg-2.text-center
                     h1 Business Intelligence
                     h4  Business intelligence is a critical component of the decision making process when considering where and how an investment into Asia should be made. Our pan-Asia team can help your business with its strategic direction.
                     a.btn.btn-secondary.mt-2.block-center(href='#CTA_form') Contact us for more information
     section.pt-150.pb-7
         .container
             .grid
-                .col-sm-12.col-md-3.col-grid
+                .col-sm.col-md-3.col-lg-3.col-grid
                     h4.section-title industries
                     ul.list-unstyled.sidebar-nav
                         li
@@ -44,7 +44,7 @@ body
                         li
                             a(href='https://www.dezshira.com/services/outbound-direct-investment') Outbound Direct Investment
 
-                .col-sm-12.col-md-6.col-grid
+                .col-sm.col-md-6.col-lg-6.col-grid
                     p
                         | Asia’s relentless economic growth and diverse range of economies present amazing opportunities for foreign investment. Foreign companies exploring opportunities in the region can, however, become exposed to shifting costs, complex regulatory requirements, and conflicting information.                    p
                     p
@@ -109,22 +109,21 @@ body
                         li Industrial Zone Identification and Benchmarking
                         li Site Visit Support
                     a.btn.btn-secondary.CTAscrollTo(href='#CTA_form') Send Enquiry
-                .col-sm-12.col-md-3.col-grid
-                    .card.dark-blue-bg.mb-2.p-arround-2.text-center
+                .col-sm.col-md-3.col-lg-3.col-grid
+                    .card.dark-blue-bg.mb-2.p-arround-4.text-center
                           i
-                            img(alt='', src='http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg', width='200')
-                          h2.pt-2.pr-2.text-white Have a question for our Education team?
+                            img(alt='', src='http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg', width='100%' height='5px')
+                          h3.pt-2.text-white Have a question for our Education team?
+
+                          a.btn.btn-secondary.mt-2.text-white(href='https://www.dezshira.com/personnel')  Online Enquiry
                           br
-                          a.btn.btn-secondary.mt-4.text-white(href='https://www.dezshira.com/personnel')  Online Enquiry
-                          br
-                          br
-                          a.btn.btn-outline-white.mb-2.mt-2.text-white(href='https://www.dezshira.com/personnel') send email 
+                          a.btn.btn-outline-white.mt-2.text-white(href='https://www.dezshira.com/personnel') send email 
     section.grey-bg.pt-7.pb-7.research
         .container
             h2.text-center.text-uppercase.mb-4 Need more time to research?
             .grid
             
-                .col-sm-12.col-md-3.text-center
+                .col-sm.col-md-3.col-lg-3.text-center
                     .blue-hover.pt-4.pb-4
                         .brochure-icon.icon.mb-2
                         a(href='https://www.dezshira.com/brochure')
@@ -133,7 +132,7 @@ body
                                 | Research our firm 
 
                                 |         offline
-                .col-sm-12.col-md-3.text-center
+                .col-sm.col-md-3.col-lg-3.text-center
  
                     .blue-hover.pt-4.pb-4
                         a(href='https://www.dezshira.com/office')
@@ -144,7 +143,7 @@ body
                                 | Contact our local 
                                 |  offices
                                 |  directly
-                .col-sm-12.col-md-3.text-center
+                .col-sm.col-md-3.col-lg-3.text-center
 
                     .blue-hover.pt-4.pb-4
                         a(href='https://www.dezshira.com/library/search?type=publications')
@@ -154,7 +153,7 @@ body
                                 | Download our 
 
                                 | latest magazines
-                .col-sm-12.col-md-3.text-center
+                .col-sm.col-md-3.col-lg-3.text-center
                     .blue-hover.pt-4.pb-4
                         a(href='https://www.dezshira.com/library')
                             .asiapedia-icon.icon.mb-2                      
@@ -165,28 +164,28 @@ body
     section.light-blue-bg.pt-7.pb-7
         .container
             .grid
-                .col-sm-12.col-md-10.col-grid.offset-md-1.offset-lg-1
+                .col-sm.col-md-10.col-lg-10.col-grid.offset-md-1.offset-lg-1
                     h2 CONTACT US
                     h3.mb-4 Ask a question
 
                     form(action='https://www.dezshira.com/events/search', method='GET')
                         .grid
-                            .col-md-4
+                            .col-md-4.col-lg-4
                                 label(for='fname')
                                 span.required-field *
                                 |  First Name
                                 input#fname.required(type='text', name='fname', value='')
-                            .col-md-4
+                            .col-md-4.col-lg-4
                                 label(for='lname')
                                 span.required-field *
                                 |  Last Name
                                 input#lname.required(type='text', name='lname', value='')
-                            .col-md-4
+                            .col-md-4.col-lg-4
                                 label(for='email_address')
                                 span.required-field *
                                 |  Email Address
                                 input#email_address.required.email(type='text', name='email_address', value='')
-                            .col-md-4
+                            .col-md-4.col-lg-4
                                 label(for='country')
                                 span.required-field *
                                 |  Country
@@ -442,31 +441,31 @@ body
                                     option(value='Yugoslavia (former)') Yugoslavia (former)
                                     option(value='Zambia') Zambia
                                     option(value='Zimbabwe') Zimbabwe
-                            .col-md-4
+                            .col-md-4.col-lg-4
                                 label(for='organization')
                                 span.required-field *
                                 |  Company
                                 input#organization(type='text', name='organization', required='', aria-required='true')
-                            .col-md-4
+                            .col-md-4.col-lg-4
                                 label(for='telephone')
                                 span.required-field *
                                 |  Telephone
                                 input#telephone.required(type='text', name='telephone', value='')
-                            .col-md-12
+                            .col-md-12.col-lg-12
                                     label(for='comments') Message
                                     textarea#comments.form-control.radius-none(name='comments', rows='15', spellcheck='false')
-                            .col-md-6
+                            .col-md-6.col-lg-6
                                     strong Security Check
                                     br
                                     br
                                     img#siimage(src='https://www.dezshira.com/includes/modules/securimage/securimage_show.php', alt='captcha image')
                                     a#reload_captcha.btn(title='Reload Code')  
-                            .col-md-6
+                            .col-md-6.col-lg-6
                                     br
                                     br
                                     input.form-control.required(type='text', name='captcha_code', value='', placeholder='Security Code')
                                     br
                                     small The code is case-sensitive
-                            .col-md-12
+                            .col-md-12.col-lg-12
                                     button.btn.btn-primary.float-right(type='Send') Send
     include components/_footer

@@ -251,6 +251,10 @@
   color: $bright-gray;
   font-weight: 400;
 }
+.page-title{
+  border-top: 3px solid $deep-blue;
+  padding-top: 10px;
+}
 .text-white {
   color: $white !important;
   a {
@@ -354,4 +358,7 @@
 
 .clearfix {
   @extend %clearfix;
+}
+.text-muted {
+  color:$gray-700;
 }
