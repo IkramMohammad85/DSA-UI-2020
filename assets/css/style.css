@@ -1829,6 +1829,31 @@ $border-default: 1px solid #ccc;
       font-size: 28px;
       font-size: 1.75rem; } }
 
+.pagination {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .pagination a {
+    color: #316aa3;
+    float: left;
+    padding: 4px 12px;
+    text-decoration: none;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    border: 1px solid #316aa3;
+    margin: 0 3px;
+    font-weight: 700;
+    font-size: 12px;
+    font-size: 0.75rem; }
+    .pagination a:hover:not(.active) {
+      background-color: #316aa3;
+      color: #fff; }
+  .pagination a.active {
+    background-color: #316aa3;
+    color: #fff;
+    border: 1px solid #316aa3; }
+
 @font-face {
   font-family: 'NimbusSanL';
   src: url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Reg.otf") format("opentype"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype"), url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");

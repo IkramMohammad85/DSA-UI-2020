@@ -1,0 +1,28 @@
+.pagination {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a {
+    color: $light-blue;
+    float: left;
+    padding: 4px 12px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid $light-blue;
+    margin: 0 3px;
+    font-weight: $font-weight-bold;
+    @include font-size(12px);
+    &:hover {
+      &:not(.active) {
+        background-color:$light-blue;
+        color: $white;
+      }
+    }
+  }
+  a.active {
+    background-color: $light-blue;
+    color: $white;
+    border: 1px solid $light-blue;
+  }
+}
