@@ -1514,7 +1514,7 @@ $border-default: 1px solid #ccc;
     .card.events .card-header-img .card-text-overlap {
       top: 35%; }
   .card.contact-us {
-    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/RightContact-us_Background.jpg) no-repeat top left;
+    background: url(../img/DSA-advertisement.jpg) no-repeat top left;
     width: auto;
     height: 420px;
     background-size: cover; }
@@ -1644,21 +1644,27 @@ $border-default: 1px solid #ccc;
   .list.lists-events .dec-block .date-time {
     color: #676767; }
 
-.list.lists-with-logo li {
+.list.lists-img-thumbnail li {
   padding-top: 20px;
   padding-bottom: 20px;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: start;
   align-items: flex-start; }
-  .list.lists-with-logo li:last-child {
+  .list.lists-img-thumbnail li:last-child {
     border: none; }
-  .list.lists-with-logo li .list-logo {
+  .list.lists-img-thumbnail li .list-thumbnail {
     margin-right: 1em;
     -webkit-box-ordinal-group: 2;
     order: 1;
     width: auto; }
-  .list.lists-with-logo li .list-content {
+    .list.lists-img-thumbnail li .list-thumbnail.thumbnail-60 {
+      width: 60px; }
+    .list.lists-img-thumbnail li .list-thumbnail.thumbnail-120 {
+      width: 120px; }
+    .list.lists-img-thumbnail li .list-thumbnail.thumbnail-240 {
+      width: 240px; }
+  .list.lists-img-thumbnail li .list-content {
     -webkit-box-flex: 1;
     flex: 1; }
 
@@ -1684,15 +1690,7 @@ $border-default: 1px solid #ccc;
     content: "\2022";
     margin: 0 5px; }
 
-@media (min-width: 1200px) {
-  .list.lists-with-logo li .list-logo {
-    width: 150px; } }
-
 @media (max-width: 992px) {
-  .list.lists-with-logo li {
-    display: block; }
-    .list.lists-with-logo li .list-logo {
-      width: 50%; }
   .list.lists-events .date-block {
     float: inherit;
     border-bottom: solid 1px #dadada; }
@@ -2537,6 +2535,8 @@ ol, ul {
 @media (max-width: 768px) {
   .text-align-center-sm {
     text-align: center !important; }
+  .text-align-left-sm {
+    text-align: left !important; }
   .content-center-sm {
     display: table;
     margin: 0 auto; } }
@@ -2544,6 +2544,8 @@ ol, ul {
 @media (max-width: 576px) {
   .text-align-center-xs {
     text-align: center !important; }
+  .text-align-left-xs {
+    text-align: left !important; }
   .content-center-xs {
     display: table;
     margin: 0 auto; } }

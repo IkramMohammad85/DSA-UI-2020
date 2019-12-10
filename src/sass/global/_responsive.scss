@@ -3,6 +3,9 @@
   .text-align-center-sm {
     text-align: center !important;
   }
+  .text-align-left-sm {
+    text-align: left !important;
+  }
 //content center on mbile like button and image
   .content-center-sm {
     display: table;
@@ -13,6 +16,9 @@
 @media (max-width: $reflex-xs) {
   .text-align-center-xs {
     text-align: center !important;
+  }
+  .text-align-left-xs {
+    text-align: left !important;
   }
 //content center on mbile like button and image
   .content-center-xs {
