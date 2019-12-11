@@ -1537,7 +1537,8 @@ $border-default: 1px solid #ccc;
   .card.office {
     border-top: solid 4px #0D2338; }
     .card.office .card-body {
-      padding: 20px; }
+      padding: 20px;
+      min-height: 150px; }
       .card.office .card-body .list-logo {
         width: 100px; }
     .card.office .card-footer {
@@ -1575,7 +1576,10 @@ $border-default: 1px solid #ccc;
   .card.news-right {
     height: auto; }
     .card.news-right .card-header-img {
-      height: auto; } }
+      height: auto; }
+  .card.office .card-body {
+    min-height: auto;
+    overflow: hidden; } }
 
 @media (max-width: 992px) {
   .card .card-header-img {
@@ -1589,7 +1593,10 @@ $border-default: 1px solid #ccc;
     .card.services .card-body {
       min-height: 180px; }
   .card.featured-resources .card-body {
-    min-height: auto; } }
+    min-height: auto; }
+  .card.office .card-body {
+    min-height: auto;
+    overflow: hidden; } }
 
 .list {
   padding: 0;
@@ -1668,8 +1675,8 @@ $border-default: 1px solid #ccc;
     -webkit-box-ordinal-group: 2;
     order: 1;
     width: auto; }
-    .list.lists-img-thumbnail li .list-thumbnail.thumbnail-60 {
-      width: 60px; }
+    .list.lists-img-thumbnail li .list-thumbnail.thumbnail-80 {
+      width: 80px; }
     .list.lists-img-thumbnail li .list-thumbnail.thumbnail-120 {
       width: 120px; }
     .list.lists-img-thumbnail li .list-thumbnail.thumbnail-240 {
@@ -1946,6 +1953,7 @@ ol, ul {
   font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   font-size: 14px;
+  font-size: 0.875rem;
   border: 1px solid transparent;
   padding: 7px 20px;
   line-height: 1.5333333333;
@@ -1961,7 +1969,10 @@ ol, ul {
   vertical-align: middle;
   text-align: center;
   white-space: nowrap;
-  display: inline-block; }
+  display: inline-block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content; }
 
 .btn-primary {
   color: #fff;

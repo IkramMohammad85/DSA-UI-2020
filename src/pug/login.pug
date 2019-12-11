@@ -12,7 +12,7 @@ body
     section.pt-150.pb-7
         .container
             .grid
-                .col-sm-12.col-md-8.col-grid.offset-md-2.offset-lg-2
+                .col-sm.col-md-8.col-grid.offset-md-2.offset-lg-2
                     .grid.shadow
                         .col-md.text-center
                             a(href='https://www.dezshira.com/library')
@@ -24,10 +24,14 @@ body
                                 h3.text-capitalize Log In
                                 input(type='text', placeholder='Enter email', name='email', required='')
                                 input(type='password', placeholder='Enter password', name='psw', required='')
-                                small.text-right.text-capitalize.d-block.mt-2
+                                small.text-right.text-capitalize.d-block.mt-1.mb-2
                                     a(href='https://www.asiabriefing.com/customer/forgot-password')
                                     | Forgot Password?
-                                button.btn.btn-secondary.text-white(type='submit') Login
+                                button.btn.btn-secondary.text-white.float-right(type='submit') Login
+                                small.float-left.mt-1
+                                    | No Subscription? 
+                                    a(href='https://www.dezshira.com/register.html', target='_blank') Click Here
+
                                 
                         .col-md-6.col-sm-6.col-grid
                             h5.text-capitalize Why subscribe to Asiapedia?

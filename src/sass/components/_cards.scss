@@ -129,6 +129,7 @@
     border-top: solid 4px $bluedark;
     .card-body {
       padding: 20px;
+      min-height: 150px;
       .list-logo {
         width: 100px;
       }
@@ -195,6 +196,12 @@
         height: auto;
       }
     }
+    &.office {
+      .card-body {
+        min-height: auto;
+        overflow: hidden;
+      }
+    }
   }
 }
 
@@ -222,6 +229,12 @@
     &.featured-resources {
       .card-body {
         min-height: auto;
+      }
+    }
+    &.office {
+      .card-body {
+        min-height: auto;
+        overflow: hidden;
       }
     }
   }

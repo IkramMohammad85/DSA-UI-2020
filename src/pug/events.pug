@@ -13,17 +13,17 @@ body
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/das-events-banner.jpg')    
         .container
             .grid.align-end
-                .col-sm-6.col-md-6.col-grid
+                .col-sm.col-md-6.col-lg-6.col-grid
                     h1 Events       
     section.pt-150.pb-7
         .container
             .grid
-                .col-sm-8.col-md-8.col-grid
-                    h4.section-title Events Filter
+                .col-sm.col-md-8.col-lg-8.col-grid
+                    h4.section-title.mb-3 Events Filter
                     form(action='https://www.dezshira.com/events/search', method='GET')
-                    .p-arround-3.border.mb-4
-                        .row
-                            .col-sm-4
+                    .p-arround-2.border.mb-4
+                        .grid
+                            .col-sm.col-md-4.col-lg-4
                                 label Location
                                 select.form-control.radius-none(id='', name='location')
                                     option(value='', selected='selected') Location
@@ -39,7 +39,7 @@ body
                                     option(value='oceania') Oceania
                                     option(value='middle-east') Middle East
                                     option(value='africa') Africa
-                            .col-sm-3
+                            .col-sm.col-md-3.col-lg-3
                                 label Language
                                 select(id='', name='language')
                                     option(value='', selected='selected') Language
@@ -49,19 +49,18 @@ body
                                     option(value='spanish') Spanish
                                     option(value='french') French
                                     option(value='chinese') chinese
-                            .col-sm-3
-
+                            .col-sm.col-md-3.col-lg-3
                                 label Status
                                 select(id='', name='status')
                                     option(value='all') All
                                     option(value='upcoming') Upcoming
                                     option(value='past') Past
-                            .col-sm-2
+                            .col-sm.col-md-2.col-lg-2
                                 button.btn.btn-primary.mt-3(type='submit')
                                     | Search
                     ul.list.lists-events
                         li
-                            .date-block
+                            .date-block.hidden-sm.hidden-xs.hidden-xxs
                                 | Nov
                                 span Oct, 2019
                             .dec-block
@@ -71,9 +70,8 @@ body
                                 .date-time
                                     small
                                         | Webinar | 27 November 2019 | 3PM-4PM China Time
-                            
                         li
-                            .date-block.dark-blue-bg
+                            .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
                                 | Nov
                                 span Oct, 2019
                             .dec-block
@@ -83,9 +81,8 @@ body
                                 .date-time
                                     small
                                         | Webinar | 27 November 2019 | 3PM-4PM China Time
-                            
                         li
-                            .date-block
+                            .date-block.hidden-sm.hidden-xs.hidden-xxs
                                 | Nov
                                 span Oct, 2019
                             .dec-block
@@ -94,10 +91,9 @@ body
                                         | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
                                 .date-time
                                     small
-                                        | Webinar | 27 November 2019 | 3PM-4PM China Time
-                            
+                                        | Webinar | 27 November 2019 | 3PM-4PM China Time                           
                         li
-                            .date-block
+                            .date-block.hidden-sm.hidden-xs.hidden-xxs
                                 | Nov
                                 span Oct, 2019
                             .dec-block
@@ -106,37 +102,26 @@ body
                                         | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
                                 .date-time
                                     small
-                                        | Webinar | 27 November 2019 | 3PM-4PM China Time
-
-                                
-                            
-
-                .col-sm-4.col-md-4.col-grid
+                                        | Webinar | 27 November 2019 | 3PM-4PM China Time   
+                .col-sm.col-md-4.col-lg-4.col-grid
                         .card.contact-us.p-arround-3.mb-2
- 
+                                img(alt='', src='http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg', width='100%' height='5')
                                 h3.pt-3.pr-2.text-white To learn more about how we can support you, contact one of our local experts.
                                 p.text-white
                                     | We provide professional services tailored to Asia´s business environment across the full business cycle.
                                 a.btn.btn-outline-white.mb-2.mt-2(href='https://www.dezshira.com/personnel') Talk to experts 
-                                  
-                        
-                        // /flyersBrochures
-
                         h4.section-title JOIN OUR COMMUNITY
                         a.twitter-timeline(data-height='600', href='https://twitter.com/DezanShira?ref_src=twsrc%5Etfw') Tweets by DezanShira
                         script(async='', src='https://platform.twitter.com/widgets.js', charset='utf-8')
-            // /col
-            // /row
     section.light-blue-bg.pt-3.pb-3
         .container
             .grid
-                .col-sm-2.col-md-2.col-grid.offset-md-1.offset-sm-1.offset-lg-1
+                .col-sm.col-md-2.col-grid.offset-md-1.offset-lg-1.offset-xlg-1.text-right.text-align-left-xs.text-align-left-sm
                     a(href='https://www.dezshira.com/register.html')
-                        img.flex-img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Subscribe@2x.png')
-                .col-sm-8.col-md-8.col-grid
+                        img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Subscribe@2x.png' width='85')
+                .col-sm.col-md-8.col-lg-8.col-xlg-8.col-grid
                     h4.pt-2 NEVER MISS A CHANCE TO CONNECT
                     h1
                         a(href='https://www.dezshira.com/register.html')
                         | Exchange ideas, build networks, make the right connections, with regular event updates specific to your region
-
     include components/_footer

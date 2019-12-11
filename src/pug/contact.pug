@@ -13,47 +13,47 @@ body
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/contactUSBanner.jpg')    
         .container
             .grid.align-end
-                .col-sm-6.col-md-6.col-grid
+                .col-sm.col-md-6.col-lg-6.col-grid
                     h1 Contact Us  
                     h4 We want to help you and your team succeed in our neighborhood – Asia. Please introduce yourself so that our team can connect with you.    
     section.pt-150.pb-7
         .container
             .grid
-                .col-sm-9.col-md-9.col-grid
+                .col-sm.col-md-9.col-lg-9.col-grid
                     h4.section-title Contact - Dezan Shira & Associates 
                     form(action='https://www.dezshira.com/events/search', method='GET')
                     .grid
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='fname')
                             span.required-field *
                             |  First Name
                             input#fname.required(type='text', name='fname', value='')
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='lname')
                             span.required-field *
                             |  Last Name
                             input#lname.required(type='text', name='lname', value='')
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='email_address')
                             span.required-field *
                             |  Email Address
                             input#email_address.required.email(type='text', name='email_address', value='')
-                        .col-md-12
+                        .col-md-12.col-md-lg
                             label(for='organization')
                             span.required-field *
                             |  Organisation / Company
                             input#organization.required(type='text', name='organization', value='')
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='telephone')
                             span.required-field *
                             |  Telephone
                             input#telephone.required(type='text', name='telephone', value='')
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='company_website')
                             span.required-field *
                             |  Company Website
                             input#company_website.required(type='text', name='company_website', value='')
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='country') Country/Territory
                             select#country.form-control.radius-none(name='country')
                                 option(value='', selected='selected') --Please Select an Option--
@@ -307,7 +307,7 @@ body
                                 option(value='Yugoslavia (former)') Yugoslavia (former)
                                 option(value='Zambia') Zambia
                                 option(value='Zimbabwe') Zimbabwe
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 label(for='investment_destination')
                                 span.required-field *
                                 |  Investment Destination Of Interest
@@ -324,10 +324,10 @@ body
                                     option(value='Singapore') Singapore
                                     option(value='Thailand') Thailand
                                     option(value='Vietnam') Vietnam
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 label(for='other_investment_destination') Specify Other Investment Destination Of Interest 
                                 input#other_investment_destination.radius-none(type='text', name='other_investment_destination', value='')
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 label(for='type_service_required')
                                 span.required-field *
                                 |  Type of Service Required
@@ -350,10 +350,10 @@ body
                                     option(value='Tax Advisory & Planning') Tax Advisory &amp; Planning
                                     option(value='Technology, IT and ERP Services') Technology, IT and ERP Services
                                     option(value='Other') Other
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 label(for='other_type_service_required') Specify Other Type of Service Required 
                                 input#other_type_service_required.form-control(type='text', name='other_type_service_required', value='')
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 label(for='reference')
                                 span.required-field *
                                 |  How did you hear about us?
@@ -375,28 +375,28 @@ body
                                     option(value='Referral - Informal') Referral - Informal
                                     option(value='YPO') YPO
                                     option(value='Alliance - Integra') Alliance - Integra
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 label(for='other_reference') Specify Other Source Where You Found Us 
                                 input#other_reference(type='text', name='other_reference', value='')
-                        .col-md-12
+                        .col-md-12.col-lg-12
                                 label(for='comments') Message
                                 textarea#comments.form-control.radius-none(name='comments', rows='15', spellcheck='false')
 
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 strong Security Check
                                 br
                                 br
                                 img#siimage(src='https://www.dezshira.com/includes/modules/securimage/securimage_show.php', alt='captcha image')
                                 a#reload_captcha.btn(title='Reload Code')  
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 br
                                 br
                                 input.form-control.required(type='text', name='captcha_code', value='', placeholder='Security Code')
                                 br
                                 small The code is case-sensitive
-                        .col-md-12
+                        .col-md-12.col-lg-12
                                 button.btn.btn-primary.float-right(type='submit') submit
-                .col-sm-3.col-md-3.col-grid
+                .col-sm.col-md-3.col-lg-3.col-grid
                     h4.section-title SEND US AN EMAIL
                     ul.list
                         li
@@ -437,8 +437,4 @@ body
                             a(href='mailto:china@dezshira.com') vietnam@dezshira.com
                         li
                             a.btn-link(href='https://www.dezshira.com/office') Show me all &gt;
-
-            // /col
-            // /row
-
     include components/_footer
