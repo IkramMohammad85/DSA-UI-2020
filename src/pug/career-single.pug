@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -70,37 +71,40 @@ body
                         hr
                         ul.list-inline.mt-3
                             li
-                                a.btn.btn.btn-outline-dark(href='https://www.dezshira.com/login?redirect=https:~~www.dezshira.com~career~details~china~marketing-assistant-spanish-desk-184.html') LOGIN TO APPLY
+                                a.btn.btn.btn-outline-dark(href='login.html') LOGIN TO APPLY
                             li
-                                a.btn.btn-secondary(href='http://www.dezshira.com/register.html', target='_blank') CREATE AN ACCOUNT
+                                a.btn.btn-secondary(href='register.html', target='_blank') CREATE AN ACCOUNT
                         .clearfix                     
                 .col-sm-12.col-md-3.col-grid
                     h4.section-title Other openings in China 
                     ul.list
                         li
                             h4 
-                                a(href='https://www.dezshira.com/career/details/china/international-business-advisory-assistant-spanish-desk-183.html') International Business Advisory Assistant, Spanish Desk
+                                a(href='career-single.html') International Business Advisory Assistant, Spanish Desk
                             h5 Assistant (Intern) | International Business Advisory
                             h6.text-muted Shanghai
                         li
                             h4 
-                                a(href='https://www.dezshira.com/career/details/china/marketing-operation-assistant-china-171.html') Marketing Assistant
+                                a(href='career-single.html') Marketing Assistant
                             h5 Assistant (Intern) | Marketing
                             h6.text-muted Shanghai  
                         li
                             h4 
-                                a(href='https://www.dezshira.com/career/details/china/business-development-intern-17.html') Global Business Development Assistant role (Shanghai)
+                                a(href='career-single.html') Global Business Development Assistant role (Shanghai)
                             h5 Assistant (Intern) | International Business Advisory
                             h6.text-muted Shanghai
                         li
                             h4 
-                                a(href='https://www.dezshira.com/career/details/china/immediate-opening-of-global-business-development-assistant-shanghai-russian-speaking-129.html') Global Business Development Assistant role (Shanghai), Russian speaking
+                                a(href='career-single.html') Global Business Development Assistant role (Shanghai), Russian speaking
                             h5 Assistant (Intern) 
                             h6.text-muted Shanghai 
                         li
                             h4 
-                                a(href='https://www.dezshira.com/career/details/china/marketing-operation-assistant-133.html') Marketing & Operation Assistant (China)
+                                a(href='career-single.html') Marketing & Operation Assistant (China)
                             h5 Assistant (Intern) | Marketing
                             h6.text-muted Beijing, Shanghai, Shenzhen, Guangzhou                                                                                                                                                                           
-
     include components/_footer
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js") 

@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -13,7 +14,7 @@ body
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/DSA-Partners-banner.jpg')    
         .container
             .grid.align-end
-                .col-sm-6.col-md-6.col-grid
+                .col-sm.col-md-6.col-lg-6.col-grid
                     h1 Our Global Partners
                     h4 
                         | We partner with organisations across the world to give us a truly global presence. Discover each of our regions’ key partners below.       
@@ -44,12 +45,7 @@ body
                         li
                             a(href='https://www.dezshira.com/partnerships/UK and Ireland') UK &amp; Ireland
                         li
-                            a(href='https://www.dezshira.com/partnerships/russia') Russia
-                            
-                      
-                  
-                            
-
+                            a(href='https://www.dezshira.com/partnerships/russia') Russia 
                 .col-sm.col-md-9.col-lg-9.col-grid
                     h4.section-title.mb-4 Our Global Partners
                     ul.list.lists-img-thumbnail
@@ -139,7 +135,9 @@ body
                         li
                             a(href='https://www.dezshira.com/library/search?location=32&page=7') 7
                         li
-                            a(href='https://www.dezshira.com/library/search?location=32&page=151') Last
-                                                                                                                                                                                                                                                                                        
-
+                            a(href='https://www.dezshira.com/library/search?location=32&page=151') Last                                                                                                                                                                                                                                                                                       
     include components/_footer
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

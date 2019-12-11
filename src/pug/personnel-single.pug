@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -87,7 +88,7 @@ body
                         h4.section-title.mb-2.mt-4 Events
                         ul.list.lists-events
                             li
-                                .date-block
+                                .date-block.hidden-sm.hidden-xs.hidden-xxs
                                     | Nov
                                     span Oct, 2019
                                 .dec-block
@@ -99,7 +100,7 @@ body
                                             | Webinar | 27 November 2019 | 3PM-4PM China Time
                                 
                             li
-                                .date-block.dark-blue-bg
+                                .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
                                     | Nov
                                     span Oct, 2019
                                 .dec-block
@@ -111,7 +112,7 @@ body
                                             | Webinar | 27 November 2019 | 3PM-4PM China Time
                                 
                             li
-                                .date-block
+                                .date-block.hidden-sm.hidden-xs.hidden-xxs
                                     | Nov
                                     span Oct, 2019
                                 .dec-block
@@ -123,7 +124,7 @@ body
                                             | Webinar | 27 November 2019 | 3PM-4PM China Time
                                 
                             li
-                                .date-block
+                                .date-block.hidden-sm.hidden-xs.hidden-xxs
                                     | Nov
                                     span Oct, 2019
                                 .dec-block
@@ -151,5 +152,8 @@ body
                         li
                             h4 Languages
                             h6.text-muted Chinese, Mandarin, English, Japanese                                                                                       
-
     include components/_footer
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")    

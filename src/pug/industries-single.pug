@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -23,25 +24,25 @@ body
                     h4.section-title industries
                     ul.list-unstyled.sidebar-nav
                         li
-                            a(href='https://www.dezshira.com/industries/education')  Education
+                            a(href='industries-single.html')  Education
                         li
-                            a(href='https://www.dezshira.com/industries/entertainment-sports')  Entertainment and Sports
+                            a(href='industries-single.html')  Entertainment and Sports
                         li
-                            a(href='https://www.dezshira.com/industries/environment-cleantech')  Environment and Cleantech
+                            a(href='industries-single.html')  Environment and Cleantech
                         li
-                            a(href='https://www.dezshira.com/industries/food-beverage')  Food and Beverage
+                            a(href='industries-single.html')  Food and Beverage
                         li
-                            a(href='https://www.dezshira.com/industries/healthcare')  Healthcare
+                            a(href='industries-single.html')  Healthcare
                         li
-                            a(href='https://www.dezshira.com/industries/information-technology')  Information Technology
+                            a(href='industries-single.html')  Information Technology
                         li
-                            a(href='https://www.dezshira.com/industries/manufacturing') Manufacturing
+                            a(href='industries-single.html') Manufacturing
                         li
-                            a(href='https://www.dezshira.com/industries/non-governmental-organizations') Non-Governmental Organizations
+                            a(href='industries-single.html') Non-Governmental Organizations
                         li
-                            a(href='https://www.dezshira.com/industries/professional-services') Professional services
+                            a(href='industries-single.html') Professional services
                         li
-                            a(href='https://www.dezshira.com/industries/trade-and-e-commerce') Trade and E-commerce
+                            a(href='industries-single.html') Trade and E-commerce
 
                 .col-sm.col-md-6.col-lg-6.col-grid
                     h4.section-title.mb-4 Our Global Partners
@@ -410,3 +411,7 @@ body
                             .col-md-12.col-lg-12
                                     button.btn.btn-primary.float-right(type='Send') Send
     include components/_footer
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

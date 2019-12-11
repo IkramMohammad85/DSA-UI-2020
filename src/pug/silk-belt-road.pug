@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -13,14 +14,14 @@ body
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/LocationsBanner.jpg')    
         .container
             .grid.align-end
-                .col-sm-7.col-md-7.col-grid
+                .col-sm.col-md-7.col-lg-7.col-grid
                     h1 New Silk Belt & Road                   
     section.pt-150.pb-7
         .container
             .grid
-                .col-sm-12.col-md-4.col-grid
+                .col-sm.col-md-4.col-lg-4.col-grid
                     img.flex-img(src='https://www.dezshira.com/themes/dsa/images/offices/detail/New Silk Belt & Road.jpg', alt='')
-                .col-sm-12.col-md-8.col-grid
+                .col-sm.col-md-8.col-lg-8.col-grid
                     p
                         | China&apos;s Belt &amp; Road Initiative encompasses over 60 countries. However due to the desire for corporate intelligence concerning the BRI, we have put together a bespoke team drawn from our offices in China, Russia, South-East Asia and Europe, and via our membership of the Leading Edge Alliance global network, are able to provide market intelligence, risk assessment, business advisory and legal and tax advise to government institutions and businesses interested in business opportunities or intelligence studies in all countries along China&apos;s Belt &amp; Road Initiative.&nbsp;Learning how to position, develop a strategy and profit from China&apos;s involvement in Eurasian infrastructure build is a huge question for todays MNC&apos;s.
                     p
@@ -50,3 +51,7 @@ body
                         br
                         a(href='https://www.silkroadbriefing.com/', target='_blank') www.silkroadbriefing.com                  
     include components/_footer
+    
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

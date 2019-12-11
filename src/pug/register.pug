@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -13,13 +14,13 @@ body
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/banner-asiapedia.jpg')    
         .container
             .grid.align-end.text-center
-                .col-sm-12.col-md-12.col-grid
+                .col-sm.col-md.col-lg.col-grid
                     h1 Create your account  
                     h4 Get the most from your membership by telling us a little bit about yourself...    
     section.pt-150.pb-7.grey-bg
         .container
             .grid
-                .col-sm-12.col-md-8.col-grid.offset-md-2.offset-lg-2 
+                .col-sm.col-md-8.col-lg-8.col-grid.offset-md-2.offset-lg-2 
                     form(action='https://www.dezshira.com/events/search', method='GET')
                     .grid
                         .col-md-6.col-lg-6
@@ -42,7 +43,7 @@ body
                             span.required-field *
                             |  Passowrd
                             input#email_address.required.email(type='password', name='passowrd', value='')
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='lead_companycountry')
                             span.required-field *
                             |  Country
@@ -298,13 +299,13 @@ body
                                 option(value='Yugoslavia (former)') Yugoslavia (former)
                                 option(value='Zambia') Zambia
                                 option(value='Zimbabwe') Zimbabwe
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='Lead_CompanyCity')
                             span.required-field *
                             |  City
                             select#Lead_CompanyCity.required(name='Lead_CompanyCity')
                                 option(value='') City 
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='lead_personlanguage')
                             span.required-field *
                             |  Language
@@ -318,15 +319,15 @@ body
                                 option(value='Russian') Russian
                                 option(value='Spanish') Spanish
                                 option(value='Other') Other
-                        .col-md-4
+                        .col-md-4.col-lg-4
                             label(for='lead_companyname') Company name
                             input#lead_companyname.required(type='text', value='', name='lead_companyname', placeholder='Company Name')
-                        .col-md-4
+                        .col-md-4.col-lg-4
                                 label(for='lead_companywebsite')
                                 span.required-field *
                                 |  Company Website
                                 input#lead_companywebsite(type='text', value='', name='lead_companywebsite', placeholder='Company Website')
-                        .col-md-4
+                        .col-md-4.col-lg-4
                                 label(for='lead_titlecode') Seniority
                                 select#lead_titlecode.required(name='lead_titlecode')
                                     option(value='', selected='true', disabled='disabled') Seniority 
@@ -343,7 +344,7 @@ body
                                     option(value='Managing Director') Managing Director
                                     option(value='Senior Associate') Senior Associate
                                     option(value='Other') Other
-                        .col-md-12
+                        .col-md-12.col-lg-12
                                 label(for='lead_mainproductinterest')
                                 span.required-field *
                                 |  Topic of Interest
@@ -377,7 +378,7 @@ body
                                     option(value='Tax Compliance') Tax Compliance
                                     option(value='Transfer Pricing') Transfer Pricing
                                     option(value='Visa & Work Permits') Visa &amp; Work Permits
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 label(for='lead_countryofinterest') Country and City of Interest 
                                 <select class="required select-req" id="lead_countryofinterest" name="lead_countryofinterest" onchange="load_interest_city(this.value,'lead_cityofinterest');">
                                     <option value="" selected="true" disabled="disabled">Please select country</option>
@@ -393,16 +394,18 @@ body
                                     <option value="Thailand">Thailand</option>
                                     <option value="Vietnam">Vietnam</option>
                                     </select>
-                        .col-md-6
+                        .col-md-6.col-lg-6
                                 label(for='lead_cityofinterest')
                                 select#lead_cityofinterest.required.mt-3.select-req.fields_plus(name='lead_cityofinterest')
                                     option(value='') Please select city
-                        .col-md-12
+                        .col-md-12.col-lg-12
                             input#lead_optout.margin-left-none(type='checkbox', name='lead_optout', value='Y', checked='checked')
                             label(for='lead_optout') Yes, please send me business news and updates for Asia.
 
-                        .col-md-12.text-center
-                                button.btn.btn-primary(type='submit') Subscribe
-
-
+                        .col-md-12.col-lg-12.text-center
+                                button.btn.btn-secondary(type='submit') Subscribe
     include components/_footer
+    
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

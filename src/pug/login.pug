@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -13,7 +14,7 @@ body
         .container
             .grid
                 .col-sm.col-md-8.col-grid.offset-md-2.offset-lg-2
-                    .grid.shadow
+                    .grid.border
                         .col-md.text-center
                             a(href='https://www.dezshira.com/library')
                             img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
@@ -43,3 +44,7 @@ body
                         .col-md.text-center.p-0
                             a.btn.btn-secondary.text-white.text-capitalize-none.btn-block.p-arround-1(href='https://www.dezshira.com/register') Don&apos;t have an account? Sign Up               
     include components/_footer
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

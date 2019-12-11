@@ -97,6 +97,14 @@
     background-size: cover;
   }
 
+  // Full time jobs
+  &.full-time-jobs {
+    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg) no-repeat
+      top left;
+    width: auto;
+    height: 100%;
+    background-size: cover;
+  }
   // International Desks
   &.international-desks {
     .card-body {
@@ -179,6 +187,24 @@
       padding: 20px;
     }
   }
+   // Featured Offers
+   &.featured-offers {
+     border-top: solid 3px $deep-cyan-blue;
+    .card-body {
+      padding: 20px;
+      min-height: 184px;
+    }
+  } 
+   // Testimonial
+   &.testimonial {
+    .card-body {
+      padding: 20px;
+      min-height: 170px;
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  } 
 }
 
 //Tablets

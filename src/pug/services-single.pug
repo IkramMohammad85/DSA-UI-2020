@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -24,25 +25,25 @@ body
                     h4.section-title industries
                     ul.list-unstyled.sidebar-nav
                         li
-                            a(href='https://www.dezshira.com/services/business-intelligence-solutions')  Business Intelligence
+                            a(href='services-single.html')  Business Intelligence
                         li
-                            a(href='https://www.dezshira.com/services/business-advisory')  Corporate Establishment and Structuring
+                            a(href='services-single.html')  Corporate Establishment and Structuring
                         li
-                            a(href='https://www.dezshira.com/services/legal-financial-due-diligence')  Due Diligence
+                            a(href='services-single.html')  Due Diligence
                         li
-                            a(href='https://www.dezshira.com/services/accounting-reporting')  Accounting
+                            a(href='services-single.html')  Accounting
                         li
-                            a(href='https://www.dezshira.com/services/payroll-human-resource-administration')  HR and Payroll
+                            a(href='services-single.html')  HR and Payroll
                         li
-                            a(href='https://www.dezshira.com/services/tax')  Tax
+                            a(href='services-single.html')  Tax
                         li
-                            a(href='https://www.dezshira.com/services/audit-financial-review') Audit and Risk Advisory
+                            a(href='services-single.html') Audit and Risk Advisory
                         li
-                            a(href='https://www.dezshira.com/services/information-technology-solutions') Technology
+                            a(href='services-single.html') Technology
                         li
-                            a(href='https://www.dezshira.com/industries/professional-services') Professional services
+                            a(href='services-single.html') Professional services
                         li
-                            a(href='https://www.dezshira.com/services/outbound-direct-investment') Outbound Direct Investment
+                            a(href='services-single.html') Outbound Direct Investment
 
                 .col-sm.col-md-6.col-lg-6.col-grid
                     p
@@ -122,7 +123,6 @@ body
         .container
             h2.text-center.text-uppercase.mb-4 Need more time to research?
             .grid
-            
                 .col-sm.col-md-3.col-lg-3.text-center
                     .blue-hover.pt-4.pb-4
                         .brochure-icon.icon.mb-2
@@ -144,7 +144,6 @@ body
                                 |  offices
                                 |  directly
                 .col-sm.col-md-3.col-lg-3.text-center
-
                     .blue-hover.pt-4.pb-4
                         a(href='https://www.dezshira.com/library/search?type=publications')
                             .publications-icon.icon.mb-2              
@@ -469,3 +468,7 @@ body
                             .col-md-12.col-lg-12
                                     button.btn.btn-primary.float-right(type='Send') Send
     include components/_footer
+    
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

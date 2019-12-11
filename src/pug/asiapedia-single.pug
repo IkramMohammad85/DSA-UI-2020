@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -77,8 +78,6 @@ body
                         h4 Para más información sobre el control interno y la prevención del fraude en China
                         a.btn.btn-secondary.mt-1(target='_top', href='https://www.dezshira.com/library') &lt; BACK TO LIBRARY
                     a.btn.btn-outline-dark.mt-3(href='https://www.dezshira.com/library') &lt; BACK TO LIBRARY
-
-
                 .col-sm-12.col-md-4.col-grid                                    
                         h4.section-title RECENT RESOURCES
                         ul.list.lists-img-thumbnail
@@ -122,7 +121,8 @@ body
                                     h4
                                         a(href='https://www.dezshira.com/multimedia/view/introduction-supplier-network-northern-vietnam.html', target='_blank') Introduction to Supplier Networks in Northern Vietnam
                                 .clearfix
-
-            // /col
-            // /row
     include components/_footer
+    
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js") 

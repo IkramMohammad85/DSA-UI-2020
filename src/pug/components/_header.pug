@@ -1,8 +1,8 @@
 header.site-header
     nav#main-nav.fixed-top
       .container
-        img.logo.flex-img(src='assets/img/logo.png' alt='')
-
+        a(href='index.html')
+          img.logo.flex-img(src='assets/img/logo.png', alt='')
         .hamburger-menu.float-right(data-open="header-menu")
             span
             span
@@ -16,19 +16,19 @@ header.site-header
               .dropdown-content.dropdown-content-normal(data-dropdown) 
                 ul.list-unstyled.list
                   li
-                    a.dropdown-item(href='https://www.dezshira.com/international-desk/north-american.html')
+                    a.dropdown-item(href='international-desks-single.html')
                       img.float-left.mr-1(src='assets/img/flag-american.png', alt='North America Desk')
                       span North America Desk
                   li
-                    a.dropdown-item(href='https://www.dezshira.com/international-desk/uk-ireland.html')
+                    a.dropdown-item(href='international-desks-single.html')
                       img.float-left.mr-1(src='assets/img/flag-uk-ireland.png', alt='Ireland Desk')
                       span Ireland Desk
                   li
-                    a.dropdown-item(href='https://www.dezshira.com/international-desk/french.html')
+                    a.dropdown-item(href='international-desks-single.html')
                       img.float-left.mr-1(src='assets/img/flag-french.png', alt='French Desk')
                       span French Desk
                   li
-                    a.dropdown-item(href='https://www.dezshira.com/international-desk/german.html')
+                    a.dropdown-item(href='international-desks-single.html')
                       img.float-left.mr-1(src='assets/img/flag-german.png', alt='German Desk')
                       span German Desk
                   li
@@ -36,11 +36,11 @@ header.site-header
                       img.float-left.mr-1(src='assets/img/flag-italian.png', alt='Italian Desk')
                       span Italian Desk
                   li
-                    a.dropdown-item(href='https://www.dezshira.com/international-desk/russian.html')
+                    a.dropdown-item(href='international-desks-single.html')
                       img.float-left.mr-1(src='assets/img/flag-russian.png', alt='Russian Desk')
                       span Russian Desk
                   li
-                    a.dropdown-item(href='https://www.dezshira.com/international-desk/spanish.html')
+                    a.dropdown-item(href='international-desks-single.html')
                       img.float-left.mr-1(src='assets/img/flag-spanish.png', alt='Spanish Desk')
                       span Spanish Desk
                   li
@@ -48,10 +48,9 @@ header.site-header
                       img.float-left.mr-1(src='assets/img/flag-chinese.png', alt='关于我们')
                       span &#x5173;&#x4E8E;&#x6211;&#x4EEC;
                   li
-                    a.dropdown-item(href='https://www.dezshira.com/international-desk/australian.html')
+                    a.dropdown-item(href='international-desks-single.html')
                       img.float-left.mr-1(src='assets/img/flag-australian.png', alt='Australian Desk')
                       span Australian Desk
-
             li.dropdown
               a(data-trigger)
                 img(src='assets/img/icon-user.png' alt='' width='20px')
@@ -60,7 +59,7 @@ header.site-header
                 .btn-close.hidden-lg.hidden-xlg(data-closeBtn)
                 .grid
                   .col-md.text-center
-                    a(href='https://www.dezshira.com/library')
+                    a(href='asiapedia.html')
                       img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
                     h6.text-capitalize-none
                       | A place to share knowledge and better understand Asia
@@ -73,7 +72,6 @@ header.site-header
                       small.text-center.text-capitalize.d-block.mt-2
                         a(href='https://www.asiabriefing.com/customer/forgot-password')
                           | Forgot Password?
-                        
                   .col-md-6.col-sm-6.col-grid
                       h5.text-capitalize.text-left Why subscribe to Asiapedia?
                       ul.list-unstyled.bullet-list.text-left
@@ -82,9 +80,7 @@ header.site-header
                         li Access presentations, webinars, podcasts, reports, Q&amp;As and more
                         li Track paid orders and connect with our support team 
                   .col-md.text-center.p-0
-                      a.btn.btn-secondary.text-white.text-capitalize-none.btn-block.p-arround-1(href='https://www.dezshira.com/register') Don&apos;t have an account? Sign Up
-                
-  
+                      a.btn.btn-secondary.text-white.text-capitalize-none.btn-block.p-arround-1(href='register.html') Don&apos;t have an account? Sign Up    
             li
               img(src='assets/img/icon_download.png' alt='' width='20px')
           ul.navbar
@@ -100,33 +96,31 @@ header.site-header
                       h2.text-capitalize.text-left.text-align-center-xs About us
                       p.text-left.text-align-center-xs
                         | Dezan Shira & Associates is a pan-Asia, multi-disciplinary professional services firm, providing legal, tax and operational advisory to international corporate investors.
-                      a.btn.btn-secondary.text-white.content-center-xs Read more 
+                      a.btn.btn-secondary.text-white.content-center-xs(href='our-firm.html') Read more 
                     .col-xs-12.col-sm-3.col-md-3.col-lg-2.col-grid.text-center          
-                            a(href='https://www.dezshira.com/personnel')
+                            a(href='news.html')
                               img(src='assets/img/news-100.png' width='50px')
                             h4.text-center.text-capitalize 
-                              a(href='https://www.dezshira.com/personnel') Company News
-                            a.btn.btn-link.mb-2(href='https://www.dezshira.com/personnel') Read more &gt;                       
+                              a(href='news.html') Company News
+                            a.btn.btn-link.mb-2.center-block(href='news.html') Read more &gt;                       
                     .col-xs-12.col-sm-3.col-md-3.col-lg-2.col-grid.text-center          
-                            a(href='https://www.dezshira.com/personnel')
+                            a(href='personnel.html')
                               img(src='assets/img/people-64.png' width='50px')
                             h4.text-center.text-capitalize 
-                              a(href='https://www.dezshira.com/personnel') Personnel
-                            a.btn.btn-link.mb-2(href='https://www.dezshira.com/personnel') Read more &gt;
-
-                                        
+                              a(href='personnel.html') Personnel
+                            a.btn.btn-link.mb-2.center-block(href='personnel.html') Read more &gt;                   
                     .col-xs-12.col-sm-3.col-md-3.col-lg-2.col-grid.text-center          
-                            a(href='https://www.dezshira.com/personnel')
+                            a(href='partnerships.html')
                               img(src='assets/img/handshake-64.png' width='50px')
                             h4.text-center.text-capitalize 
-                              a(href='https://www.dezshira.com/personnel') Partnerships
-                            a.btn.btn-link.mb-2(href='https://www.dezshira.com/personnel') Read more &gt;
+                              a(href='partnerships.html') Partnerships
+                            a.btn.btn-link.mb-2.center-block(href='partnerships.html') Read more &gt;
                     .col-xs-12.col-sm-3.col-md-3.col-lg-2.col-grid.text-center          
-                            a(href='https://www.dezshira.com/international-desk')
+                            a(href='international-desks.html')
                               img(src='assets/img/icons-globe-100.png' width='50px')
                             h4.text-center.text-capitalize 
-                              a(href='https://www.dezshira.com/international-desk') International Desk
-                            a.btn.btn-link.mb-2(href='https://www.dezshira.com/international-desk') Read more &gt;
+                              a(href='international-desks.html') International Desk
+                            a.btn.btn-link.mb-2.center-block(href='international-desks.html') Read more &gt;
                             
             li.dropdown
               a(href='#' data-trigger data-turn-header-white)
@@ -140,51 +134,53 @@ header.site-header
                       h2.text-capitalize.text-left Services
                       p.text-left
                         | The services provided by Dezan Shira &amp; Associates incorporate more than two decades of on-the-ground experience in Asia&rsquo;s dynamic business environment. The firm&rsquo;s services help decision makers manage the legal, tax, and operational challenges facing multinational businesses in China, ASEAN, and India.
-                      a.btn.btn-secondary.text-white Contact Us 
+                      a.btn.btn-secondary.text-white(href='services.html') Contact Us 
                     .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
-                      h3.text-left Services we offer
+                      h3.text-left 
+                        a(href='services.html') Services we offer
                       ul.list-unstyled.bullet-list.text-left
                         li
-                          a(href='#') BI
+                          a(href='services-single.html') BI
                         li
-                          a(href='#') Corp Est & Structuring
+                          a(href='services-single.html') Corp Est & Structuring
                         li
-                          a(href='#')  Due Dilligence
+                          a(href='services-single.html')  Due Dilligence
                         li
-                          a(href='#') Accounting
+                          a(href='services-single.html') Accounting
                         li
-                          a(href='#') HR Payroll
+                          a(href='services-single.html') HR Payroll
                         li
-                          a(href='#') Tax
+                          a(href='services-single.html') Tax
                         li
-                          a(href='#') Audit & Risk
+                          a(href='services-single.html') Audit & Risk
                         li
-                          a(href='#') Tech       
+                          a(href='services-single.html') Tech       
                         li
-                          a(href='#') ODI                                               
+                          a(href='services-single.html') ODI                                               
                     .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
-                      h3.text-left  Industries
+                      h3.text-left  
+                        a(href='industries.html') Industries
                       ul.list-unstyled.list-unstyled.bullet-list.text-left
                         li
-                          a(href='#') Education
+                          a(href='industries-single.html') Education
                         li
-                          a(href='#') Entertainment & Sports
+                          a(href='industries-single.html') Entertainment & Sports
                         li
-                          a(href='#') Environment
+                          a(href='industries-single.html') Environment
                         li
-                          a(href='#') F&B
+                          a(href='industries-single.html') F&B
                         li
-                          a(href='#') Healthcare
+                          a(href='industries-single.html') Healthcare
                         li
-                          a(href='#') IT
+                          a(href='industries-single.html') IT
                         li
-                          a(href='#') Manufacturing
+                          a(href='industries-single.html') Manufacturing
                         li
-                          a(href='#') NGO
+                          a(href='industries-single.html') NGO
                         li
-                          a(href='#') Professional Services
+                          a(href='industries-single.html') Professional Services
                         li
-                          a(href='#') Trade & E-Commerce                                                                       
+                          a(href='industries-single.html') Trade & E-Commerce                                                                       
                     .col-xs-12.col-sm-6.col-md-6.col-lg-3.col-grid
                       .card.dark-blue-bg.mb-2.p-arround-2
                           i
@@ -192,7 +188,7 @@ header.site-header
                           h3.pt-2.pr-2.text-white.text-left To learn more about how we can support you, contact one of our local experts.
                           p.text-white.text-left
                               | We provide professional services tailored to Asia´s business environment across the full business cycle.
-                          a.btn.btn-secondary.mb-2.text-white(href='https://www.dezshira.com/personnel') Talk to experts 
+                          a.btn.btn-secondary.mb-2.text-white(href='personnel.html') Talk to experts 
             li.dropdown
               a(href='#' data-trigger data-turn-header-white)
                 | Resources 
@@ -202,32 +198,35 @@ header.site-header
                 .container
                   .grid
                     .col-xs-12.col-sm-9.col-md-9.col-lg-3.col-grid
-                      h2.text-capitalize.text-left Our Resources
+                      h2.text-capitalize.text-left 
+                        a(href='asiapedia.html') Our Resources
                       p.text-left
                         | Dezan Shira & Associates is committed to developing business intelligence and understanding of investing across Asia. The firm publishes significant and well-received business titles about each of the markets and disciplines in which it operates through its publishing subsidiary, Asia Briefing Ltd.
                       a.btn.btn-secondary.text-white Contact Us 
                     .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
-                      h3.text-left Asiapedia
+                      h3.text-left 
+                        a(href='asiapedia.html') Asiapedia
                       ul.list-unstyled.bullet-list.text-left
                         li
-                          a(href='#') Videos
+                          a(href='asiapedia-search.html') Videos
                         li
-                          a(href='#') Presentations
+                          a(href='asiapedia-search.html') Presentations
                         li
-                          a(href='#')  Podcasts
+                          a(href='asiapedia-search.html')  Podcasts
                         li
-                          a(href='#') Legal Documents
+                          a(href='asiapedia-search.html') Legal Documents
                         li
-                          a(href='#') Industry Profiles                                             
+                          a(href='asiapedia-search.html') Industry Profiles                                             
                     .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
-                      h3.text-left  Asia Briefing
+                      h3.text-left  
+                       a(href='asia-briefing.html') Asia Briefing
                       ul.list-unstyled.list-unstyled.bullet-list.text-left
                         li
-                          a(href='#') About Asia Briefing
+                          a(href='asia-briefing.html') About Asia Briefing
                         li
-                          a(href='#') Magazines
+                          a(href='asiapedia-search.html') Magazines
                         li
-                          a(href='#') Guides                                                                
+                          a(href='asiapedia-search.html') Guides                                                                
                     .col-xs-12.col-sm-6.col-md-6.col-lg-3.col-grid
                       .card.dark-blue-bg.mb-2.p-arround-2
                           i
@@ -235,7 +234,7 @@ header.site-header
                           h3.pt-2.pr-2.text-white.text-left To learn more about how we can support you, contact one of our local experts.
                           p.text-white.text-left
                               | We provide professional services tailored to Asia´s business environment across the full business cycle.
-                          a.btn.btn-secondary.mb-2.text-white(href='https://www.dezshira.com/personnel') Talk to experts 
+                          a.btn.btn-secondary.mb-2.text-white(href='personnel.html') Talk to experts 
             li
               a(href='#') Events
             li.dropdown
@@ -247,34 +246,35 @@ header.site-header
                 .container
                   .grid.align-center
                     .col-xs-12.col-sm-10.col-md-10.col-lg-4.col-grid
-                      h2.text-capitalize.text-left.text-align-center-xs Contact Us
+                      h2.text-capitalize.text-left.text-align-center-xs 
+                        a(href='contact.html') Contact Us
                       p.text-left.text-align-center-xs
                         | We want to help you and your team succeed in our neighborhood – Asia. Please introduce yourself so that our team can connect with you.
                       a.btn.btn-secondary.text-white.content-center-xs Contact Us 
                     .col-xs-12.col-sm-3.col-md-3.col-lg-2.col-grid.text-center          
-                            a(href='https://www.dezshira.com/personnel')
+                            a(href='contact.html')
                               img(src='assets/img/inq.png' width='50px')
                             h4.text-center.text-capitalize 
-                              a(href='https://www.dezshira.com/contact') Send Inquiry
-                            a.btn.btn-link.mb-2(href='https://www.dezshira.com/contact') Read more &gt;                       
+                              a(href='contact.html') Send Inquiry
+                            a.btn.btn-link.mb-2.center-block(href='contact.html') Read more &gt;                       
                     .col-xs-12.col-sm-3.col-md-3.col-lg-2.col-grid.text-center          
-                            a(href='https://www.dezshira.com/office')
+                            a(href='office.html')
                               img(src='assets/img/locations.png' width='50px')
                             h4.text-center.text-capitalize 
-                              a(href='https://www.dezshira.com/office') Locations
-                            a.btn.btn-link.mb-2(href='https://www.dezshira.com/office') Read more &gt;                                       
+                              a(href='office.html') Locations
+                            a.btn.btn-link.mb-2.center-block(href='office.html') Read more &gt;                                       
                     .col-xs-12.col-sm-3.col-md-3.col-lg-2.col-grid.text-center          
-                            a(href='https://www.dezshira.com/career')
+                            a(href='career.html')
                               img(src='assets/img/new-job.png' width='50px')
                             h4.text-center.text-capitalize 
-                              a(href='https://www.dezshira.com/career') Careers
-                            a.btn.btn-link.mb-2(href='https://www.dezshira.com/career') Read more &gt;
+                              a(href='career.html') Careers
+                            a.btn.btn-link.mb-2.center-block(href='career.html') Read more &gt;
                     .col-xs-12.col-sm-3.col-md-3.col-lg-2.col-grid.text-center          
-                            a(href='#')
+                            a(href='media.html')
                               img(src='assets/img/about-100.png' width='50px')
                             h4.text-center.text-capitalize 
-                              a(href='#') Follow Us
-                            a.btn.btn-link.mb-2(href='#') Read more &gt;     
+                              a(href='media.html') Follow Us
+                            a.btn.btn-link.mb-2.center-block(href='media.html') Read more &gt;     
             li
               i
                 <img src="assets/img/icons-search.png" alt="" width="20px">

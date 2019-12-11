@@ -1518,6 +1518,11 @@ $border-default: 1px solid #ccc;
     width: auto;
     height: 420px;
     background-size: cover; }
+  .card.full-time-jobs {
+    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg) no-repeat top left;
+    width: auto;
+    height: 100%;
+    background-size: cover; }
   .card.international-desks .card-body {
     padding: 20px;
     min-height: 434px; }
@@ -1567,6 +1572,16 @@ $border-default: 1px solid #ccc;
       margin-bottom: 0px; }
   .card.featured-resources .card-footer {
     padding: 20px; }
+  .card.featured-offers {
+    border-top: solid 3px #314d77; }
+    .card.featured-offers .card-body {
+      padding: 20px;
+      min-height: 184px; }
+  .card.testimonial .card-body {
+    padding: 20px;
+    min-height: 170px; }
+    .card.testimonial .card-body p {
+      margin-bottom: 0px; }
 
 @media (max-width: 1200px) {
   .card.news {
@@ -2219,7 +2234,13 @@ ol, ul {
 .pb-7 {
   padding-bottom: 70px; }
 
-.pb-6 {
+.pl-7 {
+  padding-left: 70px; }
+
+.pr-7 {
+  padding-right: 70px; }
+
+.pl-6 {
   padding-bottom: 60px; }
 
 .pt-6 {
@@ -2721,7 +2742,7 @@ header.site-header {
         background: #1a2940; }
       header.site-header #main-nav.white .navbar li.dropdown:nth-last-child(2) a {
         color: #007bff; }
-      header.site-header #main-nav.white .navbar li.dropdown h4 a {
+      header.site-header #main-nav.white .navbar li.dropdown h4 a, header.site-header #main-nav.white .navbar li.dropdown h3 a {
         color: inherit !important; }
   header.site-header .fixed-top {
     position: fixed;

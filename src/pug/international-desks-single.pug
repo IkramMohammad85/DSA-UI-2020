@@ -5,6 +5,7 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -36,7 +37,7 @@ body
                         li HR and payroll services
                         li
                             | And 
-                            a(href='https://www.dezshira.com/services')
+                            a(href='services.html')
                             strong more
                     p
                         | Ready to enter the Chinese or other Asian markets? 
@@ -72,7 +73,7 @@ body
                                 li Trade and E-commerce
                                 li
                                     | And 
-                                    a(href='https://www.dezshira.com/industries')
+                                    a(href='industries.html')
                                     strong more
                     a.btn.btn-secondary(href='#mini_contact_form') Contact us
                 .col-sm.col-md-4.col-lg-4.col-grid
@@ -80,34 +81,34 @@ body
                         a(href='#') PERSONNEL
                     ul.list.lists-img-thumbnail
                         li
-                            a(href='https://www.dezshira.com/personnel/dustin-daugherty.html', target='_blank')
+                            a(href='personnel-single.html', target='')
                                 img.img-circle.hidden-xs.hidden-xxs.hidden-sm.list-thumbnail.thumbnail-80(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Dustin-Daugherty-5.png', scale='0',)
                                 .list-content.pt-1
                                     h4
-                                        a(href='https://www.dezshira.com/personnel/dustin-daugherty.html', target='_blank',) Dustin Daugherty 
+                                        a(href='personnel-single.html', target='',) Dustin Daugherty 
                                     p
                                         | Head of North America Business Development   
-                                        a(href='https://www.dezshira.com/personnel/dustin-daugherty.html', target='_blank')
+                                        a(href='personnel-single.html', target='')
                                             strong United States
                         li
-                            a(href='https://www.dezshira.com/personnel/kyle-freeman.html', target='_blank')
+                            a(href='personnel-single.html', target='')
                                 img.img-circle.hidden-xs.hidden-xxs.hidden-sm.list-thumbnail.thumbnail-80(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Kyle_Freeman_200x200.jpg', scale='0',)
                                 .list-content.pt-1
                                     h4
-                                        a(href='https://www.dezshira.com/personnel/kyle-freeman.html', target='_blank',) Kyle Freeman
+                                        a(href='personnel-single.html', target='',) Kyle Freeman
                                     p
                                         | Manager, International Business Advisory
-                                        a(href='https://www.dezshira.com/personnel/kyle-freeman.html', target='_blank')
+                                        a(href='personnel-single.html', target='')
                                             strong Beijing     
                         li
-                            a(href='https://www.dezshira.com/personnel/holly-mccleery.html', target='_blank')
+                            a(href='personnel-single.html', target='')
                                 img.img-circle.hidden-xs.hidden-xxs.hidden-sm.list-thumbnail.thumbnail-80(src='https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Holly_McCleery200200px.jpg', scale='0',)
                                 .list-content.pt-1
                                     h4
-                                        a(href='https://www.dezshira.com/personnel/holly-mccleery.html', target='_blank',) Holly McCleery 
+                                        a(href='personnel-single.html', target='',) Holly McCleery 
                                     p
                                         | Associate, Marketing
-                                        a(href='https://www.dezshira.com/personnel/holly-mccleery.html', target='_blank')
+                                        a(href='personnel-single.html', target='')
                                             strong Shanghai     
                     h4.section-title
                         a(href='#') More Case Studies
@@ -516,3 +517,7 @@ body
                             .col-md-12.col-lg-12
                                     button.btn.btn-primary.float-right(type='Send') Send
     include components/_footer
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")
