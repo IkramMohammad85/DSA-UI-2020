@@ -53,18 +53,19 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
-.contact-form {
+form {
+.form-field {
   label {
     @include font-size(14px);
     color: $gray-700;
     line-height: 1.5;
-    font-weight: bold;
+    font-weight: normal;
   }
   input,
   select,
   textarea {
     width: 100%;
-    background: $gray-200;
+    background: $gray-100;
     border-radius: 2px;
     @include font-size(20px);
     color: $gray-600;
@@ -74,7 +75,8 @@ input[type="submit"] {
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-    margin-top: 10px;
+	margin-top: 10px;
+	border-color:$gray-200 ;
   }
   input,
   select {
@@ -88,7 +90,7 @@ input[type="submit"] {
   input:focus,
   textarea:focus,
   select:focus {
-    background: $gray-100;
+    background: $gray-200;
   }
   input::placeholder,
   textarea::placeholder,
@@ -96,6 +98,7 @@ input[type="submit"] {
     color: #adadad;
     font-weight: 200;
   }
+}
 }
 //Tablets
 @media (max-width: $reflex-sm) {

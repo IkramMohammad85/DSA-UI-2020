@@ -343,15 +343,15 @@ ol,ul{margin-top:0;margin-bottom:1rem}.btn{border-radius:0;font-family:"Myriad P
 .site-footer .input-add-on-item{background-color:#316aa3;color:#fff;font:inherit;font-weight:bold;border:1px solid #316aa3;padding:.5em 1em}
 input[type="text"],input[type="password"],select,textarea{width:100%;padding:8px 10px;margin:6px 0;display:inline-block;border:1px solid #ccc;border-color:#e7e7e7;box-sizing:border-box;font-size:12px;font-size:.75rem}
 input[type="submit"]{width:100%;background-color:#dee2e6;color:#fff;padding:6px 20px;margin:6px 0;border:0;cursor:pointer}
-.contact-form label{font-size:14px;font-size:.875rem;color:#495057;line-height:1.5;font-weight:bold}
-.contact-form input,.contact-form select,.contact-form textarea{width:100%;background:#e9ecef;border-radius:2px;font-size:20px;font-size:1.25rem;color:#6c757d;line-height:1.2;padding:0 28px;-webkit-transition:all .4s;transition:all .4s;margin-top:10px}
-.contact-form input,.contact-form select{height:50px}.contact-form textarea{min-height:100px;padding-top:19px;padding-bottom:13px}
-.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{background:#f8f9fa}
-.contact-form input::-webkit-input-placeholder,.contact-form textarea::-webkit-input-placeholder,.contact-form select::-webkit-input-placeholder{color:#adadad;font-weight:200}
-.contact-form input::-moz-placeholder,.contact-form textarea::-moz-placeholder,.contact-form select::-moz-placeholder{color:#adadad;font-weight:200}
-.contact-form input:-ms-input-placeholder,.contact-form textarea:-ms-input-placeholder,.contact-form select:-ms-input-placeholder{color:#adadad;font-weight:200}
-.contact-form input::-ms-input-placeholder,.contact-form textarea::-ms-input-placeholder,.contact-form select::-ms-input-placeholder{color:#adadad;font-weight:200}
-.contact-form input::placeholder,.contact-form textarea::placeholder,.contact-form select::placeholder{color:#adadad;font-weight:200}
+form .form-field label{font-size:14px;font-size:.875rem;color:#495057;line-height:1.5;font-weight:normal}
+form .form-field input,form .form-field select,form .form-field textarea{width:100%;background:#f8f9fa;border-radius:2px;font-size:20px;font-size:1.25rem;color:#6c757d;line-height:1.2;padding:0 28px;-webkit-transition:all .4s;transition:all .4s;margin-top:10px;border-color:#e9ecef}
+form .form-field input,form .form-field select{height:50px}form .form-field textarea{min-height:100px;padding-top:19px;padding-bottom:13px}
+form .form-field input:focus,form .form-field textarea:focus,form .form-field select:focus{background:#e9ecef}
+form .form-field input::-webkit-input-placeholder,form .form-field textarea::-webkit-input-placeholder,form .form-field select::-webkit-input-placeholder{color:#adadad;font-weight:200}
+form .form-field input::-moz-placeholder,form .form-field textarea::-moz-placeholder,form .form-field select::-moz-placeholder{color:#adadad;font-weight:200}
+form .form-field input:-ms-input-placeholder,form .form-field textarea:-ms-input-placeholder,form .form-field select:-ms-input-placeholder{color:#adadad;font-weight:200}
+form .form-field input::-ms-input-placeholder,form .form-field textarea::-ms-input-placeholder,form .form-field select::-ms-input-placeholder{color:#adadad;font-weight:200}
+form .form-field input::placeholder,form .form-field textarea::placeholder,form .form-field select::placeholder{color:#adadad;font-weight:200}
 @media(max-width:768px){.input-add-on-field{font-size:15px}}*{box-sizing:border-box}
 a{color:#344e70;text-decoration:none}a:hover{text-decoration:none}hr{width:100%}body{display:-webkit-box;display:flex;min-height:100vh;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;margin:0}
 #wrapper{display:-webkit-box;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}
