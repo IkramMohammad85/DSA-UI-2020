@@ -56,6 +56,12 @@ body
                                     li
                                         a(href='https://www.dezshira.com/personnel/tag/payroll-processing')  Payroll Processing
                         h4.section-title.mt-2 Press
+                        form.mt(action='register.html', method='GET')
+                                .form-field.field-group.mb-2
+                                    input#search.required(type='text', name='search', placeholder='Search...', value='')
+                                    button.btn                                                   
+                                        i
+                                            <img src="assets/img/icons-search.png" alt="" width="20px">                         
                         ul.list
                             li
                                 a(href='http://www.networkhr.com/issue/minimum-wage-stats-in-china/', target='_blank')
@@ -87,7 +93,13 @@ body
                                 a.active(href='https://www.dezshira.com/library/search?location=32&page=3') 3
                             li
                                 a(href='https://www.dezshira.com/library/search?location=32&page=4') 4                     
-                        h4.section-title.mb-2.mt-4 Events
+                        h4.section-title.mb-1.mt-4 Events
+                        form.mt(action='register.html', method='GET')
+                                .form-field.field-group.mb-2
+                                    input#search.required(type='text', name='search', placeholder='Search...', value='')
+                                    button.btn                                                   
+                                        i
+                                            <img src="assets/img/icons-search.png" alt="" width="20px"> 
                         ul.list.lists-events
                             li
                                 .date-block.hidden-sm.hidden-xs.hidden-xxs

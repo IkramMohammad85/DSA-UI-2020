@@ -346,6 +346,8 @@ ol,ul{margin-top:0;margin-bottom:1rem}.btn{border-radius:0;font-family:"Myriad P
 .site-footer .input-add-on-item{background-color:#316aa3;color:#fff;font:inherit;font-weight:bold;border:1px solid #316aa3;padding:.5em 1em}
 input[type="text"],input[type="password"],select,textarea{width:100%;padding:8px 10px;margin:6px 0;display:inline-block;border:1px solid #ccc;border-color:#e7e7e7;box-sizing:border-box;font-size:12px;font-size:.75rem}
 input[type="submit"]{width:100%;background-color:#dee2e6;color:#fff;padding:6px 20px;margin:6px 0;border:0;cursor:pointer}
+form .form-field.field-group{position:relative}form .form-field.field-group input{margin:0;padding-left:50px}
+form .form-field.field-group button{position:absolute;left:0;background:transparent;padding-top:16px}
 form .form-field label{font-size:14px;font-size:.875rem;color:#495057;line-height:1.5;font-weight:normal}
 form .form-field input,form .form-field select,form .form-field textarea{width:100%;background:#f8f9fa;border-radius:2px;font-size:20px;font-size:1.25rem;color:#6c757d;line-height:1.2;padding:0 15px;-webkit-transition:all .4s;transition:all .4s;margin-top:10px;border-color:#e9ecef}
 form .form-field input,form .form-field select{height:50px}form .form-field textarea{min-height:100px;padding-top:19px;padding-bottom:13px}

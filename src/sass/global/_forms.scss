@@ -55,6 +55,19 @@ input[type="submit"] {
 }
 form {
   .form-field {
+    &.field-group {
+      input {
+        margin: 0;
+        padding-left: 50px;
+      }
+      position: relative;
+      button {
+        position: absolute;
+        left: 0;
+        background: transparent;
+        padding-top: 16px;
+      }
+    }
     label {
       @include font-size(14px);
       color: $gray-700;
