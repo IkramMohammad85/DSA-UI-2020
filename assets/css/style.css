@@ -226,6 +226,7 @@ summary{display:list-item}template{display:none}[hidden]{display:none}:root{--re
 @media(max-width:1200px){.dropdown .dropdown-content.dropdown-content-medium{min-width:auto}
 .dropdown .dropdown-content.dropdown-content-large{min-width:auto}}.banner{position:relative;overflow:hidden;height:340px;width:100%;z-index:1;top:110px;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}
 .banner.top-postion-24{top:24px}.banner.top-postion-0{top:0}.banner img{position:absolute;background-size:cover;width:100%;background-position:50% 0;background-repeat:no-repeat}
+.banner .img-circle{position:relative;background-size:initial;width:164px;background-position:initial}
 .banner h1,.banner h2,.banner h3,.banner h4,.banner h5{color:#fff}.banner h1 a,.banner h2 a,.banner h3 a,.banner h4 a,.banner h5 a{color:#fff}
 .banner .btn{display:table}@media(max-width:1200px){.banner{height:auto;padding:60px 0}
 .banner img{width:auto}}@media(max-width:992px){.banner{height:auto;padding:25px 0}
@@ -247,6 +248,8 @@ summary{display:list-item}template{display:none}[hidden]{display:none}:root{--re
 .accordion-wrapper.vertical-menu .accordion-item.open .down-arrow{-webkit-transform:rotate(225deg);transform:rotate(225deg);top:10px;color:#fff;border-color:#fff}
 .accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li{background:#f8f9fa;padding:10px 10px;border-bottom:solid 1px #e9ecef}
 .accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li:hover{background:#fff}
+.breadcrumb ul{padding:0;margin:0}.breadcrumb ul li{font-size:14px;font-size:.875rem}
+.breadcrumb ul li a{color:#58595b}.breadcrumb ul li+li:before{padding:8px;content:"\003e";color:#58595b}
 @font-face{font-family:'NimbusSanL';src:url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"),url("../fonts/NimbusSanL-Reg.otf") format("opentype"),url("../fonts/NimbusSanL-Reg.woff") format("woff"),url("../fonts/NimbusSanL-Reg.ttf") format("truetype"),url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:'NimbusSanL';src:url("../fonts/NimbusSanL-Bol.eot?#iefix") format("embedded-opentype"),url("../fonts/NimbusSanL-Bol.otf") format("opentype"),url("../fonts/NimbusSanL-Bol.woff") format("woff"),url("../fonts/NimbusSanL-Bol.ttf") format("truetype"),url("../fonts/NimbusSanL-Bol.svg#NimbusSanL-Bol") format("svg");font-weight:700;font-style:normal}
 @font-face{font-family:'Myriad Pro';src:url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/MyriadPro-Regular.otf") format("opentype"),url("../fonts/MyriadPro-Regular.woff") format("woff"),url("../fonts/MyriadPro-Regular.ttf") format("truetype"),url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");font-weight:normal;font-style:normal}
