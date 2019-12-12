@@ -226,7 +226,7 @@ summary{display:list-item}template{display:none}[hidden]{display:none}:root{--re
 @media(max-width:1200px){.dropdown .dropdown-content.dropdown-content-medium{min-width:auto}
 .dropdown .dropdown-content.dropdown-content-large{min-width:auto}}.banner{position:relative;overflow:hidden;height:340px;width:100%;z-index:1;top:110px;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center}
 .banner.top-postion-24{top:24px}.banner.top-postion-0{top:0}.banner img{position:absolute;background-size:cover;width:100%;background-position:50% 0;background-repeat:no-repeat}
-.banner .img-circle{position:relative;background-size:initial;width:164px;background-position:initial}
+.banner .img{position:relative;background-size:initial;width:100%;background-position:initial}
 .banner h1,.banner h2,.banner h3,.banner h4,.banner h5{color:#fff}.banner h1 a,.banner h2 a,.banner h3 a,.banner h4 a,.banner h5 a{color:#fff}
 .banner .btn{display:table}@media(max-width:1200px){.banner{height:auto;padding:60px 0}
 .banner img{width:auto}}@media(max-width:992px){.banner{height:auto;padding:25px 0}
