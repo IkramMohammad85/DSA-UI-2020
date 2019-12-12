@@ -54,51 +54,60 @@ input[type="submit"] {
   cursor: pointer;
 }
 form {
-.form-field {
-  label {
-    @include font-size(14px);
-    color: $gray-700;
-    line-height: 1.5;
-    font-weight: normal;
-  }
-  input,
-  select,
-  textarea {
-    width: 100%;
-    background: $gray-100;
-    border-radius: 2px;
-    @include font-size(20px);
-    color: $gray-600;
-    line-height: 1.2;
-    padding: 0 28px;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-	margin-top: 10px;
-	border-color:$gray-200 ;
-  }
-  input,
-  select {
-    height: 50px;
-  }
-  textarea {
-    min-height: 100px;
-    padding-top: 19px;
-    padding-bottom: 13px;
-  }
-  input:focus,
-  textarea:focus,
-  select:focus {
-    background: $gray-200;
-  }
-  input::placeholder,
-  textarea::placeholder,
-  select::placeholder {
-    color: #adadad;
-    font-weight: 200;
+  .form-field {
+    label {
+      @include font-size(14px);
+      color: $gray-700;
+      line-height: 1.5;
+      font-weight: normal;
+    }
+    input,
+    select,
+    textarea {
+      width: 100%;
+      background: $gray-100;
+      border-radius: 2px;
+      @include font-size(20px);
+      color: $gray-600;
+      line-height: 1.2;
+      padding: 0 15px;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+      margin-top: 10px;
+      border-color: $gray-200;
+    }
+    input,
+    select {
+      height: 50px;
+    }
+    textarea {
+      min-height: 100px;
+      padding-top: 19px;
+      padding-bottom: 13px;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+      background: $gray-200;
+    }
+    input::placeholder,
+    textarea::placeholder,
+    select::placeholder {
+      color: #adadad;
+      font-weight: 200;
+    }
   }
 }
+.light-blue-bg {
+  form {
+    .form-field {
+      label {
+        color: $white;
+      }
+    }
+  }
 }
 //Tablets
 @media (max-width: $reflex-sm) {
