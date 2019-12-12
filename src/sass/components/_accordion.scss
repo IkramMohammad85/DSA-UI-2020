@@ -1,7 +1,45 @@
-.accordion-wrapper{
-    .accordion-heading{cursor: pointer;}
-    .accordion-item{
-        .accordion-content{display:none;}
-        &.open .accordion-content{display:block;}
+.accordion-wrapper {
+  .accordion-heading {
+    cursor: pointer;
+  }
+  .accordion-item {
+    .accordion-content {
+      display: none;
     }
+    &.open .accordion-content {
+      display: block;
+    }
+  }
+  // For standard format
+  &.accordion-normal {
+    .down-arrow {
+      @include transition(all 0.1s ease);
+      top: 6px;
+    }
+    .accordion-heading {
+      background: $soft-bluish-gray;
+      margin-bottom: 10px;
+      &:hover {
+        background-color: $dark-light-blue;
+        color: $white;
+        .down-arrow {
+          border-color: $white;
+        }
+      }
+    }
+    .accordion-item {
+      &.open {
+        .accordion-heading {
+          background-color: $dark-light-blue;
+          color: $white;
+        }
+        .down-arrow {
+          @include transform(rotate(225deg));
+          top: 10px;
+          color: $white;
+          border-color: $white;
+        }
+      }
+    }
+  }
 }
