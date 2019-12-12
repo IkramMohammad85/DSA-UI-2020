@@ -239,13 +239,13 @@ summary{display:list-item}template{display:none}[hidden]{display:none}:root{--re
 .accordion-wrapper.accordion-normal .accordion-heading:hover .down-arrow{border-color:#fff}
 .accordion-wrapper.accordion-normal .accordion-item.open .accordion-heading{background-color:#2981d1;color:#fff}
 .accordion-wrapper.accordion-normal .accordion-item.open .down-arrow{-webkit-transform:rotate(225deg);transform:rotate(225deg);top:10px;color:#fff;border-color:#fff}
-.accordion-wrapper.vertical-menu .down-arrow{-webkit-transition:all .1s ease;transition:all .1s ease;top:6px;right:10px}
-.accordion-wrapper.vertical-menu .accordion-heading{background:#fff;border-bottom:solid 1px #e6e7e8;padding:5px 10px}
+.accordion-wrapper.vertical-menu .down-arrow{-webkit-transition:all .1s ease;transition:all .1s ease;top:6px}
+.accordion-wrapper.vertical-menu .accordion-heading{background:#fff;border-bottom:solid 1px #e6e7e8;padding:10px 18px}
 .accordion-wrapper.vertical-menu .accordion-heading:hover{background-color:#2981d1;color:#fff}
 .accordion-wrapper.vertical-menu .accordion-heading:hover .down-arrow{border-color:#fff}
 .accordion-wrapper.vertical-menu .accordion-item.open .accordion-heading{background-color:#2981d1;color:#fff}
-.accordion-wrapper.vertical-menu .accordion-item.open .down-arrow{-webkit-transform:rotate(225deg);transform:rotate(225deg);top:10px;right:10px;color:#fff;border-color:#fff}
-.accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li{background:#f8f9fa;padding:5px 10px;border-bottom:solid 1px #e9ecef}
+.accordion-wrapper.vertical-menu .accordion-item.open .down-arrow{-webkit-transform:rotate(225deg);transform:rotate(225deg);top:10px;color:#fff;border-color:#fff}
+.accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li{background:#f8f9fa;padding:10px 10px;border-bottom:solid 1px #e9ecef}
 .accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li:hover{background:#fff}
 @font-face{font-family:'NimbusSanL';src:url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"),url("../fonts/NimbusSanL-Reg.otf") format("opentype"),url("../fonts/NimbusSanL-Reg.woff") format("woff"),url("../fonts/NimbusSanL-Reg.ttf") format("truetype"),url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:'NimbusSanL';src:url("../fonts/NimbusSanL-Bol.eot?#iefix") format("embedded-opentype"),url("../fonts/NimbusSanL-Bol.otf") format("opentype"),url("../fonts/NimbusSanL-Bol.woff") format("woff"),url("../fonts/NimbusSanL-Bol.ttf") format("truetype"),url("../fonts/NimbusSanL-Bol.svg#NimbusSanL-Bol") format("svg");font-weight:700;font-style:normal}
