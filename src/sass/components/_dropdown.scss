@@ -3,6 +3,17 @@
     // position: relative;
     display: inline-block;
 
+    .down-arrow{
+        @include transition(all 0.1s ease);
+    }
+
+    &.open{
+        .down-arrow{
+            @include transform(rotate(225deg));
+            top:0;
+        }
+    }
+
     .dropdown-content {
         display: none;
         position: absolute;

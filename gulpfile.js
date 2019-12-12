@@ -8,6 +8,9 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const plumber = require('gulp-plumber');
+var minifycss = require('gulp-uglifycss');
+var minifyjs = require('gulp-uglify');
+
 
 
 // Paths and directories
@@ -23,7 +26,7 @@ var paths = {
 	},
 
 	js: {
-		src: ['./src/js/dropdown.js','./src/js/scripts.js'],
+		src: ['./src/js/dropdown.js','./src/js/accordion.js','./src/js/scripts.js'],
 		vendor:['node_modules/@glidejs/glide/dist/glide.min.js'],
 		dest: './assets/js'
 	},
@@ -54,6 +57,10 @@ gulp.task('sass', function () {
 			cascade: false,
 			grid: 'autoplace'
 		}))
+		.pipe(minifycss({
+			"maxLineLen": 80,
+			"uglyComments": true
+		  }))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(paths.sass.dest))
 });
@@ -67,11 +74,17 @@ gulp.task('js', function () {
 		// Transpile the JS code using Babel's preset-env.
 		.pipe(babel({
 			presets: [
-			  ['@babel/env', {
-				modules: false
-			  }]
+			  ['@babel/env', 
+			  {
+				"modules": false,
+				"targets": {
+				  "browsers": ["> 1%", "last 2 versions", "ie >= 11"]
+				}
+			  }
+			]
 			]
 		  }))
+		.pipe(minifyjs())
 		.pipe(gulp.dest(paths.js.dest))
 
 
@@ -80,9 +93,14 @@ gulp.task('js', function () {
 		// Transpile the JS code using Babel's preset-env.
 		.pipe(babel({
 			presets: [
-			  ['@babel/env', {
-				modules: false
-			  }]
+			  ['@babel/env', 
+			  {
+				"modules": false,
+				"targets": {
+				  "browsers": ["> 1%", "last 2 versions", "ie >= 11"]
+				}
+			  }
+			]
 			]
 		  }))
 		.pipe(gulp.dest(paths.js.dest))
@@ -94,7 +112,7 @@ gulp.task('pug', function(){
 	return gulp
 		.src(paths.html.src)
 		.pipe(pug({
-			// beautify: true
+			pretty: true
 		}))
 		.pipe(gulp.dest(paths.html.dest));
 });

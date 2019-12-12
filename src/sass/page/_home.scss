@@ -1,4 +1,10 @@
 .home {
+  header.site-header {
+    #main-nav{
+      background:rgba($bluedark,0.8);
+    }
+  }
+  
   .big-banner {
     position: relative;
     .item {

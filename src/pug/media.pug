@@ -8,7 +8,7 @@ head
   link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
-  #wrapper.home
+  #wrapper
     include components/_header
     section.banner
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/DSA-Media-banner.jpg')    
@@ -28,6 +28,33 @@ body
                     p
                         | For inquiries, please contact us with 
                         a(href='mailto:media@dezshira.com') media@dezshira.com
+
+                    h2 Autocloses other if one is open
+                    .accordion-wrapper(data-autoclose)
+                        .accordion-item
+                            .accordion-heading.section-title Facebook
+                            .accordion-content
+                                .p-arround-4 | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        .accordion-item
+                            .accordion-heading.section-title Twitter
+                            .accordion-content
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+                    br
+                    br
+
+                    h2 Default with no auto close
+                    .accordion-wrapper
+                        .accordion-item
+                            .accordion-heading.section-title Facebook
+                            .accordion-content
+                                .p-arround-4 | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        .accordion-item
+                            .accordion-heading.section-title Twitter
+                            .accordion-content
+                                | Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+
                 .col-sm.col-md-3.col-lg-3.col-grid
                     h4.section-title BRIEFING WEBSITES
                     ul.list

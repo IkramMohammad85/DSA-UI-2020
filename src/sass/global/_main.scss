@@ -39,7 +39,7 @@ header.site-header {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background: rgba(26, 41, 64, 0.8);
+    background:$bluedark;
     @include transition(all 0.5s);
     // @include transition(height 0.15s ease-out);
     height: 110px;
@@ -47,7 +47,7 @@ header.site-header {
     flex-direction: column;
 
     &.white {
-      background: $white;
+      background: $white !important;
       opacity: 0.98;
       border-bottom: 1px solid $gray-200;
       // height:90px;

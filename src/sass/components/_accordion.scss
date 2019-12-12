@@ -1,0 +1,7 @@
+.accordion-wrapper{
+    .accordion-heading{cursor: pointer;}
+    .accordion-item{
+        .accordion-content{display:none;}
+        &.open .accordion-content{display:block;}
+    }
+}
