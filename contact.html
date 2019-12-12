@@ -219,31 +219,31 @@
         <div class="grid">
           <div class="col-sm col-md-9 col-lg-9 col-grid">
             <h4 class="section-title">Contact - Dezan Shira & Associates </h4>
-            <form action="https://www.dezshira.com/events/search" method="GET"></form>
-            <div class="grid">
+            <form class="contact-form" action="https://www.dezshira.com/events/search" method="GET"></form>
+            <div class="grid contact-form">
               <div class="col-md-4 col-lg-4">
-                <label for="fname"></label><span class="required-field">*</span> First Name
-                <input class="required" id="fname" type="text" name="fname" value="">
+                <label for="fname"><span class="required-field">*</span> First Name</label>
+                <input class="required" id="fname" type="text" name="fname" placeholder="Enter your name" value="">
               </div>
               <div class="col-md-4 col-lg-4">
-                <label for="lname"></label><span class="required-field">*</span> Last Name
-                <input class="required" id="lname" type="text" name="lname" value="">
+                <label for="lname"><span class="required-field">*</span> Last Name</label>
+                <input class="required" id="lname" type="text" name="lname" placeholder="Enter your last name" value="">
               </div>
               <div class="col-md-4 col-lg-4">
-                <label for="email_address"></label><span class="required-field">*</span> Email Address
-                <input class="required email" id="email_address" type="text" name="email_address" value="">
+                <label for="email_address"><span class="required-field">*</span> Email Address</label>
+                <input class="required email" id="email_address" type="text" name="email_address" placeholder="Enter your email" value="">
               </div>
               <div class="col-md-12 col-md-lg">
-                <label for="organization"></label><span class="required-field">*</span> Organisation / Company
-                <input class="required" id="organization" type="text" name="organization" value="">
+                <label for="organization"><span class="required-field">*</span> Organisation / Company</label>
+                <input class="required" id="organization" type="text" name="organization" placeholder="Enter organization name" value="">
               </div>
               <div class="col-md-4 col-lg-4">
-                <label for="telephone"></label><span class="required-field">*</span> Telephone
-                <input class="required" id="telephone" type="text" name="telephone" value="">
+                <label for="telephone"><span class="required-field">*</span> Telephone</label>
+                <input class="required" id="telephone" type="text" name="telephone" placeholder="Enter telephone number name" value="">
               </div>
               <div class="col-md-4 col-lg-4">
-                <label for="company_website"></label><span class="required-field">*</span> Company Website
-                <input class="required" id="company_website" type="text" name="company_website" value="">
+                <label for="company_website"><span class="required-field">*</span> Company Website</label>
+                <input class="required" id="company_website" type="text" name="company_website" placeholder="Enter website name" value="">
               </div>
               <div class="col-md-4 col-lg-4">
                 <label for="country">Country/Territory</label>
@@ -502,7 +502,7 @@
                 </select>
               </div>
               <div class="col-md-6 col-lg-6">
-                <label for="investment_destination"></label><span class="required-field">*</span> Investment Destination Of Interest
+                <label for="investment_destination"><span class="required-field">*</span> Investment Destination Of Interest</label>
                 <select class="required" id="investment_destination" name="investment_destination">
                   <option value="" selected="selected">--Please Select an Option--</option>
                   <option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
@@ -523,7 +523,7 @@
                 <input class="radius-none" id="other_investment_destination" type="text" name="other_investment_destination" value="">
               </div>
               <div class="col-md-6 col-lg-6">
-                <label for="type_service_required"></label><span class="required-field">*</span> Type of Service Required
+                <label for="type_service_required"><span class="required-field">*</span> Type of Service Required</label>
                 <select class="required" id="type_service_required" name="type_service_required">
                   <option value="" selected="selected">--Please Select an Option--</option>
                   <option value="Accounting, Financial Reporting &amp; Review">Accounting, Financial Reporting &amp; Review</option>
@@ -550,7 +550,7 @@
                 <input class="form-control" id="other_type_service_required" type="text" name="other_type_service_required" value="">
               </div>
               <div class="col-md-6 col-lg-6">
-                <label for="reference"></label><span class="required-field">*</span> How did you hear about us?
+                <label for="reference"><span class="required-field">*</span> How did you hear about us?</label>
                 <select class="form-control radius-none required" id="reference" name="reference">
                   <option value="" selected="selected">--Please Select an Option--</option>
                   <option value="Alliance - ETL">Alliance - ETL</option>
@@ -577,7 +577,7 @@
               </div>
               <div class="col-md-12 col-lg-12">
                 <label for="comments">Message</label>
-                <textarea class="form-control radius-none" id="comments" name="comments" rows="15" spellcheck="false"></textarea>
+                <textarea class="form-control radius-none" id="comments" name="comments" rows="10" spellcheck="false" placeholder="Your message here..."></textarea>
               </div>
               <div class="col-md-6 col-lg-6"><strong>Security Check</strong><br><br><img id="siimage" src="https://www.dezshira.com/includes/modules/securimage/securimage_show.php" alt="captcha image"><a class="btn" id="reload_captcha" title="Reload Code"> </a></div>
               <div class="col-md-6 col-lg-6"><br><br>

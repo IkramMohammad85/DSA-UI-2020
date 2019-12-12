@@ -22,38 +22,38 @@ body
             .grid
                 .col-sm.col-md-9.col-lg-9.col-grid
                     h4.section-title Contact - Dezan Shira & Associates 
-                    form(action='https://www.dezshira.com/events/search', method='GET')
-                    .grid
+                    form.contact-form(action='https://www.dezshira.com/events/search', method='GET')
+                    .grid.contact-form
                         .col-md-4.col-lg-4
                             label(for='fname')
-                            span.required-field *
-                            |  First Name
-                            input#fname.required(type='text', name='fname', value='')
+                                span.required-field *
+                                |  First Name
+                            input#fname.required(type='text', name='fname', placeholder='Enter your name', value='')
                         .col-md-4.col-lg-4
                             label(for='lname')
-                            span.required-field *
-                            |  Last Name
-                            input#lname.required(type='text', name='lname', value='')
+                                span.required-field *
+                                |  Last Name
+                            input#lname.required(type='text', name='lname', placeholder='Enter your last name',  value='')
                         .col-md-4.col-lg-4
                             label(for='email_address')
-                            span.required-field *
-                            |  Email Address
-                            input#email_address.required.email(type='text', name='email_address', value='')
+                                span.required-field *
+                                |  Email Address
+                            input#email_address.required.email(type='text', name='email_address', placeholder='Enter your email',  value='')
                         .col-md-12.col-md-lg
                             label(for='organization')
-                            span.required-field *
-                            |  Organisation / Company
-                            input#organization.required(type='text', name='organization', value='')
+                                span.required-field *
+                                |  Organisation / Company
+                            input#organization.required(type='text', name='organization', placeholder='Enter organization name',  value='')
                         .col-md-4.col-lg-4
                             label(for='telephone')
-                            span.required-field *
-                            |  Telephone
-                            input#telephone.required(type='text', name='telephone', value='')
+                                span.required-field *
+                                |  Telephone
+                            input#telephone.required(type='text', name='telephone', placeholder='Enter telephone number name', value='')
                         .col-md-4.col-lg-4
                             label(for='company_website')
-                            span.required-field *
-                            |  Company Website
-                            input#company_website.required(type='text', name='company_website', value='')
+                                span.required-field *
+                                |  Company Website
+                            input#company_website.required(type='text', name='company_website', placeholder='Enter website name', value='')
                         .col-md-4.col-lg-4
                             label(for='country') Country/Territory
                             select#country.form-control.radius-none(name='country')
@@ -310,8 +310,8 @@ body
                                 option(value='Zimbabwe') Zimbabwe
                         .col-md-6.col-lg-6
                                 label(for='investment_destination')
-                                span.required-field *
-                                |  Investment Destination Of Interest
+                                    span.required-field *
+                                    |  Investment Destination Of Interest
                                 select#investment_destination.required(name='investment_destination')
                                     option(value='', selected='selected') --Please Select an Option--
                                     option(value='Belt & Road Initiative') Belt &amp; Road Initiative
@@ -330,8 +330,8 @@ body
                                 input#other_investment_destination.radius-none(type='text', name='other_investment_destination', value='')
                         .col-md-6.col-lg-6
                                 label(for='type_service_required')
-                                span.required-field *
-                                |  Type of Service Required
+                                    span.required-field *
+                                    |  Type of Service Required
                                 select#type_service_required.required(name='type_service_required')
                                     option(value='', selected='selected') --Please Select an Option--
                                     option(value='Accounting, Financial Reporting & Review') Accounting, Financial Reporting &amp; Review
@@ -356,8 +356,8 @@ body
                                 input#other_type_service_required.form-control(type='text', name='other_type_service_required', value='')
                         .col-md-6.col-lg-6
                                 label(for='reference')
-                                span.required-field *
-                                |  How did you hear about us?
+                                    span.required-field *
+                                    |  How did you hear about us?
                                 select#reference.form-control.radius-none.required(name='reference')
                                     option(value='', selected='selected') --Please Select an Option--
                                     option(value='Alliance - ETL') Alliance - ETL
@@ -381,7 +381,7 @@ body
                                 input#other_reference(type='text', name='other_reference', value='')
                         .col-md-12.col-lg-12
                                 label(for='comments') Message
-                                textarea#comments.form-control.radius-none(name='comments', rows='15', spellcheck='false')
+                                textarea#comments.form-control.radius-none(name='comments', rows='10', spellcheck='false', placeholder='Your message here...')
 
                         .col-md-6.col-lg-6
                                 strong Security Check

@@ -1,58 +1,105 @@
 // footer sign up form ----------------------------------------------------------------
-.site-footer{
-.input-add-on {
-	display: flex;
-	margin-bottom: 1.5em;
-}
-.input-add-on-field {
-	flex: 1;
-	border: 1px solid #3c495c;
+.site-footer {
+  .input-add-on {
+    display: flex;
+    margin-bottom: 1.5em;
+  }
+  .input-add-on-field {
+    flex: 1;
+    border: 1px solid #3c495c;
     padding: 0.5em 0.75em;
     background-color: #3c495c;
     color: #95a3b0;
-    font-size: 18px; 
+    font-size: 18px;
     font-style: italic;
-	&:not(:first-child) {
-		border-left: 0;
-	}
-	&:not(:last-child) {
-		border-right: 0; margin: 0; border: 0;
-	}
+    &:not(:first-child) {
+      border-left: 0;
+    }
+    &:not(:last-child) {
+      border-right: 0;
+      margin: 0;
+      border: 0;
+    }
+  }
+  .input-add-on-item {
+    background-color: $light-blue;
+    color: $white;
+    font: inherit;
+    font-weight: bold;
+    border: 1px solid $light-blue;
+    padding: 0.5em 1em;
+  }
 }
-.input-add-on-item {
-	background-color:$light-blue;
-	color: $white;
-	font: inherit;
-	font-weight: bold;
-	border: 1px solid $light-blue;
-	padding: 0.5em 1em;
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  display: inline-block;
+  border: $border-default;
+  border-color: #e7e7e7;
+  box-sizing: border-box;
+  @include font-size(12px);
 }
 
+input[type="submit"] {
+  width: 100%;
+  background-color: $gray-300;
+  color: $white;
+  padding: 6px 20px;
+  margin: 6px 0;
+  border: none;
+  cursor: pointer;
 }
-input[type=text], input[type=password], select,textarea {
-	width: 100%;
-	padding: 8px 10px;
-	margin: 6px 0;
-	display: inline-block;
-	border: $border-default;
-	border-color: #e7e7e7;
-	box-sizing: border-box;
-	@include font-size(12px)
+.contact-form {
+  label {
+    @include font-size(14px);
+    color: $gray-700;
+    line-height: 1.5;
+    font-weight: bold;
   }
-  
-  input[type=submit] {
-	width: 100%;
-	background-color: $gray-300;
-	color: $white;
-	padding: 6px 20px;
-	margin: 6px 0;
-	border: none;
-	cursor: pointer;
+  input,
+  select,
+  textarea {
+    width: 100%;
+    background: $gray-200;
+    border-radius: 2px;
+    @include font-size(20px);
+    color: $gray-600;
+    line-height: 1.2;
+    padding: 0 28px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    margin-top: 10px;
   }
-
+  input,
+  select {
+    height: 50px;
+  }
+  textarea {
+    min-height: 100px;
+    padding-top: 19px;
+    padding-bottom: 13px;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    background: $gray-100;
+  }
+  input::placeholder,
+  textarea::placeholder,
+  select::placeholder {
+    color: #adadad;
+    font-weight: 200;
+  }
+}
 //Tablets
 @media (max-width: $reflex-sm) {
-	.input-add-on-field{
-        font-size: 15px;
-	}
+  .input-add-on-field {
+    font-size: 15px;
   }
+}
