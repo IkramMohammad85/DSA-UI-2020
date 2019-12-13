@@ -56,107 +56,96 @@ body
                                     li
                                         a(href='https://www.dezshira.com/personnel/tag/payroll-processing')  Payroll Processing
                         h4.section-title.mt-2 Press
-                        form.mt(action='register.html', method='GET')
-                                .form-field.field-group.mb-2
-                                    input#search.required(type='text', name='search', placeholder='Search...', value='')
-                                    button.btn                                                   
-                                        i
-                                            <img src="assets/img/icons-search.png" alt="" width="20px">                         
-                        ul.list
-                            li
-                                a(href='http://www.networkhr.com/issue/minimum-wage-stats-in-china/', target='_blank')
-                                | Benefits and Remuneration &ndash; Minimum Wage Stats in China, Network HR
-                                span.text-right.float-right 2012-05-16
-                            li
-                                a(href='http://www.amchamchina.org/article/5683', target='_blank')
-                                | Dalian Booms During Downturn, American Chamber of Commerce, China 
-                                span.text-right.float-right 2012-03-14
-                            li
-                                a(href='http://www.china-briefing.com/news/2012/02/21/mandatory-social-welfare-benefits-for-chinese-employees.html', target='_blank')
-                                | Mandatory Social Welfare Benefits for Chinese Employees, China Briefing 
-                                span.text-right.float-right 2012-02-21
-                            li
-                                a(href='http://www.corporatelivewire.com/top-story.html?id=chinas-social-insurance-law-what-does-it-mean-for-employers-and-foreign-individuals', target='_blank')
-                                | China&rsquo;s Social Insurance Law - What Does It Mean For Employers And Foreign Individuals?, Corporate LiveWire 
-                                span.text-right.float-right 2011-11-18
-                                    .clearfix
-                            li
-                                a(href='http://www.thatsmags.com/prd/article/617/expat-social-insurance', target='_blank')
-                                | Expat Social Insurance, That&apos;s PRD 
-                                span.text-right.float-right 2011-10-31
-                        ul.pagination.mt-3
-                            li
-                                a(href='#') 1
-                            li
-                                a(href='https://www.dezshira.com/library/search?location=32&page=2') 2
-                            li
-                                a.active(href='https://www.dezshira.com/library/search?location=32&page=3') 3
-                            li
-                                a(href='https://www.dezshira.com/library/search?location=32&page=4') 4                     
+
+                        .listJS#pressList(data-page=3)
+                            form.mt(action='register.html', method='GET')
+                                    .form-field.field-group.mb-2
+                                        input.search.required(type='text', name='search', placeholder='Search...', value='')
+                                        button.btn                                                   
+                                            i
+                                                <img src="assets/img/icons-search.png" alt="" width="20px">                         
+                            ul.list
+                                li
+                                    a(href='http://www.networkhr.com/issue/minimum-wage-stats-in-china/', target='_blank').title 
+                                        | Benefits and Remuneration &ndash; Minimum Wage Stats in China, Network HR
+                                    span.text-right.float-right 2012-05-16
+                                li
+                                    a(href='http://www.amchamchina.org/article/5683', target='_blank').title
+                                        | Dalian Booms During Downturn, American Chamber of Commerce, China 
+                                    span.text-right.float-right 2012-03-14
+                                li
+                                    a(href='http://www.china-briefing.com/news/2012/02/21/mandatory-social-welfare-benefits-for-chinese-employees.html', target='_blank').title
+                                        | Mandatory Social Welfare Benefits for Chinese Employees, China Briefing 
+                                    span.text-right.float-right 2012-02-21
+                                li
+                                    a(href='http://www.corporatelivewire.com/top-story.html?id=chinas-social-insurance-law-what-does-it-mean-for-employers-and-foreign-individuals', target='_blank').title
+                                        | China&rsquo;s Social Insurance Law - What Does It Mean For Employers And Foreign Individuals?, Corporate LiveWire 
+                                    span.text-right.float-right 2011-11-18
+                                        .clearfix
+                                li
+                                    a(href='http://www.thatsmags.com/prd/article/617/expat-social-insurance', target='_blank').title
+                                        | Expat Social Insurance, That&apos;s PRD 
+                                    span.text-right.float-right 2011-10-31
+                            ul.pagination.mt-3
+
                         h4.section-title.mb-1.mt-4 Events
-                        form.mt(action='register.html', method='GET')
-                                .form-field.field-group.mb-2
-                                    input#search.required(type='text', name='search', placeholder='Search...', value='')
-                                    button.btn                                                   
-                                        i
-                                            <img src="assets/img/icons-search.png" alt="" width="20px"> 
-                        ul.list.lists-events
-                            li
-                                .date-block.hidden-sm.hidden-xs.hidden-xxs
-                                    | Nov
-                                    span Oct, 2019
-                                .dec-block
-                                    h4
-                                        a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
-                                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
-                                    .date-time
-                                        small
-                                            | Webinar | 27 November 2019 | 3PM-4PM China Time
-                                
-                            li
-                                .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
-                                    | Nov
-                                    span Oct, 2019
-                                .dec-block
-                                    h4
-                                        a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
-                                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
-                                    .date-time
-                                        small
-                                            | Webinar | 27 November 2019 | 3PM-4PM China Time
-                                
-                            li
-                                .date-block.hidden-sm.hidden-xs.hidden-xxs
-                                    | Nov
-                                    span Oct, 2019
-                                .dec-block
-                                    h4
-                                        a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
-                                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
-                                    .date-time
-                                        small
-                                            | Webinar | 27 November 2019 | 3PM-4PM China Time
-                                
-                            li
-                                .date-block.hidden-sm.hidden-xs.hidden-xxs
-                                    | Nov
-                                    span Oct, 2019
-                                .dec-block
-                                    h4
-                                        a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html')
-                                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
-                                    .date-time
-                                        small
-                                            | Webinar | 27 November 2019 | 3PM-4PM China Time                        
-                        ul.pagination.mt-1
-                            li
-                                a(href='#') 1
-                            li
-                                a(href='https://www.dezshira.com/library/search?location=32&page=2') 2
-                            li
-                                a.active(href='https://www.dezshira.com/library/search?location=32&page=3') 3
-                            li
-                                a(href='https://www.dezshira.com/library/search?location=32&page=4') 4
+                        .listJS#eventsList(data-page=3)
+                            form.mt(action='register.html', method='GET')
+                                    .form-field.field-group.mb-2
+                                        input.search.required(type='text', name='search', placeholder='Search...', value='')
+                                        button.btn                                                   
+                                            i
+                                                <img src="assets/img/icons-search.png" alt="" width="20px"> 
+                            ul.list.lists-events
+                                li
+                                    .date-block.hidden-sm.hidden-xs.hidden-xxs
+                                        | Nov
+                                        span Oct, 2019
+                                    .dec-block
+                                        h4
+                                            a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html').title
+                                                | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                                        .date-time
+                                            small
+                                                | Webinar | 27 November 2019 | 3PM-4PM China Time
+                                    
+                                li
+                                    .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
+                                        | Nov
+                                        span Oct, 2019
+                                    .dec-block
+                                        h4
+                                            a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html').title
+                                                | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                                        .date-time
+                                            small
+                                                | Webinar | 27 November 2019 | 3PM-4PM China Time
+                                    
+                                li
+                                    .date-block.hidden-sm.hidden-xs.hidden-xxs
+                                        | Nov
+                                        span Oct, 2019
+                                    .dec-block
+                                        h4
+                                            a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html').title
+                                                | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                                        .date-time
+                                            small
+                                                | Webinar | 27 November 2019 | 3PM-4PM China Time
+                                    
+                                li
+                                    .date-block.hidden-sm.hidden-xs.hidden-xxs
+                                        | Nov
+                                        span Oct, 2019
+                                    .dec-block
+                                        h4
+                                            a(href='https://www.dezshira.com/events/details/the-key-considerations-for-year-end-tax-treatment-and-the-2019-preferential-tax-policy-8494.html').title
+                                                | New Event Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                                        .date-time
+                                            small
+                                                | Webinar | 27 November 2019 | 3PM-4PM China Time                        
+                            ul.pagination.mt-1
+
                 .col-sm.col-md-3.col-lg-3.col-grid
                     h4.section-title ADDITIONAL INFO
                     ul.list
@@ -169,5 +158,5 @@ body
     include components/_footer
 
     //JavaScript
-    script(src="assets/js/glide.min.js")
+    script(src="assets/js/list.min.js")
     script(src="assets/js/scripts.js")    

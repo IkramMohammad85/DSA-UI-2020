@@ -38,7 +38,7 @@ class dropdown {
       event.stopPropagation();
 
       //only toogle nav if the click is NOT on main navigation
-      if(event.target.hasAttribute('data-turn-header-white')){
+      if(event.target.hasAttribute('data-turn-header-white') && window.innerWidth>991){
         if(document.querySelector('nav#main-nav.white')===null){
           this.mainNav.classList.add("white");this.mainNav.querySelector('img.logo').src = 'assets/img/logo-black.png';
         }

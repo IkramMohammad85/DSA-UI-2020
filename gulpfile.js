@@ -27,7 +27,7 @@ var paths = {
 
 	js: {
 		src: ['./src/js/dropdown.js','./src/js/accordion.js','./src/js/scripts.js'],
-		vendor:['node_modules/@glidejs/glide/dist/glide.min.js'],
+		vendor:['node_modules/@glidejs/glide/dist/glide.min.js','node_modules/list.js/dist/list.min.js'],
 		dest: './assets/js'
 	},
 
@@ -57,10 +57,10 @@ gulp.task('sass', function () {
 			cascade: false,
 			grid: 'autoplace'
 		}))
-		.pipe(minifycss({
-			"maxLineLen": 80,
-			"uglyComments": true
-		  }))
+		// .pipe(minifycss({
+		// 	"maxLineLen": 80,
+		// 	"uglyComments": true
+		//   }))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(paths.sass.dest))
 });

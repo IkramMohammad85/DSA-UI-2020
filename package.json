@@ -35,6 +35,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-uglifycss": "^1.1.0",
+    "list.js": "^1.5.0",
     "normalize.css": "^8.0.1",
     "reflex-grid": "^2.0.4"
   }

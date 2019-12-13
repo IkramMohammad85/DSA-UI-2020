@@ -6,26 +6,16 @@
   }
   
   .big-banner {
-    position: relative;
-    .item {
+    .item{
+      position: relative;
+      background-color: $bluedark;
       height: 100vh;
       width: 100%;
       max-height: 1000px;
-      background-color: $bluedark;
-      .heading-brand {
-        //position: relative; z-index: 3; top: 45vh;
-        &::after {
-          content: url(../img/dsa-brand-line.jpg);
-          display: block;
-        }
-      }
 
-      //div to setup background with bottom gradient effect
       .item-image {
-        position: absolute;
-        height: auto;
-        width: 100%;
-        z-index: 0;
+        z-index:0;
+        height:100%;
         &::before {
           content: "";
           position: absolute;
@@ -37,52 +27,43 @@
           background: linear-gradient(0deg, rgba(13, 35, 56, 20) 20%, rgba(13, 35, 56, 0.06774047509628855) 65%);
         }
         img {
-          background-size: cover;
-          width: 100vw;
+          background-size:contain;
+          width: 100%;
+          height:100%;
         }
       }
 
-      //news section of big banner
       .news {
         position: absolute;
         bottom: 10%;
         left: 50%;
         @include transform(translateX(-50%));
 
-        .heading-brand {
-          margin-top: -150px;
-          font-size: 2em;
-          font-weight: 100;
+        h1{
           text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.46);
+          margin-bottom:20px;
         }
         .grid {
           .col-grid {
-            background-color: $bluedark;
             position: relative;
             padding: 0;
             img {
-              opacity: 0.4;
+              filter: brightness(50%);
             }
+
             .news-details {
               position: absolute;
               left: 50%;
               @include transform(translateX(-50%));
               width: 90%;
-              h3,
-              a {
-                color: white;
-              }
-              .btn-link {
-                padding: 0;
-                img {
-                  opacity: 1;
-                }
-              }
+              a{color:white;}
             }
           }
+
         }
       }
     }
+    
   }
   //end of homepage big banner css
 
@@ -223,6 +204,7 @@ ul.navbar {
 
 //Tablets
 @media (max-width: $reflex-lg) {
+  
 }
 
 //Mobile
@@ -247,10 +229,16 @@ ul.navbar {
       //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
       //if any better alternatives, feel free to make change here
       height: 150vh !important;
+
+      .item-image{
+        img{zoom:4;width:auto !important;}
+      }
+
       .news {
         bottom: auto;
         top: 25%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
         .heading-brand {
+          font-size:1.3em;
           margin-top: 0 !important;
         }
         .col-grid {

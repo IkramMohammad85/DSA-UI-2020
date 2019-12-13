@@ -28,8 +28,26 @@ new Glide('section.big-banner.glide', {
       startAt: 0,
       perView: 1,
       animationTimingFunc: 'ease',
+      breakpoints: {
+            300: {perView: 1},
+            992: {perView: 1}
+      }
     }).mount();
 }
+
+//Feature: List.js
+const listElements = document.querySelectorAll(".listJS")
+if (typeof List != "undefined" && listElements) {
+      [].forEach.call(listElements, function(item) {
+            var recordsPerPage=10;
+            if(item.getAttribute('data-page'))
+                  recordsPerPage=item.getAttribute('data-page');
+
+            var options = { valueNames: [ 'title', 'description' ],page: recordsPerPage,pagination: true};
+            new List(item.getAttribute('id'), options);
+      });
+}
+
 
 //Hamburger Menu Click Event Listener
 document.querySelector(".hamburger-menu").addEventListener('click',function(){

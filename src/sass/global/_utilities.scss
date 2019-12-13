@@ -293,6 +293,15 @@
   color: $bright-gray;
   font-weight: 400;
 }
+
+.heading-brand {
+  //position: relative; z-index: 3; top: 45vh;
+  &::after {
+    content: url(../img/dsa-brand-line.jpg);
+    display: block;
+  }
+}
+
 .page-title{
   border-top: 3px solid $deep-blue;
   padding-top: 10px;
