@@ -2314,6 +2314,12 @@ ol, ul {
 .pt-150 {
   padding-top: 150px; }
 
+.pt-25 {
+  padding-top: 25px; }
+
+.pb-25 {
+  padding-bottom: 25px; }
+
 .pt-9 {
   padding-top: 90px; }
 
@@ -2816,11 +2822,24 @@ form .form-field.field-group {
   form .form-field.field-group input {
     margin: 0;
     padding-left: 50px; }
-  form .form-field.field-group button {
+  form .form-field.field-group button.btn-search {
     position: absolute;
     left: 0;
     background: transparent;
     padding-top: 16px; }
+  form .form-field.field-group button.btn-pluse {
+    position: absolute;
+    right: 0;
+    padding: 0px;
+    top: 35px;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    height: 50px;
+    width: 30px; }
+  form .form-field.field-group .select-topic {
+    width: 96%; }
+  form .form-field.field-group .select-city {
+    width: 92%; }
 
 form .form-field label {
   font-size: 14px;
@@ -2886,7 +2905,11 @@ form .form-field select::placeholder {
 
 @media (max-width: 768px) {
   .input-add-on-field {
-    font-size: 15px; } }
+    font-size: 15px; }
+  form .form-field.field-group .select-topic {
+    width: 96%; }
+  form .form-field.field-group .select-city {
+    width: 96%; } }
 
 * {
   box-sizing: border-box; }

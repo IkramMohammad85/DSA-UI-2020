@@ -214,7 +214,7 @@
         </div>
       </div>
     </section>
-    <section class="pt-150 pb-7 grey-bg">
+    <section class="pt-150 pb-7">
       <div class="container">
         <div class="grid">
           <div class="col-sm col-md-8 col-lg-8 col-grid offset-md-2 offset-lg-2"> 
@@ -560,9 +560,9 @@
                   </div>
                 </div>
                 <div class="col-md-12 col-lg-12">
-                  <div class="form-field">
+                  <div class="form-field field-group">
                     <label for="lead_mainproductinterest"><span class="required-field">*</span> Topic of Interest</label>
-                    <select class="required fields_plus" id="lead_mainproductinterest" name="lead_mainproductinterest">
+                    <select class="required fields_plus select-topic" id="lead_mainproductinterest" name="lead_mainproductinterest">
                       <option value="" selected="true" disabled="disabled"> Please select </option>
                       <option value="Accounting &amp; Financial Reporting">Accounting &amp; Financial Reporting</option>
                       <option value="Audit">Audit</option>
@@ -593,32 +593,35 @@
                       <option value="Transfer Pricing">Transfer Pricing</option>
                       <option value="Visa &amp; Work Permits">Visa &amp; Work Permits</option>
                     </select>
+                    <button class="btn btn-pluse btn-secondary">+</button>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
                   <div class="form-field">
-                    <label for="lead_countryofinterest">Country and City of Interest </label><select class="required select-req" id="lead_countryofinterest" name="lead_countryofinterest" onchange="load_interest_city(this.value,'lead_cityofinterest');">
-<option value="" selected="true" disabled="disabled">Please select country</option>
-<option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
-<option value="China">China</option>
-<option value="Hong Kong">Hong Kong</option>
-<option value="India">India</option>
-<option value="Indonesia">Indonesia</option>
-<option value="Malaysia">Malaysia</option>
-<option value="Philippines">Philippines</option>
-<option value="Russia">Russia</option>
-<option value="Singapore">Singapore</option>
-<option value="Thailand">Thailand</option>
-<option value="Vietnam">Vietnam</option>
-</select>
+                    <label for="lead_countryofinterest">Country and City of Interest </label>
+                    <select class="required select-req" id="lead_countryofinterest" name="lead_countryofinterest" onchange="load_interest_city(this.value,'lead_cityofinterest');">
+                      <option value="" selected="true" disabled="disabled">Please select country</option>
+                      <option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
+                      <option value="China">China</option>
+                      <option value="Hong Kong">Hong Kong</option>
+                      <option value="India">India</option>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="Malaysia">Malaysia</option>
+                      <option value="Philippines">Philippines</option>
+                      <option value="Russia">Russia</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Thailand">Thailand</option>
+                      <option value="Vietnam">Vietnam</option>
+                    </select>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
-                  <div class="form-field mt-25">
+                  <div class="form-field pt-25 field-group">
                     <label for="lead_cityofinterest"></label>
-                    <select class="required mt-3 select-req fields_plus" id="lead_cityofinterest" name="lead_cityofinterest">
+                    <select class="required mt-3 select-req fields_plus select-city" id="lead_cityofinterest" name="lead_cityofinterest">
                       <option value="">Please select city</option>
                     </select>
+                    <button class="btn btn-pluse btn-secondary">+</button>
                   </div>
                 </div>
                 <div class="col-md-12 col-lg-12">

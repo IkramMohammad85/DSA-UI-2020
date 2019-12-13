@@ -56,16 +56,32 @@ input[type="submit"] {
 form {
   .form-field {
     &.field-group {
+      position: relative;
       input {
         margin: 0;
         padding-left: 50px;
       }
-      position: relative;
-      button {
+      button.btn-search {
         position: absolute;
         left: 0;
         background: transparent;
         padding-top: 16px;
+      }
+      button.btn-pluse {
+        position: absolute;
+        right: 0;
+        padding:0px;
+        top: 35px;
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px;
+        height: 50px;
+        width: 30px;
+      }
+      .select-topic {
+        width: 96%;
+      }
+      .select-city  {
+        width: 92%;
       }
     }
     label {
@@ -127,4 +143,14 @@ form {
   .input-add-on-field {
     font-size: 15px;
   }
+  form {
+    .form-field.field-group{
+      .select-topic{width: 96%;}
+      .select-city{width: 96%;}
+    }
+  }
 }
+//Mobile
+@media (max-width: $reflex-md) {
+
+  }
