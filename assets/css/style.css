@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1567,7 +1568,7 @@ $border-default: 1px solid #ccc;
     height: 144px; }
   .card.featured-resources .card-body {
     padding: 20px;
-    min-height: 342px; }
+    min-height: 380px; }
     .card.featured-resources .card-body p {
       margin-bottom: 0px; }
   .card.featured-resources .card-footer {
@@ -3149,6 +3150,168 @@ header.site-header .hamburger-menu {
           border-bottom: solid 1px #1a2940; }
   footer.site-footer .copyright .list-inline {
     text-align: left; } }
+
+@font-face {
+  font-family: "dsa-icons";
+  src: url("../fonts/icons/dsa-icons.eot?kbxs19");
+  src: url("../fonts/icons/dsa-icons.eot?kbxs19#iefix") format("embedded-opentype"), url("../fonts/icons/dsa-icons.ttf?kbxs19") format("truetype"), url("../fonts/icons/dsa-icons.woff?kbxs19") format("woff"), url("../fonts/icons/dsa-icons.svg?kbxs19#dsa-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "dsa-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-chevron-down:before {
+  content: ""; }
+
+.icon-twitter-old:before {
+  content: ""; }
+
+.icon-justice:before {
+  content: ""; }
+
+.icon-calendar:before {
+  content: ""; }
+
+.icon-date:before {
+  content: ""; }
+
+.icon-schedule:before {
+  content: ""; }
+
+.icon-angle-up:before {
+  content: ""; }
+
+.icon-industry:before {
+  content: ""; }
+
+.icon-bar-chart:before {
+  content: ""; }
+
+.icon-bar-chart-o:before {
+  content: ""; }
+
+.icon-file-text-o:before {
+  content: ""; }
+
+.icon-book:before {
+  content: ""; }
+
+.icon-arrow-circle-o-down:before {
+  content: ""; }
+
+.icon-play-circle:before {
+  content: ""; }
+
+.icon-envelope-open:before {
+  content: ""; }
+
+.icon-envelope:before {
+  content: ""; }
+
+.icon-laptop:before {
+  content: ""; }
+
+.icon-minus:before {
+  content: ""; }
+
+.icon-plus:before {
+  content: ""; }
+
+.icon-help-with-circle:before {
+  content: ""; }
+
+.icon-envelope1:before {
+  content: ""; }
+
+.icon-arrow-down-alt1:before {
+  content: ""; }
+
+.icon-download:before {
+  content: ""; }
+
+.icon-envelope2:before {
+  content: ""; }
+
+.icon-mail:before {
+  content: ""; }
+
+.icon-email:before {
+  content: ""; }
+
+.icon-contact:before {
+  content: ""; }
+
+.icon-book1:before {
+  content: ""; }
+
+.icon-books:before {
+  content: ""; }
+
+.icon-file-text2:before {
+  content: ""; }
+
+.icon-copy:before {
+  content: ""; }
+
+.icon-address-book:before {
+  content: ""; }
+
+.icon-location:before {
+  content: ""; }
+
+.icon-map2:before {
+  content: ""; }
+
+.icon-calendar1:before {
+  content: ""; }
+
+.icon-bubbles:before {
+  content: ""; }
+
+.icon-user:before {
+  content: ""; }
+
+.icon-search:before {
+  content: ""; }
+
+.icon-cloud-download:before {
+  content: ""; }
+
+.icon-sphere:before {
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-facebook2:before {
+  content: ""; }
+
+.icon-twitter:before {
+  content: ""; }
+
+.icon-youtube:before {
+  content: ""; }
+
+.icon-youtube2:before {
+  content: ""; }
+
+.icon-linkedin:before {
+  content: ""; }
+
+.icon-linkedin2:before {
+  content: ""; }
 
 .home header.site-header #main-nav {
   background: rgba(13, 35, 56, 0.8); }

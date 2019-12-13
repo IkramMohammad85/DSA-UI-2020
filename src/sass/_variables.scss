@@ -141,6 +141,59 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 
 $border-default: 1px solid #ccc;
+// icons
+$dsa-icons-font-family: "dsa-icons" !default;
+$dsa-icons-font-path: "../fonts/icons" !default;
+
+$icon-chevron-down: "\e913";
+$icon-twitter-old: "\e900";
+$icon-justice: "\e901";
+$icon-calendar: "\e902";
+$icon-date: "\e902";
+$icon-schedule: "\e902";
+$icon-angle-up: "\e910";
+$icon-industry: "\e903";
+$icon-bar-chart: "\e904";
+$icon-bar-chart-o: "\e904";
+$icon-file-text-o: "\e905";
+$icon-book: "\e906";
+$icon-arrow-circle-o-down: "\e907";
+$icon-play-circle: "\e908";
+$icon-envelope-open: "\e909";
+$icon-envelope: "\e90a";
+$icon-laptop: "\e90b";
+$icon-minus: "\e911";
+$icon-plus: "\e912";
+$icon-help-with-circle: "\e90c";
+$icon-envelope1: "\e90d";
+$icon-arrow-down-alt1: "\e90e";
+$icon-download: "\e90e";
+$icon-envelope2: "\e90f";
+$icon-mail: "\e90f";
+$icon-email: "\e90f";
+$icon-contact: "\e90f";
+$icon-book1: "\e91f";
+$icon-books: "\e920";
+$icon-file-text2: "\e926";
+$icon-copy: "\e92c";
+$icon-address-book: "\e944";
+$icon-location: "\e947";
+$icon-map2: "\e94c";
+$icon-calendar1: "\e953";
+$icon-bubbles: "\e96c";
+$icon-user: "\e971";
+$icon-search: "\e986";
+$icon-cloud-download: "\e9c2";
+$icon-sphere: "\e9c9";
+$icon-facebook: "\ea90";
+$icon-facebook2: "\ea91";
+$icon-twitter: "\ea96";
+$icon-youtube: "\ea9d";
+$icon-youtube2: "\ea9e";
+$icon-linkedin: "\eac9";
+$icon-linkedin2: "\eaca";
+
+
 
 
 
