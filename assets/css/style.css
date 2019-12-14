@@ -1643,6 +1643,23 @@ $border-default: 1px solid #ccc;
   padding-left: 0;
   list-style: none; }
 
+.list-inline.list-inline-icons {
+  margin-bottom: 0; }
+  .list-inline.list-inline-icons li {
+    width: 27px;
+    height: 27px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: #007bff;
+    padding: 5px;
+    text-align: center; }
+    .list-inline.list-inline-icons li a {
+      color: #fff; }
+
 .list-inline li {
   display: inline-block; }
   .list-inline li:not(:last-child) {
@@ -1830,6 +1847,8 @@ $border-default: 1px solid #ccc;
   display: flex;
   -webkit-box-align: center;
   align-items: center; }
+  .banner.banner-sm {
+    height: 170px; }
   .banner.top-postion-24 {
     top: 24px; }
   .banner.top-postion-0 {
@@ -1843,7 +1862,7 @@ $border-default: 1px solid #ccc;
   .banner .img {
     position: relative;
     background-size: initial;
-    width: 100%;
+    width: auto;
     background-position: initial; }
   .banner h1,
   .banner h2,
@@ -1873,6 +1892,8 @@ $border-default: 1px solid #ccc;
   .banner {
     height: auto;
     padding: 25px 0px; }
+    .banner.banner-sm {
+      height: auto; }
     .banner img {
       width: auto; }
     .banner h1 {

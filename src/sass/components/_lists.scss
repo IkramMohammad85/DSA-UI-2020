@@ -34,6 +34,22 @@
   list-style: none;
 }
 .list-inline {
+  &.list-inline-icons{
+    margin-bottom: 0;
+    li{ 
+      width: 27px;
+      height: 27px;
+      @include font-size(12px);
+      color: $white;
+      @include border-radius(50%);
+      background-color: $blue;
+      padding: 5px;
+      text-align: center;
+      a{
+        color: $white;
+      }
+    }
+  }
   li {
     display: inline-block;
     &:not(:last-child) {

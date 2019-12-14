@@ -1,4 +1,7 @@
 .banner {
+  &.banner-sm{
+    height: 170px;
+  }
   position: relative;
   overflow: hidden;
   height: 340px;
@@ -23,7 +26,7 @@
   .img{ 
     position: relative;
     background-size: initial;
-    width: 100%;
+    width: auto;
     background-position: initial;
 
   }
@@ -55,6 +58,9 @@
 //Mobile
 @media (max-width: $reflex-md) {
   .banner {
+    &.banner-sm{
+      height: auto;
+    }
     img {
       width: auto;
     }
