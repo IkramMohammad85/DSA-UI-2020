@@ -2842,7 +2842,7 @@ form .form-field.field-group {
   form .form-field.field-group input {
     margin: 0;
     padding-left: 50px; }
-  form .form-field.field-group button.btn-search {
+  form .form-field.field-group .group-field-btn {
     position: absolute;
     left: 0;
     background: transparent;
