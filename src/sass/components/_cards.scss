@@ -152,6 +152,16 @@
   &.news {
     height: 482px;
     .card-header-img {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: linear-gradient(0deg, rgba(13, 35, 56, 20) 20%, rgba(13, 35, 56, 0.06774047509628855) 65%);
+      }
       height: 482px;
       .card-text-overlap {
         bottom: 10%;
@@ -163,6 +173,16 @@
   &.news-right {
     height: 230px;
     .card-header-img {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: linear-gradient(0deg, rgba(13, 35, 56, 20) 20%, rgba(13, 35, 56, 0.06774047509628855) 65%);
+      }
       height: 230px;
       .card-text-overlap {
         bottom: 10%;
