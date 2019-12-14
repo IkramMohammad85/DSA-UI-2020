@@ -3313,6 +3313,12 @@ header.site-header .hamburger-menu {
 .icon-linkedin2:before {
   content: ""; }
 
+.icon-2x {
+  font-size: 2em; }
+
+.icon-3x {
+  font-size: 3em; }
+
 .home header.site-header #main-nav {
   background: rgba(13, 35, 56, 0.8); }
 
@@ -3374,7 +3380,9 @@ header.site-header .hamburger-menu {
   .home section.about-us .transparent-bg {
     min-height: 370px;
     color: #fff;
-    position: relative; }
+    position: relative;
+    -webkit-transition: 0.5s background-color ease-in-out;
+    transition: 0.5s background-color ease-in-out; }
     .home section.about-us .transparent-bg h2 {
       color: #fff; }
     .home section.about-us .transparent-bg a {
@@ -3383,6 +3391,8 @@ header.site-header .hamburger-menu {
       background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.8)), color-stop(9%, rgba(0, 0, 0, 0.5)), color-stop(9%, rgba(0, 0, 0, 0.8)));
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 9%, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.8) 9%);
       cursor: pointer; }
+      .home section.about-us .transparent-bg:hover i {
+        color: #007bff; }
     .home section.about-us .transparent-bg .center-block {
       margin-top: 0px;
       margin-bottom: 20px; }
