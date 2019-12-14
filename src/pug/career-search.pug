@@ -16,15 +16,15 @@ body
             .grid.align-end
                 .col-sm-7.col-md-7.col-grid
                     h1 Careers
-                    h4 Working at Dezan Shira & Associates is about growth. That means developing skills, making a difference, and achieving goals to help colleagues and clients reach new heights.        
+                    p Working at Dezan Shira & Associates is about growth. That means developing skills, making a difference, and achieving goals to help colleagues and clients reach new heights.        
     section.pt-150.pb-7
         .container
             .grid
                 .col-sm-12.col-md-8.col-lg-8.col-grid
                         h4.section-title.mb-3 OPEN POSITIONS
                         form(action='https://www.dezshira.com/events/search', method='GET')
-                            .border.mb-2
-                                .row
+                            .p-arround-2.border.mb-4
+                                .grid
                                     .col-md-3.col-lg-3
                                         label Location
                                         select(name='location')
@@ -49,12 +49,12 @@ body
                                     .col-md-3.col-lg-3
                                         label Role
                                         select(name='role')
-                                            option(value='') Any
-                                            option(value='Assistant (Intern)') Assistant (Intern)
-                                            option(value='Associate') Associate
-                                            option(value='Manager') Manager
-                                            option(value='Director') Director
-                                            option(value='Research & Editorial') Research &amp; Editorial
+                                                option(value='') Any
+                                                option(value='Assistant (Intern)') Assistant (Intern)
+                                                option(value='Associate') Associate
+                                                option(value='Manager') Manager
+                                                option(value='Director') Director
+                                                option(value='Research & Editorial') Research &amp; Editorial
                                     .col-md-3.col-lg-3
                                         label Type
                                         select(name='type')
@@ -62,234 +62,314 @@ body
                                             option(value='intern') Intern
                                             option(value='permanent', selected='') Permanent                                          
                                     .col-md-12.col-lg-12.text-right
-                                        button.btn.btn-primary(type='submit')
-                                            | Search
-                        ul.list
+                                        button.btn.btn-primary(type='submit') Search
+
+                        ul.list.list-content
                             li
                                 a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') ASEAN Marketing Associate
-                                h5 Associate | Marketing
-                                h6.text-muted Ho Chi Minh City | Vietnam
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Editor, Asia Briefing
-                                h5 Associate | Asia Briefing Editorial
-                                h6.text-muted Delhi | India
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Graphic Designer, Asia Briefing
-                                h5 Associate | Marketing
-                                h6.text-muted Delhi | India
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Junior Associate / Associate, Corporate Accounting Services
-                                h5 Associate | Corporate Accounting Services
-                                h6.text-muted Singapore | Singapore
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Junior Company Secretary
-                                h5 Associate | Business Advisory Services
-                                h6.text-muted Singapore | Singapore
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') CRM Data and Process Coordinator
-                                h5 Associate | Marketing
-                                h6.text-muted New Delhi | India
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Specialist of Business Advisory Services Department &#x6CD5;&#x5F8B;&#x90E8;&#x4E13;&#x5458;
-                                h5 Associate | Business Advisory Services
-                                h6.text-muted Shanghai | China
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Dynamics 365 CRM - Sr. Developer
-                                h5 Associate | Marketing
-                                h6.text-muted Delhi | India
-                            li
-                                a.btn.btn-outline-dark.float-right(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Junior Associate, Business Advisory Service
-                                h5 Associate | Business Advisory Services
-                                h6.text-muted Shanghai | China
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Senior Associate, Business Advisory Service
-                                h5 Associate | Business Advisory Services
-                                h6.text-muted Shanghai | China
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Assistant Manager, Business Intelligence
-                                h5 Manager | Business Intelligence
-                                h6.text-muted Ho Chi Minh City | Vietnam
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Senior Accounting &amp; Tax Manager
-                                h5 Manager | Corporate Accounting Services
-                                h6.text-muted Shanghai | China
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Associate of Corporate Accounting Services
-                                h5 Associate | Corporate Accounting Services
-                                h6.text-muted Shanghai | China
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Junior Accounting Associate
-                                h5 Associate | Corporate Accounting Services
-                                h6.text-muted Suzhou | China
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
-                                    a(href='career-single.html') Accounting Associate
-                                h5 Associate | Corporate Accounting Services
-                                h6.text-muted Beijing | China
-                            li
-                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
-                                h3
+                                h3.mb-1
                                     a(href='career-single.html') Contributing Editors, Researchers and Analysts
-                                h5 Research &amp; Editorial | Asia Briefing Editorial
-                                h6.text-muted All Offices | Other-regions
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
+                            li
+                                a.btn.btn-outline-dark.float-right.ml-2(href='#', role='button') Full time
+                                h3.mb-1
+                                    a(href='career-single.html') Contributing Editors, Researchers and Analysts
+                                p.mb-0
+                                    strong 
+                                        |Research &amp; Editorial | Asia Briefing Editorial
+                                p.mb-0.text-muted All Offices | Other-regions
                         .clearfix                     
                 .col-sm-12.col-md-4.col-lg-4.col-grid
                     h4.section-title FEATURED POSITIONS  
-                    ul.list
+                    ul.list.list-content
                         li
                             h4
                                 a(href='career-single.html') Global Business Development Assistant role (Shanghai)
-                            h5 Assistant (Intern) | International Business Advisory
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | International Business Advisory
+                            p.mb-0.text-muted Shanghai | China
                         li
                             h4
                                 a(href='career-single.html') Editorial Assistant (Singapore)
-                            h5 Assistant (Intern) | Asia Briefing Editorial
-                            h6.text-muted Singapore | Singapore
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | Asia Briefing Editorial
+                            p.mb-0.text-muted Singapore | Singapore
                         li
                             h4
                             a(href='career-single.html') Editorial Assistant (China)
-                            h5 Assistant (Intern) | Asia Briefing Editorial
-                            h6.text-muted Dalian/Beijing/Shanghai/Shenzhen | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | Asia Briefing Editorial
+                            p.mb-0.text-muted Dalian/Beijing/Shanghai/Shenzhen | China
                         li
                             h4
                                 a(href='career-single.html') Global Business Development Assistant role (Shanghai), Russian speaking
-                            h5 Assistant (Intern) | 
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | 
+                            p.mb-0.text-muted Shanghai | China
                         li
                             h4
                                 a(href='career-single.html') Marketing &amp; Operation Assistant (China)
-                            h5 Assistant (Intern) | Marketing
-                            h6.text-muted Beijing, Shanghai, Shenzhen, Guangzhou | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | Marketing
+                            p.mb-0.text-muted.text-muted Beijing, Shanghai, Shenzhen, Guangzhou | China
                         li
                             h4
                                 a(href='career-single.html') Senior Accounting &amp; Tax Manager
-                            h5 Manager | Corporate Accounting Services
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Manager | Corporate Accounting Services
+                            p.mb-0.text-muted.text-muted Shanghai | China
                         li
                             h4
                                 a(href='career-single.html') International Business Advisory Assistant (French Speaking)
-                            h5 Assistant (Intern) | Asia Briefing Editorial
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | Asia Briefing Editorial
+                            p.mb-0.text-muted Shanghai | China
                         li
                             h4
                             a(href='career-single.html') Assistant Manager, Business Intelligence
-                            h5 Manager | Business Intelligence
-                            h6.text-muted Ho Chi Minh City | Vietnam
+                            p.mb-0
+                                strong 
+                                    | Manager | Business Intelligence
+                            p.mb-0.text-muted Ho Chi Minh City | Vietnam
                         li
                             h4
                                 a(href='career-single.html') Junior Associate, Business Advisory Service
-                            h5 Associate | Business Advisory Services
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Associate | Business Advisory Services
+                            p.mb-0.text-muted Shanghai | China
                         li
                             h4
                                 a(href='career-single.html') Senior Associate, Business Advisory Service
-                            h5 Associate | Business Advisory Services
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Associate | Business Advisory Services
+                            p.mb-0.text-muted Shanghai | China
                         li
                             h4
                             a(href='career-single.html') International Business Advisory Intern (German Speaking)
-                            h5 Assistant (Intern) | International Business Advisory
-                            h6.text-muted Shanghai, Beijing, Qingdao | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | International Business Advisory
+                            p.mb-0.text-muted Shanghai, Beijing, Qingdao | China
                         li
                             h4
                                 a(href='career-single.html') Specialist of Business Advisory Services Department &#x6CD5;&#x5F8B;&#x90E8;&#x4E13;&#x5458;
-                            h5 Associate | Business Advisory Services
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Associate | Business Advisory Services
+                            p.mb-0.text-muted Shanghai | China
                         li
                             h4
                                 a(href='career-single.html') Dynamics 365 CRM - Sr. Developer
-                            h5 Associate | Marketing
-                            h6.text-muted Delhi | India
+                            p.mb-0
+                                strong 
+                                    | Associate | Marketing
+                            p.mb-0.text-muted Delhi | India
                         li
                             h4
                                 a(href='career-single.html') International Business Advisory Intern
-                            h5 Assistant (Intern) | International Business Advisory
-                            h6.text-muted HCMC | Vietnam
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | International Business Advisory
+                            p.mb-0.text-muted HCMC | Vietnam
                         li
                             h4
                                 a(href='career-single.html') Marketing  Assistant
-                            h5 Assistant (Intern) | Marketing
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | Marketing
+                            p.mb-0.text-muted Shanghai | China
                         li
                             h4
                                 a(href='career-single.html') International Business Advisory Intern
-                            h5 Assistant (Intern) | International Business Advisory
-                            h6.text-muted Beijing | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | International Business Advisory
+                            p.mb-0.text-muted Beijing | China
                         li
                             h4.text-muted
                                 a(href='career-single.html') CRM Data and Process Coordinator
-                            h5 Associate | Marketing
-                            h6.text-muted New Delhi | India
+                            p.mb-0
+                                strong 
+                                    | Associate | Marketing
+                            p.mb-0.text-muted New Delhi | India
                         li
                             h4
                                 a(href='career-single.html') Graphic Designer, Asia Briefing
-                            h5 Associate | Marketing
-                            h6.text-muted Delhi | India
+                            p.mb-0
+                                strong 
+                                    | Associate | Marketing
+                            p.mb-0.text-muted Delhi | India
                         li
                             h4
                                 a(href='career-single.html') Business Intelligence Intern
-                            h5 Assistant (Intern) | Business Intelligence
-                            h6.text-muted HCMC / Hanoi | Vietnam
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | Business Intelligence
+                            p.mb-0.text-muted HCMC / Hanoi | Vietnam
                         li
                             h4
                                 a(href='career-single.html') Junior Company Secretary
-                            h5 Associate | Business Advisory Services
-                            h6.text-muted Singapore | Singapore
+                            p.mb-0
+                                strong 
+                                    | Associate | Business Advisory Services
+                            p.mb-0.text-muted Singapore | Singapore
                         li
                             h4
                                 a(href='career-single.html') Junior Associate / Associate, Corporate Accounting Services
-                            h5 Associate | Corporate Accounting Services
-                            h6.text-muted Singapore | Singapore
+                            p.mb-0
+                                strong 
+                                    | Associate | Corporate Accounting Services
+                            p.mb-0.text-muted Singapore | Singapore
                         li
                             h4
                                 a(href='career-single.html') Editor, Asia Briefing
-                            h5 Associate | Asia Briefing Editorial
-                            h6.text-muted Delhi | India
+                            p.mb-0
+                                strong 
+                                    | Associate | Asia Briefing Editorial
+                            p.mb-0.text-muted Delhi | India
                         li
                             h4
                                 a(href='career-single.html') ASEAN Marketing Associate
                             h5 Associate | Marketing
-                            h6.text-muted Ho Chi Minh City | Vietnam
+                            p.mb-0.text-muted Ho Chi Minh City | Vietnam
                         li
                             h4
                                 a(href='career-single.html') International Business Advisory Assistant, Spanish Desk
-                            h5 Assistant (Intern) | International Business Advisory
-                            h6.text-muted Shanghai | China
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | International Business Advisory
+                            p.mb-0.text-muted Shanghai | China
                         li
                             h4
                                 a(href='career-single.html') Marketing Assistant, Spanish Desk
-                            h5 Assistant (Intern) | Marketing
-                            h6.text-muted Shanghai | China                                                                                                                                                                        
+                            p.mb-0
+                                strong 
+                                    | Assistant (Intern) | Marketing
+                            p.mb-0.text-muted Shanghai | China                                                                                                                                                                        
     include components/_footer
 
     //JavaScript

@@ -1618,6 +1618,9 @@ $border-default: 1px solid #ccc;
   padding: 0;
   margin: 0;
   list-style: none; }
+  .list.list-content li {
+    padding-top: 20px;
+    padding-bottom: 20px; }
   .list li {
     padding: 12px 0px;
     border-bottom: solid 1px #e7e7e7;
@@ -1846,13 +1849,15 @@ $border-default: 1px solid #ccc;
   .banner h2,
   .banner h3,
   .banner h4,
-  .banner h5 {
+  .banner h5,
+  .banner p {
     color: #fff; }
     .banner h1 a,
     .banner h2 a,
     .banner h3 a,
     .banner h4 a,
-    .banner h5 a {
+    .banner h5 a,
+    .banner p a {
       color: #fff; }
   .banner .btn {
     display: table; }
