@@ -2011,7 +2011,7 @@ $border-default: 1px solid #ccc;
 @font-face {
   font-family: 'Myriad Pro';
   src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.otf") format("opentype"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
-  font-weight: 700;
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
@@ -2024,7 +2024,6 @@ body {
   color: #000;
   font-size: 1.1rem;
   font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 400;
   line-height: 1.5;
   font-weight: 100; }
 
@@ -2038,9 +2037,9 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: "NimbusSanL", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 700;
   line-height: 1.2;
-  color: #000; }
+  color: #000;
+  font-weight: normal; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
     color: inherit; }
@@ -2059,7 +2058,7 @@ p {
 
 ol, ul {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem; }
 
 .btn {
   border-radius: 0px;

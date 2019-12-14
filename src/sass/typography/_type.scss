@@ -27,7 +27,7 @@
 @font-face {
   font-family: 'Myriad Pro';
   src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.otf") format("opentype"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
-  font-weight: 700;
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
@@ -40,7 +40,7 @@ body {
     color: $black;
     font-size: $font-size-base;
     font-family:$font-family-base;
-    font-weight: $font-weight-base;
+    //font-weight: $font-weight-base;
     line-height:$line-height-base;
     font-weight:100;
   }
@@ -59,9 +59,9 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: $headings-margin-bottom;
   font-family: $font-family-head;
-  font-weight: $font-weight-bold;
   line-height: $headings-line-height;
   color: $black;
+  font-weight: normal;
 
   small {
     color: inherit;
@@ -86,6 +86,6 @@ p {
 
 ol, ul {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: $paragraph-margin-bottom;
 }
 
