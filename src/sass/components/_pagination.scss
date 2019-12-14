@@ -15,14 +15,16 @@
     @include font-size(12px);
     &:hover {
       &:not(.active) {
-        background-color:$light-blue;
+        background-color: $light-blue;
         color: $white;
       }
     }
   }
-  a.active {
-    background-color: $light-blue;
-    color: $white;
-    border: 1px solid $light-blue;
+  li.active {
+    a {
+      background-color: $light-blue;
+      color: $white;
+      border: 1px solid $light-blue;
+    }
   }
 }

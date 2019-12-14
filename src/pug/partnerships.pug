@@ -16,7 +16,7 @@ body
             .grid.align-end
                 .col-sm.col-md-6.col-lg-6.col-grid
                     h1 Our Global Partners
-                    h4 
+                    p 
                         | We partner with organisations across the world to give us a truly global presence. Discover each of our regions’ key partners below.       
     section.pt-150.pb-7
         .container
@@ -51,8 +51,8 @@ body
                     .listJS#partnershipList(data-page=5)
                         form
                             .form-field.field-group
-                                input.search
-                                button.btn                                                   
+                                input.search(type='text', name='search', placeholder='Search...')
+                                button.btn.btn-search                                                    
                                     <img src="assets/img/icons-search.png" alt="" width="20px">
                         ul.list.lists-img-thumbnail
                             li

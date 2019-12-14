@@ -18,7 +18,8 @@
     }
     .accordion-heading {
       background: $soft-bluish-gray;
-      margin-bottom: 10px;
+      padding: 7px 12px;
+      margin-bottom: 5px;
       &:hover {
         background-color: $dark-light-blue;
         color: $white;
@@ -81,6 +82,12 @@
             border-bottom: solid 1px $gray-200;
             &:hover {
               background: $white;
+            }
+          }
+          li.active {
+            background-color: $white;
+            a {
+              color: $dark-light-blue;
             }
           }
         }
