@@ -389,7 +389,79 @@ body
                                         option(value='Tax Compliance') Tax Compliance
                                         option(value='Transfer Pricing') Transfer Pricing
                                         option(value='Visa & Work Permits') Visa &amp; Work Permits
-                                    button.btn.btn-pluse.btn-secondary +
+                                    .btn.group-field-btn.btn-plus-minus.btn-secondary 
+                                        i
+                                            .icon-plus
+                            .col-md-12.col-lg-12.pt-0
+                                .form-field.field-group
+                                    select#lead_mainproductinterest.required.fields_plus.select-topic(name='lead_mainproductinterest')
+                                        option(value='', selected='true', disabled='disabled')  Please select 
+                                        option(value='Accounting & Financial Reporting') Accounting &amp; Financial Reporting
+                                        option(value='Audit') Audit
+                                        option(value='Background Check') Background Check
+                                        option(value='Contract Draft & Review') Contract Draft &amp; Review
+                                        option(value='Corporate Establishment') Corporate Establishment
+                                        option(value='Corporate Governance / Compliance') Corporate Governance / Compliance
+                                        option(value='Corporate Structuring / Re-Structuring') Corporate Structuring / Re-Structuring
+                                        option(value='ERP or IT Systems') ERP or IT Systems
+                                        option(value='FDI Regulations') FDI Regulations
+                                        option(value='Financial Due Diligence') Financial Due Diligence
+                                        option(value='Human Resources') Human Resources
+                                        option(value='Intellectual Property') Intellectual Property
+                                        option(value='International Tax Advisory & Structuring') International Tax Advisory &amp; Structuring
+                                        option(value='Joint Ventures') Joint Ventures
+                                        option(value='Legal Advisory') Legal Advisory
+                                        option(value='Legal Due Diligence') Legal Due Diligence
+                                        option(value='M&A Transaction') M&amp;A Transaction
+                                        option(value='Market Research') Market Research
+                                        option(value='None') None
+                                        option(value='Other') Other
+                                        option(value='Payroll Processing') Payroll Processing
+                                        option(value='Recruitment') Recruitment
+                                        option(value='Site Selection or Relocation') Site Selection or Relocation
+                                        option(value='Tax Advisory & Planning for Companies') Tax Advisory &amp; Planning for Companies
+                                        option(value='Tax Advisory & Planning for Individuals') Tax Advisory &amp; Planning for Individuals
+                                        option(value='Tax Compliance') Tax Compliance
+                                        option(value='Transfer Pricing') Transfer Pricing
+                                        option(value='Visa & Work Permits') Visa &amp; Work Permits
+                                    .btn.group-field-btn.btn-plus-minus.btn-secondary.btn-minus 
+                                        i
+                                            .icon-minus
+                            .col-md-12.col-lg-12.pt-0
+                                .form-field.field-group
+                                    select#lead_mainproductinterest.required.fields_plus.select-topic(name='lead_mainproductinterest')
+                                        option(value='', selected='true', disabled='disabled')  Please select 
+                                        option(value='Accounting & Financial Reporting') Accounting &amp; Financial Reporting
+                                        option(value='Audit') Audit
+                                        option(value='Background Check') Background Check
+                                        option(value='Contract Draft & Review') Contract Draft &amp; Review
+                                        option(value='Corporate Establishment') Corporate Establishment
+                                        option(value='Corporate Governance / Compliance') Corporate Governance / Compliance
+                                        option(value='Corporate Structuring / Re-Structuring') Corporate Structuring / Re-Structuring
+                                        option(value='ERP or IT Systems') ERP or IT Systems
+                                        option(value='FDI Regulations') FDI Regulations
+                                        option(value='Financial Due Diligence') Financial Due Diligence
+                                        option(value='Human Resources') Human Resources
+                                        option(value='Intellectual Property') Intellectual Property
+                                        option(value='International Tax Advisory & Structuring') International Tax Advisory &amp; Structuring
+                                        option(value='Joint Ventures') Joint Ventures
+                                        option(value='Legal Advisory') Legal Advisory
+                                        option(value='Legal Due Diligence') Legal Due Diligence
+                                        option(value='M&A Transaction') M&amp;A Transaction
+                                        option(value='Market Research') Market Research
+                                        option(value='None') None
+                                        option(value='Other') Other
+                                        option(value='Payroll Processing') Payroll Processing
+                                        option(value='Recruitment') Recruitment
+                                        option(value='Site Selection or Relocation') Site Selection or Relocation
+                                        option(value='Tax Advisory & Planning for Companies') Tax Advisory &amp; Planning for Companies
+                                        option(value='Tax Advisory & Planning for Individuals') Tax Advisory &amp; Planning for Individuals
+                                        option(value='Tax Compliance') Tax Compliance
+                                        option(value='Transfer Pricing') Transfer Pricing
+                                        option(value='Visa & Work Permits') Visa &amp; Work Permits
+                                    .btn.group-field-btn.btn-plus-minus.btn-secondary.btn-minus
+                                        i
+                                            .icon-minus
                             .col-md-6.col-lg-6
                                 .form-field
                                     label(for='lead_countryofinterest') Country and City of Interest 
@@ -407,11 +479,57 @@ body
                                         option(value='Thailand') Thailand
                                         option(value='Vietnam') Vietnam
                             .col-md-6.col-lg-6
-                                .form-field.pt-25.field-group
+                                .form-field.pt-27.field-group
                                     label(for='lead_cityofinterest')
                                     select#lead_cityofinterest.required.mt-3.select-req.fields_plus.select-city(name='lead_cityofinterest')
                                         option(value='') Please select city
-                                    button.btn.btn-pluse.btn-secondary +
+                                    .btn.group-field-btn.btn-plus-minus.btn-pluse-minus-city.btn-secondary 
+                                        i
+                                            .icon-plus
+                            .col-md-6.col-lg-6.pt-0
+                                .form-field
+                                    select#lead_countryofinterest.required.select-req(name='lead_countryofinterest', onchange="load_interest_city(this.value,'lead_cityofinterest');")
+                                        option(value='', selected='true', disabled='disabled') Please select country
+                                        option(value='Belt & Road Initiative') Belt &amp; Road Initiative
+                                        option(value='China') China
+                                        option(value='Hong Kong') Hong Kong
+                                        option(value='India') India
+                                        option(value='Indonesia') Indonesia
+                                        option(value='Malaysia') Malaysia
+                                        option(value='Philippines') Philippines
+                                        option(value='Russia') Russia
+                                        option(value='Singapore') Singapore
+                                        option(value='Thailand') Thailand
+                                        option(value='Vietnam') Vietnam
+                            .col-md-6.col-lg-6.pt-0
+                                .form-field.field-group
+                                    select#lead_cityofinterest.required.mt-3.select-req.fields_plus.select-city(name='lead_cityofinterest')
+                                        option(value='') Please select city
+                                    .btn.group-field-btn.btn-plus-minus.btn-pluse-minus-city.btn-secondary.btn-minus 
+                                        i
+                                            .icon-minus
+                            .col-md-6.col-lg-6.pt-0
+                                .form-field
+                                    select#lead_countryofinterest.required.select-req(name='lead_countryofinterest', onchange="load_interest_city(this.value,'lead_cityofinterest');")
+                                        option(value='', selected='true', disabled='disabled') Please select country
+                                        option(value='Belt & Road Initiative') Belt &amp; Road Initiative
+                                        option(value='China') China
+                                        option(value='Hong Kong') Hong Kong
+                                        option(value='India') India
+                                        option(value='Indonesia') Indonesia
+                                        option(value='Malaysia') Malaysia
+                                        option(value='Philippines') Philippines
+                                        option(value='Russia') Russia
+                                        option(value='Singapore') Singapore
+                                        option(value='Thailand') Thailand
+                                        option(value='Vietnam') Vietnam
+                            .col-md-6.col-lg-6.pt-0
+                                .form-field.field-group
+                                    select#lead_cityofinterest.required.mt-3.select-req.fields_plus.select-city(name='lead_cityofinterest')
+                                        option(value='') Please select city
+                                    .btn.group-field-btn.btn-plus-minus.btn-pluse-minus-city.btn-secondary.btn-minus
+                                        i
+                                            .icon-minus                                                                  
                             .col-md-12.col-lg-12
                                     input#lead_optout.margin-left-none(type='checkbox', name='lead_optout', value='Y', checked='checked')
                                     label(for='lead_optout') Yes, please send me business news and updates for Asia.

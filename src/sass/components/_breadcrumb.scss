@@ -1,17 +1,20 @@
 .breadcrumb {
-	ul { padding: 0; margin: 0;
-		li {
-			@include font-size(14px);
-			a {
-				color: $bright-gray;
-			}
-		}
-		li+li {
-			&:before {
-				padding: 8px;
-				content: "\003e";
-				color: $bright-gray;
-			}
-		}
-	}
+  border-bottom: solid 1px #ebebeb;
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      @include font-size(14px);
+      a {
+        color: $bright-gray;
+      }
+    }
+    li + li {
+      &:before {
+        padding: 8px;
+        content: "\003e";
+        color: $bright-gray;
+      }
+    }
+  }
 }

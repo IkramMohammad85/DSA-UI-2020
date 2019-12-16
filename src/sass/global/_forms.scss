@@ -36,7 +36,7 @@ select,
 textarea {
   width: 100%;
   padding: 8px 10px;
-  margin: 6px 0;
+  margin: 0;
   display: inline-block;
   border: $border-default;
   border-color: #e7e7e7;
@@ -63,19 +63,26 @@ form {
       }
       .group-field-btn {
         position: absolute;
-        left: 0;
-        background: transparent;
-        padding-top: 16px;
-      }
-      button.btn-pluse {
-        position: absolute;
-        right: 0;
-        padding:0px;
-        top: 35px;
-        border-bottom-right-radius: 2px;
-        border-top-right-radius: 2px;
-        height: 50px;
-        width: 30px;
+        &.btn-serach{
+          left: 0;
+          background: transparent;
+          padding-top: 16px; color: $gray-400;
+        }
+        &.btn-plus-minus{
+          right: 0;
+          top: 32px;
+          border-bottom-right-radius: 2px;
+          border-top-right-radius: 2px;
+          height: 49px;
+          width: 3%;
+          padding: 16px 0px;
+          &.btn-plus-minus.btn-pluse-minus-city{
+            width: 6%;
+          }
+          &.btn-plus-minus.btn-minus{
+            top: 6px;
+          }
+        }
       }
       .select-topic {
         width: 97%;
@@ -104,7 +111,7 @@ form {
       -o-transition: all 0.4s;
       -moz-transition: all 0.4s;
       transition: all 0.4s;
-      margin-top: 10px;
+      margin-top: 5px;
       border-color: $gray-200;
     }
     input,
@@ -138,19 +145,33 @@ form {
     }
   }
 }
-//Tablets
+//Mobile
 @media (max-width: $reflex-sm) {
   .input-add-on-field {
     font-size: 15px;
   }
   form {
-    .form-field.field-group{
-      .select-topic{width: 96%;}
-      .select-city{width: 96%;}
+    .form-field {
+      &.field-group {
+        .group-field-btn {
+          &.btn-plus-minus{
+            width: 6%;
+            &.btn-plus-minus.btn-pluse-minus-city{
+              width: 6%;
+            }
+          }
+        }
+        .select-topic {
+          width: 94%;
+        }
+        .select-city  {
+          width: 94%;
+        }
+      }
     }
   }
 }
-//Mobile
+//Tablets
 @media (max-width: $reflex-md) {
 
   }

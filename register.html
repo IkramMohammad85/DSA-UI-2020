@@ -593,7 +593,82 @@
                       <option value="Transfer Pricing">Transfer Pricing</option>
                       <option value="Visa &amp; Work Permits">Visa &amp; Work Permits</option>
                     </select>
-                    <button class="btn btn-pluse btn-secondary">+</button>
+                    <div class="btn group-field-btn btn-plus-minus btn-secondary"> <i>
+                        <div class="icon-plus"></div></i></div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-12 pt-0">
+                  <div class="form-field field-group">
+                    <select class="required fields_plus select-topic" id="lead_mainproductinterest" name="lead_mainproductinterest">
+                      <option value="" selected="true" disabled="disabled"> Please select </option>
+                      <option value="Accounting &amp; Financial Reporting">Accounting &amp; Financial Reporting</option>
+                      <option value="Audit">Audit</option>
+                      <option value="Background Check">Background Check</option>
+                      <option value="Contract Draft &amp; Review">Contract Draft &amp; Review</option>
+                      <option value="Corporate Establishment">Corporate Establishment</option>
+                      <option value="Corporate Governance / Compliance">Corporate Governance / Compliance</option>
+                      <option value="Corporate Structuring / Re-Structuring">Corporate Structuring / Re-Structuring</option>
+                      <option value="ERP or IT Systems">ERP or IT Systems</option>
+                      <option value="FDI Regulations">FDI Regulations</option>
+                      <option value="Financial Due Diligence">Financial Due Diligence</option>
+                      <option value="Human Resources">Human Resources</option>
+                      <option value="Intellectual Property">Intellectual Property</option>
+                      <option value="International Tax Advisory &amp; Structuring">International Tax Advisory &amp; Structuring</option>
+                      <option value="Joint Ventures">Joint Ventures</option>
+                      <option value="Legal Advisory">Legal Advisory</option>
+                      <option value="Legal Due Diligence">Legal Due Diligence</option>
+                      <option value="M&amp;A Transaction">M&amp;A Transaction</option>
+                      <option value="Market Research">Market Research</option>
+                      <option value="None">None</option>
+                      <option value="Other">Other</option>
+                      <option value="Payroll Processing">Payroll Processing</option>
+                      <option value="Recruitment">Recruitment</option>
+                      <option value="Site Selection or Relocation">Site Selection or Relocation</option>
+                      <option value="Tax Advisory &amp; Planning for Companies">Tax Advisory &amp; Planning for Companies</option>
+                      <option value="Tax Advisory &amp; Planning for Individuals">Tax Advisory &amp; Planning for Individuals</option>
+                      <option value="Tax Compliance">Tax Compliance</option>
+                      <option value="Transfer Pricing">Transfer Pricing</option>
+                      <option value="Visa &amp; Work Permits">Visa &amp; Work Permits</option>
+                    </select>
+                    <div class="btn group-field-btn btn-plus-minus btn-secondary btn-minus"> <i>
+                        <div class="icon-minus"></div></i></div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-12 pt-0">
+                  <div class="form-field field-group">
+                    <select class="required fields_plus select-topic" id="lead_mainproductinterest" name="lead_mainproductinterest">
+                      <option value="" selected="true" disabled="disabled"> Please select </option>
+                      <option value="Accounting &amp; Financial Reporting">Accounting &amp; Financial Reporting</option>
+                      <option value="Audit">Audit</option>
+                      <option value="Background Check">Background Check</option>
+                      <option value="Contract Draft &amp; Review">Contract Draft &amp; Review</option>
+                      <option value="Corporate Establishment">Corporate Establishment</option>
+                      <option value="Corporate Governance / Compliance">Corporate Governance / Compliance</option>
+                      <option value="Corporate Structuring / Re-Structuring">Corporate Structuring / Re-Structuring</option>
+                      <option value="ERP or IT Systems">ERP or IT Systems</option>
+                      <option value="FDI Regulations">FDI Regulations</option>
+                      <option value="Financial Due Diligence">Financial Due Diligence</option>
+                      <option value="Human Resources">Human Resources</option>
+                      <option value="Intellectual Property">Intellectual Property</option>
+                      <option value="International Tax Advisory &amp; Structuring">International Tax Advisory &amp; Structuring</option>
+                      <option value="Joint Ventures">Joint Ventures</option>
+                      <option value="Legal Advisory">Legal Advisory</option>
+                      <option value="Legal Due Diligence">Legal Due Diligence</option>
+                      <option value="M&amp;A Transaction">M&amp;A Transaction</option>
+                      <option value="Market Research">Market Research</option>
+                      <option value="None">None</option>
+                      <option value="Other">Other</option>
+                      <option value="Payroll Processing">Payroll Processing</option>
+                      <option value="Recruitment">Recruitment</option>
+                      <option value="Site Selection or Relocation">Site Selection or Relocation</option>
+                      <option value="Tax Advisory &amp; Planning for Companies">Tax Advisory &amp; Planning for Companies</option>
+                      <option value="Tax Advisory &amp; Planning for Individuals">Tax Advisory &amp; Planning for Individuals</option>
+                      <option value="Tax Compliance">Tax Compliance</option>
+                      <option value="Transfer Pricing">Transfer Pricing</option>
+                      <option value="Visa &amp; Work Permits">Visa &amp; Work Permits</option>
+                    </select>
+                    <div class="btn group-field-btn btn-plus-minus btn-secondary btn-minus"><i>
+                        <div class="icon-minus"></div></i></div>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
@@ -616,12 +691,67 @@
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-6">
-                  <div class="form-field pt-25 field-group">
+                  <div class="form-field pt-27 field-group">
                     <label for="lead_cityofinterest"></label>
                     <select class="required mt-3 select-req fields_plus select-city" id="lead_cityofinterest" name="lead_cityofinterest">
                       <option value="">Please select city</option>
                     </select>
-                    <button class="btn btn-pluse btn-secondary">+</button>
+                    <div class="btn group-field-btn btn-plus-minus btn-pluse-minus-city btn-secondary"> <i>
+                        <div class="icon-plus"></div></i></div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 pt-0">
+                  <div class="form-field">
+                    <select class="required select-req" id="lead_countryofinterest" name="lead_countryofinterest" onchange="load_interest_city(this.value,'lead_cityofinterest');">
+                      <option value="" selected="true" disabled="disabled">Please select country</option>
+                      <option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
+                      <option value="China">China</option>
+                      <option value="Hong Kong">Hong Kong</option>
+                      <option value="India">India</option>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="Malaysia">Malaysia</option>
+                      <option value="Philippines">Philippines</option>
+                      <option value="Russia">Russia</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Thailand">Thailand</option>
+                      <option value="Vietnam">Vietnam</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 pt-0">
+                  <div class="form-field field-group">
+                    <select class="required mt-3 select-req fields_plus select-city" id="lead_cityofinterest" name="lead_cityofinterest">
+                      <option value="">Please select city</option>
+                    </select>
+                    <div class="btn group-field-btn btn-plus-minus btn-pluse-minus-city btn-secondary btn-minus"> <i>
+                        <div class="icon-minus"></div></i></div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 pt-0">
+                  <div class="form-field">
+                    <select class="required select-req" id="lead_countryofinterest" name="lead_countryofinterest" onchange="load_interest_city(this.value,'lead_cityofinterest');">
+                      <option value="" selected="true" disabled="disabled">Please select country</option>
+                      <option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
+                      <option value="China">China</option>
+                      <option value="Hong Kong">Hong Kong</option>
+                      <option value="India">India</option>
+                      <option value="Indonesia">Indonesia</option>
+                      <option value="Malaysia">Malaysia</option>
+                      <option value="Philippines">Philippines</option>
+                      <option value="Russia">Russia</option>
+                      <option value="Singapore">Singapore</option>
+                      <option value="Thailand">Thailand</option>
+                      <option value="Vietnam">Vietnam</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 pt-0">
+                  <div class="form-field field-group">
+                    <select class="required mt-3 select-req fields_plus select-city" id="lead_cityofinterest" name="lead_cityofinterest">
+                      <option value="">Please select city</option>
+                    </select>
+                    <div class="btn group-field-btn btn-plus-minus btn-pluse-minus-city btn-secondary btn-minus"><i>
+                        <div class="icon-minus">                                                                 </div></i></div>
                   </div>
                 </div>
                 <div class="col-md-12 col-lg-12">
