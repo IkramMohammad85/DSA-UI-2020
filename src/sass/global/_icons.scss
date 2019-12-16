@@ -1,11 +1,10 @@
-
 @font-face {
-  font-family: '#{$dsa-icons-font-family}';
-  src:  url('#{$dsa-icons-font-path}/#{$dsa-icons-font-family}.eot?kbxs19');
-  src:  url('#{$dsa-icons-font-path}/#{$dsa-icons-font-family}.eot?kbxs19#iefix') format('embedded-opentype'),
-    url('#{$dsa-icons-font-path}/#{$dsa-icons-font-family}.ttf?kbxs19') format('truetype'),
-    url('#{$dsa-icons-font-path}/#{$dsa-icons-font-family}.woff?kbxs19') format('woff'),
-    url('#{$dsa-icons-font-path}/#{$dsa-icons-font-family}.svg?kbxs19##{$dsa-icons-font-family}') format('svg');
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?aatp41');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?aatp41#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?aatp41') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?aatp41') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?aatp41##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,32 +12,89 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$dsa-icons-font-family}' !important;
+  font-family: '#{$icomoon-font-family}' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  vertical-align: inherit;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-down {
+.icon-wechat {
   &:before {
-    content: $icon-chevron-down; 
+    content: $icon-wechat;     
+    color: #7bb32e;
   }
 }
-.icon-twitter-old {
+.icon-laptop1 {
   &:before {
-    content: $icon-twitter-old; 
+    content: $icon-laptop1; 
+  }
+}
+.icon-unlocked {
+  &:before {
+    content: $icon-unlocked; 
+  }
+}
+.icon-locked {
+  &:before {
+    content: $icon-locked; 
+  }
+}
+.icon-secure {
+  &:before {
+    content: $icon-secure; 
+  }
+}
+.icon-lamp {
+  &:before {
+    content: $icon-lamp; 
+  }
+}
+.icon-light {
+  &:before {
+    content: $icon-light; 
   }
 }
 .icon-justice {
   &:before {
     content: $icon-justice; 
+  }
+}
+.icon-settings {
+  &:before {
+    content: $icon-settings; 
+  }
+}
+.icon-cog {
+  &:before {
+    content: $icon-cog; 
+  }
+}
+.icon-preferences {
+  &:before {
+    content: $icon-preferences; 
+  }
+}
+.icon-bulb {
+  &:before {
+    content: $icon-bulb; 
+  }
+}
+.icon-lamp1 {
+  &:before {
+    content: $icon-lamp1; 
+  }
+}
+.icon-idea {
+  &:before {
+    content: $icon-idea; 
   }
 }
 .icon-calendar {
@@ -54,6 +110,51 @@
 .icon-schedule {
   &:before {
     content: $icon-schedule; 
+  }
+}
+.icon-lightbulb {
+  &:before {
+    content: $icon-lightbulb; 
+  }
+}
+.icon-laptop_chromebook {
+  &:before {
+    content: $icon-laptop_chromebook; 
+  }
+}
+.icon-location_city {
+  &:before {
+    content: $icon-location_city; 
+  }
+}
+.icon-users1 {
+  &:before {
+    content: $icon-users1; 
+  }
+}
+.icon-chevron-down {
+  &:before {
+    content: $icon-chevron-down; 
+  }
+}
+.icon-twitter-old {
+  &:before {
+    content: $icon-twitter-old; 
+  }
+}
+.icon-wechat1 {
+  &:before {
+    content: $icon-wechat1; 
+  }
+}
+.icon-long-arrow-right {
+  &:before {
+    content: $icon-long-arrow-right; 
+  }
+}
+.icon-long-arrow-left {
+  &:before {
+    content: $icon-long-arrow-left; 
   }
 }
 .icon-angle-up {
@@ -161,6 +262,16 @@
     content: $icon-contact; 
   }
 }
+.icon-office {
+  &:before {
+    content: $icon-office; 
+  }
+}
+.icon-newspaper {
+  &:before {
+    content: $icon-newspaper; 
+  }
+}
 .icon-book1 {
   &:before {
     content: $icon-book1; 
@@ -201,6 +312,11 @@
     content: $icon-calendar1; 
   }
 }
+.icon-display {
+  &:before {
+    content: $icon-display; 
+  }
+}
 .icon-bubbles {
   &:before {
     content: $icon-bubbles; 
@@ -211,9 +327,24 @@
     content: $icon-user; 
   }
 }
+.icon-users {
+  &:before {
+    content: $icon-users; 
+  }
+}
+.icon-user-tie {
+  &:before {
+    content: $icon-user-tie; 
+  }
+}
 .icon-search {
   &:before {
     content: $icon-search; 
+  }
+}
+.icon-briefcase {
+  &:before {
+    content: $icon-briefcase; 
   }
 }
 .icon-cloud-download {
@@ -224,6 +355,11 @@
 .icon-sphere {
   &:before {
     content: $icon-sphere; 
+  }
+}
+.icon-flag {
+  &:before {
+    content: $icon-flag; 
   }
 }
 .icon-facebook {
@@ -262,11 +398,6 @@
   }
 }
 
-//icons utilities creted by kaushal
-.icon-2x{
-  font-size: 2em;
-}
-
-.icon-3x{
+.icon-3x {
   font-size: 3em;
 }
