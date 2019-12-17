@@ -17,6 +17,15 @@
       font-weight: 200;
     }
   }
+  &.news-list{
+    li{
+      .list-content{
+        h1{ 
+          @include font-size(28px);
+        }
+      }
+    }
+  }
 }
 .list-hover {
   li {

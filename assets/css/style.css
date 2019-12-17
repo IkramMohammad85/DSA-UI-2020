@@ -1527,8 +1527,16 @@ $border-default: 1px solid #ccc;
   .card.international-desks .card-body {
     padding: 20px;
     min-height: 434px; }
+  .card.international-desks .card-header-img {
+    background-color: #0d2338; }
+    .card.international-desks .card-header-img img {
+      opacity: 0.5; }
   .card.services {
     position: relative; }
+    .card.services .card-header-img {
+      background-color: #0d2338; }
+      .card.services .card-header-img img {
+        opacity: 0.5; }
     .card.services .card-body {
       padding: 20px;
       min-height: 230px; }
@@ -1540,6 +1548,10 @@ $border-default: 1px solid #ccc;
       padding-top: 5px; }
   .card.resources {
     border: none; }
+    .card.resources .card-header-img {
+      background-color: #0d2338; }
+      .card.resources .card-header-img img {
+        opacity: 0.5; }
   .card.office {
     border-top: solid 4px #0D2338; }
     .card.office .card-body {
@@ -1567,6 +1579,9 @@ $border-default: 1px solid #ccc;
       .card.news .card-header-img .card-text-overlap {
         bottom: 10%;
         top: auto; }
+        .card.news .card-header-img .card-text-overlap h1 {
+          font-size: 28px;
+          font-size: 1.75rem; }
   .card.news-right {
     height: 230px; }
     .card.news-right .card-header-img {
@@ -1584,6 +1599,9 @@ $border-default: 1px solid #ccc;
       .card.news-right .card-header-img .card-text-overlap {
         bottom: 10%;
         top: auto; }
+        .card.news-right .card-header-img .card-text-overlap h1 {
+          font-size: 28px;
+          font-size: 1.75rem; }
   .card.featured-resources .card-header-img {
     height: 144px; }
   .card.featured-resources .card-body {
@@ -1651,6 +1669,9 @@ $border-default: 1px solid #ccc;
     .list li a {
       color: #344E70;
       font-weight: 200; }
+  .list.news-list li .list-content h1 {
+    font-size: 28px;
+    font-size: 1.75rem; }
 
 .list-hover li {
   background-color: #ebebeb;

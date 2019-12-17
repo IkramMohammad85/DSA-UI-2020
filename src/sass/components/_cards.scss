@@ -90,8 +90,7 @@
 
   // Contact US
   &.contact-us {
-    background: url(../img/DSA-advertisement.jpg) no-repeat
-      top left;
+    background: url(../img/DSA-advertisement.jpg) no-repeat top left;
     width: auto;
     height: 420px;
     background-size: cover;
@@ -99,8 +98,7 @@
 
   // Full time jobs
   &.full-time-jobs {
-    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg) no-repeat
-      top left;
+    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg) no-repeat top left;
     width: auto;
     height: 100%;
     background-size: cover;
@@ -111,16 +109,28 @@
       padding: 20px;
       min-height: 434px;
     }
+    .card-header-img {
+      background-color: #0d2338;
+      img {
+        opacity: 0.5;
+      }
+    }
   }
 
   // Services
   &.services {
     position: relative;
+    .card-header-img {
+      background-color: #0d2338;
+      img {
+        opacity: 0.5;
+      }
+    }
     .card-body {
       padding: 20px;
       min-height: 230px;
     }
-    .card-footer{
+    .card-footer {
       padding: 0;
       background-color: $gray-200;
       min-height: auto;
@@ -131,6 +141,12 @@
   // Resources
   &.resources {
     border: none;
+    .card-header-img {
+      background-color: #0d2338;
+      img {
+        opacity: 0.5;
+      }
+    }
   }
   // office
   &.office {
@@ -166,6 +182,9 @@
       .card-text-overlap {
         bottom: 10%;
         top: auto;
+        h1{ 
+          @include font-size(28px);
+        }
       }
     }
   }
@@ -187,6 +206,9 @@
       .card-text-overlap {
         bottom: 10%;
         top: auto;
+      h1{ 
+          @include font-size(28px);
+        }
       }
     }
   }
@@ -207,16 +229,16 @@
       padding: 20px;
     }
   }
-   // Featured Offers
-   &.featured-offers {
-     border-top: solid 3px $deep-cyan-blue;
+  // Featured Offers
+  &.featured-offers {
+    border-top: solid 3px $deep-cyan-blue;
     .card-body {
       padding: 20px;
       min-height: 184px;
     }
-  } 
-   // Testimonial
-   &.testimonial {
+  }
+  // Testimonial
+  &.testimonial {
     .card-body {
       padding: 20px;
       min-height: 170px;
@@ -224,7 +246,7 @@
         margin-bottom: 0px;
       }
     }
-  } 
+  }
 }
 
 //Tablets
