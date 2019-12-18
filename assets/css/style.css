@@ -3527,22 +3527,22 @@ header.site-header .hamburger-menu {
     .home .big-banner .item .news h1 {
       text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.46);
       margin-bottom: 20px; }
-    .home .big-banner .item .news .grid .col-grid {
+    .home .big-banner .item .news .grid.align-end .col-grid {
       position: relative;
-      padding: 0; }
-      .home .big-banner .item .news .grid .col-grid img {
-        -webkit-filter: brightness(50%);
-        filter: brightness(50%); }
-      .home .big-banner .item .news .grid .col-grid .news-details {
+      padding: 0;
+      background: #1a2940; }
+      .home .big-banner .item .news .grid.align-end .col-grid img {
+        opacity: 0.4; }
+      .home .big-banner .item .news .grid.align-end .col-grid .news-details {
         position: absolute;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 90%;
         top: 40%; }
-        .home .big-banner .item .news .grid .col-grid .news-details a {
+        .home .big-banner .item .news .grid.align-end .col-grid .news-details a {
           color: white; }
-        .home .big-banner .item .news .grid .col-grid .news-details .btn-link {
+        .home .big-banner .item .news .grid.align-end .col-grid .news-details .btn-link {
           padding-left: 0;
           padding-right: 0; }
 

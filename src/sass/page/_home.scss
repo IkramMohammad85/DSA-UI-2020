@@ -43,12 +43,16 @@
           text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.46);
           margin-bottom:20px;
         }
-        .grid {
+        .grid.align-end {
           .col-grid {
             position: relative;
             padding: 0;
+            background: $deep-blue;
             img {
-              filter: brightness(50%);
+              ///filter: brightness(50%);
+              opacity: 0.4;
+
+              
             }
 
             .news-details {
