@@ -1810,8 +1810,10 @@ $border-default: 1px solid #ccc;
     .dropdown .dropdown-content.outline {
       border: 1px solid #939598;
       padding: 20px; }
-    .dropdown .dropdown-content h3 a {
-      color: #fff !important; }
+    .dropdown .dropdown-content h3 {
+      text-transform: none; }
+      .dropdown .dropdown-content h3 a {
+        color: #fff !important; }
     .dropdown .dropdown-content .card.contact-us h3, .dropdown .dropdown-content .card.contact-us p, .dropdown .dropdown-content .card.contact-us a, .dropdown .dropdown-content .btn-outline-dark h3, .dropdown .dropdown-content .btn-outline-dark p, .dropdown .dropdown-content .btn-outline-dark a {
       color: #fff !important; }
     .dropdown .dropdown-content ul li {
@@ -1824,7 +1826,7 @@ $border-default: 1px solid #ccc;
     .dropdown .dropdown-content p {
       font-size: 14px;
       font-size: 0.875rem;
-      text-transform: initial;
+      text-transform: none;
       font-weight: normal; }
     .dropdown .dropdown-content .btn-outline-dark, .dropdown .dropdown-content .btn-secondary {
       display: inline-table;
@@ -1845,11 +1847,14 @@ $border-default: 1px solid #ccc;
       font-size: 13px;
       font-size: 0.8125rem; }
     .dropdown .dropdown-content.dropdown-content-normal {
-      min-width: 300px; }
+      min-width: 300px;
+      max-width: 100%; }
     .dropdown .dropdown-content.dropdown-content-medium {
-      min-width: 600px; }
+      min-width: 600px;
+      max-width: 100%; }
     .dropdown .dropdown-content.dropdown-content-large {
-      min-width: 1200px; }
+      min-width: 1200px;
+      max-width: 100%; }
 
 .dropdown-hover {
   position: relative;
@@ -1891,7 +1896,11 @@ $border-default: 1px solid #ccc;
   .banner.banner-sm {
     height: 170px; }
   .banner.top-postion-24 {
-    top: 24px; }
+    top: inherit;
+    bottom: 0; }
+    .banner.top-postion-24 img {
+      top: inherit;
+      bottom: 0; }
   .banner.top-postion-0 {
     top: 0px; }
   .banner img {
@@ -1899,7 +1908,8 @@ $border-default: 1px solid #ccc;
     background-size: cover;
     width: 100%;
     background-position: 50% 0;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    top: 0; }
   .banner .img {
     position: relative;
     background-size: initial;
@@ -1925,18 +1935,16 @@ $border-default: 1px solid #ccc;
 @media (max-width: 1200px) {
   .banner {
     height: auto;
-    padding: 60px 0px; }
-    .banner img {
-      width: auto; } }
+    padding: 60px 0px; } }
 
 @media (max-width: 992px) {
   .banner {
     height: auto;
     padding: 25px 0px; }
-    .banner.banner-sm {
-      height: auto; }
     .banner img {
       width: auto; }
+    .banner.banner-sm {
+      height: auto; }
     .banner h1 {
       font-size: 28px;
       font-size: 1.75rem; } }
@@ -3521,9 +3529,13 @@ header.site-header .hamburger-menu {
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        width: 90%; }
+        width: 90%;
+        top: 40%; }
         .home .big-banner .item .news .grid .col-grid .news-details a {
           color: white; }
+        .home .big-banner .item .news .grid .col-grid .news-details .btn-link {
+          padding-left: 0;
+          padding-right: 0; }
 
 .home section.about-us {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.25)), color-stop(9%, rgba(0, 0, 0, 0.25)), color-stop(9%, rgba(0, 0, 0, 0.25))), url(../img/who-we-are.jpg);
@@ -3654,6 +3666,8 @@ ul.navbar {
         max-height: 150px;
         overflow: hidden;
         margin-bottom: 5px; }
+        .big-banner .item .news .col-grid .news-details {
+          top: 20%; }
   .home section.about-us .transparent-bg {
     min-height: auto; }
     .home section.about-us .transparent-bg .center-block {

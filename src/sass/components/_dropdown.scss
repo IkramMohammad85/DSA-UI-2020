@@ -27,7 +27,7 @@
             border:1px solid $light-gray;
             padding:20px;
         }
-        h3{
+        h3{ text-transform: none;
             a{ color: $white !important;}
         }
         .card.contact-us,.btn-outline-dark {
@@ -48,7 +48,7 @@
         }
         p {
             @include font-size(14px);
-            text-transform: initial;
+            text-transform: none;
             font-weight: normal;
             }
         .btn-outline-dark, .btn-secondary{ display: inline-table;width: max-content;
@@ -64,9 +64,9 @@
         .btn-link{ color: $blue !important; text-transform: initial;
             font-weight: normal; padding: 0; @include font-size(13px);}
         
-     &.dropdown-content-normal {min-width: 300px;}
-     &.dropdown-content-medium {min-width: 600px;}
-     &.dropdown-content-large {min-width: 1200px;}
+     &.dropdown-content-normal {min-width: 300px; max-width: 100%;}
+     &.dropdown-content-medium {min-width: 600px; max-width: 100%;}
+     &.dropdown-content-large {min-width: 1200px;max-width: 100%;}
     }
 
 

@@ -56,7 +56,12 @@
               left: 50%;
               @include transform(translateX(-50%));
               width: 90%;
+              top:40%;//add top postion due to justify-center not workin in ie
               a{color:white;}
+              .btn-link{ 
+                padding-left: 0; 
+                padding-right: 0;
+              }
             }
           }
 
@@ -247,6 +252,9 @@ ul.navbar {
           max-height: 150px;
           overflow: hidden;
           margin-bottom: 5px;
+          .news-details{
+            top: 20%;//add top postion due to justify-center not workin in ie
+          }
         }
       }
     }
