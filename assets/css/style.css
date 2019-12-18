@@ -1684,6 +1684,11 @@ $border-default: 1px solid #ccc;
   padding-left: 0;
   list-style: none; }
 
+.list-inline.list-inline-logo li {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px; }
+
 .list-inline.list-inline-icons {
   margin-bottom: 0; }
   .list-inline.list-inline-icons li {
@@ -2746,6 +2751,10 @@ ol, ul {
 .text-muted {
   color: #495057; }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -3589,6 +3598,8 @@ ul.top-quick-link {
   margin-top: 10px;
   float: right;
   position: relative; }
+  ul.top-quick-link i {
+    color: #9599a0; }
   ul.top-quick-link .dropdown-content {
     right: 0px; }
     ul.top-quick-link .dropdown-content .list li {
@@ -3605,6 +3616,8 @@ ul.top-quick-link {
     ul.top-quick-link li.dropdown.open {
       background-color: #f1f1f1;
       border-radius: 3px; }
+    ul.top-quick-link li:last-child {
+      padding-right: 0; }
   ul.top-quick-link .down-arrow {
     top: -6px; }
 
@@ -3627,7 +3640,8 @@ ul.navbar {
     ul.navbar li:last-child {
       margin-right: 0rem;
       padding-right: 0px;
-      vertical-align: top; }
+      vertical-align: middle;
+      color: #9599a0; }
     ul.navbar li a {
       color: #fff; }
     ul.navbar li.dropdown.open {

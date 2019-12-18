@@ -43,6 +43,13 @@
   list-style: none;
 }
 .list-inline {
+  &.list-inline-logo{
+    li{
+      background-color: $white;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  }
   &.list-inline-icons{
     margin-bottom: 0;
     li{ 

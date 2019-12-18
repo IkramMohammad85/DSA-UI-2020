@@ -135,6 +135,10 @@ ul.top-quick-link {
   float: right;
   @extend %clearfix;
   position: relative;
+
+    i{
+      color: #9599a0;
+    }
   .dropdown-content {
     right: 0px;
     .list {
@@ -158,6 +162,9 @@ ul.top-quick-link {
     &.dropdown.open {
       background-color: #f1f1f1;
       border-radius: 3px;
+    }
+    &:last-child {
+      padding-right: 0;
     }
   }
   .down-arrow {
@@ -183,7 +190,8 @@ ul.navbar {
     &:last-child {
       margin-right: 0rem;
       padding-right: 0px;
-      vertical-align: top;
+      vertical-align: middle;
+      color: #9599a0;
     }
     a {
       color: $white;
