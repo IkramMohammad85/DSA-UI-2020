@@ -139,7 +139,6 @@ ul.top-quick-link {
   float: right;
   @extend %clearfix;
   position: relative;
-
     i{
       color: #9599a0;
     }
@@ -163,6 +162,12 @@ ul.top-quick-link {
   }
   li {
     padding: 5px;
+    a{
+      &:hover{ 
+        i{ color: #fdcd20;}
+        .down-arrow{ border-color: #fdcd20;}
+      }
+    }
     &.dropdown.open {
       background-color: #f1f1f1;
       border-radius: 3px;
