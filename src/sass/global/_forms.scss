@@ -205,6 +205,7 @@ form.material {
     &:placeholder-shown {
       ~ .form-field-label {
         @include label-inactive();
+        color: #999;
       }
     }
     &:focus {

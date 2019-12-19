@@ -3054,7 +3054,8 @@ form.material .form-field-textarea {
   form.material .form-field-textarea:placeholder-shown ~ .form-field-label {
     font-size: 1.2rem;
     -webkit-transform: translateY(0);
-    transform: translateY(0); }
+    transform: translateY(0);
+    color: #999; }
   form.material .form-field-input:focus ~ .form-field-label,
   form.material .form-field-textarea:focus ~ .form-field-label {
     color: #007bff;
