@@ -62,12 +62,13 @@ form {
       }
       .group-field-btn {
         position: absolute;
-        &.btn-serach{
+        &.btn-serach {
           left: 0;
           background: transparent;
-          padding-top: 16px; color: $gray-400;
+          padding-top: 16px;
+          color: $gray-400;
         }
-        &.btn-plus-minus{
+        &.btn-plus-minus {
           right: 0;
           top: 32px;
           border-bottom-right-radius: 2px;
@@ -75,10 +76,10 @@ form {
           height: 49px;
           width: 3%;
           padding: 16px 0px;
-          &.btn-plus-minus.btn-pluse-minus-city{
+          &.btn-plus-minus.btn-pluse-minus-city {
             width: 6%;
           }
-          &.btn-plus-minus.btn-minus{
+          &.btn-plus-minus.btn-minus {
             top: 6px;
           }
         }
@@ -86,7 +87,7 @@ form {
       .select-topic {
         width: 97%;
       }
-      .select-city  {
+      .select-city {
         width: 94%;
       }
     }
@@ -144,6 +145,83 @@ form {
     }
   }
 }
+
+/* Actual code example */
+
+form.material {
+  .form-field-label {
+    @include label-active();
+    display: block;
+    font-weight: normal;
+    left: 0;
+    margin: 0;
+    padding: 18px 12px 0;
+    position: absolute;
+    top: 0;
+    transition: all $animation-duration;
+    width: 100%;
+  }
+  .form-field-control {
+    background: $white;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .form-field-bar {
+    border-bottom: 2px solid $blue;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    transform: scaleX(0);
+    transition: all $animation-duration;
+    width: 1%;
+  }
+  .form-field-input,
+  .form-field-textarea {
+    appearance: none;
+    background: $white;
+    border: 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 24px;
+    outline: 0;
+    padding: 0 12px 10px 12px;
+    width: 100%;
+
+    // IE 10-11
+    &:-ms-input-placeholder {
+      ~ .form-field-label {
+        @include label-inactive();
+      }
+    }
+    // All other browsers except Edge
+    &:placeholder-shown {
+      ~ .form-field-label {
+        @include label-inactive();
+      }
+    }
+    &:focus {
+      ~ .form-field-label {
+        color: $blue;
+        @include label-active();
+      }
+      ~ .form-field-bar {
+        border-bottom: 2px solid $blue;
+        transform: scaleX(150);
+      }
+    }
+  }
+  .form-field-textarea {
+    height: 150px;
+  }
+}
 //Mobile
 @media (max-width: $reflex-sm) {
   .input-add-on-field {
@@ -153,9 +231,9 @@ form {
     .form-field {
       &.field-group {
         .group-field-btn {
-          &.btn-plus-minus{
+          &.btn-plus-minus {
             width: 6%;
-            &.btn-plus-minus.btn-pluse-minus-city{
+            &.btn-plus-minus.btn-pluse-minus-city {
               width: 6%;
             }
           }
@@ -163,7 +241,7 @@ form {
         .select-topic {
           width: 94%;
         }
-        .select-city  {
+        .select-city {
           width: 94%;
         }
       }
@@ -172,5 +250,4 @@ form {
 }
 //Tablets
 @media (max-width: $reflex-md) {
-
-  }
+}

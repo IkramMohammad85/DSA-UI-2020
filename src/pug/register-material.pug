@@ -1,0 +1,86 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper
+    include components/_header
+    section.banner
+        img(alt='', src='https://www.dezshira.com/themes/dsa/images/topics-banners/banner-asiapedia.jpg')    
+        .container
+            .grid.align-end.text-center
+                .col-sm.col-md.col-lg.col-grid
+                    h1 Create your account  
+                    p Get the most from your membership by telling us a little bit about yourself...    
+    section.light-blue-bg.pt-150.pb-7
+        .container
+            form.material(novalidate='')
+                .grid
+                    .col-sm-4.col-mb-4.col-lg-4
+                        .form-field
+                            .form-field-control
+                                input#firstname.form-field-input(type='text', placeholder=' ')
+                                label.form-field-label(for='firstname') First name
+                                .form-field-bar
+                    .col-sm-4.col-mb-4.col-lg-4
+                        .form-field
+                            .form-field-control
+                                input#lastname.form-field-input(type='text', placeholder=' ')
+                                label.form-field-label(for='lastname') Last name
+                                .form-field-bar
+                    .col-sm-4.col-mb-4.col-lg-4
+                        .form-field
+                            .form-field-control
+                                input#email.form-field-input(type='email', placeholder=' ')
+                                label.form-field-label(for='email') Email
+                                .form-field-bar
+                .grid
+                    .col-sm-4.col-mb-4.col-lg-4
+                        .form-field
+                            .form-field-control
+                                input#email.form-field-input(type='telephone', placeholder=' ')
+                                label.form-field-label(for='telephone') Telephone
+                                .form-field-bar
+                    .col-sm-4.col-mb-4.col-lg-4
+                        .form-field
+                            .form-field-control
+                                input#street.form-field-input(type='website', placeholder=' ')
+                                label.form-field-label(for='website') Website
+                                .form-field-bar
+                    .col-sm-4.col-mb-4.col-lg-4
+                        .form-field
+                            .form-field-control
+                                input#street.form-field-input(type='country', placeholder=' ')
+                                label.form-field-label(for='country') Country
+                                .form-field-bar
+                .grid
+                    .col-sm
+                        .form-field
+                            .form-field-control
+                                textarea#additionalInfo.form-field-textarea(placeholder=' ')
+                                label.form-field-label(for='additionalInfo') Additional info
+                                .form-field-bar
+                .grid
+                    .col-sm-6.col-mb-6.col-lg-6
+                                img#siimage(src='https://www.dezshira.com/includes/modules/securimage/securimage_show.php', alt='captcha image')     
+                    .col-sm-6.col-mb-6.col-lg-6
+                        .form-field
+                            .form-field-control
+                                input#street.form-field-input(type='security-Check', placeholder=' ')
+                                label.form-field-label(for='Security-Check') Security Check
+                                .form-field-bar
+                .grid
+                    .col-sm.col-mb.col-lg
+                        button.btn.btn-primary.float-right(type='submit') Send
+                                
+
+    include components/_footer
+    
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

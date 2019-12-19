@@ -192,3 +192,14 @@ $border-default: 1px solid #ccc;
 	-webkit-border-radius: $radius;
 	-moz-border-radius: $radius;
 }
+
+//label
+@mixin label-inactive() {
+  font-size: 1.2rem;
+  transform: translateY(0);
+}
+
+@mixin label-active() {
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
