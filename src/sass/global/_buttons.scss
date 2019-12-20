@@ -172,6 +172,12 @@
     transform: rotate(-45deg);
   }
 }
+.btn-lg {
+  padding: 10px 15px;
+  @include font-size(24px);
+  line-height: 1.5;
+  min-width: 150px;
+}
 //Mobile
 @media (max-width: $reflex-md) {
   //close menu postion top

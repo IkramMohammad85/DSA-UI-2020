@@ -2286,6 +2286,13 @@ ol, ul {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
+.btn-lg {
+  padding: 10px 15px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  min-width: 150px; }
+
 @media (max-width: 992px) {
   ul.top-quick-link .dropdown-content .btn-close {
     top: 42px; }
@@ -2754,6 +2761,9 @@ ol, ul {
 .img-fluid {
   max-width: 100%;
   height: auto; }
+
+.align-middle {
+  vertical-align: middle !important; }
 
 .table {
   width: 100%;
