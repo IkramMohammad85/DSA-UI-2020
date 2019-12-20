@@ -3010,8 +3010,8 @@ form.material .form-field-label {
   width: 100%; }
 
 form.material .form-field-control {
-  background: #fff;
-  border-radius: 2px;
+  background: #e9ecef;
+  border-radius: 0px;
   overflow: hidden;
   position: relative;
   width: 100%; }
@@ -3036,9 +3036,8 @@ form.material .form-field-textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff;
+  background: #e9ecef;
   border: 0;
-  border-bottom: 1px solid #999;
   color: #333;
   display: block;
   font-size: 1.2rem;

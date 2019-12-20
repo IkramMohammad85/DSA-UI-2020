@@ -161,8 +161,8 @@ form.material {
     width: 100%;
   }
   .form-field-control {
-    background: $white;
-    border-radius: 2px;
+    background: #e9ecef;
+    border-radius: 0px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -183,9 +183,8 @@ form.material {
   .form-field-input,
   .form-field-textarea {
     appearance: none;
-    background: $white;
+    background: #e9ecef;
     border: 0;
-    border-bottom: 1px solid #999;
     color: #333;
     display: block;
     font-size: 1.2rem;
