@@ -147,6 +147,13 @@ form {
 }
 
 /* material form */
+.light-blue-bg {
+  form.material{
+    .form-field-label{
+      color: $gray-700;
+    }
+  }
+}
 form.material {
   .form-field-label {
     @include label-active();

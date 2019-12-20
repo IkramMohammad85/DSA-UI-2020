@@ -2994,6 +2994,9 @@ form .form-field select::placeholder {
   color: #fff; }
 
 /* material form */
+.light-blue-bg form.material .form-field-label {
+  color: #495057; }
+
 form.material .form-field-label {
   font-size: 0.75rem;
   -webkit-transform: translateY(-14px);
