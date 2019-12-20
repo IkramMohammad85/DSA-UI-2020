@@ -3070,6 +3070,11 @@ form.material .form-field-textarea {
 form.material .form-field-textarea {
   height: 150px; }
 
+form.material .form-select-input {
+  padding: 15px 12px 14px 12px;
+  height: auto;
+  margin-top: 0; }
+
 @media (max-width: 768px) {
   .input-add-on-field {
     font-size: 15px; }

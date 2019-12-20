@@ -15,7 +15,7 @@ body
             form.material(novalidate='')
                 .grid
                     .col-sm-12.col-mb-12.col-lg-12
-                        h2 
+                        h1 
                             i.icon-users 
                             | Contact us
                         p Ask a question
@@ -53,8 +53,18 @@ body
                     .col-sm-4.col-mb-4.col-lg-4
                         .form-field
                             .form-field-control
-                                input#country.form-field-input(type='country', placeholder=' ')
-                                label.form-field-label(for='country') Country
+                                select#country.form-select-input(name='country', placeholder='', type='country')
+                                    option(value='Belt & Road Initiative') Belt &amp; Road Initiative
+                                    option(value='Afghanistan, Islamic State') Afghanistan, Islamic State
+                                    option(value='Åland Islands') &angst;land Islands
+                                    option(value='Albania') Albania
+                                    option(value='Algeria') Algeria
+                                    option(value='American Samoa') American Samoa
+                                    option(value='Andorra, Principality of') Andorra, Principality of
+                                    option(value='Angola') Angola
+                                    option(value='Anguilla') Anguilla
+                                    option(value='Antarctica') Antarctica
+                                    option(value='Antigua and Barbuda') Antigua and Barbuda
                                 .form-field-bar
                 .grid
                     .col-sm
