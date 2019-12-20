@@ -3063,7 +3063,8 @@ form.material .form-field-textarea {
     color: #007bff;
     font-size: 0.75rem;
     -webkit-transform: translateY(-14px);
-    transform: translateY(-14px); }
+    transform: translateY(-14px);
+    margin-top: 4px; }
   form.material .form-field-input:focus ~ .form-field-bar,
   form.material .form-field-textarea:focus ~ .form-field-bar {
     border-bottom: 2px solid #007bff;

@@ -217,6 +217,7 @@ form.material {
       ~ .form-field-label {
         color: $blue;
         @include label-active();
+        margin-top: 4px;
       }
       ~ .form-field-bar {
         border-bottom: 2px solid $blue;
