@@ -187,7 +187,8 @@ form.material {
     width: 1%;
   }
   .form-field-input,
-  .form-field-textarea,.form-select-input {
+  .form-field-textarea,
+  .form-select-input {
     appearance: none;
     background: #e9ecef;
     border: 0;
@@ -234,8 +235,8 @@ form.material {
     padding-bottom: 16px;
     height: auto;
     appearance: menulist;
-    -webkit-appearance:menulist;
-    -moz-appearance:menulist;
+    -webkit-appearance: menulist;
+    -moz-appearance: menulist;
   }
 }
 //Mobile

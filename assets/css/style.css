@@ -3044,7 +3044,8 @@ form.material .form-field-bar {
   width: 1%; }
 
 form.material .form-field-input,
-form.material .form-field-textarea, form.material .form-select-input {
+form.material .form-field-textarea,
+form.material .form-select-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3059,24 +3060,28 @@ form.material .form-field-textarea, form.material .form-select-input {
   width: 100%;
   height: auto; }
   form.material .form-field-input:-ms-input-placeholder ~ .form-field-label,
-  form.material .form-field-textarea:-ms-input-placeholder ~ .form-field-label, form.material .form-select-input:-ms-input-placeholder ~ .form-field-label {
+  form.material .form-field-textarea:-ms-input-placeholder ~ .form-field-label,
+  form.material .form-select-input:-ms-input-placeholder ~ .form-field-label {
     font-size: 1.2rem;
     transform: translateY(0); }
   form.material .form-field-input:placeholder-shown ~ .form-field-label,
-  form.material .form-field-textarea:placeholder-shown ~ .form-field-label, form.material .form-select-input:placeholder-shown ~ .form-field-label {
+  form.material .form-field-textarea:placeholder-shown ~ .form-field-label,
+  form.material .form-select-input:placeholder-shown ~ .form-field-label {
     font-size: 1.2rem;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     color: #6c757d; }
   form.material .form-field-input:focus ~ .form-field-label,
-  form.material .form-field-textarea:focus ~ .form-field-label, form.material .form-select-input:focus ~ .form-field-label {
+  form.material .form-field-textarea:focus ~ .form-field-label,
+  form.material .form-select-input:focus ~ .form-field-label {
     color: #007bff;
     font-size: 0.75rem;
     -webkit-transform: translateY(-14px);
     transform: translateY(-14px);
     margin-top: 4px; }
   form.material .form-field-input:focus ~ .form-field-bar,
-  form.material .form-field-textarea:focus ~ .form-field-bar, form.material .form-select-input:focus ~ .form-field-bar {
+  form.material .form-field-textarea:focus ~ .form-field-bar,
+  form.material .form-select-input:focus ~ .form-field-bar {
     border-bottom: 2px solid #007bff;
     -webkit-transform: scaleX(150);
     transform: scaleX(150); }
