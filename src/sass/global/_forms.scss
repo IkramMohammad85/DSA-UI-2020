@@ -146,8 +146,7 @@ form {
   }
 }
 
-/* Actual code example */
-
+/* material form */
 form.material {
   .form-field-label {
     @include label-active();
@@ -194,6 +193,7 @@ form.material {
     outline: 0;
     padding: 0 12px 10px 12px;
     width: 100%;
+    height: auto;
 
     // IE 10-11
     &:-ms-input-placeholder {

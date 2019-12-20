@@ -2993,7 +2993,7 @@ form .form-field select::placeholder {
 .light-blue-bg form .form-field label {
   color: #fff; }
 
-/* Actual code example */
+/* material form */
 form.material .form-field-label {
   font-size: 0.75rem;
   -webkit-transform: translateY(-14px);
@@ -3045,7 +3045,8 @@ form.material .form-field-textarea {
   margin-top: 24px;
   outline: 0;
   padding: 0 12px 10px 12px;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
   form.material .form-field-input:-ms-input-placeholder ~ .form-field-label,
   form.material .form-field-textarea:-ms-input-placeholder ~ .form-field-label {
     font-size: 1.2rem;
