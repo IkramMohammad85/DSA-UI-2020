@@ -2692,7 +2692,7 @@ ol, ul {
   transform: scale(1.2); }
 
 .blue-hover:hover {
-  background-color: #007bff;
+  background-color: #2981d1;
   color: #fff; }
   .blue-hover:hover a,
   .blue-hover:hover h4,
@@ -3798,6 +3798,9 @@ ul.navbar {
     .home section.about-us .transparent-bg .center-block {
       display: contents; } }
 
+.research a i {
+  color: #2981d1; }
+
 .research h2,
 .research h4,
 .research span {
@@ -3808,6 +3811,9 @@ ul.navbar {
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 16px; }
+
+.blue-hover:hover i {
+  color: #fff; }
 
 .icon {
   width: auto;
