@@ -162,7 +162,6 @@ form.material {
   }
   .form-field-control {
     background: #e9ecef;
-    border-radius: 0px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -185,7 +184,7 @@ form.material {
     appearance: none;
     background: #e9ecef;
     border: 0;
-    color: #333;
+    color: $gray-600;
     display: block;
     font-size: 1.2rem;
     margin-top: 24px;
@@ -204,7 +203,7 @@ form.material {
     &:placeholder-shown {
       ~ .form-field-label {
         @include label-inactive();
-        color: #999;
+        color: $gray-600;
       }
     }
     &:focus {

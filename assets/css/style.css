@@ -3011,7 +3011,6 @@ form.material .form-field-label {
 
 form.material .form-field-control {
   background: #e9ecef;
-  border-radius: 0px;
   overflow: hidden;
   position: relative;
   width: 100%; }
@@ -3038,7 +3037,7 @@ form.material .form-field-textarea {
   appearance: none;
   background: #e9ecef;
   border: 0;
-  color: #333;
+  color: #6c757d;
   display: block;
   font-size: 1.2rem;
   margin-top: 24px;
@@ -3055,7 +3054,7 @@ form.material .form-field-textarea {
     font-size: 1.2rem;
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    color: #999; }
+    color: #6c757d; }
   form.material .form-field-input:focus ~ .form-field-label,
   form.material .form-field-textarea:focus ~ .form-field-label {
     color: #007bff;
