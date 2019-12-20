@@ -187,7 +187,7 @@ form.material {
     width: 1%;
   }
   .form-field-input,
-  .form-field-textarea {
+  .form-field-textarea,.form-select-input {
     appearance: none;
     background: #e9ecef;
     border: 0;
@@ -230,9 +230,12 @@ form.material {
   }
   .form-select-input {
     margin-top: 0;
-    padding-top: 15px;
-    padding-bottom: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     height: auto;
+    appearance: menulist;
+    -webkit-appearance:menulist;
+    -moz-appearance:menulist;
   }
 }
 //Mobile
