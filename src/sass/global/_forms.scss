@@ -70,17 +70,20 @@ form {
         }
         &.btn-plus-minus {
           right: 0;
-          top: 32px;
-          border-bottom-right-radius: 2px;
-          border-top-right-radius: 2px;
-          height: 49px;
+          //top: 32px;
+          top: 0;
+          //border-bottom-right-radius: 2px;
+          //border-top-right-radius: 2px;
+          height: 57px;
           width: 3%;
-          padding: 16px 0px;
+          //padding: 16px 0px;
+          padding: 22px 0px;
           &.btn-plus-minus.btn-pluse-minus-city {
             width: 6%;
           }
           &.btn-plus-minus.btn-minus {
-            top: 6px;
+            //top: 6px;
+            top: 0;
           }
         }
       }

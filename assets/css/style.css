@@ -2926,16 +2926,14 @@ form .form-field.field-group {
       color: #ced4da; }
     form .form-field.field-group .group-field-btn.btn-plus-minus {
       right: 0;
-      top: 32px;
-      border-bottom-right-radius: 2px;
-      border-top-right-radius: 2px;
-      height: 49px;
+      top: 0;
+      height: 57px;
       width: 3%;
-      padding: 16px 0px; }
+      padding: 22px 0px; }
       form .form-field.field-group .group-field-btn.btn-plus-minus.btn-plus-minus.btn-pluse-minus-city {
         width: 6%; }
       form .form-field.field-group .group-field-btn.btn-plus-minus.btn-plus-minus.btn-minus {
-        top: 6px; }
+        top: 0; }
   form .form-field.field-group .select-topic {
     width: 97%; }
   form .form-field.field-group .select-city {
