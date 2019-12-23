@@ -148,6 +148,17 @@ form {
     }
   }
 }
+.register{
+  form.material{
+    .form-field-input,.form-field-textarea, .form-select-input{
+        background: $white;
+    } 
+    .form-field-control {
+      background: $white; 
+      border: $border-default;
+    }  
+  }
+}
 
 /* material form */
 .light-blue-bg {

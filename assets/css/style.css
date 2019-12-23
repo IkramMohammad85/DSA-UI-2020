@@ -2765,6 +2765,16 @@ ol, ul {
 .align-middle {
   vertical-align: middle !important; }
 
+.img-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 500px; }
+
+.building-img {
+  background-image: url(https://www.dezshira.com/userfiles/image/subscription/subcription_form_lightBG.jpg); }
+
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -3000,6 +3010,13 @@ form .form-field select::placeholder {
 
 .light-blue-bg form .form-field label {
   color: #fff; }
+
+.register form.material .form-field-input, .register form.material .form-field-textarea, .register form.material .form-select-input {
+  background: #fff; }
+
+.register form.material .form-field-control {
+  background: #fff;
+  border: 1px solid #ccc; }
 
 /* material form */
 .light-blue-bg form.material .form-field-label {
