@@ -177,8 +177,9 @@ form {
 form.material {
   &.mini-search-form{
     .form-field-input{
-      height: 57px;
       padding-left: 15px;
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
   }
 }
