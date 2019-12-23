@@ -3007,8 +3007,8 @@ form .form-field select::placeholder {
 
 form.material .form-field-label {
   font-size: 0.75rem;
-  -webkit-transform: translateY(-14px);
-  transform: translateY(-14px);
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
   display: block;
   font-weight: normal;
   left: 0;
@@ -3074,8 +3074,8 @@ form.material .form-select-input {
   form.material .form-select-input:focus ~ .form-field-label {
     color: #007bff;
     font-size: 0.75rem;
-    -webkit-transform: translateY(-14px);
-    transform: translateY(-14px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
     margin-top: 4px; }
   form.material .form-field-input:focus ~ .form-field-bar,
   form.material .form-field-textarea:focus ~ .form-field-bar,
