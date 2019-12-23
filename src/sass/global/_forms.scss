@@ -68,6 +68,11 @@ form {
           padding-top: 16px;
           color: $gray-400;
         }
+        &.icon-chevron-down{
+          top: 0;
+          right: 0;
+          padding: 21px 15px;
+        }
         &.btn-plus-minus {
           right: 0;
           //top: 32px;
@@ -105,7 +110,7 @@ form {
     textarea {
       width: 100%;
       background: $gray-100;
-      border-radius: 2px;
+      border-radius: 0px;
       @include font-size(20px);
       color: $gray-600;
       line-height: 1.2;
@@ -149,23 +154,31 @@ form {
   }
 }
 // Register page update
-.register{
-  form.material{
+  form.material.white-theme{
     .form-field-input,.form-field-textarea, .form-select-input{
         background: $white;
     } 
     .form-field-control {
       background: $white; 
       border: $border-default;
-    }  
+  
   }
 }
+
 
 /* material form */
 .light-blue-bg {
   form.material {
     .form-field-label {
       color: $gray-700;
+    }
+  }
+}
+form.material {
+  &.mini-search-form{
+    .form-field-input{
+      height: 57px;
+      padding-left: 15px;
     }
   }
 }

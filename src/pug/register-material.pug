@@ -10,20 +10,20 @@ head
 body
   #wrapper
     include components/_header   
-    section.img-bg.building-img.pt-150.pb-7.register
+    section.img-bg.building-img.pt-150.pb-7
         .container
             .grid
                 .col-sm.col-mb.col-lg
                     h1.text-center Create your account
                     p.text-center Get the most from your membership by telling us a little bit about yourself...
 
-            form.material(novalidate='')
+            form.material.white-theme(novalidate='')
                 .grid
                     .col-sm-6.col-mb-6.col-lg-6
                         .form-field
                             .form-field-control
-                                input#fname.form-field-input(type='text', name='fname', placeholder=' ')
-                                label.form-field-label(for='fname') First name
+                                input#search-asiapedia-resources.form-field-input(type='text', name='search-asiapedia-resources', placeholder=' ')
+                                label.form-field-label(for='search-asiapedia-resources') Search Asiapedia resources
                                 .form-field-bar
                     .col-sm-6.col-mb-6.col-lg-6
                         .form-field

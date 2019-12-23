@@ -122,15 +122,15 @@ body
                                     h4
                                         a(href='https://www.dezshira.com/multimedia/view/introduction-supplier-network-northern-vietnam.html', target='_blank') Introduction to Supplier Networks in Northern Vietnam
                                 .clearfix
-                            .grey-bg.register.borderTopDarkblue
-                                form.material(role='form', method='GET', action='https://www.dezshira.com/library/search')
+                            .grey-bg.borderTopDarkblue
+                                form.material.white-theme.mini-search-form(role='form', method='GET', action='https://www.dezshira.com/library/search')
                                     .col-sm.col-md.col-lg.border-bottom
                                         .form-field.field-group
                                             .form-field-control
-                                                input.search.required(type='text', name='search', placeholder='Search Asiapedia resources', value='')
-                                                .btn.group-field-btn.btn-serach                                                   
-                                                    i
-                                                        .icon-search 
+                                                input#search-asiapedia-resources.form-field-input(type='text', name='search-asiapedia-resources', placeholder=' ')
+                                                label.form-field-label(for='search-asiapedia-resources') Search Asiapedia resources
+                                                .form-field-bar
+                                                .btn.group-field-btn.btn-secondary.icon-chevron-down 
                                     .col-sm.col-mb.col-lg
                                         .form-field
                                             .form-field-control
