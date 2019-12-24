@@ -3393,8 +3393,6 @@ ul.top-quick-link {
       border-radius: 3px; }
     ul.top-quick-link li:last-child {
       padding-right: 0; }
-  ul.top-quick-link .down-arrow {
-    top: -5px; }
 
 ul.navbar {
   float: right;
