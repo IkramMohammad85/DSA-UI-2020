@@ -68,7 +68,7 @@ form {
           padding-top: 16px;
           color: $gray-400;
         }
-        &.icon-chevron-down{
+        &.icon-chevron-down {
           top: 0;
           right: 0;
           padding: 21px 15px;
@@ -154,17 +154,17 @@ form {
   }
 }
 // Register page update
-  form.material.white-theme{
-    .form-field-input,.form-field-textarea, .form-select-input{
-        background: $white;
-    } 
-    .form-field-control {
-      background: $white; 
-      border: $border-default;
-  
+form.material.white-theme {
+  .form-field-input,
+  .form-field-textarea,
+  .form-select-input {
+    background: $white;
+  }
+  .form-field-control {
+    background: $white;
+    border: $border-default;
   }
 }
-
 
 /* material form */
 .light-blue-bg {
@@ -175,8 +175,8 @@ form {
   }
 }
 form.material {
-  &.mini-search-form{
-    .form-field-input{
+  &.mini-search-form {
+    .form-field-input {
       padding-left: 15px;
       margin-top: 24px;
     }

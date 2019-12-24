@@ -1819,7 +1819,12 @@ $border-default: 1px solid #ccc;
       text-transform: none; }
       .dropdown .dropdown-content h3 a {
         color: #fff !important; }
-    .dropdown .dropdown-content .card.contact-us h3, .dropdown .dropdown-content .card.contact-us p, .dropdown .dropdown-content .card.contact-us a, .dropdown .dropdown-content .btn-outline-dark h3, .dropdown .dropdown-content .btn-outline-dark p, .dropdown .dropdown-content .btn-outline-dark a {
+    .dropdown .dropdown-content .card.contact-us h3,
+    .dropdown .dropdown-content .card.contact-us p,
+    .dropdown .dropdown-content .card.contact-us a,
+    .dropdown .dropdown-content .btn-outline-dark h3,
+    .dropdown .dropdown-content .btn-outline-dark p,
+    .dropdown .dropdown-content .btn-outline-dark a {
       color: #fff !important; }
     .dropdown .dropdown-content ul li {
       display: block;
@@ -1833,12 +1838,14 @@ $border-default: 1px solid #ccc;
       font-size: 0.875rem;
       text-transform: none;
       font-weight: normal; }
-    .dropdown .dropdown-content .btn-outline-dark, .dropdown .dropdown-content .btn-secondary {
+    .dropdown .dropdown-content .btn-outline-dark,
+    .dropdown .dropdown-content .btn-secondary {
       display: inline-table;
       width: -webkit-max-content;
       width: -moz-max-content;
       width: max-content; }
-      .dropdown .dropdown-content .btn-outline-dark:hover, .dropdown .dropdown-content .btn-secondary:hover {
+      .dropdown .dropdown-content .btn-outline-dark:hover,
+      .dropdown .dropdown-content .btn-secondary:hover {
         color: #fff !important; }
     .dropdown .dropdown-content .card .card-header-img .card-text-overlap {
       top: 40%; }
@@ -3015,7 +3022,9 @@ form .form-field select::placeholder {
 .light-blue-bg form .form-field label {
   color: #fff; }
 
-form.material.white-theme .form-field-input, form.material.white-theme .form-field-textarea, form.material.white-theme .form-select-input {
+form.material.white-theme .form-field-input,
+form.material.white-theme .form-field-textarea,
+form.material.white-theme .form-select-input {
   background: #fff; }
 
 form.material.white-theme .form-field-control {

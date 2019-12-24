@@ -1,14 +1,14 @@
 //----------------------------------------------------------------
 //Set a rem font size with pixel fallback
 @function calculateRem($size) {
-    $remSize: $size / 16px;
-    @return $remSize * 1rem;
-  }
-  
-  @mixin font-size($size) {
-    font-size: $size;
-    font-size: calculateRem($size);
-  }
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
 
 /*
 Usage:
@@ -17,25 +17,24 @@ Usage:
     }
 */
 
-
 //----------------------------------------------------------------
 //Animations and keyframes
 @mixin keyframes($animation-name) {
-    @-webkit-keyframes #{$animation-name} {
-        @content;
-    }
-    @-moz-keyframes #{$animation-name} {
-        @content;
-    }  
-    @-ms-keyframes #{$animation-name} {
-        @content;
-    }
-    @-o-keyframes #{$animation-name} {
-        @content;
-    }  
-    @keyframes #{$animation-name} {
-        @content;
-    }
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
 }
 
 @mixin animation($str) {
@@ -43,7 +42,7 @@ Usage:
   -moz-animation: #{$str};
   -ms-animation: #{$str};
   -o-animation: #{$str};
-  animation: #{$str};      
+  animation: #{$str};
 }
 
 /*
@@ -61,17 +60,15 @@ Usage:
     }
 */
 
-
 //----------------------------------------------------------------
 //Transitions
 @mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
-  }
-
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
 
 /*
 Usage:
@@ -85,10 +82,10 @@ Usage:
 */
 
 @mixin transform($transforms) {
-	-webkit-transform: $transforms;
-	-moz-transform: $transforms;
-	-ms-transform: $transforms;
-	transform: $transforms;
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
 }
 
 /*
@@ -100,15 +97,13 @@ Scale
 
 */
 
-
 //----------------------------------------------------------------
 //Cross browser opacity
 @mixin opacity($opacity) {
-    opacity: $opacity;
-    $opacity-ie: $opacity * 100;
-    filter: alpha(opacity=$opacity-ie); //IE8
-  }
-
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
 
 /*
 Usage:
@@ -117,19 +112,19 @@ Usage:
     }
 */
 
-
 //----------------------------------------------------------------
 //Clearfix
 %clearfix {
-    *zoom: 1;
-    &:before, &:after {
-      content: " ";
-      display: table;
-    }
-    &:after {
-      clear: both;
-    }
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
   }
+  &:after {
+    clear: both;
+  }
+}
 
 /*
 Usage:
@@ -138,16 +133,13 @@ Usage:
     }
 */
 
-
-
-
 //----------------------------------------------------------------
 //Box Shadow
 @mixin box-shadow($args...) {
-    -moz-box-shadow:    $args;
-    -webkit-box-shadow: $args;
-    box-shadow:         $args;
-  }
+  -moz-box-shadow: $args;
+  -webkit-box-shadow: $args;
+  box-shadow: $args;
+}
 
 /*
 Usage:
@@ -188,9 +180,9 @@ $border-default: 1px solid #ccc;
 */
 
 @mixin border-radius($radius) {
-	border-radius: $radius;
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
 }
 
 //label
