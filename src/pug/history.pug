@@ -1,0 +1,65 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper
+    include components/_header-logged-in      
+    section.pt-150.pb-7
+        .container
+            .grid
+                .col-sm.col-md-3.col-lg-3.col-grid
+                        h4.section-title.mb-0 Welcome IKRAM
+                        ul.list-unstyled.sidebar-nav
+                            li
+                                a Credit: 0
+                            li
+                                a(href='https://www.dezshira.com/member') Dashboard
+                            li
+                                a(href='https://www.dezshira.com/member/profile') Job Seeker Profile
+                            li
+                                a(href='http://www.asiabriefing.com/member/recharge') Recharge Credits
+                            li
+                                a(href='https://www.dezshira.com/member/credit_coupon') Claim Credit
+                            li
+                                a(href='https://www.dezshira.com/member/gift_credit') Gift Credits
+                            li.active
+                                a(href='https://www.dezshira.com/member/history') Your Transaction History
+                            li
+                                a(href='https://www.dezshira.com/member/change-password') Change Password
+                            li
+                                a(href='https://www.dezshira.com/member/logout') Logout 
+                .col-sm.col-md-9.col-lg-9.col-grid
+                    h4.section-title.mb-3 WELCOME ikram Mohammad
+                    h2.text-center.mb-3 Your Current Credit Balance: 0
+                    p.text-center Claim free credits by entering your coupon code below:
+                    form.material(action='https://www.dezshira.com/events/search', method='GET')
+                        .grid
+                            .col-sm.col-mb.col-lg
+                                table.table.table-striped.table-bordered.mt-2
+                                    tbody
+                                        tr
+                                            td Your Credit Balance: 
+                                            td 0
+                                                
+                                        tr
+                                            td Credits You Sent
+                                            td 0
+                                                
+                                        tr
+                                            td Credits You Received
+                                            td 0
+                                                   
+
+                                                                                                                                           
+    include components/_footer
+
+    //JavaScript
+    //- script(src="assets/js/glide.min.js")
+    script(src="assets/js/list.min.js")
+    script(src="assets/js/scripts.js")
