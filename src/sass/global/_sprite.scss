@@ -1,110 +1,110 @@
 .sprite {
-	background-image: url(../img/sprite.png);
-	background-repeat: no-repeat;
-	display: inline-block;
-}
-.sprite-facebook-icon {
-	width: 32px;
-	height: 32px;
-	background-position: -5px -5px;
-}
-.sprite-flag-american {
-	width: 20px;
-	height: 20px;
-	background-position: -47px -5px;
-}
-.sprite-flag-australian {
-	width: 20px;
-	height: 20px;
-	background-position: -77px -5px;
-}
-.sprite-flag-chinese {
-	width: 20px;
-	height: 20px;
-	background-position: -107px -5px;
-}
-.sprite-flag-french {
-	width: 20px;
-	height: 20px;
-	background-position: -137px -5px;
-}
-.sprite-flag-german {
-	width: 20px;
-	height: 20px;
-	background-position: -167px -5px;
-}
-.sprite-flag-italian {
-	width: 20px;
-	height: 20px;
-	background-position: -197px -5px;
-}
-.sprite-flag-russian {
-	width: 20px;
-	height: 20px;
-	background-position: -227px -5px;
-}
-.sprite-flag-spanish {
-	width: 20px;
-	height: 20px;
-	background-position: -257px -5px;
-}
-.sprite-flag-uk-ireland {
-	width: 20px;
-	height: 20px;
-	background-position: -287px -5px;
-}
-.sprite-follow-us-icon {
-	width: 50px;
-	height: 50px;
-	background-position: -317px -5px;
-}
-.sprite-handshake-icon {
-	width: 50px;
-	height: 50px;
-	background-position: -377px -5px;
-}
-.sprite-globe-icon {
-	width: 50px;
-	height: 50px;
-	background-position: -437px -5px;
-}
-.sprite-inq-icon {
-	width: 50px;
-	height: 50px;
-	background-position: -497px -5px;
-}
-.sprite-linkdin-icon {
-	width: 32px;
-	height: 32px;
-	background-position: -557px -5px;
-}
-.sprite-locations-icon {
-	width: 50px;
-	height: 50px;
-	background-position: -599px -5px;
-}
-.sprite-new-job-icon {
-	width: 50px;
-	height: 50px;
-	background-position: -659px -5px;
-}
-.sprite-news-icon {
-	width: 50px;
-	height: 50px;
-	background-position: -719px -5px;
-}
-.sprite-people-icon {
-	width: 50px;
-	height: 50px;
-	background-position: -779px -5px;
-}
-.sprite-twitter-icon {
-	width: 32px;
-	height: 32px;
-	background-position: -839px -5px;
-}
-.sprite-youtube-icon {
-	width: 32px;
-	height: 32px;
-	background-position: -881px -5px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  &.sprite-facebook-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -5px;
+  }
+  &.sprite-flag-american {
+    width: 20px;
+    height: 20px;
+    background-position: -47px -5px;
+  }
+  &.sprite-flag-australian {
+    width: 20px;
+    height: 20px;
+    background-position: -77px -5px;
+  }
+  &.sprite-flag-chinese {
+    width: 20px;
+    height: 20px;
+    background-position: -107px -5px;
+  }
+  &.sprite-flag-french {
+    width: 20px;
+    height: 20px;
+    background-position: -137px -5px;
+  }
+  .sprite-flag-german {
+    width: 20px;
+    height: 20px;
+    background-position: -167px -5px;
+  }
+  &.sprite-flag-italian {
+    width: 20px;
+    height: 20px;
+    background-position: -197px -5px;
+  }
+  &.sprite-flag-russian {
+    width: 20px;
+    height: 20px;
+    background-position: -227px -5px;
+  }
+  &.sprite-flag-spanish {
+    width: 20px;
+    height: 20px;
+    background-position: -257px -5px;
+  }
+  &.sprite-flag-uk-ireland {
+    width: 20px;
+    height: 20px;
+    background-position: -287px -5px;
+  }
+  &.sprite-follow-us-icon {
+    width: 50px;
+    height: 50px;
+    background-position: -317px -5px;
+  }
+  &.sprite-handshake-icon {
+    width: 50px;
+    height: 50px;
+    background-position: -377px -5px;
+  }
+  &.sprite-globe-icon {
+    width: 50px;
+    height: 50px;
+    background-position: -437px -5px;
+  }
+  &.sprite-inq-icon {
+    width: 50px;
+    height: 50px;
+    background-position: -497px -5px;
+  }
+  &.sprite-linkdin-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -557px -5px;
+  }
+  &.sprite-locations-icon {
+    width: 50px;
+    height: 50px;
+    background-position: -599px -5px;
+  }
+  &.sprite-new-job-icon {
+    width: 50px;
+    height: 50px;
+    background-position: -659px -5px;
+  }
+  &.sprite-news-icon {
+    width: 50px;
+    height: 50px;
+    background-position: -719px -5px;
+  }
+  &.sprite-people-icon {
+    width: 50px;
+    height: 50px;
+    background-position: -779px -5px;
+  }
+  &.sprite-twitter-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -839px -5px;
+  }
+  &.sprite-youtube-icon {
+    width: 32px;
+    height: 32px;
+    background-position: -881px -5px;
+  }
 }
