@@ -3368,7 +3368,9 @@ ul.top-quick-link {
     color: #9599a0; }
     ul.top-quick-link i span {
       font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      vertical-align: text-top; }
+      vertical-align: text-bottom;
+      font-size: 14px;
+      font-size: 0.875rem; }
   ul.top-quick-link .dropdown-content {
     right: 0px; }
     ul.top-quick-link .dropdown-content .list li {

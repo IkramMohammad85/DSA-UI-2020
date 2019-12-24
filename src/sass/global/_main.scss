@@ -308,7 +308,8 @@ ul.top-quick-link {
       color: #9599a0;
       span{
         font-family: $font-family-sans-serif;
-        vertical-align: text-top;
+        vertical-align: text-bottom;
+        @include font-size(14px)
       }
     }
   .dropdown-content {
