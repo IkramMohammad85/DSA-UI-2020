@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  &.list-content{
-    li{
+  &.list-content {
+    li {
       padding-top: 20px;
       padding-bottom: 20px;
     }
@@ -17,10 +17,10 @@
       font-weight: 200;
     }
   }
-  &.news-list{
-    li{
-      .list-content{
-        h1{ 
+  &.news-list {
+    li {
+      .list-content {
+        h1 {
           @include font-size(28px);
         }
       }
@@ -43,16 +43,16 @@
   list-style: none;
 }
 .list-inline {
-  &.list-inline-logo{
-    li{
+  &.list-inline-logo {
+    li {
       background-color: $white;
       padding: 20px;
       margin-bottom: 20px;
     }
   }
-  &.list-inline-icons{
+  &.list-inline-icons {
     margin-bottom: 0;
-    li{ 
+    li {
       width: 27px;
       height: 27px;
       @include font-size(12px);
@@ -61,7 +61,7 @@
       background-color: $blue;
       padding: 5px;
       text-align: center;
-      a{
+      a {
         color: $white;
       }
     }
@@ -121,9 +121,15 @@
       margin-right: 1em;
       order: 1;
       width: auto;
-      &.thumbnail-80{width: 80px;}
-      &.thumbnail-120{width: 120px;}
-      &.thumbnail-240{width: 240px;}
+      &.thumbnail-80 {
+        width: 80px;
+      }
+      &.thumbnail-120 {
+        width: 120px;
+      }
+      &.thumbnail-240 {
+        width: 240px;
+      }
     }
     .list-content {
       flex: 1;
@@ -146,6 +152,13 @@
       &:hover {
         color: $blue;
         background-color: $gray-100;
+      }
+    }
+    &.active {
+      color: $blue;
+      background-color: $gray-100;
+      a {
+        color: $blue;
       }
     }
   }

@@ -1779,6 +1779,11 @@ $border-default: 1px solid #ccc;
     .list-unstyled.sidebar-nav li a:hover {
       color: #007bff;
       background-color: #f8f9fa; }
+  .list-unstyled.sidebar-nav li.active {
+    color: #007bff;
+    background-color: #f8f9fa; }
+    .list-unstyled.sidebar-nav li.active a {
+      color: #007bff; }
 
 .list-inline.list-inline-style {
   display: inline;
