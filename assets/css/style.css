@@ -2520,7 +2520,7 @@ ol, ul {
 .pb-05 {
   padding-bottom: 5px !important; }
 
-.ml-1 {
+.mb-1 {
   margin-bottom: 0px !important; }
 
 .mb-2 {
@@ -3723,6 +3723,9 @@ ul.navbar {
 
 .icon-3x {
   font-size: 3em; }
+
+.icon-6x {
+  font-size: 6em; }
 
 .sprite {
   background-image: url(../img/sprite.png);
