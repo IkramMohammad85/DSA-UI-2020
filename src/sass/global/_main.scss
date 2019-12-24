@@ -303,8 +303,13 @@ ul.top-quick-link {
   float: right;
   @extend %clearfix;
   position: relative;
+  
     i{
       color: #9599a0;
+      span{
+        font-family: $font-family-sans-serif;
+        vertical-align: text-top;
+      }
     }
   .dropdown-content {
     right: 0px;
