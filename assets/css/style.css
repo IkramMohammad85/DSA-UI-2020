@@ -1515,7 +1515,7 @@ $border-default: 1px solid #ccc;
     .card.events .card-header-img .card-text-overlap {
       top: 35%; }
   .card.contact-us {
-    background: url(../img/DSA-advertisement.jpg) no-repeat top left;
+    background: url(../img/dsa-advertisement.jpg) no-repeat top left;
     width: auto;
     height: 420px;
     background-size: cover; }
