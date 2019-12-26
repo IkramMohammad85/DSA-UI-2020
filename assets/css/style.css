@@ -2970,6 +2970,11 @@ form .form-field.field-group {
       top: 0;
       right: 0;
       padding: 21px 15px; }
+    form .form-field.field-group .group-field-btn.icon-search {
+      top: 0;
+      right: 0;
+      padding-top: 13px;
+      padding-bottom: 14px; }
     form .form-field.field-group .group-field-btn.btn-plus-minus {
       right: 0;
       top: 0;
