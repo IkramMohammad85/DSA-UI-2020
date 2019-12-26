@@ -2079,6 +2079,27 @@ $border-default: 1px solid #ccc;
       content: "\003e";
       color: #58595B; }
 
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem; }
+  .alert.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb; }
+  .alert.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb; }
+  .alert.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba; }
+  .alert.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb; }
+
 @font-face {
   font-family: 'NimbusSanL';
   src: url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Reg.otf") format("opentype"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype"), url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");
@@ -2921,9 +2942,7 @@ textarea {
   display: inline-block;
   border: 1px solid #ccc;
   border-color: #e7e7e7;
-  box-sizing: border-box;
-  font-size: 12px;
-  font-size: 0.75rem; }
+  box-sizing: border-box; }
 
 input[type="submit"] {
   width: 100%;

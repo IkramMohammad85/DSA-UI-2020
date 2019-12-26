@@ -40,7 +40,6 @@ textarea {
   border: $border-default;
   border-color: #e7e7e7;
   box-sizing: border-box;
-  @include font-size(12px);
 }
 
 input[type="submit"] {
