@@ -2184,19 +2184,19 @@ ol, ul {
   width: -moz-min-content;
   width: min-content; }
 
-.btn-primary {
+.btn-primary, .blue-btn {
   color: #fff;
   background-color: #1a2940;
   border-color: #1a2940; }
-  .btn-primary:hover {
+  .btn-primary:hover, .blue-btn:hover {
     color: #fff;
     background-color: #314d77;
     border-color: #314d77; }
-  .btn-primary:active:hover {
+  .btn-primary:active:hover, .blue-btn:active:hover {
     color: #fff;
     background-color: #314d77;
     border-color: #314d77; }
-  .btn-primary:active:focus {
+  .btn-primary:active:focus, .blue-btn:active:focus {
     color: #fff;
     background-color: #314d77;
     border-color: #314d77; }
