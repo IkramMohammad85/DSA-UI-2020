@@ -2042,6 +2042,8 @@ $border-default: 1px solid #ccc;
     color: #fff; }
     .accordion-wrapper.vertical-menu .accordion-heading:hover .down-arrow {
       border-color: #fff; }
+    .accordion-wrapper.vertical-menu .accordion-heading:hover a {
+      color: #fff; }
 
 .accordion-wrapper.vertical-menu .accordion-item.open .accordion-heading {
   background-color: #2981d1;
