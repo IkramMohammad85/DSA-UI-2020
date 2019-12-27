@@ -1687,7 +1687,9 @@ $border-default: 1px solid #ccc;
 .list-inline.list-inline-logo li {
   background-color: #fff;
   padding: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  height: 100px;
+  vertical-align: middle; }
 
 .list-inline.list-inline-icons {
   margin-bottom: 0; }
@@ -2160,6 +2162,10 @@ ol, ul {
   margin-top: 0;
   margin-bottom: 2rem; }
 
+b,
+strong {
+  font-weight: bold; }
+
 .btn {
   border-radius: 0px;
   font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2521,7 +2527,7 @@ ol, ul {
   padding-bottom: 10px; }
 
 .pl-1 {
-  padding-left: 10px; }
+  padding-left: 10px !important; }
 
 .p-0 {
   padding: 0px !important; }
