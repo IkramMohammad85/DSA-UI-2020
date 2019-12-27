@@ -2044,6 +2044,8 @@ $border-default: 1px solid #ccc;
 .accordion-wrapper.vertical-menu .accordion-item.open .accordion-heading {
   background-color: #2981d1;
   color: #fff; }
+  .accordion-wrapper.vertical-menu .accordion-item.open .accordion-heading a {
+    color: #fff; }
 
 .accordion-wrapper.vertical-menu .accordion-item.open .down-arrow {
   -webkit-transform: rotate(225deg);
@@ -2054,7 +2056,7 @@ $border-default: 1px solid #ccc;
 
 .accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li {
   background: #f8f9fa;
-  padding: 10px 10px;
+  padding: 10px 15px;
   border-bottom: solid 1px #e9ecef; }
   .accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li:hover {
     background: #fff; }
@@ -2643,6 +2645,9 @@ ol, ul {
 
 .border-bottom {
   border-bottom: 1px solid #dee2e6; }
+
+.border-top {
+  border-top: 1px solid #dee2e6; }
 
 .d-block {
   display: block !important; }

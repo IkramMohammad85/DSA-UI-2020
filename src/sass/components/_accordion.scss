@@ -66,6 +66,9 @@
         .accordion-heading {
           background-color: $dark-light-blue;
           color: $white;
+          a{
+            color: $white;
+          }
         }
         .down-arrow {
           @include transform(rotate(225deg));
@@ -78,7 +81,7 @@
         .list {
           li {
             background: $gray-100;
-            padding: 10px 10px;
+            padding: 10px 15px;
             border-bottom: solid 1px $gray-200;
             &:hover {
               background: $white;
