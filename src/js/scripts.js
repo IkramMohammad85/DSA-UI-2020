@@ -6,8 +6,10 @@ const headerHome = document.querySelector("div#wrapper.home")
 //apply this effect only to homepage
 if(header && headerHome){
       const header_height = header.offsetHeight
-      const add_class_on_scroll = () => { header.classList.add("white");header.querySelector('img.logo').src = 'assets/img/logo-black.png'; }
-      const remove_class_on_scroll = () => { header.classList.remove("white");header.querySelector('img.logo').src = 'assets/img/logo.png'; }
+      const normal_logo=header.querySelector('img.logo').getAttribute('src')
+      const dark_logo=header.querySelector('img.logo').getAttribute('data-dark')
+      const add_class_on_scroll = () => { header.classList.add("white");header.querySelector('img.logo').src = dark_logo; }
+      const remove_class_on_scroll = () => { header.classList.remove("white");header.querySelector('img.logo').src = normal_logo; }
       window.addEventListener('scroll', function() { 
       scrollpos = window.scrollY;
 
