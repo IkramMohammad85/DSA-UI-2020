@@ -283,7 +283,9 @@
 .border-top {
   border-top: 1px solid #dee2e6;
 }
-
+.border-white {
+  border: 1px solid $white !important;
+}
 .d-block {
   display: block !important;
 }
@@ -449,4 +451,47 @@ background-size: cover;
 min-height: 500px;
 }
 .building-img{ background-image: url(https://www.dezshira.com/userfiles/image/subscription/subcription_form_lightBG.jpg); 
+}
+.arrow {
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+
+.right-arrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left-arrow {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.label {
+  color:  $white;
+  padding: 5px 12px;
+  @include font-size(14px);
+  display: inline-block;
+
+&.label-primary{
+  background-color: $deep-blue;
+  border-color: $deep-blue;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $deep-cyan-blue;
+    border-color: $deep-cyan-blue;
+  }
+}
+&.label-secondary {
+  background-color: $blue;
+  border-color: $blue;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $deep-cyan-blue;
+    border-color: $deep-cyan-blue;
+  }
+}
 }

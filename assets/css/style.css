@@ -1688,7 +1688,7 @@ $border-default: 1px solid #ccc;
   background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
-  height: 100px;
+  height: 120px;
   vertical-align: middle; }
 
 .list-inline.list-inline-icons {
@@ -2657,6 +2657,9 @@ strong {
 .border-top {
   border-top: 1px solid #dee2e6; }
 
+.border-white {
+  border: 1px solid #fff !important; }
+
 .d-block {
   display: block !important; }
 
@@ -2818,6 +2821,41 @@ strong {
 
 .building-img {
   background-image: url(https://www.dezshira.com/userfiles/image/subscription/subcription_form_lightBG.jpg); }
+
+.arrow {
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px; }
+
+.right-arrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+.left-arrow {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); }
+
+.label {
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: inline-block; }
+  .label.label-primary {
+    background-color: #1a2940;
+    border-color: #1a2940; }
+    .label.label-primary:hover, .label.label-primary:focus {
+      color: #fff;
+      background-color: #314d77;
+      border-color: #314d77; }
+  .label.label-secondary {
+    background-color: #007bff;
+    border-color: #007bff; }
+    .label.label-secondary:hover, .label.label-secondary:focus {
+      color: #fff;
+      background-color: #314d77;
+      border-color: #314d77; }
 
 .table {
   width: 100%;
@@ -3254,7 +3292,8 @@ header.site-header {
         background: #1a2940; }
       header.site-header #main-nav.white .navbar li.dropdown:nth-last-child(2) a {
         color: #007bff; }
-      header.site-header #main-nav.white .navbar li.dropdown h4 a, header.site-header #main-nav.white .navbar li.dropdown h3 a {
+      header.site-header #main-nav.white .navbar li.dropdown h4 a,
+      header.site-header #main-nav.white .navbar li.dropdown h3 a {
         color: inherit !important; }
   header.site-header .fixed-top {
     position: fixed;
@@ -3465,13 +3504,16 @@ ul.navbar {
     ul.navbar .dropdown-content a {
       color: #000; }
 
-.item {
+.glide.publications .glide__slides {
+  white-space: inherit; }
+
+.glide.publications .item {
   position: relative;
   padding: 30px; }
-  .item:hover .hover-content {
+  .glide.publications .item:hover .hover-content {
     filter: alpha(opacity=100);
     opacity: 1; }
-  .item img {
+  .glide.publications .item img {
     width: 190px;
     position: relative;
     display: block;
@@ -3488,8 +3530,41 @@ ul.navbar {
   padding-left: 30px;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out; }
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+
+.glide-prev,
+.glide-next {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  outline: none;
+  position: absolute;
+  padding: 2px 2px 2px 3px;
+  background: none;
+  width: 51px;
+  z-index: 2;
+  font-size: 40px;
+  text-decoration: none;
+  left: -42px;
+  border: 0;
+  top: 40%;
+  cursor: pointer;
+  color: #a89cc8;
+  opacity: 1;
+  line-height: 1;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67), color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: opacity 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67), color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
+
+.glide-next {
+  right: 0px;
+  left: auto; }
+
+.glide-prev {
+  left: 0px;
+  right: auto; }
 
 @media (max-width: 992px) {
   header.site-header .logo {
@@ -3979,6 +4054,20 @@ ul.navbar {
   padding: 10px 20px;
   width: 100%;
   font-size: 0.9625rem; }
+
+.home .glide-next {
+  right: 3%;
+  left: auto;
+  height: 60px;
+  width: 55px;
+  padding-right: 15px; }
+
+.home .glide-prev {
+  left: 3%;
+  right: auto;
+  height: 60px;
+  width: 55px;
+  padding-left: 15px; }
 
 @media (max-width: 992px) {
   .big-banner .item {

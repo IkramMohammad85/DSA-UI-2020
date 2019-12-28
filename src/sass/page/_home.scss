@@ -129,6 +129,22 @@
       }
     }
   }
+
+  .glide-next {
+    right: 3%;
+    left: auto;
+    height: 60px;
+    width: 55px;
+    padding-right: 15px;
+  }
+  
+  .glide-prev {
+    left: 3%;
+    right: auto;
+    height: 60px;
+    width: 55px;
+    padding-left: 15px;
+  }
 }
 //Mobile
 @media (max-width: $reflex-md) {
