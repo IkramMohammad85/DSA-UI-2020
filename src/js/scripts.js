@@ -20,21 +20,49 @@ if(header && headerHome){
 }
 
 //Feature: Homepage Big Banner Slider
-const glideElements = document.querySelector(".glide")
+const glideElements = document.querySelectorAll(".glide")
 if (typeof Glide != "undefined" && glideElements) {
-new Glide('section.big-banner.glide', {
-      type:'carousel',
-      autoplay: 10000,
-      animationDuration:1000,
-      gap:0,
-      startAt: 0,
-      perView: 1,
-      animationTimingFunc: 'ease',
-      breakpoints: {
-            300: {perView: 1},
-            992: {perView: 1}
+
+[].forEach.call(glideElements, function(glideItem) {
+
+      if(glideItem.classList.contains('big-banner')){
+
+            new Glide('section.big-banner.glide', {
+                  type:'carousel',
+                  autoplay: 10000,
+                  animationDuration:1000,
+                  gap:0,
+                  startAt: 0,
+                  perView: 1,
+                  animationTimingFunc: 'ease',
+                  breakpoints: {
+                        300: {perView: 1},
+                        992: {perView: 1}
+                  }
+            }).mount();
+
+      } else {
+            let glideClass='.'+glideItem.className.toString().split(' ').join('.');
+            let perView=4;
+            if(glideItem.getAttribute('data-preView'))
+                  perView=glideItem.getAttribute('data-preView');
+
+            new Glide(glideClass, {
+                  type:'carousel',
+                  autoplay: 10000,
+                  animationDuration:1000,
+                  gap:0,
+                  startAt: 0,
+                  perView: perView,
+                  animationTimingFunc: 'ease',
+                  breakpoints: {
+                        992: {perView: 1},
+                        1200: {perView: 3}
+                  }
+            }).mount();
       }
-    }).mount();
+
+});
 }
 
 //Feature: List.js
