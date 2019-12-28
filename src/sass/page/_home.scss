@@ -1,12 +1,12 @@
 .home {
   header.site-header {
-    #main-nav{
-      background:rgba($bluedark,0.8);
+    #main-nav {
+      background: rgba($bluedark, 0.8);
     }
   }
-  
+
   .big-banner {
-    .item{
+    .item {
       position: relative;
       background-color: $bluedark;
       height: 100vh;
@@ -14,8 +14,8 @@
       max-height: 1000px;
 
       .item-image {
-        z-index:0;
-        height:100%;
+        z-index: 0;
+        height: 100%;
         &::before {
           content: "";
           position: absolute;
@@ -24,12 +24,16 @@
           right: 0;
           bottom: 0;
           z-index: 0;
-          background: linear-gradient(0deg, rgba(13, 35, 56, 20) 20%, rgba(13, 35, 56, 0.06774047509628855) 65%);
+          background: linear-gradient(
+            0deg,
+            rgba(13, 35, 56, 20) 20%,
+            rgba(13, 35, 56, 0.06774047509628855) 65%
+          );
         }
         img {
-          background-size:contain;
+          background-size: contain;
           width: 100%;
-          height:100%;
+          height: 100%;
         }
       }
 
@@ -39,9 +43,9 @@
         left: 50%;
         @include transform(translateX(-50%));
 
-        h1{
+        h1 {
           text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.46);
-          margin-bottom:20px;
+          margin-bottom: 20px;
         }
         .grid.align-end {
           .col-grid {
@@ -51,8 +55,6 @@
             img {
               ///filter: brightness(50%);
               opacity: 0.4;
-
-              
             }
 
             .news-details {
@@ -60,24 +62,29 @@
               left: 50%;
               @include transform(translateX(-50%));
               width: 90%;
-              top:40%;//add top postion due to justify-center not workin in ie
-              a{color:white;}
-              .btn-link{ 
-                padding-left: 0; 
+              top: 40%; //add top postion due to justify-center not workin in ie
+              a {
+                color: white;
+              }
+              .btn-link {
+                padding-left: 0;
                 padding-right: 0;
               }
             }
           }
-
         }
       }
     }
-    
   }
   //end of homepage big banner css
 
   section.about-us {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 9%, rgba(0, 0, 0, 0.25) 9%, rgba(0, 0, 0, 0.25) 9%),
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.25) 9%,
+        rgba(0, 0, 0, 0.25) 9%,
+        rgba(0, 0, 0, 0.25) 9%
+      ),
       url(../img/who-we-are.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -96,9 +103,16 @@
         color: $white;
       }
       &:hover {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 9%, rgba(0, 0, 0, 0.5) 9%, rgba(0, 0, 0, 0.8) 9%);
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.8) 9%,
+          rgba(0, 0, 0, 0.5) 9%,
+          rgba(0, 0, 0, 0.8) 9%
+        );
         cursor: pointer;
-        .icon-3x{color:$blue;}
+        .icon-3x {
+          color: $blue;
+        }
       }
       .center-block {
         margin-top: 0px;
@@ -130,19 +144,26 @@
     }
   }
 
+  .glide-next,
+  .glide-prev {
+    height: 60px;
+    width: 55px;
+    padding-bottom: 7px;
+    opacity: 0.8;
+    .arrow {
+      padding: 8px;
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
   .glide-next {
     right: 3%;
-    left: auto;
-    height: 60px;
-    width: 55px;
     padding-right: 15px;
   }
-  
+
   .glide-prev {
     left: 3%;
-    right: auto;
-    height: 60px;
-    width: 55px;
     padding-left: 15px;
   }
 }
@@ -154,23 +175,26 @@
       //if any better alternatives, feel free to make change here
       height: 150vh !important;
 
-      .item-image{
-        img{zoom:4;width:auto !important;}
+      .item-image {
+        img {
+          zoom: 4;
+          width: auto !important;
+        }
       }
 
       .news {
         bottom: auto;
         top: 25%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
         .heading-brand {
-          font-size:1.3em;
+          font-size: 1.3em;
           margin-top: 0 !important;
         }
         .col-grid {
           max-height: 150px;
           overflow: hidden;
           margin-bottom: 5px;
-          .news-details{
-            top: 20%;//add top postion due to justify-center not workin in ie
+          .news-details {
+            top: 20%; //add top postion due to justify-center not workin in ie
           }
         }
       }
@@ -180,7 +204,9 @@
     section.about-us {
       .transparent-bg {
         min-height: auto;
-        .center-block{ display: contents;}
+        .center-block {
+          display: contents;
+        }
       }
     }
   }
