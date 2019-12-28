@@ -3467,7 +3467,7 @@ ul.navbar {
 
 .item {
   position: relative;
-  padding: 20px; }
+  padding: 30px; }
   .item:hover .hover-content {
     filter: alpha(opacity=100);
     opacity: 1; }
