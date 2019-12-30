@@ -391,6 +391,9 @@
   padding: 3px;
   user-select: none;
   @include transform(rotate(45deg));
+  &.border-white{ 
+    border-color: $white;
+  }
 }
 .float-left {
   float: left;
