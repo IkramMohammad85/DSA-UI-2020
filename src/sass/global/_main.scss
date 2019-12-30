@@ -5,6 +5,7 @@
 a {
   color: $cyan-blue;
   text-decoration: none;
+  cursor: pointer;
   &:hover {
     text-decoration: none;
   }
@@ -42,7 +43,7 @@ header.site-header {
     background: $bluedark;
     @include transition(all 0.5s);
     // @include transition(height 0.15s ease-out);
-    height: 110px;
+    height: 107px;
     display: flex;
     flex-direction: column;
 
@@ -101,12 +102,19 @@ header.site-header {
   }
   .navbar {
     li {
-      a {
+      a { cursor: pointer;
         &:hover {
           color: #fdcd20;
           .down-arrow {
             border-color: #fdcd20;
           }
+        }
+      }
+      .dropdown-content{
+
+         a{
+          &:hover{ color:$blue;}
+
         }
       }
     }
@@ -390,7 +398,7 @@ ul.navbar {
   //overwrite for navbar dropdowns
   .dropdown-content {
     left: 0;
-    top: 110px;
+    top: 107px;
     width: 100%;
     background-color: #f4f4f4;
     color: $black;

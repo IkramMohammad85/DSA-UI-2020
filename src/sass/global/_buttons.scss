@@ -156,20 +156,22 @@
   &:before {
     position: absolute;
     left: 15px;
+    top: 12px ;
+    content: " ";
+    height: 14px;
+    width: 2px;
+    background-color: $white;
+    transform: rotate(135deg);
+  }
+  &:after {
+    position: absolute;
+    left: 15px;
+    top: 3px ;
     content: " ";
     height: 14px;
     width: 2px;
     background-color: $white;
     transform: rotate(45deg);
-  }
-  &:after {
-    position: absolute;
-    left: 15px;
-    content: " ";
-    height: 14px;
-    width: 2px;
-    background-color: $white;
-    transform: rotate(-45deg);
   }
 }
 .btn-lg {

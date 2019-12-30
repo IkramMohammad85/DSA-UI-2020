@@ -1,4 +1,10 @@
 .banner {
+  &.banner-brochure{
+    overflow: inherit;
+    img{
+      height: 100%;
+    }
+  }
   &.banner-sm{
     height: 170px;
   }
@@ -7,7 +13,7 @@
   height: 340px;
   width: 100%;
   z-index: 1;
-  top: 110px;
+  top: 107px;
   display: flex;
   align-items: center;
   &.top-postion-24 {
@@ -71,6 +77,11 @@
     padding: 25px 0px;
     h1 {
       @include font-size(28px);
+    }
+    &.banner-brochure{
+      img{
+        width: 100%;
+      }
     }
   }
 }

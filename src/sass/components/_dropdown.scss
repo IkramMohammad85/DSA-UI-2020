@@ -30,7 +30,7 @@
     h3 {
       text-transform: none;
       a {
-        color: $white !important;
+        color: $white;
       }
     }
     .card.contact-us,
@@ -96,6 +96,9 @@
       max-width: 100%;
     }
   }
+}
+.dropdown [data-trigger] {
+  cursor: pointer;
 }
 //CSS based dropdown
 .dropdown-hover {

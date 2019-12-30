@@ -391,7 +391,7 @@
   padding: 3px;
   user-select: none;
   @include transform(rotate(45deg));
-  &.border-white{ 
+  &.arrow-border-white{ 
     border-color: $white;
   }
 }
@@ -497,4 +497,18 @@ min-height: 500px;
     border-color: $deep-cyan-blue;
   }
 }
+}
+.wp-caption-text{
+  text-align: center;
+  padding: 10px 20px;
+  background-color: $soft-bluish-gray;
+  @include font-size(14px);
+  margin-bottom: 0px;
+  font-style: italic;
+}
+.wp-caption{
+  max-width: 100%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  border: solid 5px #fff;
+  margin-bottom: 2em;
 }
