@@ -90,9 +90,9 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    min-height: 500px;
+    min-height: 443px;
     .transparent-bg {
-      min-height: 370px;
+      min-height: 312px;
       color: $white;
       position: relative;
       @include transition(0.5s background-color ease-in-out);
@@ -124,6 +124,16 @@
     .card-body {
       height: 450px;
       overflow: auto;
+      .list.lists-events{
+        .date-block{
+          padding: 10px 15px;
+          margin-right: 20px;
+          width: auto;
+        }
+        .dec-block{
+          margin-left: 0px;
+        }
+      }
     }
   }
 
@@ -167,6 +177,7 @@
     padding-left: 15px;
   }
 }
+
 //Mobile
 @media (max-width: $reflex-md) {
   .big-banner {

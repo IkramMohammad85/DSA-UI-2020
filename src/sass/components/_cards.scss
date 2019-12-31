@@ -270,6 +270,10 @@
         overflow: hidden;
       }
     }
+    &.asiapedia,
+    &.events {
+      min-height: 100%;
+    }
   }
 }
 
@@ -287,6 +291,10 @@
     &.international-desks,
     &.services {
       height: auto;
+    }
+    &.asiapedia,
+    &.events {
+      min-height: 100%;
     }
     &.services {
       height: auto;

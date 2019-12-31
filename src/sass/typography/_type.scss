@@ -20,7 +20,7 @@
 
 body {
     color: $black;
-    font-size: $font-size-base;
+    font-size: 14px;
     font-family:$font-family-base;
     //font-weight: $font-weight-base;
     line-height:$line-height-base;
@@ -28,11 +28,20 @@ body {
   }
   h1 {
     font-family: $font-family-head;
+    font-size: 2em;
   }
 
   h2 {
      font-weight: $font-family-head;
+     font-size: 1.5em;
   }
+  h3 {
+    font-size: 1.25em;
+ }
+ h4 {
+  font-size: 1em;
+}
+
 
   // Headings
 //
@@ -64,7 +73,6 @@ p {
   color: inherit;
   font-family: inherit;
   padding: 0;
-  font-family: $font-family-base;
 }
 
 ol, ul {
