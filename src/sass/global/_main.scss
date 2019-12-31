@@ -286,7 +286,7 @@ header.site-header .hamburger-menu {
     @include transform(rotate(-135deg));
   }
 }
-.cta-button{ position: fixed; top: 39%; right:-63px; transform: rotate(-271deg);letter-spacing: 2px;}
+.cta-button{ position: fixed; top: 39%; right:-63px; transform: rotate(-271deg);letter-spacing: 2px; z-index: 9000;}
 //Tablets
 @media (max-width: $reflex-lg) {
   //make container fluid from tablet size onwards
@@ -554,4 +554,5 @@ ul.navbar {
       }
     }
   }
+  .cta-button{ position: fixed; top: 34px; right:18%;letter-spacing:normal; transform: none; padding: 5px 10px;}
 }

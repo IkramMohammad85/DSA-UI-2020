@@ -444,7 +444,7 @@ header.site-header .hamburger-menu{display:none}.hamburger-menu{width:35px;heigh
 .hamburger-menu span:nth-child(1){top:-8px}.hamburger-menu span:nth-child(2){top:0}
 .hamburger-menu span:nth-child(3){top:8px}.hamburger-menu.open span:nth-child(1){top:0;-webkit-transform:rotate(135deg);transform:rotate(135deg)}
 .hamburger-menu.open span:nth-child(2){opacity:0;left:-60px}.hamburger-menu.open span:nth-child(3){top:0;-webkit-transform:rotate(-135deg);transform:rotate(-135deg)}
-.cta-button{position:fixed;top:39%;right:-63px;-webkit-transform:rotate(-271deg);transform:rotate(-271deg);letter-spacing:2px}
+.cta-button{position:fixed;top:39%;right:-63px;-webkit-transform:rotate(-271deg);transform:rotate(-271deg);letter-spacing:2px;z-index:9000}
 @media(max-width:1200px){.container{max-width:100% !important}header.site-header .logo{max-width:240px}
 ul.navbar .dropdown-content li{text-align:left}}ul.top-quick-link{margin:0;padding:0;text-transform:uppercase;margin-top:10px;float:right;position:relative}
 ul.top-quick-link i{color:#9599a0}ul.top-quick-link i span{font-family:"Myriad Pro",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";vertical-align:text-bottom;font-size:14px;font-size:.875rem}
@@ -469,6 +469,7 @@ header.site-header .hamburger-menu{margin-top:50px}header.site-header ul.navbar 
 .header-menu.open ul.top-quick-link .dropdown-content{height:500px;overflow:auto;left:0;right:0}
 .header-menu.open ul.top-quick-link .dropdown-content .list li{text-align:left}.header-menu.open ul.navbar{width:100%;padding-left:0;text-align:center}
 .header-menu.open ul.navbar>li{width:100%;border-bottom:solid 1px #1a2940}footer.site-footer .copyright .list-inline{text-align:left}
+.cta-button{position:fixed;top:34px;right:18%;letter-spacing:normal;-webkit-transform:none;transform:none;padding:5px 10px}
 }@font-face{font-family:"dsa-icons";src:url("../fonts/icons//dsa-icons.eot?aatp41");src:url("../fonts/icons//dsa-icons.eot?aatp41#iefix") format("embedded-opentype"),url("../fonts/icons//dsa-icons.ttf?aatp41") format("truetype"),url("../fonts/icons//dsa-icons.woff?aatp41") format("woff"),url("../fonts/icons//dsa-icons.svg?aatp41#dsa-icons") format("svg");font-weight:normal;font-style:normal;font-display:block}
 [class^="icon-"],[class*=" icon-"]{font-family:"dsa-icons" !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;vertical-align:inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-wechat:before{content:"";color:#7bb32e}.icon-laptop1:before{content:""}
