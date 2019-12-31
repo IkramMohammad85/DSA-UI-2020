@@ -57,10 +57,10 @@ gulp.task('sass', function () {
 			cascade: false,
 			grid: 'autoplace'
 		}))
-		// .pipe(minifycss({
-		// 	"maxLineLen": 80,
-		// 	"uglyComments": true
-		//   }))
+		 .pipe(minifycss({
+		 	"maxLineLen": 80,
+		 	"uglyComments": true
+		   }))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(paths.sass.dest))
 });
