@@ -446,9 +446,8 @@ header.site-header .hamburger-menu{display:none}.hamburger-menu{width:35px;heigh
 .hamburger-menu span:nth-child(3){top:8px}.hamburger-menu.open span:nth-child(1){top:0;-webkit-transform:rotate(135deg);transform:rotate(135deg)}
 .hamburger-menu.open span:nth-child(2){opacity:0;left:-60px}.hamburger-menu.open span:nth-child(3){top:0;-webkit-transform:rotate(-135deg);transform:rotate(-135deg)}
 .cta-button{position:fixed;top:39%;right:-63px;-webkit-transform:rotate(-271deg);transform:rotate(-271deg);letter-spacing:2px;z-index:9000}
-@media(min-width:1598px){.container{max-width:100% !important}}@media(max-width:1200px){.container{max-width:100% !important}
-header.site-header .logo{max-width:240px}ul.navbar .dropdown-content li{text-align:left}
-}ul.top-quick-link{margin:0;padding:0;text-transform:uppercase;margin-top:10px;float:right;position:relative}
+@media(max-width:1200px){.container{max-width:100% !important}header.site-header .logo{max-width:240px}
+ul.navbar .dropdown-content li{text-align:left}}ul.top-quick-link{margin:0;padding:0;text-transform:uppercase;margin-top:10px;float:right;position:relative}
 ul.top-quick-link i{color:#9599a0}ul.top-quick-link i span{font-family:"Myriad Pro",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";vertical-align:text-bottom;font-size:14px;font-size:.875rem}
 ul.top-quick-link .dropdown-content{right:0}ul.top-quick-link .dropdown-content .list li{padding-bottom:12px;padding-top:12px}
 ul.top-quick-link .dropdown-content.dropdown-content-medium{padding:15px 15px 0 15px}
