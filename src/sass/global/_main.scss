@@ -558,8 +558,18 @@ ul.navbar {
     }
   }
   .cta-button{ 
-    position: fixed; top: 42px; right:19%;letter-spacing:normal; transform: none; 
-    padding: 0px 4px; font-size: 12px; border-radius: 2px;
-    line-height: 17px; height: 20px;
+    position: fixed; top: 42px; right:70px;letter-spacing:normal; transform: none; 
+    padding: 0px 4px; font-size: 12px; border-radius: 2px;height: 20px; vertical-align: top;
+    i{
+      display: inline-flex;
+      line-height: 1px;
+      vertical-align: middle;
+    }
   }
+}
+@media (max-width: $reflex-xs) {
+  header.site-header
+  .logo{ max-width: 180px;}
+  
+
 }

@@ -191,14 +191,18 @@ summary{display:list-item}template{display:none}[hidden]{display:none}:root{--re
 .card.featured-resources .card-body p{margin-bottom:0}.card.featured-resources .card-footer{padding:20px}
 .card.featured-offers{border-top:solid 3px #314d77}.card.featured-offers .card-body{padding:20px;min-height:184px}
 .card.testimonial .card-body{padding:20px;min-height:125px}.card.testimonial .card-body p{margin-bottom:0}
+.card.service-news .card-body{min-height:236px;padding:15px}.card.service-news .card-header-img{height:84px}
+.card.service-news .card-header-img .card-text-overlap{top:0}.card.service-news .card-header-img .card-text-overlap h2{padding:15px;font-size:18px}
 @media(max-width:1200px){.card.news{height:auto}.card.news .card-header-img{height:auto}
 .card.news-right{height:auto}.card.news-right .card-header-img{height:auto}.card.office .card-body{min-height:auto;overflow:hidden}
 .card.asiapedia,.card.events{min-height:100%}}@media(max-width:992px){.card .card-header-img{height:auto}
 .card .card-header-img .card-text-overlap{top:40%}.card.asiapedia,.card.events,.card.international-desks,.card.services{height:auto}
 .card.asiapedia,.card.events{min-height:100%}.card.services{height:auto}.card.services .card-body{min-height:100%}
 .card.featured-resources .card-body,.card.international-desks .card-body{min-height:auto}
-.card.office .card-body{min-height:auto;overflow:hidden}}.list{padding:0;margin:0;list-style:none}
-.list.list-content li{padding-top:20px;padding-bottom:20px}.list li{padding:12px 0;border-bottom:solid 1px #e7e7e7;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.card.office .card-body{min-height:auto;overflow:hidden}.card.service-news .card-body{min-height:100%}
+.card.service-news .card-header-img .card-text-overlap{top:0}.card.service-news .card-header-img .card-text-overlap h2{font-size:24px}
+}.list{padding:0;margin:0;list-style:none}.list.list-content li{padding-top:20px;padding-bottom:20px}
+.list li{padding:12px 0;border-bottom:solid 1px #e7e7e7;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .list li a{color:#344e70;font-weight:200}.list.news-list li .list-content h1{font-size:28px;font-size:1.75rem}
 .list-hover li{background-color:#ebebeb;border-bottom:solid 1px #fff}.list-hover li:hover{background-color:#f1f1f1}
 .list-inline,.list-unstyled{padding-left:0;list-style:none}.list-inline.list-inline-logo li{background-color:#fff;padding:20px;margin-bottom:20px;height:120px;vertical-align:middle}
@@ -471,8 +475,9 @@ header.site-header ul.navbar .dropdown-content{height:85vh;top:50px;overflow-y:s
 .header-menu.open ul.top-quick-link .dropdown-content{height:500px;overflow:auto;left:0;right:0}
 .header-menu.open ul.top-quick-link .dropdown-content .list li{text-align:left}.header-menu.open ul.navbar{width:100%;padding-left:0;text-align:center}
 .header-menu.open ul.navbar>li{width:100%;border-bottom:solid 1px #1a2940}footer.site-footer .copyright .list-inline{text-align:left}
-.cta-button{position:fixed;top:42px;right:19%;letter-spacing:normal;-webkit-transform:none;transform:none;padding:0 4px;font-size:12px;border-radius:2px;line-height:17px;height:20px}
-}@font-face{font-family:"dsa-icons";src:url("../fonts/icons//dsa-icons.eot?aatp41");src:url("../fonts/icons//dsa-icons.eot?aatp41#iefix") format("embedded-opentype"),url("../fonts/icons//dsa-icons.ttf?aatp41") format("truetype"),url("../fonts/icons//dsa-icons.woff?aatp41") format("woff"),url("../fonts/icons//dsa-icons.svg?aatp41#dsa-icons") format("svg");font-weight:normal;font-style:normal;font-display:block}
+.cta-button{position:fixed;top:42px;right:70px;letter-spacing:normal;-webkit-transform:none;transform:none;padding:0 4px;font-size:12px;border-radius:2px;height:20px;vertical-align:top}
+.cta-button i{display:-webkit-inline-box;display:inline-flex;line-height:1px;vertical-align:middle}
+}@media(max-width:576px){header.site-header .logo{max-width:180px}}@font-face{font-family:"dsa-icons";src:url("../fonts/icons//dsa-icons.eot?aatp41");src:url("../fonts/icons//dsa-icons.eot?aatp41#iefix") format("embedded-opentype"),url("../fonts/icons//dsa-icons.ttf?aatp41") format("truetype"),url("../fonts/icons//dsa-icons.woff?aatp41") format("woff"),url("../fonts/icons//dsa-icons.svg?aatp41#dsa-icons") format("svg");font-weight:normal;font-style:normal;font-display:block}
 [class^="icon-"],[class*=" icon-"]{font-family:"dsa-icons" !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;vertical-align:inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-wechat:before{content:"";color:#7bb32e}.icon-laptop1:before{content:""}
 .icon-unlocked:before{content:""}.icon-locked:before{content:""}
@@ -554,7 +559,7 @@ header.site-header ul.navbar .dropdown-content{height:85vh;top:50px;overflow-y:s
 @media(max-width:992px){.big-banner .item{height:150vh !important}.big-banner .item .item-image img{zoom:4;width:auto !important}
 .big-banner .item .news{bottom:auto;top:25%}.big-banner .item .news .heading-brand{font-size:1.3em;margin-top:0 !important}
 .big-banner .item .news .col-grid{max-height:150px;overflow:hidden;margin-bottom:5px}
-.big-banner .item .news .col-grid .news-details{top:20%}.home section.about-us .transparent-bg{min-height:auto}
+.big-banner .item .news .col-grid .news-details{top:20%}.home section.about-us .transparent-bg{min-height:auto;padding:20px}
 .home section.about-us .transparent-bg .center-block{display:contents}}.research a i{color:#2981d1}
 .research h2,.research h4,.research span{font-weight:normal;color:#6c757d}.research span{font-size:13px;font-size:.8125rem;line-height:16px}
 .blue-hover:hover i{color:#fff}.icon{width:auto;height:62px;display:block}.brochure-icon{background:url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-blue.png) no-repeat top center}

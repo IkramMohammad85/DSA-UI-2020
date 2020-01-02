@@ -247,6 +247,24 @@
       }
     }
   }
+  // Testimonial
+  &.service-news {
+    .card-body {
+      min-height: 236px;
+      padding: 15px;
+    }
+    .card-header-img {
+      height: 84px;
+      .card-text-overlap{
+        top: 0%;
+        h2{
+          padding: 15px;
+          font-size: 18px;
+        }
+      }
+    }
+
+  }  
 }
 
 //Tablets
@@ -313,5 +331,19 @@
         overflow: hidden;
       }
     }
+    &.service-news {
+      .card-body {
+        min-height: 100%;
+      }
+      .card-header-img {
+        .card-text-overlap{
+          top: 0%;
+          h2{
+            font-size: 24px;
+          }
+        }
+      }
+  
+    } 
   }
 }
