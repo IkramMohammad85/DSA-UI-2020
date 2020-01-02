@@ -107,7 +107,7 @@
   &.international-desks {
     .card-body {
       padding: 20px;
-      min-height: 434px;
+      min-height: 280px;
     }
     .card-header-img {
       background-color: #0d2338;
@@ -128,7 +128,7 @@
     }
     .card-body {
       padding: 20px;
-      min-height: 230px;
+      min-height: 170px;
     }
     .card-footer {
       padding: 0;
@@ -220,7 +220,7 @@
     }
     .card-body {
       padding: 20px;
-      min-height: 380px;
+      min-height: 256px;
       p {
         margin-bottom: 0px;
       }
@@ -241,7 +241,7 @@
   &.testimonial {
     .card-body {
       padding: 20px;
-      min-height: 170px;
+      min-height: 125px;
       p {
         margin-bottom: 0px;
       }
@@ -299,10 +299,10 @@
     &.services {
       height: auto;
       .card-body {
-        min-height: 180px;
+        min-height: 100%;
       }
     }
-    &.featured-resources {
+    &.featured-resources, &.international-desks {
       .card-body {
         min-height: auto;
       }
