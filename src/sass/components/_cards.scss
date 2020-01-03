@@ -98,7 +98,8 @@
 
   // Full time jobs
   &.full-time-jobs {
-    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg) no-repeat top left;
+    background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg)
+      no-repeat top left;
     width: auto;
     height: 100%;
     background-size: cover;
@@ -176,7 +177,11 @@
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: linear-gradient(0deg, rgba(13, 35, 56, 20) 20%, rgba(13, 35, 56, 0.06774047509628855) 65%);
+        background: linear-gradient(
+          0deg,
+          rgba(13, 35, 56, 20) 20%,
+          rgba(13, 35, 56, 0.06774047509628855) 65%
+        );
       }
       height: 482px;
       .card-text-overlap {
@@ -200,7 +205,11 @@
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: linear-gradient(0deg, rgba(13, 35, 56, 20) 20%, rgba(13, 35, 56, 0.06774047509628855) 65%);
+        background: linear-gradient(
+          0deg,
+          rgba(13, 35, 56, 20) 20%,
+          rgba(13, 35, 56, 0.06774047509628855) 65%
+        );
       }
       height: 230px;
       .card-text-overlap {
@@ -247,7 +256,7 @@
       }
     }
   }
-  // Testimonial
+  // news page
   &.service-news {
     .card-body {
       min-height: 204px;
@@ -255,18 +264,37 @@
     }
     .card-header-img {
       height: 84px;
-      .card-text-overlap{
+      .card-text-overlap {
         top: 0%;
-        h2{
+        h2 {
           padding: 15px;
           font-size: 18px;
         }
       }
     }
-    .card-footer{
+    .card-footer {
       padding: 0px 15px 15px 15px;
     }
-  }  
+  }
+  &.service-news-cover {
+    .card-header-img {
+      height: 200px;
+      img {
+        width: auto;
+      }
+      .card-text-overlap {
+        top: 0%;
+        h2 {
+          padding: 15px 15px 15px 15px;
+          margin-bottom: 0px;
+          font-size: 18px;
+        }
+        p {
+          padding: 0px 15px;
+        }
+      }
+    }
+  }
 }
 
 //Tablets
@@ -294,7 +322,21 @@
       .card-body {
         min-height: 268px;
       }
-    } 
+    }
+    &.service-news-cover {
+      .card-header-img {
+        height: 200px;
+        .card-text-overlap {
+          h2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          p {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
     &.asiapedia,
     &.events {
       min-height: 100%;
@@ -327,7 +369,8 @@
         min-height: 100%;
       }
     }
-    &.featured-resources, &.international-desks {
+    &.featured-resources,
+    &.international-desks {
       .card-body {
         min-height: auto;
       }
@@ -343,13 +386,36 @@
         min-height: 100%;
       }
       .card-header-img {
-        .card-text-overlap{
+        .card-text-overlap {
           top: 0%;
-          h2{
+          h2 {
             font-size: 24px;
           }
         }
       }
-    } 
+    }
+    &.service-news-cover {
+      .card-header-img {
+        height: 200px;
+        img {
+          width: 100%;
+        }
+        .card-text-overlap {
+          top: 20%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $reflex-xs) {
+  .card {
+    &.service-news-cover {
+      .card-header-img {
+        height: 200px;
+        img {
+          width: auto;
+        }
+      }
+    }
   }
 }
