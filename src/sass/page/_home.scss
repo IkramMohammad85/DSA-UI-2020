@@ -223,3 +223,28 @@
     }
   }
 }
+@media (max-width: $reflex-xs) {
+  .home{
+  .big-banner {
+    .item {
+      //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
+      //if any better alternatives, feel free to make change here
+      height: auto !important;
+      max-height:750px;
+
+      .news {
+        bottom: auto;
+        top: 15%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
+        .grid.align-end{
+        .col-grid {
+          max-height: auto;
+          .news-details {
+            top: 15%; //add top postion due to justify-center not workin in ie
+          }
+        }
+      }
+      }
+    }
+  }
+}
+}
