@@ -568,8 +568,12 @@ ul.navbar {
   }
 }
 @media (max-width: $reflex-xs) {
-  header.site-header
+  header.site-header{
   .logo{ max-width: 180px;}
   
-
+}
+.container{ 
+  padding-left: 15px;
+  padding-right: 15px;
+}
 }

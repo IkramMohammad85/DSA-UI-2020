@@ -235,6 +235,8 @@
       .news {
         bottom: auto;
         top: 15%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
+        padding-left: 30px;
+        padding-right: 30px;
         .grid.align-end{
         .col-grid {
           max-height: auto;
