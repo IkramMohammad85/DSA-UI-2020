@@ -191,10 +191,11 @@ summary{display:list-item}template{display:none}[hidden]{display:none}:root{--re
 .card.featured-resources .card-body p{margin-bottom:0}.card.featured-resources .card-footer{padding:20px}
 .card.featured-offers{border-top:solid 3px #314d77}.card.featured-offers .card-body{padding:20px;min-height:184px}
 .card.testimonial .card-body{padding:20px;min-height:125px}.card.testimonial .card-body p{margin-bottom:0}
-.card.service-news .card-body{min-height:236px;padding:15px}.card.service-news .card-header-img{height:84px}
+.card.service-news .card-body{min-height:204px;padding:15px}.card.service-news .card-header-img{height:84px}
 .card.service-news .card-header-img .card-text-overlap{top:0}.card.service-news .card-header-img .card-text-overlap h2{padding:15px;font-size:18px}
-@media(max-width:1200px){.card.news{height:auto}.card.news .card-header-img{height:auto}
-.card.news-right{height:auto}.card.news-right .card-header-img{height:auto}.card.office .card-body{min-height:auto;overflow:hidden}
+.card.service-news .card-footer{padding:0 15px 15px 15px}@media(max-width:1200px){.card.news{height:auto}
+.card.news .card-header-img{height:auto}.card.news-right{height:auto}.card.news-right .card-header-img{height:auto}
+.card.office .card-body{min-height:auto;overflow:hidden}.card.service-news .card-body{min-height:268px}
 .card.asiapedia,.card.events{min-height:100%}}@media(max-width:992px){.card .card-header-img{height:auto}
 .card .card-header-img .card-text-overlap{top:40%}.card.asiapedia,.card.events,.card.international-desks,.card.services{height:auto}
 .card.asiapedia,.card.events{min-height:100%}.card.services{height:auto}.card.services .card-body{min-height:100%}

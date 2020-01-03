@@ -250,7 +250,7 @@
   // Testimonial
   &.service-news {
     .card-body {
-      min-height: 236px;
+      min-height: 204px;
       padding: 15px;
     }
     .card-header-img {
@@ -263,7 +263,9 @@
         }
       }
     }
-
+    .card-footer{
+      padding: 0px 15px 15px 15px;
+    }
   }  
 }
 
@@ -288,6 +290,11 @@
         overflow: hidden;
       }
     }
+    &.service-news {
+      .card-body {
+        min-height: 268px;
+      }
+    } 
     &.asiapedia,
     &.events {
       min-height: 100%;
@@ -343,7 +350,6 @@
           }
         }
       }
-  
     } 
   }
 }
