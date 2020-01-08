@@ -173,14 +173,21 @@
     left: 3%;
     padding-left: 15px;
   }
-  .glide__slides{
-    .glide__slide{
+  .glide__bullets{
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    bottom: 30px;
+    .glide__bullet{
       width: 10px;
       height: 10px;
-      background-color: #fff;
-      &:hover, &.active{
+      margin: 2px;
+      background-color: #fff; cursor: pointer; border: none;
+      &:hover, &.glide__bullet--active{
         background-color: #ffda56;
       }
+      &:focus{outline: none;}
     }
   }
 }

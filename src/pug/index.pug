@@ -18,11 +18,11 @@ body
           include components/hp-slides/flying-high
           include components/hp-slides/speed
           include components/hp-slides/rocket
-          ul.glide__slides
-            li.glide__slide 0
-            li.glide__slide 1
-            li.glide__slide 2
-            li.glide__slide 3              
+      .glide__bullets(data-glide-el='controls[nav]')
+        button.glide__bullet(data-glide-dir='=0')
+        button.glide__bullet(data-glide-dir='=1')
+        button.glide__bullet(data-glide-dir='=2')
+        button.glide__bullet(data-glide-dir='=3')           
     section.about-us.pt-5.pb-5
         .container
           .grid
