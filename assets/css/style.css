@@ -585,15 +585,18 @@ header.site-header ul.navbar .dropdown-content{height:85vh;top:50px;overflow-y:s
 .big-banner .item .item-image img{zoom:4;width:auto !important}.big-banner .item .news{bottom:auto;top:25%}
 .big-banner .item .news .heading-brand{font-size:1.3em;margin-top:0 !important}.big-banner .item .news .col-grid{max-height:150px;overflow:hidden;margin-bottom:5px}
 .big-banner .item .news .col-grid .news-details{top:20%}.home section.about-us .transparent-bg{min-height:auto;padding:20px}
-.home section.about-us .transparent-bg .center-block{display:contents}}@media(max-width:576px){.home .big-banner .item{height:auto !important;max-height:900px}
-.home .big-banner .item .news{bottom:auto;padding-left:30px;padding-right:30px}.home .big-banner .item .news .col-grid{max-height:170px;overflow:initial}
-.home .big-banner .item .news .grid.align-end .col-grid{max-height:auto}.home .big-banner .item .news .grid.align-end .col-grid .news-details{top:15%}
-.home .big-banner .item .news .grid .col-grid .news-details{width:100%}.home .big-banner .item .news .grid .col-grid .news-details.borde-left{border-left:0 !important;padding-left:0}
+.home section.about-us .transparent-bg .center-block{display:contents}}@media(max-width:576px){.home .glide__bullets{left:38%;right:38%}
+.home .big-banner .item{height:auto !important;max-height:1000px}.home .big-banner .item .news{bottom:auto;padding-left:30px;padding-right:30px}
+.home .big-banner .item .news .col-grid{max-height:220px;overflow:initial}.home .big-banner .item .news .grid.align-end .col-grid{max-height:auto}
+.home .big-banner .item .news .grid.align-end .col-grid .news-details{top:15%}.home .big-banner .item .news .grid .col-grid .news-details{width:100%}
+.home .big-banner .item .news .grid .col-grid .news-details.borde-left{border-left:0 !important;padding-left:0}
 .home .big-banner .item .news .grid .col-grid .news-thumbnail{width:130px}.home .big-banner .item .news .grid .col-grid .news-thumbnail img{width:130px}
 .home .big-banner .item .news .btn-secondary{width:100%;white-space:normal}.home .big-banner .item .news .btn-secondary.yellow-text{text-align:left}
-.home .big-banner .item .news .bg-transparent-black{background:rgba(0,0,0,0.5)}}.research a i{color:#2981d1}
-.research h2,.research h4,.research span{font-weight:normal;color:#6c757d}.research span{font-size:13px;font-size:.8125rem;line-height:16px}
-.blue-hover:hover i{color:#fff}.icon{width:auto;height:62px;display:block}.brochure-icon{background:url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-blue.png) no-repeat top center}
+.home .big-banner .item .news .bg-transparent-black{background:rgba(0,0,0,0.5)}.home .big-banner .item .news .heading-brand{font-size:1.6em}
+.home .big-banner .item .news .col-bleed-left-right{padding-left:0;padding-right:0}
+}.research a i{color:#2981d1}.research h2,.research h4,.research span{font-weight:normal;color:#6c757d}
+.research span{font-size:13px;font-size:.8125rem;line-height:16px}.blue-hover:hover i{color:#fff}
+.icon{width:auto;height:62px;display:block}.brochure-icon{background:url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-blue.png) no-repeat top center}
 .locations-icon{background:url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-blue.png) no-repeat top center}.publications-icon{background:url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/publications-icon-blue.png) no-repeat top center}
 .asiapedia-icon{background:url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-blue.png) no-repeat top center}.blue-hover:hover .brochure-icon{background:url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/brochure-icon-w.png) no-repeat top center}
 .blue-hover:hover .locations-icon{background:url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/location-icon-w.png) no-repeat top center}
