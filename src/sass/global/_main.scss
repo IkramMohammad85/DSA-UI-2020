@@ -286,7 +286,7 @@ header.site-header .hamburger-menu {
     @include transform(rotate(-135deg));
   }
 }
-.cta-button{ position: fixed; top: 39%; right:-63px; transform: rotate(-271deg);letter-spacing: 2px; z-index: 9000;}
+.cta-button{ position: fixed; top: 39%; right:-63px; transform: rotate(-270deg);letter-spacing: 2px; z-index: 9000;}
 .cookie-modal-bar {
   position: fixed;
   width: 100%;

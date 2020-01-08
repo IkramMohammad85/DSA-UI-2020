@@ -459,7 +459,7 @@ header.site-header .hamburger-menu{display:none}.hamburger-menu{width:35px;heigh
 .hamburger-menu span:nth-child(1){top:-8px}.hamburger-menu span:nth-child(2){top:0}
 .hamburger-menu span:nth-child(3){top:8px}.hamburger-menu.open span:nth-child(1){top:0;-webkit-transform:rotate(135deg);transform:rotate(135deg)}
 .hamburger-menu.open span:nth-child(2){opacity:0;left:-60px}.hamburger-menu.open span:nth-child(3){top:0;-webkit-transform:rotate(-135deg);transform:rotate(-135deg)}
-.cta-button{position:fixed;top:39%;right:-63px;-webkit-transform:rotate(-271deg);transform:rotate(-271deg);letter-spacing:2px;z-index:9000}
+.cta-button{position:fixed;top:39%;right:-63px;-webkit-transform:rotate(-270deg);transform:rotate(-270deg);letter-spacing:2px;z-index:9000}
 .cookie-modal-bar{position:fixed;width:100%;bottom:0;right:0;left:0;height:auto;text-align:center;line-height:normal;background:#000;color:#fff;font-weight:100;-webkit-transition:.8s;transition:.8s;-webkit-animation:slideIn .8s;animation:slideIn .8s;-webkit-animation-delay:.8s;animation-delay:.8s;z-index:9999}
 .cookie-modal-bar p{margin-bottom:0;padding:8px}.cookie-modal-bar p span{display:block}
 .cookie-modal-bar p a{color:#fff;text-decoration:underline}@-webkit-keyframes slideIn{0%{-webkit-transform:translateY(50px);transform:translateY(50px)}
