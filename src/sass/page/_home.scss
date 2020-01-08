@@ -271,16 +271,26 @@
           }
         }
       }
+      .grid{
+        .col-grid{
+
+
       .news-details {
-        padding: 0px;
         width: 100%;
-        &.borde-left{border-left:0px !important;}
-       
-      
+        &.borde-left{border-left:0px !important; padding-left: 0px;}
       }
+      .news-thumbnail{ 
+        width: 130px;
+        img{ width: 130px;}
+      }
+    }
+  }
       .btn-secondary{
         width: 100%;
         white-space: normal;
+        &.yellow-text{
+          text-align: left;
+        }
       }
       .bg-transparent-black{background: rgba(0, 0, 0, 0.5);}
       }
