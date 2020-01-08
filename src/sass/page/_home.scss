@@ -173,6 +173,16 @@
     left: 3%;
     padding-left: 15px;
   }
+  .glide__slides{
+    .glide__slide{
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      &:hover, &.active{
+        background-color: #ffda56;
+      }
+    }
+  }
 }
 
 //Mobile
