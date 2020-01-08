@@ -20,7 +20,7 @@
 
 body {
     color: $black;
-    font-size: 14px;
+    font-size: 16px;
     font-family:$font-family-base;
     //font-weight: $font-weight-base;
     line-height:$line-height-base;
@@ -82,4 +82,8 @@ ol, ul {
 
 b, strong{
   font-weight: bold;
+}
+
+@media (max-width: $reflex-xs) {
+  body{font-size: 14px;}
 }
