@@ -8,7 +8,6 @@
   .big-banner {
     .item {
       position: relative;
-      background-color: $bluedark;
       height: 100vh;
       width: 100%;
       max-height: 1000px;
@@ -30,11 +29,7 @@
             rgba(13, 35, 56, 0.06774047509628855) 65%
           );
         }
-        img {
-          background-size: contain;
-          width: 100%;
-          height: 100%;
-        }
+
       }
 
       .news {
@@ -47,22 +42,23 @@
           text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.46);
           margin-bottom: 20px;
         }
-        .grid.align-end {
+        .grid {
           .col-grid {
-            position: relative;
-            padding: 0;
-            background: $deep-blue;
-            img {
-              ///filter: brightness(50%);
-              opacity: 0.4;
+            .news-thumbnail{
+              display: block;
+              float: left;
+              width: 170px;
+              max-width: 170px;
+              img{ width: 170px;
+              border: solid 4px rgba(255, 255, 255, .1);}
             }
-
             .news-details {
-              position: absolute;
-              left: 50%;
-              @include transform(translateX(-50%));
-              width: 90%;
-              top: 40%; //add top postion due to justify-center not workin in ie
+              float: left;
+              padding-left: 20px;
+              &.borde-left{border-left: solid 1px rgba(255, 255, 255, .1);}
+              p{
+                margin-bottom: 0px;
+              }
               a {
                 color: white;
               }
@@ -74,7 +70,8 @@
           }
         }
       }
-    }
+
+  }
   }
   //end of homepage big banner css
 
@@ -230,13 +227,14 @@
       //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
       //if any better alternatives, feel free to make change here
       height: auto !important;
-      max-height:750px;
+      max-height:900px;
 
       .news {
         bottom: auto;
-        top: 15%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
+         //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
         padding-left: 30px;
         padding-right: 30px;
+        .col-grid { max-height: 170px; overflow: initial;}
         .grid.align-end{
         .col-grid {
           max-height: auto;
@@ -245,6 +243,18 @@
           }
         }
       }
+      .news-details {
+        padding: 0px;
+        width: 100%;
+        &.borde-left{border-left:0px !important;}
+       
+      
+      }
+      .btn-secondary{
+        width: 100%;
+        white-space: normal;
+      }
+      .bg-transparent-black{background: rgba(0, 0, 0, 0.5);}
       }
     }
   }
