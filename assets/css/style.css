@@ -4412,6 +4412,8 @@ ul.navbar {
             width: 130px !important; }
         .big-banner .item .news .col-grid .news-details {
           top: 15%; }
+          .big-banner .item .news .col-grid .news-details .btn {
+            font-size: 14px; }
       .big-banner .item .news .bg-transparent-black {
         background: rgba(0, 0, 0, 0.5); }
       .big-banner .item .news .heading-brand {
