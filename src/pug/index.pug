@@ -22,7 +22,16 @@ body
         button.glide__bullet(data-glide-dir='=0')
         button.glide__bullet(data-glide-dir='=1')
         button.glide__bullet(data-glide-dir='=2')
-        button.glide__bullet(data-glide-dir='=3')           
+        button.glide__bullet(data-glide-dir='=3')    
+
+      .hidden-sm.hidden-xs.hidden-xxs.hidden-sm.hidden-md.hidden-lg(data-glide-el='controls')
+        button.glide-next.border-white(data-glide-dir='>')
+          span.arrow.right-arrow
+        button.glide-prev.border-white(data-glide-dir='<')
+          span.arrow.left-arrow
+
+
+             
     section.about-us.pt-5.pb-5
         .container
           .grid

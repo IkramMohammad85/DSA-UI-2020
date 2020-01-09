@@ -6,6 +6,7 @@
   }
 
   .big-banner {
+    background:$deep-blue;
     .item {
       position: relative;
       height: 100vh;
@@ -83,6 +84,27 @@
       }
 
   }
+
+  //slide fade effect
+  .glide__slides { 
+    transform:none !important; 
+    width:auto !important;
+    display: grid; 
+    grid-template-areas: 'slide';  //create a 1x1 grid where the single cell is called slide
+
+    .item {
+      position: relative; 
+      opacity: 0; 
+      transition: opacity 1s ease; 
+      grid-area: slide;  //assign all child slides to the cell
+
+      &.glide__slide--active {
+        z-index:1; 
+        opacity:1;
+      }
+    }
+  }
+
   }
   //end of homepage big banner css
 

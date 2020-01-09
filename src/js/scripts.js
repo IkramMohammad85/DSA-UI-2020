@@ -30,7 +30,7 @@ if (typeof Glide != "undefined" && glideElements) {
             new Glide('section.big-banner.glide', {
                   type:'carousel',
                   autoplay: 10000,
-                  animationDuration:1000,
+                  animationDuration:1,
                   gap:0,
                   startAt: 0,
                   perView: 1,
