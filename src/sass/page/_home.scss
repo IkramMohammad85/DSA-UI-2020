@@ -99,12 +99,16 @@
         opacity: 0;
         transition: opacity 1s ease;
         grid-area: slide; //assign all child slides to the cell
+        min-height:600px;
 
         &.glide__slide--active {
           z-index: 1;
           opacity: 1;
         }
       }
+    }
+    .homepage-cta{
+      .btn{ display: initial;}
     }
   }
   //end of homepage big banner css
@@ -123,7 +127,7 @@
     background-size: cover;
     min-height: 443px;
     .transparent-bg {
-      min-height: 312px;
+      min-height: 352px;
       color: $white;
       position: relative;
       @include transition(0.5s background-color ease-in-out);
@@ -281,6 +285,9 @@
       }
     }
     .glide__bullets{bottom:0 !important;}
+    .homepage-cta{
+      .btn{ display: inherit !important;}
+    }
   }
   .home {
     section.about-us {
@@ -292,5 +299,9 @@
         }
       }
     }
+  .glide__bullets{
+    left: 38%;
+    right: 38%;
+  }
   }
 }

@@ -4292,10 +4292,13 @@ ul.navbar {
       opacity: 0;
       -webkit-transition: opacity 1s ease;
       transition: opacity 1s ease;
-      grid-area: slide; }
+      grid-area: slide;
+      min-height: 600px; }
       .home .big-banner .glide__slides .item.glide__slide--active {
         z-index: 1;
         opacity: 1; }
+  .home .big-banner .homepage-cta .btn {
+    display: initial; }
 
 .home section.about-us {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, rgba(0, 0, 0, 0.25)), color-stop(9%, rgba(0, 0, 0, 0.25)), color-stop(9%, rgba(0, 0, 0, 0.25))), url(../img/who-we-are.jpg);
@@ -4306,7 +4309,7 @@ ul.navbar {
   background-size: cover;
   min-height: 443px; }
   .home section.about-us .transparent-bg {
-    min-height: 312px;
+    min-height: 352px;
     color: #fff;
     position: relative;
     -webkit-transition: 0.5s background-color ease-in-out;
@@ -4415,11 +4418,16 @@ ul.navbar {
         font-size: 1.6em; }
   .big-banner .glide__bullets {
     bottom: 0 !important; }
+  .big-banner .homepage-cta .btn {
+    display: inherit !important; }
   .home section.about-us .transparent-bg {
     min-height: auto;
     padding: 20px; }
     .home section.about-us .transparent-bg .center-block {
-      display: contents; } }
+      display: contents; }
+  .home .glide__bullets {
+    left: 38%;
+    right: 38%; } }
 
 .research a i {
   color: #2981d1; }
