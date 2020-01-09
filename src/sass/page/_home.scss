@@ -9,7 +9,7 @@
     background: $deep-blue;
     .item {
       position: relative;
-      height: 100vh;
+      // height: 100vh;
       width: 100%;
       max-height: 1000px;
 
@@ -31,8 +31,8 @@
           z-index: 0;
           background: linear-gradient(
             0deg,
-            rgba(13, 35, 56, 20) 20%,
-            rgba(13, 35, 56, 0.06774047509628855) 65%
+            rgba($deep-blue, 20) 20%,
+            rgba($deep-blue, 0.06774047509628855) 65%
           );
         }
       }
@@ -237,9 +237,13 @@
     .item {
       //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
       //if any better alternatives, feel free to make change here
-      height: 150vh !important;
+      //height: 150vh !important;
+      max-height:none !important;
 
       .item-image {
+        &::before{
+          background:rgba($deep-blue,0.5) !important;
+        }
         img {
           zoom: 1;
           width: auto !important;
@@ -254,15 +258,29 @@
           margin-top: 0 !important;
         }
         .col-grid {
-          max-height: 150px;
-          overflow: hidden;
+          // max-height: 150px;
+          // overflow: hidden;
           margin-bottom: 5px;
-          .news-details {
-            top: 20%; //add top postion due to justify-center not workin in ie
+          .news-thumbnail {
+            width: 130px !important;
+            img {
+              width: 130px !important;
+            }
           }
+          .news-details {
+            top: 15%; //add top postion due to justify-center not workin in ie
+          }
+        }
+
+        .bg-transparent-black {
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .heading-brand {
+          font-size: 1.6em;
         }
       }
     }
+    .glide__bullets{bottom:0 !important;}
   }
   .home {
     section.about-us {
@@ -271,80 +289,6 @@
         padding: 20px;
         .center-block {
           display: contents;
-        }
-      }
-    }
-  }
-}
-@media (max-width: $reflex-xs) {
-  .home {
-    .glide__bullets {
-      left: 38%;
-      right: 38%;
-    }
-    .big-banner {
-      .item {
-        //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
-        //if any better alternatives, feel free to make change here
-        height: auto !important;
-        max-height: 100%;
-
-        .news {
-          bottom: auto;
-          //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
-          padding-left: 30px;
-          padding-right: 30px;
-          .col-grid {
-            max-height: 100%;
-            overflow: initial;
-          }
-          .grid.align-end {
-            .col-grid {
-              max-height: auto;
-              .news-details {
-                top: 15%; //add top postion due to justify-center not workin in ie
-              }
-            }
-          }
-          .grid {
-            .col-grid {
-              .news-details {
-                width: 100%;
-                &.borde-left {
-                  border-left: 0px !important;
-                  padding-left: 0px;
-                }
-                .btn {
-                  font-size: 13px;
-                }
-              }
-              .news-thumbnail {
-                width: 130px;
-                img {
-                  width: 130px;
-                }
-              }
-            }
-          }
-          .btn-secondary,
-          .btn-outline-white,
-          .btn-text {
-            width: 100%;
-            white-space: normal;
-            &.yellow-text {
-              text-align: left;
-            }
-          }
-          .bg-transparent-black {
-            background: rgba(0, 0, 0, 0.5);
-          }
-          .heading-brand {
-            font-size: 1.6em;
-          }
-          .col-bleed-left-right {
-            padding-left: 0px;
-            padding-right: 0px;
-          }
         }
       }
     }
