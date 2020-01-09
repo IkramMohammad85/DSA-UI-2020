@@ -235,7 +235,7 @@
 
       .item-image {
         img {
-          zoom: 4;
+          zoom: 1;
           width: auto !important;
         }
       }
@@ -288,7 +288,7 @@
          //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
         padding-left: 30px;
         padding-right: 30px;
-        .col-grid { max-height: 220px; overflow: initial;}
+        .col-grid { max-height: 100%; overflow: initial;}
         .grid.align-end{
         .col-grid {
           max-height: auto;
@@ -302,6 +302,7 @@
       .news-details {
         width: 100%;
         &.borde-left{border-left:0px !important; padding-left: 0px;}
+        .btn{ font-size: 13px;}
       }
       .news-thumbnail{ 
         width: 130px;
@@ -309,7 +310,7 @@
       }
     }
   }
-      .btn-secondary{
+      .btn-secondary, .btn-outline-white,.btn-text{
         width: 100%;
         white-space: normal;
         &.yellow-text{
