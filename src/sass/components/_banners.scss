@@ -1,11 +1,11 @@
 .banner {
-  &.banner-brochure{
+  &.banner-brochure {
     overflow: inherit;
-    img{
+    img {
       height: 100%;
     }
   }
-  &.banner-sm{
+  &.banner-sm {
     height: 170px;
   }
   position: relative;
@@ -19,7 +19,7 @@
   &.top-postion-24 {
     top: inherit;
     bottom: 0;
-    img{ 
+    img {
       top: inherit;
       bottom: 0;
       width: inherit;
@@ -36,11 +36,10 @@
     background-repeat: no-repeat;
     top: 0;
   }
-  .img{ 
+  .img {
     position: relative;
     background-size: initial;
     background-position: initial;
-
   }
   h1,
   h2,
@@ -67,10 +66,10 @@
 //Mobile
 @media (max-width: $reflex-md) {
   .banner {
-    img{
+    img {
       width: auto;
     }
-    &.banner-sm{
+    &.banner-sm {
       height: auto;
     }
     height: auto;
@@ -78,8 +77,8 @@
     h1 {
       @include font-size(28px);
     }
-    &.banner-brochure{
-      img{
+    &.banner-brochure {
+      img {
         width: 100%;
       }
     }

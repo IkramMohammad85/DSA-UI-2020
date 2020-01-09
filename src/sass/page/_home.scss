@@ -6,7 +6,7 @@
   }
 
   .big-banner {
-    background:$deep-blue;
+    background: $deep-blue;
     .item {
       position: relative;
       height: 100vh;
@@ -14,7 +14,7 @@
       max-height: 1000px;
 
       .item-image {
-        img{
+        img {
           background-size: contain;
           width: 100%;
           height: 100%;
@@ -35,7 +35,6 @@
             rgba(13, 35, 56, 0.06774047509628855) 65%
           );
         }
-
       }
 
       .news {
@@ -48,7 +47,7 @@
           text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.46);
           margin-bottom: 20px;
         }
-        .btn-secondary.yellow-text{
+        .btn-secondary.yellow-text {
           background: none;
           border: none;
           padding: 0px;
@@ -56,19 +55,23 @@
         }
         .grid {
           .col-grid {
-            .news-thumbnail{
+            .news-thumbnail {
               display: block;
               float: left;
               width: 170px;
               max-width: 170px;
-              img{ width: 170px;
-              border: solid 4px rgba(255, 255, 255, .1);}
+              img {
+                width: 170px;
+                border: solid 4px rgba(255, 255, 255, 0.1);
+              }
             }
             .news-details {
               float: left;
               padding-left: 20px;
-              &.borde-left{border-left: solid 1px rgba(255, 255, 255, .1);}
-              p{
+              &.borde-left {
+                border-left: solid 1px rgba(255, 255, 255, 0.1);
+              }
+              p {
                 margin-bottom: 0px;
               }
               a {
@@ -82,29 +85,27 @@
           }
         }
       }
+    }
 
-  }
+    //slide fade effect
+    .glide__slides {
+      transform: none !important;
+      width: auto !important;
+      display: grid;
+      grid-template-areas: "slide"; //create a 1x1 grid where the single cell is called slide
 
-  //slide fade effect
-  .glide__slides { 
-    transform:none !important; 
-    width:auto !important;
-    display: grid; 
-    grid-template-areas: 'slide';  //create a 1x1 grid where the single cell is called slide
+      .item {
+        position: relative;
+        opacity: 0;
+        transition: opacity 1s ease;
+        grid-area: slide; //assign all child slides to the cell
 
-    .item {
-      position: relative; 
-      opacity: 0; 
-      transition: opacity 1s ease; 
-      grid-area: slide;  //assign all child slides to the cell
-
-      &.glide__slide--active {
-        z-index:1; 
-        opacity:1;
+        &.glide__slide--active {
+          z-index: 1;
+          opacity: 1;
+        }
       }
     }
-  }
-
   }
   //end of homepage big banner css
 
@@ -154,13 +155,13 @@
     .card-body {
       height: 450px;
       overflow: auto;
-      .list.lists-events{
-        .date-block{
+      .list.lists-events {
+        .date-block {
           padding: 10px 15px;
           margin-right: 20px;
           width: auto;
         }
-        .dec-block{
+        .dec-block {
           margin-left: 0px;
         }
       }
@@ -193,7 +194,7 @@
     .arrow {
       padding: 8px;
     }
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }
@@ -206,21 +207,26 @@
     left: 3%;
     padding-left: 15px;
   }
-  .glide__bullets{
+  .glide__bullets {
     text-align: center;
     position: absolute;
     left: 40%;
     right: 40%;
     bottom: 30px;
-    .glide__bullet{
+    .glide__bullet {
       width: 10px;
       height: 10px;
       margin: 2px;
-      background-color: #fff; cursor: pointer; border: none;
-      &:hover, &.glide__bullet--active{
+      background-color: #fff;
+      cursor: pointer;
+      border: none;
+      &:hover,
+      &.glide__bullet--active {
         background-color: #ffda56;
       }
-      &:focus{outline: none;}
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
@@ -271,57 +277,76 @@
   }
 }
 @media (max-width: $reflex-xs) {
-  .home{
-    .glide__bullets{
+  .home {
+    .glide__bullets {
       left: 38%;
       right: 38%;
     }
-  .big-banner {
-    .item {
-      //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
-      //if any better alternatives, feel free to make change here
-      height: auto !important;
-      max-height:1000px;
+    .big-banner {
+      .item {
+        //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
+        //if any better alternatives, feel free to make change here
+        height: auto !important;
+        max-height: 100%;
 
-      .news {
-        bottom: auto;
-         //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
-        padding-left: 30px;
-        padding-right: 30px;
-        .col-grid { max-height: 100%; overflow: initial;}
-        .grid.align-end{
-        .col-grid {
-          max-height: auto;
-          .news-details {
-            top: 15%; //add top postion due to justify-center not workin in ie
+        .news {
+          bottom: auto;
+          //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
+          padding-left: 30px;
+          padding-right: 30px;
+          .col-grid {
+            max-height: 100%;
+            overflow: initial;
+          }
+          .grid.align-end {
+            .col-grid {
+              max-height: auto;
+              .news-details {
+                top: 15%; //add top postion due to justify-center not workin in ie
+              }
+            }
+          }
+          .grid {
+            .col-grid {
+              .news-details {
+                width: 100%;
+                &.borde-left {
+                  border-left: 0px !important;
+                  padding-left: 0px;
+                }
+                .btn {
+                  font-size: 13px;
+                }
+              }
+              .news-thumbnail {
+                width: 130px;
+                img {
+                  width: 130px;
+                }
+              }
+            }
+          }
+          .btn-secondary,
+          .btn-outline-white,
+          .btn-text {
+            width: 100%;
+            white-space: normal;
+            &.yellow-text {
+              text-align: left;
+            }
+          }
+          .bg-transparent-black {
+            background: rgba(0, 0, 0, 0.5);
+          }
+          .heading-brand {
+            font-size: 1.6em;
+          }
+          .col-bleed-left-right {
+            padding-left: 0px;
+            padding-right: 0px;
           }
         }
       }
-      .grid{
-        .col-grid{
-      .news-details {
-        width: 100%;
-        &.borde-left{border-left:0px !important; padding-left: 0px;}
-        .btn{ font-size: 13px;}
-      }
-      .news-thumbnail{ 
-        width: 130px;
-        img{ width: 130px;}
-      }
     }
   }
-      .btn-secondary, .btn-outline-white,.btn-text{
-        width: 100%;
-        white-space: normal;
-        &.yellow-text{
-          text-align: left;
-        }
-      }
-      .bg-transparent-black{background: rgba(0, 0, 0, 0.5);}
-      .heading-brand{ font-size:1.6em ;}
-      .col-bleed-left-right { padding-left: 0px; padding-right: 0px;  }
-      }
-    }
-  }
-}
 }

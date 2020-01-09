@@ -17,7 +17,8 @@
   display: inline-block;
   width: min-content;
 }
-.btn-primary, .blue-btn {
+.btn-primary,
+.blue-btn {
   color: $white;
   background-color: $deep-blue;
   border-color: $deep-blue;
@@ -156,7 +157,7 @@
   &:before {
     position: absolute;
     left: 15px;
-    top: 12px ;
+    top: 12px;
     content: " ";
     height: 14px;
     width: 2px;
@@ -166,7 +167,7 @@
   &:after {
     position: absolute;
     left: 15px;
-    top: 3px ;
+    top: 3px;
     content: " ";
     height: 14px;
     width: 2px;
