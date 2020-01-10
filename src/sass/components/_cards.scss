@@ -90,10 +90,11 @@
 
   // Contact US
   &.contact-us {
-    background: url(../img/dsa-advertisement.jpg) no-repeat top left;
+    background: url(../img/dsa-widget-bg.jpg) no-repeat top left;
     width: auto;
     height: 420px;
     background-size: cover;
+    background-color: $deep-cyan-blue;
   }
 
   // Full time jobs
@@ -108,7 +109,10 @@
   &.international-desks {
     .card-body {
       padding: 20px;
-      min-height: 280px;
+      min-height: 328px;
+      p{
+        margin-bottom: 0px;
+      }
     }
     .card-header-img {
       background-color: #0d2338;
@@ -129,7 +133,7 @@
     }
     .card-body {
       padding: 20px;
-      min-height: 170px;
+      min-height: 200px;
     }
     .card-footer {
       padding: 0;
@@ -229,7 +233,7 @@
     }
     .card-body {
       padding: 20px;
-      min-height: 256px;
+      min-height: 384px;
       p {
         margin-bottom: 0px;
       }
@@ -250,7 +254,7 @@
   &.testimonial {
     .card-body {
       padding: 20px;
-      min-height: 125px;
+      min-height: 160px;
       p {
         margin-bottom: 0px;
       }

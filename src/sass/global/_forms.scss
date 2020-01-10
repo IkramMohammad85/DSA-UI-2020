@@ -299,6 +299,10 @@ form.material {
     }
   }
 }
-//Tablets
-@media (max-width: $reflex-md) {
-}
+//dektop
+@media (min-width: $reflex-xlg) {
+  .kform{
+      padding:100px;
+      background: #e9ecef;
+    }
+  }

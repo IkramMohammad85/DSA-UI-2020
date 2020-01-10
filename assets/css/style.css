@@ -1515,10 +1515,11 @@ $border-default: 1px solid #ccc;
     .card.events .card-header-img .card-text-overlap {
       top: 35%; }
   .card.contact-us {
-    background: url(../img/dsa-advertisement.jpg) no-repeat top left;
+    background: url(../img/dsa-widget-bg.jpg) no-repeat top left;
     width: auto;
     height: 420px;
-    background-size: cover; }
+    background-size: cover;
+    background-color: #314d77; }
   .card.full-time-jobs {
     background: url(https://www.dezshira.com/themes/dsa/images/topics-banners/careers.jpg) no-repeat top left;
     width: auto;
@@ -1526,7 +1527,9 @@ $border-default: 1px solid #ccc;
     background-size: cover; }
   .card.international-desks .card-body {
     padding: 20px;
-    min-height: 280px; }
+    min-height: 328px; }
+    .card.international-desks .card-body p {
+      margin-bottom: 0px; }
   .card.international-desks .card-header-img {
     background-color: #0d2338; }
     .card.international-desks .card-header-img img {
@@ -1539,7 +1542,7 @@ $border-default: 1px solid #ccc;
         opacity: 0.5; }
     .card.services .card-body {
       padding: 20px;
-      min-height: 170px; }
+      min-height: 200px; }
     .card.services .card-footer {
       padding: 0;
       background-color: #e9ecef;
@@ -1606,7 +1609,7 @@ $border-default: 1px solid #ccc;
     height: 144px; }
   .card.featured-resources .card-body {
     padding: 20px;
-    min-height: 256px; }
+    min-height: 384px; }
     .card.featured-resources .card-body p {
       margin-bottom: 0px; }
   .card.featured-resources .card-footer {
@@ -1618,7 +1621,7 @@ $border-default: 1px solid #ccc;
       min-height: 184px; }
   .card.testimonial .card-body {
     padding: 20px;
-    min-height: 125px; }
+    min-height: 160px; }
     .card.testimonial .card-body p {
       margin-bottom: 0px; }
   .card.service-news .card-body {
@@ -3379,6 +3382,11 @@ form.material .form-select-input {
   form .form-field.field-group .select-city {
     width: 94%; } }
 
+@media (min-width: 1600px) {
+  .kform {
+    padding: 100px;
+    background: #e9ecef; } }
+
 * {
   box-sizing: border-box; }
 
@@ -3505,6 +3513,8 @@ header.site-header {
     color: #fdcd20; }
   header.site-header .navbar li.dropdown:nth-last-child(2) h4 a {
     color: inherit !important; }
+  header.site-header .navbar li.dropdown h2 a {
+    color: #000 !important; }
 
 footer.site-footer {
   background-color: #1a2940;
@@ -3650,16 +3660,12 @@ header.site-header .hamburger-menu {
 .cookies-modal {
   display: none; }
   .cookies-modal:checked + .cookie-modal-bar {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px); }
+    -webkit-transform: translateY(60px);
+    transform: translateY(60px); }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 100% !important; }
-  header.site-header .logo {
-    max-width: 240px; }
-  ul.navbar .dropdown-content li {
-    text-align: left; } }
+.jwplayer {
+  border: solid 4px #ccc !important;
+  border-radius: 4px; }
 
 ul.top-quick-link {
   margin: 0;
@@ -3795,6 +3801,19 @@ ul.navbar {
   left: 0px;
   right: auto; }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100% !important; }
+  header.site-header .logo {
+    max-width: 240px; }
+  ul.navbar .dropdown-content li {
+    text-align: left; }
+  .cookies-modal {
+    display: none; }
+    .cookies-modal:checked + .cookie-modal-bar {
+      -webkit-transform: translateY(135px);
+      transform: translateY(135px); } }
+
 @media (max-width: 992px) {
   .text-center-xs {
     text-align: center !important; }
@@ -3861,19 +3880,17 @@ ul.navbar {
       line-height: 1px;
       vertical-align: middle;
       font-size: 14px; }
+  .close-cookies-modal {
+    position: relative; }
   .cookie-modal-bar {
-    text-align: left; } }
+    text-align: center; } }
 
 @media (max-width: 576px) {
   header.site-header .logo {
     max-width: 180px; }
   .container {
     padding-left: 15px;
-    padding-right: 15px; }
-  .close-cookies-modal {
-    position: relative; }
-  .cookie-modal-bar {
-    text-align: center; } }
+    padding-right: 15px; } }
 
 @font-face {
   font-family: "dsa-icons";
@@ -4129,6 +4146,9 @@ ul.navbar {
 
 .icon-6x {
   font-size: 6em; }
+
+.icon-1x {
+  font-size: 1em; }
 
 .sprite {
   background-image: url(../img/sprite.png);
