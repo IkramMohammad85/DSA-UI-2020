@@ -91,9 +91,15 @@ document.querySelector(".hamburger-menu").addEventListener('click',function(){
 })
 
 //cookie policy accept
-document.querySelector('#cookiesPoligyAccept').addEventListener('click',function(){
-      setCookie("user_accepted_cookie_policy", "yes", 100);
-})
+var cookiesPoligyAccept =  document.getElementById('cookiesPoligyAccept');
+if (typeof(cookiesPoligyAccept) != 'undefined' && cookiesPoligyAccept != null)
+{
+      cookiesPoligyAccept.addEventListener('click',function(){
+            setCookie("user_accepted_cookie_policy", "yes", 100);
+      })
+}
+
+
 
 //Components: dropdown,accordion
 window.addEventListener('load', () => {
