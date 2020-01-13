@@ -4299,7 +4299,9 @@ ul.navbar {
           padding-left: 0;
           padding-right: 0;
           font-weight: 100;
-          font-style: italic; }
+          font-style: italic;
+          color: #7eb1e6;
+          font-size: 15px; }
   .home .big-banner .glide__slides {
     -webkit-transform: none !important;
     transform: none !important;
