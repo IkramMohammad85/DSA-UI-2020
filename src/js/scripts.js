@@ -90,6 +90,11 @@ document.querySelector(".hamburger-menu").addEventListener('click',function(){
       }
 })
 
+//cookie policy accept
+document.querySelector('#cookiesPoligyAccept').addEventListener('click',function(){
+      setCookie("user_accepted_cookie_policy", "yes", 100);
+})
+
 //Components: dropdown,accordion
 window.addEventListener('load', () => {
       //Initiate the dropdown, the component will auto initiate all the dropdowns
@@ -104,3 +109,21 @@ window.addEventListener('load', () => {
             });
       }
     }, false)
+
+
+//Helper Functions
+function setCookie(t, e, i) {
+      var n = new Date;
+      n.setTime(n.getTime() + 24 * i * 60 * 60 * 1e3);
+      var s = "expires=" + n.toUTCString();
+      document.cookie = t + "=" + e + ";" + s + ";path=/"
+  }
+  
+function getCookie(t) {
+      for (var e = t + "=", i = document.cookie.split(";"), n = 0; n < i.length; n++) {
+          for (var s = i[n];
+              " " == s.charAt(0);) s = s.substring(1);
+          if (0 == s.indexOf(e)) return s.substring(e.length, s.length)
+      }
+      return ""
+}
