@@ -1689,13 +1689,14 @@ $border-default: 1px solid #ccc;
     overflow: hidden; }
   .card.service-news .card-body {
     min-height: 268px; }
-  .card.service-news-cover .card-header-img {
-    height: 200px; }
+  .card.service-news-cover .card-header-img .card-text-overlap {
+    top: 5%; }
     .card.service-news-cover .card-header-img .card-text-overlap h2 {
-      padding-top: 10px;
+      padding-top: 0px;
       padding-bottom: 10px; }
     .card.service-news-cover .card-header-img .card-text-overlap p {
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      line-height: 20px; }
   .card.asiapedia, .card.events {
     min-height: 100%; } }
 
@@ -1723,18 +1724,16 @@ $border-default: 1px solid #ccc;
     top: 0%; }
     .card.service-news .card-header-img .card-text-overlap h2 {
       font-size: 24px; }
-  .card.service-news-cover .card-header-img {
-    height: 200px; }
-    .card.service-news-cover .card-header-img img {
-      width: 100%; }
-    .card.service-news-cover .card-header-img .card-text-overlap {
-      top: 20%; } }
+  .card.service-news-cover .card-header-img img {
+    width: 100%; }
+  .card.service-news-cover .card-header-img .card-text-overlap {
+    top: 20%; } }
 
 @media (max-width: 576px) {
-  .card.service-news-cover .card-header-img {
-    height: 200px; }
-    .card.service-news-cover .card-header-img img {
-      width: auto; } }
+  .card.service-news-cover .card-header-img img {
+    width: auto; }
+  .card.service-news-cover .card-header-img .card-text-overlap {
+    top: 8%; } }
 
 .list {
   padding: 0;
@@ -2049,12 +2048,16 @@ $border-default: 1px solid #ccc;
 @media (max-width: 1200px) {
   .banner {
     height: auto;
-    padding: 60px 0px; } }
+    padding: 60px 0px; }
+    .banner.top-postion-24 img {
+      width: auto; } }
 
 @media (max-width: 992px) {
   .banner {
     height: auto;
     padding: 25px 0px; }
+    .banner.top-postion-24 img {
+      width: auto; }
     .banner img {
       width: auto; }
     .banner.banner-sm {
@@ -3023,6 +3026,9 @@ strong {
       background-color: #314d77;
       border-color: #314d77; }
 
+.font-size-plus-1 {
+  font-size: 1.1em; }
+
 .wp-caption-text {
   text-align: center;
   padding: 10px 20px;
@@ -3829,6 +3835,10 @@ ul.navbar {
   left: 0px;
   right: auto; }
 
+.alignleft {
+  float: left;
+  margin-right: 20px; }
+
 @media (max-width: 1200px) {
   .container {
     max-width: 100% !important; }
@@ -4294,7 +4304,7 @@ ul.navbar {
         margin-bottom: -5px; }
     .home .big-banner .item .news {
       position: absolute;
-      bottom: 10%;
+      bottom: 2%;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }

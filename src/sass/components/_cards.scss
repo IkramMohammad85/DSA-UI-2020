@@ -360,14 +360,15 @@
     }
     &.service-news-cover {
       .card-header-img {
-        height: 200px;
         .card-text-overlap {
+          top: 5%;
           h2 {
-            padding-top: 10px;
+            padding-top: 0px;
             padding-bottom: 10px;
           }
           p {
             margin-bottom: 0px;
+            line-height: 20px;
           }
         }
       }
@@ -431,7 +432,6 @@
     }
     &.service-news-cover {
       .card-header-img {
-        height: 200px;
         img {
           width: 100%;
         }
@@ -446,9 +446,11 @@
   .card {
     &.service-news-cover {
       .card-header-img {
-        height: 200px;
         img {
           width: auto;
+        }
+        .card-text-overlap {
+          top: 8%;
         }
       }
     }
