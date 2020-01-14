@@ -1577,11 +1577,22 @@ $border-default: 1px solid #ccc;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #0d2338), color-stop(65%, rgba(13, 35, 56, 0.0677405)));
-        background: linear-gradient(0deg, #0d2338 20%, rgba(13, 35, 56, 0.0677405) 65%); }
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #0d2338), color-stop(4%, rgba(13, 35, 56, 0.06)));
+        background: linear-gradient(0deg, #0d2338 20%, rgba(13, 35, 56, 0.06) 4%); }
+      .card.news .card-header-img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #0d2338), to(rgba(13, 35, 56, 0.06)));
+        background: linear-gradient(0deg, #0d2338 20%, rgba(13, 35, 56, 0.06) 100%); }
       .card.news .card-header-img .card-text-overlap {
         bottom: 10%;
-        top: auto; }
+        top: auto;
+        z-index: 10000; }
         .card.news .card-header-img .card-text-overlap h1 {
           font-size: 28px;
           font-size: 1.75rem; }
@@ -1597,11 +1608,22 @@ $border-default: 1px solid #ccc;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #0d2338), color-stop(65%, rgba(13, 35, 56, 0.0677405)));
-        background: linear-gradient(0deg, #0d2338 20%, rgba(13, 35, 56, 0.0677405) 65%); }
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #0d2338), color-stop(4%, rgba(13, 35, 56, 0.06)));
+        background: linear-gradient(0deg, #0d2338 20%, rgba(13, 35, 56, 0.06) 4%); }
+      .card.news-right .card-header-img::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #0d2338), to(rgba(13, 35, 56, 0.06)));
+        background: linear-gradient(0deg, #0d2338 20%, rgba(13, 35, 56, 0.06) 100%); }
       .card.news-right .card-header-img .card-text-overlap {
         bottom: 10%;
-        top: auto; }
+        top: auto;
+        z-index: 10000; }
         .card.news-right .card-header-img .card-text-overlap h1 {
           font-size: 28px;
           font-size: 1.75rem; }
@@ -2106,7 +2128,7 @@ $border-default: 1px solid #ccc;
 .accordion-wrapper.vertical-menu .down-arrow {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  top: 6px; }
+  top: -18px; }
 
 .accordion-wrapper.vertical-menu .accordion-heading {
   background: #fff;
@@ -2120,16 +2142,20 @@ $border-default: 1px solid #ccc;
     .accordion-wrapper.vertical-menu .accordion-heading:hover a {
       color: #fff; }
 
+.accordion-wrapper.vertical-menu .accordion-item .accordion-heading a {
+  display: block; }
+
 .accordion-wrapper.vertical-menu .accordion-item.open .accordion-heading {
   background-color: #2981d1;
   color: #fff; }
   .accordion-wrapper.vertical-menu .accordion-item.open .accordion-heading a {
-    color: #fff; }
+    color: #fff;
+    display: block; }
 
 .accordion-wrapper.vertical-menu .accordion-item.open .down-arrow {
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
-  top: 10px;
+  top: -10px;
   color: #fff;
   border-color: #fff; }
 
@@ -2137,6 +2163,8 @@ $border-default: 1px solid #ccc;
   background: #f8f9fa;
   padding: 10px 25px;
   border-bottom: solid 1px #e9ecef; }
+  .accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li a {
+    display: block; }
   .accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li:hover {
     background: #fff; }
 

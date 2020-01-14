@@ -47,7 +47,7 @@
   &.vertical-menu {
     .down-arrow {
       @include transition(all 0.1s ease);
-      top: 6px;
+      top: -18px;
     }
     .accordion-heading {
       background: $white;
@@ -63,17 +63,22 @@
       }
     }
     .accordion-item {
+      .accordion-heading {
+        a{
+            display: block;
+        }
+      }
       &.open {
         .accordion-heading {
           background-color: $dark-light-blue;
           color: $white;
           a{
-            color: $white;
+            color: $white; display: block;
           }
         }
         .down-arrow {
           @include transform(rotate(225deg));
-          top: 10px;
+          top: -10px;
           color: $white;
           border-color: $white;
         }
@@ -84,6 +89,7 @@
             background: $gray-100;
             padding: 10px 25px;
             border-bottom: solid 1px $gray-200;
+            a{display: block;}
             &:hover {
               background: $white;
             }
