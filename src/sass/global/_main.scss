@@ -211,8 +211,26 @@ footer.site-footer {
     color: $white;
     font-weight: normal;
   }
+  h3 {
+    color: $white;
+    font-weight: normal;
+  }
+  h4 {
+    color: $white;
+    font-weight: normal;
+  }
+  h5 {
+    color: $white;
+    font-weight: normal;
+  }
   p {
     font-size: 13px;
+  }
+  .list-unstyled{
+    li{
+      padding: 5px 20px 5px 0px;
+      a{ color:$bluish-gray ;}
+    }
   }
   .border-bottom {
     border-color: $bluish-gray;
@@ -675,4 +693,5 @@ ul.navbar {
     padding-left: 15px;
     padding-right: 15px;
   }
+
 }

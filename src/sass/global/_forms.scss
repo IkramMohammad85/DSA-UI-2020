@@ -20,6 +20,10 @@
       margin: 0;
       border: 0;
     }
+    &.padding-height{
+      padding: 5px 10px;
+      height: 32px;
+    }
   }
   .input-add-on-item {
     background-color: $light-blue;
@@ -28,6 +32,9 @@
     font-weight: bold;
     border: 1px solid $light-blue;
     padding: 0.5em 1em;
+    &.padding-text{
+      padding: 0px 10px;
+    }
   }
 }
 input[type="text"],

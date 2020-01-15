@@ -3174,6 +3174,9 @@ strong {
     border-right: 0;
     margin: 0;
     border: 0; }
+  .site-footer .input-add-on-field.padding-height {
+    padding: 5px 10px;
+    height: 32px; }
 
 .site-footer .input-add-on-item {
   background-color: #316aa3;
@@ -3182,6 +3185,8 @@ strong {
   font-weight: bold;
   border: 1px solid #316aa3;
   padding: 0.5em 1em; }
+  .site-footer .input-add-on-item.padding-text {
+    padding: 0px 10px; }
 
 input[type="text"],
 input[type="password"],
@@ -3572,8 +3577,21 @@ footer.site-footer {
   footer.site-footer h2 {
     color: #fff;
     font-weight: normal; }
+  footer.site-footer h3 {
+    color: #fff;
+    font-weight: normal; }
+  footer.site-footer h4 {
+    color: #fff;
+    font-weight: normal; }
+  footer.site-footer h5 {
+    color: #fff;
+    font-weight: normal; }
   footer.site-footer p {
     font-size: 13px; }
+  footer.site-footer .list-unstyled li {
+    padding: 5px 20px 5px 0px; }
+    footer.site-footer .list-unstyled li a {
+      color: #94a2ad; }
   footer.site-footer .border-bottom {
     border-color: #94a2ad; }
   footer.site-footer .copyright {
