@@ -665,6 +665,11 @@ ul.navbar {
     .logo {
       max-width: 180px;
     }
+    ul.navbar {
+      .dropdown-content {
+        height: 75vh;
+      }
+    }
   }
   .container {
     padding-left: 15px;

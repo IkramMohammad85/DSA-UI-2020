@@ -128,10 +128,12 @@
   .dropdown {
     .dropdown-content {
       &.dropdown-content-medium {
-        min-width: auto;
+        min-width: 600px;
+        max-width: 100%;
       }
       &.dropdown-content-large {
-        min-width: auto;
+        min-width: 600px;
+        max-width: 100%;
       }
     }
   }
