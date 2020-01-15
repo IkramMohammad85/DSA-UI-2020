@@ -47,6 +47,9 @@
   background: $bluish-gray;
   @extend .cards-content-bg;
 }
+.blue-dark-bg{
+  background-color: $bluedark;
+}
 .pt-0 {
   padding-top: 0;
 }

@@ -2574,6 +2574,9 @@ strong {
 .dark-gray-bg {
   background: #94a2ad; }
 
+.blue-dark-bg {
+  background-color: #0D2338; }
+
 .pt-0 {
   padding-top: 0; }
 
@@ -3589,9 +3592,10 @@ footer.site-footer {
   footer.site-footer p {
     font-size: 13px; }
   footer.site-footer .list-unstyled li {
-    padding: 5px 20px 5px 0px; }
+    padding: 0px 20px 0px 0px; }
     footer.site-footer .list-unstyled li a {
-      color: #94a2ad; }
+      color: #94a2ad;
+      font-size: 13px; }
       footer.site-footer .list-unstyled li a:hover {
         color: #afc7da; }
   footer.site-footer .border-bottom {

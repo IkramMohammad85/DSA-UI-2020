@@ -228,8 +228,8 @@ footer.site-footer {
   }
   .list-unstyled{
     li{
-      padding: 5px 20px 5px 0px;
-      a{ color:$bluish-gray;
+      padding: 0px 20px 0px 0px;
+      a{ color:$bluish-gray; font-size: 13px;
       &:hover{
         color:#afc7da;
       }
