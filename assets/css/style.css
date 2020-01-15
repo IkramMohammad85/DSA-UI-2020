@@ -4413,18 +4413,22 @@ ul.navbar {
       cursor: pointer; }
       .home section.about-us .transparent-bg:hover .icon-3x {
         color: #007bff; }
-      .home section.about-us .transparent-bg:hover .content {
+      .home section.about-us .transparent-bg:hover .content-more {
         display: block; }
-        .home section.about-us .transparent-bg:hover .content ul li {
-          padding-top: 5px;
-          padding-bottom: 5px; }
-      .home section.about-us .transparent-bg:hover .btn {
+        .home section.about-us .transparent-bg:hover .content-more ul {
+          margin-bottom: 0; }
+          .home section.about-us .transparent-bg:hover .content-more ul li {
+            padding-top: 5px;
+            padding-bottom: 5px; }
+      .home section.about-us .transparent-bg:hover .content-desc {
         display: none; }
     .home section.about-us .transparent-bg .center-block {
       margin-top: 0px;
       margin-bottom: 20px; }
-    .home section.about-us .transparent-bg .content {
+    .home section.about-us .transparent-bg .content-more {
       display: none; }
+    .home section.about-us .transparent-bg.min-height {
+      height: 550px; }
 
 .home .card.events .card-body {
   height: 450px;

@@ -147,16 +147,16 @@
         .icon-3x {
           color: $blue;
         }
-        .content{
+        .content-more{
           display: block;
-          ul{
+          ul{ margin-bottom: 0;
             li{
               padding-top: 5px;
               padding-bottom: 5px;
             }
           }
         }
-        .btn{ 
+        .content-desc{ 
           display: none;
         }
 
@@ -165,8 +165,11 @@
         margin-top: 0px;
         margin-bottom: 20px;
       }
-      .content{
+      .content-more{
         display: none;
+      }
+      &.min-height{
+        height: 550px;
       }
     }
   }
