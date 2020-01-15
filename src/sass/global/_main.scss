@@ -229,7 +229,11 @@ footer.site-footer {
   .list-unstyled{
     li{
       padding: 5px 20px 5px 0px;
-      a{ color:$bluish-gray ;}
+      a{ color:$bluish-gray;
+      &:hover{
+        color:#afc7da;
+      }
+      }
     }
   }
   .border-bottom {
