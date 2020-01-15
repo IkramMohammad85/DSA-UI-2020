@@ -147,10 +147,26 @@
         .icon-3x {
           color: $blue;
         }
+        .content{
+          display: block;
+          ul{
+            li{
+              padding-top: 5px;
+              padding-bottom: 5px;
+            }
+          }
+        }
+        .btn{ 
+          display: none;
+        }
+
       }
       .center-block {
         margin-top: 0px;
         margin-bottom: 20px;
+      }
+      .content{
+        display: none;
       }
     }
   }

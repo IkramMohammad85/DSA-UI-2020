@@ -4413,9 +4413,18 @@ ul.navbar {
       cursor: pointer; }
       .home section.about-us .transparent-bg:hover .icon-3x {
         color: #007bff; }
+      .home section.about-us .transparent-bg:hover .content {
+        display: block; }
+        .home section.about-us .transparent-bg:hover .content ul li {
+          padding-top: 5px;
+          padding-bottom: 5px; }
+      .home section.about-us .transparent-bg:hover .btn {
+        display: none; }
     .home section.about-us .transparent-bg .center-block {
       margin-top: 0px;
       margin-bottom: 20px; }
+    .home section.about-us .transparent-bg .content {
+      display: none; }
 
 .home .card.events .card-body {
   height: 450px;
