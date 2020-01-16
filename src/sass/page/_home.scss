@@ -152,6 +152,7 @@
         .content-more {
           display: block;
           visibility: visible;
+          z-index: 10000;
           ul {
             margin-bottom: 0;
             li {
@@ -174,6 +175,7 @@
       .content-more {
         display: none;
         visibility: hidden;
+        z-index: 10000;
       }
       &.min-height {
         min-height: 475px;

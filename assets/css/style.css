@@ -4420,6 +4420,7 @@ ul.navbar {
       .home section.about-us .transparent-bg:hover .content-more {
         display: block;
         visibility: visible;
+        z-index: 10000;
         color: #ffda56; }
         .home section.about-us .transparent-bg:hover .content-more ul {
           margin-bottom: 0; }
@@ -4435,7 +4436,8 @@ ul.navbar {
       margin-bottom: 20px; }
     .home section.about-us .transparent-bg .content-more {
       display: none;
-      visibility: hidden; }
+      visibility: hidden;
+      z-index: 10000; }
     .home section.about-us .transparent-bg.min-height {
       min-height: 475px; }
 
