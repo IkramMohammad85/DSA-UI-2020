@@ -692,6 +692,9 @@ ul.navbar {
   }
   footer.site-footer {
     text-align: center;
+    .list-unstyled{
+      li{ padding-right: 0px;}
+    }
     .copyright {
       .list-inline {
         text-align: center;

@@ -3956,6 +3956,8 @@ ul.navbar {
     padding-right: 15px; }
   footer.site-footer {
     text-align: center; }
+    footer.site-footer .list-unstyled li {
+      padding-right: 0px; }
     footer.site-footer .copyright .list-inline {
       text-align: center; } }
 
