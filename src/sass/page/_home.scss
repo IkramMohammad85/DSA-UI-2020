@@ -13,7 +13,9 @@
       width: 100%;
       max-height: 1000px;
       .item-image {
-        img{width:100%;}
+        img {
+          width: 100%;
+        }
         z-index: 0;
         &::before {
           content: "";
@@ -29,7 +31,9 @@
             rgba($deep-blue, 0.06774047509628855) 65%
           );
         }
-        img{margin-bottom:-5px;}
+        img {
+          margin-bottom: -5px;
+        }
       }
 
       .news {
@@ -75,7 +79,7 @@
               .btn-link {
                 padding-left: 0;
                 padding-right: 0;
-                font-weight:100;
+                font-weight: 100;
                 font-style: italic;
                 color: #7eb1e6;
                 font-size: 15px;
@@ -98,7 +102,7 @@
         opacity: 0;
         transition: opacity 1s ease;
         grid-area: slide; //assign all child slides to the cell
-        min-height:600px;
+        min-height: 600px;
 
         &.glide__slide--active {
           z-index: 1;
@@ -106,8 +110,10 @@
         }
       }
     }
-    .homepage-cta{
-      .btn{ display: initial;}
+    .homepage-cta {
+      .btn {
+        display: initial;
+      }
     }
   }
   //end of homepage big banner css
@@ -148,29 +154,29 @@
         .icon-3x {
           color: $blue;
         }
-        .content-more{
+        .content-more {
           display: block;
-          ul{ margin-bottom: 0;
-            li{
+          ul {
+            margin-bottom: 0;
+            li {
               padding-top: 2px;
               padding-bottom: 2px;
             }
           }
         }
-        .content-desc{ 
+        .content-desc {
           display: none;
         }
-
       }
       .center-block {
         margin-top: 0px;
         margin-bottom: 20px;
       }
-      .content-more{
+      .content-more {
         display: none;
       }
-      &.min-height{
-        height: 465px;
+      &.min-height {
+        min-height: 465px;
       }
     }
   }
@@ -233,9 +239,9 @@
   .glide__bullets {
     text-align: center;
     position: absolute;
-    left:0 !important;
-    bottom:20px;
-    width:100%;
+    left: 0 !important;
+    bottom: 20px;
+    width: 100%;
     .glide__bullet {
       width: 10px;
       height: 10px;
@@ -261,11 +267,11 @@
       //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
       //if any better alternatives, feel free to make change here
       //height: 150vh !important;
-      max-height:none !important;
+      max-height: none !important;
 
       .item-image {
-        &::before{
-          background:rgba($deep-blue,0.5) !important;
+        &::before {
+          background: rgba($deep-blue, 0.5) !important;
         }
         img {
           zoom: 1;
@@ -276,11 +282,11 @@
       .news {
         bottom: auto;
         top: 25%; //stick the news towards the top rather than bottom on mobile to reduce the odd gap between header and news on mobile's portrait mode
-        .grid:nth-child(1){
-          margin-bottom:0 !important;
-          .col-grid{
-            padding-left:0;
-            padding-right:0;
+        .grid:nth-child(1) {
+          margin-bottom: 0 !important;
+          .col-grid {
+            padding-left: 0;
+            padding-right: 0;
           }
         }
         .heading-brand {
@@ -300,7 +306,9 @@
           }
           .news-details {
             top: 15%; //add top postion due to justify-center not workin in ie
-            .btn{ font-size: 14px;}
+            .btn {
+              font-size: 14px;
+            }
           }
         }
 
@@ -312,8 +320,10 @@
         }
       }
     }
-    .homepage-cta{
-      .btn{ display: inherit !important;}
+    .homepage-cta {
+      .btn {
+        display: inherit !important;
+      }
     }
   }
   .home {
@@ -324,11 +334,14 @@
         .center-block {
           display: contents;
         }
+        &.min-height {
+          min-height: auto !important;
+        }
       }
     }
-  .glide__bullets{
-    bottom:5px;
-  }
+    .glide__bullets {
+      bottom: 5px;
+    }
   }
 }
 
@@ -337,12 +350,11 @@
     .item {
       .news {
         top: 15%;
-
-        .grid:nth-child(1){
-          margin-bottom:0 !important;
-          .col-grid{
-            padding-left:15px;
-            padding-right:15px;
+        .grid:nth-child(1) {
+          margin-bottom: 0 !important;
+          .col-grid {
+            padding-left: 15px;
+            padding-right: 15px;
           }
         }
       }
@@ -350,16 +362,26 @@
   }
 
   .home {
-    .glide__bullets{
-      padding:0 !important;
-      bottom:20px;
-      .glide__bullet {margin:auto 10px auto 10px;}
+    .glide__bullets {
+      padding: 0 !important;
+      bottom: 20px;
+      .glide__bullet {
+        margin: auto 10px auto 10px;
+      }
+    }
+    section.about-us {
+      .transparent-bg {
+        &.min-height {
+          min-height: auto !important;
+        }
+      }
     }
   }
+
 }
 
-@media (max-width:1750px) {
-  .big-banner{
+@media (max-width: 1750px) {
+  .big-banner {
     .news-thumbnail {
       width: 120px !important;
       img {
@@ -368,7 +390,7 @@
     }
     .glide-next,
     .glide-prev {
-      display:none;
+      display: none;
     }
   }
 }

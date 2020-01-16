@@ -3923,8 +3923,6 @@ ul.navbar {
         .header-menu.open ul.navbar > li {
           width: 100%;
           border-bottom: solid 1px #1a2940; }
-  footer.site-footer .copyright .list-inline {
-    text-align: left; }
   .cta-button {
     position: fixed;
     top: 42px;
@@ -3955,7 +3953,11 @@ ul.navbar {
     height: 75vh; }
   .container {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  footer.site-footer {
+    text-align: center; }
+    footer.site-footer .copyright .list-inline {
+      text-align: center; } }
 
 @font-face {
   font-family: "dsa-icons";
@@ -4429,7 +4431,7 @@ ul.navbar {
     .home section.about-us .transparent-bg .content-more {
       display: none; }
     .home section.about-us .transparent-bg.min-height {
-      height: 465px; }
+      min-height: 465px; }
 
 .home .card.events .card-body {
   height: 450px;
@@ -4533,6 +4535,8 @@ ul.navbar {
     padding: 20px; }
     .home section.about-us .transparent-bg .center-block {
       display: contents; }
+    .home section.about-us .transparent-bg.min-height {
+      min-height: auto !important; }
   .home .glide__bullets {
     bottom: 5px; } }
 
@@ -4548,7 +4552,9 @@ ul.navbar {
     padding: 0 !important;
     bottom: 20px; }
     .home .glide__bullets .glide__bullet {
-      margin: auto 10px auto 10px; } }
+      margin: auto 10px auto 10px; }
+  .home section.about-us .transparent-bg.min-height {
+    min-height: auto !important; } }
 
 @media (max-width: 1750px) {
   .big-banner .news-thumbnail {
