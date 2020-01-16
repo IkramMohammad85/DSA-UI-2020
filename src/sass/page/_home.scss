@@ -144,10 +144,10 @@
         color: $white;
       }
       &:hover {
-        background: #1a2940;
+        background: $deep-blue;
         cursor: pointer;
         .icon-3x {
-          color: #007bff;
+          color: #fff;
         }
         .content-more {
           display: block;
@@ -176,7 +176,7 @@
         visibility: hidden;
       }
       &.min-height {
-        min-height: 340px;
+        min-height: 475px;
       }
     }
   }

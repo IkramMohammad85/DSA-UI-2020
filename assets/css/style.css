@@ -4416,7 +4416,7 @@ ul.navbar {
       background: #1a2940;
       cursor: pointer; }
       .home section.about-us .transparent-bg:hover .icon-3x {
-        color: #007bff; }
+        color: #fff; }
       .home section.about-us .transparent-bg:hover .content-more {
         display: block;
         visibility: visible;
@@ -4437,7 +4437,7 @@ ul.navbar {
       display: none;
       visibility: hidden; }
     .home section.about-us .transparent-bg.min-height {
-      min-height: 340px; }
+      min-height: 475px; }
 
 .home .card.events .card-body {
   height: 450px;
