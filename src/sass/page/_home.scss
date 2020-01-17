@@ -174,11 +174,8 @@
       .content-more {
         display: none;
         visibility: hidden;
-        z-index: 9999;
-        position: relative;
       }
       .content-desc{
-        z-index: 10000;
         position: relative;
       }
       &.min-height {

@@ -4435,11 +4435,8 @@ ul.navbar {
       margin-bottom: 20px; }
     .home section.about-us .transparent-bg .content-more {
       display: none;
-      visibility: hidden;
-      z-index: 9999;
-      position: relative; }
+      visibility: hidden; }
     .home section.about-us .transparent-bg .content-desc {
-      z-index: 10000;
       position: relative; }
     .home section.about-us .transparent-bg.min-height {
       min-height: 475px; }
