@@ -143,6 +143,37 @@
       padding-top: 5px;
     }
   }
+
+    // brochure
+    &.brochure {
+      position: relative;
+      flex: 1 1 auto;
+      .card-header-img.card-hedaer-min-img {
+        height: 100px;
+        background-color: #0d2338;
+        img {
+          opacity: 0.8;
+        }
+        .card-text-overlap{
+          top: 35%;
+        }
+      }
+      .card-body {
+        padding: 20px;
+        min-height: 200px;
+        flex: 1 1 auto;
+      }
+      .card-footer {
+        padding: 0;
+        background-color: $gray-200;
+        min-height: auto;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+      }
+    }
   // Resources
   &.resources {
     border: none;

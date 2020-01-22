@@ -1549,6 +1549,31 @@ $border-default: 1px solid #ccc;
       min-height: auto;
       padding-bottom: 5px;
       padding-top: 5px; }
+  .card.brochure {
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto; }
+    .card.brochure .card-header-img.card-hedaer-min-img {
+      height: 100px;
+      background-color: #0d2338; }
+      .card.brochure .card-header-img.card-hedaer-min-img img {
+        opacity: 0.8; }
+      .card.brochure .card-header-img.card-hedaer-min-img .card-text-overlap {
+        top: 35%; }
+    .card.brochure .card-body {
+      padding: 20px;
+      min-height: 200px;
+      -webkit-box-flex: 1;
+      flex: 1 1 auto; }
+    .card.brochure .card-footer {
+      padding: 0;
+      background-color: #e9ecef;
+      min-height: auto;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      position: absolute;
+      bottom: 0px;
+      width: 100%; }
   .card.resources {
     border: none; }
     .card.resources .card-header-img {
