@@ -291,7 +291,10 @@
     overflow: hidden;
 		.overlay-content {
       height: 100%;
-		}
+    }
+    .content-desc{
+      display: none;
+    }
 	}
 	.content-more {
 		color: white;
@@ -302,15 +305,15 @@
     white-space: nowrap;
     text-align: left;
     &.first-card{
-      top: 19%;
+      top: 16%;
       left: 140px;
     }
     &.second-card{
-      top: 31%;
+      top: 29%;
       left: 217px;
     }
     &.third-card{
-      top: 35%;
+      top: 32%;
       left: 157px;
     }
     ul {
