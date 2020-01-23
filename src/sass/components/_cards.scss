@@ -110,7 +110,7 @@
     .card-body {
       padding: 20px;
       min-height: 328px;
-      p{
+      p {
         margin-bottom: 0px;
       }
     }
@@ -144,36 +144,51 @@
     }
   }
 
-    // brochure
-    &.brochure {
-      position: relative;
-      flex: 1 1 auto;
-      .card-header-img.card-hedaer-min-img {
-        height: 100px;
-        background-color: #0d2338;
-        img {
-          opacity: 0.8;
-        }
-        .card-text-overlap{
-          top: 35%;
-        }
-      }
-      .card-body {
-        padding: 20px;
-        min-height: 200px;
-        flex: 1 1 auto;
-      }
-      .card-footer {
-        padding: 0;
-        background-color: $gray-200;
-        min-height: auto;
-        padding-bottom: 5px;
-        padding-top: 5px;
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
+  // brochure
+  &.brochure {
+    position: relative;
+    flex: 1 1 auto;
+    .card-header-img {
+      background-color: #0d2338;
+      img {
+        opacity: 0.5;
       }
     }
+    .card-body {
+      padding: 20px;
+      min-height: 200px;
+      flex: 1 1 auto;
+    }
+    .card-footer {
+      padding: 0;
+      background-color: $gray-200;
+      min-height: auto;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+    }
+  }
+  // brochure right
+  &.brochure-card-right {
+    position: relative;
+    .card-header-img {
+      height: 100px;
+      background-color: #0d2338;
+      img {
+        opacity: 0.8;
+      }
+      .card-text-overlap {
+        top: 35%;
+      }
+    }
+    .card-body {
+      padding: 20px;
+      min-height: 100px;
+      flex: 1 1 auto;
+    }
+  }
   // Resources
   &.resources {
     border: none;
@@ -355,9 +370,13 @@
           font-size: 18px;
         }
         p {
-          padding: 0px 15px; margin-bottom:0px;
+          padding: 0px 15px;
+          margin-bottom: 0px;
         }
-        .btn{ padding-left: 15px; padding-right: 15px;}
+        .btn {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
       }
     }
   }
