@@ -263,6 +263,62 @@
   }
 }
 
+.transparent-bg-home {
+	min-height: 352px;
+	color: $white;
+	position: relative;
+	background: rgba(0, 0, 0, 0.8);
+	.content-desc {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.overlay-content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: $deep-blue;
+		overflow: hidden;
+		width: 0;
+		height: 100%;
+		transition: .5s ease;
+	}
+	&:hover {
+		.overlay-content {
+			width: 100%;
+		}
+	}
+	.content-more {
+		color: white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-align: left;
+    ul {
+      margin-bottom: 0;
+      li {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        a{
+          color: #7eb1e6;;
+        }
+      }
+    } color: #7eb1e6;
+  }
+  h2 {
+    color: $white;
+  }
+  a {
+    color: $white;
+  }
+}
+
+
 //Mobile
 @media (max-width: $reflex-md) {
   .big-banner {

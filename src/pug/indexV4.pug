@@ -1,0 +1,210 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='assets/css/style.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper.home
+    include components/_header       
+    section.big-banner.glide
+      .glide__track(data-glide-el='track')
+        .glide__slides
+          include components/hp-slides/connectivityV3
+    section.about-us.pt-5.pb-5
+        .container
+          .grid
+            .col-xs.col-sm.col-md-4.col-lg-4.col-grid
+                .transparent-bg-home.p-arround-4
+                    .center-block.text-center
+                        i.icon-users.icon-3x.hidden-sm.hidden-xs.hidden-xxs        
+                    .content-desc
+                        h2 Who we are
+                        p An award winning, pan-Asia professional services firm guding foreign companies through Asia’s complex business environment.
+                        a.btn.btn-outline-white(href='our-firm.html')
+                            | Read more 
+                            i.ml-1.icon-long-arrow-right
+                    .overlay-content
+                        .content-more
+                            h2 Who we are
+                            ul
+                                li
+                                    a(href='#') About us
+                                li
+                                    a(href='#') Company News
+                                li
+                                    a(href='#') Personnel
+                                li
+                                    a(href='#') Partnerships
+                                li
+                                    a(href='#') International Desk 
+            .col-xs.col-sm.col-md-4.col-lg-4.col-grid
+              .transparent-bg-home.p-arround-4
+                .center-block.text-center
+                  i.icon-laptop1.icon-3x.hidden-sm.hidden-xs.hidden-xxs
+                //- img.center-block.hidden-sm.hidden-xs.hidden-xxs(src='assets/img/services-we-offer-icon.png', alt='' width='55')
+                .content-desc
+                h2 Services we offer
+                p Our services help decision makers manage the legal, tax and operational challenges facing multinational businesses in Asia 
+                a.btn.btn-outline-white(href='services.html')
+                    | Read more 
+                    i.ml-1.icon-long-arrow-right
+                .overlay-content
+                    .content-more
+                        h2 Services we offer
+                        ul
+                            li
+                                a(href='http://dezshira.in/services/business-intelligence-solutions') Business Intelligence
+                            li
+                                a(href='http://dezshira.in/services/business-advisory') Corporate Establishment and Structuring
+                            li
+                                a(href='http://dezshira.in/services/legal-financial-due-diligence') Due Diligence
+                            li
+                                a(href='http://dezshira.in/services/accounting-reporting') Accounting
+                            li
+                                a(href='http://dezshira.in/services/payroll-human-resource-administration') HR Payroll
+                            li
+                                a(href='http://dezshira.in/services/tax') Tax
+                            li
+                                a(href='http://dezshira.in/services/audit-financial-review') Audit and Risk Advisory
+                            li
+                                a(href='http://dezshira.in/services/information-technology-solutions') Technology
+                            li
+                                a(href='http://dezshira.in/services/outbound-direct-investment') Outbound Direct Investment
+            .col-xs.col-sm.col-md-4.col-lg-4.col-grid
+              .transparent-bg-home.p-arround-4
+                .center-block.text-center
+                  i.icon-office.icon-3x.hidden-sm.hidden-xs.hidden-xxs
+                //- img.center-block.hidden-sm.hidden-xs.hidden-xxs(src='assets/img/industries-we-serve-icon.png', alt='' width='55')
+                .content-desc
+                  h2 Industries we serve
+                  p Over 25years of experience working with small, medium and large enterprises across every major industry.
+                  a.btn.btn-outline-white(href='industries.html')
+                    | Read more 
+                    i.ml-1.icon-long-arrow-right  
+                .overlay-content
+                    .content-more
+                        h2 Industries we serve
+                        ul
+                            li
+                                a(href='industries-single.html') Education
+                            li
+                                a(href='industries-single.html') Entertainment &amp; Sports
+                            li
+                                a(href='industries-single.html') Environment
+                            li
+                                a(href='industries-single.html') F&amp;B
+                            li
+                             a(href='industries-single.html') Healthcare
+                            li
+                                a(href='industries-single.html') IT
+                            li
+                                a(href='industries-single.html') Manufacturing
+                            li
+                                a(href='industries-single.html') NGO
+                            li
+                                a(href='industries-single.html') Professional Services
+                            li
+                                a(href='industries-single.html')
+                                | Trade &amp; E-Commerce 
+    section.gray-light-bg.pt-7.pb-7
+        .container
+          .grid
+            .col-xs.col-sm.col-md.col-lg-6.col-grid
+              .card.asiapedia
+                .card-header-img
+                  .card-text-overlap
+                    h3.ml-3.float-left 
+                      img(src='assets/img/asiapedia-logo.png', alt='' width='130px')
+                    a.btn.btn-link.float-right(href='asiapedia.html')
+                      | Read more 
+                      i.ml-1.icon-long-arrow-right   
+                .card-body
+                  h4 When we say we want to help businesses grow in Asia, we mean it. 
+                  p Asiapedia is our collection of resources based on what we have learned about doing business Asia. It’s  the products of more then 300 team members collaborating across 25 offices in Asia, Europe, and North America.
+                  form.col-md-10.col-grid(action='')
+                    select(name='country')
+                      option(value='Pick a country to explore') Pick a Country to explore
+                      option(value='India') India
+                      option(value='China') Chian
+                      option(value='Russia') Russia
+                      option(value='Thailand') Thailand
+                    p.text-center.pt-3 Or
+                    select(name='Topics')
+                      option(value='Pick a topic to explore') Pick a Topic to explore
+                      option(value='41')  Market Entry 
+                      option(value='168')  Business Intelligence 
+                      option(value='201')  Audit 
+                      option(value='211')  HR &amp; Payroll 
+                      option(value='245')  Taxation 
+                      option(value='256')  Legal 
+                      option(value='259')  Due Diligence 
+                      option(value='264')  Corporate Establishment 
+                      option(value='294')  Accounting 
+                      option(value='321')  Technology 
+            .col-xs.col-sm.col-md.col-lg-6.col-grid
+              .card.events
+                .card-header-img
+                  .card-text-overlap
+                    h3.float-left.ml-3.text-white Events
+                    a.btn.btn-link.float-right(href='events.html')
+                      | Read more 
+                      i.ml-1.icon-long-arrow-right    
+                .card-body
+                  ul.list.lists-events
+                    li
+                      .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
+                        | Nov
+                        span Oct, 2019
+                      .dec-block
+                        .title
+                          a(href='events-single.html')
+                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                        .date-time
+                          small
+                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                          
+                    li
+                      .date-block.hidden-sm.hidden-xs.hidden-xxs
+                        | Nov
+                        span Oct, 2019
+                      .dec-block
+                        .title
+                          a(href='events-single.html')
+                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                        .date-time
+                          small
+                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                        
+                    li
+                      .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
+                        | Nov
+                        span Oct, 2019
+                      .dec-block
+                        .title
+                          a(href='events-single.html')
+                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                        .date-time
+                          small
+                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                          
+                    li
+                      .date-block.hidden-sm.hidden-xs.hidden-xxs
+                        | Nov
+                        span Oct, 2019
+                      .dec-block
+                        .title
+                          a(href='events-single.html')
+                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                        .date-time
+                          small
+                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                            br
+    include components/_index-footer2
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")
