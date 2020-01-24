@@ -303,7 +303,7 @@
 		position: absolute;
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     white-space: nowrap;
     text-align: left;
     &.first-card{
@@ -421,6 +421,32 @@
       bottom: 5px;
     }
   }
+
+  .transparent-bg-home {
+    &:hover {
+      .overlay-content {
+        top: 80px;
+        transition-delay: .5s;
+      }
+    }
+    .content-more {
+      &.first-card{
+        top: 16%;
+        left: 98px;
+      }
+      &.second-card{
+        top: 29%;
+        left: 175px;
+      }
+      &.third-card{
+        top: 32%;
+        left: 115px;
+      }
+
+    }
+
+  }
+
 }
 
 @media (max-width: $reflex-sm) {

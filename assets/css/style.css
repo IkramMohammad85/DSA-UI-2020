@@ -1525,17 +1525,22 @@ $border-default: 1px solid #ccc;
     width: auto;
     height: 100%;
     background-size: cover; }
-  .card.international-desks .card-body {
-    padding: 20px;
-    min-height: 328px; }
-    .card.international-desks .card-body p {
-      margin-bottom: 0px; }
-  .card.international-desks .card-header-img {
-    background-color: #0d2338; }
-    .card.international-desks .card-header-img img {
-      opacity: 0.5; }
+  .card.international-desks {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto; }
+    .card.international-desks .card-body {
+      padding: 20px;
+      min-height: 328px; }
+      .card.international-desks .card-body p {
+        margin-bottom: 0px; }
+    .card.international-desks .card-header-img {
+      background-color: #0d2338; }
+      .card.international-desks .card-header-img img {
+        opacity: 0.5; }
   .card.services {
-    position: relative; }
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto; }
     .card.services .card-header-img {
       background-color: #0d2338; }
       .card.services .card-header-img img {
@@ -1663,15 +1668,18 @@ $border-default: 1px solid #ccc;
         .card.news-right .card-header-img .card-text-overlap h1 {
           font-size: 28px;
           font-size: 1.75rem; }
-  .card.featured-resources .card-header-img {
-    height: 144px; }
-  .card.featured-resources .card-body {
-    padding: 20px;
-    min-height: 384px; }
-    .card.featured-resources .card-body p {
-      margin-bottom: 0px; }
-  .card.featured-resources .card-footer {
-    padding: 20px; }
+  .card.featured-resources {
+    -webkit-box-flex: 1;
+    flex: 1 1 auto; }
+    .card.featured-resources .card-header-img {
+      height: 144px; }
+    .card.featured-resources .card-body {
+      padding: 20px;
+      min-height: 384px; }
+      .card.featured-resources .card-body p {
+        margin-bottom: 0px; }
+    .card.featured-resources .card-footer {
+      padding: 20px; }
   .card.featured-offers {
     border-top: solid 3px #314d77; }
     .card.featured-offers .card-body {
@@ -1747,8 +1755,6 @@ $border-default: 1px solid #ccc;
     min-height: 100%; }
   .card.services {
     height: auto; }
-    .card.services .card-body {
-      min-height: 100%; }
   .card.featured-resources .card-body, .card.international-desks .card-body {
     min-height: auto; }
   .card.office .card-body {
@@ -4641,7 +4647,20 @@ ul.navbar {
     .home section.about-us .transparent-bg.min-height {
       min-height: auto !important; }
   .home .glide__bullets {
-    bottom: 5px; } }
+    bottom: 5px; }
+  .transparent-bg-home:hover .overlay-content {
+    top: 80px;
+    -webkit-transition-delay: .5s;
+    transition-delay: .5s; }
+  .transparent-bg-home .content-more.first-card {
+    top: 16%;
+    left: 98px; }
+  .transparent-bg-home .content-more.second-card {
+    top: 29%;
+    left: 175px; }
+  .transparent-bg-home .content-more.third-card {
+    top: 32%;
+    left: 115px; } }
 
 @media (max-width: 768px) {
   .big-banner .item .news {

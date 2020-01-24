@@ -107,6 +107,7 @@
   }
   // International Desks
   &.international-desks {
+    flex: 1 1 auto;
     .card-body {
       padding: 20px;
       min-height: 328px;
@@ -125,6 +126,7 @@
   // Services
   &.services {
     position: relative;
+    flex: 1 1 auto;
     .card-header-img {
       background-color: #0d2338;
       img {
@@ -304,6 +306,7 @@
 
   // featured-resources
   &.featured-resources {
+    flex: 1 1 auto;
     .card-header-img {
       height: 144px;
     }
@@ -451,9 +454,7 @@
     }
     &.services {
       height: auto;
-      .card-body {
-        min-height: 100%;
-      }
+
     }
     &.featured-resources,
     &.international-desks {
