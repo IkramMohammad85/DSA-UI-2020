@@ -303,7 +303,20 @@
       }
     }
   }
-
+  // FEATURED ARTICLES
+  &.feature-artcile {
+    position: relative;
+    flex: 1 1 auto;
+    .card-header-img {
+      background-color: #0d2338;
+      height: initial;
+    }
+    .card-body {
+      padding: 20px;
+      min-height: 200px;
+      flex: 1 1 auto;
+    }
+  }
   // featured-resources
   &.featured-resources {
     flex: 1 1 auto;
@@ -382,6 +395,20 @@
         }
       }
     }
+  }
+  // publication
+  &.publication {
+    position: relative;
+    flex: 1 1 auto;
+    .card-header-img {
+      background-color: #0d2338;
+    }
+    .card-body {
+      padding: 20px;
+      min-height: 184px;
+      flex: 1 1 auto;
+    }
+
   }
 }
 

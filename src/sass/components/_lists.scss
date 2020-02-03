@@ -26,6 +26,16 @@
       }
     }
   }
+  &.latest-news{
+    li{
+      padding: 0px 20px 20px 20px;
+      margin-bottom: 20px;
+      min-height: 184px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
 .list-hover {
   li {
@@ -185,7 +195,14 @@
 }
 
 //Tablet
-@media (min-width: $reflex-lg) {
+@media (max-width: $reflex-lg) {
+  .list {
+    &.latest-news{
+      li{
+        min-height: auto;
+      }
+    }
+  }
 }
 //Mobile
 @media (max-width: $reflex-md) {
@@ -197,6 +214,11 @@
       }
       .dec-block {
         margin-left: 0px;
+      }
+    }
+    &.latest-news{
+      li{
+        min-height: auto;
       }
     }
   }

@@ -1668,6 +1668,18 @@ $border-default: 1px solid #ccc;
         .card.news-right .card-header-img .card-text-overlap h1 {
           font-size: 28px;
           font-size: 1.75rem; }
+  .card.feature-artcile {
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto; }
+    .card.feature-artcile .card-header-img {
+      background-color: #0d2338;
+      height: initial; }
+    .card.feature-artcile .card-body {
+      padding: 20px;
+      min-height: 200px;
+      -webkit-box-flex: 1;
+      flex: 1 1 auto; }
   .card.featured-resources {
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
@@ -1718,6 +1730,17 @@ $border-default: 1px solid #ccc;
       .card.service-news-cover .card-header-img .card-text-overlap .btn {
         padding-left: 15px;
         padding-right: 15px; }
+  .card.publication {
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto; }
+    .card.publication .card-header-img {
+      background-color: #0d2338; }
+    .card.publication .card-body {
+      padding: 20px;
+      min-height: 184px;
+      -webkit-box-flex: 1;
+      flex: 1 1 auto; }
 
 @media (max-width: 1200px) {
   .card.news {
@@ -1797,6 +1820,12 @@ $border-default: 1px solid #ccc;
   .list.news-list li .list-content h1 {
     font-size: 28px;
     font-size: 1.75rem; }
+  .list.latest-news li {
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+    min-height: 184px; }
+    .list.latest-news li:last-child {
+      margin-bottom: 0px; }
 
 .list-hover li {
   background-color: #ebebeb;
@@ -1925,12 +1954,18 @@ $border-default: 1px solid #ccc;
     content: "\2022";
     margin: 0 5px; }
 
+@media (max-width: 1200px) {
+  .list.latest-news li {
+    min-height: auto; } }
+
 @media (max-width: 992px) {
   .list.lists-events .date-block {
     float: inherit;
     border-bottom: solid 1px #dadada; }
   .list.lists-events .dec-block {
-    margin-left: 0px; } }
+    margin-left: 0px; }
+  .list.latest-news li {
+    min-height: auto; } }
 
 .dropdown {
   display: inline-block; }
