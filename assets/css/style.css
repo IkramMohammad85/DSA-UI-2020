@@ -1578,7 +1578,7 @@ $border-default: 1px solid #ccc;
       width: 100%; }
     .card.brochure.download-brochure .card-body {
       min-height: 180px;
-      background-color: #efefef; }
+      background-color: #f5f5f5; }
       .card.brochure.download-brochure .card-body h2 {
         font-size: 20px;
         white-space: normal; }
@@ -2868,16 +2868,16 @@ strong {
   margin-bottom: 5px; }
 
 .mr-0 {
-  margin-right: 0px; }
+  margin-right: 0px !important; }
 
 .ml-0 {
-  margin-left: 0px; }
+  margin-left: 0px !important; }
 
 .mt-0 {
-  margin-top: 0px; }
+  margin-top: 0px !important; }
 
 .mb-0 {
-  margin-bottom: 0px; }
+  margin-bottom: 0px !important; }
 
 .mr-15 {
   margin-right: 15px; }
