@@ -1684,9 +1684,11 @@ $border-default: 1px solid #ccc;
       height: initial; }
     .card.feature-artcile .card-body {
       padding: 20px;
-      min-height: 200px;
+      min-height: 150px;
       -webkit-box-flex: 1;
       flex: 1 1 auto; }
+      .card.feature-artcile .card-body h2 {
+        font-size: 20px; }
   .card.featured-resources {
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
@@ -1830,9 +1832,11 @@ $border-default: 1px solid #ccc;
   .list.latest-news li {
     padding: 0px 20px 20px 20px;
     margin-bottom: 20px;
-    min-height: 184px; }
+    min-height: 174px; }
     .list.latest-news li:last-child {
       margin-bottom: 0px; }
+    .list.latest-news li h2 {
+      font-size: 20px; }
 
 .list-hover li {
   background-color: #ebebeb;

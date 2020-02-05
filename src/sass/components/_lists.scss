@@ -30,9 +30,12 @@
     li{
       padding: 0px 20px 20px 20px;
       margin-bottom: 20px;
-      min-height: 184px;
+      min-height: 174px;
       &:last-child{
         margin-bottom: 0px;
+      }
+      h2{
+        font-size: 20px;
       }
     }
   }
