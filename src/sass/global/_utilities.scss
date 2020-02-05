@@ -536,3 +536,6 @@
   border: solid 5px #fff;
   margin-bottom: 2em;
 }
+.heading-1{
+  @include font-size(24px);
+}

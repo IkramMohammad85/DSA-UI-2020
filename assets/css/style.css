@@ -3142,6 +3142,10 @@ strong {
   border: solid 5px #fff;
   margin-bottom: 2em; }
 
+.heading-1 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
 .table {
   width: 100%;
   word-break: break-all;
