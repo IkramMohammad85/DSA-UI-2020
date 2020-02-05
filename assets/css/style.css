@@ -2097,6 +2097,10 @@ $border-default: 1px solid #ccc;
     overflow: inherit; }
     .banner.banner-brochure img {
       height: 100%; }
+  .banner.banner-CV {
+    background-color: #0D2338; }
+    .banner.banner-CV img {
+      opacity: 0.3; }
   .banner.banner-sm {
     height: 170px; }
   .banner.top-postion-24 {

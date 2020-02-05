@@ -5,6 +5,12 @@
       height: 100%;
     }
   }
+  &.banner-CV {
+    background-color: #0D2338;
+    img {
+      opacity: 0.3;
+    }
+  }
   &.banner-sm {
     height: 170px;
   }
