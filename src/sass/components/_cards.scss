@@ -172,9 +172,9 @@
       width: 100%;
     }
     &.download-brochure{
-      .card-body{ min-height: initial;
+      .card-body{ min-height: 180px;
         background-color: #efefef;
-      h2{ font-size: 20px;}
+      h2{ font-size: 20px; white-space: normal;}
       }
       .card-header-img{
         height: auto;

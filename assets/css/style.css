@@ -1577,10 +1577,11 @@ $border-default: 1px solid #ccc;
       bottom: 0px;
       width: 100%; }
     .card.brochure.download-brochure .card-body {
-      min-height: initial;
+      min-height: 180px;
       background-color: #efefef; }
       .card.brochure.download-brochure .card-body h2 {
-        font-size: 20px; }
+        font-size: 20px;
+        white-space: normal; }
     .card.brochure.download-brochure .card-header-img {
       height: auto; }
   .card.brochure-card-right {
