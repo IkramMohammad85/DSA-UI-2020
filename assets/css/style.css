@@ -1576,6 +1576,13 @@ $border-default: 1px solid #ccc;
       position: absolute;
       bottom: 0px;
       width: 100%; }
+    .card.brochure.download-brochure .card-body {
+      min-height: initial;
+      background-color: #efefef; }
+      .card.brochure.download-brochure .card-body h2 {
+        font-size: 20px; }
+    .card.brochure.download-brochure .card-header-img {
+      height: auto; }
   .card.brochure-card-right {
     position: relative; }
     .card.brochure-card-right .card-header-img {
