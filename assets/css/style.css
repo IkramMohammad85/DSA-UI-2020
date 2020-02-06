@@ -2307,6 +2307,195 @@ $border-default: 1px solid #ccc;
     background-color: #d1ecf1;
     border-color: #bee5eb; }
 
+.open-modal {
+  font-weight: bold;
+  background: steelblue;
+  color: var(--white);
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 2px; }
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in; }
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 100; }
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 2px;
+  background: #fff;
+  overflow: auto;
+  cursor: default; }
+
+.modal-dialog > * {
+  padding: 1rem; }
+
+.modal-header,
+.modal-footer {
+  background: #efefef; }
+
+.modal-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 10px 0px 10px 30px; }
+
+.modal-header .close-modal {
+  font-size: 14px;
+  padding: 2px 8px;
+  margin-top: -16px; }
+
+.modal p + p {
+  margin-top: 1rem; }
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[data-animation] .modal-dialog {
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15); }
+
+[data-animation].is-visible .modal-dialog {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s; }
+
+[data-animation="slideInOutDown"] .modal-dialog {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%); }
+
+[data-animation="slideInOutTop"] .modal-dialog {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+[data-animation="slideInOutLeft"] .modal-dialog {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%); }
+
+[data-animation="slideInOutRight"] .modal-dialog {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%); }
+
+[data-animation="zoomInOut"] .modal-dialog {
+  -webkit-transform: scale(0.2);
+  transform: scale(0.2); }
+
+[data-animation="rotateInOutDown"] .modal-dialog {
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: rotate(-1turn);
+  transform: rotate(-1turn); }
+
+[data-animation="mixInAnimations"].is-visible .modal-dialog {
+  -webkit-animation: mixInAnimations 2s 0.2s linear forwards;
+  animation: mixInAnimations 2s 0.2s linear forwards; }
+
+[data-animation="slideInOutDown"].is-visible .modal-dialog,
+[data-animation="slideInOutTop"].is-visible .modal-dialog,
+[data-animation="slideInOutLeft"].is-visible .modal-dialog,
+[data-animation="slideInOutRight"].is-visible .modal-dialog,
+[data-animation="zoomInOut"].is-visible .modal-dialog,
+[data-animation="rotateInOutDown"].is-visible .modal-dialog {
+  -webkit-transform: none;
+  transform: none; }
+
+@-webkit-keyframes mixInAnimations {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  20% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg); }
+  30% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg); }
+  40% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+  60% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  80% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  90% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+@keyframes mixInAnimations {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); }
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  20% {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg); }
+  30% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg); }
+  40% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+  60% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg); }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg); }
+  80% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  90% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
 @font-face {
   font-family: "NimbusSanL";
   src: url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Reg.otf") format("opentype"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype"), url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");

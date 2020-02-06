@@ -8,6 +8,7 @@ head
   link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
   title Dezan Shira & Associates!
 body
+  .body-blackout
   #wrapper
     include components/_header
     section.banner.banner-CV
@@ -129,30 +130,51 @@ body
                                     .hover-content.text-center
                                         h3.text-white
                                             a(href='https://www.asiabriefing.com/store/book/corporate-sustainability-china.html') Corporate Sustainability in China
-                                        a.btn.btn-outline-white(href='https://www.asiabriefing.com/store/book/corporate-sustainability-china.html') Quick View 
+                                        a.btn.btn-outline-white.open-modal(type='button', data-open='modal1') Quick View 
                                 .item
                                     img(src='https://resource.dezshira.com/resize/260x360/Publications/7837/CB-2018-09-issue-Cover-600.jpg')
                                     .hover-content.text-center
                                         h3.text-white
                                             a(href='https://www.asiabriefing.com/store/book/how-to-repatriate-profits-from-china-7837.html') How to Repatriate Profits from China
-                                        a.btn.btn-outline-white(href='https://www.asiabriefing.com/store/book/how-to-repatriate-profits-from-china-7837.html') Quick View 
+                                        a.btn.btn-outline-white.open-modal(type='button', data-open='modal1') Quick View 
                                 .item
                                     img(src='https://resource.dezshira.com/resize/260x360/Publications/8559/ASB_2019_16_issue_Cover.jpg')
                                     .hover-content.text-center
                                         h3.text-white
-                                            a(href='https://www.asiabriefing.com/store/book/relocating-business-china-asean.html') Relocating Your Business from China to ASEAN 
-                                        a.btn.btn-outline-white(href='https://www.asiabriefing.com/store/book/relocating-business-china-asean.html') Quick View 
+                                            a(href='https://www.asiabriefing.com/store/book/relocating-business-china-asean.html',) Relocating Your Business from China to ASEAN 
+                                        a.btn.btn-outline-white.open-modal(type='button', data-open='modal1') Quick View 
                                 .item
                                     img(src='https://resource.dezshira.com/resize/260x360/Publications/8527/CB_Mag_2019_12_issue_Cover.jpg')
                                     .hover-content.text-center
                                         h3.text-white
                                             a(href='https://www.asiabriefing.com/store/book/how-close-business-china.html') How to Close a Business in China 
-                                        a.btn.btn-outline-white(href='https://www.asiabriefing.com/store/book/how-close-business-china.html') Quick View 
+                                        a.btn.btn-outline-white.open-modal(type='button', data-open='modal1')
+                                             | Quick View 
                             div(data-glide-el='controls')
                                 button.glide-next(data-glide-dir='<')
                                     span.arrow.right-arrow
                                 button.glide-prev(data-glide-dir='>')
-                                    span.arrow.left-arrow                                           
+                                    span.arrow.left-arrow 
+        #modal1.modal(data-animation='slideInOutLeft')
+            .modal-dialog
+                header.modal-header
+                    | OUR REGIONAL PUBLICATIONS
+                    button.close-modal.btn.btn-secondary(aria-label='close modal', data-close='')
+                        | &#x2715;
+                section.modal-content
+                    .grid
+                        .col-sm.col-md-4.col-lg-4.col-grid
+                            img.flex-img.shadow.border-white(src='https://resource.dezshira.com/resize/260x360/Publications/8527/CB_Mag_2019_12_issue_Cover.jpg')
+                        .col-sm.col-md-8.col-lg-8.col-grid
+
+                            p
+                                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione! Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo, ea.
+                            p
+                                | Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure
+                            a.btn.btn-outline-dark.mb-2(href='#')
+                                i.icon-cloud-download 
+                                | DOWNLOAD NOW   
+                  
     section.pt-7.pb-7.gray-light-bg
         .container
             h4.section-title.mb-0 DOWNLOAD BROCHURES       
@@ -229,9 +251,8 @@ body
                                 button.glide-next(data-glide-dir='<')
                                     span.arrow.right-arrow
                                 button.glide-prev(data-glide-dir='>')
-                                    span.arrow.left-arrow                                                                  
+                                    span.arrow.left-arrow                                                               
     include components/_footer
-
     //JavaScript
     script(src="assets/js/glide.min.js")
     script(src="assets/js/scripts.js")

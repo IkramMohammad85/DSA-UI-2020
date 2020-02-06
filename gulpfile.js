@@ -26,7 +26,7 @@ var paths = {
 	},
 
 	js: {
-		src: ['./src/js/dropdown.js','./src/js/accordion.js','./src/js/scripts.js'],
+		src: ['./src/js/dropdown.js','./src/js/accordion.js','./src/js/popup.js','./src/js/scripts.js'],
 		vendor:['node_modules/@glidejs/glide/dist/glide.min.js','node_modules/list.js/dist/list.min.js'],
 		dest: './assets/js'
 	},
