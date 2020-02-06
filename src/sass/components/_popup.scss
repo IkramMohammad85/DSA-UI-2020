@@ -39,7 +39,7 @@
   max-width: 800px;
   max-height: 80vh;
   border-radius: 2px;
-  background: #fff;
+  background: $white;
   overflow: auto;
   cursor: default;
 }
@@ -60,7 +60,7 @@
 }
 
 .modal-header .close-modal {
-  font-size: 14px;
+  @include font-size(14px);
   padding: 2px 8px;
   margin-top: -16px;
 

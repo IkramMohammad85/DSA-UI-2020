@@ -1534,7 +1534,7 @@ $border-default: 1px solid #ccc;
       .card.international-desks .card-body p {
         margin-bottom: 0px; }
     .card.international-desks .card-header-img {
-      background-color: #0d2338; }
+      background-color: #0D2338; }
       .card.international-desks .card-header-img img {
         opacity: 0.5; }
   .card.services {
@@ -1542,7 +1542,7 @@ $border-default: 1px solid #ccc;
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
     .card.services .card-header-img {
-      background-color: #0d2338; }
+      background-color: #0D2338; }
       .card.services .card-header-img img {
         opacity: 0.5; }
     .card.services .card-body {
@@ -1559,7 +1559,7 @@ $border-default: 1px solid #ccc;
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
     .card.brochure .card-header-img {
-      background-color: #0d2338; }
+      background-color: #0D2338; }
       .card.brochure .card-header-img img {
         opacity: 0.5; }
     .card.brochure .card-body {
@@ -1581,6 +1581,7 @@ $border-default: 1px solid #ccc;
       background-color: #f5f5f5; }
       .card.brochure.download-brochure .card-body h2 {
         font-size: 20px;
+        font-size: 1.25rem;
         white-space: normal; }
     .card.brochure.download-brochure .card-header-img {
       height: auto; }
@@ -1588,7 +1589,7 @@ $border-default: 1px solid #ccc;
     position: relative; }
     .card.brochure-card-right .card-header-img {
       height: 100px;
-      background-color: #0d2338; }
+      background-color: #0D2338; }
       .card.brochure-card-right .card-header-img img {
         opacity: 0.8; }
       .card.brochure-card-right .card-header-img .card-text-overlap {
@@ -1601,7 +1602,7 @@ $border-default: 1px solid #ccc;
   .card.resources {
     border: none; }
     .card.resources .card-header-img {
-      background-color: #0d2338; }
+      background-color: #0D2338; }
       .card.resources .card-header-img img {
         opacity: 0.5; }
   .card.office {
@@ -1681,7 +1682,7 @@ $border-default: 1px solid #ccc;
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
     .card.feature-artcile .card-header-img {
-      background-color: #0d2338;
+      background-color: #0D2338;
       height: initial; }
     .card.feature-artcile .card-body {
       padding: 20px;
@@ -1689,7 +1690,8 @@ $border-default: 1px solid #ccc;
       -webkit-box-flex: 1;
       flex: 1 1 auto; }
       .card.feature-artcile .card-body h2 {
-        font-size: 20px; }
+        font-size: 20px;
+        font-size: 1.25rem; }
   .card.featured-resources {
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
@@ -1733,7 +1735,8 @@ $border-default: 1px solid #ccc;
       .card.service-news-cover .card-header-img .card-text-overlap h2 {
         padding: 15px 15px 15px 15px;
         margin-bottom: 0px;
-        font-size: 18px; }
+        font-size: 18px;
+        font-size: 1.125rem; }
       .card.service-news-cover .card-header-img .card-text-overlap p {
         padding: 0px 15px;
         margin-bottom: 0px; }
@@ -1745,7 +1748,7 @@ $border-default: 1px solid #ccc;
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
     .card.publication .card-header-img {
-      background-color: #0d2338; }
+      background-color: #0D2338; }
     .card.publication .card-body {
       padding: 20px;
       min-height: 184px;
@@ -2369,6 +2372,7 @@ $border-default: 1px solid #ccc;
 
 .modal-header .close-modal {
   font-size: 14px;
+  font-size: 0.875rem;
   padding: 2px 8px;
   margin-top: -16px; }
 
