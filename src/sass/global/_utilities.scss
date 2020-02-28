@@ -292,8 +292,14 @@
 .border-top {
   border-top: 1px solid #dee2e6;
 }
+.border-none {
+  border:none !important;
+}
 .border-white {
   border: 1px solid $white !important;
+}
+.border-dark-blue {
+  border-color: #1a2940 !important;
 }
 .d-block {
   display: block !important;
@@ -537,4 +543,11 @@
 }
 .heading-1{
   @include font-size(24px);
+}
+.col-bleed-x-right {
+  padding-right: 0;
+}
+
+.col-bleed-x-left {
+  padding-left: 0;
 }

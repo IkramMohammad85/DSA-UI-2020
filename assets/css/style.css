@@ -3103,8 +3103,14 @@ strong {
 .border-top {
   border-top: 1px solid #dee2e6; }
 
+.border-none {
+  border: none !important; }
+
 .border-white {
   border: 1px solid #fff !important; }
+
+.border-dark-blue {
+  border-color: #1a2940 !important; }
 
 .d-block {
   display: block !important; }
@@ -3342,6 +3348,12 @@ strong {
 .heading-1 {
   font-size: 24px;
   font-size: 1.5rem; }
+
+.col-bleed-x-right {
+  padding-right: 0; }
+
+.col-bleed-x-left {
+  padding-left: 0; }
 
 .table {
   width: 100%;
