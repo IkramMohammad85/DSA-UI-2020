@@ -1499,6 +1499,19 @@ $border-default: 1px solid #ccc;
     background: #fff; }
   .card-footer {
     min-height: 44px; }
+  .card .content {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    -webkit-transition: bottom 0.8s ease;
+    transition: bottom 0.8s ease;
+    padding: 15px; }
+    .card .content p,
+    .card .content h4 {
+      color: #fff; }
+      .card .content p a,
+      .card .content h4 a {
+        color: #fff; }
   .card.asiapedia, .card.events {
     min-height: 568px;
     background-color: #fff; }
@@ -1554,6 +1567,31 @@ $border-default: 1px solid #ccc;
       min-height: auto;
       padding-bottom: 5px;
       padding-top: 5px; }
+  .card.related-services {
+    overflow: hidden;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto; }
+    .card.related-services .card-header-img {
+      background-color: #0D2338; }
+      .card.related-services .card-header-img img {
+        opacity: 0.5; }
+      .card.related-services .card-header-img .card-text-overlap {
+        bottom: 0px;
+        background: rgba(0, 0, 0, 0.7);
+        min-height: 75px;
+        width: 100%;
+        top: inherit; }
+        .card.related-services .card-header-img .card-text-overlap h4 {
+          padding: 15px;
+          margin-top: 15px; }
+    .card.related-services:hover .content {
+      bottom: 0;
+      -webkit-transition: bottom 0.5s ease;
+      transition: bottom 0.5s ease; }
+    .card.related-services .content {
+      bottom: -264px;
+      height: 200px; }
   .card.brochure {
     position: relative;
     -webkit-box-flex: 1;
@@ -1679,6 +1717,7 @@ $border-default: 1px solid #ccc;
           font-size: 1.75rem; }
   .card.feature-artcile {
     position: relative;
+    overflow: hidden;
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
     .card.feature-artcile .card-header-img {
@@ -1692,6 +1731,23 @@ $border-default: 1px solid #ccc;
       .card.feature-artcile .card-body h2 {
         font-size: 20px;
         font-size: 1.25rem; }
+    .card.feature-artcile:hover .content {
+      bottom: 0;
+      -webkit-transition: bottom 0.5s ease;
+      transition: bottom 0.5s ease; }
+    .card.feature-artcile .content {
+      bottom: -162px;
+      height: 150px; }
+      .card.feature-artcile .content .thumbnail-block {
+        height: 140px;
+        width: 124px;
+        float: left;
+        margin-right: 10px; }
+      .card.feature-artcile .content .content-block {
+        max-height: 115px;
+        overflow: hidden;
+        width: 60%;
+        float: left; }
   .card.featured-resources {
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
@@ -1968,6 +2024,20 @@ $border-default: 1px solid #ccc;
   .list-inline.list-inline-style li::before {
     content: "\2022";
     margin: 0 5px; }
+
+ul.list-blue-border {
+  padding: 0px;
+  margin: 0px;
+  list-style: none; }
+  ul.list-blue-border li {
+    border: solid 2px #1e71bd;
+    margin-bottom: 25px;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #f9f9f9;
+    padding: 10px; }
+    ul.list-blue-border li:hover {
+      box-shadow: 0px 4px 8px 0px #ccc; }
 
 @media (max-width: 1200px) {
   .list.latest-news li {

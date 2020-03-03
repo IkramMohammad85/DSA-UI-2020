@@ -55,7 +55,20 @@
   &-footer {
     min-height: 44px;
   }
-
+  .content {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    transition: bottom 0.8s ease;
+    padding: 15px;
+    p,
+    h4 {
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }
   // Asiapedia
   &.asiapedia,
   &.events {
@@ -143,6 +156,40 @@
       min-height: auto;
       padding-bottom: 5px;
       padding-top: 5px;
+    }
+  }
+
+  // Related Services
+  &.related-services {
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 auto;
+    .card-header-img {
+      background-color: $bluedark;
+      img {
+        opacity: 0.5;
+      }
+      .card-text-overlap {
+        bottom: 0px;
+        background: rgba(0, 0, 0, 0.7);
+        min-height: 75px;
+        width: 100%;
+        top: inherit;
+        h4 {
+          padding: 15px;
+          margin-top: 15px;
+        }
+      }
+    }
+    &:hover {
+      .content {
+        bottom: 0;
+        transition: bottom 0.5s ease;
+      }
+    }
+    .content {
+      bottom: -264px;
+      height: 200px;
     }
   }
 
@@ -319,6 +366,7 @@
   // FEATURED ARTICLES
   &.feature-artcile {
     position: relative;
+    overflow: hidden;
     flex: 1 1 auto;
     .card-header-img {
       background-color: $bluedark;
@@ -331,6 +379,28 @@
       h2 {
         @include font-size(20px);
       }
+    }
+    &:hover {
+      .content {
+        bottom: 0;
+        transition: bottom 0.5s ease;
+      }
+    }
+    .content {
+      bottom: -162px;
+      height: 150px;
+      .thumbnail-block {
+        height: 140px;
+        width: 124px;
+        float: left;
+        margin-right: 10px;
+    }
+    .content-block {
+      max-height: 115px;
+      overflow: hidden;
+      width: 60%;
+      float: left;
+  }
     }
   }
   // featured-resources
