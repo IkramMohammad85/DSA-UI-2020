@@ -1,0 +1,14 @@
+.content {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    transition: bottom 0.8s ease;
+    padding: 15px;
+    p,
+    h4 {
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }

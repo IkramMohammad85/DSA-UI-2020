@@ -2039,6 +2039,17 @@ ul.list-blue-border {
     ul.list-blue-border li:hover {
       box-shadow: 0px 4px 8px 0px #ccc; }
 
+.list.lists-events li {
+  overflow: hidden;
+  position: relative; }
+  .list.lists-events li:hover .content {
+    bottom: 0;
+    -webkit-transition: bottom 0.5s ease;
+    transition: bottom 0.5s ease; }
+  .list.lists-events li .content {
+    bottom: -114px;
+    height: 102px; }
+
 @media (max-width: 1200px) {
   .list.latest-news li {
     min-height: auto; } }
@@ -2569,6 +2580,20 @@ ul.list-blue-border {
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
+
+.content {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  -webkit-transition: bottom 0.8s ease;
+  transition: bottom 0.8s ease;
+  padding: 15px; }
+  .content p,
+  .content h4 {
+    color: #fff; }
+    .content p a,
+    .content h4 a {
+      color: #fff; }
 
 @font-face {
   font-family: "NimbusSanL";
