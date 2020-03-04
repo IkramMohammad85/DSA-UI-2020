@@ -5124,13 +5124,13 @@ ul.navbar {
   margin-left: 2%; }
 
 /*realted service*/
-.btn-parent-hover {
+.parent-link {
   cursor: pointer; }
-  .btn-parent-hover:hover ~ .child-highlight {
-    background-color: #316aa3 !important;
-    border-color: #316aa3 !important;
+  .parent-link:hover ~ .child .child-link {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
     color: #fff;
-    margin-left: 95px; }
+    margin-left: 10px; }
 
 .related-service-links .btn-outline-white {
   -webkit-transition: 0.5s all !important;

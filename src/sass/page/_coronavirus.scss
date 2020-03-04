@@ -36,15 +36,22 @@
 }
 
 /*realted service*/
-.btn-parent-hover {
-  cursor: pointer;
-  &:hover ~ .child-highlight {
-    background-color: #316aa3 !important;
-    border-color: #316aa3 !important;
-    color: #fff;
-    margin-left: 95px;
-  }
+.parent-link {
+	cursor: pointer;
+	&:hover {
+		~ {
+			.child {
+				.child-link {
+					background-color: #007bff !important;
+					border-color: #007bff !important;
+					color: #fff;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
 }
+
 
 .related-service-links { 
     .btn-outline-white{ transition: .5s all!important;   
