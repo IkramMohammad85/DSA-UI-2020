@@ -275,58 +275,115 @@ body
             .grid
                 .col-sm.col-md-10.col-lg-10.col-xlg-10.offset-md-1.offset-lg-1.offset-xlg-1
                     h3 More Related Services
-                .col-sm.col-md-4.col-lg-4.col-xlg-4.offset-md-1.offset-lg-1.offset-xlg-1.col-bleed-x-right
-                    .dark-blue-bg.p-arround-2
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left.border-dark-blue(href='https://www.dezshira.com/services/accounting-reporting') 
-                            | All Accounting and Audit Services 
-                            i.ml-1.icon-long-arrow-right.float-right    
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left.border-dark-blue(href='https://www.dezshira.com/services/payroll-human-resource-administration') 
-                            | All Human Resources &amp; Payroll Services 
-                            i.ml-1.icon-long-arrow-right.float-right     
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left.border-dark-blue(href='https://www.dezshira.com/services/information-technology-solutions') 
-                            | All Technology Services
-                            i.ml-1.icon-long-arrow-right.float-right      
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left.border-dark-blue(href='https://www.dezshira.com/services/business-advisory') 
-                            | All Business Advisory Services  
-                            i.ml-1.icon-long-arrow-right.float-right    
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left.border-dark-blue(href='https://www.dezshira.com/services/tax') 
-                            | All Tax Services
-                            i.ml-1.icon-long-arrow-right.float-right      
-                        a.btn.btn-outline-white.btn-block.text-left.border-dark-blue(href='https://www.dezshira.com/services/business-intelligence-solutions') 
-                            | All Business Intelligence Services 
-                            i.ml-1.icon-long-arrow-right.float-right
-                .col-sm.col-md-6.col-lg-6.col-xlg-6.col-bleed-x-left
-                    .dark-blue-bg.p-arround-2
-                        .child
-                            a.btn.btn-outline-white.btn-block.mb-1.text-left(href='https://www.dezshira.com/services/business-intelligence-solutions') 
-                                |  Virtual CFO Services
-                                i.ml-1.icon-long-arrow-right.float-right 
-                            .content
-                                .grid
-                                    .col-sm-12.col-md-8.col-lg-8
-                                    h4 How a Virtual CFO can help your Organisation
-                                    p
-                                        | Whether your company is a startup, a growing business in Asia, or a long-established company, the help of a professional financial consultant, as Virtual CFO,
-                                    p
-                                        a.btn.btn-lg.btn-outline Enquire
-                                    .col-sm-12.col-md-4.col-lg-4
-                                    img.img-responsive(src='https://www.dezshira.com/userfiles/image/landing-page/covid19/ceo-working.jpg', scale='0')
-
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left(href='https://www.dezshira.com/services/payroll-human-resource-administration') 
-                            | HR Advisory 
-                            i.ml-1.icon-long-arrow-right.float-right 
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left(href='https://www.dezshira.com/landing/digital-expense-management')  
-                            | Digital Expense Management  
-                            i.ml-1.icon-long-arrow-right.float-right
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left(href='https://www.dezshira.com/services/business-advisory')
-                            i.ml-1.icon-long-arrow-right.float-right  
-                            |  Contract Review  
-                        a.btn.btn-outline-white.btn-block.mb-1.text-left(href='https://www.dezshira.com/services/tax')  
-                            i.ml-1.icon-long-arrow-right.float-right
-                            | Tax Restructuring  
-                        a.btn.btn-outline-white.btn-block.text-left(href='https://www.dezshira.com/services/business-intelligence-solutions')
-                            | Investment  Country Comparison  
-                            i.ml-1.icon-long-arrow-right.float-right                         
+                    .dark-blue-bg.p-arround-2.related-service-links 
+                            .links-group
+                                a.btn.btn-outline-white.mb-1.text-left.border-dark-blue.parent-link(href='https://www.dezshira.com/services/accounting-reporting') 
+                                    | All Accounting and Audit Services 
+                                    i.ml-1.icon-long-arrow-right.float-right   
+                                .child
+                                    a.btn.btn-outline-white.mb-1.text-left.child-link(href='https://www.dezshira.com/services/business-intelligence-solutions') 
+                                        |  Virtual CFO Services
+                                        i.ml-1.icon-long-arrow-right.float-right 
+                                    .content
+                                        .grid
+                                            .col-sm-12.col-md-8.col-lg-8
+                                                h4 How a Virtual CFO can help your Organisation
+                                                p.mb-0
+                                                    | Whether your company is a startup, a growing business in Asia, or a long-established company, the help of a professional financial consultant, as Virtual CFO, 
+                                                p
+                                                    a.btn.btn-outline-white(href="") Enquire
+                                            .col-sm-12.col-md-4.col-lg-4
+                                                img.flex-img(src='https://www.dezshira.com/userfiles/image/landing-page/covid19/ceo-working.jpg', scale='0') 
+                            .links-group
+                                a.btn.btn-outline-white.mb-1.text-left.border-dark-blue.parent-link(href='https://www.dezshira.com/services/payroll-human-resource-administration') 
+                                    | All Human Resources 
+                                    i.ml-1.icon-long-arrow-right.float-right   
+                                .child
+                                    a.btn.btn-outline-white.mb-1.text-left.child-link(href='https://www.dezshira.com/services/payroll-human-resource-administration') 
+                                        |  HR Advisory
+                                        i.ml-1.icon-long-arrow-right.float-right 
+                                    .content
+                                        .grid
+                                            .col-sm-12.col-md-8.col-lg-8
+                                                h4 HR and Payroll
+                                                p.mb-0
+                                                    | We provide professional HR and payroll services to our clients across Asia. Dezan Shira & Associates appreciates and understands that HR and payroll.
+                                                p
+                                                    a.btn.btn-outline-white Enquire
+                                            .col-sm-12.col-md-4.col-lg-4
+                                                img.flex-img(src='https://www.dezshira.com/userfiles/image/landing-page/covid19/ceo-working.jpg', scale='0') 
+                            .links-group
+                                a.btn.btn-outline-white.mb-1.text-left.border-dark-blue.parent-link(href='https://www.dezshira.com/services/information-technology-solutions') 
+                                    | All Technology Services 
+                                    i.ml-1.icon-long-arrow-right.float-right   
+                                .child
+                                    a.btn.btn-outline-white.mb-1.text-left.child-link(href='https://www.dezshira.com/services/information-technology-solutions') 
+                                        |  Digital Expense Management
+                                        i.ml-1.icon-long-arrow-right.float-right 
+                                    .content
+                                        .grid
+                                            .col-sm-12.col-md-8.col-lg-8
+                                                h4 Optimize expenses processing, anywhere-anytime
+                                                p.mb-0
+                                                    | Managing employees’ expenses digitally in China is a powerful way to optimize and speed up business administration, simplify remote submissions and.
+                                                p
+                                                    a.btn.btn-outline-white Enquire
+                                            .col-sm-12.col-md-4.col-lg-4
+                                                img.flex-img(src='https://www.dezshira.com/userfiles/image/landing-page/covid19/ceo-working.jpg', scale='0') 
+                            .links-group
+                                a.btn.btn-outline-white.mb-1.text-left.border-dark-blue.parent-link(href='https://www.dezshira.com/services/business-advisory') 
+                                    | All Business Advisory Services 
+                                    i.ml-1.icon-long-arrow-right.float-right   
+                                .child
+                                    a.btn.btn-outline-white.mb-1.text-left.child-link(href='https://www.dezshira.com/services/business-advisory') 
+                                        |  Digital Expense Management
+                                        i.ml-1.icon-long-arrow-right.float-right 
+                                    .content
+                                        .grid
+                                            .col-sm-12.col-md-8.col-lg-8
+                                                h4 Corporate Establishment and Structuring
+                                                p.mb-0
+                                                    | Dezan Shira & Associates can advise on the legal incorporation of your investment across multiple Asian countries. This important legal process.
+                                                p
+                                                    a.btn.btn-outline-white Enquire
+                                            .col-sm-12.col-md-4.col-lg-4
+                                                img.flex-img(src='https://www.dezshira.com/userfiles/image/landing-page/covid19/ceo-working.jpg', scale='0') 
+                            .links-group
+                                a.btn.btn-outline-white.mb-1.text-left.border-dark-blue.parent-link(href='https://www.dezshira.com/services/tax') 
+                                    | All Tax Services 
+                                    i.ml-1.icon-long-arrow-right.float-right   
+                                .child
+                                    a.btn.btn-outline-white.mb-1.text-left.child-link(href='https://www.dezshira.com/services/tax') 
+                                        |  Digital Expense Management
+                                        i.ml-1.icon-long-arrow-right.float-right 
+                                    .content
+                                        .grid
+                                            .col-sm-12.col-md-8.col-lg-8
+                                                h4 Tax
+                                                p.mb-0
+                                                    | The fast pace of tax reform, combined with sometimes inconsistent local practice and enforcement, makes the tax landscape difficult to navigate for many.
+                                                p
+                                                    a.btn.btn-outline-white Enquire
+                                            .col-sm-12.col-md-4.col-lg-4
+                                                img.flex-img(src='https://www.dezshira.com/userfiles/image/landing-page/covid19/ceo-working.jpg', scale='0') 
+                            .links-group
+                                a.btn.btn-outline-white.text-left.border-dark-blue.parent-link.btn-parent-hover(href='https://www.dezshira.com/services/business-intelligence-solutions') 
+                                    | All Business Intelligence Services 
+                                    i.ml-1.icon-long-arrow-right.float-right   
+                                .child
+                                    a.btn.btn-outline-white.text-left.child-link.child-highlight(href='https://www.dezshira.com/services/business-intelligence-solutions') 
+                                        |  Investment  Country Comparison
+                                        i.ml-1.icon-long-arrow-right.float-right 
+                                    .content
+                                        .grid
+                                            .col-sm-12.col-md-8.col-lg-8
+                                                h4 Tax
+                                                p.mb-0
+                                                    | Asia’s relentless economic growth and diverse range of economies present amazing opportunities for foreign investment. Foreign companies exploring opportunities in the region can.
+                                                p
+                                                    a.btn.btn-outline-white Enquire
+                                            .col-sm-12.col-md-4.col-lg-4
+                                                img.flex-img(src='https://www.dezshira.com/userfiles/image/landing-page/covid19/ceo-working.jpg', scale='0') 
     section.light-blue-bg.pt-3.pb-3
             .container
                 .grid

@@ -1,21 +1,75 @@
 .child {
-	position: relative;
-	&:hover {
-		.content {
-			bottom: -243px;
-			transition: bottom 0.5s ease;
-		}
-	}
-	.content {
-		bottom: -600px;
-		width: 40%;
-		height: 243px;
-		background-color: #316aa3;
-		transition: bottom 0.8s ease;
-		z-index: 1;
-		.btn {
-			color: #fff;
-			margin-top: 20px;
-		}
-	}
+  position: relative;
+  &:hover {
+    .content {
+      bottom: -290px;
+      transition: bottom 0.5s ease;
+    }
+  }
+  .content {
+    bottom: -600px;
+    width: 40%;
+    height: 290px;
+    background-color: #007bff;
+    transition: bottom 0.8s ease;
+    z-index: 1;
+    .btn-outline-white {
+      color: #fff;
+      margin-top: 20px;
+      &:hover{ border: solid 1px #fff;}
+    }
+  }
+}
+
+.related-service-links {
+  min-height: 300px;
+  overflow: hidden;
+}
+.parent-link {
+  width: 40%;
+  float: left;
+}
+.child-link {
+  width: 58%;
+  float: left;
+  margin-left: 2%;
+}
+
+/*realted service*/
+.btn-parent-hover {
+  cursor: pointer;
+  &:hover ~ .child-highlight {
+    background-color: #316aa3 !important;
+    border-color: #316aa3 !important;
+    color: #fff;
+    margin-left: 95px;
+  }
+}
+
+.related-service-links { 
+    .btn-outline-white{ transition: .5s all!important;   
+        transition-delay: .5s !important; }
+}
+
+@media (max-width: $reflex-md) {
+  .parent-link {
+    width: 100%;
+    float: left;
+  }
+  .child-link {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+  .child {
+    .content {
+      display: none;
+    }
+    .btn-outline-white{ border: none;}
+  }
+  .links-group {
+    border: solid 1px #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
 }
