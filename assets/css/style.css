@@ -2049,6 +2049,8 @@ ul.list-blue-border {
   .list.lists-events li .content {
     bottom: -114px;
     height: 102px; }
+    .list.lists-events li .content a.btn {
+      color: #fff !important; }
 
 @media (max-width: 1200px) {
   .list.latest-news li {
@@ -5087,5 +5089,23 @@ ul.navbar {
 
 .blue-hover:hover .asiapedia-icon {
   background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-w.png) no-repeat top center; }
+
+.child {
+  position: relative; }
+  .child:hover .content {
+    bottom: -243px;
+    -webkit-transition: bottom 0.5s ease;
+    transition: bottom 0.5s ease; }
+  .child .content {
+    bottom: -600px;
+    width: 40%;
+    height: 243px;
+    background-color: #316aa3;
+    -webkit-transition: bottom 0.8s ease;
+    transition: bottom 0.8s ease;
+    z-index: 1; }
+    .child .content .btn {
+      color: #fff;
+      margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+.child {
+	position: relative;
+	&:hover {
+		.content {
+			bottom: -243px;
+			transition: bottom 0.5s ease;
+		}
+	}
+	.content {
+		bottom: -600px;
+		width: 40%;
+		height: 243px;
+		background-color: #316aa3;
+		transition: bottom 0.8s ease;
+		z-index: 1;
+		.btn {
+			color: #fff;
+			margin-top: 20px;
+		}
+	}
+}

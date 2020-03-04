@@ -219,9 +219,12 @@ ul.list-blue-border{
     .content {
       bottom: -114px;
       height: 102px;
+      a.btn{ color: #fff!important;} 
     }
+   
   }
 }
+
 //Tablet
 @media (max-width: $reflex-lg) {
   .list {
