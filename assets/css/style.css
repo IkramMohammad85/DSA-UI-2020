@@ -2622,6 +2622,23 @@ ul.list-blue-border {
 #tab-contents div.active {
   display: block; }
 
+#latest-insight #tab-nav {
+  border: none;
+  float: right; }
+
+#latest-insight #tab-contents {
+  padding: 0px;
+  background: #fff; }
+
+#latest-insight #tab-nav span.active {
+  background: #1a2940;
+  color: #fff; }
+
+#latest-insight #tab-nav span {
+  background: #e5e8e9;
+  margin-left: 1px;
+  margin-right: 1px; }
+
 @font-face {
   font-family: "NimbusSanL";
   src: url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Reg.otf") format("opentype"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype"), url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");
@@ -2972,6 +2989,9 @@ strong {
 
 .grey-bg {
   background-color: #e9ecef; }
+
+.soft-gray-bg {
+  background-color: #f8f9fa; }
 
 .white-bg {
   background-color: #fff; }

@@ -24,3 +24,10 @@
   #tab-contents div.active {
     display: block;
   }
+
+ #latest-insight{
+  #tab-nav{ border: none; float:right;}
+  #tab-contents{ padding: 0px; background: $white;}
+  #tab-nav span.active {background:$deep-blue; color:$white;}
+  #tab-nav span{ background: #e5e8e9; margin-left: 1px; margin-right: 1px;}
+ }
