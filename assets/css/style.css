@@ -2597,6 +2597,31 @@ ul.list-blue-border {
     .content h4 a {
       color: #fff; }
 
+/* NAVIGATION */
+#tab-nav {
+  border-bottom: 3px solid #316aa3; }
+
+#tab-nav span.tabnav {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer; }
+
+#tab-nav span.active {
+  background: #316aa3;
+  color: white; }
+
+/* CONTENTS */
+#tab-contents {
+  padding: 15px;
+  background: #f8f9fa; }
+
+#tab-contents div.tabtxt {
+  display: none; }
+
+#tab-contents div.active {
+  display: block; }
+
 @font-face {
   font-family: "NimbusSanL";
   src: url("../fonts/NimbusSanL-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/NimbusSanL-Reg.otf") format("opentype"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype"), url("../fonts/NimbusSanL-Reg.svg#NimbusSanL-Reg") format("svg");

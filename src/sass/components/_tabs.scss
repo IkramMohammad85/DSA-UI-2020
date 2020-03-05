@@ -1,0 +1,26 @@
+/* NAVIGATION */
+#tab-nav {
+    border-bottom:3px solid $light-blue;
+  }
+  #tab-nav span.tabnav {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #tab-nav span.active {
+    background: $light-blue;
+    color:white;
+  }
+  
+  /* CONTENTS */
+  #tab-contents {
+    padding: 15px;
+    background:$gray-100;
+  }
+  #tab-contents div.tabtxt {
+    display: none;
+  }
+  #tab-contents div.active {
+    display: block;
+  }
