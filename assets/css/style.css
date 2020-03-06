@@ -5193,6 +5193,20 @@ ul.navbar {
 .logo-briefing-20h {
   height: 20px; }
 
+.latest-insight-slides .item {
+  position: relative;
+  width: 100%;
+  max-height: 600px; }
+
+.latest-insight-slides .glide__slides .item {
+  min-height: 600px; }
+  .latest-insight-slides .glide__slides .item.glide__slide--active {
+    z-index: 1;
+    opacity: 1; }
+
+.latest-insight-slides .arrow {
+  border-color: #e5e8e9; }
+
 @media (max-width: 992px) {
   .parent-link {
     width: 100%;
