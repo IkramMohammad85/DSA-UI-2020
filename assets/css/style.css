@@ -3233,6 +3233,9 @@ strong {
 .mt-110 {
   margin-top: 110px; }
 
+.w-auto {
+  width: auto; }
+
 .border {
   border: 1px solid #dee2e6; }
 
@@ -5138,16 +5141,19 @@ ul.navbar {
 .child {
   position: relative; }
   .child:hover .content {
-    bottom: -290px;
-    -webkit-transition: bottom 0.5s ease;
-    transition: bottom 0.5s ease; }
+    display: block; }
+  .child:hover .child-link {
+    right: 72px;
+    -webkit-transform: translate(3em, 0);
+    transform: translate(3em, 0);
+    background-color: #007bff;
+    border-color: #007bff !important;
+    position: relative; }
   .child .content {
-    bottom: -600px;
+    display: none;
     width: 40%;
     height: 290px;
     background-color: #007bff;
-    -webkit-transition: bottom 0.8s ease;
-    transition: bottom 0.8s ease;
     z-index: 1; }
     .child .content .btn-outline-white {
       color: #fff;
@@ -5179,9 +5185,10 @@ ul.navbar {
 
 .related-service-links .btn-outline-white {
   -webkit-transition: 0.5s all !important;
-  transition: 0.5s all !important;
-  -webkit-transition-delay: .5s !important;
-  transition-delay: .5s !important; }
+  transition: 0.5s all !important; }
+
+.logo-briefing-20h {
+  height: 20px; }
 
 @media (max-width: 992px) {
   .parent-link {

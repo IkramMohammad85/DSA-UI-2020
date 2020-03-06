@@ -2,16 +2,21 @@
   position: relative;
   &:hover {
     .content {
-      bottom: -290px;
-      transition: bottom 0.5s ease;
+      display: block;
+    }
+    .child-link{
+      right: 72px;
+      transform: translate(3em,0);
+      background-color: #007bff;
+      border-color: #007bff !important;
+      position: relative;
     }
   }
   .content {
-    bottom: -600px;
+    display: none;
     width: 40%;
     height: 290px;
     background-color: #007bff;
-    transition: bottom 0.8s ease;
     z-index: 1;
     .btn-outline-white {
       color: #fff;
@@ -55,9 +60,9 @@
 
 .related-service-links { 
     .btn-outline-white{ transition: .5s all!important;   
-        transition-delay: .5s !important; }
+ }
 }
-
+.logo-briefing-20h{ height: 20px;}
 @media (max-width: $reflex-md) {
   .parent-link {
     width: 100%;
