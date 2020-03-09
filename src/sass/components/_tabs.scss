@@ -24,6 +24,10 @@
   #tab-contents div.active {
     display: block;
   }
+  #tab-contents .tab-more-content {
+   
+    min-height: 380px;
+  }
 
  #latest-insight{
   #tab-nav{ border: none; float:right;}
