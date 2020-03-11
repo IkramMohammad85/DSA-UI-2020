@@ -10,20 +10,10 @@ head
 body
   #wrapper.home
     include components/_header       
-    section.big-banner.glide
+    section.big-banner.glide.banner-insight
       .glide__track(data-glide-el='track')
         .glide__slides
-          include components/hp-slides/connectivity
-          include components/hp-slides/hr
-          include components/hp-slides/flying-high
-          include components/hp-slides/speed
-          include components/hp-slides/rocket
-      .glide__bullets.pb-2(data-glide-el='controls[nav]')
-        button.glide__bullet(data-glide-dir='=0')
-        button.glide__bullet(data-glide-dir='=1')
-        button.glide__bullet(data-glide-dir='=2')
-        button.glide__bullet(data-glide-dir='=3')
-        button.glide__bullet(data-glide-dir='=4')     
+          include components/hp-slides/flying-high-v3  
 
       .hidden-sm.hidden-xs.hidden-xxs.hidden-sm.hidden-md.hidden-lg(data-glide-el='controls')
         button.glide-next.border-white(data-glide-dir='>')
