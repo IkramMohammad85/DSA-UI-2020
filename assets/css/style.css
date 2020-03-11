@@ -4912,7 +4912,9 @@ ul.navbar {
         .home .big-banner .item .related-insight p a {
           color: #000; }
       .home .big-banner .item .related-insight .btn-link {
-        color: #007bff; }
+        color: #007bff;
+        font-size: 14px;
+        font-weight: bold; }
   .home .big-banner .glide__slides {
     -webkit-transform: none !important;
     transform: none !important;
