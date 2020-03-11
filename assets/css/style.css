@@ -1572,7 +1572,8 @@ $border-default: 1px solid #ccc;
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
     .card.about-us .card-header-img {
-      background-color: #1a2940; }
+      background-color: #1a2940;
+      height: 220px; }
       .card.about-us .card-header-img img {
         opacity: 1; }
     .card.about-us .card-body {
