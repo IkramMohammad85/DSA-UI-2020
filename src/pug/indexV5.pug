@@ -1,0 +1,145 @@
+doctype html
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  // Custom CSS
+  link(rel='stylesheet', href='assets/css/style.css?v0.1', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
+  title Dezan Shira & Associates!
+body
+  #wrapper.home
+    include components/_header       
+    section.big-banner.glide
+      .glide__track(data-glide-el='track')
+        .glide__slides
+          include components/hp-slides/connectivity
+          include components/hp-slides/hr
+          include components/hp-slides/flying-high
+          include components/hp-slides/speed
+          include components/hp-slides/rocket
+      .glide__bullets.pb-2(data-glide-el='controls[nav]')
+        button.glide__bullet(data-glide-dir='=0')
+        button.glide__bullet(data-glide-dir='=1')
+        button.glide__bullet(data-glide-dir='=2')
+        button.glide__bullet(data-glide-dir='=3')
+        button.glide__bullet(data-glide-dir='=4')     
+
+      .hidden-sm.hidden-xs.hidden-xxs.hidden-sm.hidden-md.hidden-lg(data-glide-el='controls')
+        button.glide-next.border-white(data-glide-dir='>')
+          span.arrow.right-arrow
+        button.glide-prev.border-white(data-glide-dir='<')
+          span.arrow.left-arrow
+
+    section.gray-light-bg.pt-5.pb-5
+        .container
+          .grid
+            .col-xs.col-sm.col-md-4.col-lg-4.col-grid
+                .card.about-us
+                    .card-header-img.zoom-on-hover
+                        a(href='our-firm.html')
+                            img(src='assets/img/about-who-we-are.jpg')
+                    .card-body.text-center
+                            h3 
+                                a(href='services.html') Who we are
+                            p
+                                | An award winning, pan-Asia professional services firm guding foreign companies through Asia’s complex business environment.
+                            a.btn.btn-outline-white.mt-2(target='_top', href='#') Read more
+            .col-xs.col-sm.col-md-4.col-lg-4.col-grid
+                .card.about-us
+                    .card-header-img.zoom-on-hover
+                        a(href='services.html')
+                            img(src='assets/img/about-services-we-offer.jpg')
+                    .card-body.text-center
+                            h3 
+                                a(href='services.html') Services we offer
+                            p
+                                | Our services help decision makers manage the legal, tax and operational challenges facing multinational businesses in Asia. 
+                            a.btn.btn-outline-white.mt-2(target='_top', href='#') Read more
+            .col-xs.col-sm.col-md-4.col-lg-4.col-grid
+                .card.about-us
+                    .card-header-img.zoom-on-hover
+                        a(href='industries.html')
+                            img(src='assets/img/about-industries.jpg')
+                    .card-body.text-center
+                            h3 
+                                a(href='industries.html') Industries we serve
+                            p
+                                | Over 25years of experience working with small, medium and large enterprises across every major industry.
+                            a.btn.btn-outline-white.mt-2(target='_top', href='#') Read more  
+    section.pt-7.pb-7
+        .container
+          .grid
+
+            .col-xs.col-sm.col-md.col-lg.col-grid
+                ul.list.lists-events.list-events-inline
+                    li
+                      .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
+                        | Nov
+                        span Oct, 2019
+                      .dec-block
+                        .h3
+                          a(href='events-single.html')
+                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                        .date-time
+                 
+                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                          
+                    li
+                      .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
+                        | Nov
+                        span Oct, 2019
+                      .dec-block
+                        .h3
+                          a(href='events-single.html')
+                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                        .date-time
+                        
+                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                        
+                    li
+                      .date-block.dark-blue-bg.hidden-sm.hidden-xs.hidden-xxs
+                        | Nov
+                        span Oct, 2019
+                      .dec-block
+                        .h3
+                          a(href='events-single.html')
+                            | The Key Considerations For Year-End Tax Treatment and The 2019 Preferential Tax Policy
+                        .date-time
+              
+                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                          
+    section.asiapedia-section.pt-5.pb-5
+        .container
+          .grid
+            .col-xs.col-sm.col-md-6.col-lg-6.col-grid
+                img(src='assets/img/asiapedia-logo.png', alt='' width='183px')
+                h2.mt-3 When we say we want to help businesses grow in Asia, we mean it
+                p Asiapedia is our collection of resources based on what we have learned about doing business Asia. It’s the products of more than 300 team members collaborating across 25 offices in Asia, Europe, and North America
+            .col-xs.col-sm.col-md-6.col-lg-6.col-grid
+                form.mt-7(action='')
+                    select(name='country')
+                      option(value='Pick a country to explore') Pick a Country to explore
+                      option(value='India') India
+                      option(value='China') Chian
+                      option(value='Russia') Russia
+                      option(value='Thailand') Thailand
+                    p.text-right.pt-3 OR pick the topics below to get started
+                    select(name='Topics')
+                      option(value='Pick a topic to explore') Pick a Topic to explore
+                      option(value='41')  Market Entry 
+                      option(value='168')  Business Intelligence 
+                      option(value='201')  Audit 
+                      option(value='211')  HR &amp; Payroll 
+                      option(value='245')  Taxation 
+                      option(value='256')  Legal 
+                      option(value='259')  Due Diligence 
+                      option(value='264')  Corporate Establishment 
+                      option(value='294')  Accounting 
+                      option(value='321')  Technology 
+                    a.btn.btn-outline-white.mt-3.float-right(href='asiapedia.html') Read more 
+    include components/_footer
+
+    //JavaScript
+    script(src="assets/js/glide.min.js")
+    script(src="assets/js/scripts.js")

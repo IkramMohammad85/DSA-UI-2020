@@ -94,6 +94,15 @@
 }
 
 .list.lists-events {
+  &.list-events-inline{
+    li{
+      display: inline-block;
+      max-width: 510px;
+      border: none;
+      background-color: inherit;
+    }
+  }
+  
   li {
     display: block;
     background-color: #f1f1f1;
@@ -234,6 +243,14 @@ ul.list-blue-border{
       }
     }
   }
+  .list.lists-events {
+    &.list-events-inline{
+      li{
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
 }
 //Mobile
 @media (max-width: $reflex-md) {
@@ -250,6 +267,14 @@ ul.list-blue-border{
     &.latest-news{
       li{
         min-height: auto;
+      }
+    }
+  }
+  .list.lists-events {
+    &.list-events-inline{
+      li{
+        display: block;
+        max-width: 100%;
       }
     }
   }
