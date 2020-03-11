@@ -235,6 +235,25 @@ ul.list-blue-border{
   }
 }
 
+.list.lists-events.list-events-inline{
+  li{ overflow: hidden; position: relative;
+    &:hover {
+      .content {
+        bottom: 0;
+        transition: bottom 0.5s ease;
+      }
+    }
+    .content {
+      bottom: -114px;
+      height: 102px;
+      a.btn{ color: #fff!important;
+     } 
+     p{line-height: 18px;}
+    }
+   
+  }
+}
+
 //Tablet
 @media (max-width: $reflex-lg) {
   .list {

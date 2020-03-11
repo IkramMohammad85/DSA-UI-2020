@@ -1575,7 +1575,7 @@ $border-default: 1px solid #ccc;
       background-color: #1a2940;
       height: 220px; }
       .card.about-us .card-header-img img {
-        opacity: 1; }
+        opacity: 0.7; }
     .card.about-us .card-body {
       padding: 20px;
       min-height: 200px;
@@ -2087,6 +2087,21 @@ ul.list-blue-border {
     height: 102px; }
     .list.lists-events li .content a.btn {
       color: #fff !important; }
+
+.list.lists-events.list-events-inline li {
+  overflow: hidden;
+  position: relative; }
+  .list.lists-events.list-events-inline li:hover .content {
+    bottom: 0;
+    -webkit-transition: bottom 0.5s ease;
+    transition: bottom 0.5s ease; }
+  .list.lists-events.list-events-inline li .content {
+    bottom: -114px;
+    height: 102px; }
+    .list.lists-events.list-events-inline li .content a.btn {
+      color: #fff !important; }
+    .list.lists-events.list-events-inline li .content p {
+      line-height: 18px; }
 
 @media (max-width: 1200px) {
   .list.latest-news li {
@@ -4085,6 +4100,17 @@ header.site-header {
     color: inherit !important; }
   header.site-header .navbar li.dropdown h2 a {
     color: #000 !important; }
+  header.site-header .contact-button {
+    border: solid 1px #007bff;
+    color: #007bff !important;
+    padding: 5px 10px; }
+    header.site-header .contact-button .down-arrow {
+      color: #007bff !important;
+      border-color: #007bff; }
+    header.site-header .contact-button:hover {
+      color: #007bff; }
+    header.site-header .contact-button .down-arrow {
+      border-color: #007bff !important; }
 
 footer.site-footer {
   background-color: #1a2940;
@@ -4838,12 +4864,15 @@ ul.navbar {
 .home header.site-header #main-nav {
   background: rgba(13, 35, 56, 0.8); }
 
+.home .site-header-blue#main-nav {
+  background: #0d2338 !important; }
+
 .home .big-banner {
   background: #1a2940; }
   .home .big-banner.banner-insight .item {
-    max-height: 650px; }
+    max-height: 700px; }
     .home .big-banner.banner-insight .item .news {
-      bottom: 20%; }
+      bottom: 25%; }
       .home .big-banner.banner-insight .item .news p {
         color: #fff; }
   .home .big-banner .item {
@@ -4916,6 +4945,32 @@ ul.navbar {
         color: #007bff;
         font-size: 14px;
         font-weight: bold; }
+      .home .big-banner .item .related-insight .related-insight-block {
+        overflow: hidden;
+        position: relative; }
+        .home .big-banner .item .related-insight .related-insight-block:hover .content {
+          bottom: 0;
+          -webkit-transition: bottom 0.5s ease;
+          transition: bottom 0.5s ease; }
+        .home .big-banner .item .related-insight .related-insight-block .content {
+          bottom: -114px;
+          height: 102px; }
+          .home .big-banner .item .related-insight .related-insight-block .content a.btn {
+            color: #fff !important; }
+          .home .big-banner .item .related-insight .related-insight-block .content p {
+            line-height: 18px; }
+          .home .big-banner .item .related-insight .related-insight-block .content .thumbnail-block {
+            height: 140px;
+            width: 124px;
+            float: left;
+            margin-right: 10px; }
+          .home .big-banner .item .related-insight .related-insight-block .content .content-block {
+            max-height: 115px;
+            overflow: hidden;
+            width: 60%;
+            float: left; }
+            .home .big-banner .item .related-insight .related-insight-block .content .content-block a {
+              color: #fff; }
   .home .big-banner .glide__slides {
     -webkit-transform: none !important;
     transform: none !important;
@@ -5074,8 +5129,8 @@ ul.navbar {
     background-color: #1a2940; }
     .transparent-bg-home:hover .overlay-content {
       opacity: 1;
-      -webkit-transition: .5s ease;
-      transition: .5s ease; }
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
     .transparent-bg-home:hover .content-desc {
       display: none; }
   .transparent-bg-home .content-more {
@@ -5153,8 +5208,8 @@ ul.navbar {
     bottom: 5px; }
   .transparent-bg-home:hover .overlay-content {
     top: 80px;
-    -webkit-transition-delay: .5s;
-    transition-delay: .5s; }
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s; }
   .transparent-bg-home .content-more.first-card {
     top: 16%;
     left: 98px; }

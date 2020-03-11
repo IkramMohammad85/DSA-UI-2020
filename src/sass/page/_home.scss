@@ -4,13 +4,20 @@
       background: rgba($bluedark, 0.8);
     }
   }
+  .site-header-blue#main-nav {
+    background: rgba($bluedark, 1) !important;
+  }
 
   .big-banner {
     background: $deep-blue;
-    &.banner-insight{
-      .item{ max-height: 650px;
-        .news{ bottom: 20%;
-        p{ color: $white;}
+    &.banner-insight {
+      .item {
+        max-height: 700px;
+        .news {
+          bottom: 25%;
+          p {
+            color: $white;
+          }
         }
       }
     }
@@ -95,11 +102,57 @@
           }
         }
       }
-      .related-insight{ position: absolute; width: 100%; bottom: 0px;
-      p{ margin-bottom: 0px; 
-      a{ color: $black;}
-    }
-    .btn-link{ color: $blue;font-size: 14px; font-weight: bold;}
+      .related-insight {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        p {
+          margin-bottom: 0px;
+          a {
+            color: $black;
+          }
+        }
+        .btn-link {
+          color: $blue;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .related-insight-block {
+          overflow: hidden;
+          position: relative;
+          &:hover {
+            .content {
+              bottom: 0;
+              transition: bottom 0.5s ease;
+            }
+          }
+          .content {
+            bottom: -114px;
+            height: 102px;
+            a.btn {
+              color: #fff !important;
+            }
+            p {
+              line-height: 18px;
+            }
+            .thumbnail-block {
+              height: 140px;
+              width: 124px;
+              float: left;
+              margin-right: 10px;
+            }
+            .content-block {
+              max-height: 115px;
+              overflow: hidden;
+              width: 60%;
+              float: left;
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -170,11 +223,12 @@
             li {
               padding-top: 2px;
               padding-bottom: 2px;
-              a{
-                color: #7eb1e6;;
+              a {
+                color: #7eb1e6;
               }
             }
-          } color: #7eb1e6;
+          }
+          color: #7eb1e6;
         }
         .content-desc {
           display: none;
@@ -188,7 +242,7 @@
         display: none;
         visibility: hidden;
       }
-      .content-desc{
+      .content-desc {
         position: relative;
       }
       &.min-height {
@@ -196,8 +250,6 @@
       }
     }
   }
-
-
 
   .card.events {
     .card-body {
@@ -280,57 +332,56 @@
 }
 
 .transparent-bg-home {
-	min-height: 436px;
-	color: $white;
-	position: relative;
+  min-height: 436px;
+  color: $white;
+  position: relative;
   background: rgba(0, 0, 0, 0.8);
   overflow: hidden;
-	.content-desc {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-	.overlay-content {
-		position: absolute;
-		bottom: 0;
-		left: 0;
+  .content-desc {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     right: 0;
     top: 135px;
-		background-color: $deep-blue;
-		overflow: hidden;
-		width: 100%;
-		height: 100%;
+    background-color: $deep-blue;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-
-	}
-	&:hover {
+  }
+  &:hover {
     overflow: hidden;
     background-color: $deep-blue;
-		.overlay-content {
+    .overlay-content {
       opacity: 1;
-      transition: .5s ease;
+      transition: 0.5s ease;
     }
-    .content-desc{
+    .content-desc {
       display: none;
     }
   }
-	.content-more {
-		color: white;
-		position: absolute;
-		-webkit-transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
+  .content-more {
+    color: white;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     white-space: nowrap;
     text-align: left;
-    &.first-card{
+    &.first-card {
       top: 16%;
       left: 140px;
     }
-    &.second-card{
+    &.second-card {
       top: 29%;
       left: 217px;
     }
-    &.third-card{
+    &.third-card {
       top: 32%;
       left: 157px;
     }
@@ -339,11 +390,12 @@
       li {
         padding-top: 2px;
         padding-bottom: 2px;
-        a{
-          color: #7eb1e6;;
+        a {
+          color: #7eb1e6;
         }
       }
-    } color: #7eb1e6;
+    }
+    color: #7eb1e6;
   }
   h2 {
     color: $white;
@@ -352,7 +404,6 @@
     color: $white;
   }
 }
-
 
 //Mobile
 @media (max-width: $reflex-md) {
@@ -442,27 +493,24 @@
     &:hover {
       .overlay-content {
         top: 80px;
-        transition-delay: .5s;
+        transition-delay: 0.5s;
       }
     }
     .content-more {
-      &.first-card{
+      &.first-card {
         top: 16%;
         left: 98px;
       }
-      &.second-card{
+      &.second-card {
         top: 29%;
         left: 175px;
       }
-      &.third-card{
+      &.third-card {
         top: 32%;
         left: 115px;
       }
-
     }
-
   }
-
 }
 
 @media (max-width: $reflex-sm) {
@@ -497,7 +545,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 1750px) {
