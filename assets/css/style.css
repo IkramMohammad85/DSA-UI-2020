@@ -4963,7 +4963,8 @@ ul.navbar {
           height: 114px;
           visibility: hidden;
           opacity: 0;
-          left: 0; }
+          left: 0;
+          background-color: #19283F; }
           .home .big-banner .item .related-insight .related-insight-block .content a.btn {
             color: #fff !important; }
           .home .big-banner .item .related-insight .related-insight-block .content p {
