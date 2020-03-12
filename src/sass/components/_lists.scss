@@ -97,9 +97,9 @@
   &.list-events-inline{
     li{
       display: inline-block;
-      max-width: 510px;
+      max-width: 495px;
       border: none;
-      background-color: inherit;
+      background-color: inherit; margin-right: 15px;
       .date-block{ background-color: #17394E; color: $white; font-weight: bold; font-size: 40px; padding: 15px; line-height: normal;}
     }
   }
@@ -219,7 +219,7 @@ ul.list-blue-border{
 }
 
 .list.lists-events{
-  li{ overflow: hidden; position: relative;
+  li{ overflow: hidden; position: relative; height: 95px;
     &:hover {
       .content {
         bottom: 0;
@@ -240,12 +240,18 @@ ul.list-blue-border{
     &:hover {
       .content {
         bottom: 0;
-        transition: bottom 0.5s ease;
+        transition: opacity 0.5s linear;
+        visibility: visible;
+        opacity: 1;
       }
     }
     .content {
-      bottom: -114px;
+      bottom: 0px;
       height: 102px;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      background-color: #19283F;
       a.btn{ color: #fff!important;
      } 
      p{line-height: 18px;}

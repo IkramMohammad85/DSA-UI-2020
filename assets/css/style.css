@@ -1965,9 +1965,10 @@ $border-default: 1px solid #ccc;
 
 .list.lists-events.list-events-inline li {
   display: inline-block;
-  max-width: 510px;
+  max-width: 495px;
   border: none;
-  background-color: inherit; }
+  background-color: inherit;
+  margin-right: 15px; }
   .list.lists-events.list-events-inline li .date-block {
     background-color: #17394E;
     color: #fff;
@@ -2077,7 +2078,8 @@ ul.list-blue-border {
 
 .list.lists-events li {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 95px; }
   .list.lists-events li:hover .content {
     bottom: 0;
     -webkit-transition: bottom 0.5s ease;
@@ -2093,11 +2095,17 @@ ul.list-blue-border {
   position: relative; }
   .list.lists-events.list-events-inline li:hover .content {
     bottom: 0;
-    -webkit-transition: bottom 0.5s ease;
-    transition: bottom 0.5s ease; }
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    visibility: visible;
+    opacity: 1; }
   .list.lists-events.list-events-inline li .content {
-    bottom: -114px;
-    height: 102px; }
+    bottom: 0px;
+    height: 102px;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    background-color: #19283F; }
     .list.lists-events.list-events-inline li .content a.btn {
       color: #fff !important; }
     .list.lists-events.list-events-inline li .content p {
@@ -4877,7 +4885,7 @@ ul.navbar {
   .home .big-banner.banner-insight .item {
     max-height: 800px; }
     .home .big-banner.banner-insight .item .news {
-      bottom: 35%; }
+      bottom: 30%; }
       .home .big-banner.banner-insight .item .news p {
         color: #fff; }
   .home .big-banner .item {
@@ -4956,12 +4964,12 @@ ul.navbar {
         width: 100%; }
         .home .big-banner .item .related-insight .related-insight-block:hover .content {
           bottom: 0;
-          -webkit-transition: opacity 1s linear;
-          transition: opacity 1s linear;
+          -webkit-transition: opacity 0.5s linear;
+          transition: opacity 0.5s linear;
           visibility: visible;
           opacity: 1; }
         .home .big-banner .item .related-insight .related-insight-block .content {
-          bottom: -0px;
+          bottom: 0px;
           height: 114px;
           visibility: hidden;
           opacity: 0;

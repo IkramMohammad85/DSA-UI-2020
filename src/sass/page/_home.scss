@@ -14,7 +14,7 @@
       .item {
         max-height: 800px;
         .news {
-          bottom: 35%;
+          bottom: 30%;
           p {
             color: $white;
           }
@@ -125,13 +125,13 @@
           &:hover {
             .content {
               bottom: 0;
-              transition: opacity 1s linear;
+              transition: opacity 0.5s linear;
               visibility: visible;
               opacity: 1;
             }
           }
           .content {
-            bottom: -0px;
+            bottom: 0px;
             height: 114px;
             visibility: hidden;
             opacity: 0;
