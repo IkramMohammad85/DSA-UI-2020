@@ -1543,7 +1543,7 @@ $border-default: 1px solid #ccc;
     flex: 1 1 auto; }
     .card.international-desks .card-body {
       padding: 20px;
-      min-height: 328px; }
+      min-height: 340px; }
       .card.international-desks .card-body p {
         margin-bottom: 0px; }
     .card.international-desks .card-header-img {
@@ -2730,10 +2730,12 @@ section.asiapedia-section {
 
 body {
   color: #000;
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.5;
-  font-weight: 100; }
+  line-height: 1.8;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1 {
   font-family: "NimbusSanL", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -2765,7 +2767,7 @@ h6,
   font-family: "NimbusSanL", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.2;
   color: #000;
-  font-weight: normal; }
+  font-weight: 700; }
   h1 small,
   h2 small,
   h3 small,

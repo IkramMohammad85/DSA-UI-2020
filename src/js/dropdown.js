@@ -73,6 +73,7 @@ class dropdown {
       el.classList.toggle('open');
       el.querySelector('[data-dropdown]').classList.toggle('d-block');
 
+      /*
        if(event.target.hasAttribute('data-turn-header-white') && window.innerWidth>991 && this.headerHome){
         if(document.querySelector('nav#main-nav.white')===null){
           this.mainNav.classList.add("white");this.mainNav.querySelector('img.logo').src = this.dark_logo;
@@ -80,6 +81,7 @@ class dropdown {
         } else {
           this.mainNav.classList.remove("white");this.mainNav.querySelector('img.logo').src = this.normal_logo;
         }
+      */
     }
   }
 }
