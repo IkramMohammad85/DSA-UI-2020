@@ -2301,6 +2301,8 @@ section.asiapedia-section {
   min-height: 443px; }
   section.asiapedia-section h2, section.asiapedia-section p {
     color: #fff; }
+  section.asiapedia-section select {
+    background-color: #dee2e6; }
 
 @media (max-width: 1200px) {
   .banner {
