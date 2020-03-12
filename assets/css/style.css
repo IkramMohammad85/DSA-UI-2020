@@ -1965,7 +1965,6 @@ $border-default: 1px solid #ccc;
 
 .list.lists-events.list-events-inline li {
   display: inline-block;
-  max-width: 495px;
   border: none;
   background-color: inherit;
   margin-right: 15px; }
@@ -2094,6 +2093,7 @@ ul.list-blue-border {
   overflow: hidden;
   position: relative; }
   .list.lists-events.list-events-inline li:hover .content {
+    max-width: 495px;
     bottom: 0;
     -webkit-transition: opacity 0.5s linear;
     transition: opacity 0.5s linear;

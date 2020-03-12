@@ -56,6 +56,7 @@ if (typeof Glide != "undefined" && glideElements) {
                   gap:0,
                   startAt: 0,
                   perView: perView,
+                  peek:0,
                   animationTimingFunc: 'ease',
                   breakpoints: {
                         992: {perView: 1},
