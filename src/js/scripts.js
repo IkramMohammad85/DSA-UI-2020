@@ -4,6 +4,7 @@ const header = document.querySelector("nav#main-nav")
 const headerHome = document.querySelector("div#wrapper.home")
 
 //apply this effect only to homepage
+/*
 if(header && headerHome){
       const header_height = header.offsetHeight
       const normal_logo=header.querySelector('img.logo').getAttribute('src')
@@ -18,6 +19,7 @@ if(header && headerHome){
       else { if(!changeColorExceptionsScroll) remove_class_on_scroll() }
       })
 }
+*/
 
 //Feature: Homepage Big Banner Slider
 const glideElements = document.querySelectorAll(".glide")
