@@ -2102,14 +2102,14 @@ ul.list-blue-border {
     opacity: 1; }
   .list.lists-events.list-events-inline li .content {
     bottom: 0px;
-    height: 102px;
+    height: 95px;
     visibility: hidden;
     opacity: 0;
     left: 0;
     background-color: #19283F; }
     .list.lists-events.list-events-inline li .content a.btn {
       color: #fff !important; }
-    .list.lists-events.list-events-inline li .content p {
+    .list.lists-events.list-events-inline li .content p, .list.lists-events.list-events-inline li .content h4 {
       line-height: 18px; }
 
 @media (max-width: 1200px) {
@@ -4022,8 +4022,8 @@ header.site-header {
   position: relative; }
   header.site-header .logo {
     position: absolute;
-    width: auto;
-    top: 40px;
+    width: 319px;
+    top: 35px;
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
@@ -4344,7 +4344,7 @@ ul.navbar {
     color: #fff;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 19px;
+    padding: 12px 19px;
     -webkit-transition: border-width 0.1s ease-in-out;
     transition: border-width 0.1s ease-in-out;
     border-bottom-width: 0; }

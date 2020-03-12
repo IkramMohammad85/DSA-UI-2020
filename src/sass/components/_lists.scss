@@ -248,14 +248,14 @@ ul.list-blue-border{
     }
     .content {
       bottom: 0px;
-      height: 102px;
+      height: 95px;
       visibility: hidden;
       opacity: 0;
       left: 0;
       background-color: #19283F;
       a.btn{ color: #fff!important;
      } 
-     p{line-height: 18px;}
+     p, h4{line-height: 18px;}
     }
    
   }

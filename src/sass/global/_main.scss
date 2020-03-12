@@ -30,8 +30,8 @@ header.site-header {
   position: relative;
   .logo {
     position: absolute;
-    width: auto;
-    top: 40px;
+    width: 319px;
+    top: 35px;
     display: flex;
     align-items: center;
   }
@@ -458,7 +458,7 @@ ul.navbar {
     color: $white;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    padding: 19px;
+    padding: 12px 19px;
     @include transition(border-width 0.1s ease-in-out);
     border-bottom-width: 0;
     &:last-child {
