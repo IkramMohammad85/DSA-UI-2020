@@ -4954,11 +4954,15 @@ ul.navbar {
         width: 100%; }
         .home .big-banner .item .related-insight .related-insight-block:hover .content {
           bottom: 0;
-          -webkit-transition: bottom 0.5s ease;
-          transition: bottom 0.5s ease; }
+          -webkit-transition: opacity 1s linear;
+          transition: opacity 1s linear;
+          visibility: visible;
+          opacity: 1; }
         .home .big-banner .item .related-insight .related-insight-block .content {
-          bottom: -114px;
+          bottom: -0px;
           height: 114px;
+          visibility: hidden;
+          opacity: 0;
           left: 0; }
           .home .big-banner .item .related-insight .related-insight-block .content a.btn {
             color: #fff !important; }
