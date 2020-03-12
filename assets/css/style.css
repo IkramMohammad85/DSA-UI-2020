@@ -2913,13 +2913,13 @@ strong {
     border-color: #6c757d; }
 
 .btn-white {
-  color: #000;
+  color: #000 !important;
   background-color: #fff;
   border-color: #000; }
   .btn-white:hover {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d; }
+    color: #fff !important;
+    background-color: #007bff;
+    border-color: #007bff; }
 
 .btn-outline-white {
   color: #fff;
