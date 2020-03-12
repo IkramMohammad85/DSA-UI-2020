@@ -12,9 +12,9 @@
     background: $deep-blue;
     &.banner-insight {
       .item {
-        max-height: 700px;
+        max-height: 800px;
         .news {
-          bottom: 25%;
+          bottom: 35%;
           p {
             color: $white;
           }
@@ -121,6 +121,7 @@
         .related-insight-block {
           overflow: hidden;
           position: relative;
+          width: 100%;
           &:hover {
             .content {
               bottom: 0;
@@ -129,30 +130,18 @@
           }
           .content {
             bottom: -114px;
-            height: 102px;
+            height: 114px;
+            left: 0;
             a.btn {
               color: #fff !important;
             }
             p {
-              line-height: 18px;
-            }
-            .thumbnail-block {
-              height: 140px;
-              width: 124px;
-              float: left;
-              margin-right: 10px;
-            }
-            .content-block {
-              max-height: 115px;
-              overflow: hidden;
-              width: 60%;
-              float: left;
-              a {
-                color: #fff;
-              }
+              line-height: 18px; color: #fff;
+              a{ color: #fff;}
             }
           }
         }
+        .news-details{ width: 100%; min-height: 115px;}
       }
     }
 

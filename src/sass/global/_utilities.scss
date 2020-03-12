@@ -319,6 +319,9 @@
 .border-white {
   border: 1px solid $white !important;
 }
+.border-gray {
+  border: 1px solid $gray-200 !important;
+}
 .border-dark-blue {
   border-color: #1a2940 !important;
 }
@@ -484,7 +487,7 @@
   @extend %clearfix;
 }
 .text-muted {
-  color: $gray-700;
+  color: #A3A3A3;
 }
 .img-fluid {
   max-width: 100%;

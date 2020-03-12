@@ -3346,6 +3346,9 @@ strong {
 .border-white {
   border: 1px solid #fff !important; }
 
+.border-gray {
+  border: 1px solid #e9ecef !important; }
+
 .border-dark-blue {
   border-color: #1a2940 !important; }
 
@@ -3509,7 +3512,7 @@ strong {
   opacity: 0.8; }
 
 .text-muted {
-  color: #495057; }
+  color: #A3A3A3; }
 
 .img-fluid {
   max-width: 100%;
@@ -4870,9 +4873,9 @@ ul.navbar {
 .home .big-banner {
   background: #1a2940; }
   .home .big-banner.banner-insight .item {
-    max-height: 700px; }
+    max-height: 800px; }
     .home .big-banner.banner-insight .item .news {
-      bottom: 25%; }
+      bottom: 35%; }
       .home .big-banner.banner-insight .item .news p {
         color: #fff; }
   .home .big-banner .item {
@@ -4947,30 +4950,26 @@ ul.navbar {
         font-weight: bold; }
       .home .big-banner .item .related-insight .related-insight-block {
         overflow: hidden;
-        position: relative; }
+        position: relative;
+        width: 100%; }
         .home .big-banner .item .related-insight .related-insight-block:hover .content {
           bottom: 0;
           -webkit-transition: bottom 0.5s ease;
           transition: bottom 0.5s ease; }
         .home .big-banner .item .related-insight .related-insight-block .content {
           bottom: -114px;
-          height: 102px; }
+          height: 114px;
+          left: 0; }
           .home .big-banner .item .related-insight .related-insight-block .content a.btn {
             color: #fff !important; }
           .home .big-banner .item .related-insight .related-insight-block .content p {
-            line-height: 18px; }
-          .home .big-banner .item .related-insight .related-insight-block .content .thumbnail-block {
-            height: 140px;
-            width: 124px;
-            float: left;
-            margin-right: 10px; }
-          .home .big-banner .item .related-insight .related-insight-block .content .content-block {
-            max-height: 115px;
-            overflow: hidden;
-            width: 60%;
-            float: left; }
-            .home .big-banner .item .related-insight .related-insight-block .content .content-block a {
+            line-height: 18px;
+            color: #fff; }
+            .home .big-banner .item .related-insight .related-insight-block .content p a {
               color: #fff; }
+      .home .big-banner .item .related-insight .news-details {
+        width: 100%;
+        min-height: 115px; }
   .home .big-banner .glide__slides {
     -webkit-transform: none !important;
     transform: none !important;
