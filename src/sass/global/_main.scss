@@ -190,7 +190,12 @@ header.site-header {
       color: $blue !important;
       border-color: $blue;
     }
-    &:hover{ color: $blue;}
+    &:hover{ color: $blue; background-color: $blue; color: #fff !important;
+      .down-arrow {
+        color: $white !important;
+        border-color: $white!important;
+      }
+    }
     .down-arrow{ border-color: $blue !important;}
   }
 }
