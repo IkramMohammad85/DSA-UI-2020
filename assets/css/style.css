@@ -1965,7 +1965,6 @@ $border-default: 1px solid #ccc;
 
 .list.lists-events.list-events-inline li {
   display: inline-block;
-  max-width: 495px;
   border: none;
   background-color: inherit;
   margin-right: 15px; }
