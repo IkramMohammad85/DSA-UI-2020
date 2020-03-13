@@ -285,7 +285,7 @@ ul.list-blue-border{
   }
 }
 //Mobile
-@media (max-width: $reflex-md) {
+@media (max-width: $reflex-xs) {
   .list {
     &.lists-events {
       .date-block {
