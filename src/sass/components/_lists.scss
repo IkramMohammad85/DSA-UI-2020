@@ -127,6 +127,7 @@
   .dec-block {
     margin-left: 110px;
     padding: 10px 20px;
+    .dec{ line-height: 20px;}
     .title {
       color: #676767;
       @include font-size(14px);

@@ -2019,6 +2019,8 @@ $border-default: 1px solid #ccc;
 .list.lists-events .dec-block {
   margin-left: 110px;
   padding: 10px 20px; }
+  .list.lists-events .dec-block .dec {
+    line-height: 20px; }
   .list.lists-events .dec-block .title {
     color: #676767;
     font-size: 14px;
