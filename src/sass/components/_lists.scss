@@ -222,12 +222,18 @@ ul.list-blue-border{
     &:hover {
       .content {
         bottom: 0;
-        transition: bottom 0.5s ease;
+        transition: opacity 0.5s linear;
+        visibility: visible;
+        opacity: 1;
       }
     }
     .content {
-      bottom: -114px;
-      height: 102px;
+      bottom: 0px;
+      height: 93px;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      background-color: #19283F;
       a.btn{ color: #fff!important;} 
     }
    

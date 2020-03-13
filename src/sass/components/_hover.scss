@@ -1,9 +1,13 @@
 .content {
     position: absolute;
     width: 100%;
-    background-color: #000;
     transition: bottom 0.8s ease;
     padding: 15px;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    bottom: 0px;
+    background-color: #19283F;
     p,
     h4 {
       color: $white;

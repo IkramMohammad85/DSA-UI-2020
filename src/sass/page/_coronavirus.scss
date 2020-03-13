@@ -2,22 +2,28 @@
   position: relative;
   &:hover {
     .content {
-      display: block;
+      top: 0;
+      transition: opacity 0.5s linear;
+      visibility: visible;
+      opacity: 1;
     }
     .child-link {
       right: 72px;
       transform: translate(3em, 0);
-      background-color: #007bff;
-      border-color: #007bff !important;
+      background-color: #316aa3;
+      border-color: #316aa3 !important;
       position: relative;
     }
   }
   .content {
-    display: none;
     width: 40%;
     height: 290px;
-    background-color: #007bff;
+    background-color: #316aa3;
     z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
     .btn-outline-white {
       color: #fff;
       margin-top: 20px;
@@ -49,8 +55,8 @@
     ~ {
       .child {
         .child-link {
-          background-color: #007bff !important;
-          border-color: #007bff !important;
+          background-color: #316aa3 !important;
+          border-color: #316aa3 !important;
           color: #fff;
           margin-left: 10px;
         }

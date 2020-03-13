@@ -1604,11 +1604,17 @@ $border-default: 1px solid #ccc;
           margin-top: 15px; }
     .card.related-services:hover .content {
       bottom: 0;
-      -webkit-transition: bottom 0.5s ease;
-      transition: bottom 0.5s ease; }
+      -webkit-transition: opacity 0.5s linear;
+      transition: opacity 0.5s linear;
+      visibility: visible;
+      opacity: 1; }
     .card.related-services .content {
-      bottom: -264px;
-      height: 200px; }
+      bottom: 0px;
+      height: 200px;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      background-color: #19283F; }
   .card.brochure {
     position: relative;
     -webkit-box-flex: 1;
@@ -1750,11 +1756,17 @@ $border-default: 1px solid #ccc;
         font-size: 1.25rem; }
     .card.feature-artcile:hover .content {
       bottom: 0;
-      -webkit-transition: bottom 0.5s ease;
-      transition: bottom 0.5s ease; }
+      -webkit-transition: opacity 0.5s linear;
+      transition: opacity 0.5s linear;
+      visibility: visible;
+      opacity: 1; }
     .card.feature-artcile .content {
-      bottom: -162px;
-      height: 150px; }
+      bottom: 0px;
+      height: 150px;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      background-color: #19283F; }
       .card.feature-artcile .content .thumbnail-block {
         height: 140px;
         width: 124px;
@@ -2085,11 +2097,17 @@ ul.list-blue-border {
   height: 95px; }
   .list.lists-events li:hover .content {
     bottom: 0;
-    -webkit-transition: bottom 0.5s ease;
-    transition: bottom 0.5s ease; }
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    visibility: visible;
+    opacity: 1; }
   .list.lists-events li .content {
-    bottom: -114px;
-    height: 102px; }
+    bottom: 0px;
+    height: 93px;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    background-color: #19283F; }
     .list.lists-events li .content a.btn {
       color: #fff !important; }
 
@@ -2668,10 +2686,14 @@ section.asiapedia-section {
 .content {
   position: absolute;
   width: 100%;
-  background-color: #000;
   -webkit-transition: bottom 0.8s ease;
   transition: bottom 0.8s ease;
-  padding: 15px; }
+  padding: 15px;
+  visibility: hidden;
+  opacity: 0;
+  left: 0;
+  bottom: 0px;
+  background-color: #19283F; }
   .content p,
   .content h4 {
     color: #fff; }
@@ -5365,20 +5387,27 @@ ul.navbar {
 .child {
   position: relative; }
   .child:hover .content {
-    display: block; }
+    top: 0;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    visibility: visible;
+    opacity: 1; }
   .child:hover .child-link {
     right: 72px;
     -webkit-transform: translate(3em, 0);
     transform: translate(3em, 0);
-    background-color: #007bff;
-    border-color: #007bff !important;
+    background-color: #316aa3;
+    border-color: #316aa3 !important;
     position: relative; }
   .child .content {
-    display: none;
     width: 40%;
     height: 290px;
-    background-color: #007bff;
-    z-index: 1; }
+    background-color: #316aa3;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    bottom: 0; }
     .child .content .btn-outline-white {
       color: #fff;
       margin-top: 20px; }
@@ -5402,8 +5431,8 @@ ul.navbar {
 .parent-link {
   cursor: pointer; }
   .parent-link:hover ~ .child .child-link {
-    background-color: #007bff !important;
-    border-color: #007bff !important;
+    background-color: #316aa3 !important;
+    border-color: #316aa3 !important;
     color: #fff;
     margin-left: 10px; }
 

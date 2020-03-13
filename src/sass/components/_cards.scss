@@ -205,12 +205,18 @@
     &:hover {
       .content {
         bottom: 0;
-        transition: bottom 0.5s ease;
+        transition: opacity 0.5s linear;
+        visibility: visible;
+        opacity: 1;
       }
     }
     .content {
-      bottom: -264px;
+      bottom: 0px;
       height: 200px;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      background-color: #19283F;
     }
   }
 
@@ -404,12 +410,18 @@
     &:hover {
       .content {
         bottom: 0;
-        transition: bottom 0.5s ease;
+        transition: opacity 0.5s linear;
+        visibility: visible;
+        opacity: 1;
       }
     }
     .content {
-      bottom: -162px;
+      bottom: 0px;
       height: 150px;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      background-color: #19283F;
       .thumbnail-block {
         height: 140px;
         width: 124px;
