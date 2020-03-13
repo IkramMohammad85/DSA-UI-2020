@@ -218,7 +218,7 @@ ul.list-blue-border{
 }
 
 .list.lists-events{
-  li{ overflow: hidden; position: relative; height: 95px;
+  li{ overflow: hidden; position: relative;
     &:hover {
       .content {
         bottom: 0;
@@ -241,7 +241,7 @@ ul.list-blue-border{
 }
 
 .list.lists-events.list-events-inline{
-  li{ overflow: hidden; position: relative;
+  li{ overflow: hidden; position: relative; height: 95px;
     &:hover {
       .content {
         max-width: 495px;

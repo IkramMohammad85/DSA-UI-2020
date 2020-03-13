@@ -2093,8 +2093,7 @@ ul.list-blue-border {
 
 .list.lists-events li {
   overflow: hidden;
-  position: relative;
-  height: 95px; }
+  position: relative; }
   .list.lists-events li:hover .content {
     bottom: 0;
     -webkit-transition: opacity 0.5s linear;
@@ -2113,7 +2112,8 @@ ul.list-blue-border {
 
 .list.lists-events.list-events-inline li {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 95px; }
   .list.lists-events.list-events-inline li:hover .content {
     max-width: 495px;
     bottom: 0;
