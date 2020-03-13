@@ -284,6 +284,17 @@ ul.list-blue-border{
     }
   }
 }
+@media (max-width: $reflex-sm) {
+  .list.lists-events.list-events-inline{
+    li{ 
+      &:hover {
+        .content {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
 //Mobile
 @media (max-width: $reflex-xs) {
   .list {
@@ -307,6 +318,15 @@ ul.list-blue-border{
       li{
         display: block;
         max-width: 100%;
+      }
+    }
+  }
+  .list.lists-events.list-events-inline{
+    li{ 
+      &:hover {
+        .content {
+          max-width: 100%;
+        }
       }
     }
   }

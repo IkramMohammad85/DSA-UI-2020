@@ -581,6 +581,10 @@
       }
     }
   }
+  .events-slide{
+    .glide__bullets {
+      bottom: 0;}
+    }
 }
 
 @media (max-width: $reflex-sm) {
@@ -626,6 +630,10 @@
       }
     }
   }
+  .events-slide{
+    .glide__bullets {
+      bottom: 0;}
+    }
 }
 
 
