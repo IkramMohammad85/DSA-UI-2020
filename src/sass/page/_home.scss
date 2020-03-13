@@ -17,6 +17,7 @@
           bottom: 30%;
           p {
             color: $white;
+            line-height: 24px;
           }
         }
       }
@@ -122,6 +123,7 @@
           overflow: hidden;
           position: relative;
           width: 100%;
+          height: 115px;
           &:hover {
             .content {
               bottom: 0;
@@ -146,7 +148,7 @@
             }
           }
         }
-        .news-details{ width: 100%; min-height: 115px;}
+        .news-details{ width: 100%; height: 115px; overflow: hidden;}
       }
     }
 
@@ -398,10 +400,84 @@
     color: $white;
   }
 }
+.events-slide{
+  .glide__bullets {
+    bottom: 0;
+    .glide__bullet{
+      background-color: #fff;
+      border: solid 1px #707070;
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      font-size: 0px;
+      margin: 4px;
+      &:hover,
+      &.glide__bullet--active {
+        background-color: #19283F;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+@media (min-width: $reflex-xlg) {
+  .big-banner{
+    &.banner-insight {
+      .glide__slides{
+      .item {
+        min-height: 700px;
+        .news {
+          bottom: 30%;
+        }
+      }
+    }
+    }
+    }
+  }
 
+@media (min-width: $reflex-lg) {
+.big-banner{
+  &.banner-insight {
+    .glide__slides{
+    .item {
+      min-height: 650px;
+      .news {
+        bottom: 30%;
+      }
+    }
+  }
+  }
+  }
+}
+
+@media (min-width: $reflex-md) {
+  .big-banner{
+    &.banner-insight {
+      .glide__slides{
+      .item {
+        min-height: 650px;
+        .news {
+          bottom: 32%;
+        }
+      }
+    }
+    }
+    }
+  }
 //Mobile
 @media (max-width: $reflex-md) {
   .big-banner {
+    &.banner-insight {
+      .glide__slides{
+      .item {
+        min-height: 850px;
+        .news {
+          bottom: 32%;
+        }
+      }
+    }
+    }
     .item {
       //150vh because mobile screen when view on potrait mode is VERY LONG and we must accomodate 3 news item verticaly stacked together.
       //if any better alternatives, feel free to make change here
@@ -509,6 +585,17 @@
 
 @media (max-width: $reflex-sm) {
   .big-banner {
+    &.banner-insight {
+      .glide__slides{
+      .item {
+        min-height: 850px;
+        .news {
+          bottom: 32%;
+          h1{font-size: 24px;}
+        }
+      }
+    }
+    }
     .item {
       .news {
         top: 15%;
@@ -541,6 +628,8 @@
   }
 }
 
+
+
 @media (max-width: 1750px) {
   .big-banner {
     .news-thumbnail {
@@ -555,3 +644,4 @@
     }
   }
 }
+

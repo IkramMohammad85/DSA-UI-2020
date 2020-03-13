@@ -518,6 +518,16 @@
   }
 }
 
+@media (max-width: $reflex-xlg) {
+  .card {
+  &.about-us {
+    .card-header-img {
+      height:auto ;
+    }
+  }}
+
+}
+
 //Tablets
 @media (max-width: $reflex-lg) {
   .card {
@@ -565,7 +575,7 @@
     }
     &.about-us {
       .card-header-img {
-        height:136px ;
+        height:auto ;
       }
       .card-body {
         min-height: 260px;
