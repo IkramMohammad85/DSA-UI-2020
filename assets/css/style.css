@@ -1466,6 +1466,8 @@ $border-default: 1px solid #ccc;
 */
 .card {
   border: solid 1px #e8e8e8; }
+  .card.border-none {
+    border: none; }
   .card-header, .card-body, .card-footer {
     padding: 30px; }
   .card .card-header-img {
