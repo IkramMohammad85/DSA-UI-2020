@@ -1692,7 +1692,7 @@ $border-default: 1px solid #ccc;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.4);
         height: 100px; }
       .card.news .card-header-img::after {
         content: "";
@@ -1701,7 +1701,7 @@ $border-default: 1px solid #ccc;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.4);
         height: 100px; }
       .card.news .card-header-img .card-text-overlap {
         bottom: 5%;
@@ -1721,7 +1721,7 @@ $border-default: 1px solid #ccc;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.4);
         height: 100px; }
       .card.news-right .card-header-img::after {
         content: "";
@@ -1730,7 +1730,7 @@ $border-default: 1px solid #ccc;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.4);
         height: 100px; }
       .card.news-right .card-header-img .card-text-overlap {
         bottom: 5%;
