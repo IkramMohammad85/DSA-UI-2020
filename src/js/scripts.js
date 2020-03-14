@@ -49,6 +49,11 @@ if (typeof Glide != "undefined" && glideElements) {
             if(glideItem.getAttribute('data-preView'))
                   perView=glideItem.getAttribute('data-preView');
 
+            let breakpoints={992: {perView: 1},1200: {perView: 3}}
+            console.log(glideItem.hasAttribute('data-homeevents'));
+            if(glideItem.hasAttribute('data-homeevents')){
+                  breakpoints={992: {perView: 1},1260: {perView: 2}}
+            }
             new Glide(glideClass, {
                   type:'carousel',
                   autoplay: 10000,
@@ -58,10 +63,7 @@ if (typeof Glide != "undefined" && glideElements) {
                   perView: perView,
                   peek:0,
                   animationTimingFunc: 'ease',
-                  breakpoints: {
-                        992: {perView: 1},
-                        1200: {perView: 3}
-                  }
+                  breakpoints: breakpoints
             }).mount();
       }
 
