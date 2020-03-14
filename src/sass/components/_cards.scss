@@ -166,18 +166,19 @@
     flex: 1 1 auto;
     .card-header-img {
       background-color: $deep-blue;
-      height: 220px;
+      height: 198px;
       img {
         opacity: 0.7;
       }
     }
     .card-body {
       padding: 20px;
-      min-height: 200px;
+      min-height: 280px;
       background-color:$deep-blue;
       h3 ,p{ color: $white;
       a{ color: $white;}
       }
+      h3{ margin-bottom: 30px; margin-top: 10px;}
     }
   }
 
@@ -312,34 +313,26 @@
       &::before {
         content: "";
         position: absolute;
-        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: linear-gradient(
-          0deg,
-          rgba(13, 35, 56, 20) 20%,
-          rgba(13, 35, 56, 0.06) 4%
-        );
+        background: rgba(0, 0, 0, 0.7);
+        height: 100px;
       }
       &::after {
         content: "";
         position: absolute;
-        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: linear-gradient(
-          0deg,
-          rgba(13, 35, 56, 20) 20%,
-          rgba(13, 35, 56, 0.06) 100%
-        );
+        background: rgba(0, 0, 0, 0.7);
+        height: 100px;
       }
       height: 482px;
       .card-text-overlap {
-        bottom: 10%;
+        bottom: 5%;
         top: auto;
         z-index: 10000;
         h1 {
@@ -355,34 +348,26 @@
       &::before {
         content: "";
         position: absolute;
-        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: linear-gradient(
-          0deg,
-          rgba(13, 35, 56, 20) 20%,
-          rgba(13, 35, 56, 0.06) 4%
-        );
+        background: rgba(0, 0, 0, 0.7);
+        height: 100px;
       }
       &::after {
         content: "";
         position: absolute;
-        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 0;
-        background: linear-gradient(
-          0deg,
-          rgba(13, 35, 56, 20) 20%,
-          rgba(13, 35, 56, 0.06) 100%
-        );
+        background: rgba(0, 0, 0, 0.7);
+        height: 100px;
       }
       height: 230px;
       .card-text-overlap {
-        bottom: 10%;
+        bottom: 5%;
         top: auto;
         z-index: 10000;
         h1 {
@@ -529,6 +514,26 @@
       flex: 1 1 auto;
     }
   }
+
+  &.related-insight-card{
+    .card-header-img { position: relative;
+      height: 176px;
+      .briefing-lable{
+        padding: 2px 15px; position: absolute; left: 0; bottom: 0; color:$white; text-transform: uppercase; font-size: 14px;
+        &.cb{ background-color:#ec1c24 ;}
+        &.vb{ background-color:#8061a1 ;}
+        &.ib{ background-color:#1d9649 ;}
+        &.asean{ background-color:#2E3092 ;}
+        &.srb{ background-color:#00aeef ;}
+        &.rb{ background-color:#293895 ;}
+      }
+    }
+    .card-body {
+    padding-left:0px ;
+    padding-right: 0px;
+    p{ margin-bottom: 0px;}
+  }
+}
 }
 
 @media (max-width: $reflex-xlg) {
@@ -592,6 +597,7 @@
       }
       .card-body {
         min-height: 260px;
+        p{ line-height: 24px;}
       }
     }
   }
@@ -655,11 +661,14 @@
       }
     }
     &.about-us {
-
       .card-body {
-        padding: 40px;
+        padding: 20px 40px 10px 40px;
+        min-height: 210px;
+        p{ line-height: 24px;}
+        h3{ margin-bottom: 10px; margin-top: 0px;}
       }
     }
+
   }
 }
 @media (max-width: $reflex-xs) {
@@ -672,6 +681,12 @@
         .card-text-overlap {
           top: 8%;
         }
+      }
+    }
+    &.about-us {
+      .card-body {
+        min-height: 210px;
+        h3{ margin-bottom: 10px; margin-top: 0px;}
       }
     }
   }

@@ -1,0 +1,25 @@
+.related-insight-slides{
+    .glide__bullets {
+        text-align: center;
+        bottom: 0;
+        width: 90%;
+        margin-left: 6%;
+        .glide__bullet{
+          background-color: #fff;
+          border: solid 1px #707070;
+          border-radius: 50%;
+          height: 14px;
+          width: 14px;
+          font-size: 0px;
+          margin: 0px 7px;
+         
+          &:hover,
+          &.glide__bullet--active {
+            background-color: #19283F;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+}

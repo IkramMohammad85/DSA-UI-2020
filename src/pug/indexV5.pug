@@ -30,7 +30,7 @@ body
                         a(href='our-firm.html')
                             img(src='assets/img/about-who-we-are.jpg')
                     .card-body.text-center
-                            h3.mb-3.mt-1  
+                            h3 
                                 a(href='services.html') Who we are
                             p
                                 | An award winning, pan-Asia professional services firm guding foreign companies through Asia’s complex business environment.
@@ -41,7 +41,7 @@ body
                         a(href='services.html')
                             img(src='assets/img/about-services-we-offer.jpg')
                     .card-body.text-center
-                            h3.mb-3.mt-1 
+                            h3
                                 a(href='services.html') Services we offer
                             p
                                 | Our services help decision makers manage the legal, tax and operational challenges facing multinational businesses in Asia. 
@@ -52,7 +52,7 @@ body
                         a(href='industries.html')
                             img(src='assets/img/about-industries.jpg')
                     .card-body.text-center
-                            h3.mb-3.mt-1  
+                            h3  
                                 a(href='industries.html') Industries we serve
                             p
                                 | Over 25years of experience working with small, medium and large enterprises across every major industry.
@@ -61,57 +61,60 @@ body
         .container
             h5.text-uppercase.text-muted.mb-3 EVENTS
             .grid.glide(data-preView=3 data-homeevents)
-                .col-xs.col-sm.col-md.col-lg.col-grid.glide__track(data-glide-el="track")
-                    ul.list.lists-events.list-events-inline.glide__slides
-                        li.glide__slide
-                            .date-block.hidden-xs.hidden-xxs
-                                | 04
-                                span Oct, 2019
-                            .dec-block
-                                    .h3
-                                        a(href='events-single.html')
-                                            | The Key Considerations For Year-End Tax Treatment and The 2019
-                                    .date-time
-                                        | Webinar | 2 PM EST / 11 AM PST
-                            .content
-                                    a.btn.btn-secondary.float-right.ml-2.mb-4 Register now
-                                    h4.marg-top-0.marg-bottom-0
-                                        a(href='https://www.dezshira.com/events/details/coronavirus-outbreak-how-to-address-key-hr-and-commercial-issues-8600.html') Coronavirus Outbreak: How to address key HR and commercial issues
-                                    p
-                                        | Webinar | 2 PM EST / 11 AM PST
-                        li.glide__slide
-                            .date-block.hidden-xs.hidden-xxs
-                                | 04
-                                span Oct, 2019
-                            .dec-block
-                                    .h3
-                                        a(href='events-single.html')
-                                            | The Key Considerations For Year-End Tax Treatment
-                                    .date-time
-                                        | Webinar | 27 November 2019 | 3PM-4PM China Time
-                            .content
-                                    a.btn.btn-secondary.float-right.ml-2.mb-4 Register now
-                                    h4.marg-top-0.marg-bottom-0
-                                        a(href='https://www.dezshira.com/events/details/coronavirus-outbreak-how-to-address-key-hr-and-commercial-issues-8600.html') Coronavirus Outbreak: How to address key HR and commercial issues
-                                    p
-                                        | Webinar | 2 PM EST / 11 AM PST
+                .col-grid.glide__track(data-glide-el="track")
+                    .glide__slides
+                        .col-sm.col-md-4.col-lg-4.col-grid.glide__slide
+                            .event-block
+                                .date-block
+                                    | 04
+                                    span Oct, 2019
+                                .dec-block
+                                        .h3
+                                            a(href='events-single.html')
+                                                | The Key Considerations For Year-End Tax Treatment and The 2019
+                                        .date-time
+                                            | Webinar | 2 PM EST / 11 AM PST
+                                .content
+                                        a.btn.btn-secondary.float-right.ml-2.mb-4 Register now
+                                        h4.marg-top-0.marg-bottom-0
+                                            a(href='https://www.dezshira.com/events/details/coronavirus-outbreak-how-to-address-key-hr-and-commercial-issues-8600.html') Coronavirus Outbreak: How to address key HR and commercial issues
+                                        p
+                                            | Webinar | 2 PM EST / 11 AM PST
+                        .col-sm.col-md-4.col-lg-4.col-grid.glide__slide
+                            .event-block
+                                .date-block
+                                    | 04
+                                    span Oct, 2019
+                                .dec-block
+                                        .h3
+                                            a(href='events-single.html')
+                                                | The Key Considerations For Year-End Tax Treatment
+                                        .date-time
+                                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                                .content
+                                        a.btn.btn-secondary.float-right.ml-2.mb-4 Register now
+                                        h4.marg-top-0.marg-bottom-0
+                                            a(href='https://www.dezshira.com/events/details/coronavirus-outbreak-how-to-address-key-hr-and-commercial-issues-8600.html') Coronavirus Outbreak: How to address key HR and commercial issues
+                                        p
+                                            | Webinar | 2 PM EST / 11 AM PST
                             
-                        li.glide__slide
-                            .date-block.hidden-xs.hidden-xxs
-                                | 04
-                                span Oct, 2019
-                            .dec-block
-                                    .h3
-                                        a(href='events-single.html')
-                                            | The Key Considerations For Year-End Tax Treatment
-                                    .date-time
-                                        | Webinar | 27 November 2019 | 3PM-4PM China Time
-                            .content
-                                    a.btn.btn-secondary.float-right.ml-2.mb-4 Register now
-                                    h4.marg-top-0.marg-bottom-0
-                                        a(href='https://www.dezshira.com/events/details/coronavirus-outbreak-how-to-address-key-hr-and-commercial-issues-8600.html') Coronavirus Outbreak: How to address key HR and commercial issues
-                                    p
-                                        | Webinar | 2 PM EST / 11 AM PST   
+                        .col-sm.col-md-4.col-lg-4.col-grid.glide__slide
+                            .event-block
+                                .date-block
+                                    | 04
+                                    span Oct, 2019
+                                .dec-block
+                                        .h3
+                                            a(href='events-single.html')
+                                                | The Key Considerations For Year-End Tax Treatment
+                                        .date-time
+                                            | Webinar | 27 November 2019 | 3PM-4PM China Time
+                                .content
+                                        a.btn.btn-secondary.float-right.ml-2.mb-4 Register now
+                                        h4.marg-top-0.marg-bottom-0
+                                            a(href='https://www.dezshira.com/events/details/coronavirus-outbreak-how-to-address-key-hr-and-commercial-issues-8600.html') Coronavirus Outbreak: How to address key HR and commercial issues
+                                        p
+                                            | Webinar | 2 PM EST / 11 AM PST   
 
                 .glide__bullets(data-glide-el='controls[nav]')
                     button.glide__bullet(data-glide-dir='=0') 0
