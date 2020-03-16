@@ -6,10 +6,11 @@
       transition: opacity 0.5s linear;
       visibility: visible;
       opacity: 1;
+      line-height: 1.5em;
     }
     .child-link {
-      right: 72px;
-      transform: translate(3em, 0);
+      // right: 72px;
+      transform: translate(-2em, 0);
       background-color: #316aa3;
       border-color: #316aa3 !important;
       position: relative;
@@ -139,7 +140,7 @@
       .child-link {
         right: auto;
         transform: none;
-        margin-left: 0px;
+        // margin-left: 0px;
       }
     }
   }

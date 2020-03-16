@@ -1612,7 +1612,8 @@ $border-default: 1px solid #ccc;
       -webkit-transition: opacity 0.5s linear;
       transition: opacity 0.5s linear;
       visibility: visible;
-      opacity: 1; }
+      opacity: 1;
+      line-height: 1.2em; }
     .card.related-services .content {
       bottom: 0px;
       height: 200px;
@@ -3855,7 +3856,7 @@ textarea {
   box-sizing: border-box; }
 
 select {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAb0lEQVRIie2PsQ2AMAwELyyWcVIyCqSCaQmNI1kIRwEF0fjq998bHMf5lQDEjlyU7OPyDBzA3MglyeyWZGocFzlaDEkCNqu4hwCsIrp+UpcXGuvfSoaVa0lWklqeR5RrSf1k2HJL8km5lnxW7jj3nAwCHOMFhaBLAAAAAElFTkSuQmCC) no-repeat 98% 50%;
+  background: #f8f9fa url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAb0lEQVRIie2PsQ2AMAwELyyWcVIyCqSCaQmNI1kIRwEF0fjq998bHMf5lQDEjlyU7OPyDBzA3MglyeyWZGocFzlaDEkCNqu4hwCsIrp+UpcXGuvfSoaVa0lWklqeR5RrSf1k2HJL8km5lnxW7jj3nAwCHOMFhaBLAAAAAElFTkSuQmCC) no-repeat 98% 50%;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -4336,11 +4337,12 @@ header.site-header .hamburger-menu {
 .cta-button {
   position: fixed;
   top: 39%;
-  right: -66px;
+  right: -80px;
   -webkit-transform: rotate(-270deg);
   transform: rotate(-270deg);
   letter-spacing: 2px;
-  z-index: 9000; }
+  z-index: 9000;
+  min-width: 200px; }
 
 .cookie-modal-bar {
   position: fixed;
@@ -5369,7 +5371,7 @@ ul.navbar {
   .big-banner.banner-insight .glide__slides .item {
     min-height: 650px; }
     .big-banner.banner-insight .glide__slides .item .news {
-      bottom: 32%; } }
+      bottom: 35%; } }
 
 @media (max-width: 992px) {
   .big-banner.banner-insight .glide__slides .item {
@@ -5521,11 +5523,11 @@ ul.navbar {
     -webkit-transition: opacity 0.5s linear;
     transition: opacity 0.5s linear;
     visibility: visible;
-    opacity: 1; }
+    opacity: 1;
+    line-height: 1.5em; }
   .child:hover .child-link {
-    right: 72px;
-    -webkit-transform: translate(3em, 0);
-    transform: translate(3em, 0);
+    -webkit-transform: translate(-2em, 0);
+    transform: translate(-2em, 0);
     background-color: #316aa3;
     border-color: #316aa3 !important;
     position: relative; }
@@ -5616,8 +5618,7 @@ ul.navbar {
   .child:hover .child-link {
     right: auto;
     -webkit-transform: none;
-    transform: none;
-    margin-left: 0px; }
+    transform: none; }
   .related-service-links .btn-outline-white {
     -webkit-transition: none !important;
     transition: none !important;

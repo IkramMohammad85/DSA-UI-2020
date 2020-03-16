@@ -335,10 +335,11 @@ header.site-header .hamburger-menu {
 .cta-button {
   position: fixed;
   top: 39%;
-  right: -66px;
+  right: -80px;
   transform: rotate(-270deg);
   letter-spacing: 2px;
   z-index: 9000;
+  min-width:200px;
 }
 .cookie-modal-bar {
   position: fixed;
