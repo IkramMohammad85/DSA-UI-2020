@@ -19,6 +19,7 @@
         color: $white;
       }
     }
+
   }
   li.active {
     a {
@@ -27,4 +28,5 @@
       border: 1px solid $light-blue;
     }
   }
+  .btn-secondary{ color: $white !important; padding-top: 5px; padding-bottom: 5px;}
 }

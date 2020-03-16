@@ -680,6 +680,7 @@ ul.navbar {
     border-radius: 2px;
     height: 20px;
     vertical-align: top;
+    min-width: auto;
     i {
       display: inline-flex;
       line-height: 1px;
@@ -722,4 +723,5 @@ ul.navbar {
       }
     }
   }
+  .cta-button{ min-width: auto;}
 }

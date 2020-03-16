@@ -1,0 +1,60 @@
+div.zabuto_calendar {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	color: #59595b;
+	text-align: center;
+	.table {
+		border: 1px solid #ddd;
+		tr.calendar-dow-header {
+			th {
+				border-bottom: 2px solid #ddd;
+				padding: 10px 6px;
+			}
+		}
+		th {
+			padding: 4px 2px;
+		}
+		td {
+			padding: 4px 2px;
+		}
+		tr {
+			td {
+				div.day.future-event {
+					background-color: #344c70 !important;
+				}
+			}
+		}
+	}
+	tr.calendar-dow {
+		td {
+			border-bottom: 1px solid #ddd;
+			text-align: center;
+		}
+	}
+	tr.calendar-dow-header {
+		th {
+			border-bottom: 1px solid #ddd;
+			text-align: center;
+		}
+	}
+	.badge-event {
+		background-color: #344c70 !important;
+	}
+	div.legend {
+		span.badge-event {
+			background-color: #344c70 !important;
+		}
+		span.badge {
+			height: 11px;
+			width: 11px;
+			display: inline-block;
+			background-color: #59595b;
+		}
+		border: 1px solid #ddd;
+		margin: 0;
+		padding: 10px;
+		span {
+			font-size: 11px !important;
+		}
+	}
+}

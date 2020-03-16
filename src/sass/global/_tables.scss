@@ -229,4 +229,8 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+    ul{ margin-bottom: 0px;
+      li{ line-height: 24px; font-size: 14px;}
+    }
+    .table-bordered th, .table-bordered td{word-break: initial;}
 }

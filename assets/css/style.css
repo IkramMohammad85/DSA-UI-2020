@@ -1476,6 +1476,9 @@ $border-default: 1px solid #ccc;
     overflow: hidden;
     position: relative;
     height: 200px; }
+    .card .card-header-img a {
+      display: -webkit-box;
+      display: flex; }
     .card .card-header-img .card-text-overlap {
       position: absolute;
       top: 50%;
@@ -1483,7 +1486,8 @@ $border-default: 1px solid #ccc;
       width: 100%;
       color: #fff; }
       .card .card-header-img .card-text-overlap a {
-        color: #fff; }
+        color: #fff;
+        display: inherit; }
   .card-header {
     background-color: #314d77;
     min-height: 88px; }
@@ -1762,6 +1766,8 @@ $border-default: 1px solid #ccc;
       transition: opacity 0.5s linear;
       visibility: visible;
       opacity: 1; }
+      .card.feature-artcile:hover .content p {
+        line-height: 20px; }
     .card.feature-artcile .content {
       bottom: 0px;
       height: 150px;
@@ -2147,13 +2153,15 @@ ul.list-blue-border {
     opacity: 1; }
   .list.lists-events li .content {
     bottom: 0px;
-    height: 93px;
+    height: 103px;
     visibility: hidden;
     opacity: 0;
     left: 0;
     background-color: #19283F; }
     .list.lists-events li .content a.btn {
       color: #fff !important; }
+  .list.lists-events li .dec-block .date-time {
+    line-height: 20px; }
 
 .list.lists-events.list-events-inline li {
   overflow: hidden;
@@ -2424,6 +2432,10 @@ section.asiapedia-section {
     background-color: #316aa3;
     color: #fff;
     border: 1px solid #316aa3; }
+  .pagination .btn-secondary {
+    color: #fff !important;
+    padding-top: 5px;
+    padding-bottom: 5px; }
 
 .accordion-wrapper .accordion-heading {
   cursor: pointer; }
@@ -2814,6 +2826,44 @@ section.asiapedia-section {
       background-color: #19283F; }
     .related-insight-slides .glide__bullets .glide__bullet:focus {
       outline: none; }
+
+div.zabuto_calendar {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  color: #59595b;
+  text-align: center; }
+  div.zabuto_calendar .table {
+    border: 1px solid #ddd; }
+    div.zabuto_calendar .table tr.calendar-dow-header th {
+      border-bottom: 2px solid #ddd;
+      padding: 10px 6px; }
+    div.zabuto_calendar .table th {
+      padding: 4px 2px; }
+    div.zabuto_calendar .table td {
+      padding: 4px 2px; }
+    div.zabuto_calendar .table tr td div.day.future-event {
+      background-color: #344c70 !important; }
+  div.zabuto_calendar tr.calendar-dow td {
+    border-bottom: 1px solid #ddd;
+    text-align: center; }
+  div.zabuto_calendar tr.calendar-dow-header th {
+    border-bottom: 1px solid #ddd;
+    text-align: center; }
+  div.zabuto_calendar .badge-event {
+    background-color: #344c70 !important; }
+  div.zabuto_calendar div.legend {
+    border: 1px solid #ddd;
+    margin: 0;
+    padding: 10px; }
+    div.zabuto_calendar div.legend span.badge-event {
+      background-color: #344c70 !important; }
+    div.zabuto_calendar div.legend span.badge {
+      height: 11px;
+      width: 11px;
+      display: inline-block;
+      background-color: #59595b; }
+    div.zabuto_calendar div.legend span {
+      font-size: 11px !important; }
 
 @font-face {
   font-family: "NimbusSanL";
@@ -3790,6 +3840,13 @@ strong {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
+  .table-responsive ul {
+    margin-bottom: 0px; }
+    .table-responsive ul li {
+      line-height: 24px;
+      font-size: 14px; }
+  .table-responsive .table-bordered th, .table-responsive .table-bordered td {
+    word-break: initial; }
 
 @media (max-width: 768px) {
   .text-align-center-sm {
@@ -4613,7 +4670,8 @@ ul.navbar {
     font-size: 12px;
     border-radius: 2px;
     height: 20px;
-    vertical-align: top; }
+    vertical-align: top;
+    min-width: auto; }
     .cta-button i {
       display: -webkit-inline-box;
       display: inline-flex;
@@ -4638,7 +4696,9 @@ ul.navbar {
     footer.site-footer .list-unstyled li {
       padding-right: 0px; }
     footer.site-footer .copyright .list-inline {
-      text-align: center; } }
+      text-align: center; }
+  .cta-button {
+    min-width: auto; } }
 
 @font-face {
   font-family: "dsa-icons";

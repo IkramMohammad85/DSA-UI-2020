@@ -230,14 +230,16 @@ ul.list-blue-border{
     }
     .content {
       bottom: 0px;
-      height: 93px;
+      height: 103px;
       visibility: hidden;
       opacity: 0;
       left: 0;
       background-color: #19283F;
       a.btn{ color: #fff!important;} 
     }
-   
+    .dec-block{
+      .date-time{ line-height: 20px;}
+    }
   }
 }
 
