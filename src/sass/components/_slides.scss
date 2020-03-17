@@ -1,4 +1,4 @@
-.related-insight-slides{
+.related-insight-slides, .partner-slides{
     .glide__bullets {
         text-align: center;
         bottom: 0;
@@ -22,4 +22,14 @@
           }
         }
       }
+}
+
+.partner-slides{
+  .pratner-logo{
+    background-color: #FFF;
+    height: 120px;
+    max-width: 150px;
+    padding: 20px;
+    position: relative;
+  }
 }

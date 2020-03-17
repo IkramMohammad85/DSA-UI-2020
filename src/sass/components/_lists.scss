@@ -175,6 +175,28 @@
   }
 }
 
+.list-unstyled.login-popup {
+  li {
+    padding: 5px 10px 5px 32px; font-size: 13px; margin-bottom: 8px;
+  }
+  li.m {
+    background: url(../img/magazines-icon.jpg) no-repeat 0 4px;
+  }
+  li.n {
+    background: url(../img/news-icon.jpg) no-repeat 0 4px;
+  }
+
+  li.w {
+    background: url(../img/webinars-icon.jpg) no-repeat 0 4px;
+  }
+
+  li.c {
+    background: url(../img/connect-icon.png) no-repeat 0 4px;
+  }
+}
+
+
+
 .list-unstyled.sidebar-nav {
   li {
     border-bottom: solid 1px $gray-200;

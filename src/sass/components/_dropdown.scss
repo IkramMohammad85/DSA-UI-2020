@@ -88,7 +88,7 @@
       max-width: 100%;
     }
     &.dropdown-content-medium {
-      min-width: 600px;
+      min-width: 700px;
       max-width: 100%;
     }
     &.dropdown-content-large {
@@ -122,7 +122,13 @@
     transition-delay: 0s; /* react immediately on hover */
   }
 }
+.dropdown-content-medium{
+  .login-block, .create-ac-block{ min-height: 405px;}
+  .create-ac-block{
+    input{ background-color: #fff; width: 200px; font-size: 14px;}
+  }
 
+}
 //Tablets
 @media (max-width: $reflex-lg) {
   .dropdown {
