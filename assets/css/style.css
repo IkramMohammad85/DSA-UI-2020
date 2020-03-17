@@ -2104,8 +2104,6 @@ $border-default: 1px solid #ccc;
   padding: 5px 20px; }
   .list-unstyled.bullet-list li a:hover {
     color: #0D2338; }
-  .list-unstyled.bullet-list li:before {
-    content: →; }
 
 .list-unstyled.login-popup li {
   padding: 5px 10px 5px 32px;
