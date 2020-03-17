@@ -172,6 +172,9 @@
     a:hover{ 
       color:$bluedark;
     }
+    &:before {
+      content:→; 
+    }
   }
 }
 
