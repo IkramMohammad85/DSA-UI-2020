@@ -2108,10 +2108,11 @@ $border-default: 1px solid #ccc;
 .list-unstyled.login-popup li {
   padding: 5px 10px 5px 32px;
   font-size: 13px;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  line-height: 18px !important; }
 
 .list-unstyled.login-popup li.m {
-  background: url(../img/magazines-icon.jpg) no-repeat 0 8px; }
+  background: url(../img/magazines-icon.jpg) no-repeat 0 3px; }
 
 .list-unstyled.login-popup li.n {
   background: url(../img/news-icon.jpg) no-repeat 0 8px; }
