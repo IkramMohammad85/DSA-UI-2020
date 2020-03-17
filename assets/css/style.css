@@ -4638,6 +4638,9 @@ ul.navbar {
   float: left;
   margin-right: 20px; }
 
+header.site-header .site-header-blue .navbar li.dropdown:nth-last-child(2) a {
+  color: #000; }
+
 @media (max-width: 1200px) {
   .container {
     max-width: 100% !important; }
