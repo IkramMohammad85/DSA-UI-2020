@@ -2325,7 +2325,7 @@ ul.list-blue-border {
     /* react immediately on hover */ }
 
 .dropdown-content-medium .login-block, .dropdown-content-medium .create-ac-block {
-  min-height: 405px; }
+  min-height: 382px; }
   .dropdown-content-medium .login-block .btn, .dropdown-content-medium .create-ac-block .btn {
     padding: 3px 10px;
     min-width: 120px; }
