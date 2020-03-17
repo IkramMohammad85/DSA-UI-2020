@@ -5,6 +5,15 @@ div.zabuto_calendar {
 	text-align: center;
 	.table {
 		border: 1px solid #ddd;
+		tr.calendar-month-header {
+			td {
+				span {
+					padding-bottom: 0;
+					font-weight: 400;
+					color: #757575;
+				}
+			}
+		}
 		tr.calendar-dow-header {
 			th {
 				border-bottom: 2px solid #ddd;

@@ -2885,6 +2885,10 @@ div.zabuto_calendar {
   text-align: center; }
   div.zabuto_calendar .table {
     border: 1px solid #ddd; }
+    div.zabuto_calendar .table tr.calendar-month-header td span {
+      padding-bottom: 0;
+      font-weight: 400;
+      color: #757575; }
     div.zabuto_calendar .table tr.calendar-dow-header th {
       border-bottom: 2px solid #ddd;
       padding: 10px 6px; }
