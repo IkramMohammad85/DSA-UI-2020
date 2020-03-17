@@ -2111,16 +2111,16 @@ $border-default: 1px solid #ccc;
   margin-bottom: 8px; }
 
 .list-unstyled.login-popup li.m {
-  background: url(../img/magazines-icon.jpg) no-repeat 0 4px; }
+  background: url(../img/magazines-icon.jpg) no-repeat 0 8px; }
 
 .list-unstyled.login-popup li.n {
-  background: url(../img/news-icon.jpg) no-repeat 0 4px; }
+  background: url(../img/news-icon.jpg) no-repeat 0 8px; }
 
 .list-unstyled.login-popup li.w {
-  background: url(../img/webinars-icon.jpg) no-repeat 0 4px; }
+  background: url(../img/webinars-icon.jpg) no-repeat 0 8px; }
 
 .list-unstyled.login-popup li.c {
-  background: url(../img/connect-icon.png) no-repeat 0 4px; }
+  background: url(../img/connect-icon.png) no-repeat 0 8px; }
 
 .list-unstyled.sidebar-nav li {
   border-bottom: solid 1px #e9ecef; }
@@ -2325,6 +2325,9 @@ ul.list-blue-border {
 
 .dropdown-content-medium .login-block, .dropdown-content-medium .create-ac-block {
   min-height: 405px; }
+  .dropdown-content-medium .login-block .btn, .dropdown-content-medium .create-ac-block .btn {
+    padding: 3px 10px;
+    min-width: 120px; }
 
 .dropdown-content-medium .create-ac-block input {
   background-color: #fff;
