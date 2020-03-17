@@ -99,7 +99,6 @@ header.site-header
                       h2.text-capitalize.text-left About us
                       p.text-left
                         | Dezan Shira & Associates is a pan-Asia, multi-disciplinary professional services firm, providing legal, tax and operational advisory to international corporate investors.
-                      a.btn.btn-secondary.text-white(href='our-firm.html') Read more 
                     .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
                       h3.text-left 
                         a(href='services.html') Our Story
@@ -124,7 +123,7 @@ header.site-header
                         li
                           a(href='services-single.html') India
                         li
-                          a(href='services-single.html')  Vietnam
+                          a(href='services-single.html') Vietnam
                         li
                           a(href='services-single.html') Singapore
                         li
@@ -136,7 +135,7 @@ header.site-header
                         li
                           a(href='services-single.html') ASEAN Alliance Members
                         li
-                          a(href='services-single.html')  Italian Liaison Office
+                          a(href='services-single.html') Italian Liaison Office
                         li
                           a(href='services-single.html') USA Liaison Office
                         li
@@ -148,9 +147,21 @@ header.site-header
                         li
                           a(href='services-single.html') Italian Desk
                         li
-                          a(href='services-single.html') German Liaison 
+                          a(href='services-single.html') North American Desk
                         li
-                          a(href='services-single.html')  USA Liaison Offices
+                          a(href='services-single.html') UK and Ireland Desk 
+                        li
+                          a(href='services-single.html') German Desk
+                        li
+                          a(href='services-single.html') Italian Desk
+                        li
+                          a(href='services-single.html') French Desk
+                        li
+                          a(href='services-single.html') Russian Desk
+                        li
+                          a(href='services-single.html') Spanish Desk 
+                        li
+                          a(href='services-single.html') Australian Desk
                    
             li.dropdown
               a(href='#' data-trigger data-turn-header-white)
@@ -164,7 +175,6 @@ header.site-header
                       h2.text-capitalize.text-left Tailored Services
                       p.text-left
                         | Our clients’ growth and sustainable development is paramount.  We provide a comprehensive range of services which we deliver as a flexible mix of stand-alone or blended services, covering business intelligence, audit, accounting, human resources, legal, payroll, tax and technology services.  Our blended services approach provides high knowledge and services value to small, medium and large sized organisations, operating in a number of sectors. 
-                      a.btn.btn-secondary.text-white(href='services.html') Contact Us 
                     .col-xs-12.col-sm-3.col-md-3.col-lg-3.col-grid
                       h3.text-left 
                         a(href='services.html') Services Areas
@@ -212,7 +222,7 @@ header.site-header
                         li
                           a(href='industries-single.html') Trade & E-Commerce                                                                       
                     .col-xs-12.col-sm-6.col-md-6.col-lg-3.col-grid
-                      .card.dark-blue-bg.mb-2.p-arround-2
+                      .card.blue-dark-bg-normal.mb-2.p-arround-2
                           i
                             img(alt='', src='http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg', width='100%')
                           h3.pt-2.pr-2.text-white.text-left To learn more about how we can support you, contact one of our local experts.
@@ -255,6 +265,7 @@ header.site-header
                         li
                           a(href='asiapedia-search.html') Publication Store
                         li
+                        .dropdown-divider
                           a(href='asiapedia-search.html') China Briefing
                         li
                           a(href='asia-briefing.html') India Briefing
@@ -282,7 +293,7 @@ header.site-header
                           a(href='asiapedia-search.html') Treaties
                         li
                           a(href='asiapedia-search.html') Legal
-                        li                          li
+                        li                          
                           a(href='asiapedia-search.html') Infographic
                         li
                           a(href='asiapedia-search.html') Industry Profile   
@@ -353,7 +364,18 @@ header.site-header
                           a(href='asiapedia-search.html') Follow Us 
                         li
                           a(href='asiapedia-search.html') Partner with Us 
-            li
-              a(href='brochure.html')
-                i.icon-search
+            li.dropdown
+              a(href='#' data-trigger data-turn-header-white)
+                | Search
+                i.icon-search.ml-1
+              .dropdown-content(data-dropdown)
+                .btn-close.hidden-md.hidden-lg.hidden-xlg(data-closeBtn)
+                .container
+                  .grid
+                    .col-xs-12.col-sm.col-md.col-lg.col-grid
+                        form.form-search.material(action='https://www.dezshira.com/register', method='GET')
+                            .form-field.field-group.mb-2
+                                input.form-control(type='text', name='search', placeholder='Search')
+                                button.btn.group-field-btn.btn-primary.btn-go(type='submit') Search 
+                                    i.icon-search.ml-1
               
