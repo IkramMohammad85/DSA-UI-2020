@@ -2921,7 +2921,7 @@ div.zabuto_calendar {
 
 .timeline {
   position: relative;
-  padding-top: 3rem;
+  padding-top: 0;
   padding-bottom: 3rem;
   --timelinemaincolor: #4557bb;
   font-size: 16px; }
@@ -2945,7 +2945,8 @@ div.zabuto_calendar {
   position: absolute;
   left: 0;
   top: 0;
-  border-radius: 2px; }
+  border-radius: 2px;
+  font-weight: normal; }
 
 .timeline__box {
   position: relative; }
