@@ -2926,7 +2926,7 @@ div.zabuto_calendar {
   font-size: 16px; }
   .timeline:before {
     content: "";
-    width: 2px;
+    width: 1px;
     height: 100%;
     background-color: #dedede;
     position: absolute;
@@ -2942,10 +2942,11 @@ div.zabuto_calendar {
   color: #666;
   background-color: #fff;
   position: absolute;
-  left: 0;
+  left: 8px;
   top: 0;
   border-radius: 2px;
-  font-weight: normal; }
+  font-weight: normal;
+  font-size: 18px; }
 
 .timeline__box {
   position: relative; }
@@ -2954,7 +2955,7 @@ div.zabuto_calendar {
   .timeline__box:before {
     content: "";
     width: 96%;
-    height: 2px;
+    height: 1px;
     background-color: #dedede;
     position: absolute;
     left: 30px;
@@ -2992,6 +2993,10 @@ div.zabuto_calendar {
 
 .timeline__content img {
   width: 150px; }
+
+.timeline__content p {
+  padding: 0;
+  margin: 0px; }
 
 @media screen and (min-width: 641px) {
   .timeline:before {
