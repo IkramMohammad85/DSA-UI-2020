@@ -50,12 +50,14 @@ class dropdown {
   }
 
   handleClick(el) {
-    el.querySelector('[data-trigger]').addEventListener('click', (event) => {
-      this.closeAllDropdowns();
-      event.preventDefault();
-      event.stopPropagation();
-      this.doDropdownAction(el,event);
-    });
+    if(el.querySelector('[data-trigger]')){
+      el.querySelector('[data-trigger]').addEventListener('click', (event) => {
+        this.closeAllDropdowns();
+        event.preventDefault();
+        event.stopPropagation();
+        this.doDropdownAction(el,event);
+      });
+    }
 
     //apply mouse hover event for navbar
     /*

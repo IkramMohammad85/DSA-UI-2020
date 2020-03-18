@@ -84,7 +84,7 @@ gulp.task('js', function () {
 			]
 			]
 		  }))
-		.pipe(minifyjs())
+		// .pipe(minifyjs())
 		.pipe(gulp.dest(paths.js.dest))
 
 
