@@ -9,7 +9,8 @@ header.site-header
             span
         div.header-menu
           ul.list-inline.top-quick-link
-            li.dropdown
+            li.dropdown.tooltip
+              <span class="tooltiptext">International Desks</span>
               a(data-trigger)
                 i.icon-sphere
                 i.down-arrow
@@ -51,7 +52,8 @@ header.site-header
                     a.dropdown-item(href='international-desks-single.html')
                       i.sprite.sprite-flag-australian.float-left.mr-1
                       span Australian Desk
-            li.dropdown
+            li.dropdown.tooltip
+              <span class="tooltiptext">Login</span>
               a(data-trigger)
                 i.icon-user
                 i.down-arrow
@@ -83,7 +85,8 @@ header.site-header
                       small.text-center.text-capitalize.d-block.mt-5
                         a(href='https://www.asiabriefing.com/customer/forgot-password')
                           | Forgot Password? 
-            li
+            li.tooltip
+              <span class="tooltiptext">Brochure</span>
               a(href='brochure.html')
                 i.icon-cloud-download
           ul.navbar
@@ -99,7 +102,7 @@ header.site-header
                       h2.text-capitalize.text-left About us
                       p.text-left
                         | Dezan Shira & Associates is a pan-Asia, multi-disciplinary professional services firm, providing legal, tax and operational advisory to international corporate investors.
-                    .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
+                    .col-xs-12.col-sm-4.col-md-4.col-lg-2.col-grid
                       h3.text-left 
                         a(href='services.html') Our Story
                       ul.list-unstyled.bullet-list.text-left
@@ -114,7 +117,7 @@ header.site-header
                         li
                           a(href='services-single.html') News
                  
-                    .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
+                    .col-xs-12.col-sm-4.col-md-4.col-lg-2.col-grid
                       h3.text-left 
                         a(href='services.html') Our Experts
                       ul.list-unstyled.bullet-list.text-left
@@ -140,7 +143,7 @@ header.site-header
                           a(href='services-single.html') USA Liaison Office
                         li
                           a(href='services-single.html') Russia              
-                    .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
+                    .col-xs-12.col-sm-4.col-md-4.col-lg-2.col-grid
                       h3.text-left 
                         a(href='services.html') International Desks
                       ul.list-unstyled.bullet-list.text-left
@@ -162,7 +165,14 @@ header.site-header
                           a(href='services-single.html') Spanish Desk 
                         li
                           a(href='services-single.html') Australian Desk
-                   
+                    .col-xs-12.col-sm-6.col-md-6.col-lg-3.col-grid
+                      .card.gray-light-bg.mb-2.p-arround-2
+                          i
+                            img(alt='', src='http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg', width='100%')
+                          h3.pt-2.pr-2.text-left To learn more about how we can support you, contact one of our local experts.
+                          p.text-left
+                              | We provide professional services tailored to Asia´s business environment across the full business cycle.
+                          a.btn.btn-secondary.mb-2.text-white(href='personnel.html') Talk to experts 
             li.dropdown
               a(href='#' data-trigger data-turn-header-white)
                 | Services  
@@ -243,7 +253,7 @@ header.site-header
                       p.text-left
                         | Explore our leading business regional briefing news and business publications, or search our archives of business guides, podcasts, videos, presentations, publications and more.
                       a.btn.btn-secondary.text-white Subscribe 
-                    .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
+                    .col-xs-12.col-sm-4.col-md-2.col-lg-2.col-grid
                       h3.text-left 
                         a(href='asiapedia.html') Events
                       ul.list-unstyled.bullet-list.text-left
@@ -256,7 +266,7 @@ header.site-header
                         li
                           a(href='asiapedia-search.html') Global Events
                                            
-                    .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
+                    .col-xs-12.col-sm-4.col-md-3.col-lg-2.col-grid
                       h3.text-left  
                        a(href='asia-briefing.html') Asia Briefing
                       ul.list-unstyled.list-unstyled.bullet-list.text-left
@@ -277,7 +287,7 @@ header.site-header
                           a(href='asiapedia-search.html') Russia Briefing
                         li
                           a(href='asiapedia-search.html') Silk Road Briefing                                                                  
-                    .col-xs-12.col-sm-4.col-md-4.col-lg-3.col-grid
+                    .col-xs-12.col-sm-4.col-md-3.col-lg-2.col-grid
                       h3.text-left  
                        a(href='asia-briefing.html') Asiapedia
                       ul.list-unstyled.list-unstyled.bullet-list.text-left
@@ -296,7 +306,15 @@ header.site-header
                         li                          
                           a(href='asiapedia-search.html') Infographic
                         li
-                          a(href='asiapedia-search.html') Industry Profile   
+                          a(href='asiapedia-search.html') Industry Profile
+                    .col-xs-12.col-sm-6.col-md-4.col-lg-3.col-grid
+                      .card.gray-light-bg.mb-2.p-arround-2
+                          i
+                            img(alt='', src='http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg', width='100%')
+                          h3.pt-2.pr-2.text-left To receive knowledge, insight and a better understanding of Asia.
+                          p.text-left
+                              | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications including. We provide FREE magazines and guide, presentations, webinar, podcasta, report, Q&As and more
+                          a.btn.btn-secondary.mb-2.text-white(href='personnel.html') Login/Subscribe  
             li.dropdown
               a.contact-button(href='#' data-trigger data-turn-header-white)
                 | Contact Us 
