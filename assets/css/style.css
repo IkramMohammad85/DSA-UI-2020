@@ -2323,16 +2323,17 @@ ul.list-blue-border {
     transition-delay: 0s;
     /* react immediately on hover */ }
 
-.dropdown-content-medium .login-block, .dropdown-content-medium .create-ac-block {
-  min-height: 382px; }
-  .dropdown-content-medium .login-block .btn, .dropdown-content-medium .create-ac-block .btn {
-    padding: 3px 10px;
-    min-width: 120px; }
+.dropdown-content-medium .login-block .btn, .dropdown-content-medium .create-ac-block .btn {
+  padding: 3px 10px;
+  min-width: 120px; }
 
 .dropdown-content-medium .create-ac-block input {
   background-color: #fff;
   width: 200px;
   font-size: 14px; }
+
+.login-block, .create-ac-block {
+  min-height: 390px; }
 
 .dropdown-content form .form-field {
   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0), 0 1px 20px 0 rgba(0, 0, 0, 0.1); }
