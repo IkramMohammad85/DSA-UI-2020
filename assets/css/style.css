@@ -2944,7 +2944,8 @@ div.zabuto_calendar {
   background-color: #0D2338;
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  border-radius: 2px; }
 
 .timeline__box {
   position: relative; }
