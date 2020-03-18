@@ -139,3 +139,4 @@ function getCookie(t) {
       return ""
 }
 
+ScrollReveal().reveal('.scroll-reveal');
