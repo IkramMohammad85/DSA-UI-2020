@@ -2988,6 +2988,9 @@ div.zabuto_calendar {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
   background-color: #fff; }
 
+.timeline__content img {
+  width: 150px; }
+
 @media screen and (min-width: 641px) {
   .timeline:before {
     left: 30px; }
