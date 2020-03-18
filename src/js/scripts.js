@@ -139,9 +139,3 @@ function getCookie(t) {
       return ""
 }
 
-$("#my-calendar").zabuto_calendar({
-      nav_icon: {
-        prev: '<i class="icon-long-arrow-left"></i>',
-        next: '<i class="icon-long-arrow-right"></i>'
-      }
-    });
