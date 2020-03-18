@@ -5259,6 +5259,11 @@ header.site-header .site-header-blue .navbar li.dropdown:nth-last-child(2) a {
     height: 32px;
     background-position: -881px -5px; }
 
+.home .white-bg.bg-opacity {
+  background: rgba(255, 255, 255, 0.3); }
+  .home .white-bg.bg-opacity .related-insight-block {
+    background-color: #fff; }
+
 .home header.site-header #main-nav {
   background: rgba(13, 35, 56, 0.8); }
 
