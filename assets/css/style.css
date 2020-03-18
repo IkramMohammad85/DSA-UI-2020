@@ -2100,8 +2100,7 @@ $border-default: 1px solid #ccc;
     flex: 1; }
 
 .list-unstyled.bullet-list li {
-  background: url(../img/list-arrow.png) no-repeat 0 12px;
-  padding: 5px 20px; }
+  padding: 5px 5px 5px 0; }
   .list-unstyled.bullet-list li a:hover {
     color: #0D2338; }
 
@@ -4764,6 +4763,8 @@ ul.navbar {
 
 header.site-header .site-header-blue .navbar li.dropdown:nth-last-child(2) a {
   color: #000; }
+  header.site-header .site-header-blue .navbar li.dropdown:nth-last-child(2) a:hover {
+    color: #2981d1; }
 
 @media (max-width: 1200px) {
   .container {
