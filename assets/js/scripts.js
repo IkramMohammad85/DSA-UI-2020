@@ -460,4 +460,6 @@ function getCookie(t) {
   return "";
 }
 
-ScrollReveal().reveal('.scroll-reveal');
+ScrollReveal().reveal('.scroll-reveal', {
+  delay: 200
+});
