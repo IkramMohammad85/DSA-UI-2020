@@ -2929,7 +2929,7 @@ div.zabuto_calendar {
     content: "";
     width: 2px;
     height: 100%;
-    background-color: #000;
+    background-color: #dadada;
     position: absolute;
     top: 0; }
 
@@ -2939,9 +2939,9 @@ div.zabuto_calendar {
     margin-top: 4rem; }
 
 .timeline__year {
-  padding: .5rem 1.5rem;
-  color: #fff;
-  background-color: #0D2338;
+  padding: 0px 5px;
+  color: #565656;
+  background-color: #fff;
   position: absolute;
   left: 0;
   top: 0;
@@ -2956,7 +2956,7 @@ div.zabuto_calendar {
     content: "";
     width: 96%;
     height: 2px;
-    background-color: #0D2338;
+    background-color: #dadada;
     position: absolute;
     left: 30px;
     z-index: -1; }
@@ -2971,7 +2971,8 @@ div.zabuto_calendar {
   background-color: white;
   color: #000;
   border-radius: 50%;
-  border: solid 1px #0D2338; }
+  border: solid 1px #dadada;
+  display: none; }
 
 .timeline__day {
   font-size: 2rem;
@@ -2984,14 +2985,11 @@ div.zabuto_calendar {
   text-transform: uppercase; }
 
 .timeline__post {
-  padding: 1.5rem 2rem;
+  padding: 0px;
   border-radius: 2px;
-  border-left: 3px solid #0D2338;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-  background-color: #fff; }
-
-.timeline__content img {
-  width: 150px; }
+  background-color: #fff;
+  border: solid 1px #f2f3f8;
+  background-color: #f2f3f8; }
 
 @media screen and (min-width: 641px) {
   .timeline:before {
