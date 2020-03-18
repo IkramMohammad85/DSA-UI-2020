@@ -3026,40 +3026,43 @@ div.zabuto_calendar {
 
 .tooltip {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  color: #000; }
 
 .tooltip .tooltiptext {
   visibility: hidden;
+  position: absolute;
   width: 120px;
   background-color: #000;
   color: #fff;
   text-align: center;
-  border-radius: 2px;
   padding: 2px 0;
-  position: absolute;
+  border-radius: 2px;
   z-index: 1;
-  bottom: 75%;
-  left: 50%;
-  margin-left: -60px;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  font-size: 11px;
+  font-size: 12px;
   text-transform: initial; }
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #000 transparent transparent transparent; }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1; }
+
+.tooltip-bottom {
+  top: 90%;
+  left: 50%;
+  margin-left: -60px; }
+
+.tooltip-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000 transparent; }
 
 @font-face {
   font-family: "NimbusSanL";
@@ -5262,6 +5265,11 @@ header.site-header .site-header-blue .navbar li.dropdown:nth-last-child(2) a {
 .home .white-bg.bg-opacity {
   background: rgba(255, 255, 255, 0.3); }
   .home .white-bg.bg-opacity .related-insight-block {
+    background-color: #fff; }
+
+.home .white-bg.black-bg-opacity {
+  background: rgba(0, 0, 0, 0.2); }
+  .home .white-bg.black-bg-opacity .related-insight-block {
     background-color: #fff; }
 
 .home header.site-header #main-nav {
