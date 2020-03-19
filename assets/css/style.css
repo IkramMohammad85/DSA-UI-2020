@@ -3732,6 +3732,9 @@ strong {
 .text-center {
   text-align: center; }
 
+.font-weight {
+  font-weight: normal; }
+
 .w-100 {
   width: 100% !important; }
 
