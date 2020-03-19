@@ -4818,6 +4818,9 @@ header.site-header .site-header-blue .navbar li.dropdown:nth-last-child(2) a {
   header.site-header .site-header-blue .navbar li.dropdown:nth-last-child(2) a:hover {
     color: #2981d1; }
 
+ul.top-quick-link li.dropdown.open:hover .tooltiptext {
+  display: none !important; }
+
 @media (max-width: 1200px) {
   .container {
     max-width: 100% !important; }

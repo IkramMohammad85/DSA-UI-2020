@@ -589,6 +589,15 @@ header.site-header {
   }
 }
 }
+ul.top-quick-link {
+	li.dropdown.open {
+		&:hover{
+      .tooltiptext{display: none !important;}
+			
+		}
+	}
+}
+
 
 //Tablets
 @media (max-width: $reflex-lg) {
