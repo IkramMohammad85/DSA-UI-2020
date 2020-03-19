@@ -41,6 +41,12 @@
 .white-bg {
   background-color: $white;
 }
+.gray-very-light-bg {
+  background-color: #ececec;
+  &.hover-bg{
+    &:hover{  background-color: #f7f7f7;}
+  }
+}
 .gray-light-bg {
   background: #eee;
 }

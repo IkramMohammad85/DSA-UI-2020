@@ -3429,6 +3429,11 @@ strong {
 .white-bg {
   background-color: #fff; }
 
+.gray-very-light-bg {
+  background-color: #ececec; }
+  .gray-very-light-bg.hover-bg:hover {
+    background-color: #f7f7f7; }
+
 .gray-light-bg {
   background: #eee; }
 
