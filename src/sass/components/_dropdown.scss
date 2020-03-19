@@ -151,6 +151,17 @@
   border-top: 1px solid #cecece;
   width: 70%;
 }
+.dropdown {
+  .dropdown-content{
+    .list-inline{
+      li{ display: inline; padding: 0px;
+        &::before {
+          color: #2a2a2a;
+        }
+      }
+    }
+  }
+}
 //Tablets
 @media (max-width: $reflex-lg) {
   .dropdown {

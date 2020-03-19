@@ -2350,6 +2350,12 @@ ul.list-blue-border {
   border-top: 1px solid #cecece;
   width: 70%; }
 
+.dropdown .dropdown-content .list-inline li {
+  display: inline;
+  padding: 0px; }
+  .dropdown .dropdown-content .list-inline li::before {
+    color: #2a2a2a; }
+
 @media (max-width: 1200px) {
   .dropdown .dropdown-content.dropdown-content-medium {
     min-width: 600px;
@@ -4704,8 +4710,6 @@ ul.top-quick-link {
     ul.top-quick-link li.dropdown.open {
       background-color: #f1f1f1;
       border-radius: 3px; }
-    ul.top-quick-link li:last-child {
-      padding-right: 0; }
 
 ul.navbar {
   float: right;
