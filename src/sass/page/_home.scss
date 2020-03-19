@@ -4,8 +4,17 @@
     .related-insight-block{ background-color: #fff;}
   }
   .white-bg.black-bg-opacity{
-    background: rgba(0, 0, 0, 0.2);
-    .related-insight-block{ background-color: #d0d8e8;}
+    background: rgba(49, 106, 163, 0.2);
+    .related-insight-block{ border: solid 1px #51657c;}
+    h4{
+      a{ color: #eceef0;}
+    }
+    small{
+      color:#51657c;
+    }
+  }
+  .related-insight{
+    h5{ color: #d1cfcd;}
   }
   header.site-header {
     #main-nav {
