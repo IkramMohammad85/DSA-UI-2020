@@ -1878,7 +1878,9 @@ $border-default: 1px solid #ccc;
 
 @media (max-width: 1440px) {
   .card.about-us .card-header-img {
-    height: auto; } }
+    height: auto; }
+  .card.office .card-body .list-logo {
+    width: 40px; } }
 
 @media (max-width: 1200px) {
   .card.news {

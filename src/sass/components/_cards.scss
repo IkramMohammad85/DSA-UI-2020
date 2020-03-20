@@ -546,8 +546,16 @@
     .card-header-img {
       height:auto ;
     }
-  }}
-
+  }
+// office
+  &.office {
+      .card-body {
+        .list-logo {
+          width: 40px;
+        }
+      }
+    }
+}
 }
 
 //Tablets
