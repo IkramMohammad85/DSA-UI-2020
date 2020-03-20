@@ -181,14 +181,14 @@
   .dropdown {
     .dropdown-content {
       &.dropdown-content-medium {
-        min-width: 600px;
+        min-width: 768px;
         max-width: 100%;
-        left: -260px !important;
+        left: -346px !important;
       }
       &.dropdown-content-large {
         max-width: 100%;
-        min-width: 720px;
-        left: -410px !important;
+        min-width: 768px;
+        left: -434px !important;
       }
     }
   }
@@ -199,19 +199,21 @@
   .dropdown {
     .dropdown-content {
       &.dropdown-content-medium {
-        min-width: 320px;
+        min-width: 375px;
         max-width: 100%;
-        left: -120px !important;
+        left: -149px !important;
+        .btn-close{ right: 0px; position: absolute; top: 0px;}
       }
       &.dropdown-content-large {
         max-width: 100%;
-        min-width: 320px;
-        left: -205px !important;
+        min-width: 375px;
+        left: -237px !important;
+        .btn-close{ right: 0px; position: absolute; top: 0px;}
       }
       &.dropdown-content-normal{
         max-width: 100%;
-        min-width: 320px;
-        left: -70px !important;
+        min-width: 375px;
+        left: -99px !important;
       }
     }
   }
