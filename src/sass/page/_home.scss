@@ -162,7 +162,8 @@
             visibility: hidden;
             opacity: 0;
             left: 0;
-            background-color: #19283F;
+            background-color: $light-blue;
+            border-color: $light-blue;
             a.btn {
               color: #fff !important;
             }

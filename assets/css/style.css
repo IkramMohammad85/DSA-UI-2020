@@ -5428,7 +5428,8 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
           visibility: hidden;
           opacity: 0;
           left: 0;
-          background-color: #19283F; }
+          background-color: #316aa3;
+          border-color: #316aa3; }
           .home .big-banner .item .related-insight .related-insight-block .content a.btn {
             color: #fff !important; }
           .home .big-banner .item .related-insight .related-insight-block .content p {
