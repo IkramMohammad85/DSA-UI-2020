@@ -14,7 +14,14 @@
     }
   }
   .related-insight{
+    .related-insight-block{border: solid 1px #51657c}
     h5{ color: #d1cfcd;}
+    h4{
+      a{ color: #fff;}
+    }
+    small{
+      color:#627892;
+    }
   }
   header.site-header {
     #main-nav {
