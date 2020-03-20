@@ -647,6 +647,9 @@
       .card-body {
         min-height: auto;
         overflow: hidden;
+        .list-logo {
+          width: 94px;
+        }
       }
     }
     &.service-news {

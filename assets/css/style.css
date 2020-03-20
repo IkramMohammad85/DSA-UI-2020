@@ -1929,6 +1929,8 @@ $border-default: 1px solid #ccc;
   .card.office .card-body {
     min-height: auto;
     overflow: hidden; }
+    .card.office .card-body .list-logo {
+      width: 94px; }
   .card.service-news .card-body {
     min-height: 100%; }
   .card.service-news .card-header-img .card-text-overlap {
@@ -2218,10 +2220,7 @@ ul.list-blue-border {
 
 @media (max-width: 576px) {
   .list.lists-events .date-block {
-    float: inherit;
     border-bottom: solid 1px #dadada; }
-  .list.lists-events .dec-block {
-    margin-left: 0px; }
   .list.latest-news li {
     min-height: auto; }
   .list.lists-events.list-events-inline li {
