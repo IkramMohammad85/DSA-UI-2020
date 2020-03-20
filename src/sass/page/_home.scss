@@ -719,7 +719,18 @@
     }
 }
 
-
+@media (max-width: $reflex-xs) {
+  .home {
+    .big-banner{
+      .item {
+        .related-insight{
+           .related-insight-block{ background: rgba(0, 0, 0, 0.5)}
+        }
+      }
+    }
+  }
+  
+}
 
 @media (max-width: 1750px) {
   .big-banner {
