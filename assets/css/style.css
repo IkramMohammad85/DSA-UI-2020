@@ -2634,9 +2634,13 @@ section.asiapedia-section {
   background-color: #316aa3 !important; }
 
 .darker-gray-bg .accordion-heading {
-  background-color: #dedede !important; }
+  background-color: #dedede !important;
+  color: #000; }
   .darker-gray-bg .accordion-heading:hover, .darker-gray-bg .accordion-heading:focus {
     color: inherit !important; }
+
+.darker-gray-bg .accordion-item.open .accordion-heading {
+  color: #000 !important; }
 
 .breadcrumb {
   border-bottom: solid 1px #ebebeb; }

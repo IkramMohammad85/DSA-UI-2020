@@ -114,7 +114,10 @@
 }
 .darker-gray-bg{
   .accordion-heading{
-    background-color: #dedede !important;
+    background-color: #dedede !important; color: $black;
     &:hover,&:focus{ color: inherit !important;}
 }
+.accordion-item.open{ 
+  .accordion-heading{color: $black !important;}
+  }
 }
