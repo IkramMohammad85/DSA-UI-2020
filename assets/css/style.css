@@ -2633,6 +2633,9 @@ section.asiapedia-section {
 .light-blue-bg .accordion-heading {
   background-color: #316aa3 !important; }
 
+.darker-gray-bg .accordion-heading {
+  background-color: #dedede !important; }
+
 .breadcrumb {
   border-bottom: solid 1px #ebebeb; }
   .breadcrumb ul {
@@ -3518,6 +3521,10 @@ strong {
 
 .blue-dark-bg {
   background-color: #0D2338; }
+
+.darker-gray-bg {
+  background-color: #dedede;
+  color: #000; }
 
 .blue-dark-bg-normal {
   background-color: #2f5496; }
