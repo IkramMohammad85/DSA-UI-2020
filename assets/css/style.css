@@ -1599,6 +1599,10 @@ $border-default: 1px solid #ccc;
         color: #fff; }
         .card.about-us .content p a, .card.about-us .content h3 a {
           color: #fff; }
+      .card.about-us .content ul {
+        color: #7eb1e6; }
+        .card.about-us .content ul li a {
+          color: #7eb1e6; }
     .card.about-us .card-header-img {
       background-color: #1a2940;
       height: 198px; }
