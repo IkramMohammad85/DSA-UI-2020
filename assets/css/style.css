@@ -2630,6 +2630,9 @@ section.asiapedia-section {
   .accordion-wrapper.vertical-menu .accordion-item .accordion-content .list li.active a {
     color: #2981d1; }
 
+.light-blue-bg .accordion-heading {
+  background-color: #316aa3 !important; }
+
 .breadcrumb {
   border-bottom: solid 1px #ebebeb; }
   .breadcrumb ul {
