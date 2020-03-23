@@ -2865,8 +2865,9 @@ section.asiapedia-section {
   padding-right: 30px;
   margin-bottom: 0px; }
 
-#contact-us-popup form .form-field select, #contact-us-popup form .form-field input {
-  font-size: 14px; }
+#contact-us-popup form .form-field select, #contact-us-popup form .form-field input, #contact-us-popup form .form-field textarea {
+  font-size: 14px;
+  margin-top: 0px; }
 
 .modal#contact-us-popup {
   top: 50px; }

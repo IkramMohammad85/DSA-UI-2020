@@ -9,7 +9,7 @@ head
   title Dezan Shira & Associates!
 body
   #wrapper
-    include components/_header
+    include components/_header-blueV2 
     section.banner
         img(alt='', src='https://www.dezshira.com/themes/dsa/images/services/banner-business-intelligence-solutions.jpg')    
         .container
@@ -214,31 +214,31 @@ body
             section.modal-content
                         form(action='https://www.dezshira.com/events/search', method='GET')
                             .grid
-                                .col-md-4.col-lg-4
+                                .col-md-4.col-lg-4.pt-0
                                     .form-field
                                         label(for='fname')
                                         input#fname.required(type='text', name='fname', placeholder='Enter your name', value='')
-                                .col-md-4.col-lg-4
+                                .col-md-4.col-lg-4.pt-0
                                     .form-field
                                         label(for='lname')
                                         input#lname.required(type='text', name='lname', placeholder='Enter your last name',  value='')
-                                .col-md-4.col-lg-4
+                                .col-md-4.col-lg-4.pt-0
                                     .form-field
                                         label(for='email_address')
                                         input#email_address.required.email(type='text', name='email_address', placeholder='Enter your email',  value='')
-                                .col-md-12.col-md-lg
+                                .col-md-12.col-md-lg.pt-0
                                     .form-field
                                         label(for='organization')
                                         input#organization.required(type='text', name='organization', placeholder='Enter organization name',  value='')
-                                .col-md-4.col-lg-4
+                                .col-md-4.col-lg-4.pt-0
                                     .form-field
                                         label(for='telephone')
                                         input#telephone.required(type='text', name='telephone', placeholder='Enter telephone number name', value='')
-                                .col-md-4.col-lg-4
+                                .col-md-4.col-lg-4.pt-0
                                     .form-field 
                                         label(for='company_website')
                                         input#company_website.required(type='text', name='company_website', placeholder='Enter website name', value='')
-                                .col-md-4.col-lg-4
+                                .col-md-4.col-lg-4.pt-0
                                     .form-field
                                         select#country.form-control.radius-none(name='country')
                                             option(value='', selected='selected') --Please Select an Option--
@@ -492,7 +492,7 @@ body
                                             option(value='Yugoslavia (former)') Yugoslavia (former)
                                             option(value='Zambia') Zambia
                                             option(value='Zimbabwe') Zimbabwe
-                                .col-md-6.col-lg-6
+                                .col-md-6.col-lg-6.pt-0
                                     .form-field
                                         label(for='investment_destination')
                                         select#investment_destination.required(name='investment_destination')
@@ -508,10 +508,10 @@ body
                                             option(value='Singapore') Singapore
                                             option(value='Thailand') Thailand
                                             option(value='Vietnam') Vietnam
-                                .col-md-6.col-lg-6
+                                .col-md-6.col-lg-6.pt-0
                                     .form-field
                                         input#other_investment_destination.radius-none(type='text', name='other_investment_destination', value='')
-                                .col-md-6.col-lg-6
+                                .col-md-6.col-lg-6.pt-0
                                     .form-field
                                         label(for='type_service_required')
                                         select#type_service_required.required(name='type_service_required')
@@ -533,10 +533,10 @@ body
                                             option(value='Tax Advisory & Planning') Tax Advisory &amp; Planning
                                             option(value='Technology, IT and ERP Services') Technology, IT and ERP Services
                                             option(value='Other') Other
-                                .col-md-6.col-lg-6
+                                .col-md-6.col-lg-6.pt-0
                                     .form-field
                                         input#other_type_service_required.form-control(type='text', name='other_type_service_required', value='')
-                                .col-md-6.col-lg-6
+                                .col-md-6.col-lg-6.pt-0
                                     .form-field
                                         label(for='reference')
                                         select#reference.form-control.radius-none.required(name='reference')
@@ -557,27 +557,25 @@ body
                                             option(value='Referral - Informal') Referral - Informal
                                             option(value='YPO') YPO
                                             option(value='Alliance - Integra') Alliance - Integra
-                                .col-md-6.col-lg-6
+                                .col-md-6.col-lg-6.pt-0
                                     .form-field
                                         input#other_reference(type='text', name='other_reference', value='')
-                                .col-md-12.col-lg-12
+                                .col-md-12.col-lg-12.pt-0
                                     .form-field
-                                        textarea#comments.form-control.radius-none(name='comments', rows='10', spellcheck='false', placeholder='Your message here...')
+                                        textarea#comments.form-control.radius-none(name='comments', rows='5', spellcheck='false', placeholder='Your message here...')
 
-                                .col-md-6.col-lg-6
+                                .col-md-6.col-lg-6.pt-0
                                         strong Security Check
-                                        br
                                         br
                                         img#siimage(src='https://www.dezshira.com/includes/modules/securimage/securimage_show.php', alt='captcha image')
                                         a#reload_captcha.btn(title='Reload Code')  
-                                .col-md-6.col-lg-6
+                                .col-md-6.col-lg-6.pt-0
                                     .form-field
-                                        br
                                         br
                                         input.form-control.required(type='text', name='captcha_code', value='', placeholder='Security Code')
                                         br
                                         small The code is case-sensitive
-                                .col-md-12.col-lg-12
+                                .col-md-12.col-lg-12.pt-0
                                         button.btn.btn-primary.float-right(type='submit') Submit
 
 
