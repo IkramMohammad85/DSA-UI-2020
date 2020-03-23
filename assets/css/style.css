@@ -1577,6 +1577,28 @@ $border-default: 1px solid #ccc;
     position: relative;
     -webkit-box-flex: 1;
     flex: 1 1 auto; }
+    .card.about-us:hover .content {
+      top: 0;
+      -webkit-transition: opacity 0.5s linear;
+      transition: opacity 0.5s linear;
+      visibility: visible;
+      opacity: 1;
+      padding: 40px 40px 0px 40px; }
+    .card.about-us .content {
+      top: 0px;
+      min-height: 450px;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      background-color: #19283F;
+      border-color: #19283F; }
+      .card.about-us .content a.btn {
+        color: #fff !important; }
+      .card.about-us .content p, .card.about-us .content h3 {
+        line-height: 24px;
+        color: #fff; }
+        .card.about-us .content p a, .card.about-us .content h3 a {
+          color: #fff; }
     .card.about-us .card-header-img {
       background-color: #1a2940;
       height: 198px; }
@@ -1911,7 +1933,9 @@ $border-default: 1px solid #ccc;
   .card.about-us .card-body {
     min-height: 260px; }
     .card.about-us .card-body p {
-      line-height: 24px; } }
+      line-height: 24px; }
+  .card.about-us .content {
+    min-height: auto; } }
 
 @media (max-width: 992px) {
   .card .card-header-img {

@@ -166,6 +166,32 @@
    &.about-us {
     position: relative;
     flex: 1 1 auto;
+    &:hover {
+      .content {
+        top: 0;
+        transition: opacity 0.5s linear;
+        visibility: visible;
+        opacity: 1;
+        padding: 40px 40px 0px 40px;
+      }
+    }
+    .content {
+      top: 0px;
+      min-height: 450px;
+      visibility: hidden;
+      opacity: 0;
+      left: 0;
+      background-color: #19283F;
+      border-color: #19283F;
+      a.btn {
+        color: #fff !important;
+      }
+      
+      p,h3 {
+        line-height: 24px; color: #fff;
+        a{ color: #fff;}
+      }
+    }
     .card-header-img {
       background-color: $deep-blue;
       height: 198px;
@@ -611,6 +637,7 @@
         min-height: 260px;
         p{ line-height: 24px;}
       }
+    .content { min-height: auto;}
     }
   }
 }
