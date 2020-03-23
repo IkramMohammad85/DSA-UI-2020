@@ -2635,6 +2635,8 @@ section.asiapedia-section {
 
 .darker-gray-bg .accordion-heading {
   background-color: #dedede !important; }
+  .darker-gray-bg .accordion-heading:hover {
+    color: inherit !important; }
 
 .breadcrumb {
   border-bottom: solid 1px #ebebeb; }

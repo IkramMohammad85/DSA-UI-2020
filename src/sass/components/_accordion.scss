@@ -112,10 +112,9 @@
 
   }
 }
-
 .darker-gray-bg{
   .accordion-heading{
     background-color: #dedede !important;
-
+    &:hover{ color: inherit !important;}
 }
 }
