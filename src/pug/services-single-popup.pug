@@ -217,42 +217,29 @@ body
                                 .col-md-4.col-lg-4
                                     .form-field
                                         label(for='fname')
-                                            span.required-field *
-                                            |  First Name
                                         input#fname.required(type='text', name='fname', placeholder='Enter your name', value='')
                                 .col-md-4.col-lg-4
                                     .form-field
                                         label(for='lname')
-                                            span.required-field *
-                                            |  Last Name
                                         input#lname.required(type='text', name='lname', placeholder='Enter your last name',  value='')
                                 .col-md-4.col-lg-4
                                     .form-field
                                         label(for='email_address')
-                                            span.required-field *
-                                            |  Email Address
                                         input#email_address.required.email(type='text', name='email_address', placeholder='Enter your email',  value='')
                                 .col-md-12.col-md-lg
                                     .form-field
                                         label(for='organization')
-                                            span.required-field *
-                                            |  Organisation / Company
                                         input#organization.required(type='text', name='organization', placeholder='Enter organization name',  value='')
                                 .col-md-4.col-lg-4
                                     .form-field
                                         label(for='telephone')
-                                            span.required-field *
-                                            |  Telephone
                                         input#telephone.required(type='text', name='telephone', placeholder='Enter telephone number name', value='')
                                 .col-md-4.col-lg-4
                                     .form-field 
                                         label(for='company_website')
-                                            span.required-field *
-                                            |  Company Website
                                         input#company_website.required(type='text', name='company_website', placeholder='Enter website name', value='')
                                 .col-md-4.col-lg-4
                                     .form-field
-                                        label(for='country') Country/Territory
                                         select#country.form-control.radius-none(name='country')
                                             option(value='', selected='selected') --Please Select an Option--
                                             option(value='Belt & Road Initiative') Belt &amp; Road Initiative
@@ -508,8 +495,6 @@ body
                                 .col-md-6.col-lg-6
                                     .form-field
                                         label(for='investment_destination')
-                                            span.required-field *
-                                            |  Investment Destination Of Interest
                                         select#investment_destination.required(name='investment_destination')
                                             option(value='', selected='selected') --Please Select an Option--
                                             option(value='Belt & Road Initiative') Belt &amp; Road Initiative
@@ -525,13 +510,10 @@ body
                                             option(value='Vietnam') Vietnam
                                 .col-md-6.col-lg-6
                                     .form-field
-                                        label(for='other_investment_destination') Specify Other Investment Destination Of Interest 
                                         input#other_investment_destination.radius-none(type='text', name='other_investment_destination', value='')
                                 .col-md-6.col-lg-6
                                     .form-field
                                         label(for='type_service_required')
-                                            span.required-field *
-                                            |  Type of Service Required
                                         select#type_service_required.required(name='type_service_required')
                                             option(value='', selected='selected') --Please Select an Option--
                                             option(value='Accounting, Financial Reporting & Review') Accounting, Financial Reporting &amp; Review
@@ -553,13 +535,10 @@ body
                                             option(value='Other') Other
                                 .col-md-6.col-lg-6
                                     .form-field
-                                        label(for='other_type_service_required') Specify Other Type of Service Required 
                                         input#other_type_service_required.form-control(type='text', name='other_type_service_required', value='')
                                 .col-md-6.col-lg-6
                                     .form-field
                                         label(for='reference')
-                                            span.required-field *
-                                            |  How did you hear about us?
                                         select#reference.form-control.radius-none.required(name='reference')
                                             option(value='', selected='selected') --Please Select an Option--
                                             option(value='Alliance - ETL') Alliance - ETL
@@ -580,11 +559,9 @@ body
                                             option(value='Alliance - Integra') Alliance - Integra
                                 .col-md-6.col-lg-6
                                     .form-field
-                                        label(for='other_reference') Specify Other Source Where You Found Us 
                                         input#other_reference(type='text', name='other_reference', value='')
                                 .col-md-12.col-lg-12
                                     .form-field
-                                        label(for='comments') Message
                                         textarea#comments.form-control.radius-none(name='comments', rows='10', spellcheck='false', placeholder='Your message here...')
 
                                 .col-md-6.col-lg-6
