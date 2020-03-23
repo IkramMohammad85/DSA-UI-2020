@@ -191,12 +191,16 @@ body
                             span
                                 | Explore our library of 
                                 | business resources
-    section.light-blue-bg.pt-7.pb-7
-        .container
-            .grid
-                .col-sm.col-md-10.col-lg-10.col-grid.offset-md-1.offset-lg-1
-                    h2 CONTACT US
-                    h3.mb-4 Ask a question
+    section.light-blue-bg.pt-3.pb-3.accordion-wrapper.accordion-normal(data-autoclose)
+            .container.accordion-item
+                .grid.accordion-heading
+                    .col-sm.col-md-2.col-grid.offset-md-1.offset-lg-1.offset-xlg-1.text-right.text-align-left-xs.text-align-left-sm
+                            img(alt='', src='https://www.dezshira.com/themes/dsa/images/icons/Subscribe@2x.png' width='85')
+                    .col-sm.col-md-8.col-lg-8.col-xlg-8.col-grid
+                            h4.pt-2 SUBSCRIBE
+                            h1
+                                    | Join over thousands of people who receive weekly foreign investment news in Asia
+                .accordion-content
                     form(action='https://www.dezshira.com/events/search', method='GET')
                         .grid
                             .col-md-4.col-lg-4
@@ -217,6 +221,12 @@ body
                                         span.required-field *
                                         |  Email Address
                                     input#email_address.required.email(type='text', name='email_address', placeholder='Enter your email',  value='')
+                            .col-md-12.col-md-lg
+                                .form-field
+                                    label(for='organization')
+                                        span.required-field *
+                                        |  Organisation / Company
+                                    input#organization.required(type='text', name='organization', placeholder='Enter organization name',  value='')
                             .col-md-4.col-lg-4
                                 .form-field
                                     label(for='telephone')
@@ -227,15 +237,13 @@ body
                                 .form-field 
                                     label(for='company_website')
                                         span.required-field *
-                                        |  Website
+                                        |  Company Website
                                     input#company_website.required(type='text', name='company_website', placeholder='Enter website name', value='')
                             .col-md-4.col-lg-4
-                                .form-field 
-                                    label(for='country')
-                                        span.required-field *
-                                        |  Country
-                                    select#country(name='country', placeholder='* Country', required='', aria-required='true')
-                                        option.text-muted(value='') Country
+                                .form-field
+                                    label(for='country') Country/Territory
+                                    select#country.form-control.radius-none(name='country')
+                                        option(value='', selected='selected') --Please Select an Option--
                                         option(value='Belt & Road Initiative') Belt &amp; Road Initiative
                                         option(value='Afghanistan, Islamic State') Afghanistan, Islamic State
                                         option(value='Åland Islands') &angst;land Islands
@@ -486,10 +494,88 @@ body
                                         option(value='Yugoslavia (former)') Yugoslavia (former)
                                         option(value='Zambia') Zambia
                                         option(value='Zimbabwe') Zimbabwe
+                            .col-md-6.col-lg-6
+                                .form-field
+                                    label(for='investment_destination')
+                                        span.required-field *
+                                        |  Investment Destination Of Interest
+                                    select#investment_destination.required(name='investment_destination')
+                                        option(value='', selected='selected') --Please Select an Option--
+                                        option(value='Belt & Road Initiative') Belt &amp; Road Initiative
+                                        option(value='China') China
+                                        option(value='Hong Kong') Hong Kong
+                                        option(value='India') India
+                                        option(value='Indonesia') Indonesia
+                                        option(value='Malaysia') Malaysia
+                                        option(value='Philippines') Philippines
+                                        option(value='Russia') Russia
+                                        option(value='Singapore') Singapore
+                                        option(value='Thailand') Thailand
+                                        option(value='Vietnam') Vietnam
+                            .col-md-6.col-lg-6
+                                .form-field
+                                    label(for='other_investment_destination') Specify Other Investment Destination Of Interest 
+                                    input#other_investment_destination.radius-none(type='text', name='other_investment_destination', value='')
+                            .col-md-6.col-lg-6
+                                .form-field
+                                    label(for='type_service_required')
+                                        span.required-field *
+                                        |  Type of Service Required
+                                    select#type_service_required.required(name='type_service_required')
+                                        option(value='', selected='selected') --Please Select an Option--
+                                        option(value='Accounting, Financial Reporting & Review') Accounting, Financial Reporting &amp; Review
+                                        option(value='Audit and risk advisory') Audit and risk advisory
+                                        option(value='Country Comparison / Site Selection') Country Comparison / Site Selection
+                                        option(value='Corporate Establishment and Governance') Corporate Establishment and Governance
+                                        option(value='Legal Services') Legal Services
+                                        option(value='Due Diligence') Due Diligence
+                                        option(value='HR Advisory and Payroll') HR Advisory and Payroll
+                                        option(value='Intellectual Property') Intellectual Property
+                                        option(value='Joint Ventures and Match making') Joint Ventures and Match making
+                                        option(value='Mergers and Acquisitions') Mergers and Acquisitions
+                                        option(value='Market Research and Business Intelligence') Market Research and Business Intelligence
+                                        option(value='Recruitment') Recruitment
+                                        option(value='Transfer Pricing') Transfer Pricing
+                                        option(value='Visa & Work Permits') Visa &amp; Work Permits
+                                        option(value='Tax Advisory & Planning') Tax Advisory &amp; Planning
+                                        option(value='Technology, IT and ERP Services') Technology, IT and ERP Services
+                                        option(value='Other') Other
+                            .col-md-6.col-lg-6
+                                .form-field
+                                    label(for='other_type_service_required') Specify Other Type of Service Required 
+                                    input#other_type_service_required.form-control(type='text', name='other_type_service_required', value='')
+                            .col-md-6.col-lg-6
+                                .form-field
+                                    label(for='reference')
+                                        span.required-field *
+                                        |  How did you hear about us?
+                                    select#reference.form-control.radius-none.required(name='reference')
+                                        option(value='', selected='selected') --Please Select an Option--
+                                        option(value='Alliance - ETL') Alliance - ETL
+                                        option(value='Alliance - IBA') Alliance - IBA
+                                        option(value='Alliance - IR Global') Alliance - IR Global
+                                        option(value='Alliance - LEA') Alliance - LEA
+                                        option(value='Asia Briefing') Asia Briefing
+                                        option(value='Clients') Clients
+                                        option(value='Embassy, Consulate, Chamber') Embassy, Consulate, Chamber
+                                        option(value='Internal') Internal
+                                        option(value='Networking') Networking
+                                        option(value='Other') Other
+                                        option(value='Other AB Partner') Other AB Partner
+                                        option(value='Personal') Personal
+                                        option(value='Referral - Affiliate') Referral - Affiliate
+                                        option(value='Referral - Informal') Referral - Informal
+                                        option(value='YPO') YPO
+                                        option(value='Alliance - Integra') Alliance - Integra
+                            .col-md-6.col-lg-6
+                                .form-field
+                                    label(for='other_reference') Specify Other Source Where You Found Us 
+                                    input#other_reference(type='text', name='other_reference', value='')
                             .col-md-12.col-lg-12
                                 .form-field
                                     label(for='comments') Message
                                     textarea#comments.form-control.radius-none(name='comments', rows='10', spellcheck='false', placeholder='Your message here...')
+
                             .col-md-6.col-lg-6
                                     strong Security Check
                                     br
@@ -504,7 +590,8 @@ body
                                     br
                                     small The code is case-sensitive
                             .col-md-12.col-lg-12
-                                    button.btn.btn-primary.float-right(type='submit') Send
+                                    button.btn.btn-primary.float-right(type='submit') Submit
+
     include components/_footer
     
     //JavaScript
