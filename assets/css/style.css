@@ -4308,25 +4308,25 @@ form .form-field select:focus {
   background: #e9ecef; }
 
 form .form-field input::-webkit-input-placeholder, form .form-field textarea::-webkit-input-placeholder, form .form-field select::-webkit-input-placeholder {
-  color: #adadad;
+  color: #6c757d !important;
   font-weight: 200; }
 
 form .form-field input::-moz-placeholder, form .form-field textarea::-moz-placeholder, form .form-field select::-moz-placeholder {
-  color: #adadad;
+  color: #6c757d !important;
   font-weight: 200; }
 
 form .form-field input:-ms-input-placeholder, form .form-field textarea:-ms-input-placeholder, form .form-field select:-ms-input-placeholder {
-  color: #adadad;
+  color: #6c757d !important;
   font-weight: 200; }
 
 form .form-field input::-ms-input-placeholder, form .form-field textarea::-ms-input-placeholder, form .form-field select::-ms-input-placeholder {
-  color: #adadad;
+  color: #6c757d !important;
   font-weight: 200; }
 
 form .form-field input::placeholder,
 form .form-field textarea::placeholder,
 form .form-field select::placeholder {
-  color: #adadad;
+  color: #6c757d !important;
   font-weight: 200; }
 
 .light-blue-bg form .form-field label {
