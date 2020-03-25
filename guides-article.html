@@ -12,12 +12,12 @@
   <div class="body-blackout"></div>
   <div id="wrapper">
     <header class="site-header">
-      <nav class="fixed-top" id="main-nav">
+      <nav class="fixed-top site-header-blue" id="main-nav">
         <div class="container"><a href="index.html"><img class="logo flex-img" src="assets/img/logo.png" alt="" data-dark="assets/img/logo-black.png"></a>
           <div class="hamburger-menu float-right" data-open="header-menu"><span></span><span></span><span></span></div>
           <div class="header-menu">
             <ul class="list-inline top-quick-link">
-              <li class="dropdown"><a data-trigger><i class="icon-sphere"></i><i class="down-arrow"></i></a>
+              <li class="dropdown tooltip"><span class="tooltiptext tooltip-bottom">International Desks</span><a data-trigger><i class="icon-sphere"></i><i class="down-arrow"></i></a>
                 <div class="dropdown-content dropdown-content-normal" data-dropdown> 
                   <ul class="list-unstyled list">
                     <li><a class="dropdown-item" href="international-desks-single.html"><i class="sprite sprite-flag-american float-left mr-1"></i><span>North America Desk</span></a></li>
@@ -32,57 +32,200 @@
                   </ul>
                 </div>
               </li>
-              <li class="dropdown"><a data-trigger><i class="icon-user"></i><i class="down-arrow"></i></a>
+              <li class="dropdown tooltip"><span class="tooltiptext tooltip-bottom">Subscribe/Login</span><a data-trigger><i class="icon-user"></i><i class="down-arrow"></i></a>
                 <div class="dropdown-content dropdown-content-medium" data-dropdown>
-                  <div class="btn-close hidden-lg hidden-xlg" data-closeBtn></div>
-                  <div class="grid">
+                  <div class="btn-close hidden-lg hidden-xlg hidden-md" data-closeBtn></div>
+                  <div class="grid pb-3">
                     <div class="col-md text-center"><a href="asiapedia.html"><img alt="" src="https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png" srcset="https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x"></a>
-                      <h6 class="text-capitalize-none">A place to share knowledge and better understand Asia</h6>
+                      <h5 class="text-capitalize-none">A place to share knowledge and better understand Asia</h5>
                     </div>
                     <div class="col-md-6 col-sm-6 col-grid">
-                      <form class="grey-bg p-arround-2" action="">
-                        <h3 class="text-capitalize text-center">Log In</h3>
+                      <div class="white-bg p-arround-2 login-block">
+                        <h5 class="text-uppercase text-left mt-2 border-bottom-dark-blue mb-3 pb-1">Create account</h5>
+                        <ul class="list-unstyled text-left login-popup">
+                          <li class="m">Download our FREE magazines and guides</li>
+                          <li class="n">Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications</li>
+                          <li class="w">Access presentations, webinars, podcasts, reports, Q&amp;As and more</li>
+                          <li class="c">Track paid orders and connect with our support team </li>
+                        </ul>
+                        <div class="text-center">
+                          <button class="btn btn-secondary text-white" type="submit">Subscribe</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-grid">
+                      <form class="dark-blue-bg p-arround-2 text-center create-ac-block" action="">
+                        <h3 class="text-center mb-3 mt-4">Log In</h3>
                         <input class="mb-1" type="text" placeholder="Enter email" name="email" required="">
                         <input class="mb-1" type="password" placeholder="Enter password" name="psw" required="">
-                        <button class="btn btn-secondary text-white mt-2" type="submit">Login</button><small class="text-center text-capitalize d-block mt-2"><a href="https://www.asiabriefing.com/customer/forgot-password">Forgot Password?</a></small>
+                        <button class="btn btn-secondary text-white mt-2" type="submit">Login</button><small class="text-center text-capitalize d-block mt-5"><a href="https://www.asiabriefing.com/customer/forgot-password">Forgot Password? </a></small>
                       </form>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-grid">
-                      <h5 class="text-capitalize text-left">Why subscribe to Asiapedia?</h5>
-                      <ul class="list-unstyled bullet-list text-left">
-                        <li>Download our FREE magazines and guides</li>
-                        <li>Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications</li>
-                        <li>Access presentations, webinars, podcasts, reports, Q&amp;As and more</li>
-                        <li>Track paid orders and connect with our support team </li>
-                      </ul>
-                    </div>
-                    <div class="col-md text-center p-0"><a class="btn btn-secondary text-white text-capitalize-none btn-block p-arround-1" href="register.html">Don&apos;t have an account? Sign Up    </a></div>
                   </div>
                 </div>
               </li>
-              <li><a href="brochure.html"><i class="icon-cloud-download"></i></a></li>
+              <li class="tooltip"><span class="tooltiptext tooltip-bottom">Download Brochure</span><a href="brochure.html"><i class="icon-cloud-download"></i></a></li>
+              <li class="dropdown tooltip"><span class="tooltiptext tooltip-bottom">Our Offices</span><a data-trigger><i class="icon-location"></i><i class="down-arrow"> </i></a>
+                <div class="dropdown-content dropdown-content-large" data-dropdown>
+                  <div class="btn-close hidden-md hidden-xlg" data-closeBtn></div>
+                  <div class="grid">
+                    <div class="col-sm-4 col-md-2 col-grid-2">
+                      <div class="gray-very-light-bg p-arround-2 hover-bg">
+                        <h5 class="text-left"> <a href="https://www.dezshira.com/office/china">China</a></h5>
+                        <ul class="list-unstyled text-left mb-0">
+                          <li><a href="https://www.dezshira.com/office/china/beijing.html">Beijing</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/dalian.html">Dalian</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/dongguan.html">Dongguan</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/guangzhou.html">Guangzhou</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/hangzhou.html">Hangzhou</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/ningbo.html">Ningbo</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/qingdao.html">Qingdao</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/shanghai.html">Shanghai</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/shenzhen.html">Shenzhen</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/suzhou.html">Suzhou</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/tianjin.html">Tianjin</a></li>
+                          <li><a href="https://www.dezshira.com/office/china/zhongshan.html">Zhongshan</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-3">
+                      <div class="gray-very-light-bg p-arround-2 hover-bg">
+                        <h5 class="mb-0 text-left"> <a href="https://www.dezshira.com/office/silk-belt-road.html">Belt & Road Initiative  </a></h5>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="mb-0 text-left"> <a href="https://www.dezshira.com/office/hong-kong.html">Hong Kong </a></h5>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="text-left">   <a href="https://www.dezshira.com/office/india.html">India</a></h5>
+                        <ul class="list-unstyled text-left mb-0">
+                          <li><a href="https://www.dezshira.com/office/india/bengaluru.html">Bengaluru </a></li>
+                          <li><a href="https://www.dezshira.com/office/india/delhi.html">Delhi</a></li>
+                          <li><a href="https://www.dezshira.com/office/india/mumbai.html">Mumbai</a></li>
+                        </ul>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="text-left">   <a href="https://www.dezshira.com/office/indonesia">Indonesia</a></h5>
+                        <ul class="list-unstyled text-left mb-0">
+                          <li><a href="https://www.dezshira.com/office/indonesia/jakarta.html">Jakarta </a></li>
+                          <li><a href="https://www.dezshira.com/office/indonesia/batam.html">Batam</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-3">
+                      <div class="gray-very-light-bg p-arround-2 hover-bg">
+                        <h5 class="text-left">   <a href="https://www.dezshira.com/office/italy"> Italian Liaison Offices </a></h5>
+                        <ul class="list-unstyled text-left mb-0">
+                          <li><a href="https://www.dezshira.com/office/italy/conegliano.html">Conegliano Office</a></li>
+                          <li><a href="https://www.dezshira.com/office/italy/eurolink-udine.html">Udine Office</a></li>
+                        </ul>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="text-left">   <a href="https://www.dezshira.com/office/germany"> German Liaison Offices </a></h5>
+                        <ul class="list-unstyled text-left mb-0">
+                          <li><a href="https://www.dezshira.com/office/germany/essen.html">Essen</a></li>
+                          <li><a href="https://www.dezshira.com/office/germany/cologne.html">Cologne</a></li>
+                          <li><a href="https://www.dezshira.com/office/germany/stuttgart.html">Stuttgart</a></li>
+                        </ul>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="text-left">   <a href="https://www.dezshira.com/office/usa"> USA Liaison Offices  </a></h5>
+                        <ul class="list-unstyled text-left mb-0">
+                          <li><a href="https://www.dezshira.com/office/usa/boston.html">Boston Office</a></li>
+                          <li><a href="https://www.dezshira.com/office/usa/salt-lake-city.html">Salt Lake City Office</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-2 col-lg-2">
+                      <div class="gray-very-light-bg p-arround-2 hover-bg">
+                        <h5 class="mb-0 text-left">  <a href="https://www.dezshira.com/office/malaysia.html"> Malaysia  </a></h5>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="mb-0 text-left">  <a href="https://www.dezshira.com/office/philippines.html"> Philippines </a></h5>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="text-left">   <a href="https://www.dezshira.com/office/russia"> Russia</a></h5>
+                        <ul class="list-unstyled text-left mb-0">
+                          <li><a href="https://www.dezshira.com/office/russia/moscow.html">Moscow Office</a></li>
+                          <li><a href="https://www.dezshira.com/office/russia/st-petersburg.html">St.Petersburg Office</a></li>
+                          <li><a href="https://www.dezshira.com/office/russia/irkutsk.html">Irkutsk Office</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-2 col-lg-2">
+                      <div class="gray-very-light-bg p-arround-2 hover-bg">
+                        <h5 class="mb-0 text-left">  <a href="https://www.dezshira.com/office/singapore.html"> Singapore </a></h5>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="mb-0 text-left">  <a href="https://www.dezshira.com/office/thailand.html"> Thailand </a></h5>
+                      </div>
+                      <div class="gray-very-light-bg p-arround-2 mt-1 hover-bg">
+                        <h5 class="text-left">   <a href="https://www.dezshira.com/office/vietnam"> Vietnam </a></h5>
+                        <ul class="list-unstyled text-left mb-0">
+                          <li><a href="https://www.dezshira.com/office/vietnam/da-nang.html">Danang</a></li>
+                          <li><a href="https://www.dezshira.com/office/vietnam/hanoi.html">Hanoi</a></li>
+                          <li><a href="https://www.dezshira.com/office/vietnam/ho-chi-minh-city.html">Ho Chi Minh City</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
             <ul class="navbar">
               <li class="dropdown"><a href="#" data-trigger data-turn-header-white>About Us <i class="down-arrow"></i></a>
                 <div class="dropdown-content" data-dropdown>
-                  <div class="btn-close hidden-md hidden-lg hidden-xlg" data-closeBtn></div>
+                  <div class="btn-close hidden-md hidden-lg hidden-xlg hidden-md" data-closeBtn></div>
                   <div class="container">
-                    <div class="grid align-center">
-                      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-4 col-grid">
-                        <h2 class="text-capitalize text-left text-align-center-xs">About us</h2>
-                        <p class="text-left text-align-center-xs">Dezan Shira & Associates is a pan-Asia, multi-disciplinary professional services firm, providing legal, tax and operational advisory to international corporate investors.</p><a class="btn btn-secondary text-white content-center-xs" href="our-firm.html">Read more </a>
+                    <div class="grid">
+                      <div class="col-xs-12 col-sm col-md col-lg-3 col-grid">
+                        <h2 class="text-capitalize text-left">About us</h2>
+                        <p class="text-left">Dezan Shira & Associates is a pan-Asia, multi-disciplinary professional services firm, providing legal, tax and operational advisory to international corporate investors.</p>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid text-center">         <a href="news.html"><i class="sprite sprite-news-icon"></i></a>
-                        <h4 class="text-center text-capitalize"> <a href="news.html">Company News</a></h4><a class="btn btn-link mb-2 center-block" href="news.html">Read more &gt;                       </a>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 col-grid">
+                        <h3 class="text-left"> <a href="services.html">Our Story</a></h3>
+                        <ul class="list-unstyled bullet-list text-left">
+                          <li><a href="services-single.html">Overview</a></li>
+                          <li><a href="services-single.html">History</a></li>
+                          <li><a href="services-single.html"> Media</a></li>
+                          <li><a href="services-single.html">Partnerships</a></li>
+                          <li><a href="services-single.html">News</a></li>
+                        </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid text-center">         <a href="personnel.html"><i class="sprite sprite-people-icon"></i></a>
-                        <h4 class="text-center text-capitalize"> <a href="personnel.html">Personnel</a></h4><a class="btn btn-link mb-2 center-block" href="personnel.html">Read more &gt;                   </a>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 col-grid">
+                        <h3 class="text-left"> <a href="services.html">Our Experts</a></h3>
+                        <ul class="list-unstyled bullet-list text-left">
+                          <li><a href="services-single.html">China</a></li>
+                          <li><a href="services-single.html">India</a></li>
+                          <li><a href="services-single.html">Vietnam</a></li>
+                          <li><a href="services-single.html">Singapore</a></li>
+                          <li><a href="services-single.html">Hong Kong</a></li>
+                          <li><a href="services-single.html">Indonesia        </a></li>
+                          <li><a href="services-single.html">Germany Liaison Office</a></li>
+                          <li><a href="services-single.html">ASEAN Alliance Members</a></li>
+                          <li><a href="services-single.html">Italian Liaison Office</a></li>
+                          <li><a href="services-single.html">USA Liaison Office</a></li>
+                          <li><a href="services-single.html">Russia              </a></li>
+                        </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid text-center">         <a href="partnerships.html"><i class="sprite sprite-handshake-icon"></i></a>
-                        <h4 class="text-center text-capitalize"> <a href="partnerships.html">Partnerships</a></h4><a class="btn btn-link mb-2 center-block" href="partnerships.html">Read more &gt;</a>
+                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 col-grid">
+                        <h3 class="text-left"> <a href="services.html">International Desks</a></h3>
+                        <ul class="list-unstyled bullet-list text-left">
+                          <li><a href="services-single.html">Italian Desk</a></li>
+                          <li><a href="services-single.html">North American Desk</a></li>
+                          <li><a href="services-single.html">UK and Ireland Desk </a></li>
+                          <li><a href="services-single.html">German Desk</a></li>
+                          <li><a href="services-single.html">Italian Desk</a></li>
+                          <li><a href="services-single.html">French Desk</a></li>
+                          <li><a href="services-single.html">Russian Desk</a></li>
+                          <li><a href="services-single.html">Spanish Desk </a></li>
+                          <li><a href="services-single.html">Australian Desk</a></li>
+                        </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid text-center">         <a href="international-desks.html"><i class="sprite sprite-globe-icon"></i></a>
-                        <h4 class="text-center text-capitalize"> <a href="international-desks.html">International Desk</a></h4><a class="btn btn-link mb-2 center-block" href="international-desks.html">Read more &gt;</a>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-grid">
+                        <div class="card gray-light-bg mb-2 p-arround-2"><i><img alt="" src="http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg" width="100%"></i>
+                          <h3 class="pt-2 pr-2 text-left">To learn more about how we can support you, contact one of our local experts.</h3>
+                          <p class="text-left">We provide professional services tailored to Asia´s business environment across the full business cycle.</p><a class="btn btn-secondary mb-2 text-white" href="personnel.html">Talk to experts </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -90,29 +233,29 @@
               </li>
               <li class="dropdown"><a href="#" data-trigger data-turn-header-white>Services  <i class="down-arrow"> </i></a>
                 <div class="dropdown-content" data-dropdown>
-                  <div class="btn-close hidden-md hidden-lg hidden-xlg" data-closeBtn></div>
+                  <div class="btn-close hidden-md hidden-lg hidden-xlg hidden-md" data-closeBtn></div>
                   <div class="container">
                     <div class="grid">
-                      <div class="col-xs-12 col-sm-9 col-md-9 col-lg-3 col-grid">
-                        <h2 class="text-capitalize text-left">Services</h2>
-                        <p class="text-left">The services provided by Dezan Shira &amp; Associates incorporate more than two decades of on-the-ground experience in Asia&rsquo;s dynamic business environment. The firm&rsquo;s services help decision makers manage the legal, tax, and operational challenges facing multinational businesses in China, ASEAN, and India.</p><a class="btn btn-secondary text-white" href="services.html">Contact Us </a>
+                      <div class="col-xs-12 col-sm col-md col-lg-3 col-grid">
+                        <h2 class="text-capitalize text-left">Tailored Services</h2>
+                        <p class="text-left">Our clients’ growth and sustainable development is paramount.  We provide a comprehensive range of services which we deliver as a flexible mix of stand-alone or blended services, covering business intelligence, audit, accounting, human resources, legal, payroll, tax and technology services.  Our blended services approach provides high knowledge and services value to small, medium and large sized organisations, operating in a number of sectors. </p>
                       </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-grid">
-                        <h3 class="text-left"> <a href="services.html">Services we offer</a></h3>
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-grid">
+                        <h3 class="text-left"> <a href="services.html">Services Areas</a></h3>
                         <ul class="list-unstyled bullet-list text-left">
                           <li><a href="services-single.html">BI</a></li>
                           <li><a href="services-single.html">Corp Est & Structuring</a></li>
                           <li><a href="services-single.html"> Due Dilligence</a></li>
                           <li><a href="services-single.html">Accounting</a></li>
-                          <li><a href="services-single.html">HR Payroll</a></li>
+                          <li><a href="services-single.html">Human Resources & Payroll</a></li>
                           <li><a href="services-single.html">Tax</a></li>
                           <li><a href="services-single.html">Audit & Risk</a></li>
-                          <li><a href="services-single.html">Tech       </a></li>
-                          <li><a href="services-single.html">ODI                                               </a></li>
+                          <li><a href="services-single.html">Technology       </a></li>
+                          <li><a href="services-single.html">Outbound Direct Investment                                               </a></li>
                         </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-grid">
-                        <h3 class="text-left"> <a href="industries.html">Industries</a></h3>
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-grid">
+                        <h3 class="text-left"> <a href="industries.html">Industry Focus</a></h3>
                         <ul class="list-unstyled list-unstyled bullet-list text-left">
                           <li><a href="industries-single.html">Education</a></li>
                           <li><a href="industries-single.html">Entertainment & Sports</a></li>
@@ -127,80 +270,149 @@
                         </ul>
                       </div>
                       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-grid">
-                        <div class="card dark-blue-bg mb-2 p-arround-2"><i><img alt="" src="http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg" width="100%"></i>
-                          <h3 class="pt-2 pr-2 text-white text-left">To learn more about how we can support you, contact one of our local experts.</h3>
-                          <p class="text-white text-left">We provide professional services tailored to Asia´s business environment across the full business cycle.</p><a class="btn btn-secondary mb-2 text-white" href="personnel.html">Talk to experts </a>
+                        <div class="card gray-light-bg mb-2 p-arround-2"><i><img alt="" src="http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg" width="100%"></i>
+                          <h3 class="pt-2 pr-2 text-left">To learn more about how we can support you, contact one of our local experts.</h3>
+                          <p class="text-left">We provide professional services tailored to Asia´s business environment across the full business cycle.</p><a class="btn btn-secondary mb-2 text-white" href="personnel.html">Talk to experts </a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li class="dropdown"><a href="#" data-trigger data-turn-header-white>Resources <i class="down-arrow"></i></a>
+              <li class="dropdown"><a href="#" data-trigger data-turn-header-white>Insights & Events <i class="down-arrow"></i></a>
                 <div class="dropdown-content" data-dropdown>
-                  <div class="btn-close hidden-md hidden-lg hidden-xlg" data-closeBtn></div>
+                  <div class="btn-close hidden-md hidden-lg hidden-xlg hidden-md" data-closeBtn></div>
                   <div class="container">
                     <div class="grid">
-                      <div class="col-xs-12 col-sm-9 col-md-9 col-lg-3 col-grid">
-                        <h2 class="text-capitalize text-left"> <a href="asiapedia.html">Our Resources</a></h2>
-                        <p class="text-left">Dezan Shira & Associates is committed to developing business intelligence and understanding of investing across Asia. The firm publishes significant and well-received business titles about each of the markets and disciplines in which it operates through its publishing subsidiary, Asia Briefing Ltd.</p><a class="btn btn-secondary text-white">Contact Us </a>
+                      <div class="col-xs-12 col-sm col-md col-lg-3 col-grid">
+                        <h2 class="text-capitalize text-left"> <a href="asiapedia.html">Insights and Investor Resources</a></h2>
+                        <p class="text-left">Explore our leading business regional briefing news and business publications, or search our archives of business guides, podcasts, videos, presentations, publications and more.</p><a class="btn btn-secondary text-white">Subscribe </a>
                       </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-grid">
-                        <h3 class="text-left"> <a href="asiapedia.html">Asiapedia</a></h3>
+                      <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 col-grid">
+                        <h3 class="text-left"> <a href="asiapedia.html">Events</a></h3>
                         <ul class="list-unstyled bullet-list text-left">
-                          <li><a href="asiapedia-search.html">Videos</a></li>
-                          <li><a href="asiapedia-search.html">Presentations</a></li>
-                          <li><a href="asiapedia-search.html"> Podcasts</a></li>
-                          <li><a href="asiapedia-search.html">Legal Documents</a></li>
-                          <li><a href="asiapedia-search.html">Industry Profiles                                             </a></li>
+                          <li><a href="asiapedia-search.html">Upcoming Events</a></li>
+                          <li><a href="asiapedia-search.html">Event Archive</a></li>
+                          <li><a href="asiapedia-search.html"> Asia Events</a></li>
+                          <li><a href="asiapedia-search.html">Global Events</a></li>
                         </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-grid">
+                      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-grid">
                         <h3 class="text-left"> <a href="asia-briefing.html">Asia Briefing</a></h3>
                         <ul class="list-unstyled list-unstyled bullet-list text-left">
                           <li><a href="asia-briefing.html">About Asia Briefing</a></li>
-                          <li><a href="asiapedia-search.html">Magazines</a></li>
-                          <li><a href="asiapedia-search.html">Guides                                                                </a></li>
+                          <li><a href="asiapedia-search.html">Publication Store</a></li>
+                          <li></li>
+                          <div class="dropdown-divider"><a href="asiapedia-search.html">China Briefing</a></div>
+                          <li><a href="asia-briefing.html">India Briefing</a></li>
+                          <li><a href="asiapedia-search.html">Vietnam Briefing</a></li>
+                          <li><a href="asiapedia-search.html">ASEAN Briefing</a></li>
+                          <li><a href="asiapedia-search.html">Russia Briefing</a></li>
+                          <li><a href="asiapedia-search.html">Silk Road Briefing                                                                  </a></li>
                         </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-grid">
-                        <div class="card dark-blue-bg mb-2 p-arround-2"><i><img alt="" src="http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg" width="100%"></i>
-                          <h3 class="pt-2 pr-2 text-white text-left">To learn more about how we can support you, contact one of our local experts.</h3>
-                          <p class="text-white text-left">We provide professional services tailored to Asia´s business environment across the full business cycle.</p><a class="btn btn-secondary mb-2 text-white" href="personnel.html">Talk to experts </a>
+                      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-grid">
+                        <h3 class="text-left"> <a href="asia-briefing.html">Asiapedia</a></h3>
+                        <ul class="list-unstyled list-unstyled bullet-list text-left">
+                          <li><a href="asia-briefing.html">Publications</a></li>
+                          <li><a href="asiapedia-search.html">Publication Store</a></li>
+                          <li><a href="asiapedia-search.html">Multimedia</a></li>
+                          <li><a href="asia-briefing.html">Q&A’s</a></li>
+                          <li><a href="asiapedia-search.html">Treaties</a></li>
+                          <li><a href="asiapedia-search.html">Legal</a></li>
+                          <li>                         <a href="asiapedia-search.html">Infographic</a></li>
+                          <li><a href="asiapedia-search.html">Industry Profile</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-grid">
+                        <div class="card gray-light-bg mb-2 p-arround-2"><i><img alt="" src="http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg" width="100%"></i>
+                          <h3 class="pt-2 pr-2 text-left">To receive knowledge, insight and a better understanding of Asia.</h3>
+                          <p class="text-left">Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications including. We provide FREE magazines and guide, presentations, webinar, podcasta, report, Q&As and more</p><a class="btn btn-secondary mb-2 text-white" href="personnel.html">Login/Subscribe  </a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li><a href="#">Events</a></li>
-              <li class="dropdown"><a href="#" data-trigger data-turn-header-white>Contact Us <i class="down-arrow"></i></a>
+              <li class="dropdown"><a class="contact-button" href="#" data-trigger data-turn-header-white>Contact Us <i class="down-arrow"></i></a>
                 <div class="dropdown-content" data-dropdown>
-                  <div class="btn-close hidden-md hidden-lg hidden-xlg" data-closeBtn></div>
+                  <div class="btn-close hidden-md hidden-lg hidden-xlg hidden-md" data-closeBtn></div>
                   <div class="container">
-                    <div class="grid align-center">
-                      <div class="col-xs-12 col-sm-10 col-md-10 col-lg-4 col-grid">
+                    <div class="grid">
+                      <div class="col-xs-12 col-sm col-md col-lg-4 col-grid">
                         <h2 class="text-capitalize text-left text-align-center-xs"> <a href="contact.html">Contact Us</a></h2>
-                        <p class="text-left text-align-center-xs">We want to help you and your team succeed in our neighborhood – Asia. Please introduce yourself so that our team can connect with you.</p><a class="btn btn-secondary text-white content-center-xs">Contact Us </a>
+                        <p class="text-left text-align-center-xs">We want to help you and your team succeed in our neighborhood – Asia. Please introduce yourself so that our team can connect with you.</p><a class="btn btn-secondary text-white content-center-xs">General Inquiry </a>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid text-center">         <a href="contact.html"><i class="sprite sprite-inq-icon"></i></a>
-                        <h4 class="text-center text-capitalize"> <a href="contact.html">Send Inquiry</a></h4><a class="btn btn-link mb-2 center-block" href="contact.html">Read more &gt;                       </a>
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid">
+                        <h3 class="text-left"> <a href="asiapedia.html">Contact our Offices</a></h3>
+                        <ul class="list-unstyled bullet-list text-left">
+                          <li><a href="asiapedia-search.html">China</a></li>
+                          <li><a href="asiapedia-search.html">Belt & Road </a></li>
+                          <li><a href="asiapedia-search.html">Initiative</a></li>
+                          <li><a href="asiapedia-search.html">Hong Kong     </a></li>
+                          <li><a href="asiapedia-search.html">India</a></li>
+                          <li><a href="asiapedia-search.html">Indonesia </a></li>
+                          <li><a href="asiapedia-search.html">Malaysia</a></li>
+                          <li><a href="asiapedia-search.html">Philippines</a></li>
+                        </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid text-center">         <a href="office.html">
-                          <div class="i sprite sprite-locations-icon"></div></a>
-                        <h4 class="text-center text-capitalize"> <a href="office.html">Locations</a></h4><a class="btn btn-link mb-2 center-block" href="office.html">Read more &gt;                                       </a>
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid">
+                        <ul class="list-unstyled bullet-list text-left mt-3">
+                          <li><a href="asiapedia-search.html">Russia  </a></li>
+                          <li><a href="asiapedia-search.html">Singapore</a></li>
+                          <li><a href="asiapedia-search.html">Thailand    </a></li>
+                          <li><a href="asiapedia-search.html">Vietnam</a></li>
+                          <li><a href="asiapedia-search.html">Italian Liaison Offices </a></li>
+                          <li><a href="asiapedia-search.html">German Liaison Offices</a></li>
+                          <li><a href="asiapedia-search.html">USA Liaison Offices            </a></li>
+                        </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid text-center">         <a href="career.html"><i class="sprite sprite-new-job-icon"></i></a>
-                        <h4 class="text-center text-capitalize"> <a href="career.html">Careers</a></h4><a class="btn btn-link mb-2 center-block" href="career.html">Read more &gt;</a>
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid">
+                        <h3 class="text-left"> <a href="asiapedia.html">Join Us</a></h3>
+                        <ul class="list-unstyled bullet-list text-left">
+                          <li><a href="asiapedia-search.html">Full Time Career </a></li>
+                          <li><a href="asiapedia-search.html">Internship</a></li>
+                        </ul>
                       </div>
-                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid text-center">         <a href="media.html"><i class="sprite sprite-follow-us-icon"></i></a>
-                        <h4 class="text-center text-capitalize"> <a href="media.html">Follow Us</a></h4><a class="btn btn-link mb-2 center-block" href="media.html">Read more &gt;     </a>
+                      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-grid">
+                        <h3 class="text-left"> <a href="asiapedia.html">Engage with us</a></h3>
+                        <ul class="list-unstyled bullet-list text-left">
+                          <li><a href="asiapedia-search.html">Follow Us </a></li>
+                          <li><a href="asiapedia-search.html">Partner with Us </a></li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li><a href="brochure.html"><i class="icon-search"></i></a></li>
+              <li class="dropdown"><a href="#" data-trigger data-turn-header-white><i class="icon-search ml-1"></i></a>
+                <div class="dropdown-content" data-dropdown>
+                  <div class="btn-close hidden-md hidden-lg hidden-xlg hidden-md" data-closeBtn></div>
+                  <div class="container">
+                    <div class="grid">
+                      <div class="col-xs-12 col-sm col-md col-lg col-grid">
+                        <form class="form-search material" action="https://www.dezshira.com/register" method="GET">
+                          <div class="form-field field-group mb-2">
+                            <input class="form-control" type="text" name="search" placeholder="Search">
+                            <button class="btn group-field-btn btn-primary btn-go" type="submit"> <i class="icon-search"></i></button>
+                          </div>
+                        </form>
+                        <ul class="list-inline list-inline-style">
+                          <li><a href="http://dezshira.in/library/search?services=168">Business Intelligence</a></li>
+                          <li><a href="http://dezshira.in/library/search?services=264">Corporate Establisment and Structuring</a></li>
+                          <li><a href="http://dezshira.in/library/search?services=423">Due Diligence</a></li>
+                          <li><a href="http://dezshira.in/library/search?services=178">Accounting</a></li>
+                          <li><a href="http://dezshira.in/library/search?services=201">HR and Payroll</a></li>
+                          <li><a href="http://dezshira.in/library/search?services=8">Tax</a></li>
+                          <li><a href="http://dezshira.in/library/search?services=178">Audit and Risk Advisory</a></li>
+                          <li><a href="http://dezshira.in/library/search?services=210">Technology</a></li>
+                          <li><a href="http://dezshira.in/library/search?services=427">Outbound Direct Investment</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -223,46 +435,46 @@
             <h1>An Introduction to Vietnam</h1>
             <p>Vietnam has one of the oldest cultures in Southeast Asia. While national identity can be complex given Vietnam’s history, locals are proud of their language and its complexities, as well as the distinctiveness of their society and culture. The expression dat viet (Vietnamese land), for example, encapsulates the notion that Vietnamese society have an organic relationship to their environment.</p><img class="logo flex-img" src="assets/img/Table.svg" alt="" data-dark="assets/img/Table.svg">
           </div>
-          <div class="col-sm col-md-4 col-lg-4 col-grid">                                   
+          <div class="col-sm col-md-3 col-lg-3 col-grid">                                   
             <h4 class="section-title">RELATED READING</h4>
-            <ul class="list lists-img-thumbnail">
-              <li><a href="http://www.asiabriefing.com/store/book/da-nang-vietnam-emerging-investment-destination.html" target="_blank"><img class="flex-img hidden-xs hidden-xxs list-thumbnail thumbnail-120" src="https://resource.dezshira.com/resize/200x275/Publications/8516/VB_2019_11_issue_Cover.jpg" scale="0" width="150"></a>
-                <div class="list-content"><span class="text-muted">November 25, 2019</span>
+            <ul class="list lists-img-thumbnail text-center">
+              <li style=" display: inherit; border:none"><a href="http://www.asiabriefing.com/store/book/da-nang-vietnam-emerging-investment-destination.html" target="_blank"><img class="hidden-xs hidden-xxs list-thumbnail mb-1" src="https://resource.dezshira.com/resize/200x275/Publications/8516/VB_2019_11_issue_Cover.jpg" scale="0" width="150"></a>
+                <div class="list-content gray-light-bg p-arround-2"><span class="text-muted">November 25, 2019</span>
                   <h4><a href="http://www.asiabriefing.com/store/book/da-nang-vietnam-emerging-investment-destination.html" target="_blank">Da Nang: Vietnam&rsquo;s Emerging Investment Destination</a></h4>
                   <p>Da Nang has emerged as an attractive investment destination for domestic and international investors, followed...</p><a class="btn btn-outline-dark" href="http://www.asiabriefing.com/store/book/da-nang-vietnam-emerging-investment-destination.html" target="_blank"> DOWNLOAD</a>
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li><a href="http://www.asiabriefing.com/store/book/setting-up-indonesia.html" target="_blank"><img class="flex-img hidden-xs hidden-xxs list-thumbnail thumbnail-120" src="https://resource.dezshira.com/resize/200x275/Publications/8518/ASB_2019_11_issue_Cover.jpg" scale="0" width="150"></a>
-                <div class="list-content"><span class="text-muted">November 28, 2019</span>
+              <li style=" display: inherit; border:none"><a href="http://www.asiabriefing.com/store/book/setting-up-indonesia.html" target="_blank"><img class="hidden-xs hidden-xxs list-thumbnail mb-1" src="https://resource.dezshira.com/resize/200x275/Publications/8518/ASB_2019_11_issue_Cover.jpg" scale="0" width="150"></a>
+                <div class="list-content gray-light-bg p-arround-2"><span class="text-muted">November 28, 2019</span>
                   <h4><a href="http://www.asiabriefing.com/store/book/setting-up-indonesia.html" target="_blank">Setting up in Indonesia</a></h4>
                   <p>After overcoming the Asian financial crisis in 1998, Indonesia developed into a vibrant democracy with the lar...</p><a class="btn btn-outline-dark" href="http://www.asiabriefing.com/store/book/setting-up-indonesia.html" target="_blank"> DOWNLOAD</a>
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li><a href="http://www.asiabriefing.com/store/book/back-office-automation-china.html" target="_blank"><img class="flex-img hidden-xs hidden-xxs list-thumbnail thumbnail-120" src="https://resource.dezshira.com/resize/200x275/Publications/8478/CB_Mag_2019_10_issue_Cover.jpg" scale="0" width="150"></a>
-                <div class="list-content"><span class="text-muted">October 21, 2019</span>
+              <li style=" display: inherit; border:none"><a href="http://www.asiabriefing.com/store/book/back-office-automation-china.html" target="_blank"><img class="hidden-xs hidden-xxs list-thumbnail mb-1" src="https://resource.dezshira.com/resize/200x275/Publications/8478/CB_Mag_2019_10_issue_Cover.jpg" scale="0" width="150"></a>
+                <div class="list-content gray-light-bg p-arround-2"><span class="text-muted">October 21, 2019</span>
                   <h4><a href="http://www.asiabriefing.com/store/book/back-office-automation-china.html" target="_blank">Back Office Automation in China</a></h4>
                   <p>Automation in the professional services segment &ndash; the use of information technology to automate basic busine...</p><a class="btn btn-outline-dark" href="http://www.asiabriefing.com/store/book/back-office-automation-china.html" target="_blank"> DOWNLOAD</a>
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li><a href="http://www.asiabriefing.com/store/book/goods-services-tax-india.html" target="_blank"><img class="flex-img hidden-xs hidden-xxs list-thumbnail thumbnail-120" src="https://resource.dezshira.com/resize/200x275/Publications/8301/IB_2019_06_issue_Cover.jpg" scale="0" width="150"></a>
-                <div class="list-content"><span class="text-muted">June 26, 2019</span>
+              <li style=" display: inherit; border:none"><a href="http://www.asiabriefing.com/store/book/goods-services-tax-india.html" target="_blank"><img class="hidden-xs hidden-xxs list-thumbnail mb-1" src="https://resource.dezshira.com/resize/200x275/Publications/8301/IB_2019_06_issue_Cover.jpg" scale="0" width="150"></a>
+                <div class="list-content gray-light-bg p-arround-2"><span class="text-muted">June 26, 2019</span>
                   <h4><a href="http://www.asiabriefing.com/store/book/goods-services-tax-india.html" target="_blank">The Goods and Services Tax in India</a></h4>
                   <p>In this issue of India Briefing, we first introduce various provisions of the GST system to help companies und...</p><a class="btn btn-outline-dark" href="http://www.asiabriefing.com/store/book/goods-services-tax-india.html" target="_blank"> DOWNLOAD</a>
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li><a href="http://www.asiabriefing.com/store/book/growing-opportunities-foreign-investors-indonesia-8026.html" target="_blank"><img class="flex-img hidden-xs hidden-xxs list-thumbnail thumbnail-120" src="https://resource.dezshira.com/resize/200x275/Publications/8026/INDOB_2018_12_issue_Cover.jpg" scale="0" width="150"></a>
-                <div class="list-content"><span class="text-muted">January 10, 2019</span>
+              <li style=" display: inherit; border:none"><a href="http://www.asiabriefing.com/store/book/growing-opportunities-foreign-investors-indonesia-8026.html" target="_blank"><img class="hidden-xs hidden-xxs list-thumbnail mb-1" src="https://resource.dezshira.com/resize/200x275/Publications/8026/INDOB_2018_12_issue_Cover.jpg" scale="0" width="150"></a>
+                <div class="list-content gray-light-bg p-arround-2"><span class="text-muted">January 10, 2019</span>
                   <h4><a href="http://www.asiabriefing.com/store/book/growing-opportunities-foreign-investors-indonesia-8026.html" target="_blank">Growing Opportunities for Foreign Investors in Indonesia</a></h4>
                   <p>In this issue of Indonesia Briefing magazine, we focus on emerging FDI opportunities in Indonesia and highligh...</p><a class="btn btn-outline-dark" href="http://www.asiabriefing.com/store/book/growing-opportunities-foreign-investors-indonesia-8026.html" target="_blank"> DOWNLOAD</a>
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li><a href="http://www.asiabriefing.com/store/book/chinas-new-economic-silk-road-the-great-eurasian-game-the-string-of-pearls-pdf-download-version-593" target="_blank"><img class="flex-img hidden-xs hidden-xxs list-thumbnail thumbnail-120" src="https://resource.dezshira.com/resize/200x275/Publications/5185/Silk_Road_-_Cover_1.jpg" scale="0" width="150"></a>
-                <div class="list-content"><span class="text-muted">August 31, 2015</span>
+              <li style=" display: inherit; border:none"><a href="http://www.asiabriefing.com/store/book/chinas-new-economic-silk-road-the-great-eurasian-game-the-string-of-pearls-pdf-download-version-593" target="_blank"><img class="hidden-xs hidden-xxs list-thumbnail mb-1" src="https://resource.dezshira.com/resize/200x275/Publications/5185/Silk_Road_-_Cover_1.jpg" scale="0" width="150"></a>
+                <div class="list-content gray-light-bg p-arround-2"><span class="text-muted">August 31, 2015</span>
                   <h4><a href="http://www.asiabriefing.com/store/book/chinas-new-economic-silk-road-the-great-eurasian-game-the-string-of-pearls-pdf-download-version-593" target="_blank"></a>China&apos;s New Economic Silk Road: The Great Eurasian Game &amp; The String of Pearls (PDF Download Version)</h4>
                   <p>This unique and currently only available study into the proposed Silk Road Economic Belt  examines the institu...</p><a class="btn btn-outline-dark" href="http://www.asiabriefing.com/store/book/chinas-new-economic-silk-road-the-great-eurasian-game-the-string-of-pearls-pdf-download-version-593" target="_blank"> DOWNLOAD</a>
                 </div>

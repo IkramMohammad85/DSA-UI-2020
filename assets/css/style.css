@@ -3620,7 +3620,7 @@ strong {
   padding: 30px; }
 
 .p-arround-2 {
-  padding: 20px; }
+  padding: 20px !important; }
 
 .p-arround-1 {
   padding: 10px; }
