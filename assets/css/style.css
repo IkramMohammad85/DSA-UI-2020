@@ -3898,6 +3898,9 @@ strong {
   -moz-border-radius: 50%;
   border: 1px solid #ccc; }
 
+.zoom-on-hover {
+  cursor: pointer; }
+
 .zoom-on-hover img {
   -webkit-transition: transform 0.5s ease;
   -webkit-transition: -webkit-transform 0.5s ease;
@@ -3908,7 +3911,8 @@ strong {
 
 .zoom-on-hover:hover img {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2); }
+  transform: scale(1.2);
+  cursor: pointer; }
 
 .blue-hover:hover {
   background-color: #2981d1;

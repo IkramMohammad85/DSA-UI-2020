@@ -423,12 +423,16 @@
   @include border-radius(50%);
   border: $border-default;
 }
+.zoom-on-hover  {
+ cursor: pointer;
+}
 .zoom-on-hover img {
   @include transition(transform 0.5s ease);
   width: 100%;
 }
 .zoom-on-hover:hover img {
   @include transform(scale(1.2));
+  cursor: pointer;
 }
 .blue-hover {
   &:hover {
