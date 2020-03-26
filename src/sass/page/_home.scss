@@ -747,6 +747,15 @@
         }
       }
     }
+    .home {
+      .big-banner{
+        .item {
+          .white-bg.related-insight{
+             .related-insight-block{ background:#fff;}
+          }
+        }
+      }
+    }
 }
 
 @media (max-width: $reflex-xs) {
@@ -755,6 +764,16 @@
       .item {
         .related-insight{
            .related-insight-block{ background: rgba(0, 0, 0, 0.5)}
+        }
+      }
+    }
+  }
+
+  .home {
+    .big-banner{
+      .item {
+        .white-bg.related-insight{
+           .related-insight-block{ background:#fff;}
         }
       }
     }
