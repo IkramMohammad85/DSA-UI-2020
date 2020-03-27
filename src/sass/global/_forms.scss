@@ -209,7 +209,7 @@ form.material {
     font-weight: normal;
     left: 0;
     margin: 0;
-    padding: 14px 12px 0;
+    padding: 14px 12px 14px 25px;
     position: absolute;
     top: 0;
     transition: all $animation-duration;
@@ -319,4 +319,9 @@ form.material {
       padding:100px;
       background: #e9ecef;
     }
+  }
+
+  #contact_form{
+
+    label:after{ content:" *"; color: red; position: absolute; left: 10px; top: 30px; line-height: 1px;}
   }

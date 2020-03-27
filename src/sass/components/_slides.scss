@@ -1,6 +1,6 @@
-.related-insight-slides, .partner-slides{
+.related-insight-slides, .partner-slides, .our-people{
     .glide__bullets {
-        text-align: center;
+        text-align: center; 
         bottom: 0;
         width: 90%;
         margin-left: 6%;
@@ -12,6 +12,7 @@
           width: 14px;
           font-size: 0px;
           margin: 0px 7px;
+          cursor: pointer;
          
           &:hover,
           &.glide__bullet--active {
@@ -31,5 +32,18 @@
     max-width: 150px;
     padding: 20px;
     position: relative;
+  }
+}
+
+.logo-slide{
+  .glide-next{
+right: -30px;
+  }
+}
+
+@media (max-width: $reflex-xs) {
+  .logo-slide{
+    .glide-next{ display: none;}
+    .glide-prev{ display: none;}
   }
 }

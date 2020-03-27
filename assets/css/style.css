@@ -2029,12 +2029,14 @@ $border-default: 1px solid #ccc;
   padding-left: 0;
   list-style: none; }
 
-.list-inline.list-inline-logo li {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  height: 120px;
-  vertical-align: middle; }
+.list-inline.list-inline-logo {
+  margin-bottom: 0px; }
+  .list-inline.list-inline-logo li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 120px;
+    vertical-align: middle; }
 
 .list-inline.list-inline-icons {
   margin-bottom: 0; }
@@ -2944,22 +2946,23 @@ section.asiapedia-section {
   margin-left: 1px;
   margin-right: 1px; }
 
-.related-insight-slides .glide__bullets, .partner-slides .glide__bullets {
+.related-insight-slides .glide__bullets, .partner-slides .glide__bullets, .our-people .glide__bullets {
   text-align: center;
   bottom: 0;
   width: 90%;
   margin-left: 6%; }
-  .related-insight-slides .glide__bullets .glide__bullet, .partner-slides .glide__bullets .glide__bullet {
+  .related-insight-slides .glide__bullets .glide__bullet, .partner-slides .glide__bullets .glide__bullet, .our-people .glide__bullets .glide__bullet {
     background-color: #fff;
     border: solid 1px #707070;
     border-radius: 50%;
     height: 14px;
     width: 14px;
     font-size: 0px;
-    margin: 0px 7px; }
-    .related-insight-slides .glide__bullets .glide__bullet:hover, .related-insight-slides .glide__bullets .glide__bullet.glide__bullet--active, .partner-slides .glide__bullets .glide__bullet:hover, .partner-slides .glide__bullets .glide__bullet.glide__bullet--active {
+    margin: 0px 7px;
+    cursor: pointer; }
+    .related-insight-slides .glide__bullets .glide__bullet:hover, .related-insight-slides .glide__bullets .glide__bullet.glide__bullet--active, .partner-slides .glide__bullets .glide__bullet:hover, .partner-slides .glide__bullets .glide__bullet.glide__bullet--active, .our-people .glide__bullets .glide__bullet:hover, .our-people .glide__bullets .glide__bullet.glide__bullet--active {
       background-color: #19283F; }
-    .related-insight-slides .glide__bullets .glide__bullet:focus, .partner-slides .glide__bullets .glide__bullet:focus {
+    .related-insight-slides .glide__bullets .glide__bullet:focus, .partner-slides .glide__bullets .glide__bullet:focus, .our-people .glide__bullets .glide__bullet:focus {
       outline: none; }
 
 .partner-slides .pratner-logo {
@@ -2968,6 +2971,15 @@ section.asiapedia-section {
   max-width: 150px;
   padding: 20px;
   position: relative; }
+
+.logo-slide .glide-next {
+  right: -30px; }
+
+@media (max-width: 576px) {
+  .logo-slide .glide-next {
+    display: none; }
+  .logo-slide .glide-prev {
+    display: none; } }
 
 div.zabuto_calendar {
   font-family: Arial,Helvetica,sans-serif;
@@ -4369,7 +4381,7 @@ form.material .form-field-label {
   font-weight: normal;
   left: 0;
   margin: 0;
-  padding: 14px 12px 0;
+  padding: 14px 12px 14px 25px;
   position: absolute;
   top: 0;
   -webkit-transition: all 0.4s;
@@ -4468,6 +4480,14 @@ form.material .form-select-input {
   .kform {
     padding: 100px;
     background: #e9ecef; } }
+
+#contact_form label:after {
+  content: " *";
+  color: red;
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  line-height: 1px; }
 
 * {
   box-sizing: border-box; }
@@ -5914,7 +5934,7 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
 .research h4,
 .research span {
   font-weight: normal;
-  color: #6c757d; }
+  color: #212529; }
 
 .research span {
   font-size: 13px;

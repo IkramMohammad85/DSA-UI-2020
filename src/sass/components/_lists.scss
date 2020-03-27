@@ -56,7 +56,7 @@
   list-style: none;
 }
 .list-inline {
-  &.list-inline-logo {
+  &.list-inline-logo { margin-bottom: 0px;
     li {
       background-color: $white;
       padding: 20px;
