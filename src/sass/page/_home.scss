@@ -439,6 +439,27 @@
     }
   }
 
+  &.eventsV9{
+    border: solid 1px $gray-500; background-color: #fff;
+    width: 95%;
+    .date-block{    padding: 35px 30px; width: 120px;
+      height: 100%;
+      line-height: 40px;
+      span{ line-height: 18px;}
+    }
+    .dec-block{
+      p{ line-height: 20px; margin-bottom: 20px;}
+    }
+    .content{
+      .date-time{ color: #fff !important;}
+      p{margin-bottom: 20px;}
+    }
+    &:hover{
+
+      .date-block{ background-color: #007bff;}
+      .h3 a{ color: #007bff;}
+    }
+  }
   }
 }
 
