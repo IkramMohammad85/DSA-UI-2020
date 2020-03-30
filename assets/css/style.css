@@ -5754,10 +5754,9 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
     background-color: #fff;
     width: 95%; }
     .home .event-block.eventsV9 .date-block {
-      padding: 35px 20px;
-      font-size: 24px;
+      padding: 35px 30px;
       height: 100%;
-      line-height: 60px;
+      line-height: 45px;
       width: 145px; }
       .home .event-block.eventsV9 .date-block span {
         line-height: 18px; }
