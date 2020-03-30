@@ -39,11 +39,15 @@
   .glide-next{
 right: -30px;
   }
+
 }
 
 @media (max-width: $reflex-xs) {
   .logo-slide{
     .glide-next{ display: none;}
     .glide-prev{ display: none;}
+    .glide__slide{
+      width: 142px !important;
+    }
   }
 }
