@@ -5754,15 +5754,18 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
     background-color: #fff;
     width: 95%; }
     .home .event-block.eventsV9 .date-block {
-      padding: 35px 30px;
-      width: 120px;
+      padding: 35px 20px;
+      font-size: 24px;
       height: 100%;
-      line-height: 40px; }
+      line-height: 60px;
+      width: 145px; }
       .home .event-block.eventsV9 .date-block span {
         line-height: 18px; }
-    .home .event-block.eventsV9 .dec-block p {
-      line-height: 20px;
-      margin-bottom: 20px; }
+    .home .event-block.eventsV9 .dec-block {
+      margin-left: 145px; }
+      .home .event-block.eventsV9 .dec-block p {
+        line-height: 20px;
+        margin-bottom: 20px; }
     .home .event-block.eventsV9 .content .date-time {
       color: #fff !important; }
     .home .event-block.eventsV9 .content p {
@@ -5770,7 +5773,8 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
     .home .event-block.eventsV9:hover .date-block {
       background-color: #007bff; }
     .home .event-block.eventsV9:hover .h3 a {
-      color: #007bff; }
+      color: #007bff;
+      text-decoration: underline; }
 
 .transparent-bg-home {
   min-height: 436px;

@@ -442,12 +442,12 @@
   &.eventsV9{
     border: solid 1px $gray-500; background-color: #fff;
     width: 95%;
-    .date-block{    padding: 35px 30px; width: 120px;
+    .date-block{    padding: 35px 20px; font-size: 24px;
       height: 100%;
-      line-height: 40px;
+      line-height: 60px; width: 145px;
       span{ line-height: 18px;}
     }
-    .dec-block{
+    .dec-block{  margin-left: 145px;
       p{ line-height: 20px; margin-bottom: 20px;}
     }
     .content{
@@ -457,7 +457,7 @@
     &:hover{
 
       .date-block{ background-color: #007bff;}
-      .h3 a{ color: #007bff;}
+      .h3 a{ color: #007bff; text-decoration: underline;}
     }
   }
   }
