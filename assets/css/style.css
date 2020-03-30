@@ -2981,6 +2981,9 @@ section.asiapedia-section {
 .logo-slide .glide-next {
   right: -30px; }
 
+.events-slide .glide__slides {
+  white-space: inherit; }
+
 @media (max-width: 576px) {
   .logo-slide .glide-next {
     display: none; }
