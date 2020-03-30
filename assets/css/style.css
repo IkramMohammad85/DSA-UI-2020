@@ -5742,6 +5742,13 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
       line-height: 40px; }
       .home .event-block.eventsV8 .date-block span {
         line-height: 18px; }
+    .home .event-block.eventsV8 .dec-block p {
+      line-height: 20px;
+      margin-bottom: 20px; }
+    .home .event-block.eventsV8 .content .date-time {
+      color: #fff !important; }
+    .home .event-block.eventsV8 .content p {
+      margin-bottom: 20px; }
 
 .transparent-bg-home {
   min-height: 436px;
