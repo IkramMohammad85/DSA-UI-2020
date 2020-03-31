@@ -3291,6 +3291,9 @@ strong {
   body {
     font-size: 14px; } }
 
+figure {
+  margin: 0px; }
+
 .btn {
   border-radius: 0px;
   font-family: "Myriad Pro", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -4137,8 +4140,7 @@ blockquote {
 
 .caption {
   font-style: italic;
-  font-size: 13px;
-  border-bottom: solid 2px #ea2127; }
+  font-size: 13px; }
 
 .full-width-content {
   margin-left: 0;
@@ -6092,6 +6094,10 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
 
 .graphics-normla {
   width: 72%; }
+
+.post-image img {
+  border-bottom: solid 2px #ea2127 !important;
+  padding-bottom: 2px; }
 
 .child {
   position: relative; }
