@@ -602,3 +602,35 @@
 
 }
 .thumbnail-block-height70{ height: 70px; overflow: hidden;}
+
+q {
+	&:before {
+		content: open-quote;
+		color: #ea2127;
+		font-size: 1.2em;
+	}
+	&:after {
+		content: close-quote;
+		color: #ea2127;
+		font-size: 1.2em;
+	}
+}
+blockquote {
+	&:before {
+		content: open-quote;
+		color: #ea2127;
+    font-size: 1.2em;
+    
+	}
+	&:after {
+		content: close-quote;
+		color: #ea2127;
+		font-size: 1.2em;
+	}
+	margin-left: 0;
+	padding-left: 1em;
+  border-left: 5px solid #ea2127;
+  font-style: italic;
+  line-height: normal;
+}
+.caption{ font-style: italic; font-size: 13px;}
