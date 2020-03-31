@@ -4139,6 +4139,10 @@ blockquote {
   font-style: italic;
   font-size: 13px; }
 
+.full-width-content {
+  margin-left: 0;
+  margin-right: calc(25% - 25vw); }
+
 .table {
   width: 100%;
   word-break: break-all;

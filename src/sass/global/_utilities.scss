@@ -634,3 +634,8 @@ blockquote {
   line-height: normal;
 }
 .caption{ font-style: italic; font-size: 13px;}
+
+.full-width-content {
+  margin-left:0;
+  margin-right: calc(25% - 25vw);
+}
