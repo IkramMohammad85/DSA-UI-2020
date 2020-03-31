@@ -6072,6 +6072,22 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
 .blue-hover:hover .asiapedia-icon {
   background: url(http://www.asiabriefing.com/mockups/dsa-mockup/services/images/asiapedia-icon-w.png) no-repeat top center; }
 
+.right-side-block {
+  width: 350px;
+  float: right;
+  margin-bottom: 30px;
+  padding-left: 40px; }
+
+.left-side-content-block {
+  width: 100%;
+  float: left; }
+
+.graphics-block {
+  width: 100%; }
+
+.graphics-normla {
+  width: 72%; }
+
 .child {
   position: relative; }
   .child:hover .content {
