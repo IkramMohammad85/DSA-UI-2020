@@ -5825,6 +5825,70 @@ ul.top-quick-link li.dropdown.open:hover .tooltiptext {
     .home .event-block.eventsV9:hover .h3 a {
       color: #007bff;
       text-decoration: underline; }
+  .home .event-block.eventsV10 {
+    border: solid 1px #adb5bd;
+    background-color: #fff;
+    width: 95%; }
+    .home .event-block.eventsV10 .date-block {
+      padding: 35px 30px;
+      height: 100%;
+      line-height: 45px;
+      width: 145px; }
+      .home .event-block.eventsV10 .date-block span {
+        line-height: 18px; }
+    .home .event-block.eventsV10 .dec-block {
+      margin-left: 145px; }
+      .home .event-block.eventsV10 .dec-block p {
+        line-height: 20px;
+        margin-bottom: 20px; }
+    .home .event-block.eventsV10 .date-time {
+      display: block;
+      margin-top: 48px; }
+    .home .event-block.eventsV10 .content {
+      width: 84%;
+      margin-left: 145px;
+      padding: 20px; }
+      .home .event-block.eventsV10 .content .date-time {
+        color: #1a2a40 !important;
+        font-weight: bold;
+        margin-top: 30px; }
+      .home .event-block.eventsV10 .content p {
+        margin-bottom: 20px;
+        color: #1a2a40;
+        line-height: 22px; }
+        .home .event-block.eventsV10 .content p a {
+          color: #1a2a40; }
+          .home .event-block.eventsV10 .content p a:hover {
+            color: #357dc0;
+            text-decoration: underline; }
+      .home .event-block.eventsV10 .content .btn {
+        background-color: #357dc0;
+        border-color: #357dc0; }
+    .home .event-block.eventsV10:hover .content {
+      background-color: #f5f5f5;
+      color: #1a2a40; }
+    .home .event-block.eventsV10:hover .date-block {
+      background-color: #357dc0; }
+
+.event-block-section {
+  width: 98%; }
+  .event-block-section .event-block-height {
+    height: 530px;
+    overflow-y: scroll;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .event-block-section .event-block-height::-webkit-scrollbar {
+      width: 10px; }
+    .event-block-section .event-block-height::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px; }
+    .event-block-section .event-block-height::-webkit-scrollbar-thumb {
+      background: #17394E;
+      border-radius: 10px; }
+    .event-block-section .event-block-height::-webkit-scrollbar-thumb:hover {
+      background: #007bff; }
 
 .transparent-bg-home {
   min-height: 436px;
