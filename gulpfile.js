@@ -27,7 +27,7 @@ var paths = {
 
 	js: {
 		src: ['./src/js/dropdown.js','./src/js/accordion.js','./src/js/popup.js','./src/js/tabs.js','./src/js/scripts.js'],
-		vendor:['node_modules/@glidejs/glide/dist/glide.min.js','node_modules/list.js/dist/list.min.js','node_modules/scrollreveal/dist/scrollreveal.min.js'],
+		vendor:['node_modules/@glidejs/glide/dist/glide.min.js','node_modules/list.js/dist/list.min.js','node_modules/scrollreveal/dist/scrollreveal.min.js','node_modules/simplebar/dist/simplebar.min.js'],
 		dest: './assets/js'
 	},
 
@@ -64,7 +64,11 @@ gulp.task('sass', function () {
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(paths.sass.dest))
 });
-
+// copy css file
+gulp.task('csscopy', function(){
+	return gulp.src('node_modules/simplebar/dist/simplebar.min.css')
+	  .pipe(gulp.dest('assets/css/vendor'))
+  });
 
 // Compiles Sass into CSS
 gulp.task('js', function () {
@@ -145,7 +149,9 @@ gulp.task('watch', function () {
 	gulp.watch(paths.sass.src, gulp.series('sass'));
 	gulp.watch(paths.js.src, gulp.series('js'));
 	gulp.watch(paths.img.src, gulp.series('minifyImg', 'reloadBrowser'));
-    gulp.watch(paths.watch.pug, gulp.series('pug', 'reloadBrowser'));
+	gulp.watch(paths.watch.pug, gulp.series('pug', 'reloadBrowser'));
+	gulp.watch(paths.css.src, gulp.series('csscopy'));
+	gulp.watch(paths.sass.src, gulp.series('sass','csscopy'));
     
 });
 

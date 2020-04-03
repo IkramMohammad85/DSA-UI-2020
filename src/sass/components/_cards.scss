@@ -179,7 +179,7 @@
     &:hover {
       .content {
         top: 0;
-        transition: opacity 0.5s linear;
+        transition: opacity 0.2s linear;
         visibility: visible;
         opacity: 1;
         padding: 40px 40px 0px 40px;
@@ -334,6 +334,12 @@
       }
     }
   }
+  &.guides-article{
+    .card-body {
+      height: auto;
+      min-height: auto;
+    }
+  }
   // office
   &.office {
     border-top: solid 4px $bluedark;
@@ -440,7 +446,7 @@
     &:hover {
       .content {
         bottom: 0;
-        transition: opacity 0.5s linear;
+        transition: opacity 0.2s linear;
         visibility: visible;
         opacity: 1;
         p{line-height: 20px;}
