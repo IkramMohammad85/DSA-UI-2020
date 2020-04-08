@@ -4693,8 +4693,9 @@ header.site-header {
       color: #fff !important;
       border-color: #fff !important; }
     header.site-header .contact-button:hover {
-      background-color: #007bff;
-      color: #fff !important; }
+      background-color: #0072eb;
+      color: #fff !important;
+      border-color: #0072eb !important; }
       header.site-header .contact-button:hover .down-arrow {
         color: #fff !important;
         border-color: #fff !important; }
