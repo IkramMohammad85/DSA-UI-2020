@@ -1923,6 +1923,10 @@ $border-default: 1px solid #ccc;
     width: 40px; } }
 
 @media (max-width: 1200px) {
+  .card.services {
+    height: auto; }
+    .card.services .card-header-img {
+      height: auto; }
   .card.news {
     height: auto; }
     .card.news .card-header-img {
@@ -1966,6 +1970,8 @@ $border-default: 1px solid #ccc;
     min-height: 100%; }
   .card.services {
     height: auto; }
+    .card.services .card-header-img {
+      height: auto; }
   .card.featured-resources .card-body, .card.international-desks .card-body {
     min-height: auto; }
   .card.office .card-body {

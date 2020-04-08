@@ -609,6 +609,12 @@
 //Tablets
 @media (max-width: $reflex-lg) {
   .card {
+    &.services {
+      height: auto;
+      .card-header-img {
+        height: auto;
+      }
+    }
     &.news {
       height: auto;
       .card-header-img {
@@ -685,6 +691,9 @@
     }
     &.services {
       height: auto;
+      .card-header-img {
+        height: auto;
+      }
     }
     &.featured-resources,
     &.international-desks {
