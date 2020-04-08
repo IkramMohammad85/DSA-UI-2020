@@ -474,7 +474,7 @@
       p{ line-height: 20px; margin-bottom: 20px;}
     }
     .date-time{ display: block;margin-top: 48px;}
-    .content{ width: 84%; margin-left: 145px; padding: 20px;
+    .content{ width: 85%; margin-left: 145px; padding: 20px;
       .date-time{ color: #1a2a40 !important; font-weight: bold; margin-top: 30px;} 
       p{margin-bottom: 20px; color: #1a2a40;line-height: 22px;
       a{ color: #1a2a40;
@@ -677,6 +677,16 @@
         }
       }
     }
+    .big-banner{
+      .glide-prev {
+        left: 0px;
+        padding-left: 0px;
+      }
+      .glide-next {
+        right: 0px;
+        padding-right: 0px;
+      }
+    }
   }
 //Mobile
 @media (max-width: $reflex-md) {
@@ -699,7 +709,7 @@
 
       .item-image {
         &::before {
-          background: rgba($deep-blue, 0.5) !important;
+          //background: rgba($deep-blue, 0.5) !important;
         }
         img {
           zoom: 1;
@@ -752,6 +762,14 @@
       .btn {
         display: inherit !important;
       }
+    }
+    .glide-prev {
+      left: 0px;
+      padding-left: 0px;
+    }
+    .glide-next {
+      right: 0px;
+      padding-right: 0px;
     }
   }
   .home {
@@ -806,7 +824,18 @@
       }
     }
 }
-
+@media (max-width: 1550px) {
+  .big-banner{
+    .glide-prev {
+      left: 0px;
+      padding-left: 0px;
+    }
+    .glide-next {
+      right: 0px;
+      padding-right: 0px;
+    }
+  }
+}
 @media (max-width: $reflex-sm) {
   .big-banner {
     &.banner-insight {
@@ -831,6 +860,15 @@
           }
         }
       }
+    }
+    
+    .glide-prev {
+      left: 0px;
+      padding-left: 0px;
+    }
+    .glide-next {
+      right: 0px;
+      padding-right: 0px;
     }
   }
 
@@ -938,10 +976,7 @@
         width: 120px !important;
       }
     }
-    .glide-next,
-    .glide-prev {
-      display: none;
-    }
+
   }
 }
 

@@ -184,19 +184,20 @@ header.site-header {
   }
   .contact-button {
     border: solid 1px $blue;
-    color: $blue !important;
+    color: $white !important;
     padding: 5px 10px;
+    background-color: $blue;
     .down-arrow {
-      color: $blue !important;
-      border-color: $blue;
+      color: $white !important;
+      border-color: $white !important;
     }
-    &:hover{ color: $blue; background-color: $blue; color: #fff !important;
+    &:hover{ background-color: $blue; color: #fff !important;
       .down-arrow {
         color: $white !important;
         border-color: $white!important;
       }
     }
-    .down-arrow{ border-color: $blue !important;}
+    .down-arrow{ border-color: $white !important;}
   }
 }
 footer.site-footer {
