@@ -115,9 +115,11 @@
 		padding-top: 70px;
 		&:before {
 			top: 90px;
+			left: 0px;
 		}
 	}
 	.timeline__date {
 		top: 0;
 	}
+	.timeline__year{left: -10px;}
 }

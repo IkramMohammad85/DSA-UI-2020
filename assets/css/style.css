@@ -2593,7 +2593,7 @@ section.asiapedia-section {
 .accordion-wrapper.accordion-normal .down-arrow {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  top: 6px; }
+  top: 12px; }
 
 .accordion-wrapper.accordion-normal .accordion-heading {
   background: #e6e7e8;
@@ -2612,14 +2612,14 @@ section.asiapedia-section {
 .accordion-wrapper.accordion-normal .accordion-item.open .down-arrow {
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
-  top: 10px;
+  top: 12px;
   color: #fff;
   border-color: #fff; }
 
 .accordion-wrapper.vertical-menu .down-arrow {
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  top: -18px; }
+  top: -18px !important; }
 
 .accordion-wrapper.vertical-menu .accordion-heading {
   background: #fff;
@@ -3160,9 +3160,12 @@ div.zabuto_calendar {
     padding-left: 20px;
     padding-top: 70px; }
     .timeline__box:before {
-      top: 90px; }
+      top: 90px;
+      left: 0px; }
   .timeline__date {
-    top: 0; } }
+    top: 0; }
+  .timeline__year {
+    left: -10px; } }
 
 .tooltip {
   position: relative;
@@ -4864,7 +4867,8 @@ header.site-header .hamburger-menu {
   display: inline-block;
   right: 2%;
   top: 6px;
-  cursor: pointer; }
+  cursor: pointer;
+  min-width: 100px; }
 
 .cookies-modal {
   display: none; }

@@ -14,7 +14,7 @@
   &.accordion-normal {
     .down-arrow {
       @include transition(all 0.1s ease);
-      top: 6px;
+      top: 12px;
     }
     .accordion-heading {
       background: $soft-bluish-gray;
@@ -36,7 +36,7 @@
         }
         .down-arrow {
           @include transform(rotate(225deg));
-          top: 10px;
+          top: 12px;
           color: $white;
           border-color: $white;
         }
@@ -47,7 +47,7 @@
   &.vertical-menu {
     .down-arrow {
       @include transition(all 0.1s ease);
-      top: -18px;
+      top: -18px !important;
     }
     .accordion-heading {
       background: $white;
