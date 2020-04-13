@@ -35,3 +35,12 @@
   #tab-nav span.active {background:$deep-blue; color:$white;}
   #tab-nav span{ background: #e5e8e9; margin-left: 1px; margin-right: 1px;}
  }
+
+ #package{
+  #tab-nav{ border-bottom: 3px solid $deep-blue; }
+  #tab-contents{ padding: 0px; background: $white;
+    .tab-more-content{ margin: 0px;}
+  }
+  #tab-nav span.active {background:$deep-blue; color:$white;}
+  #tab-nav span{ background: #e5e8e9; margin-right: 10px; min-width: 220px; text-align: center;    border-top-left-radius: 5px;     border-top-right-radius: 5px;}
+ }
