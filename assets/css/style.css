@@ -3020,6 +3020,15 @@ section.asiapedia-section {
   #vertical-left-contents #tab-contents .tab-more-content {
     margin: 0px; }
 
+.v-tabs .tablink {
+  padding: 10px 20px;
+  background: #e5e8e9;
+  margin-bottom: 1px; }
+
+.tablink-active {
+  background: #1a2940 !important;
+  color: #fff; }
+
 .related-insight-slides .glide__bullets, .partner-slides .glide__bullets, .our-people .glide__bullets {
   text-align: center;
   bottom: 0;
