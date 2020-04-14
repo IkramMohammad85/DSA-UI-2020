@@ -2981,12 +2981,6 @@ section.asiapedia-section {
 #package #tab-nav {
   border-bottom: 3px solid #1a2940; }
 
-#package #tab-contents {
-  padding: 0px;
-  background: #fff; }
-  #package #tab-contents .tab-more-content {
-    margin: 0px; }
-
 #package #tab-nav span.active {
   background: #1a2940;
   color: #fff; }
@@ -2998,6 +2992,33 @@ section.asiapedia-section {
   text-align: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
+
+#package-content #tab-contents {
+  padding: 0px;
+  background: #fff; }
+  #package-content #tab-contents .tab-more-content {
+    margin: 0px; }
+
+#vertical-tabs #tab-nav {
+  border: none;
+  float: right; }
+
+#vertical-tabs #tab-nav span.active {
+  background: #1a2940;
+  color: #fff; }
+
+#vertical-tabs #tab-nav span {
+  background: #e5e8e9;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 1px;
+  width: 100%; }
+
+#vertical-left-contents #tab-contents {
+  padding: 0px;
+  background: #fff; }
+  #vertical-left-contents #tab-contents .tab-more-content {
+    margin: 0px; }
 
 .related-insight-slides .glide__bullets, .partner-slides .glide__bullets, .our-people .glide__bullets {
   text-align: center;
@@ -3759,7 +3780,7 @@ figure {
   margin-top: 70px; }
 
 .mr-2 {
-  margin-right: 20px; }
+  margin-right: 20px !important; }
 
 .ml-2 {
   margin-left: 20px; }
@@ -4183,6 +4204,9 @@ blockquote {
 .full-width-content {
   margin-left: 0;
   margin-right: calc(25% - 25vw); }
+
+.btn.display-inline {
+  display: inline-block; }
 
 .table {
   width: 100%;

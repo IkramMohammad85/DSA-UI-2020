@@ -212,7 +212,7 @@
   margin-top: 70px;
 }
 .mr-2 {
-  margin-right: 20px;
+  margin-right: 20px !important;
 }
 .ml-2 {
   margin-left: 20px;
@@ -639,3 +639,4 @@ blockquote {
   margin-left:0;
   margin-right: calc(25% - 25vw);
 }
+.btn.display-inline{ display: inline-block;}
