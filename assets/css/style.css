@@ -2269,6 +2269,27 @@ ul.list-blue-border {
     color: #007bff;
     text-decoration: underline; }
 
+ul.list-bg {
+  margin-top: 20px;
+  padding: 0px;
+  list-style: none; }
+
+.list-bg li {
+  background: #f9f9f9;
+  padding: 6px 10px;
+  margin-bottom: 25px;
+  border: solid 2px #1e71bd;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out; }
+  .list-bg li:hover {
+    box-shadow: 0px 4px 8px 0px #ccc;
+    box-shadow: 0px 4px 8px 0px #ccc;
+    background-color: #344c70;
+    color: #fff;
+    border-color: #344c70; }
+    .list-bg li:hover a {
+      color: #fff; }
+
 @media (max-width: 1200px) {
   .list.latest-news li {
     min-height: auto; }
