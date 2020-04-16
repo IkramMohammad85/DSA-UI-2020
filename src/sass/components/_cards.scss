@@ -587,6 +587,7 @@
   }
 }
 }
+.card-countries{ width: 300px; margin-left: 15px; margin-right: 15px; float: left;}
 
 @media (max-width: $reflex-xlg) {
   .card {
@@ -668,6 +669,7 @@
     .content { min-height: auto;}
     }
   }
+  .card-countries{ width: 290px;}
 }
 
 //Mobile
@@ -743,6 +745,7 @@
     }
 
   }
+  .card-countries{ width: auto; float: none;}
 }
 @media (max-width: $reflex-xs) {
   .card {
