@@ -3061,6 +3061,19 @@ section.asiapedia-section {
   background: #1a2940 !important;
   color: #fff; }
 
+@media (max-width: 1200px) {
+  #package #tab-nav span {
+    min-width: auto; } }
+
+@media (max-width: 768px) {
+  #package #tab-nav span {
+    min-width: auto; } }
+
+@media (max-width: 576px) {
+  #package #tab-nav span {
+    width: 100%;
+    margin-bottom: 10px; } }
+
 .related-insight-slides .glide__bullets, .partner-slides .glide__bullets, .our-people .glide__bullets {
   text-align: center;
   bottom: 0;
@@ -4249,6 +4262,10 @@ blockquote {
 .btn.display-inline {
   display: inline-block; }
 
+.content-responsive {
+  min-height: .01%;
+  overflow-x: auto; }
+
 .table {
   width: 100%;
   word-break: break-all;
@@ -4349,7 +4366,16 @@ blockquote {
     text-align: left !important; }
   .content-center-sm {
     display: table;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .content-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd; }
+    .content-responsive .flex-img {
+      width: 880px;
+      max-width: 880px; } }
 
 @media (max-width: 576px) {
   .text-align-center-xs {

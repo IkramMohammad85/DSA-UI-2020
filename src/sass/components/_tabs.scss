@@ -62,3 +62,29 @@
   .tablink{ padding: 10px 20px; background: #e5e8e9;margin-bottom: 1px; } 
 }
 .tablink-active{background: #1a2940 !important; color: #fff;}
+
+@media (max-width: $reflex-lg) {
+
+  #package{
+    #tab-nav {
+      span{  min-width: auto;}
+    }
+  }
+}
+@media (max-width: $reflex-sm) {
+
+  #package{
+    #tab-nav {
+      span{  min-width: auto;}
+    }
+  }
+}
+
+@media (max-width: $reflex-xs) {
+
+  #package{
+    #tab-nav {
+      span{ width: 100%; margin-bottom:10px;}
+    }
+  }
+}

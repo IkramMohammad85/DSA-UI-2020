@@ -640,3 +640,8 @@ blockquote {
   margin-right: calc(25% - 25vw);
 }
 .btn.display-inline{ display: inline-block;}
+
+.content-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+}
