@@ -2060,40 +2060,44 @@ $border-default: 1px solid #ccc;
   padding-left: 0;
   list-style: none; }
 
-.list-inline {
+.list-inline.display-table-cell {
   overflow: auto; }
-  .list-inline.list-inline-logo {
-    margin-bottom: 0px; }
-    .list-inline.list-inline-logo li {
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      height: 120px;
-      vertical-align: middle;
-      display: table-cell;
-      border: solid 4px #e9ecef; }
-  .list-inline.list-inline-icons {
-    margin-bottom: 0; }
-    .list-inline.list-inline-icons li {
-      width: 27px;
-      height: 27px;
-      font-size: 12px;
-      font-size: 0.75rem;
-      color: #fff;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      background-color: #007bff;
-      padding: 5px;
-      text-align: center; }
-      .list-inline.list-inline-icons li.active, .list-inline.list-inline-icons li:hover {
-        background-color: #0D2338; }
-      .list-inline.list-inline-icons li a {
-        color: #fff; }
-  .list-inline li {
-    display: inline-block; }
-    .list-inline li:not(:last-child) {
-      margin-right: 0.5rem; }
+  .list-inline.display-table-cell li {
+    display: table-cell;
+    border: solid 4px #e9ecef; }
+
+.list-inline.list-inline-logo {
+  margin-bottom: 0px; }
+  .list-inline.list-inline-logo li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 120px;
+    vertical-align: middle; }
+
+.list-inline.list-inline-icons {
+  margin-bottom: 0; }
+  .list-inline.list-inline-icons li {
+    width: 27px;
+    height: 27px;
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-color: #007bff;
+    padding: 5px;
+    text-align: center; }
+    .list-inline.list-inline-icons li.active, .list-inline.list-inline-icons li:hover {
+      background-color: #0D2338; }
+    .list-inline.list-inline-icons li a {
+      color: #fff; }
+
+.list-inline li {
+  display: inline-block; }
+  .list-inline li:not(:last-child) {
+    margin-right: 0.5rem; }
 
 .list.lists-events.list-events-inline li {
   display: inline-block;

@@ -55,7 +55,10 @@
   padding-left: 0;
   list-style: none;
 }
-.list-inline { overflow: auto;
+.list-inline { 
+  &.display-table-cell{ overflow: auto;
+    li{display: table-cell; border: solid 4px #e9ecef;}
+  }
   &.list-inline-logo { margin-bottom: 0px;
     li {
       background-color: $white;
@@ -63,8 +66,7 @@
       margin-bottom: 20px;
       height: 120px;
       vertical-align: middle;
-      display: table-cell;
-      border: solid 4px #e9ecef;
+
     }
   }
   &.list-inline-icons {
