@@ -2071,7 +2071,8 @@ $border-default: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
     height: 120px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    line-height: 100px; }
 
 .list-inline.list-inline-icons {
   margin-bottom: 0; }
@@ -2950,6 +2951,15 @@ section.asiapedia-section {
 
 .modal#contact-us-popup {
   top: 50px; }
+
+.modal#publicationPopup {
+  top: 100px; }
+  .modal#publicationPopup .modal-header .close-modal {
+    margin-top: -23px; }
+  .modal#publicationPopup .modal-dialog {
+    overflow-x: auto; }
+  .modal#publicationPopup .dsa {
+    overflow-x: scroll; }
 
 .content {
   position: absolute;

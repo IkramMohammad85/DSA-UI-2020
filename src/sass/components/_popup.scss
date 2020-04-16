@@ -178,3 +178,11 @@
   }
 }
 .modal#contact-us-popup{ top: 50px;}
+
+.modal#publicationPopup{ top: 100px;
+  .modal-header {
+    .close-modal {margin-top: -23px;}
+  }
+  .modal-dialog { overflow-x: auto;}
+  .dsa{overflow-x: scroll;}
+}
