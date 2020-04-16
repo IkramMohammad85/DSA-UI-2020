@@ -56,7 +56,7 @@
   list-style: none;
 }
 .list-inline { 
-  &.display-table-cell{ overflow: auto;
+  &.display-table-cell{ 
     li{display: table-cell; border: solid 4px #e9ecef;}
   }
   &.list-inline-logo { margin-bottom: 0px;

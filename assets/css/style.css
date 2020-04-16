@@ -2060,11 +2060,9 @@ $border-default: 1px solid #ccc;
   padding-left: 0;
   list-style: none; }
 
-.list-inline.display-table-cell {
-  overflow: auto; }
-  .list-inline.display-table-cell li {
-    display: table-cell;
-    border: solid 4px #e9ecef; }
+.list-inline.display-table-cell li {
+  display: table-cell;
+  border: solid 4px #e9ecef; }
 
 .list-inline.list-inline-logo {
   margin-bottom: 0px; }
