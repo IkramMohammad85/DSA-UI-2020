@@ -16,7 +16,7 @@
          
           &:hover,
           &.glide__bullet--active {
-            background-color: #19283F;
+            background-color: $deep-dark-blue;
           }
           &:focus {
             outline: none;

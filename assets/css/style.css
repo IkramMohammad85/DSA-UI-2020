@@ -3116,7 +3116,7 @@ section.asiapedia-section {
     margin: 0px 7px;
     cursor: pointer; }
     .related-insight-slides .glide__bullets .glide__bullet:hover, .related-insight-slides .glide__bullets .glide__bullet.glide__bullet--active, .partner-slides .glide__bullets .glide__bullet:hover, .partner-slides .glide__bullets .glide__bullet.glide__bullet--active, .our-people .glide__bullets .glide__bullet:hover, .our-people .glide__bullets .glide__bullet.glide__bullet--active {
-      background-color: #19283F; }
+      background-color: #19283f; }
     .related-insight-slides .glide__bullets .glide__bullet:focus, .partner-slides .glide__bullets .glide__bullet:focus, .our-people .glide__bullets .glide__bullet:focus {
       outline: none; }
 
