@@ -1,9 +1,9 @@
 .open-modal {
-  font-weight: bold;
-  background: steelblue;
+  font-weight: $font-weight-bold;
+  background: $dark-light-blue;
   color: var(--white);
-  padding: 0.75rem 1.75rem;
-  margin-bottom: 1rem;
+  padding: 12px 28px;
+  margin-bottom: 16px;
   border-radius: 2px;
 }
 
@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 16px;
   background: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   visibility: hidden;
@@ -45,7 +45,7 @@
 }
 
 .modal-dialog > * {
-  padding: 1rem;
+  padding: 16px;
 }
 
 .modal-header,
@@ -57,17 +57,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between; padding: 10px 0px 10px 30px;
-}
-
-.modal-header .close-modal {
-  @include font-size(14px);
-  padding: 2px 8px;
-  margin-top: -16px;
-
+  .close-modal {
+    @include font-size(14px);
+    padding: 2px 8px;
+    margin-top: -16px;
+  
+  }
 }
 
 .modal p + p {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 
@@ -173,7 +172,7 @@
   }
   form {
     .form-field { 
-      select, input, textarea{ font-size: 14px; margin-top: 0px;;}
+      select, input, textarea{@include font-size(14px); margin-top: 0px;;}
     }
   }
 }

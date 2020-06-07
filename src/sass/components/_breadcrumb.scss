@@ -16,5 +16,6 @@
         color: $bright-gray;
       }
     }
+    li:not(:last-child){ margin-right: 0;}
   }
 }

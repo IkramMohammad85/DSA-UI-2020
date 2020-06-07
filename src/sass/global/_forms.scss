@@ -2,15 +2,15 @@
 .site-footer {
   .input-add-on {
     display: flex;
-    margin-bottom: 1.5em;
+    margin-bottom: 24px;
   }
   .input-add-on-field {
     flex: 1;
     border: 1px solid #3c495c;
-    padding: 0.5em 0.75em;
+    padding: 8px 12px;
     background-color: #3c495c;
     color: #95a3b0;
-    font-size: 18px;
+    @include font-size(18px);
     font-style: italic;
     &:not(:first-child) {
       border-left: 0;
@@ -29,9 +29,9 @@
     background-color: $light-blue;
     color: $white;
     font: inherit;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     border: 1px solid $light-blue;
-    padding: 0.5em 1em;
+    padding: 8px 16px;
     &.padding-text{
       padding: 0px 10px;
     }
@@ -86,7 +86,7 @@ form {
           top: 0;
           right: 0;
           padding-top: 13px;
-          padding-bottom: 14px;
+          padding-bottom: 13px;
         }
         &.btn-plus-minus {
           right: 0;
@@ -118,7 +118,7 @@ form {
       @include font-size(14px);
       color: $gray-700;
       line-height: 1.5;
-      font-weight: normal;
+      font-weight: $font-weight-normal;
     }
     input,
     select,
@@ -160,7 +160,7 @@ form {
     textarea::placeholder,
     select::placeholder {
       color: #6c757d !important;
-      font-weight: 200;
+      font-weight: $font-weight-lighter;
     }
   }
 }
@@ -206,7 +206,7 @@ form.material {
   .form-field-label {
     @include label-active();
     display: block;
-    font-weight: normal;
+    font-weight: $font-weight-normal;
     left: 0;
     margin: 0;
     padding: 14px 12px 14px 25px;
@@ -242,7 +242,7 @@ form.material {
     border: 0;
     color: $gray-600;
     display: block;
-    font-size: 1.2rem;
+    @include font-size(19px);
     margin-top: 24px;
     outline: 0;
     padding: 0 12px 10px 12px;
@@ -287,10 +287,16 @@ form.material {
     -moz-appearance: menulist;
   }
 }
+//signup form on int. desk pages 
+.signup-group{
+  .form-field.field-group {
+    .group-field-btn.btn-go{padding-top: 12px; padding-bottom: 12px;}
+  }
+}
 //Mobile
 @media (max-width: $reflex-sm) {
   .input-add-on-field {
-    font-size: 15px;
+    @include font-size(15px);
   }
   form {
     .form-field {
@@ -323,5 +329,5 @@ form.material {
 
   #contact_form{
 
-    label:after{ content:" *"; color: red; position: absolute; left: 10px; top: 30px; line-height: 1px;}
+    label:after{ content:" *"; color: $red; position: absolute; left: 10px; top: 30px; line-height: 1px;}
   }

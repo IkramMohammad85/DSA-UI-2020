@@ -14,7 +14,8 @@
     user-select: none;
     a {
       color: $cyan-blue;
-      font-weight: 200;
+      font-weight: $font-weight-lighter;
+      
     }
   }
   &.news-list {
@@ -35,7 +36,7 @@
         margin-bottom: 0px;
       }
       h2{
-        font-size: 20px;
+        @include font-size(20px);
       }
     }
   }
@@ -56,9 +57,6 @@
   list-style: none;
 }
 .list-inline { 
-  &.display-table-cell{ 
-    li{display: table-cell; border: solid 4px #e9ecef;}
-  }
   &.list-inline-logo { margin-bottom: 0px;
     li {
       background-color: $white;
@@ -93,7 +91,7 @@
   li {
     display: inline-block;
     &:not(:last-child) {
-      margin-right: 0.5rem;
+      margin-right: 8px;
     }
   }
 }
@@ -104,7 +102,7 @@
       display: inline-block;
       border: none;
       background-color: inherit; margin-right: 15px;
-      .date-block{ background-color: #17394E; color: $white; font-weight: bold; font-size: 40px; padding: 15px; line-height: normal;}
+      .date-block{ background-color: #17394E; color: $white; font-weight: $font-weight-bold; @include font-size(40px); padding: 15px; line-height: normal;}
     }
   }
   
@@ -152,7 +150,7 @@
     display: flex;
     align-items: flex-start;
     .list-thumbnail {
-      margin-right: 1em;
+      margin-right: 16px;
       order: 1;
       width: auto;
       &.thumbnail-80 {
@@ -183,7 +181,7 @@
 
 .list-unstyled.login-popup {
   li {
-    padding: 5px 10px 5px 32px; font-size: 13px; margin-bottom: 8px; line-height: 18px !important;
+    padding: 5px 10px 5px 32px; @include font-size(13px); margin-bottom: 8px; line-height: 18px !important;
   }
   li.m {
     background: url(../img/magazines-icon.jpg) no-repeat 0 3px;
@@ -299,12 +297,12 @@ ul.list-blue-border{
 .list.hp-event-list{
   li{ padding: 0px 0px 20px 0px; margin-bottom: 15px;
     a{
-      &:hover{ color: #007bff;text-decoration: underline;}
+      &:hover{ color: $blue;text-decoration: underline;}
     }
   &:last-child{ border: none;}
   &:hover{ 
     h4{
-      a{ color: #007bff; text-decoration: underline;}
+      a{ color: $blue; text-decoration: underline;}
     }
   }}
 }
@@ -318,7 +316,7 @@ ul.list-bg {
 		background: #f9f9f9;
 		padding: 6px 10px;
 		margin-bottom: 25px;
-		border: solid 2px #1e71bd;
+		border: solid 2px $blue;
 		transition: box-shadow 0.3s ease-in-out;
 		&:hover {
 			box-shadow: 0px 4px 8px 0px #ccc;
@@ -367,7 +365,7 @@ ul.list-bg {
   .list {
     &.lists-events {
       .date-block {
-        border-bottom: solid 1px #dadada;
+        border: solid 1px #dadada;
       }
     }
     &.latest-news{

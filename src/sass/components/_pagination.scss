@@ -19,8 +19,8 @@
         color: $white;
       }
     }
-
   }
+  li{margin-bottom: 5px; display: inline-block;}
   li.active {
     a {
       background-color: $light-blue;

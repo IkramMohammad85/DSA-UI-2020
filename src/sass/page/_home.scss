@@ -2,9 +2,9 @@
   .white-bg{
 
     .related-insight-block{ border: solid 1px #e9ecef !important;
-      .content{ background-color: #19283F !important;
+      .content{ background-color: $deep-dark-blue !important;
         h4{
-          a{ color: #fff !important;}
+          a{ color: $white !important;}
         }
       }
   
@@ -19,7 +19,7 @@
 }
   .white-bg.bg-opacity{
     background: rgba(255, 255, 255, 0.3);
-    .related-insight-block{ background-color: #fff;}
+    .related-insight-block{ background-color: $white;}
   }
   .white-bg.black-bg-opacity{
     background: rgba(49, 106, 163, 0.2);
@@ -37,7 +37,7 @@
     .related-insight-block{border: solid 1px #51657c;
     
     h4{
-      a{ color: #fff;}
+      a{ color: $white;}
     }
     small{
       color:#627892;
@@ -134,15 +134,15 @@
                 margin-bottom: 0px;
               }
               a {
-                color: white;
+                color: $white;
               }
               .btn-link {
                 padding-left: 0;
                 padding-right: 0;
-                font-weight: 100;
+                font-weight: $font-weight-lighter;
                 font-style: italic;
                 color: #7eb1e6;
-                font-size: 15px;
+                @include font-size(15px);
               }
             }
           }
@@ -160,8 +160,8 @@
         }
         .btn-link {
           color: $blue;
-          font-size: 14px;
-          font-weight: bold;
+          @include font-size(14px);
+          font-weight: $font-weight-bold;
         }
 
         .related-insight-block {
@@ -186,11 +186,11 @@
             background-color: $light-blue;
             border-color: $light-blue;
             a.btn {
-              color: #fff !important;
+              color: $white !important;
             }
             p {
-              line-height: 18px; color: #fff;
-              a{ color: #fff;}
+              line-height: 18px; color: $white;
+              a { color: $white;}
             }
           }
         }
@@ -255,7 +255,7 @@
         background: $deep-blue;
         cursor: pointer;
         .icon-3x {
-          color: #fff;
+          color: $white;
         }
         .content-more {
           display: block;
@@ -359,7 +359,7 @@
       width: 10px;
       height: 10px;
       margin: 2px;
-      background-color: #fff;
+      background-color: $white;
       cursor: pointer;
       border: none;
       &:hover,
@@ -391,27 +391,27 @@
       visibility: hidden;
       opacity: 0;
       left: 0;
-      background-color: #19283F;
+      background-color: $deep-dark-blue;
       a.btn {
-        color: #fff !important;
+        color: $white !important;
       }
       p {
-        line-height: 18px; color: #fff;
-        a{ color: #fff;}
+        line-height: 18px; color: $white;
+        a{ color: $white;}
       }
     }
     .date-block{
     background-color: #17394E;
-    color: #fff;
-    font-weight: bold;
-    font-size: 40px;
+    color: $white;
+    font-weight: $font-weight-bold;
+    @include font-size(40px);
     line-height: normal;
     width: 110px;
     text-align: center;
     float: left;
     padding: 15px;
     span {
-      font-size: 14px;
+      @include font-size(14px);
       display: block;
       line-height: 18px;
   }
@@ -434,13 +434,13 @@
       p{ line-height: 20px; margin-bottom: 20px;}
     }
     .content{
-      .date-time{ color: #fff !important;}
+      .date-time{ color: $white !important;}
       p{margin-bottom: 20px;}
     }
   }
 
   &.eventsV9{
-    border: solid 1px $gray-500; background-color: #fff;
+    border: solid 1px $gray-500; background-color: $white;
     width: 95%;
     .date-block{    padding: 35px 30px; 
       height: 100%;
@@ -451,7 +451,7 @@
       p{ line-height: 20px; margin-bottom: 20px;}
     }
     .content{
-      .date-time{ color: #fff !important;}
+      .date-time{ color: $white !important;}
       p{margin-bottom: 20px;}
     }
     &:hover{
@@ -463,7 +463,7 @@
   }
 
   &.eventsV10{
-    border: solid 1px $gray-500; background-color: #fff;
+    border: solid 1px $gray-500; background-color: $white;
     width: 95%;
     .date-block{    padding: 35px 30px; 
       height: 100%;
@@ -475,16 +475,16 @@
     }
     .date-time{ display: block;margin-top: 48px;}
     .content{ width: 85%; margin-left: 145px; padding: 20px;
-      .date-time{ color: #1a2a40 !important; font-weight: bold; margin-top: 30px;} 
-      p{margin-bottom: 20px; color: #1a2a40;line-height: 22px;
-      a{ color: #1a2a40;
+      .date-time{ color: $deep-blue !important; font-weight: $font-weight-bold; margin-top: 30px;} 
+      p{margin-bottom: 20px; color: $deep-blue;line-height: 22px;
+      a{ color: $deep-blue;
       &:hover{color: #357dc0; text-decoration: none;}
       }
       }
       .btn{ background-color: #357dc0;border-color:#357dc0 ;}
     }
     &:hover{ 
-      .content{ background-color: #f5f5f5; color: #1a2a40;
+      .content{ background-color: #f5f5f5; color: $deep-blue;
       p{
         a{
           &:hover{text-decoration: none;}
@@ -499,7 +499,8 @@
   }
 }
 .event-block-section{  width: 98%;
-.event-block-height{height: 530px;
+.event-block-height{height: 415px;
+
   .event-block.eventsV10{ width: 97%;}
   .simplebar-scrollbar:before{ background-color: #17394E; opacity: 1;}
   .simplebar-track.simplebar-vertical{ background-color: #f1f1f1; border-radius: 10px;}
@@ -584,7 +585,7 @@
   .glide__bullets {
     bottom: 0;
     .glide__bullet{
-      background-color: #fff;
+      background-color: $white;
       border: solid 1px #707070;
       border-radius: 50%;
       height: 15px;
@@ -593,7 +594,7 @@
       margin: 4px;
       &:hover,
       &.glide__bullet--active {
-        background-color: #19283F;
+        background-color: $deep-dark-blue;
       }
       &:focus {
         outline: none;
@@ -728,7 +729,7 @@
           }
         }
         .heading-brand {
-          font-size: 1.3em;
+          @include font-size(21px);
           margin-top: 0 !important;
         }
         .col-grid {
@@ -745,7 +746,7 @@
           .news-details {
             top: 15%; //add top postion due to justify-center not workin in ie
             .btn {
-              font-size: 14px;
+              @include font-size(14px);
             }
           }
         }
@@ -754,7 +755,7 @@
           background: rgba(0, 0, 0, 0.5);
         }
         .heading-brand {
-          font-size: 1.6em;
+          @include font-size(26px);
         }
       }
     }
@@ -844,7 +845,7 @@
         min-height: 850px;
         .news {
           bottom: 32%;
-          h1{font-size: 24px;}
+          h1{@include font-size(24px);}
         }
       }
     }
@@ -905,7 +906,7 @@
       .big-banner{
         .item {
           .white-bg.related-insight{
-             .related-insight-block{ background:#fff;}
+             .related-insight-block{ background:$white;}
           }
         }
       }
@@ -936,7 +937,7 @@
     .big-banner{
       .item {
         .white-bg.related-insight{
-           .related-insight-block{ background:#fff;}
+           .related-insight-block{ background:$white;}
         }
       }
     }
@@ -979,4 +980,6 @@
 
   }
 }
+
+
 

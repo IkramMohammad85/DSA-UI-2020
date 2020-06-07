@@ -187,12 +187,12 @@ $border-default: 1px solid #ccc;
 
 //label
 @mixin label-inactive() {
-  font-size: 1.2rem;
+  @include font-size(19px);
   transform: translateY(0);
 }
 
 @mixin label-active() {
-  font-size: 0.75rem;
+  @include font-size(12px);
   transform: translateY(-8px);
 }
 

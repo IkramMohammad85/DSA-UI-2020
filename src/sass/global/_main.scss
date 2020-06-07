@@ -68,7 +68,7 @@ header.site-header {
         }
       }
       .header-menu.open > ul > li > a {
-        color: white !important;
+        color: $white !important;
       }
 
       .hamburger-menu {
@@ -80,7 +80,7 @@ header.site-header {
         li.dropdown {
           &:nth-last-child(2) {
             a {
-              color: #007bff;
+              color: $blue;
             }
           }
           h4,
@@ -129,7 +129,7 @@ header.site-header {
         p {
           text-transform: inherit;
           text-transform: inherit;
-          font-weight: normal;
+          font-weight: $font-weight-normal;
         }
 
         h1,
@@ -158,7 +158,7 @@ header.site-header {
             padding: 5px 0;
             a {
               color: #2a2a2a;
-              font-weight: normal;
+              font-weight: $font-weight-normal;
             }
           }
         }
@@ -191,7 +191,7 @@ header.site-header {
       color: $white !important;
       border-color: $white !important;
     }
-    &:hover{ background-color: #0072eb; color: #fff !important;border-color:#0072eb !important;
+    &:hover{ background-color: $blue; color: $white !important;border-color:$blue !important;
       .down-arrow {
         color: $white !important;
         border-color: $white!important;
@@ -210,7 +210,7 @@ footer.site-footer {
     }
     li {
       &:not(:last-child) {
-        padding-right: 1rem;
+        padding-right: 16px;
       }
     }
   }
@@ -221,36 +221,36 @@ footer.site-footer {
     li {
       vertical-align: middle;
       &:not(:last-child) {
-        margin-right: 0.5rem;
+        margin-right: 8px;
         padding-right: 0px;
       }
     }
   }
   h2 {
     color: $white;
-    font-weight: normal;
+    font-weight: $font-weight-normal;
   }
   h3 {
     color: $white;
-    font-weight: normal;
+    font-weight: $font-weight-normal;
   }
   h4 {
     color: $white;
-    font-weight: normal;
+    font-weight: $font-weight-normal;
   }
   h5 {
     color: $white;
-    font-weight: normal;
+    font-weight: $font-weight-normal;
   }
   p {
-    font-size: 13px;
+    @include font-size(13px);
   }
   .list-unstyled {
     li {
       padding: 0px 20px 0px 0px;
       a {
         color: $bluish-gray;
-        font-size: 13px;
+        @include font-size(13px);
         &:hover {
           color: #afc7da;
         }
@@ -266,13 +266,13 @@ footer.site-footer {
       line-height: 18px;
       text-align: right;
       li {
-        font-size: 13px;
+        @include font-size(13px);
         a {
           color: $bluish-gray;
         }
         &:not(:last-child) {
           border-right: solid 1px $bluish-gray;
-          padding-right: 0.5rem;
+          padding-right: 8px;
         }
       }
     }
@@ -353,7 +353,7 @@ header.site-header .hamburger-menu {
   line-height: normal;
   background: $black;
   color: $white;
-  font-weight: 100;
+  font-weight: $font-weight-light;
   transition: 0.8s;
   animation: slideIn 0.8s;
   animation-delay: 0.8s;
@@ -481,8 +481,8 @@ ul.navbar {
 
     &.dropdown.open {
       border-bottom: 2px solid $blue;
-      .contact-button{ background-color: #007bff; color: #fff !important;}
-      .down-arrow{ border-color: #fff !important;}
+      .contact-button{ background-color: $blue; color: $white !important;}
+      .down-arrow{ border-color: $white !important;}
 
       
     }
@@ -548,7 +548,7 @@ ul.navbar {
   background: none;
   width: 51px;
   z-index: 2;
-  font-size: 40px;
+  @include font-size(40px);
   text-decoration: none;
   left: -42px;
   border: 0;
@@ -706,7 +706,7 @@ ul.top-quick-link {
     letter-spacing: normal;
     transform: none;
     padding: 0px 4px;
-    font-size: 12px;
+    @include font-size(12px);
     border-radius: 2px;
     height: 20px;
     vertical-align: top;
@@ -715,7 +715,7 @@ ul.top-quick-link {
       display: inline-flex;
       line-height: 1px;
       vertical-align: middle;
-      font-size: 14px;
+      @include font-size(14px);
     }
   }
   .close-cookies-modal {

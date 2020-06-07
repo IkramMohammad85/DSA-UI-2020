@@ -17,10 +17,11 @@
   }
 }
 
-.blue-hover:hover {
-  i {
-    color: $white;
-  }
+.blue-hover {
+	&:hover {
+		i { color: $white;
+	}
+}
 }
 .icon {
   width: auto;
@@ -65,7 +66,6 @@
 .left-side-content-block{ width: 100%; float: left; }
 .graphics-block{ width: 100%;}
 .graphics-normla{ width: 72%;}
-
 .post-image{
-  img{ border-bottom: solid 2px #ea2127 !important; padding-bottom: 2px ;}
+  img{ border-bottom: solid 2px $red !important; padding-bottom: 2px ;}
 }

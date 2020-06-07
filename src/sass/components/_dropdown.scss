@@ -48,14 +48,14 @@
         line-height: 20px;
         a {
           color: #2a2a2a;
-          font-weight: normal;
+          font-weight: $font-weight-normal;
         }
       }
     }
     p {
       @include font-size(14px);
       text-transform: none;
-      font-weight: normal;
+      font-weight: $font-weight-normal;
     }
     .btn-outline-dark,
     .btn-secondary {
@@ -78,7 +78,7 @@
     .btn-link {
       color: $blue !important;
       text-transform: initial;
-      font-weight: normal;
+      font-weight: $font-weight-normal;
       padding: 0;
       @include font-size(13px);
     }
@@ -127,7 +127,7 @@
   .btn{ padding: 3px 10px; min-width: 120px;}
   }
   .create-ac-block{
-    input{ background-color: #fff; width: 200px; font-size: 14px;}
+    input{ background-color: #fff; width: 200px; @include font-size(14px);}
   }
 
 }
@@ -146,7 +146,7 @@
 
 .dropdown-divider {
   height: 0;
-  margin: .5rem 0;
+  margin: 8px 0;
   overflow: hidden;
   border-top: 1px solid #cecece;
   width: 70%;

@@ -6,30 +6,30 @@
       transition: opacity 0.5s linear;
       visibility: visible;
       opacity: 1;
-      line-height: 1.5em;
+      line-height: 24px;
     }
     .child-link {
       // right: 72px;
       transform: translate(-2em, 0);
-      background-color: #316aa3;
-      border-color: #316aa3 !important;
+      background-color: $light-blue;
+      border-color: $light-blue !important;
       position: relative;
     }
   }
   .content {
     width: 40%;
     height: 290px;
-    background-color: #316aa3;
+    background-color: $light-blue;
     z-index: 1;
     visibility: hidden;
     opacity: 0;
     left: 0;
     bottom: 0;
     .btn-outline-white {
-      color: #fff;
+      color: $white;
       margin-top: 20px;
       &:hover {
-        border: solid 1px #fff;
+        border: solid 1px $white;
       }
     }
   }
@@ -56,9 +56,9 @@
     ~ {
       .child {
         .child-link {
-          background-color: #316aa3 !important;
-          border-color: #316aa3 !important;
-          color: #fff;
+          background-color: $light-blue !important;
+          border-color: $light-blue !important;
+          color: $white;
           margin-left: 10px;
         }
       }
@@ -127,7 +127,7 @@
     }
   }
   .links-group {
-    border: solid 1px #fff;
+    border: solid 1px $white;
     overflow: hidden;
     margin-bottom: 20px;
   }

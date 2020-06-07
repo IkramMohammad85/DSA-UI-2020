@@ -191,8 +191,8 @@
       visibility: hidden;
       opacity: 0;
       left: 0;
-      background-color: #19283F;
-      border-color: #19283F;
+      background-color: $deep-dark-blue;
+      border-color: $deep-dark-blue;
       a.btn {
         color: #fff !important;
       }
@@ -254,7 +254,7 @@
         transition: opacity 0.5s linear;
         visibility: visible;
         opacity: 1;
-        line-height: 1.2em;
+        line-height: 19px;
       }
     }
     .content {
@@ -263,7 +263,7 @@
       visibility: hidden;
       opacity: 0;
       left: 0;
-      background-color: #19283F;
+      background-color: $deep-dark-blue;
     }
   }
 
@@ -459,7 +459,7 @@
       visibility: hidden;
       opacity: 0;
       left: 0;
-      background-color: #19283F;
+      background-color: $deep-dark-blue;
       .thumbnail-block {
         height: 140px;
         width: 124px;
@@ -521,7 +521,7 @@
         top: 0%;
         h2 {
           padding: 15px;
-          font-size: 18px;
+          @include font-size(18px);
         }
       }
     }
@@ -571,7 +571,7 @@
     .card-header-img { position: relative;
       height: 176px;
       .briefing-lable{
-        padding: 2px 15px; position: absolute; left: 0; bottom: 0; color:$white; text-transform: uppercase; font-size: 14px;
+        padding: 2px 15px; position: absolute; left: 0; bottom: 0; color:$white; text-transform: uppercase; @include font-size(14px);
         &.cb{ background-color:#ec1c24 ;}
         &.vb{ background-color:#8061a1 ;}
         &.ib{ background-color:#1d9649 ;}
@@ -720,7 +720,7 @@
         .card-text-overlap {
           top: 0%;
           h2 {
-            font-size: 24px;
+            @include font-size(24px);
           }
         }
       }
