@@ -6,7 +6,7 @@ head
   // Custom CSS
   link(rel='stylesheet', href='assets/css/style.css?v0.1', type='text/css' )
   link(rel='stylesheet', href='assets/css/vendor/glide.css', type='text/css' )
-  link(rel='stylesheet', href='assets/css/vendor/simplebar.css', type='text/css' )
+  link(rel='stylesheet', href='assets/css/vendor/simplebar.min.css', type='text/css' )
   title Dezan Shira & Associates!
 body
   #wrapper.home
@@ -135,7 +135,27 @@ body
           .col-lg-9.col-md-9
             .white-bg.p-arround-2.event-block-section
                 h5.text-uppercase.text-muted.mb-3 EVENTS
-                .event-block-height
+                #myElement.event-block-height(data-simplebar='', style='height: 500px;')
+                    .event-block.eventsV10.mb-2
+                      .date-block
+                        | 03
+                        span Jun, 2020
+                      .dec-block
+                        .h3.pt-2
+                          a(href='https://www.dezshira.com/events/details/options-for-automation-of-accounting-work-in-for-uk-companies-with-operations-in-china-8564.html') St. Petersburg International Economic Forum 2020
+                        p.pt-3
+                          a(href='#')
+                            strong Register for the Webcast 
+                    .event-block.eventsV10.mb-2
+                      .date-block
+                        | 11
+                        span Sep, 2020
+                      .dec-block
+                        .h3.pt-2
+                          a(href='https://www.dezshira.com/events/details/options-for-automation-of-accounting-work-in-for-uk-companies-with-operations-in-china-8564.html') Data Security and Risk Management during business trips in China
+                        p.pt-3
+                          a(href='#')
+                            strong Register for the Webcast 
                     .event-block.eventsV10.mb-2
                       .date-block
                         | 12
@@ -147,14 +167,6 @@ body
                         p.pt-3
                           a(href='#')
                             strong Register for the Webcast 
-                        .content
-                            a.btn.btn-secondary.float-right.ml-2.mb-4 Register now
-                            h4.marg-top-0.marg-bottom-0
-                                a(href='https://www.dezshira.com/events/details/options-for-automation-of-accounting-work-in-for-uk-companies-with-operations-in-china-8564.html') Data Security and Risk Management during business trips in China
-                            p 
-                            | On February 21st, Maria Kotova, Head of UK and Ireland Business Development at Dezan Shira & Associates, will provide insight on China Market Entry Strategies at the China Britain Trade Expo 2020 in London, United Kingdom.  
-                            .date-time
-                                | Webinar | May 12, 2020| 2 PM EST / 11 AM PST
                     .event-block.eventsV10.mb-2
                       .date-block
                         | 03
@@ -165,7 +177,7 @@ body
                         p.pt-3
                           a(href='#')
                             strong Register for the Webcast 
-                    .event-block.eventsV9.mb-2
+                    .event-block.eventsV10.mb-2
                       .date-block
                         | 11
                         span Sep, 2020
@@ -175,7 +187,7 @@ body
                         p.pt-3
                           a(href='#')
                             strong Register for the Webcast 
-                    .event-block.eventsV9.mb-2
+                    .event-block.eventsV10.mb-2
                       .date-block
                         | 12
                         span May, 2020
@@ -186,7 +198,7 @@ body
                         p.pt-3
                           a(href='#')
                             strong Register for the Webcast 
-                    .event-block.eventsV9.mb-2
+                    .event-block.eventsV10.mb-2
                       .date-block
                         | 03
                         span Jun, 2020
@@ -196,38 +208,7 @@ body
                         p.pt-3
                           a(href='#')
                             strong Register for the Webcast 
-                    .event-block.eventsV9.mb-2
-                      .date-block
-                        | 11
-                        span Sep, 2020
-                      .dec-block
-                        .h3.pt-2
-                          a(href='https://www.dezshira.com/events/details/options-for-automation-of-accounting-work-in-for-uk-companies-with-operations-in-china-8564.html') Data Security and Risk Management during business trips in China
-                        p.pt-3
-                          a(href='#')
-                            strong Register for the Webcast 
-                    .event-block.eventsV9.mb-2
-                      .date-block
-                        | 12
-                        span May, 2020
-                      .dec-block
-                        .h3.pt-2
-                          a(href='https://www.dezshira.com/events/details/options-for-automation-of-accounting-work-in-for-uk-companies-with-operations-in-china-8564.html')
-                            | Options for Automation of Accounting Work for UK Companies with Operations in China
-                        p.pt-3
-                          a(href='#')
-                            strong Register for the Webcast 
-                    .event-block.eventsV9.mb-2
-                      .date-block
-                        | 03
-                        span Jun, 2020
-                      .dec-block
-                        .h3.pt-2
-                          a(href='https://www.dezshira.com/events/details/options-for-automation-of-accounting-work-in-for-uk-companies-with-operations-in-china-8564.html') St. Petersburg International Economic Forum 2020
-                        p.pt-3
-                          a(href='#')
-                            strong Register for the Webcast 
-                    .event-block.eventsV9.mb-2
+                    .event-block.eventsV10.mb-2
                       .date-block
                         | 11
                         span Sep, 2020
