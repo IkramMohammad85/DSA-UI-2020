@@ -2786,11 +2786,10 @@ section.asiapedia-section {
   opacity: 0;
   -webkit-transition: all 0.35s ease-in;
   transition: all 0.35s ease-in; }
-
-.modal.is-visible {
-  visibility: visible;
-  opacity: 1;
-  z-index: 100; }
+  .modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100; }
 
 .modal-dialog {
   position: relative;
@@ -2990,62 +2989,53 @@ section.asiapedia-section {
 /* NAVIGATION */
 #tab-nav {
   border-bottom: 3px solid #316aa3; }
-
-#tab-nav span.tabnav {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  cursor: pointer; }
-
-#tab-nav span.active {
-  background: #316aa3;
-  color: #fff; }
+  #tab-nav span.tabnav {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer; }
+  #tab-nav span.active {
+    background: #316aa3;
+    color: #fff; }
 
 /* CONTENTS */
 #tab-contents {
   padding: 15px;
   background: #f8f9fa; }
-
-#tab-contents div.tabtxt {
-  display: none; }
-
-#tab-contents div.active {
-  display: block; }
-
-#tab-contents .tab-more-content {
-  min-height: 380px; }
-
-#latest-insight #tab-nav {
-  border: none;
-  float: right; }
+  #tab-contents div.tabtxt {
+    display: none; }
+  #tab-contents div.active {
+    display: block; }
+  #tab-contents .tab-more-content {
+    min-height: 380px; }
 
 #latest-insight #tab-contents {
   padding: 0px;
   background: #fff; }
 
-#latest-insight #tab-nav span.active {
-  background: #1a2940;
-  color: #fff; }
-
-#latest-insight #tab-nav span {
-  background: #e5e8e9;
-  margin-left: 1px;
-  margin-right: 1px; }
+#latest-insight #tab-nav {
+  border: none;
+  float: right; }
+  #latest-insight #tab-nav span.active {
+    background: #1a2940;
+    color: #fff; }
+  #latest-insight #tab-nav span {
+    background: #e5e8e9;
+    margin-left: 1px;
+    margin-right: 1px; }
 
 #package #tab-nav {
   border-bottom: 3px solid #1a2940; }
-
-#package #tab-nav span.active {
-  background: #1a2940;
-  color: #fff; }
-
-#package #tab-nav span {
-  background: #c9cacc;
-  margin-right: 10px;
-  min-width: 220px;
-  text-align: center;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  #package #tab-nav span.active {
+    background: #1a2940;
+    color: #fff; }
+  #package #tab-nav span {
+    background: #c9cacc;
+    margin-right: 10px;
+    min-width: 220px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
 
 #package-content #tab-contents {
   padding: 0px;
@@ -3057,17 +3047,15 @@ section.asiapedia-section {
 #vertical-tabs #tab-nav {
   border: none;
   float: right; }
-
-#vertical-tabs #tab-nav span.active {
-  background: #1a2940;
-  color: #fff; }
-
-#vertical-tabs #tab-nav span {
-  background: #e5e8e9;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 1px;
-  width: 100%; }
+  #vertical-tabs #tab-nav span.active {
+    background: #1a2940;
+    color: #fff; }
+  #vertical-tabs #tab-nav span {
+    background: #e5e8e9;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 1px;
+    width: 100%; }
 
 #vertical-left-contents #tab-contents {
   padding: 0px;

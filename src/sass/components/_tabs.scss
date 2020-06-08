@@ -1,98 +1,156 @@
 /* NAVIGATION */
 #tab-nav {
-    border-bottom:3px solid $light-blue;
-  }
-  #tab-nav span.tabnav {
+  border-bottom: 3px solid $light-blue;
+  span.tabnav {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     cursor: pointer;
   }
-  #tab-nav span.active {
+  span.active {
     background: $light-blue;
-    color:$white;
+    color: $white;
   }
-  
-  /* CONTENTS */
-  #tab-contents {
-    padding: 15px;
-    background:$gray-100;
-  }
-  #tab-contents div.tabtxt {
+}
+
+/* CONTENTS */
+#tab-contents {
+  padding: 15px;
+  background: $gray-100;
+  div.tabtxt {
     display: none;
   }
-  #tab-contents div.active {
+  div.active {
     display: block;
   }
-  #tab-contents .tab-more-content {
-   
+  .tab-more-content {
     min-height: 380px;
   }
-
- #latest-insight{
-  #tab-nav{ border: none; float:right;}
-  #tab-contents{ padding: 0px; background: $white;}
-  #tab-nav span.active {background:$deep-blue; color:$white;}
-  #tab-nav span{ background: #e5e8e9; margin-left: 1px; margin-right: 1px;}
- }
-
- #package{
-  #tab-nav{ border-bottom: 3px solid $deep-blue; }
-  #tab-nav span.active {background:$deep-blue; color:$white;}
-  #tab-nav span{ background:#c9cacc; margin-right: 10px; min-width: 220px; text-align: center;    border-top-left-radius: 5px;     border-top-right-radius: 5px;}
- }
- #package-content{
- #tab-contents{ padding: 0px; background: $white;
-  .tab-more-content{ margin: 0px; padding: 20px;}
 }
-}
- #vertical-tabs{
-  #tab-nav{ border: none; float:right;}
-  #tab-nav span.active {background:$deep-blue; color:$white;}
-  #tab-nav span{ background: #e5e8e9; margin-left: 0px; margin-right: 0px; margin-bottom: 1px; width: 100%;}
 
- } 
- #vertical-left-contents{
-  #tab-contents{ padding: 0px; background: $white;
-    .tab-more-content{ margin: 0px;}
+#latest-insight {
+  #tab-contents {
+    padding: 0px;
+    background: $white;
   }
- }
-.v-tabs{
-
-  .tablink{ padding: 10px 20px; background: #e5e8e9;margin-bottom: 1px; 
-  
-  &:hover{ background-color: $white;}} 
+  #tab-nav {
+    border: none;
+    float: right;
+    span.active {
+      background: $deep-blue;
+      color: $white;
+    }
+    span {
+      background: #e5e8e9;
+      margin-left: 1px;
+      margin-right: 1px;
+    }
+  }
 }
-.tablink-active{background: $deep-blue !important; color: $white;}
+
+#package {
+  #tab-nav {
+    border-bottom: 3px solid $deep-blue;
+    span.active {
+      background: $deep-blue;
+      color: $white;
+    }
+    span {
+      background: #c9cacc;
+      margin-right: 10px;
+      min-width: 220px;
+      text-align: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+}
+#package-content {
+  #tab-contents {
+    padding: 0px;
+    background: $white;
+    .tab-more-content {
+      margin: 0px;
+      padding: 20px;
+    }
+  }
+}
+#vertical-tabs {
+  #tab-nav {
+    border: none;
+    float: right;
+    span.active {
+      background: $deep-blue;
+      color: $white;
+    }
+    span {
+      background: #e5e8e9;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 1px;
+      width: 100%;
+    }
+  }
+}
+#vertical-left-contents {
+  #tab-contents {
+    padding: 0px;
+    background: $white;
+    .tab-more-content {
+      margin: 0px;
+    }
+  }
+}
+.v-tabs {
+  .tablink {
+    padding: 10px 20px;
+    background: #e5e8e9;
+    margin-bottom: 1px;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+}
+.tablink-active {
+  background: $deep-blue !important;
+  color: $white;
+}
 
 @media (max-width: $reflex-lg) {
-
-  #package{
+  #package {
     #tab-nav {
-      span{  min-width: auto;}
+      span {
+        min-width: auto;
+      }
     }
   }
 }
 @media (max-width: $reflex-sm) {
-
-  #package{
+  #package {
     #tab-nav {
-      span{  min-width: auto;}
+      span {
+        min-width: auto;
+      }
     }
   }
 }
 
 @media (max-width: $reflex-xs) {
-
-  #package{
+  #package {
     #tab-nav {
-      span{ width: 100%; margin-bottom:10px;}
+      span {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
   }
 
-  #package-content{
-    #tab-contents{
-     .tab-more-content{ padding: 0px;}
-   }
-   }
+  #package-content {
+    #tab-contents {
+      .tab-more-content {
+        padding: 0px;
+      }
+    }
+  }
 }
