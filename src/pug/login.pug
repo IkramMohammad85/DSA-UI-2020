@@ -10,39 +10,41 @@ head
 body
   #wrapper
     include components/_header-blueV2
-    section.pt-150.pb-7
+    section.pt-150.pb-7.gray-light-bg
         .container
             .grid
-                .col-sm.col-md-8.col-grid.offset-md-2.offset-lg-2
-                    .grid.border
-                        .col-md.text-center
-                            a(href='https://www.dezshira.com/library')
-                            img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
-                            p.text-capitalize-none.mb-1
-                                | A place to share knowledge and better understand Asia
-                        .col-md-6.col-sm-6.col-grid
-                            form.grey-bg.p-arround-2(action='')
-                                h3.text-capitalize Log In
-                                input.mb-1(type='text', placeholder='Enter email', name='email', required='')
-                                input.mb-1(type='password', placeholder='Enter password', name='psw', required='')
-                                small.text-right.text-capitalize.d-block.mt-1.mb-2
-                                    a(href='https://www.asiabriefing.com/customer/forgot-password')
-                                    | Forgot Password?
-                                button.btn.btn-secondary.text-white.float-right(type='submit') Login
-                                small.float-left.mt-1
-                                    | No Subscription? 
-                                    a(href='https://www.dezshira.com/register.html', target='_blank') Click Here
-
-                                
-                        .col-md-6.col-sm-6.col-grid
-                            h5.text-capitalize Why subscribe to Asiapedia?
-                            ul.list-unstyled.bullet-list
-                                li Download our FREE magazines and guides
-                                li Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
-                                li Access presentations, webinars, podcasts, reports, Q&amp;As and more
-                                li Track paid orders and connect with our support team 
-                        .col-md.text-center.p-0
-                            a.btn.btn-secondary.text-white.text-capitalize-none.btn-block.p-arround-1(href='https://www.dezshira.com/register') Don&apos;t have an account? Sign Up               
+              .col-sm.col-md-8.col-grid.offset-md-2.offset-lg-2
+                .grid
+                  .col-md.text-center
+                    a(href='http://dezshira.in/library')
+                    img(alt='', src='https://www.dezshira.com/themes/dsa/images/asiapedia-logo.png', srcset='https://www.dezshira.com/themes/dsa/images/asiapedia-logo-2X.png 2x')
+                    p.text-capitalize-none.mb-1
+                      strong A place to share knowledge and better understand Asia
+                  .col-md-6.col-sm-6.col-grid
+                    .white-bg.p-arround-2.login-block
+                      h5.text-uppercase.text-left.mt-2.border-bottom-dark-blue.mb-3.pb-1 Create account
+                      ul.list-unstyled.text-left.login-popup
+                        li.m Download our FREE magazines and guides
+                        li.n
+                          | Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications
+                        li.w Access presentations, webinars, podcasts, reports, Q&amp;As and more
+                        li.c Track paid orders and connect with our support team 
+                      .text-center
+                        a.btn.btn-secondary.text-white(href='http://dezshira.in/register') Subscribe
+                  .col-md-6.col-sm-6.col-grid
+                    form.dark-blue-bg.p-arround-2.text-center.create-ac-block(action='http://dezshira.in/login?action=post_form&515237', method='POST')
+                      h3.text-center.mb-3.mt-4 Log In
+                      input(type='hidden', value='', name='goto')
+                      input(type='hidden', name='dsa_login_token', value='6368f14b44ffde6c97fc0a9d2adc7eddb72a2ebe8a0b3401c71b5a0206cb9a5b')
+                      input.mb-1(type='email', placeholder='Enter email', name='email', required='')
+                      input.mb-1(type='password', placeholder='Enter password', name='password', required='')
+                      button.btn.btn-secondary.text-white.mt-2(type='submit') Login
+                      small.text-center.text-capitalize.d-block.mt-3
+                        a(href='https://www.asiabriefing.com/customer/forgot-password') Forgot Password?
+                      small.text-center.text-capitalize.d-block.mt-2
+                        | No Subscription? 
+                        a(href='https://www.dezshira.com/register.html', target='_blank') Click Here
+             
     include components/_footer
 
     //JavaScript

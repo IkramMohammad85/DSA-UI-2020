@@ -3961,6 +3961,9 @@ figure {
 .ml-15 {
   margin-left: 15px !important; }
 
+.m-arround-15 {
+  margin: 15px !important; }
+
 .mt-25 {
   margin-top: 25px !important; }
 
@@ -4594,14 +4597,16 @@ form .form-field select::placeholder {
 .light-blue-bg form .form-field label {
   color: #fff; }
 
-form.material.white-theme .form-field-input,
-form.material.white-theme .form-field-textarea,
-form.material.white-theme .form-select-input {
-  background: #fff; }
-
-form.material.white-theme .form-field-control {
-  background: #fff;
-  border: 1px solid #ccc; }
+form.material.white-theme {
+  width: 800px;
+  margin: 0 auto; }
+  form.material.white-theme .form-field-input,
+  form.material.white-theme .form-field-textarea,
+  form.material.white-theme .form-select-input {
+    background: #fff; }
+  form.material.white-theme .form-field-control {
+    background: #fff;
+    border: 1px solid #ccc; }
 
 /* material form */
 .light-blue-bg form.material .form-field-label {

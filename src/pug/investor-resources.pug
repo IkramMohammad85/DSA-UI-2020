@@ -16,12 +16,20 @@ body
             .grid.align-end
                 .col-sm-12.col-md-12.col-grid
                     h1 Investor Resources  
-    section.gray-light-bg.pt-150.pb-7
+    section.breadcrumb.mt-110.pt-05.pb-05
+        .container
+            ul.list-inline
+                li
+                    a(href='http://dezshira.in/') Home
+                li
+                    a(href='http://dezshira.in/about-us/our-firm.html') About Us
+                li Investor Resources
+    section.gray-light-bg.pt-3.pb-3
         .container
             .grid
-                .col-sm.col-md-6.col-lg-6.col-xlg-6.col-grid.offset-md-3.offset-lg-3.offset-xlg-3   
+                .col-sm.col-md-6.col-lg-6.col-xlg-6.col-grid.offset-md-3.offset-lg-3.offset-xlg-3.text-center   
                     a(href='http://www.asiabriefing.com', target='_blank')
-                        img.flex-img(src='https://www.dezshira.com/themes/dsa/images/briefing-logos/AB.png', alt='')
+                        img(src='http://dezshira.in/themes/dsa-2020/assets/img/ab-logo-transparent.png', alt='' width='320px')
     section.pt-7.pb-7
         .container
             .grid
@@ -36,63 +44,274 @@ body
                     p.text-right
                         a.btn.btn-outline-dark.mt-4(href='career-search.html', role='button') Contact Us         
 
-                    h4.section-title.mt-5.mb-3 Related insight        
-                    .grid
+                    h4.section-title.mt-5.mb-3 Related insight  
+                    .grid.glide.related-insight-slides(data-preview='3')
+                      .glide__track(data-glide-el='track')
+                        .glide__slides
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.china-briefing.com/news/business-risk-management-china-era-covid-19/')
+                                  img(src='https://www.china-briefing.com/news/wp-content/uploads/2020/06/Business-Risk-Management-in-the-age-of-COVID-19-.jpg')
+                                span.briefing-lable.cb China Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.china-briefing.com/news/business-risk-management-china-era-covid-19/') Business Risk Management in China in the Era of COVID-19
+                                small.text-muted June 08, 2020
+                                p
+                                  | We discuss how businesses can identify and prepare against exposure to fraudulent risks within the organization during times of economic turmoil like COVID-19.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.india-briefing.com/news/an-introduction-to-doing-business-in-india-2020-new-publication-from-dezan-shira-associates-20463.html/')
+                                  img(src='https://www.india-briefing.com/news/wp-content/uploads/2020/06/An-introduction-to-doing-business-in-India-2020_featured-image.jpg')
+                                span.briefing-lable.ib India Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.india-briefing.com/news/an-introduction-to-doing-business-in-india-2020-new-publication-from-dezan-shira-associates-20463.html/')
+                                    | An Introduction to Doing Business in India 2020 &ndash; New Publication from Dezan Shira &amp; Associates
+                                small.text-muted June 01, 2020
+                                p
+                                  | An Introduction to Doing Business in India 2020 is available as a free download on the Asia Briefing Bookstore.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.vietnam-briefing.com/news/vietnam-eu-trade-evfta-ratified-vietnam-national-assembly.html/')
+                                  img(src='https://www.vietnam-briefing.com/news/wp-content/uploads/2016/07/EVFTA-EU-Vietnam.jpg')
+                                span.briefing-lable.vb Vietnam Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.vietnam-briefing.com/news/vietnam-eu-trade-evfta-ratified-vietnam-national-assembly.html/') Vietnam-EU Trade: EVFTA Ratified by Vietnam&apos;s National Assembly
+                                small.text-muted January 01, 1970
+                                p
+                                  | The European Union-Vietnam Free Trade Agreement (EVFTA) was ratified on June 8, paving the way for increased trade and the removal of tariffs on most products between both partners.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.aseanbriefing.com/news/indonesia-issues-implementing-regulation-e-commerce-sector-key-features/')
+                                  img(src='https://www.aseanbriefing.com/news/wp-content/uploads/2020/06/Indonesia-Issues-Implementing-regulation-for-E-commerce-Sector-Key-Features.jpg')
+                                span.briefing-lable.asean ASEAN Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.aseanbriefing.com/news/indonesia-issues-implementing-regulation-e-commerce-sector-key-features/') Indonesia Issues Implementing Regulation for E-commerce Sector: Key Features
+                                small.text-muted June 11, 2020
+                                p
+                                  | In May 2020, Indonesia issued Regulation 50 of 2020, which is an implementing regulation for the country&rsquo;s Law on E-commerce.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.china-briefing.com/news/business-risk-management-china-era-covid-19/')
+                                  img(src='https://www.china-briefing.com/news/wp-content/uploads/2020/06/Business-Risk-Management-in-the-age-of-COVID-19-.jpg')
+                                span.briefing-lable.cb China Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.china-briefing.com/news/business-risk-management-china-era-covid-19/') Business Risk Management in China in the Era of COVID-19
+                                small.text-muted June 08, 2020
+                                p
+                                  | We discuss how businesses can identify and prepare against exposure to fraudulent risks within the organization during times of economic turmoil like COVID-19.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.india-briefing.com/news/an-introduction-to-doing-business-in-india-2020-new-publication-from-dezan-shira-associates-20463.html/')
+                                  img(src='https://www.india-briefing.com/news/wp-content/uploads/2020/06/An-introduction-to-doing-business-in-India-2020_featured-image.jpg')
+                                span.briefing-lable.ib India Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.india-briefing.com/news/an-introduction-to-doing-business-in-india-2020-new-publication-from-dezan-shira-associates-20463.html/')
+                                    | An Introduction to Doing Business in India 2020 &ndash; New Publication from Dezan Shira &amp; Associates
+                                small.text-muted June 01, 2020
+                                p
+                                  | An Introduction to Doing Business in India 2020 is available as a free download on the Asia Briefing Bookstore.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.vietnam-briefing.com/news/vietnam-eu-trade-evfta-ratified-vietnam-national-assembly.html/')
+                                  img(src='https://www.vietnam-briefing.com/news/wp-content/uploads/2016/07/EVFTA-EU-Vietnam.jpg')
+                                span.briefing-lable.vb Vietnam Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.vietnam-briefing.com/news/vietnam-eu-trade-evfta-ratified-vietnam-national-assembly.html/') Vietnam-EU Trade: EVFTA Ratified by Vietnam&apos;s National Assembly
+                                small.text-muted January 01, 1970
+                                p
+                                  | The European Union-Vietnam Free Trade Agreement (EVFTA) was ratified on June 8, paving the way for increased trade and the removal of tariffs on most products between both partners.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.aseanbriefing.com/news/indonesia-issues-implementing-regulation-e-commerce-sector-key-features/')
+                                  img(src='https://www.aseanbriefing.com/news/wp-content/uploads/2020/06/Indonesia-Issues-Implementing-regulation-for-E-commerce-Sector-Key-Features.jpg')
+                                span.briefing-lable.asean ASEAN Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.aseanbriefing.com/news/indonesia-issues-implementing-regulation-e-commerce-sector-key-features/') Indonesia Issues Implementing Regulation for E-commerce Sector: Key Features
+                                small.text-muted June 11, 2020
+                                p
+                                  | In May 2020, Indonesia issued Regulation 50 of 2020, which is an implementing regulation for the country&rsquo;s Law on E-commerce.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.china-briefing.com/news/business-risk-management-china-era-covid-19/')
+                                  img(src='https://www.china-briefing.com/news/wp-content/uploads/2020/06/Business-Risk-Management-in-the-age-of-COVID-19-.jpg')
+                                span.briefing-lable.cb China Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.china-briefing.com/news/business-risk-management-china-era-covid-19/') Business Risk Management in China in the Era of COVID-19
+                                small.text-muted June 08, 2020
+                                p
+                                  | We discuss how businesses can identify and prepare against exposure to fraudulent risks within the organization during times of economic turmoil like COVID-19.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.india-briefing.com/news/an-introduction-to-doing-business-in-india-2020-new-publication-from-dezan-shira-associates-20463.html/')
+                                  img(src='https://www.india-briefing.com/news/wp-content/uploads/2020/06/An-introduction-to-doing-business-in-India-2020_featured-image.jpg')
+                                span.briefing-lable.ib India Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.india-briefing.com/news/an-introduction-to-doing-business-in-india-2020-new-publication-from-dezan-shira-associates-20463.html/')
+                                    | An Introduction to Doing Business in India 2020 &ndash; New Publication from Dezan Shira &amp; Associates
+                                small.text-muted June 01, 2020
+                                p
+                                  | An Introduction to Doing Business in India 2020 is available as a free download on the Asia Briefing Bookstore.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.vietnam-briefing.com/news/vietnam-eu-trade-evfta-ratified-vietnam-national-assembly.html/')
+                                  img(src='https://www.vietnam-briefing.com/news/wp-content/uploads/2016/07/EVFTA-EU-Vietnam.jpg')
+                                span.briefing-lable.vb Vietnam Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.vietnam-briefing.com/news/vietnam-eu-trade-evfta-ratified-vietnam-national-assembly.html/') Vietnam-EU Trade: EVFTA Ratified by Vietnam&apos;s National Assembly
+                                small.text-muted January 01, 1970
+                                p
+                                  | The European Union-Vietnam Free Trade Agreement (EVFTA) was ratified on June 8, paving the way for increased trade and the removal of tariffs on most products between both partners.
+                          .col-sm-6.col-md-4.col-lg-4.col-grid
+                            .card.border-none.related-insight-card
+                              .card-header-img.zoom-on-hover
+                                a(href='https://www.aseanbriefing.com/news/indonesia-issues-implementing-regulation-e-commerce-sector-key-features/')
+                                  img(src='https://www.aseanbriefing.com/news/wp-content/uploads/2020/06/Indonesia-Issues-Implementing-regulation-for-E-commerce-Sector-Key-Features.jpg')
+                                span.briefing-lable.asean ASEAN Briefing
+                              .card-body
+                                h3.text-left
+                                  a(href='https://www.aseanbriefing.com/news/indonesia-issues-implementing-regulation-e-commerce-sector-key-features/') Indonesia Issues Implementing Regulation for E-commerce Sector: Key Features
+                                small.text-muted June 11, 2020
+                                p
+                                  | In May 2020, Indonesia issued Regulation 50 of 2020, which is an implementing regulation for the country&rsquo;s Law on E-commerce.
+                        // /glide__slides
+                      // /track
+                      .glide__bullets(data-glide-el='controls[nav]')
+                        button.glide__bullet(data-glide-dir='=0') 0
+                        button.glide__bullet(data-glide-dir='=1') 1
 
-                        .col-sm-6.col-md-4.col-lg-4.col-grid
-                            .card.border-none
-                                .card-header-img.zoom-on-hover
-                                    a(href='asiapedia-single.html')
-                                        img(src='https://www.china-briefing.com/news/wp-content/uploads/2020/03/Global-Virus.jpg')
-                                .card-body
-                                    h3.text-left
-                                        a(href='asiapedia-single.html') COVID-19 Global Outbreaks: Coordinating Your Remote Business Operations
-                                    small.text-muted September 2019
-                                    p
-                                        | COVID-19 is forcing businesses around the world to work-from-home. Our experts explain how enterprises can manage this efficiently and securely.
 
-                        .col-sm-6.col-md-4.col-lg-4.col-grid
-                            .card.border-none
-                                .card-header-img.zoom-on-hover
-                                    a(href='asiapedia-single.html')
-                                        img(src='https://www.vietnam-briefing.com/news/wp-content/uploads/2016/06/Vietnam-Rules-of-origin.jpg')
-                                .card-body
-                                    h3.text-left
-                                        a(href='asiapedia-single.html') An Introduction to Rules of Origin for Vietnamese Exports
-                                    small.text-muted August 2019
-                                    p
-                                        | Vietnam Briefing discusses rules of origin guidelines for investors looking to take advantage of lower tariff structures and Vietnam's free trade agreements
- 
-                        .col-sm-6.col-md-4.col-lg-4.col-grid
-                            .card.border-none
-                                .card-header-img.zoom-on-hover
-                                    a(href='asiapedia-single.html')
-                                        img(src='https://www.india-briefing.com/news/wp-content/uploads/2020/03/The-Expanding-Role-of-Technology-in-India’s-HR-Industry-india-briefing.jpg')
-                                .card-body
-                                    h3.text-left
-                                        a(href='asiapedia-single.html') The Expanding Role of Technology in India’s HR Industry
-                                    small.text-muted August 2019
-                                    p
-                                        | New technologies, including artificial intelligence and automation software, are transforming how the HR industry in India operates.
                     p.text-center
                         a.btn.btn-outline-dark.mt-4(href='career-search.html', role='button') Read more
                     h4.section-title.mt-5.mb-3 new release
-                    .grid
-                        
-                            .col-sm-6.col-md-4.col-lg-4.col-grid
+                    .glide.publications
+                      .glide__track.grey-bg(data-glide-el='track')
+                        .glide__slides
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8657/VB_2020_04_issue_cover.jpg', srcset='//resource.dezshira.com/Publications/8657/VB_2020_04_issue_cover.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/guide-vietnam-supply-chains.html') A Guide to Vietnam&rsquo;s Supply Chains
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/guide-vietnam-supply-chains.html');", data-open='publicationPopup') Quick View 
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8637/An_Introduction_to_Doing_Business_in_Indonesia_2020_cover.jpg', srcset='//resource.dezshira.com/Publications/8637/An_Introduction_to_Doing_Business_in_Indonesia_2020_cover.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/doing-business-indonesia-2020.html') An Introduction to Doing Business in Indonesia 2020
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/doing-business-indonesia-2020.html');", data-open='publicationPopup') Quick View 
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8612/CB_Mag_2020_03_issue_Cover_1.jpg', srcset='//resource.dezshira.com/Publications/8612/CB_Mag_2020_03_issue_Cover_1.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/managing-china-business-crisis-infectious-disease-outbreak.html') Operating Your China Business During a Crisis and Contagious Disease Outbreaks
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/managing-china-business-crisis-infectious-disease-outbreak.html');", data-open='publicationPopup') Quick View 
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/7177/Establishing_a_Foreign_Business_in_Russia_-_Cover_Image_1.jpg', srcset='//resource.dezshira.com/Publications/7177/Establishing_a_Foreign_Business_in_Russia_-_Cover_Image_1.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/establishing-a-foreign-business-in-russia-7177.html') Establishing a Foreign Business in Russia 
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/establishing-a-foreign-business-in-russia-7177.html');", data-open='publicationPopup') Quick View 
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/7134/DSA_Brochure_English_New_1.jpg', srcset='//resource.dezshira.com/Publications/7134/DSA_Brochure_English_New_1.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.dezshira.com/brochure_download_status/english') Dezan Shira &amp; Associates&apos; Service Brochure
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/dezan-shira-associates-service-brochure-7134.html');", data-open='publicationPopup') Quick View 
+                          // /item
+                          // </div>
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8692/An_Introduction_to_Doing_Business_in_India_Guide_2020_cover_600x849.jpg', srcset='//resource.dezshira.com/Publications/8692/An_Introduction_to_Doing_Business_in_India_Guide_2020_cover_600x849.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/introduction-doing-business-india-2020.html') An Introduction to Doing Business in India 2020
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/introduction-doing-business-india-2020.html');", data-open='publicationPopup') Quick View 
+                          // /item
+                          // </div>
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8657/VB_2020_04_issue_cover.jpg', srcset='//resource.dezshira.com/Publications/8657/VB_2020_04_issue_cover.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/guide-vietnam-supply-chains.html') A Guide to Vietnam&rsquo;s Supply Chains
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/guide-vietnam-supply-chains.html');", data-open='publicationPopup') Quick View 
+                          // /item
+                          // </div>
+                          .item.glide__slide--active
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8637/An_Introduction_to_Doing_Business_in_Indonesia_2020_cover.jpg', srcset='//resource.dezshira.com/Publications/8637/An_Introduction_to_Doing_Business_in_Indonesia_2020_cover.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/doing-business-indonesia-2020.html') An Introduction to Doing Business in Indonesia 2020
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/doing-business-indonesia-2020.html');", data-open='publicationPopup') Quick View 
+                          // /item
+                          // </div>
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8612/CB_Mag_2020_03_issue_Cover_1.jpg', srcset='//resource.dezshira.com/Publications/8612/CB_Mag_2020_03_issue_Cover_1.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/managing-china-business-crisis-infectious-disease-outbreak.html') Operating Your China Business During a Crisis and Contagious Disease Outbreaks
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/managing-china-business-crisis-infectious-disease-outbreak.html');", data-open='publicationPopup') Quick View 
+                          // /item
+                          // </div>
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/7177/Establishing_a_Foreign_Business_in_Russia_-_Cover_Image_1.jpg', srcset='//resource.dezshira.com/Publications/7177/Establishing_a_Foreign_Business_in_Russia_-_Cover_Image_1.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/establishing-a-foreign-business-in-russia-7177.html') Establishing a Foreign Business in Russia 
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/establishing-a-foreign-business-in-russia-7177.html');", data-open='publicationPopup') Quick View 
+                          // /item
+                          // </div>
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/7134/DSA_Brochure_English_New_1.jpg', srcset='//resource.dezshira.com/Publications/7134/DSA_Brochure_English_New_1.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.dezshira.com/brochure_download_status/english') Dezan Shira &amp; Associates&apos; Service Brochure
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/dezan-shira-associates-service-brochure-7134.html');", data-open='publicationPopup') Quick View 
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8692/An_Introduction_to_Doing_Business_in_India_Guide_2020_cover_600x849.jpg', srcset='//resource.dezshira.com/Publications/8692/An_Introduction_to_Doing_Business_in_India_Guide_2020_cover_600x849.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/introduction-doing-business-india-2020.html') An Introduction to Doing Business in India 2020
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/introduction-doing-business-india-2020.html');", data-open='publicationPopup') Quick View 
+                          .item
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8657/VB_2020_04_issue_cover.jpg', srcset='//resource.dezshira.com/Publications/8657/VB_2020_04_issue_cover.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/guide-vietnam-supply-chains.html') A Guide to Vietnam&rsquo;s Supply Chains
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/guide-vietnam-supply-chains.html');", data-open='publicationPopup') Quick View 
+                          .item(style='width: 257px; margin-left: 0px;')
+                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8637/An_Introduction_to_Doing_Business_in_Indonesia_2020_cover.jpg', srcset='//resource.dezshira.com/Publications/8637/An_Introduction_to_Doing_Business_in_Indonesia_2020_cover.jpg 2x')
+                            .hover-content.text-center
+                              h5.text-white
+                                a(href='https://www.asiabriefing.com/store/book/doing-business-indonesia-2020.html') An Introduction to Doing Business in Indonesia 2020
+                              a.btn.btn-outline-white.btn-popup(onclick="loadIframe('iframe','https://www.asiabriefing.com/store/book-preview/doing-business-indonesia-2020.html');", data-open='publicationPopup') Quick View 
+                        // /grid
+                      // /track
+                      div(data-glide-el='controls')
+                        button.glide-next(data-glide-dir='>')
+                          span.arrow.right-arrow
+                        button.glide-prev(data-glide-dir='<')
+                          span.arrow.left-arrow
 
-                                        a(href='asiapedia-single.html')
-                                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8565/IB_2019_12_issue_Cover.jpg')
-                            .col-sm-6.col-md-4.col-lg-4.col-grid
-
-                                        a(href='asiapedia-single.html')
-                                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8612/CB_Mag_2020_03_issue_Cover_1.jpg')
-
-    
-                            .col-sm-6.col-md-4.col-lg-4.col-grid
-
-                                        a(href='asiapedia-single.html')
-                                            img.flex-img(src='//resource.dezshira.com/resize/360x495/Publications/8608/DSA_Doing_Business_in_Vietnam_2020_Cover_600.jpg')
   
                 .col-sm.col-md-3.col-lg-3.col-grid
                     h4.section-title BRIEFING WEBSITES
