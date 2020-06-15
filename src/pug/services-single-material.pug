@@ -18,7 +18,7 @@ body
                     h1 Business Intelligence
                     p.mb-2  Business intelligence is a critical component of the decision making process when considering where and how an investment into Asia should be made. Our pan-Asia team can help your business with its strategic direction.
                     div
-                        a.btn.btn-secondary.mt-2.block-center(href='contact.html') Contact us for more information
+                        a(onclick='scrollToDiv()').btn.btn-secondary.mt-2.block-center Contact us for more information
     section.breadcrumb.mt-110.pt-05.pb-05
         .container
             ul.list-inline
@@ -142,7 +142,7 @@ body
                             img(alt='', src='http://www.asiabriefing.com/mockups/dsa-mockup/services/images/dsa-border-color.jpg', width='100%' height='5px')
                         h3.pt-2.text-white Have a question for our Education team?
 
-                        a.btn.btn-secondary.mt-2.text-white.text-uppercase(href='contact.html')
+                        a(onclick='scrollToDiv()').btn.btn-secondary.mt-2.text-white.text-uppercase
                             i.mr-1.icon-laptop
                             | Online Enquiry
                         br
@@ -163,7 +163,6 @@ body
 
                                 |         offline
                 .col-sm.col-md-3.col-lg-3.text-center
- 
                     .blue-hover.pt-4.pb-4
                         a(href='office.html')
                             i.icon-location.icon-3x                   
@@ -190,7 +189,7 @@ body
                             span
                                 | Explore our library of 
                                 | business resources
-    section.light-blue-bg.pt-7.pb-7
+    section.light-blue-bg.pt-7.pb-7#CTA_form
         .container
             form.material(novalidate='')
                 .grid
@@ -511,3 +510,4 @@ body
     
     //JavaScript
     script(src="assets/js/scripts.js")
+

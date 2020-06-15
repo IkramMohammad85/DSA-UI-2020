@@ -462,4 +462,11 @@ function getCookie(t) {
 
 ScrollReveal().reveal('.scroll-reveal', {
   delay: 200
-});
+}); //CTA scroll
+
+function scrollToDiv() {
+  document.getElementById("CTA_form").scrollIntoView({
+    scrollToFixed: 150,
+    behavior: 'smooth'
+  });
+}
