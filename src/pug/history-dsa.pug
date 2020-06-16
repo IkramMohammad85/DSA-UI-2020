@@ -20,6 +20,8 @@ body
             .container
                     ul.list-inline
                         li
+                            a(href='index.html') Home
+                        li
                             a(href='our-firm.html') About Us
                         li History                         
         section.pt-7.pb-7
@@ -420,9 +422,18 @@ body
                             p.text-white
                                 | We provide professional services tailored to Asia´s business environment across the full business cycle.
                             a.btn.btn-outline-white.text-uppercase.mb-2.mt-2(href='contact.html') Talk to experts 
+                        div
+                          script(src='https://content.jwplatform.com/players/DSu3Pgpc-lKmNhB9Q.js')
+                          script.
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'UA-1909572-7');
+                            gtag('event', 'page_view');
+
                         .card.light-blue-bg.mt-2.mb-2.p-arround-2
                             a(href='brochure.html')
-                                img(alt='' src='https://www.dezshira.com/themes/dsa/images/icons/Download.png' srcset='https://www.dezshira.com/themes/dsa/images/icons/Download@2x.png 2x')
+                                i.icon-cloud-download.text-white.icon-6x
                             p
                                 a(href='brochure.html') DOWNLOAD BROCHURE
                             h3
